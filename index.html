@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Conformal Scaling of Black-Hole Interiors</title>
+  <title>Geometric Duality of Black-Hole Interiors</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
 
@@ -124,7 +124,7 @@
           \quad
           F(r) \;=\; r\,\sqrt{\frac{8\pi G}{3}\,\rho},
         \end{equation}
-        where \( \rho = \rho_{m, 0}, r^{3}\ + \rho_{\Lambda} \) is the contained energy density.
+        where \( \rho = \rho_{m} r^{3}\ + \rho_{\Lambda} \) is the energy density contained in \( r \).
       </p>
 
       <p>
@@ -139,17 +139,17 @@
 
       <p>
         A perspective‐shift thought experiment compares these two exponentials under the sign flip \( \tau \to -\tau \),
-        showing that cosmic acceleration is mathematically equivalent to conformally scaled infall.
+        showing that cosmic inflation is mathematically equivalent to inertial infall.
       </p>
 
       <p>
         This construction suggests dark energy may emerge naturally from the interior geometry of a cosmic horizon,
-        rather than requiring an explicit fluid with negative pressure.  The conformal‐scaling model estimates
+        rather than requiring an explicit fluid with negative pressure.  The geometric model estimates
         \begin{equation}
           \Lambda \approx 1.6\times10^{-52}\,\mathrm{m^{-2}},
         \end{equation}
         within 50% of the conventionally inferred value, and we anticipate that re‐analysing data within a
-        CSBHI framework will drive the predicted and observed Λ into even closer agreement.
+        geometric framework will drive the predicted and observed Λ into even closer agreement.
       </p>
     </section>
 
@@ -272,12 +272,10 @@
         \begin{equation}
           ds^{2} = -\,dt^{2} + a(t)^{2}\bigl(dR^{2} + R^{2}\,d\Omega^{2}\bigr).
         \end{equation}
-
-        <span class="ref end-ref eq-ref">[<a href="#ref-06">6</a>]</span>
       </p>
 
       <p>
-        The expansion dynamics follow from the Friedmann equations (1923):
+        The expansion dynamics follow from the Friedmann equations <span class="ref">[<a href="#ref-06">6</a>]</span>:
       </p>
       <p>
         \begin{equation}
@@ -441,7 +439,6 @@
         \tau_{\text{vac}}
         = \int_{1}^{0} \frac{dr}{\sqrt{1/r}}
         = \tfrac{2}{3}
-        \quad(\text{in }2M=1\text{ units})
         \end{equation}
       </p>
       <figure>
@@ -501,7 +498,8 @@
       <h2>Infall Function: Painlevé–Gullstrand Form of FLRW</h2>
 
       <p>
-        We introduce a global areal radius \( r \) via the scale factor \( a(t) \)
+        To model Alice's position at \( R < 1 \),
+        we introduce a global areal radius \( r \) via the scale factor \( a(t) \)
         \[
           r =
           \begin{cases}
@@ -510,10 +508,9 @@
           \end{cases}
         \]
         ensuring \(g_{\theta\theta}=r^2\) is smooth across the matching shell \(R=1\).
-        (See appendix B for the full matching conditions).
-        <span class="ref">[<a href="#ref-06">6</a>]</span>
-      </p>
 
+        <span class="ref">[<a href="#appendixB">Appendix B</a>]</span>
+      </p>
       <p>
         Holding comoving label \( R \) fixed, we differentiate \( r = a(t)R \):
       \[
@@ -523,7 +520,6 @@
         \quad
         H(t)\equiv\frac{1}{a(t)}\frac{d a(t)}{d t}.
       \]
-      <span class="ref">[<a href="#ref-06">6</a>]</span>
     </p>
 
 
@@ -533,7 +529,6 @@
           ds^2 = -\,dt^2 + (dr - H\,r\,dt)^2 + r^2\,d\Omega^2
               \\ = -\bigl(1 - H^2r^2\bigr)\,dt^2 + 2H\,r\,dt\,dr + dr^2 + r^2\,d\Omega^2.
         \]
-        <span class="ref">[<a href="#ref-07">7</a>]</span>
       </p>
 
       <p>
@@ -542,20 +537,31 @@
           ds^2 = -\,d\tau^2 + \bigl(dr + F(r,\tau)\,d\tau\bigr)^2 + r^2\,d\Omega^2,
           \quad F(r,\tau)=H(\tau)\,r.
         \]
-        <span class="ref">[<a href="#ref-07">7</a>]</span>
       </p>
 
       <p>
         Finally, invoking Friedmann’s equation for a dust + Λ universe,
         \[
-          H(\tau)^2 = \frac{8\pi G}{3}\bigl(\rho_{m,0}\,a^{-3}(\tau) + \rho_\Lambda\bigr),
+          H(\tau)^2 = \frac{8\pi G}{3}\bigl(\rho_{m}\,a^{-3}(\tau) + \rho_\Lambda\bigr),
         \]
         we arrive at the infall function:
         \[
-          \boxed{F(r,\tau)=r\,\sqrt{\frac{8\pi G}{3}\bigl(\rho_{m,0}a^{-3}(\tau)+\rho_\Lambda\bigr)}}
+          \boxed{F(r,\tau)=r\,\sqrt{\frac{8\pi G}{3}\bigl(\rho_{m}a^{-3}(\tau)+\rho_\Lambda\bigr)}}
         \]
-        <span class="ref">[<a href="#ref-08">8</a>, <a href="#ref-09">9</a>]</span>
       </p>
+      <p>
+        <em>
+          See:
+          <span class="ref">[
+            <a href="#ref-06">6</a>,
+            <a href="#ref-07">7</a>,
+            <a href="#ref-15">15</a>,
+            <a href="#ref-16">16</a>,
+            <a href="#ref-31">31</a>
+            ]
+          </span>
+        </em>
+        </p>
     </section>
     <section id="section5">
       <h2>Geometric Duality</h2>
@@ -589,7 +595,6 @@
           r_{B}(\tau)
           = r_0\, e ^ { -H(\tau-\tau_0) }.
         \]
-        <span class="ref">[<a href="#ref-08">8</a>, <a href="#ref-09">9</a>]</span>
       </p>
 
       <p>Under the sign flip \(\tau \to -\tau\), Bob’s exponential decay exactly mirrors Alice’s exponential growth:</p>
@@ -604,6 +609,19 @@
       <p>
         Late-time cosmic inflation is mathematically equivalent to geometrically scaled horizon infall.
       </p>
+
+      <p>
+        <em>
+          See:
+          <span class="ref">[
+            <a href="#ref-06">6</a>,
+            <a href="#ref-15">15</a>,
+            <a href="#ref-16">16</a>,
+            <a href="#ref-31">31</a>
+            ]
+          </span>
+        </em>
+        </p>
     </section>
     <section id="section6">
       <h2>Junction Matching &amp; Singularity Deferral</h2>
@@ -611,13 +629,13 @@
       <h3>Horizon Matching</h3>
       <p>
         To validate the geometric duality, we smoothly join the FLRW interior (Alice’s region) to the
-        Schwarzschild–de Sitter exterior (Bob’s region) across the timelike hypersurface Σ at comoving label \(R=1\),
+        Schwarzschild–de Sitter exterior (Bob’s region) across the timelike hypersurface \(Σ\) at comoving label \(R=1\),
         where the areal radius is \(r=a(\tau)\). This requires:
       </p>
 
       <p>
         <strong>Induced-metric continuity:</strong><br/>
-        The intrinsic metric on Σ from the FLRW side,
+        The intrinsic metric on \(Σ\) from the FLRW side,
         \[
           ds^2_{\Sigma}\big|_{\rm FLRW} = -\,d\tau^2 + a^2(\tau)\,d\Omega^2,
         \]
@@ -625,7 +643,7 @@
       </p>
       <p>
         <strong>Extrinsic-curvature continuity:</strong><br/>
-        Computation of the extrinsic curvature on both sides yields identical tensors.  By the Israel–Darmois conditions, this implies vanishing surface stress–energy on Σ.
+        Computation of the extrinsic curvature on both sides yields identical tensors.  By the Israel–Darmois conditions, this implies vanishing surface stress–energy on \(Σ\).
       </p>
 
       <p>
@@ -656,6 +674,15 @@
         Thus what would be a classical curvature singularity at \(r=0\) is deferred to \(\tau\to\infty\),
         ensuring that an infalling observer never encounters a divergence in finite proper time.
       </p>
+
+      <p><em>
+      See:
+        <span class="ref">[
+            <a href="#ref-22">22</a>,
+            <a href="#ref-26">26</a>
+            ]
+          </span>
+        </em></p>
     </section>
     <section id="section7">
       <h2>Observables</h2>
@@ -663,13 +690,13 @@
       <p>
         Since the interior metric is exactly flat ΛCDM, it reproduces all standard expansion–history tests:
         \[
-          H(a)^2 = \frac{8\pi G}{3}\bigl(\rho_{m,0}\,a^{-3}+\rho_\Lambda\bigr),
+          H(a)^2 = \frac{8\pi G}{3}\bigl(\rho_{m}\,a^{-3}+\rho_\Lambda\bigr),
           \quad
           H(a)\equiv\frac{1}{a}\frac{da}{dt}.
         \]
         At \(a=1\),
         \[
-          H_0 = \sqrt{\frac{8\pi G}{3}\bigl(\rho_{m,0}+\rho_\Lambda\bigr)}
+          H_0 = \sqrt{\frac{8\pi G}{3}\bigl(\rho_{m}+\rho_\Lambda\bigr)}
               \approx 67\text{–}73\;\mathrm{km\,s^{-1}Mpc^{-1}},
         \]
         in agreement with local and CMB‐inferred values.  The cosmic age
@@ -683,8 +710,10 @@
           D_A(z) = \frac{1}{1+z}\int_0^z\frac{dz'}{H(z')},
         \]
         exactly match supernova, BAO, and CMB distance measures.
-        <span class="ref">[<a href="#ref-06">6</a>, <a href="#ref-11">11</a>, <a href="#ref-12">12</a>, <a href="#ref-25">25</a>]</span>
       </p>
+      <p><em>
+        See: <span class="ref">[<a href="#ref-06">6</a>, <a href="#ref-11">11</a>, <a href="#ref-12">12</a>, <a href="#ref-25">25</a>]</span>
+      </em></p>
     </section>
     <section id="section8">
       <h2>Discussion</h2>
@@ -692,7 +721,7 @@
         <h3>Conceptual Interpretation</h3>
 
         <p>
-          Accepting this conformal geometry for Black Hole Interiors does a lot more than provide asymptotic
+          Accepting this Geometry Duality for Black Hole Interiors does a lot more than provide asymptotic
           safety for Alice's worldline. It has serious implications for our understanding of space, time, and the universe.
         </p>
 
@@ -740,13 +769,13 @@
           </li>
           <li>
             <strong>Unified framework:</strong>
-            The same conformal scaling that governs free-fall inside a black-hole interior also governs the universe’s
+            The same scale-factor that governs free-fall inside a black-hole interior also governs the universe’s
             expansion, unifying two seemingly disparate regimes into a single metric framework.
           </li>
         </ul>
 
         <p>
-          By explaining dark energy via the conformal geometry of a cosmic horizon rather than in a mysterious fluid, CSBHI
+          By explaining dark energy via the geometry of a cosmic horizon rather than in a mysterious fluid, Geometric Duality
           offers a first-principles explanation for cosmic acceleration, reframes the cosmological-constant problem, and
           suggests new avenues for understanding singularities and horizon thermodynamics. This geometric paradigm unifies the
           notions of cosmic expansion and gravitational collapse under a single framework.
@@ -846,7 +875,7 @@
 
       <p>
         By interpreting our observable universe as the interior of a cosmic‐scale Schwarzschild horizon at \(r=1\),
-        we have shown that all principal features of ΛCDM follow directly from conformal geometry.  In particular,
+        we have shown that all principal features of ΛCDM follow directly from geometric duality.  In particular,
         the identification
       </p>
       <p>
@@ -867,7 +896,7 @@
       </p>
       <p>
         \begin{equation}
-          H^{2} = \frac{8\pi G}{3}\bigl(\rho_{m,0}\,a^{-3} + \rho_{\Lambda}\bigr)
+          H^{2} = \frac{8\pi G}{3}\bigl(\rho_{m}\,a^{-3} + \rho_{\Lambda}\bigr)
         \end{equation}
       </p>
       <p>
@@ -878,7 +907,7 @@
       <ul>
         <li>
           <strong>Geometric dark energy:</strong>
-          Cosmic acceleration emerges from the interior conformal geometry rather than an ad-hoc fluid.
+          Cosmic acceleration emerges from the interior geometry rather than an ad-hoc fluid.
         </li>
         <li>
           <strong>Coincidence naturally explained:</strong>
@@ -900,7 +929,6 @@
       </p>
     </section>
 
-
     <section id="appendixA">
       <h2>Appendix A: Derivation of the Infall Function</h2>
 
@@ -909,7 +937,6 @@
         We begin with the spatially flat FLRW metric (\(c=1\)):
         \[
           ds^2 = -\,dt^2 + a(t)^2\bigl(dR^2 + R^2\,d\Omega^2\bigr).
-          \tag{A1}
         \]
         Introduce the areal radius
         \[
@@ -918,21 +945,18 @@
           dr = a\,dR + \dot a\,R\,dt = a\,dR + H\,r\,dt,
           \quad
           H(t)\equiv\frac{\dot a}{a}.
-          \tag{A2}
         \]
       </p>
       <p>
         Substituting \(dR=(dr-H\,r\,dt)/a\) and setting \(d\Omega=0\) gives
         \[
           ds^2 = -\,dt^2 + \bigl(dr - H\,r\,dt\bigr)^2 + r^2\,d\Omega^2
-              = -\bigl(1-H^2r^2\bigr)dt^2 + 2H\,r\,dt\,dr + dr^2 + r^2\,d\Omega^2.
-          \tag{A3}
+              \\ = -\bigl(1-H^2r^2\bigr)dt^2 + 2H\,r\,dt\,dr + dr^2 + r^2\,d\Omega^2.
         \]
         Relabeling \(t\to\tau\) then yields the PG form
         \[
           ds^2 = -\,d\tau^2 + \bigl(dr + F(r,\tau)\,d\tau\bigr)^2 + r^2\,d\Omega^2,
           \quad F(r,\tau)=H(\tau)\,r.
-          \tag{A4}
         \]
       </p>
 
@@ -941,33 +965,40 @@
         Alternatively, start from the ansatz
         \[
           ds^2 = -\,d\tau^2 + \bigl(dr + F(r,\tau)\,d\tau\bigr)^2 + r^2\,d\Omega^2.
-          \tag{A5}
         \]
         A straightforward computation of the Einstein tensor gives
         \[
           G_{\tau\tau} = \frac{1}{r^2}\frac{d}{dr}\bigl[r\,F(r,\tau)^2\bigr].
-          \tag{A6}
         \]
       </p>
       <p>
         Equating \(G_{\tau\tau}=8\pi G\,T_{\tau\tau}\) with
-        \(\;T_{\tau\tau}=\rho_{m,0}\,a^{-3}(\tau)+\rho_\Lambda\) (constant on each \(\tau\!={\rm const}\) slice) yields
+        \(\;T_{\tau\tau}=\rho_{m}\,a^{-3}(\tau)+\rho_\Lambda\) (constant on each \(\tau\!={\rm const}\) slice) yields
         \[
           \frac{d}{dr}\bigl[r\,F^2\bigr]
-          =8\pi G\bigl(\rho_{m,0}a^{-3}+\rho_\Lambda\bigr)\,r^2.
-          \tag{A7}
+          =8\pi G\bigl(\rho_{m}a^{-3}+\rho_\Lambda\bigr)\,r^2.
         \]
         Integrating from \(0\) to \(r\) and imposing regularity at \(r=0\),
         \[
-          r\,F^2 = \frac{8\pi G}{3}\bigl(\rho_{m,0}a^{-3}+\rho_\Lambda\bigr)\,r^3
+          r\,F^2 = \frac{8\pi G}{3}\bigl(\rho_{m}a^{-3}+\rho_\Lambda\bigr)\,r^3
           \quad\Longrightarrow\quad
-          F(r,\tau)=r\,\sqrt{\frac{8\pi G}{3}\bigl(\rho_{m,0}a^{-3}(\tau)+\rho_\Lambda\bigr)}.
-          \tag{A8}
+          F(r,\tau)=r\,\sqrt{\frac{8\pi G}{3}\bigl(\rho_{m}a^{-3}(\tau)+\rho_\Lambda\bigr)}.
         \]
       </p>
 
       <p class="footnote">
-        See also: Painlevé–Gullstrand coordinates in cosmology ; ADM slicing of FLRW .
+        <em>See:
+          <span class="ref">[
+            <a href="#ref-06">6</a>,
+            <a href="#ref-07">7</a>,
+            <a href="#ref-08">8</a>,
+            <a href="#ref-15">15</a>,
+            <a href="#ref-16">16</a>,
+            <a href="#ref-18">18</a>,
+            <a href="#ref-32">32</a>
+            ]
+          </span>
+          </em>
       </p>
     </section>
     <section id="appendixB">
@@ -975,7 +1006,7 @@
 
       <h3>Timelike Shell</h3>
       <p>
-        The matching hypersurface Σ is defined by \(r=a(\tau)\).  In PG form the metric reads
+        The matching hypersurface \(Σ\) is defined by \(r=a(\tau)\).  In PG form the metric reads
         \[
           ds^2=-d\tau^2+(dr+F\,d\tau)^2+r^2d\Omega^2,
         \]
@@ -984,12 +1015,12 @@
           g^{\mu\nu}\partial_\mu r\,\partial_\nu r
           =1-F^2(r,\tau),
         \]
-        and Σ is timelike provided \(F^2 < 1\).
+        and \(Σ\) is timelike provided \(F^2 < 1\).
       </p>
 
       <h3>First Fundamental Form</h3>
       <p>
-        On Σ, \(dr/d\tau=-F\), so both interior and exterior induce
+        On \(Σ\), \(dr/d\tau=-F\), so both interior and exterior induce
         \[
           ds^2_\Sigma=-d\tau^2+r^2d\Omega^2,
         \]
@@ -1004,7 +1035,7 @@
           K_{\theta\theta}=rF,\quad
           K_{\phi\phi}=r\sin^2\!\theta\,F,
         \]
-        and since \(F_{\rm int}=F_{\rm ext}\) on Σ all \(K_{ab}\) match, implying no δ‐stress.
+        and since \(F_{\rm int}=F_{\rm ext}\) on \(Σ\) all \(K_{ab}\) match, implying no δ‐stress.
       </p>
 
       <h3>Parameter Matching</h3>
@@ -1015,14 +1046,30 @@
           \;\Longrightarrow\;
           H^2 = \frac{2GM}{r^3} + \frac{\Lambda}{3}.
         \]
-        Using \(r=a(\tau)\) and the Friedmann relation \(H^2=\tfrac{8\pi G}{3}(\rho_{m,0}a^{-3}+\rho_\Lambda)\)
+        Using \(r=a(\tau)\) and the Friedmann relation \(H^2=\tfrac{8\pi G}{3}(\rho_{m}a^{-3}+\rho_\Lambda)\)
         immediately fixes
-        \(\;M=\tfrac{4\pi G}{3}\rho_{m,0}\) and \(\;\Lambda=8\pi G\,\rho_\Lambda\).
+        \(\;M=\tfrac{4\pi G}{3}\rho_{m}\) and \(\;\Lambda=8\pi G\,\rho_\Lambda\).
       </p>
 
       <p class="footnote">
         With both fundamental forms continuous and parameter identities satisfied, the Israel–Darmois conditions
-        guarantee a smooth, stress-free matching.  For full derivations, see Poisson & Visser (1995) and Bressange (1998).
+        guarantee a smooth, stress-free matching.  For full derivations, see Poisson & Visser <span class="ref">[<a href="#ref-26">26</a></span>
+        and Bressange <span class="ref">[<a href="#ref-35">35</a>]</span>.
+      </p>
+
+
+      <p class="footnote">
+        <em>See:
+          <span class="ref">[
+            <a href="#ref-06">6</a>,
+            <a href="#ref-15">15</a>,
+            <a href="#ref-16">16</a>,
+            <a href="#ref-22">22</a>,
+            <a href="#ref-26">26</a>,
+            <a href="#ref-26">35</a>
+            ]
+          </span>
+          </em>
       </p>
     </section>
     <section id="appendixC">
@@ -1085,6 +1132,18 @@
         \(T_0=\int_0^1da/[a\sqrt{\Omega_m a^{-3}+\Omega_\Lambda}]\)—adjusts \(\Lambda\) by \(\lesssim10\%\).
         For detailed cosmological fits, see standard reviews.
       </p>
+      <p class="footnote">
+          <em>See:
+            <span class="ref">[
+              <a href="#ref-11">11</a>,
+              <a href="#ref-12">12</a>,
+              <a href="#ref-23">23</a>,
+              <a href="#ref-24">24</a>
+              ]
+            </span>
+          </em>
+        </p>
+
     </section>
     <section id="appendixD">
       <h3>Appendix D: Connection to the 5D de Sitter Embedding</h3>
@@ -1137,7 +1196,7 @@
       </p>
 
       <p>
-        See: <span class="ref">[<a href="#ref-33">33</a>, <a href="#ref-34">34</a>]</span>.
+        <em>See: <span class="ref">[<a href="#ref-33">33</a>, <a href="#ref-34">34</a>]</span></em>
       </p>
 
     </section>
@@ -1180,6 +1239,7 @@
         <li id="ref-32">Poisson E. <em>A Relativist’s Toolkit: The Mathematics of Black-Hole Mechanics</em>. Cambridge University Press; 2004.</li>
         <li id="ref-33">de Sitter W. On the relativity of inertia: remarks concerning Einstein’s latest hypothesis. <em>MNRAS</em>. 1917;78:3–28.</li>
         <li id="ref-34">Spradlin M., Strominger A., Volovich A. Les Houches Lectures on de Sitter Space. arXiv:hep-th/0110007. 2001.</li>
+        <li id="ref-35">Bressange G. F. On the extension of the concept of thin shells to the Einstein–Cartan theory. <em>Classical and Quantum Gravity</em>. 2000;17(13):2509–2520.</li>
       </ol>
     </section>
 
