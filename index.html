@@ -1300,6 +1300,12 @@
           <button id="alice-btn-next"
             style="padding:0.38em 1.1em; font-size:0.9em; cursor:pointer;">Next &#8594;</button>
         </div>
+        <div style="margin-top:0.6em; font-size:0.85em; color:#bbb;">
+          <label style="cursor:pointer;">
+            <input type="checkbox" id="alice-grid-toggle">
+            Show coordinate grid
+          </label>
+        </div>
         <p style="font-size:0.76em; color:#888; margin-top:0.45em;">
           Arrow keys &#8592; &#8594; also navigate slides.
         </p>
@@ -1495,6 +1501,48 @@
           ctx.beginPath();
           ctx.moveTo(x1 + 7, y - 5); ctx.lineTo(x1, y); ctx.lineTo(x1 + 7, y + 5);
           ctx.strokeStyle = color; ctx.lineWidth = 1.5; ctx.stroke();
+        }
+
+        /* Polar coordinate grid overlay (toggled by checkbox) */
+        function drawGrid() {
+          var toggle = document.getElementById('alice-grid-toggle');
+          if (!toggle || !toggle.checked) return;
+
+          /* — concentric circles at r = 1, 2, 3, 4, 5 — */
+          [1, 2, 3, 4, 5].forEach(function (r) {
+            var rpx = rPx(r);
+            if (BHX + rpx > W + rpx) return; // fully off canvas
+            var isUnit = (r === 1);
+            ctx.beginPath();
+            ctx.arc(BHX, BHY, rpx, 0, Math.PI * 2);
+            ctx.setLineDash(isUnit ? [4, 4] : [3, 6]);
+            ctx.strokeStyle = isUnit
+              ? 'rgba(255,255,255,0.60)'   // unit circle: brighter
+              : 'rgba(255,255,255,0.50)';
+            ctx.lineWidth = isUnit ? 1.5 : 0.9;
+            ctx.stroke();
+            ctx.setLineDash([]);
+          });
+
+          /* — radial spokes every 30° — */
+          for (var deg = 0; deg < 360; deg += 30) {
+            var rad = deg * Math.PI / 180;
+            var reach = Math.max(W, H) * 1.5;
+            ctx.beginPath();
+            ctx.moveTo(BHX, BHY);
+            ctx.lineTo(BHX + Math.cos(rad) * reach, BHY + Math.sin(rad) * reach);
+            ctx.setLineDash([2, 8]);
+            ctx.strokeStyle = 'rgba(255,255,255,0.10)';
+            ctx.lineWidth = 0.8;
+            ctx.stroke();
+            ctx.setLineDash([]);
+          }
+
+          /* — "r = 1" label on the unit circle — */
+          ctx.font = 'bold 9px monospace';
+          ctx.fillStyle = 'rgba(255,255,255,0.55)';
+          ctx.textAlign = 'left';
+          ctx.fillText('r\u202f=\u202f1  (unit circle)', BHX + RH * 0.707 + 4, BHY - RH * 0.707 - 4);
         }
 
         /* ================================================================
@@ -1757,6 +1805,7 @@
         function render() {
           ctx.clearRect(0, 0, W, H);
           slides[current].draw();
+          drawGrid();
           caption.innerHTML = slides[current].caption;
           counter.textContent = (current + 1) + ' / ' + slides.length;
           btnPrev.disabled = current === 0;
@@ -1773,6 +1822,8 @@
           if (e.key === 'ArrowRight' && current < slides.length - 1) { current++; render(); }
           if (e.key === 'ArrowLeft'  && current > 0)                 { current--; render(); }
         });
+        var gridToggle = document.getElementById('alice-grid-toggle');
+        if (gridToggle) gridToggle.addEventListener('change', render);
 
         render();
       }());
