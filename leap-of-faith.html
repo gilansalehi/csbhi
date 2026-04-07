@@ -8,6 +8,8 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    html { scroll-snap-type: y mandatory; }
+
     body {
       background: #07071a;
       color: #dde1e9;
@@ -23,20 +25,24 @@
       height: 100%;
     }
 
-    /* Scrollable text column */
+    /* Scrollable text column — top-right quadrant */
     #scroll-col {
       position: relative;
       z-index: 1;
-      max-width: 620px;
-      margin: 0 auto;
-      padding: 0 1.5em;
+      width: min(38vw, 440px);
+      margin-left: auto;
+      margin-right: 3vw;
+      padding: 0 0.8em;
     }
 
-    /* Each section occupies one viewport-height of scroll */
+    /* Each section — one viewport height, card sits in top half */
     .slide-section {
       min-height: 100vh;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      padding-top: 8vh;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
     }
 
     /* Text card — dark backing so prose is readable over the canvas */
@@ -62,21 +68,102 @@
     #nav {
       position: fixed;
       top: 1rem;
-      right: 1rem;
+      left: 1rem;
       z-index: 10;
       font-size: 0.8em;
     }
     #nav a { color: rgba(255,255,255,0.45); text-decoration: none; }
     #nav a:hover { color: rgba(255,255,255,0.85); }
 
-    /* Intro and outro spacing */
-    #intro { min-height: 60vh; display: flex; align-items: flex-end; padding-bottom: 2em; }
-    #outro { min-height: 50vh; display: flex; align-items: center; }
+    /* Progress dots — vertical strip, left-centre */
+    #progress {
+      position: fixed;
+      left: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    #progress span {
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.20);
+      transition: background 0.3s ease, transform 0.3s ease;
+      cursor: default;
+    }
+    #progress span.active {
+      background: rgba(255,255,255,0.72);
+      transform: scale(1.5);
+    }
+    @media (max-width: 600px) { #progress { display: none; } }
+
+    /* Intro — full-height title card with snap */
+    #intro {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+
+    /* Outro — full-height closing card with snap */
+    #outro {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+
+    /* Fade-in on scroll */
+    .card, #intro > div, #outro > p {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .card.visible, #intro > div.visible, #outro > p.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* Scroll hint */
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(7px); }
+    }
+    #scroll-hint {
+      position: fixed;
+      bottom: 1.8rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.30);
+      font-size: 1em;
+      letter-spacing: 0.12em;
+      z-index: 5;
+      pointer-events: none;
+      user-select: none;
+      animation: bounce 2s ease-in-out infinite;
+      transition: opacity 0.9s ease;
+    }
+    #scroll-hint.hidden { opacity: 0; animation: none; }
+
+    /* Mobile — revert to full-width centered column */
+    @media (max-width: 600px) {
+      #scroll-col { width: 100%; margin-right: 0; padding: 0 0.8em; }
+      .slide-section { align-items: center; padding-top: 0; }
+      .card { padding: 1.4em 1.2em; }
+    }
   </style>
 </head>
 <body>
 
   <canvas id="bg-canvas"></canvas>
+  <div id="scroll-hint">↓ scroll</div>
+  <div id="progress" aria-hidden="true"></div>
 
   <nav id="nav"><a href="index.html">← Back to paper</a></nav>
 
@@ -242,5 +329,83 @@
   </div><!-- /scroll-col -->
 
   <script src="src/leap-of-faith.js"></script>
+  <script>
+    (function () {
+      /* Slide trigger — fires when section midpoint crosses viewport centre */
+      var sections = document.querySelectorAll('.slide-section');
+      if (!sections.length) return;
+
+      var slideObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting && window.leapOfFaith) {
+            window.leapOfFaith.goToSlide(
+              parseInt(entry.target.getAttribute('data-slide'), 10)
+            );
+          }
+        });
+      }, { rootMargin: '-50% 0px -50% 0px', threshold: 0 });
+
+      sections.forEach(function (el) { slideObserver.observe(el); });
+
+      /* Fade-in — fires when card / intro / outro enters the viewport */
+      var fadeObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            fadeObserver.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+
+      document.querySelectorAll('.card, #intro > div, #outro > p')
+        .forEach(function (el) { fadeObserver.observe(el); });
+
+      /* Scroll hint — hide on first scroll */
+      var hint = document.getElementById('scroll-hint');
+      if (hint) {
+        window.addEventListener('scroll', function () {
+          hint.classList.add('hidden');
+        }, { once: true });
+      }
+
+      /* Progress dots — one per snap stop (intro + 6 slides + outro) */
+      var stops = [document.getElementById('intro')]
+        .concat(Array.prototype.slice.call(sections))
+        .concat([document.getElementById('outro')]);
+
+      var prog = document.getElementById('progress');
+      var dots = stops.map(function (_, i) {
+        var d = document.createElement('span');
+        if (i === 0) d.classList.add('active');
+        prog.appendChild(d);
+        return d;
+      });
+
+      var stopObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var idx = stops.indexOf(entry.target);
+          dots.forEach(function (d, i) { d.classList.toggle('active', i === idx); });
+        });
+      }, { rootMargin: '-50% 0px -50% 0px', threshold: 0 });
+
+      stops.forEach(function (el) { stopObserver.observe(el); });
+
+      /* Keyboard navigation — ↑/↓ or ←/→ step through stops */
+      document.addEventListener('keydown', function (e) {
+        var key = e.key;
+        if (key !== 'ArrowDown' && key !== 'ArrowUp' &&
+            key !== 'ArrowRight' && key !== 'ArrowLeft') return;
+        var activeIdx = 0;
+        dots.forEach(function (d, i) { if (d.classList.contains('active')) activeIdx = i; });
+        var dir = (key === 'ArrowDown' || key === 'ArrowRight') ? 1 : -1;
+        var next = Math.max(0, Math.min(stops.length - 1, activeIdx + dir));
+        if (next !== activeIdx) {
+          e.preventDefault();
+          stops[next].scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }());
+  </script>
 </body>
 </html>

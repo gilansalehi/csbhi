@@ -476,27 +476,64 @@
     ]; /* end slides */
 
     /* ================================================================
-       Controller
+       Controller — with crossfade
        ================================================================ */
     var current = 0;
+    var animId  = null;
+    var FADE_MS = 380;
+
+    /* Off-screen canvas holds the outgoing frame during a crossfade */
+    var offCvs  = document.createElement('canvas');
+    var offCtx2 = offCvs.getContext('2d');
 
     function render() {
         ctx.clearRect(0, 0, W, H);
         slides[current].draw();
     }
 
-    /* Public API — called by the scroll controller in step 2.3 */
+    function fadeTo(n) {
+        if (n === current) return;
+
+        /* Snapshot the outgoing frame */
+        offCvs.width  = W;
+        offCvs.height = H;
+        offCtx2.drawImage(canvas, 0, 0);
+
+        current = n; /* incoming slide — drawn fresh each animation frame */
+
+        if (animId) { cancelAnimationFrame(animId); animId = null; }
+
+        var startTs = null;
+        function frame(ts) {
+            if (!startTs) startTs = ts;
+            var t = Math.min((ts - startTs) / FADE_MS, 1);
+
+            ctx.clearRect(0, 0, W, H);
+            slides[current].draw();
+
+            if (t < 1) {
+                ctx.globalAlpha = 1 - t;
+                ctx.drawImage(offCvs, 0, 0);
+                ctx.globalAlpha = 1;
+                animId = requestAnimationFrame(frame);
+            } else {
+                animId = null;
+            }
+        }
+        animId = requestAnimationFrame(frame);
+    }
+
+    /* Public API */
     window.leapOfFaith = {
         goToSlide: function (n) {
             n = Math.max(0, Math.min(n, slides.length - 1));
-            if (n === current) return;
-            current = n;
-            render();
+            fadeTo(n);
         },
         slideCount: slides.length
     };
 
     window.addEventListener('resize', function () {
+        if (animId) { cancelAnimationFrame(animId); animId = null; }
         resize();
         render();
     });
