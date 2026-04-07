@@ -10,6 +10,15 @@
   </script>
 
   <style>
+    :root {
+      --bg:   #ffffff;
+      --text: #1a1a1a;
+    }
+    [data-theme="dark"] {
+      --bg:   #0e0e1c;
+      --text: #dde1e9;
+    }
+
     body {
       font-family: Arial, sans-serif;
       font-family: math;
@@ -17,6 +26,8 @@
       margin: auto;
       max-width: 800px;
       width: 100vw;
+      background: var(--bg);
+      color: var(--text);
     }
 
     main {
@@ -32,28 +43,46 @@
       margin-bottom: 1em;
     }
 
+
     p {
       margin-bottom: 1em;
       position: relative;
     }
 
-    img {
-      max-width: 100%;
-    }
+    img { max-width: 100%; }
 
-    .hidden {
-      display: none;
-    }
+    .hidden { display: none; }
 
     .end-ref {
       position: absolute;
       right: 2rem;
     }
 
-    .eq-ref { transform: translateY(-2.5rem); }
-    .eq-ref-md { transform: translateY(-3rem); }
-    .eq-ref-tall { transform: translateY(-3.5rem); }
+    .eq-ref        { transform: translateY(-2.5rem); }
+    .eq-ref-md     { transform: translateY(-3rem); }
+    .eq-ref-tall   { transform: translateY(-3.5rem); }
     .eq-ref-x-tall { transform: translateY(-4.5rem); }
+
+    .canvas-toggles { color: #aaa; }
+    .canvas-hint    { font-size: 0.76em; margin-top: 0.45em; }
+
+    #theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 999;
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 1em;
+      height: 2em;
+      width: 2em;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      border-radius: 2em;
+    }
+
+    [data-theme="dark"] a { color: var(--text) }
 
     @media screen and (max-width: 767px) {
       main { padding: 1rem; }
@@ -63,9 +92,19 @@
       }
     }
   </style>
+  <!-- Apply saved theme before first paint to prevent flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    }());
+  </script>
 </head>
 
 <body>
+  <button id="theme-toggle" aria-label="Toggle dark mode">☀</button>
   <h1>Geometric Duality of Black-Hole Interiors</h1>
   <main>
     <section id="table-of-contents">
@@ -1304,7 +1343,8 @@
           <button id="alice-btn-next"
             style="padding:0.38em 1.1em; font-size:0.9em; cursor:pointer;">Next &#8594;</button>
         </div>
-        <div style="margin-top:0.6em; font-size:0.85em; color:#bbb;
+        <div class="canvas-toggles"
+             style="margin-top:0.6em; font-size:0.85em;
                     display:flex; gap:1.8em; justify-content:center; flex-wrap:wrap;">
           <label style="cursor:pointer;">
             <input type="checkbox" id="alice-stars-toggle" checked>
@@ -1319,9 +1359,7 @@
             Show perspective road
           </label>
         </div>
-        <p style="font-size:0.76em; color:#888; margin-top:0.45em;">
-          Arrow keys &#8592; &#8594; also navigate slides.
-        </p>
+        <p class="canvas-hint">Arrow keys &#8592; &#8594; also navigate slides.</p>
       </div>
 
     </section>
@@ -1371,6 +1409,26 @@
 </body>
 <footer>
   <script type="module" src="src/alices-descent.js"></script>
+  <script>
+    (function () {
+      var btn  = document.getElementById('theme-toggle');
+      var root = document.documentElement;
+
+      function applyTheme(dark) {
+        root.setAttribute('data-theme', dark ? 'dark' : 'light');
+        btn.textContent = dark ? '☀' : '☽';
+        btn.title = dark ? 'light' : 'dark';
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+      }
+
+      /* Initialise label to match whatever the pre-paint script set */
+      applyTheme(root.getAttribute('data-theme') === 'dark');
+
+      btn.addEventListener('click', function () {
+        applyTheme(root.getAttribute('data-theme') !== 'dark');
+      });
+    }());
+  </script>
 </footer>
 
 </html>
