@@ -13,10 +13,12 @@
     :root {
       --bg:   #ffffff;
       --text: #1a1a1a;
+      --text-2: #000000;
     }
     [data-theme="dark"] {
       --bg:   #0e0e16;
       --text: #dde1e9;
+      --text-2: #ffffff;
     }
 
     body {
@@ -64,6 +66,11 @@
 
     .canvas-toggles { color: #aaa; }
     .canvas-hint    { font-size: 0.76em; margin-top: 0.45em; }
+    .toggle-btn {
+      background: none; border: none; color: #aaa; cursor: pointer;
+      font-size: inherit; font-family: inherit; padding: 0;
+    }
+    .toggle-btn:hover { color: var(--text-2) }
 
     #theme-toggle {
       position: fixed;
@@ -842,14 +849,12 @@
             matter‐flux contributions and obeys a generalized second law <span class="ref">[<a href="#ref-27">27</a>]</span>. We defer a full thermodynamic analysis
             to future work, noting here only that the total entropy (horizon + matter) satisfies a generalized area‐increase law.
           </li>
-
           <li>
             <strong>Junction stability:</strong>
             Israel–Darmois matching at the \(r=1\) hypersurface yields zero surface stress.  Linear‐perturbation
             analyses (e.g. Poisson & Visser, <span class="ref">[<a href="#ref-26">26</a>]</span>) show that small shell‐fluctuations remain bounded,
             ensuring a stable gluing to the exterior FLRW region.
           </li>
-
           <li>
             <strong>Perturbations & structure formation:</strong>
             Though we assume spherical symmetry at the background level, dust + Λ Lemaître–Tolman–Bondi perturbations
@@ -1257,7 +1262,7 @@
       </p>
 
       <div style="text-align:center; margin:1.5em 0;">
-        <canvas id="alice-canvas" width="1860" height="440"
+        <canvas id="alice-canvas" width="1050" height="440"
           style="max-width:100%; border:1px solid rgba(255,200,80,0.22); border-radius:6px;
                  background:#07071a; display:block; margin:0 auto;"></canvas>
         <div id="alice-caption"
@@ -1274,18 +1279,10 @@
         <div class="canvas-toggles"
              style="margin-top:0.6em; font-size:0.85em;
                     display:flex; gap:1.8em; justify-content:center; flex-wrap:wrap;">
-          <label style="cursor:pointer;">
-            <input type="checkbox" id="alice-stars-toggle" checked>
-            Show stars
-          </label>
-          <label style="cursor:pointer;">
-            <input type="checkbox" id="alice-grid-toggle">
-            Show coordinate grid
-          </label>
-          <label id="alice-road-toggle-label" style="cursor:pointer; display:none;">
-            <input type="checkbox" id="alice-road-toggle" checked>
-            Show perspective road
-          </label>
+          <button id="alice-stars-btn" class="toggle-btn">Hide Stars</button>
+          <button id="alice-grid-btn"  class="toggle-btn">Grid Off</button>
+          <button id="alice-frame-btn" class="toggle-btn">Local Frame</button>
+          <button id="alice-road-btn"  class="toggle-btn" style="display:none;">Hide Road</button>
         </div>
         <p class="canvas-hint">Arrow keys &#8592; &#8594; also navigate slides.</p>
       </div>
@@ -1296,41 +1293,74 @@
       <h2>References</h2>
       <a href="#resume-here">Back Up</a>
       <ol>
-        <li id="ref-01">Euclid. <em>Elements</em>, Book I, Proposition 47. (c. 300 BC).</li>
-        <li id="ref-02">Einstein A. Zur Elektrodynamik bewegter Körper. <em>Annalen der Physik</em>. 1905;322(10):891–921.</li>
-        <li id="ref-03">Minkowski H. Raum und Zeit. <em>Physikalische Zeitschrift</em>. 1908;10:104–111.</li>
-        <li id="ref-04">Einstein A. Die Grundlage der allgemeinen Relativitätstheorie. <em>Annalen der Physik</em>. 1916;354(7):769–822.</li>
+        <li id="ref-01">Euclid. <em>Elements</em>, Book I, Proposition 47. (c. 300 BC).</li>
+        <li id="ref-02">Einstein A. Zur Elektrodynamik bewegter Körper. <em>Annalen der Physik</em>. 1905;17(10):891–921.</li>
+        <li id="ref-03">Minkowski H. Raum und Zeit. <em>Physikalische Zeitschrift</em>. 1909;10:104–111.</li>
+        <li id="ref-04">Einstein A. Die Grundlage der allgemeinen Relativitätstheorie. <em>Annalen der Physik</em>. 1916;49(7):769–822.</li>
         <li id="ref-05">Schwarzschild K. Über das Gravitationsfeld eines Massenpunktes nach der Einsteinschen Theorie. <em>Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften</em>. 1916:189–196.</li>
         <li id="ref-06">Friedmann A. Über die Krümmung des Raumes. <em>Zeitschrift für Physik</em>. 1922;10(1):377–386.</li>
-        <li id="ref-07">Robertson H. P. On the Foundations of Relativistic Cosmology. <em>Monthly Notices of the Royal Astronomical Society</em>. 1935;95:16–36.</li>
-        <li id="ref-08">Walker E. H. Cosmological Theories and the Average Density of Matter. <em>Quart. J. Math.</em>. 1937;8:316–330.</li>
-        <li id="ref-09">Perlmutter S., Aldering G., Goldhaber G., et al. Measurements of Ω and Λ from High‑Redshift Supernovae. <em>Astrophysical Journal</em>. 1999;517(2):565–586.</li>
-        <li id="ref-10">Eisenstein D. J., Zehavi I., Hogg D. W., et al. Detection of the Baryon Acoustic Peak in the Large‑Scale Correlation Function of SDSS Luminous Red Galaxies. <em>Astrophysical Journal</em>. 2005;633(2):560–574.</li>
+        <li id="ref-07">
+          Robertson H. P.
+          <ul style="list-style-type: lower-alpha;">
+            <li>On the Foundations of Relativistic Cosmology. <em>Proceedings of the National Academy of Sciences of the United States of America</em>. 1929;15(11):822–829.</li>
+            <li>Kinematics and World-Structure. <em>Astrophysical Journal</em>. 1935;82:284–301.</li>
+            <li>Kinematics and World-Structure II. <em>Astrophysical Journal</em>. 1936;83:187–201.</li>
+            <li>Kinematics and World-Structure III. <em>Astrophysical Journal</em>. 1936;83:257–271.</li>
+          </ul>
+        </li>
+        <li id="ref-08">
+          Walker A. G.
+          <ul style="list-style-type: lower-alpha;">
+            <li>On Riemannian Spaces with Spherical Symmetry about a Line, and the Conditions for Isotropy in General Relativity. <em>Quarterly Journal of Mathematics</em>. 1935;os-6(1):81–93.</li>
+            <li>On Milne’s Theory of World-Structure. <em>Proceedings of the London Mathematical Society</em>. 1937;s2-42(1):90–127.</li>
+          </ul>
+        </li>
+        <li id="ref-09">Perlmutter S., Aldering G., Goldhaber G., et al. Measurements of Ω and Λ from High-Redshift Supernovae. <em>Astrophysical Journal</em>. 1999;517(2):565–586.</li>
+        <li id="ref-10">Eisenstein D. J., Zehavi I., Hogg D. W., et al. Detection of the Baryon Acoustic Peak in the Large-Scale Correlation Function of SDSS Luminous Red Galaxies. <em>Astrophysical Journal</em>. 2005;633(2):560–574.</li>
         <li id="ref-11">Planck Collaboration. Planck 2018 results. VI. Cosmological parameters. <em>Astronomy &amp; Astrophysics</em>. 2020;641:A6.</li>
-        <li id="ref-12">Riess A. G., Casertano S., Yuan W., et al. A 2.4% Determination of the Local Value of the Hubble Constant. <em>Astrophysical Journal</em>. 2016;826(1):56.</li>
-        <li id="ref-13">Hawking S. W., Penrose R. The Singularities of Gravitational Collapse and Cosmology. <em>Proceedings of the Royal Society A</em>. 1970;314(1519):529–548.</li>
-        <li id="ref-14">Einstein A. Über das Relativitätsprinzip und die aus demselben gezogenen Folgerungen. <em>Jahrbuch der Radioaktivität</em>. 1907;4:411–462.</li>
-        <li id="ref-15">Painlevé P. La mécanique classique et la théorie de la relativité. <em>C. R. Acad. Sci. (Paris)</em>. 1921;173:677–680.</li>
-        <li id="ref-16">Gullstrand A. Allgemeine Lösung des statischen Einkörperproblems in der Einsteinschen Gravitationstheorie. <em>Arkiv. Mat. Astron. Fys.</em>. 1922;16(8):1–15.</li>
-        <li id="ref-17">Carroll S. M. <em>Spacetime and Geometry: An Introduction to General Relativity</em>. San Francisco: Addison-Wesley; 2004.</li>
-        <li id="ref-18">Wald R. M. <em>General Relativity</em>. Chicago: University of Chicago Press; 1984.</li>
-        <li id="ref-19">Lemaître G. Un univers homogène de masse constante et de rayon croissant rendant compte de la vitesse radiale des nébuleuses extra-galactiques. <em>Annales de la Société Scientifique de Bruxelles</em>. 1933;A53:51–85.</li>
-        <li id="ref-20">Tolman R. C. Effect of Inhomogeneity on Cosmological Models. <em>Proceedings of the National Academy of Sciences</em>. 1934;20(3):169–176.</li>
+        <li id="ref-12">Riess A. G., Macri L. M., Hoffmann S. L., et al. A 2.4% Determination of the Local Value of the Hubble Constant. <em>Astrophysical Journal</em>. 2016;826(1):56.</li>
+        <li id="ref-13">Hawking S. W., Penrose R. The Singularities of Gravitational Collapse and Cosmology. <em>Proceedings of the Royal Society A</em>. 1970;314(1519):529–548.</li>
+        <li id="ref-14">Einstein A. Über das Relativitätsprinzip und die aus demselben gezogenen Folgerungen. <em>Jahrbuch der Radioaktivität und Elektronik</em>. 1907;4:411–462.</li>
+        <li id="ref-15">Painlevé P. La mécanique classique et la théorie de la relativité. <em>Comptes Rendus de l’Académie des Sciences (Paris)</em>. 1921;173:677–680.</li>
+        <li id="ref-16">Gullstrand A. Allgemeine Lösung des statischen Einkörperproblems in der Einsteinschen Gravitationstheorie. <em>Arkiv för Matematik, Astronomi och Fysik</em>. 1922;16(8):1–15.</li>
+        <li id="ref-17">Carroll S. M. <em>Spacetime and Geometry: An Introduction to General Relativity</em>. San Francisco: Addison-Wesley; 2004.</li>
+        <li id="ref-18">Wald R. M. <em>General Relativity</em>. Chicago: University of Chicago Press; 1984.</li>
+        <li id="ref-19">
+          Lemaître G.
+          <ul style="list-style-type: lower-alpha;">
+            <li>Un Univers homogène de masse constante et de rayon croissant rendant compte de la vitesse radiale des nébuleuses extra-galactiques. <em>Annales de la Société Scientifique de Bruxelles</em>. 1927;47:49–59.</li>
+            <li>A Homogeneous Universe of Constant Mass and Increasing Radius Accounting for the Radial Velocity of Extra-Galactic Nebulae. <em>Monthly Notices of the Royal Astronomical Society</em>. 1931;91(5):483–490.</li>
+            <li>L’Univers en expansion. <em>Annales de la Société Scientifique de Bruxelles</em>. 1933;53:51–85.</li>
+          </ul>
+        </li>
+        <li id="ref-20">Tolman R. C. Effect of Inhomogeneity on Cosmological Models. <em>Proceedings of the National Academy of Sciences of the United States of America</em>. 1934;20(3):169–176.</li>
         <li id="ref-21">Bondi H. Spherically Symmetrical Models in General Relativity. <em>Monthly Notices of the Royal Astronomical Society</em>. 1947;107(5–6):410–425.</li>
-        <li id="ref-22">Israel W. Singular hypersurfaces and thin shells in general relativity. <em>Nuovo Cimento B</em>. 1966;44:1–14.</li>
-        <li id="ref-23">Weinberg S. Gravitation and Cosmology: Principles and Applications of the General Theory of Relativity. New York: Wiley; 1972.</li>
-        <li id="ref-24">Peebles P. J. E. <em>Principles of Physical Cosmology</em>. Princeton: Princeton University Press; 1993.</li>
-        <li id="ref-25">Hogg D. W. Distance measures in cosmology. arXiv:astro-ph/9905116. 1999.</li>
-        <li id="ref-26">Poisson E., Visser M. Thin-shell wormholes: Linearization stability. <em>Phys. Rev. D</em>. 1995;52(10):7318–7321.</li>
-        <li id="ref-27">Ashtekar A., Krishnan B. Dynamical Horizons and Their Properties. <em>Phys. Rev. D</em>. 2003;68(10):104030.</li>
-        <li id="ref-28">Bekenstein J. D. Black holes and entropy. <em>Phys. Rev. D</em>. 1973;7(8):2333–2346.</li>
-        <li id="ref-29">Hawking S. W. Particle creation by black holes. <em>Commun. Math. Phys.</em>. 1975;43(3):199–220.</li>
-        <li id="ref-30">Dodelson S. <em>Modern Cosmology</em>. Academic Press; 2003.</li>
-        <li id="ref-31">Faraoni V., Jacques A. Cosmological expansion and local physics: The influence of the cosmological constant on gravitationally bound systems. <em>Phys. Rev. D</em>. 2007;76(6):063510.</li>
-        <li id="ref-32">Poisson E. <em>A Relativist’s Toolkit: The Mathematics of Black-Hole Mechanics</em>. Cambridge University Press; 2004.</li>
-        <li id="ref-33">de Sitter W. On the relativity of inertia: remarks concerning Einstein’s latest hypothesis. <em>MNRAS</em>. 1917;78:3–28.</li>
+        <li id="ref-22">
+          Israel W.
+          <ul style="list-style-type: lower-alpha;">
+            <li>Singular hypersurfaces and thin shells in general relativity. <em>Il Nuovo Cimento B</em>. 1966;44B:1–14.</li>
+            <li>Erratum to “Singular hypersurfaces and thin shells in general relativity.” <em>Il Nuovo Cimento B</em>. 1967;48B:463.</li>
+          </ul>
+        </li>
+        <li id="ref-23">Weinberg S. <em>Gravitation and Cosmology: Principles and Applications of the General Theory of Relativity</em>. New York: Wiley; 1972.</li>
+        <li id="ref-24">Peebles P. J. E. <em>Principles of Physical Cosmology</em>. Princeton: Princeton University Press; 1993.</li>
+        <li id="ref-25">Hogg D. W. Distance measures in cosmology. arXiv:astro-ph/9905116. 1999.</li>
+        <li id="ref-26">Poisson E., Visser M. Thin-shell wormholes: Linearization stability. <em>Physical Review D</em>. 1995;52(12):7318–7321.</li>
+        <li id="ref-27">Ashtekar A., Krishnan B. Dynamical Horizons and Their Properties. <em>Physical Review D</em>. 2003;68(10):104030.</li>
+        <li id="ref-28">Bekenstein J. D. Black holes and entropy. <em>Physical Review D</em>. 1973;7(8):2333–2346.</li>
+        <li id="ref-29">Hawking S. W. Particle creation by black holes. <em>Communications in Mathematical Physics</em>. 1975;43(3):199–220.</li>
+        <li id="ref-30">Dodelson S. <em>Modern Cosmology</em>. San Diego: Academic Press; 2003.</li>
+        <li id="ref-31">Faraoni V., Jacques A. Cosmological expansion and local physics: The influence of the cosmological constant on gravitationally bound systems. <em>Physical Review D</em>. 2007;76(6):063510.</li>
+        <li id="ref-32">Poisson E. <em>A Relativist’s Toolkit: The Mathematics of Black-Hole Mechanics</em>. Cambridge: Cambridge University Press; 2004.</li>
+        <li id="ref-33">
+          de Sitter W.
+          <ul style="list-style-type: lower-alpha;">
+            <li>On the relativity of inertia. Remarks concerning Einstein’s latest hypothesis. <em>Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen</em>. 1917;19(II):1217–1225.</li>
+            <li>On Einstein’s Theory of Gravitation and Its Astronomical Consequences. Third Paper. <em>Monthly Notices of the Royal Astronomical Society</em>. 1917;78:3–28.</li>
+          </ul>
+        </li>
         <li id="ref-34">Spradlin M., Strominger A., Volovich A. Les Houches Lectures on de Sitter Space. arXiv:hep-th/0110007. 2001.</li>
-        <li id="ref-35">Bressange G. F. On the extension of the concept of thin shells to the Einstein–Cartan theory. <em>Classical and Quantum Gravity</em>. 2000;17(13):2509–2520.</li>
+        <li id="ref-35">Bressange G. F. On the extension of the concept of thin shells to the Einstein-Cartan theory. <em>Classical and Quantum Gravity</em>. 2000;17(13):2509–2523.</li>
       </ol>
     </section>
   </main>

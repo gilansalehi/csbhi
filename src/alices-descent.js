@@ -9,19 +9,29 @@
 
     var ctx = canvas.getContext('2d');
 
-    var W = canvas.width;          // 1860
-    var H = canvas.height;         // 440
-    var BHX = Math.round(W / 3);     // 620  — BH centre (singularity), left third
-    var BHY = Math.round(H / 2);     // 220  — BH centre, vertical midpoint
-    var RH = 105;                   // event-horizon radius in pixels (r = 1)
-    var EXT = 185;                   // pixels per unit r in the exterior (r > 1)
+    var RH          = 105;  // px per r-unit; event-horizon radius
+    var GRID_UNIT   = RH;   // single scale used everywhere — never mix with anything else
+    var LEFT_UNITS  = 3;    // r-units visible left  of the singularity
+    var RIGHT_UNITS = 7;    // r-units visible right of the singularity
 
-    /* Map geometric r → pixels from BH centre.
-       Interior (r ≤ 1): linear.  Exterior (r > 1): linear with scale EXT. */
+    /* Canvas dimensions derived from coordinate range — changing LEFT/RIGHT_UNITS
+       automatically resizes the canvas and repositions every element. */
+    canvas.width  = (LEFT_UNITS + RIGHT_UNITS) * GRID_UNIT;  // 1050
+    canvas.height = 440;
+
+    var W   = canvas.width;              // 1050
+    var H   = canvas.height;             // 440
+    var BHX = LEFT_UNITS * GRID_UNIT;   // 210 — singularity x-position
+    var BHY = Math.round(H / 2);        // 220
+
+    var starsOn      = true;
+    var roadOn       = true;
+    var gridMode     = 'off'; // 'off' | 'radial' | 'square'
+    var localFrameOn = false;
+
+    /* Map geometric r → pixels from BH centre. Uniform single scale. */
     function rPx(r) {
-        if (r <= 0) return 0;
-        if (r <= 1) return r * RH;
-        return RH + (r - 1) * EXT;
+        return Math.max(0, r * GRID_UNIT);
     }
 
     /* Bob's fixed screen position — placed at r = 6 in the diagram,
@@ -50,8 +60,7 @@
     }
 
     function drawStars() {
-        var toggle = document.getElementById('alice-stars-toggle');
-        if (!toggle || !toggle.checked) return;
+        if (!starsOn) return;
         stars.forEach(function (s) {
             var dx = s.x - BHX, dy = s.y - BHY;
             if (dx * dx + dy * dy < (RH + 5) * (RH + 5)) return;
@@ -62,16 +71,16 @@
         });
     }
 
-    /* Horizontal r-axis with tick marks and a scale-break squiggle at r = 5 */
+    /* Horizontal r-axis with tick marks and a scale-break squiggle at r = 5. */
     function drawAxis() {
-        var x5 = BHX + rPx(5);   // x-position of r = 5 tick
-        var sqL = x5 + 14;        // squiggle left edge
-        var sqR = BOB_X - 22;      // squiggle right edge
-        var mx = (sqL + sqR) / 2; // squiggle mid-point
+        var x5  = BHX + rPx(5);
+        var sqL = x5 + 14;
+        var sqR = BOB_X - 22;
+        var mx  = (sqL + sqR) / 2;
 
-        /* axis segment: horizon → r = 5 */
+        /* dashed axis segment: horizon → r = 5 */
         ctx.beginPath();
-        ctx.moveTo(BHX + RH + 2, BHY);
+        ctx.moveTo(BHX + rPx(1) + 2, BHY);
         ctx.lineTo(x5, BHY);
         ctx.strokeStyle = 'rgba(255,255,255,0.13)';
         ctx.lineWidth = 1;
@@ -79,7 +88,7 @@
         ctx.stroke();
         ctx.setLineDash([]);
 
-        /* scale-break squiggle between r = 5 and Bob */
+        /* scale-break squiggle: r = 5 → Bob (represents r → ∞) */
         ctx.beginPath();
         ctx.moveTo(sqL, BHY);
         ctx.lineTo(mx - 9, BHY);
@@ -104,21 +113,11 @@
             ctx.fillText('r\u202f=\u202f' + r, x, BHY + 33);
         });
 
-        /* tick + label at Bob's position: r → ∞ */
+        /* Bob's tick — no label (squiggle already signals r → ∞) */
         ctx.beginPath();
         ctx.moveTo(BOB_X, BHY - 7); ctx.lineTo(BOB_X, BHY + 7);
         ctx.strokeStyle = 'rgba(255,255,255,0.22)';
         ctx.lineWidth = 1; ctx.stroke();
-        ctx.font = '9px monospace';
-        ctx.fillStyle = 'rgba(255,255,255,0.28)';
-        ctx.textAlign = 'center';
-        ctx.fillText('r \u2192 \u221e', BOB_X, BHY + 33);
-
-        /* r → arrow at far right */
-        ctx.font = '10px monospace';
-        ctx.fillStyle = 'rgba(255,255,255,0.18)';
-        ctx.textAlign = 'left';
-        ctx.fillText('r \u2192', W - 28, BHY + 4);
     }
 
     function drawBH() {
@@ -186,6 +185,7 @@
     /* draw Alice at geometric coordinate r on the horizontal r-axis */
     function drawAlice(r, rLabel) {
         var ax = BHX + rPx(r), ay = BHY;
+        if (localFrameOn) drawAliceGrid(ax, ay, r);
         drawDot(ax, ay, 'Alice', '#ef5350');
         if (rLabel) {
             ctx.font = '9px monospace';
@@ -225,15 +225,11 @@
         ctx.strokeStyle = color; ctx.lineWidth = 1.5; ctx.stroke();
     }
 
-    /* Polar coordinate grid overlay (toggled by checkbox) */
-    function drawGrid() {
-        var toggle = document.getElementById('alice-grid-toggle');
-        if (!toggle || !toggle.checked) return;
-
+    /* Radial (polar) coordinate grid — all radii use GRID_UNIT, never rPx() */
+    function drawRadialGrid() {
         /* — concentric circles at r = 1, 2, 3, 4, 5 — */
         [1, 2, 3, 4, 5].forEach(function (r) {
-            var rpx = rPx(r);
-            if (BHX + rpx > W + rpx) return;
+            var rpx = r * GRID_UNIT;   // uniform scale: r=1 → RH px, r=2 → 2·RH px …
             var isUnit = (r === 1);
             ctx.beginPath();
             ctx.arc(BHX, BHY, rpx, 0, Math.PI * 2);
@@ -260,22 +256,132 @@
             ctx.setLineDash([]);
         }
 
-        /* — "r = 1" label on the unit circle — */
         ctx.font = 'bold 9px monospace';
         ctx.fillStyle = 'rgba(255,255,255,0.55)';
         ctx.textAlign = 'left';
         ctx.fillText('r\u202f=\u202f1  (unit circle)', BHX + RH * 0.707 + 4, BHY - RH * 0.707 - 4);
     }
 
+    /* Flat Cartesian (Minkowski) grid — step = GRID_UNIT so lines align with horizon */
+    function drawSquareGrid() {
+        var step = GRID_UNIT;        // 105px — same unit as the horizon circle radius
+        var horizonX = BHX + GRID_UNIT; // r=1 horizon in grid coordinates
+
+        /* x positions: anchor at horizon, extend outward; stepping back hits BHX (r=0) */
+        var xs = [];
+        for (var x = horizonX; x <= W; x += step) xs.push(x);
+        for (var x2 = horizonX - step; x2 >= 0; x2 -= step) xs.push(x2);
+
+        /* y positions: anchor at BHY, extend up and down */
+        var ys = [];
+        for (var y = BHY; y <= H; y += step) ys.push(y);
+        for (var y2 = BHY - step; y2 >= 0; y2 -= step) ys.push(y2);
+
+        xs.forEach(function (x) {
+            var isHorizon = (x === BHX + GRID_UNIT);
+            ctx.beginPath();
+            ctx.moveTo(x, 0); ctx.lineTo(x, H);
+            ctx.setLineDash(isHorizon ? [4, 4] : [3, 6]);
+            ctx.strokeStyle = isHorizon ? 'rgba(255,255,255,0.60)' : 'rgba(255,255,255,0.50)';
+            ctx.lineWidth = isHorizon ? 1.5 : 0.9;
+            ctx.stroke();
+        });
+
+        ys.forEach(function (y) {
+            var isAxis = (y === BHY);
+            ctx.beginPath();
+            ctx.moveTo(0, y); ctx.lineTo(W, y);
+            ctx.setLineDash(isAxis ? [4, 4] : [3, 6]);
+            ctx.strokeStyle = isAxis ? 'rgba(255,255,255,0.60)' : 'rgba(255,255,255,0.50)';
+            ctx.lineWidth = isAxis ? 1.5 : 0.9;
+            ctx.stroke();
+        });
+
+        ctx.setLineDash([]);
+
+        ctx.font = 'bold 9px monospace';
+        ctx.fillStyle = 'rgba(255,255,255,0.55)';
+        ctx.textAlign = 'left';
+        ctx.fillText('flat (Minkowski)', BHX + RH * 0.707 + 4, BHY - RH * 0.707 - 4);
+    }
+
+    /* Alice's local reference frame — mini-grid clipped around her position.
+       Outside (r ≥ 1): flat Cartesian grid (x/y aligned).
+       Inside  (r < 1): radial lines fanning from the singularity (the now-timelike
+                        r-direction) + vertical lines (the spacelike t-direction).
+       SIZE is chosen so BHX stays just outside the clip box even at r = 0.4. */
+    function drawAliceGrid(ax, ay, r) {
+        var SIZE   = 35;                     // px half-extent of clip box
+        var STEP   = 11;                     // px between lines
+        var N      = 3;                      // lines each side of centre
+        var inside = r < 1;
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(ax - SIZE, ay - SIZE, SIZE * 2, SIZE * 2);
+        ctx.clip();
+
+        ctx.strokeStyle = 'rgba(255,255,255,0.42)';
+        ctx.lineWidth   = 0.8;
+        ctx.setLineDash([3, 3]);
+
+        if (!inside) {
+            /* Flat Cartesian — horizontal and vertical lines */
+            for (var i = -N; i <= N; i++) {
+                ctx.beginPath();
+                ctx.moveTo(ax - SIZE, ay + i * STEP);
+                ctx.lineTo(ax + SIZE, ay + i * STEP);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(ax + i * STEP, ay - SIZE);
+                ctx.lineTo(ax + i * STEP, ay + SIZE);
+                ctx.stroke();
+            }
+        } else {
+            /* Inside horizon — radial x-lines converging toward singularity
+               + vertical y-lines (spacelike t-direction) */
+            var dist   = Math.max(ax - BHX, 1);   // px from singularity
+            var dAngle = STEP / dist;              // angular step (rad) for even spacing at Alice
+            var reach  = dist + SIZE + 10;         // extend past clip box
+
+            for (var i = -N; i <= N; i++) {
+                var angle = i * dAngle;
+                var ca = Math.cos(angle), sa = Math.sin(angle);
+                /* Extend the radial line in both directions so the clip box
+                   always shows it crossing Alice's position */
+                ctx.beginPath();
+                ctx.moveTo(BHX + ca * (dist - SIZE - 10),
+                           BHY + sa * (dist - SIZE - 10));
+                ctx.lineTo(BHX + ca * reach,
+                           BHY + sa * reach);
+                ctx.stroke();
+
+                /* Vertical (t = const, spacelike) */
+                ctx.beginPath();
+                ctx.moveTo(ax + i * STEP, ay - SIZE);
+                ctx.lineTo(ax + i * STEP, ay + SIZE);
+                ctx.stroke();
+            }
+        }
+
+        ctx.setLineDash([]);
+        ctx.restore();
+    }
+
+    /* Dispatcher — called after each slide draw */
+    function drawGrid() {
+        if (gridMode === 'radial') drawRadialGrid();
+        else if (gridMode === 'square') drawSquareGrid();
+    }
+
     /*  Highway perspective road — vanishing point at (BHX, BHY).
         The road fills the lower half of the canvas; the axis (y = BHY) is
         the horizon line.  Toggled by #alice-road-toggle. */
     function drawRoad() {
-        var toggle = document.getElementById('alice-road-toggle');
-        if (!toggle || !toggle.checked) return;
+        if (!roadOn) return;
 
-        var f      = H - BHY;   // 220 px  "focal length" (VP to canvas bottom)
-        var spread = 440;        // road half-width at canvas bottom
+        var f      = H - BHY;  // focal length: VP to canvas bottom
+        var spread = H;         // road half-width at canvas bottom
 
         // /* Road surface */
         // ctx.beginPath();
@@ -370,21 +476,6 @@
                 drawPath(5.9, 2.3);
                 var a = drawAlice(2.3, 'r \u2248 2.3');
                 drawBobStd();
-                ctx.beginPath();
-                var N = 36;
-                for (var i = 0; i <= N; i++) {
-                    var t = i / N;
-                    var sx = a.x + (BOB_X - a.x) * t;
-                    var sy = BHY + Math.sin(t * Math.PI * 11) * 6 * t;
-                    if (i === 0) ctx.moveTo(sx, sy); else ctx.lineTo(sx, sy);
-                }
-                ctx.strokeStyle = 'rgba(79,195,247,0.32)';
-                ctx.lineWidth = 1;
-                ctx.stroke();
-                ctx.font = 'italic 9px sans-serif';
-                ctx.fillStyle = 'rgba(79,195,247,0.5)';
-                ctx.textAlign = 'center';
-                ctx.fillText('signal redshifting', (a.x + BOB_X) / 2, BHY - 18);
                 drawTitle('Mid-Descent  (r > 1)');
             }
         },
@@ -407,23 +498,6 @@
                 ctx.setLineDash([3, 5]);
                 ctx.stroke();
                 ctx.setLineDash([]);
-                var g = 14;
-                ctx.strokeStyle = 'rgba(255,255,180,0.33)';
-                ctx.lineWidth = 0.8;
-                for (var i = -1; i <= 1; i++) {
-                    ctx.beginPath();
-                    ctx.moveTo(a.x - g, a.y - 28 + i * g * 0.55);
-                    ctx.lineTo(a.x + g, a.y - 28 + i * g * 0.55);
-                    ctx.stroke();
-                    ctx.beginPath();
-                    ctx.moveTo(a.x + i * g * 0.65, a.y - 40);
-                    ctx.lineTo(a.x + i * g * 0.45, a.y - 16);
-                    ctx.stroke();
-                }
-                ctx.font = 'italic 9px sans-serif';
-                ctx.fillStyle = 'rgba(255,255,180,0.5)';
-                ctx.textAlign = 'center';
-                ctx.fillText('locally flat (EP)', a.x, a.y - 50);
                 drawTitle('At the Horizon  (r = 1)');
             }
         },
@@ -439,14 +513,6 @@
                 drawPath(5.9, 0.5);
                 drawAlice(0.5, 'r \u2248 0.5');
                 drawBobStd();
-                var hEdgeX = BHX + RH;
-                ctx.fillStyle = 'rgba(255,70,70,0.72)';
-                ctx.font = 'bold 13px sans-serif';
-                ctx.textAlign = 'center';
-                ctx.fillText('\u2715', hEdgeX + 16, BHY - 4);
-                ctx.font = '9px sans-serif';
-                ctx.fillStyle = 'rgba(255,100,100,0.5)';
-                ctx.fillText('no signal can escape', hEdgeX + 16, BHY - 18);
                 ctx.font = 'italic 9px sans-serif';
                 ctx.fillStyle = 'rgba(255,220,100,0.52)';
                 ctx.textAlign = 'center';
@@ -499,16 +565,9 @@
                 ctx.fillStyle = 'rgba(255,160,160,0.65)';
                 ctx.font = '10px monospace';
                 ctx.fillText('\u03c4\u202f=\u202f2/3', BHX, BHY + 31);
-                /* Alice at r = 0.25 with arrow reaching to the singularity */
-                var alX = BHX + rPx(0.4), alY = BHY;
-                ctx.shadowBlur = 12; ctx.shadowColor = '#ef5350';
-                ctx.beginPath(); ctx.arc(alX, alY, 9, 0, Math.PI * 2);
-                ctx.fillStyle = '#ef5350'; ctx.fill(); ctx.shadowBlur = 0;
-                ctx.fillStyle = '#fff'; ctx.font = 'bold 10px sans-serif'; ctx.textAlign = 'center';
-                ctx.fillText('A', alX, alY + 4);
-                ctx.fillStyle = '#ef5350';
-                ctx.fillText('Alice', alX, alY - 16);
-                arrowLeft(alX - 12, BHX + 10, alY, 'rgba(239,83,80,0.72)');
+                /* Alice at r = 0.4 with arrow reaching to the singularity */
+                var a5 = drawAlice(0.4, null);
+                arrowLeft(a5.x - 12, BHX + 10, a5.y, 'rgba(239,83,80,0.72)');
                 /* Bob exterior */
                 drawBobStd();
 
@@ -545,31 +604,24 @@
                 ctx.arc(BHX, BHY, RH, 0, Math.PI * 2);
                 ctx.fillStyle = 'rgba(3,3,16,0.82)';
                 ctx.fill();
-                /* vanishing-point glow */
+                /* singularity — red, matching slide 5 (Alice approaches but never arrives) */
                 ctx.shadowBlur = 30;
-                ctx.shadowColor = '#ffcc44';
+                ctx.shadowColor = '#ff3333';
                 ctx.beginPath();
                 ctx.arc(BHX, BHY, 5, 0, Math.PI * 2);
-                ctx.fillStyle = '#ffdd55';
+                ctx.fillStyle = '#ff4444';
                 ctx.fill();
                 ctx.shadowBlur = 0;
-                ctx.fillStyle = 'rgba(255,220,80,0.88)';
+                ctx.fillStyle = 'rgba(255,110,110,0.88)';
                 ctx.font = 'bold 10px monospace';
                 ctx.textAlign = 'center';
                 ctx.fillText('r\u202f=\u202f0', BHX, BHY + 18);
-                ctx.fillStyle = 'rgba(255,200,80,0.65)';
+                ctx.fillStyle = 'rgba(255,160,160,0.65)';
                 ctx.font = '10px monospace';
                 ctx.fillText('\u03c4 \u2192 \u221e', BHX, BHY + 31);
                 /* Alice inside, on the r-axis, heading left */
-                var alX = BHX + rPx(0.4), alY = BHY;
-                ctx.shadowBlur = 12; ctx.shadowColor = '#ef5350';
-                ctx.beginPath(); ctx.arc(alX, alY, 9, 0, Math.PI * 2);
-                ctx.fillStyle = '#ef5350'; ctx.fill(); ctx.shadowBlur = 0;
-                ctx.fillStyle = '#fff'; ctx.font = 'bold 10px sans-serif'; ctx.textAlign = 'center';
-                ctx.fillText('A', alX, alY + 4);
-                ctx.fillStyle = '#ef5350';
-                ctx.fillText('Alice', alX, alY - 16);
-                arrowLeft(alX - 12, alX - 40, alY, 'rgba(239,83,80,0.55)');
+                var a6 = drawAlice(0.4, null);
+                arrowLeft(a6.x - 12, a6.x - 40, a6.y, 'rgba(239,83,80,0.55)');
                 /* Bob exterior */
                 drawBobStd();
 
@@ -595,10 +647,10 @@
         btnPrev.disabled = current === 0;
         btnNext.disabled = current === slides.length - 1;
 
-        /* Road toggle: only visible on the last slide */
-        var roadLabel = document.getElementById('alice-road-toggle-label');
-        if (roadLabel) {
-            roadLabel.style.display = current === slides.length - 1 ? '' : 'none';
+        /* Road button: only visible on the last slide */
+        var roadBtn = document.getElementById('alice-road-btn');
+        if (roadBtn) {
+            roadBtn.style.display = current === slides.length - 1 ? '' : 'none';
         }
     }
 
@@ -612,12 +664,38 @@
         if (e.key === 'ArrowRight' && current < slides.length - 1) { current++; render(); }
         if (e.key === 'ArrowLeft' && current > 0) { current--; render(); }
     });
-    var starsToggle = document.getElementById('alice-stars-toggle');
-    if (starsToggle) starsToggle.addEventListener('change', render);
-    var gridToggle = document.getElementById('alice-grid-toggle');
-    if (gridToggle) gridToggle.addEventListener('change', render);
-    var roadToggle = document.getElementById('alice-road-toggle');
-    if (roadToggle) roadToggle.addEventListener('change', render);
+
+    var frameBtn = document.getElementById('alice-frame-btn');
+    if (frameBtn) frameBtn.addEventListener('click', function () {
+        localFrameOn = !localFrameOn;
+        frameBtn.textContent = localFrameOn ? 'Hide Frame' : 'Local Frame';
+        render();
+    });
+
+    var starsBtn = document.getElementById('alice-stars-btn');
+    if (starsBtn) starsBtn.addEventListener('click', function () {
+        starsOn = !starsOn;
+        starsBtn.textContent = starsOn ? 'Hide Stars' : 'Show Stars';
+        render();
+    });
+
+    var gridBtn = document.getElementById('alice-grid-btn');
+    if (gridBtn) {
+        var GRID_LABELS = { 'off': 'Grid Off', 'radial': 'Radial Grid', 'square': 'Square Grid' };
+        var GRID_CYCLE  = ['off', 'radial', 'square'];
+        gridBtn.addEventListener('click', function () {
+            gridMode = GRID_CYCLE[(GRID_CYCLE.indexOf(gridMode) + 1) % GRID_CYCLE.length];
+            gridBtn.textContent = GRID_LABELS[gridMode];
+            render();
+        });
+    }
+
+    var roadBtn = document.getElementById('alice-road-btn');
+    if (roadBtn) roadBtn.addEventListener('click', function () {
+        roadOn = !roadOn;
+        roadBtn.textContent = roadOn ? 'Hide Road' : 'Show Road';
+        render();
+    });
 
     render();
 }());
