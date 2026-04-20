@@ -630,7 +630,6 @@
                 drawTitle('The Vanishing Point  (PG Interior: \u03c4 \u2192 \u221e)');
             }
         }
-
     ]; /* end slides */
 
     /* ================================================================
@@ -698,4 +697,37 @@
     });
 
     render();
+
+    /* Public API — render a specific slide to an off-screen canvas and return its data URL.
+       State (current slide, toggles) is saved and restored so the main canvas is unaffected. */
+    function captureSlide(n) {
+        var tmp = document.createElement('canvas');
+        tmp.width  = W;
+        tmp.height = H;
+        var savedCtx   = ctx;
+        var savedStars = starsOn;
+        var savedRoad  = roadOn;
+        var savedGrid  = gridMode;
+        var savedFrame = localFrameOn;
+
+        ctx          = tmp.getContext('2d');
+        starsOn      = true;
+        roadOn       = true;
+        gridMode     = 'off';
+        localFrameOn = false;
+
+        slides[n].draw();
+        var url = tmp.toDataURL('image/png');
+
+        ctx          = savedCtx;
+        starsOn      = savedStars;
+        roadOn       = savedRoad;
+        gridMode     = savedGrid;
+        localFrameOn = savedFrame;
+
+        return url;
+    }
+
+    window.alicesDescent = { captureSlide: captureSlide };
+    document.dispatchEvent(new CustomEvent('alicesDescent:ready'));
 }());

@@ -52,6 +52,8 @@
 
     img { max-width: 100%; }
 
+    figure { margin: 1em 0; }
+
     .hidden { display: none; }
 
     .end-ref {
@@ -1362,6 +1364,19 @@
 </body>
 <footer>
   <script type="module" src="src/alices-descent.js"></script>
+  <script>
+    /* Replace §3 static figure images with improved canvas-rendered slides once the module is ready */
+    document.addEventListener('alicesDescent:ready', function () {
+      var figs = document.querySelectorAll('#section3 figure img');
+      for (var i = 0; i < figs.length; i++) {
+        if (window.alicesDescent) {
+          var url = window.alicesDescent.captureSlide(i);
+          figs[i].src = url;
+          figs[i].style.width = '100%';
+        }
+      }
+    });
+  </script>
   <script>
     (function () {
       var btn  = document.getElementById('theme-toggle');
