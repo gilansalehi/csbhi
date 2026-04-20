@@ -17,21 +17,22 @@
       line-height: 1.7;
     }
 
+    a { color: currentColor; }
     /* Canvas pinned behind everything */
     #bg-canvas {
       position: fixed;
       inset: 0;
-      width: 100%;
+      width: auto;
       height: 100%;
     }
 
-    /* Scrollable text column — top-right quadrant */
+    /* Scrollable text column — top-left quadrant */
     #scroll-col {
       position: relative;
       z-index: 1;
-      width: min(38vw, 440px);
-      margin-left: auto;
-      margin-right: 3vw;
+      width: min(38vw, 420px);
+      margin-left: 2em;
+      margin-right: auto;
       padding: 0 0.8em;
     }
 
@@ -59,9 +60,16 @@
 
     .card aside {
       border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(36, 36, 46, 0.80);
       padding: 0.9em 1em;
-      margin-top: 1em;
+      margin: 1em 0;
       font-style: italic;
+      font-weight: 700;
+      font-size: 1.1em;
+    }
+
+    .muted {
+      color: #dde1e988;
     }
 
     /* Nav */
@@ -105,7 +113,8 @@
     #intro {
       min-height: 100vh;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      padding-top: 8vh;
       scroll-snap-align: start;
       scroll-snap-stop: always;
     }
@@ -114,7 +123,8 @@
     #outro {
       min-height: 100vh;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      padding-top: 8vh;
       scroll-snap-align: start;
       scroll-snap-stop: always;
     }
@@ -184,18 +194,6 @@
     <section class="slide-section" data-slide="0">
       <div class="card">
         <h2>Before the Fall</h2>
-        <p>
-          To conceptualize the coordinate switch, let us consider physics' two most famous astronauts,
-          Alice and Bob, in just the scenario Schwarzschild describes.
-          Their space station is in deep space, where the spacetime curvature is negligible, observing
-          a supermassive black hole from a super-safe distance.
-          For now, let us say they are hovering far above the horizon, at \(r\gg 1\), with thrusters,
-          so that Bob's clock tracks the idealized FLRW comoving time parameter with negligible error.
-          On the station they experience inertial motion, and by the Equivalence Principle they measure
-          space to be flat in all directions.
-          Alice departs in the G-Odyssic, a spacecraft built to survive the journey to the black hole
-          interior, and maneuvers until the SMBH's gravity pulls her in.
-        </p>
         <p>
           Initially, Alice and Bob are very close (both at \(r\gg 1\)), and their relative velocity is
           small. Alice sees Bob and the station receding in her rearview cameras, eventually shrinking
@@ -307,6 +305,15 @@
         <p>
           Because \(F(r)\sim r\sqrt{\rho_\Lambda}\) near \(r=0\), we have \(\tau_{\rm int}\to\infty\):
           Alice never reaches a singularity in finite proper time.
+        </p>
+      </div>
+    </section>
+
+    <!-- Outro -->
+    <div id="outro">
+      <div class="card">
+        <h2>A New Perspective</h2>
+        <p>
           The coordinate switch means the black hole singularity is not a point in <em>space</em>,
           but a point in <em>time</em> located at future infinity.
         </p>
@@ -315,15 +322,11 @@
           to intersect, so too will Alice never reach the singularity, where all geodesics appear
           to converge.
         </aside>
+        <p class="muted">
+          Continue reading: <a href="index.html#section4">
+          §4 — Infall Function: Painlevé–Gullstrand Form of FLRW →</a>
+        </p>
       </div>
-    </section>
-
-    <!-- Outro -->
-    <div id="outro">
-      <p style="color:rgba(255,255,255,0.38); font-size:0.85em;">
-        Continue reading: <a href="index.html#section4" style="color:rgba(255,255,255,0.55);">
-        §4 — Infall Function: Painlevé–Gullstrand Form of FLRW →</a>
-      </p>
     </div>
 
   </div><!-- /scroll-col -->

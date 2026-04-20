@@ -301,13 +301,6 @@
                     var sy = BHY + Math.sin(t * Math.PI * 11) * 6 * sc * t;
                     if (i === 0) ctx.moveTo(sx, sy); else ctx.lineTo(sx, sy);
                 }
-                ctx.strokeStyle = 'rgba(79,195,247,0.32)';
-                ctx.lineWidth = sc;
-                ctx.stroke();
-                ctx.font = 'italic ' + fs(9) + ' sans-serif';
-                ctx.fillStyle = 'rgba(79,195,247,0.5)';
-                ctx.textAlign = 'center';
-                ctx.fillText('signal redshifting', (a.x + BOB_X) / 2, BHY - 18 * sc);
                 drawTitle('Mid-Descent  (r > 1)');
             }
         },
@@ -321,28 +314,6 @@
                 drawBobStd();
                 ctx.beginPath();
                 ctx.moveTo(BOB_X, BOB_Y); ctx.lineTo(a.x, a.y);
-                ctx.strokeStyle = 'rgba(79,195,247,0.07)';
-                ctx.lineWidth = sc;
-                ctx.setLineDash([3 * sc, 5 * sc]);
-                ctx.stroke();
-                ctx.setLineDash([]);
-                var g = 14 * sc;
-                ctx.strokeStyle = 'rgba(255,255,180,0.33)';
-                ctx.lineWidth = 0.8 * sc;
-                for (var i = -1; i <= 1; i++) {
-                    ctx.beginPath();
-                    ctx.moveTo(a.x - g, a.y - 28 * sc + i * g * 0.55);
-                    ctx.lineTo(a.x + g, a.y - 28 * sc + i * g * 0.55);
-                    ctx.stroke();
-                    ctx.beginPath();
-                    ctx.moveTo(a.x + i * g * 0.65, a.y - 40 * sc);
-                    ctx.lineTo(a.x + i * g * 0.45, a.y - 16 * sc);
-                    ctx.stroke();
-                }
-                ctx.font = 'italic ' + fs(9) + ' sans-serif';
-                ctx.fillStyle = 'rgba(255,255,180,0.5)';
-                ctx.textAlign = 'center';
-                ctx.fillText('locally flat (EP)', a.x, a.y - 50 * sc);
                 drawTitle('At the Horizon  (r = 1)');
             }
         },
@@ -354,18 +325,6 @@
                 drawPath(5.9, 0.5);
                 drawAlice(0.5, 'r \u2248 0.5');
                 drawBobStd();
-                var hEdgeX = BHX + RH;
-                ctx.fillStyle = 'rgba(255,70,70,0.72)';
-                ctx.font = 'bold ' + fs(13) + ' sans-serif';
-                ctx.textAlign = 'center';
-                ctx.fillText('\u2715', hEdgeX + 16 * sc, BHY - 4 * sc);
-                ctx.font = fs(9) + ' sans-serif';
-                ctx.fillStyle = 'rgba(255,100,100,0.5)';
-                ctx.fillText('no signal can escape', hEdgeX + 16 * sc, BHY - 18 * sc);
-                ctx.font = 'italic ' + fs(9) + ' sans-serif';
-                ctx.fillStyle = 'rgba(255,220,100,0.52)';
-                ctx.textAlign = 'center';
-                ctx.fillText('r \u2194 t  (roles exchanged below horizon)', BHX, BHY + 44 * sc);
                 drawTitle('Inside the Horizon  (r < 1)');
             }
         },
@@ -418,6 +377,7 @@
                 ctx.fillText('Alice', alX, alY - 16 * sc);
                 arrowLeft(alX - 12 * sc, BHX + 10 * sc, alY, 'rgba(239,83,80,0.72)');
                 drawBobStd();
+
                 drawAxis();
                 drawTitle('Vacuum Schwarzschild \u2014 Singularity at r\u00a0=\u00a00');
             }
