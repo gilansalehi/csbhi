@@ -19,12 +19,12 @@
     :root {
       --bg:   #ffffff;
       --text: #1a1a1a;
-      --text-2: #000000;
+      --text-2: #3c3c3c;
     }
     [data-theme="dark"] {
       --bg:   #0e0e16;
       --text: #dde1e9;
-      --text-2: #ffffff;
+      --text-2: #c3c3c3;
     }
 
     body {
@@ -71,6 +71,8 @@
     .eq-ref-md     { transform: translateY(-3rem); }
     .eq-ref-tall   { transform: translateY(-3.5rem); }
     .eq-ref-x-tall { transform: translateY(-4.5rem); }
+
+    .note { font-size: .75em; color: var(--text-2) }
 
     .canvas-toggles { color: #aaa; }
     .canvas-hint    { font-size: 0.76em; margin-top: 0.45em; }
@@ -558,7 +560,7 @@
     <section id="section4">
       <h2>Infall Function: Painlevé–Gullstrand Form of FLRW</h2>
 
-      <p>
+      <p class="note">
         <em>
         In what follows, \(r\) continues to denote the same areal radius introduced earlier in the Schwarzschild picture.
         Here it is rewritten in FLRW variables as \(r=a(t)R\), so that the same radial coordinate can be read through the cosmological geometry.
@@ -633,7 +635,7 @@
     </section>
     <section id="section5">
       <h2>Geometric Duality</h2>
-      <p>
+      <p class="note">
         <em>
           Once the junction is established, the Schwarzschild radius and the FLRW–PG radius are identified as the same areal radius \(r\).
           On the shell \(R=1\), this gives the exact relation \(r=a(\tau)\).
