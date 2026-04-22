@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="version" content="0.2">
-  <meta name="revised" content="2026-04-20">
+  <meta name="revised" content="2026-04-22">
   <meta name="dcterms.created" content="2025-01-16">
-  <meta name="dcterms.modified" content="2026-04-20">
+  <meta name="dcterms.modified" content="2026-04-22">
   <link rel="canonical" href="https://www.gilansalehi.com/csbhi" />
 
   <title>Geometric Duality of Black-Hole Interiors</title>
@@ -166,11 +166,11 @@
     <section id="abstract">
       <h2>Abstract</h2>
       <details>
+        <summary>
+        <i>The Universe is a Black Hole.</i>
+      </summary>
         <p id="resume-here">
-          <summary>
-          <i>The Universe is a Black Hole.</i>
-        </summary>
-      </p>
+        </p>
 
         <p>
           We present a geometric duality between late‐time cosmic acceleration and black‐hole infall by
@@ -563,7 +563,8 @@
       <p class="note">
         <em>
         In what follows, \(r\) continues to denote the same areal radius introduced earlier in the Schwarzschild picture.
-        Here it is rewritten in FLRW variables as \(r=a(t)R\), so that the same radial coordinate can be read through the cosmological geometry.
+        Here it is rewritten in FLRW variables as \(r=a(t)R\), giving the exact geometric relation used in the FLRW \(\to\) Painlevé–Gullstrand
+        construction. The broader conformal inversion \(a \leftrightarrow 1/r\) enters later as the interior reading of that same geometry.
         </em>
       </p>
 
@@ -637,9 +638,10 @@
       <h2>Geometric Duality</h2>
       <p class="note">
         <em>
-          Once the junction is established, the Schwarzschild radius and the FLRW–PG radius are identified as the same areal radius \(r\).
-          On the shell \(R=1\), this gives the exact relation \(r=a(\tau)\).
-          The broader inverse relation \(a \leftrightarrow 1/r\) belongs to the duality map through which the matched geometry is read as a black-hole interior.
+          Once the junction is established, the Schwarzschild and FLRW–PG descriptions share a single areal radius \(r\).
+          On the matching shell \(R=1\), one has the exact shell identity \(r=a(\tau)\).
+          This shell identity is the local geometric realization of the broader conformal inversion
+          \(a \leftrightarrow 1/r\), through which the same matched geometry is read from the interior.
         </em>
       </p>
       <p>
@@ -654,7 +656,7 @@
       <p>
         <strong>Alice (interior frame):</strong><br/>
         \[
-          \frac{d\,r_{A}}{d\tau} \;=\; +H\,r
+          \frac{d\,r_{A}}{d\tau} \;=\; +H\,r_A
           \;\Longrightarrow\;
           r_{A}(\tau)
           = r_0\, e ^ { +H(\tau-\tau_0) }.
@@ -666,11 +668,16 @@
         Since freely-falling observers obey
         \(\dot r = -F(r)\) and \(F(r)=H\,r\),
         \[
-          \frac{d\,r_{B}}{d\tau} \;=\; -H\,r
+          \frac{d\,r_{B}}{d\tau} \;=\; -H\,r_B
           \;\Longrightarrow\;
           r_{B}(\tau)
           = r_0\, e ^ { -H(\tau-\tau_0) }.
         \]
+      </p>
+
+      <p>
+        These exponentials should be read as corresponding descriptions under the geometric duality,
+        not as the same differential equation viewed in a single frame.
       </p>
 
       <p>Under the sign flip \(\tau \to -\tau\), Bob’s exponential decay exactly mirrors Alice’s exponential growth:</p>
@@ -704,9 +711,8 @@
 
       <h3>Horizon Matching</h3>
       <p>
-        To validate the geometric duality, we smoothly join the FLRW interior (Alice’s region) to the
-        Schwarzschild–de Sitter exterior (Bob’s region) across the timelike hypersurface \(Σ\) at comoving label \(R=1\),
-        where the areal radius is \(r=a(\tau)\). This requires:
+        To validate the geometric duality, we smoothly join the FLRW interior (Alice’s region) to the Schwarzschild–de Sitter exterior (Bob’s region)
+        across the timelike hypersurface \(Σ\) at comoving label \(R=1\), where the areal radius is \(r=a(\tau)\). This requires:
       </p>
 
       <p>
@@ -811,8 +817,8 @@
         <p>
           Geometric Duality turns this model inside-out.  By filling a
           Schwarzschild-like horizon with pressureless dust plus a constant energy density and insisting on a smooth
-          Painlevé–Gullstrand slicing, one <em>inevitably</em> recovers the very same Λ term in the unique infall
-          function.  When that interior is matched to an exterior FLRW universe and read through \(a \leftrightarrow 1/r\), the resulting expansion
+          Painlevé–Gullstrand slicing, one recovers the very same Λ term in the unique infall function.
+          When that interior is matched to an exterior FLRW universe and read through \(a \leftrightarrow 1/r\), the resulting expansion
           history exactly reproduces the flat ΛCDM Friedmann evolution—and all the key observables (Hubble rate, cosmic age,
           distance–redshift relations) follow without invoking any extra dark-energy fluid.
         </p>
@@ -834,8 +840,8 @@
           </li>
           <li>
             <strong>Coincidence explained:</strong>
-            Observers crossing the horizon always encounter the moment \(\rho_{m}=\rho_{\Lambda}\) at \(a=1\), so
-            \(\Omega_{m}\approx\Omega_{\Lambda}\) arises as a geometric inevitability rather than fine-tuning.
+            In the normalized shell picture, the matching scale is fixed at \(a=1\), so
+            \(\Omega_{m}\approx\Omega_{\Lambda}\) is recast as a geometric feature rather than a coincidence.
           </li>
           <li>
             <strong>Geometric origin of acceleration:</strong>
@@ -865,29 +871,28 @@
         <ul>
           <li>
             <strong>Horizon thermodynamics:</strong>
-            The horizon structure considered here is dynamical, not stationary.
-            The standard vacuum area law is therefore not the whole thermodynamic story in this setting,
-            and no complete entropy or flux law is claimed in this paper.
+            The familiar black-hole area law is derived for stationary vacuum horizons.  The horizon structure used here is more general;
+            deriving a complete entropy or flux law is beyond the scope of this paper.
           </li>
           <li>
             <strong>Shell vs horizon:</strong>
-            The timelike matching shell is not the null horizon itself.
-            It is the smooth geometric seam on which the interior and exterior descriptions are matched,
-            with continuous induced metric and extrinsic curvature at the background level.
+            The matching is imposed at the horizon scale.
+            At each moment, the shell’s spherical cross-section coincides with that boundary;
+            over time, those spheres trace out the matching shell.
           </li>
           <li>
             <strong>Shell relations:</strong>
             The junction identifies a single areal radius \(r\) across the Schwarzschild and FLRW–PG descriptions.
-            On the matching shell \(R=1\), that radius satisfies the exact geometric relation \(r=a(\tau)\).
-            The inverse relation \(a \leftrightarrow 1/r\) is not a second shell equation, but the broader duality
-            map that gives the matched geometry its interior interpretation.
+            On the matching shell \(R=1\), one has the exact shell identity \(r=a(\tau)\).
+            This shell identity is the local geometric realization of the broader conformal inversion
+            \(a \leftrightarrow 1/r\), through which the same geometry is read from the interior.
           </li>
         </ul>
       </section>
       <section id="section8-3">
         <h3>Limitations</h3>
         <p>
-          We have made a number of assumptions to keep the model restricted the simplest classical regime.
+          We have made a number of assumptions to keep the model restricted to the simplest classical regime.
         </p>
         <ul>
           <li>
@@ -944,11 +949,11 @@
       <p>
         By interpreting our observable universe as the interior of a cosmic‐scale Schwarzschild horizon at \(r=1\),
         we have shown that all principal features of ΛCDM follow directly from geometric duality.  In particular,
-        the identification
+        the conformal inversion
       </p>
       <p>
         \begin{equation}
-          a = \frac{1}{r}
+          a \leftrightarrow \frac{1}{r}
         \end{equation}
       </p>
       <p>
@@ -960,7 +965,7 @@
         \end{equation}
       </p>
       <p>
-        yields the exact Friedmann evolution
+        yields, within the matched FLRW–PG construction, the exact Friedmann evolution
       </p>
       <p>
         \begin{equation}
@@ -1218,8 +1223,8 @@
 
       <p>
         A striking way to see the construction in a unified geometric light is to observe that the late‐time
-        exterior FLRW region with dust + Λ asymptotes to de Sitter space, which itself can be embedded as a
-        4-dimensional hyperboloid in 5-dimensional Minkowski space.  Concretely:
+        exterior FLRW region with dust + Λ asymptotes to de Sitter spacetime, which may be realized as a
+        4-dimensional hyperboloid embedded in 5-dimensional Minkowski space.  Concretely:
       </p>
 
       <p>
