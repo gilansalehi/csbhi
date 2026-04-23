@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="version" content="0.2">
+  <meta name="revised" content="2026-04-22">
+  <meta name="dcterms.created" content="2025-01-16">
+  <meta name="dcterms.modified" content="2026-04-22">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi" />
+
+  <title>Geometric Duality of Black-Hole Interiors</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <link href="/src/css/index.css" rel="stylesheet" />
+
+  <!-- Apply saved theme before first paint to prevent flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    }());
+  </script>
+</head>
+
+<body>
+  <button id="theme-toggle" aria-label="Toggle dark mode">☀</button>
+  <h1>Geometric Duality of Black-Hole Interiors</h1>
+  <main>
+    <section id="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#section1">Introduction &amp; Historical Background</a></li>
+        <li><a href="#section2">ΛCDM Model: Predictions &amp; Limitations</a></li>
+        <li><a href="#section3">A Leap of Faith</a></li>
+        <li><a href="#section4">Infall Function: Painlevé–Gullstrand Form of FLRW</a></li>
+        <li><a href="#section5">Geometric Duality</a></li>
+        <li><a href="#section6">Junction Matching &amp; Singularity Deferral</a></li>
+        <li><a href="#section7">Observables</a></li>
+        <li><a href="#section8">Discussion</a></li>
+        <li><a href="#section9">Conclusion</a></li>
+      </ol>
+
+      <h3>Appendices</h3>
+      <ol>
+        <li><a href="#appendixA">Appendix A: Derivation of the Infall Function</a></li>
+        <li><a href="#appendixB">Appendix B: Israel–Darmois junction conditions</a></li>
+        <li><a href="#appendixC">Appendix C: Numerical Estimate of Λ from Geometric Duality</a></li>
+        <li><a href="#appendixD">Appendix D: Connection to 5D de Sitter embedding</a></li>
+        <li><a href="#appendixE">Appendix E: Interactive — Alice's Descent</a></li>
+      </ol>
+
+      <h3>References</h3>
+      <ol>
+        <li class="hidden"><a href="#acknowledgements">Acknowledgements</a></li>
+        <li><a href="#references">References</a></li>
+      </ol>
+    </section>
+
+    <aside class="legend" style="border: 1px solid; padding: 1em;">
+      <strong>Legend (Conventions):</strong>
+      Throughout this paper we work in geometrized units where
+      \( c=1 \), \( G=1 \), and choose the mass‐scale so that \( 2M=1 \).
+      In these units, all lengths and times are measured in multiples of the Schwarzschild radius,
+      and the event horizon lies at \(r=1\).
+      The metric signature is \((-,+,+,+)\).
+    </aside>
+
+    <section id="abstract">
+      <h2>Abstract</h2>
+      <details>
+        <summary>
+        <i>The Universe is a Black Hole.</i>
+      </summary>
+        <p id="resume-here">
+        </p>
+
+        <p>
+          We present a geometric duality between late‐time cosmic acceleration and black‐hole infall by
+          embedding a flat FLRW patch in a Schwarzschild–de Sitter exterior and expressing the interior in
+          Painlevé–Gullstrand form.
+        </p>
+
+        <p>
+          In the exterior chart, with coordinate time \( t \), the areal radius evolves as
+          \begin{equation}
+          \frac{dr}{dt} \;=\; -\,F(r),
+          \quad
+          F(r) \;=\; r\,\sqrt{\frac{8\pi G}{3}\,\rho},
+          \end{equation}
+          where \( \rho = \rho_{m} r^{3}\ + \rho_{\Lambda} \) is the energy density contained in \( r \).
+        </p>
+
+        <p>
+          In the interior FLRW chart, with proper time \( \tau \), the matching shell follows
+          \begin{equation}
+          r(\tau) \;=\; a(\tau)
+          \;\propto\; e^{+H\,\tau},
+          \quad
+          H \;=\;\sqrt{\frac{8\pi G}{3}\,\rho}.
+          \end{equation}
+        </p>
+
+        <p>
+          A perspective‐shift thought experiment compares these two exponentials under the sign flip \( \tau \to -\tau \),
+          showing that cosmic inflation is mathematically equivalent to inertial infall.
+        </p>
+
+        <p>
+          This construction suggests dark energy may emerge naturally from the interior geometry of a cosmic horizon,
+          rather than requiring an explicit fluid with negative pressure.  The geometric model estimates
+          \begin{equation}
+          \Lambda \approx 1.6\times10^{-52}\,\mathrm{m^{-2}},
+          \end{equation}
+          within 50% of the conventionally inferred value, and we anticipate that re‐analysing data within a
+          geometric framework will drive the predicted and observed Λ into even closer agreement.
+        </p>
+      </details>
+    </section>
+
+    <section id="section1">
+      <h2>You Are Here</h2>
+
+      <p>
+        In Euclidean geometry, Pythagoras tells us that the distance \(ds\) between two points in a Cartesian coordinate
+        grid \((x,y)\) is given by
+      </p>
+      <p>
+        \begin{equation}
+        ds^{2} = dx^{2} + dy^{2}
+        \end{equation}
+
+        <span class="ref end-ref eq-ref">[<a href="#ref-01">1</a>]</span>
+      </p>
+      <p>
+        This immediately generalizes to three (and higher) dimensions:
+      </p>
+      <p>
+        \begin{equation}
+        ds^{2} = dx^{2} + dy^{2} + dz^{2} + \dots
+        \end{equation}
+      </p>
+      <p>
+        This positive-definite quadratic form of the Euclidean metric is invariant under rotations and translations, providing a universal measure of distance and forming the geometric backbone of Newtonian physics.
+      </p>
+      <p>
+        In 1905, Einstein unified space and time in his theory of Special Relativity, replacing the simple metric with
+        the spacetime interval:
+      </p>
+      <p>
+        \begin{equation}
+        ds^{2} = -\,dt^{2} + dx^{2} + dy^{2} + dz^{2}
+        \end{equation}
+
+        <span class="ref end-ref eq-ref">[<a href="#ref-02">2</a>]</span>
+      </p>
+      <p>
+        or, for purely radial separations,
+      </p>
+      <p>
+        \begin{equation}
+        ds^{2} = -\,dt^{2} + dr^{2}.
+        \end{equation}
+      </p>
+
+      <p>
+        Minkowski (1908) interpreted this geometrically to show that events lie on a four-dimensional manifold with
+        Lorentzian signature \((-,+,+,+)\), and that \(ds^{2}\) plays exactly the role of a metric distance <span class="ref">[<a href="#ref-03">3</a>]</span>.
+        Crucially, the negative sign on the temporal component distinguishes timelike \((ds^{2} < 0)\) from spacelike \((ds^{2} > 0)\)
+        separations, enforcing the invariant light-cone structure that governs causality and underpinning the hallmark
+        relativistic effects of time dilation and length contraction.
+      </p>
+
+      <p>
+        Einstein’s theory of General Relativity (1915) promotes the metric \(g_{\mu\nu}(x)\) to a dynamical field.
+        Free-falling particles follow geodesics determined by the Christoffel symbols (first derivatives of \(g\)),
+        while the manifold’s curvature—encoded in the Riemann and Ricci tensors (second derivatives of \(g\))—comes from energy
+        and momentum. This relationship is described in Einstein's field equations (with \( c = G = 1 \)):
+      </p>
+      <p>
+        \begin{equation}
+        G_{\mu\nu}
+        = R_{\mu\nu} - \tfrac12\,R\,g_{\mu\nu}
+        = 8\pi\,T_{\mu\nu}
+        \end{equation}
+
+        <span class="ref end-ref eq-ref">[<a href="#ref-04">4</a>]</span>
+      </p>
+
+      <p>
+        In 1916 Schwarzschild found the first unique spherically symmetric vacuum solution of these field equations,
+        describing a Black Hole:
+      </p>
+      <p>
+        \begin{equation}
+        ds^{2}
+        = -\Bigl(1 - \frac{2M}{r}\Bigr)\,dt^{2}
+        + \Bigl(1 - \frac{2M}{r}\Bigr)^{-1}\,dr^{2}
+        + r^{2}\,d\Omega^{2}.
+        \end{equation}
+
+        <span class="ref end-ref eq-ref">[<a href="#ref-05">5</a>]</span>
+      </p>
+      <p>
+        Adopting conventional units where \(2M=1\) locates the Black Hole's Event Horizon at \(r=1\).
+        If we only consider radial motion, the \(d\Omega\) term goes to 0, leaving just
+      </p>
+      <p>
+        \begin{equation}
+        ds^{2}
+        = -\Bigl(1 - \frac{1}{r}\Bigr)\,dt^{2}
+        + \Bigl(1 - \frac{1}{r}\Bigr)^{-1}\,dr^{2}
+        \end{equation}
+      </p>
+      <p>
+        Above the Event Horizon (\( r > 1 \)), the factor \((1 - 1/r)\) is positive, so \(t\) remains a timelike
+        coordinate and \(r\) remains spacelike, in accordance with our usual notion of time and space, but
+        below the Event Horizon (\( r < 1 \)), the factor \((1 - 1/r)\) becomes negative, flipping the signs in front of
+        \(dt^{2}\) and \(dr^{2}\) and thus exchanging the roles of \(t\) and \(r\): the radial direction becomes
+        timelike and the timelike direction becomes spacelike.
+      </p>
+      <p>
+        But what does it mean for space and time to exchange roles at the horizon?
+      </p>
+    </section>
+    <section id="section2">
+      <h2>ΛCDM Model: Predictions &amp; Limitations</h2>
+
+      <p>
+        But first: what does it mean for the coordinate roles to be fixed?
+        In standard cosmology we enforce a global comoving time parameter \(t\) that remains timelike everywhere,
+        so space and time never swap roles.  This gives the spatially flat FLRW line element:
+      </p>
+      <p>
+        \begin{equation}
+          ds^{2} = -\,dt^{2} + a(t)^{2}\bigl(dR^{2} + R^{2}\,d\Omega^{2}\bigr).
+        \end{equation}
+      </p>
+
+      <p>
+        The expansion dynamics follow from the Friedmann equations <span class="ref">[<a href="#ref-06">6</a>]</span>:
+      </p>
+      <p>
+        \begin{equation}
+          H^{2} = \frac{8\pi G}{3}\bigl(\rho_{m} + \rho_{r} + \rho_{\Lambda}\bigr),
+          \quad
+          \frac{\ddot a}{a} = -\frac{4\pi G}{3}\bigl(\rho_{m} + 2\rho_{r} - 2\rho_{\Lambda}\bigr),
+        \end{equation}
+      </p>
+      <p>
+        where \(\rho_{m}\propto a^{-3}\), \(\rho_{r}\propto a^{-4}\), and \(\rho_{\Lambda}=\Lambda/(8\pi G)\).
+      </p>
+
+      <p>ΛCDM excels at matching:</p>
+      <ul>
+        <li>Type Ia supernovae indicating late‐time acceleration
+            <span class="ref">[<a href="#ref-09">9</a>],</span>
+        </li>
+        <li>Baryon Acoustic Oscillation scales
+            <span class="ref">[<a href="#ref-10">10</a>],</span>
+        </li>
+        <li>Cosmic Microwave Background anisotropies
+          <span class="ref">[<a href="#ref-11">11</a>],</span>
+        </li>
+        <li>Hubble expansion rate (\(H_{0}\approx67\text{–}73\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\))
+          <span class="ref">[<a href="#ref-11">11</a>, <a href="#ref-12">12</a>].</span>
+        </li>
+      </ul>
+
+      <p>Yet ΛCDM faces deep conceptual and observational challenges:</p>
+      <ul>
+        <li>
+          <strong>Cosmological constant problem:</strong>
+          Quantum‐field estimates of \(\rho_{\Lambda}\) exceed observations by 50+ orders of magnitude.
+        </li>
+        <li>
+          <strong>Fine-tuning:</strong>
+          Why is \(\rho_{\Lambda}\) nonzero yet so extraordinarily small?
+        </li>
+        <li>
+          <strong>Coincidence problem:</strong>
+          Why do we happen to live at the epoch where \(\Omega_{m}\approx\Omega_{\Lambda}\)?
+        </li>
+        <li>
+          <strong>No direct detection:</strong>
+          Dark energy interacts only via gravity, with no nongravitational signature.
+        </li>
+        <li>
+          <strong>Hubble Tension:</strong>
+          A persistent discrepancy between local distance‐ladder and CMB‐inferred values of \(H_{0}\) <span class="ref">[<a href="#ref-11">11</a>, <a href="#ref-12">12</a>]</span>.
+        </li>
+        <li>
+          <strong>Inevitable singularities:</strong>
+          Hawking–Penrose theorems guarantee classical GR produces spacetime singularities under reasonable conditions
+          <span class="ref">[<a href="#ref-13">13</a>].</span>
+        </li>
+      </ul>
+
+      <p>
+        By fixing the comoving slicing, ΛCDM sidesteps the coordinate‐role swap seen at a black‐hole horizon.
+        Is it possible that ΛCDM is overlooking something of great significance?
+      </p>
+    </section>
+    <section id="section3">
+      <h2>A Leap of Faith</h2>
+      <p style="font-size:0.82em; margin-bottom:1.2em;">
+        <a href="leap-of-faith.html" style="opacity:0.55;">↗ Follow Alice’s descent — interactive slideshow</a>
+      </p>
+
+      <p>
+        To conceptualize the coordinate switch, let us consider physics’ two most famous astronauts, Alice and Bob, in
+        just the scenario Schwarzschild describes.
+        Their space station is in deep space, where the spacetime curvature is negligible, observing a supermassive
+        black hole (SMBH) from a super‐safe distance.
+        For now, let us say they are hovering far above the horizon, at \(r\gg 1\) (in conventional units where \(r=2M=1\)) with thrusters,
+        so that Bob's clock tracks the idealized FLRW comoving time parameter with negligible error.
+        On the station they experience inertial motion, and by the Equivalence Principle <span class="ref">[<a href="#ref-14">14</a>]</span>
+        they measure space to be flat in all directions.
+        Alice departs in the G‐Odyssic, a spacecraft built to survive the journey to the black hole interior, and
+        maneuvers until the SMBH’s gravity pulls her in.
+      </p>
+
+      <p>
+        Initially, Alice and Bob are very close (both at \(r\gg 1\)), and their relative velocity is small.
+        Alice sees Bob and the station receding in her rearview cameras, eventually shrinking into a single point of
+        light in the sky behind her, while she lets gravity pull the G‐Odyssic straight down.
+        Meanwhile, Bob sees Alice begin to drift inward and fall toward the SMBH, accelerating as she does.
+        He plots their positions on a large piece of graph paper, with the SMBH drawn as a unit circle (horizon at
+        \(r=1\), singularity at \(r=0\)), which looks like this:
+      </p>
+      <figure>
+        <img src="images/Fig1.webp" />
+        <figcaption>
+          <em>Fig 1. Alice &amp; Bob near each other, both at \(r\gg 1\) (well outside the horizon at \(r=1\)).</em>
+        </figcaption>
+      </figure>
+
+      <p>
+        Bob knows two things from General Relativity <span class="ref">[<a href="#ref-18">18</a>]</span>:
+        <ul>
+          <li>
+            In his own coordinate time \(t\), he will never see Alice cross the horizon at \(r=1\),
+            nor receive any signal from her once she does.
+            As \(t\to\infty\), her light and radio pulses become infinitely redshifted and fade away.
+          </li>
+          <li>
+            In Alice’s proper time \(\tau\), she will reach \( r=1 \) after a finite interval and then continue inward in free fall.
+          </li>
+        </ul>
+        Because Alice's motion remains inertial during the entire journey, she registers no forces.
+        In her local frame, her clock ticks normally, and she measures space as flat.
+        But what she experiences and what Bob sees are starkly different.
+      </p>
+
+      <p>
+        As Alice free‐falls toward the horizon, her radial coordinate \(r(\tau)\) decreases, and her speed relative to Bob increases.
+        The black hole grows larger and larger in her viewport.
+        In the unit‐circle diagram, Alice slowly approaches the event horizon located at \(r=1\)—see Figure 2.
+      </p>
+      <figure>
+        <img src="images/Fig2.webp" />
+        <figcaption>
+          <em>Fig 2. Alice in mid‐descent (\(r>1\)), moving toward the horizon; Bob remains far out at \(r\gg1\).</em>
+        </figcaption>
+      </figure>
+
+      <p>
+        At the precise moment Alice’s coordinate reaches \(r=1\), Bob’s reception interval between successive radio
+        pulses stretches to infinity—he sees her signal smear across the event horizon.
+        To him, Alice asymptotically approaches \(r=1\) as \(t\to+\infty\).
+        Yet in Alice’s local frame, crossing \(r=1\) is unremarkable: she registers no sudden forces, space appears locally flat,
+        and her proper‐time \(\tau\) continues smoothly, as required by the Equivalence Principle.
+        In the unit‐circle diagram, she simply passes through the perimeter—see Figure 3.
+      </p>
+      <figure>
+        <img src="images/Fig3.webp" />
+        <figcaption>
+          <em>Fig 3. Alice exactly on the horizon (\(r=1\)), Bob still far at \(r\gg1\).</em>
+        </figcaption>
+      </figure>
+
+      <p>
+        As Alice moves past \(r=1\), Bob’s station vanishes from her instruments entirely—
+        his radio pulses have redshifted to zero.
+        In fact, <em>all</em> light from above the horizon shifts from red to black.
+        Yet aboard the freely-falling G-Odyssic, nothing changes: her local spacetime remains perfectly flat (Minkowskian),
+        just as the Equivalence Principle demands.
+      </p>
+      <figure>
+        <img src="images/Fig4.webp" />
+        <figcaption>
+          <em>
+            Fig 4. Just inside the horizon (\(r < 1\)), Alice’s local lab remains Minkowskian;
+            Bob’s signals have vanished.
+          </em>
+        </figcaption>
+      </figure>
+
+      <p>
+        Below the horizon, Alice is in uncharted territory. According to GR, in pure‐vacuum Schwarzschild,
+        Alice’s proper‐time to reach the central singularity at \(r=0\) is finite:
+      </p>
+      <p>
+        \begin{equation}
+        \tau_{\text{vac}}
+        = \int_{1}^{0} \frac{dr}{\sqrt{1/r}}
+        = \tfrac{2}{3}
+        \end{equation}
+      </p>
+      <figure>
+        <img src="images/Fig5.webp" />
+        <figcaption>
+          <em>Fig 5. Alice at the singularity (\(r=0\)) in pure-vacuum Schwarzschild: she arrives at finite proper time
+            \(\tau=2/3\).</em>
+        </figcaption>
+      </figure>
+
+      <p>
+        But this pure-vacuum picture doesn’t account for the coordinate switch, and leads to an inevitable singularity at \(r=0\).
+
+        Is it possible to conceive the Black Hole interior in such a way that Alice doesn’t crash into the singularity?
+        And if she doesn’t hit it at \( r=0 \), where is it?
+        Fortunately, we already have the mental tools to intuitively grasp the interior geometry of the Black Hole.
+        All we need is a little perspective—see Figure 6.
+      </p>
+      <figure>
+        <img src="images/Fig6.webp" />
+        <figcaption>
+          <em>Fig 6. Radial infall lines converge at \(r=0\), recontextualizing the singularity as a vanishing point.</em>
+        </figcaption>
+      </figure>
+
+      <aside style="border: 1px solid; padding: 1em; max-width: 100%; min-width: 320px;">
+        Just as a driver will never reach the road's vanishing point, where parallel lines appear to intersect,
+        so too will Alice never reach the singularity, where all geodesics appear to converge.
+      </aside>
+
+      <p>
+        A pure-vacuum interior, as Schwarzschild envisioned, forces a real crash at \(r=0\) in finite \( \tau \).
+        This is where we depart from the standard story:
+        to preserve Alice’s inertial experience all the way down, we replace the vacuum with a dust + Λ
+        Painlevé-Gullstrand interior metric, characterized by the infall function \(F(r)\).
+        In that geometry, the proper‐time \( \tau_{\rm int} \) to \(r=0\) becomes
+      </p>
+      <p>
+        \begin{equation}
+        \tau_{\rm int} = \int_{0}^{1} \frac{dr}{F(r)},
+        \quad
+        F(r) = r \sqrt{\frac{8\pi G}{3}\rho}.
+        \end{equation}
+        <span class="ref end-ref eq-ref-tall">[<a href="#ref-15">15</a>, <a href="#ref-16">16</a>]</span>
+      </p>
+      <p>
+        Because \(F(r)\sim r\sqrt{\rho_{\Lambda}}\) near \(r=0\), \(\tau_{\rm int}\to\infty\), Alice never reaches a singularity
+        in finite proper time—her journey remains inertial, and her local space stays flat at every moment, as required
+        by the Equivalence Principle.  The coordinate switch means the black hole singularity is not a point in <em>space</em>,
+        but a point in <em>time</em> located at future infinity.
+      </p>
+      <p>
+        Furthermore, the specific geometry of this novel perspective has some very surprising qualities.
+      </p>
+    </section>
+    <section id="section4">
+      <h2>Infall Function: Painlevé–Gullstrand Form of FLRW</h2>
+
+      <p class="note">
+        <em>
+        In what follows, \(r\) continues to denote the same areal radius introduced earlier in the Schwarzschild picture.
+        Here it is rewritten in FLRW variables as \(r=a(t)R\), giving the exact geometric relation used in the FLRW \(\to\) Painlevé–Gullstrand
+        construction. The broader conformal inversion \(a \leftrightarrow 1/r\) enters later as the interior reading of that same geometry.
+        </em>
+      </p>
+
+      <p>
+        To model Alice's position at \( R < 1 \),
+        we introduce a global areal radius \( r \) via the scale factor \( a(t) \)
+        \[
+          r =
+          \begin{cases}
+            a(t)\,R, & R \le 1,\\[4pt]
+            R,        & R \ge 1,
+          \end{cases}
+        \]
+        ensuring \(g_{\theta\theta}=r^2\) is smooth across the matching shell \(R=1\).
+
+        <span class="ref">[<a href="#appendixB">B</a>]</span>
+      </p>
+      <p>
+        Holding comoving label \( R \) fixed, we differentiate \( r = a(t)R \):
+      \[
+        dr
+        = \frac{d a(t)}{d t}\,R\,d t \;+\; a(t)\,dR
+        = a(t)\,dR \;+\; H(t)\,r\,d t,
+        \quad
+        H(t)\equiv\frac{1}{a(t)}\frac{d a(t)}{d t}.
+      \]
+    </p>
+
+
+      <p>
+        Focusing on the radial direction (\(d\Omega=0\)), the FLRW line element becomes
+        \[
+          ds^2 = -\,dt^2 + (dr - H\,r\,dt)^2 + r^2\,d\Omega^2
+              \\ = -\bigl(1 - H^2r^2\bigr)\,dt^2 + 2H\,r\,dt\,dr + dr^2 + r^2\,d\Omega^2.
+        \]
+      </p>
+
+      <p>
+        Identifying cosmic proper time \(\tau\equiv t\) yields the Painlevé–Gullstrand form
+        \[
+          ds^2 = -\,d\tau^2 + \bigl(dr + F(r,\tau)\,d\tau\bigr)^2 + r^2\,d\Omega^2,
+          \quad F(r,\tau)=H(\tau)\,r.
+        \]
+      </p>
+
+      <p>
+        Finally, invoking Friedmann’s equation for a dust + Λ universe,
+        \[
+          H(\tau)^2 = \frac{8\pi G}{3}\bigl(\rho_{m}\,a^{-3}(\tau) + \rho_\Lambda\bigr),
+        \]
+        we arrive at the infall function:
+        \[
+          \boxed{F(r,\tau)=r\,\sqrt{\frac{8\pi G}{3}\bigl(\rho_{m}a^{-3}(\tau)+\rho_\Lambda\bigr)}}
+        \]
+      </p>
+      <p>
+        <em>
+          See:
+          <span class="ref">[
+            <a href="#ref-06">6</a>,
+            <a href="#ref-07">7</a>,
+            <a href="#ref-15">15</a>,
+            <a href="#ref-16">16</a>,
+            <a href="#ref-31">31</a>
+            ]
+          </span>
+        </em>
+        </p>
+    </section>
+    <section id="section5">
+      <h2>Geometric Duality</h2>
+      <p class="note">
+        <em>
+          Once the junction is established, the Schwarzschild and FLRW–PG descriptions share a single areal radius \(r\).
+          On the matching shell \(R=1\), one has the exact shell identity \(r=a(\tau)\).
+          This shell identity is the local geometric realization of the broader conformal inversion
+          \(a \leftrightarrow 1/r\), through which the same matched geometry is read from the interior.
+        </em>
+      </p>
+      <p>
+        On the matching shell \( R=1 \), the areal radius simply tracks the FLRW scale factor:
+        \( r(\tau)=a(\tau) \).
+      </p>
+
+      <p>
+        Consequently, we can consider both Alice and Bob's view of the \( R = 1 \) horizon in proper time:
+      </p>
+
+      <p>
+        <strong>Alice (interior frame):</strong><br/>
+        \[
+          \frac{d\,r_{A}}{d\tau} \;=\; +H\,r_A
+          \;\Longrightarrow\;
+          r_{A}(\tau)
+          = r_0\, e ^ { +H(\tau-\tau_0) }.
+        \]
+      </p>
+
+      <p>
+        <strong>Bob (exterior frame):</strong><br/>
+        Since freely-falling observers obey
+        \(\dot r = -F(r)\) and \(F(r)=H\,r\),
+        \[
+          \frac{d\,r_{B}}{d\tau} \;=\; -H\,r_B
+          \;\Longrightarrow\;
+          r_{B}(\tau)
+          = r_0\, e ^ { -H(\tau-\tau_0) }.
+        \]
+      </p>
+
+      <p>
+        These exponentials should be read as corresponding descriptions under the geometric duality,
+        not as the same differential equation viewed in a single frame.
+      </p>
+
+      <p>Under the sign flip \(\tau \to -\tau\), Bob’s exponential decay exactly mirrors Alice’s exponential growth:</p>
+      <p>
+        \begin{equation}
+          r_{B}(τ) = r_{0}\,e^{-Hτ}
+          \quad\longleftrightarrow\quad
+          r_{A}(τ) = r_{0}\,e^{+Hτ}.
+        \end{equation}
+      </p>
+
+      <p>
+        Late-time cosmic inflation is mathematically equivalent to geometrically scaled horizon infall.
+      </p>
+
+      <p>
+        <em>
+          See:
+          <span class="ref">[
+            <a href="#ref-06">6</a>,
+            <a href="#ref-15">15</a>,
+            <a href="#ref-16">16</a>,
+            <a href="#ref-31">31</a>
+            ]
+          </span>
+        </em>
+        </p>
+    </section>
+    <section id="section6">
+      <h2>Junction Matching &amp; Singularity Deferral</h2>
+
+      <h3>Horizon Matching</h3>
+      <p>
+        To validate the geometric duality, we smoothly join the FLRW interior (Alice’s region) to the Schwarzschild–de Sitter exterior (Bob’s region)
+        across the timelike hypersurface \(Σ\) at comoving label \(R=1\), where the areal radius is \(r=a(\tau)\). This requires:
+      </p>
+
+      <p>
+        <strong>Induced-metric continuity:</strong><br/>
+        The intrinsic metric on \(Σ\) from the FLRW side,
+        \[
+          ds^2_{\Sigma}\big|_{\rm FLRW} = -\,d\tau^2 + a^2(\tau)\,d\Omega^2,
+        \]
+        coincides with the metric induced by the exterior solution once proper time \(\tau\) is identified with the exterior cosmic time \( t \).
+      </p>
+      <p>
+        <strong>Extrinsic-curvature continuity:</strong><br/>
+        Computation of the extrinsic curvature on both sides yields identical tensors.  By the Israel–Darmois conditions, this implies vanishing surface stress–energy on \(Σ\).
+      </p>
+
+      <p>
+        Hence there is no thin-shell discontinuity, and proper time \(\tau\) extends smoothly through the horizon.
+      </p>
+
+      <h3>Singularity Deferral</h3>
+
+      <p>
+        Once the junction is established, freely-falling shells obey
+      </p>
+      <p>
+        \[
+          \frac{dr}{d\tau} \;=\;-F(r,\tau)\;=\;-H(\tau)\,r.
+        \]
+      </p>
+      <p>
+        Integrating toward \(r=0\) gives
+      </p>
+      <p>
+        \[
+          \tau_{\rm to\,0}
+          = \int_{r_{\rm shell}}^{0}\frac{dr}{H(\tau)\,r}
+          \;=\;\infty.
+        \]
+      </p>
+      <p>
+        Thus what would be a classical curvature singularity at \(r=0\) is deferred to \(\tau\to\infty\),
+        ensuring that an infalling observer never encounters a divergence in finite proper time.
+      </p>
+
+      <p><em>
+      See:
+        <span class="ref">[
+            <a href="#ref-22">22</a>,
+            <a href="#ref-26">26</a>
+            ]
+          </span>
+        </em></p>
+    </section>
+    <section id="section7">
+      <h2>Observables</h2>
+
+      <p>
+        Since the interior metric is exactly flat ΛCDM, it reproduces all standard expansion–history tests:
+        \[
+          H(a)^2 = \frac{8\pi G}{3}\bigl(\rho_{m}\,a^{-3}+\rho_\Lambda\bigr),
+          \quad
+          H(a)\equiv\frac{1}{a}\frac{da}{dt}.
+        \]
+        At \(a=1\),
+        \[
+          H_0 = \sqrt{\frac{8\pi G}{3}\bigl(\rho_{m}+\rho_\Lambda\bigr)}
+              \approx 67\text{–}73\;\mathrm{km\,s^{-1}Mpc^{-1}},
+        \]
+        in agreement with local and CMB‐inferred values.  The cosmic age
+        \[
+          T_0 = \int_0^1\frac{da}{a\,H(a)} \approx 13.8\;\mathrm{Gyr},
+        \]
+        and the luminosity and angular‐diameter distances
+        \[
+          D_L(z) = (1+z)\int_0^z\frac{dz'}{H(z')},
+          \quad
+          D_A(z) = \frac{1}{1+z}\int_0^z\frac{dz'}{H(z')},
+        \]
+        exactly match supernova, BAO, and CMB distance measures.
+      </p>
+      <p><em>
+        See: <span class="ref">[<a href="#ref-06">6</a>, <a href="#ref-11">11</a>, <a href="#ref-12">12</a>, <a href="#ref-25">25</a>]</span>
+      </em></p>
+    </section>
+    <section id="section8">
+      <h2>Discussion</h2>
+      <section id="section8-1">
+        <h3>Conceptual Interpretation</h3>
+
+        <p>
+          Accepting this Geometric Duality for Black Hole Interiors does a lot more than provide asymptotic continuity
+          for Alice's worldline. It has serious implications for our understanding of space, time, and the universe.
+        </p>
+
+        <p>
+          In the standard ΛCDM paradigm, the cosmological constant is introduced as an extra term in Einstein’s equations
+          purely to fit the observed late-time acceleration <span class="ref">[<a href="#ref-33">33</a>]</span>.  Although it provides an excellent phenomenological match to
+          supernova, CMB and large-scale-structure data, Λ remains an ad-hoc parameter without deeper geometric origin
+          <span class="ref">[<a href="#ref-24">24</a>]</span>.
+        </p>
+
+        <p>
+          Geometric Duality turns this model inside-out.  By filling a
+          Schwarzschild-like horizon with pressureless dust plus a constant energy density and insisting on a smooth
+          Painlevé–Gullstrand slicing, one recovers the very same Λ term in the unique infall function.
+          When that interior is matched to an exterior FLRW universe and read through \(a \leftrightarrow 1/r\), the resulting expansion
+          history exactly reproduces the flat ΛCDM Friedmann evolution—and all the key observables (Hubble rate, cosmic age,
+          distance–redshift relations) follow without invoking any extra dark-energy fluid.
+        </p>
+
+        <p>
+          This shift from treating Λ as an empirical adjustment to deriving it geometrically from first‐principles yields several
+          immediate conceptual benefits:
+        </p>
+        <ul>
+          <li>
+            <strong>Singularity resolution:</strong>
+            The proper-time to the center diverges, so what would have been a curvature singularity becomes a “future
+            endpoint” at \(\tau\to\infty\), preserving inertial continuity.
+          </li>
+          <li>
+            <strong>Natural scale setting:</strong>
+            Matching the horizon at \(r=1\) to \(a=1\) fixes the overall normalization of cosmic expansion—no arbitrary
+            rescaling of the scale factor is needed.
+          </li>
+          <li>
+            <strong>Coincidence explained:</strong>
+            In the normalized shell picture, the matching scale is fixed at \(a=1\), so
+            \(\Omega_{m}\approx\Omega_{\Lambda}\) is recast as a geometric feature rather than a coincidence.
+          </li>
+          <li>
+            <strong>Geometric origin of acceleration:</strong>
+            Cosmic acceleration arises because the interior geometry enforces an infall rate \(F(r)\) that naturally
+            switches from matter‐dominated deceleration (\(\rho_{m}\propto a^{-3}\)) to Λ‐driven acceleration at late
+            times.
+          </li>
+          <li>
+            <strong>Unified framework:</strong>
+            The same scale-factor that governs free-fall inside a black-hole interior also governs the universe’s
+            expansion, unifying two seemingly disparate regimes into a single metric framework.
+          </li>
+        </ul>
+
+        <p>
+          By explaining dark energy via the geometry of a cosmic horizon rather than in a mysterious fluid, Geometric Duality
+          offers a first-principles explanation for cosmic acceleration, reframes the cosmological-constant problem, and
+          suggests new avenues for understanding singularities and horizon thermodynamics. This geometric paradigm unifies the
+          notions of cosmic expansion and gravitational collapse under a single framework.
+        </p>
+      </section>
+      <section id="section8-2">
+        <h3>Clarifications</h3>
+        <p>
+          A few technical clarifications should be stated explicitly.
+        </p>
+        <ul>
+          <li>
+            <strong>Horizon thermodynamics:</strong>
+            The familiar black-hole area law is derived for stationary vacuum horizons.  The horizon structure used here is more general;
+            deriving a complete entropy or flux law is beyond the scope of this paper.
+          </li>
+          <li>
+            <strong>Shell vs horizon:</strong>
+            The matching is imposed at the horizon scale.
+            At each moment, the matching surface is a 2-sphere at the horizon scale; through time, those spheres trace out the timelike matching
+            shell Σ, while the horizon itself is the corresponding null causal boundary.
+          </li>
+          <li>
+            <strong>Shell relations:</strong>
+            The junction identifies a single areal radius \(r\) across the Schwarzschild and FLRW–PG descriptions.
+            On the matching shell \(R=1\), one has the exact shell identity \(r=a(\tau)\).
+            This shell identity is the local geometric realization of the broader conformal inversion
+            \(a \leftrightarrow 1/r\), through which the same geometry is read from the interior.
+          </li>
+        </ul>
+      </section>
+      <section id="section8-3">
+        <h3>Limitations</h3>
+        <p>
+          We have made a number of assumptions to keep the model restricted to the simplest classical regime.
+        </p>
+        <ul>
+          <li>
+            <strong>Symmetry:</strong>
+            The geometry is treated in the homogeneous, spherically symmetric limit.
+            Whether the matching shell and flow picture survive once that symmetry is relaxed remains open.
+          </li>
+          <li>
+            <strong>Matter content:</strong>
+            The interior source is taken to be dust + Λ.
+            Radiation, pressure, and other early-universe components are set aside, and may alter
+            the detailed form of the flow outside the late-time regime studied here.
+          </li>
+          <li>
+            <strong>Perturbative and semiclassical effects:</strong>
+            Only the background geometry is matched across the shell.
+            A full treatment must eventually include perturbations, along with semiclassical effects
+            that may become important near horizon or Planckian scales.
+          </li>
+        </ul>
+      </section>
+      <section id="section8-4">
+        <h3>Future Directions</h3>
+        <p>
+          We highlight three promising avenues for extending and testing Geometric Duality:
+        </p>
+        <ul>
+          <li>
+            <strong>Completing the Geometry:</strong>
+            Appendix D points toward a deeper geometric backbone, but only in outline.
+            The next step is to show that the higher-dimensional picture recovers the
+            Painlevé–Gullstrand flow directly, and that the same geometric framework
+            places the full dust + Λ infall law on firmer ground.
+          </li>
+          <li>
+            <strong>Horizon, Scale, and Age:</strong>
+            Our calculation of Λ points to a geometric relation between the cosmic horizon,
+            the Hubble radius, and the age of the universe. Making that relation explicit
+            may help clarify whether these quantities are independent inputs or different
+            expressions of one underlying structure.
+          </li>
+          <li>
+            <strong>Dark Matter:</strong>
+            A natural continuation of this work is to ask whether the geometric reinterpretation
+            proposed here for Dark Energy can be extended to the remaining mass discrepancy
+            attributed to Dark Matter, particularly in galaxy rotation curves.
+          </li>
+        </ul>
+      </section>
+    </section>
+    <section id="section9">
+      <h2>Conclusion</h2>
+
+      <p>
+        By interpreting our observable universe as the interior of a cosmic‐scale Schwarzschild horizon at \(r=1\),
+        we have shown that all principal features of ΛCDM follow directly from geometric duality.  In particular,
+        the conformal inversion
+      </p>
+      <p>
+        \begin{equation}
+          a \leftrightarrow \frac{1}{r}
+        \end{equation}
+      </p>
+      <p>
+        together with the infall law
+      </p>
+      <p>
+        \begin{equation}
+          \frac{dr}{d\tau} = -\,F(r)
+        \end{equation}
+      </p>
+      <p>
+        yields, within the matched FLRW–PG construction, the exact Friedmann evolution
+      </p>
+      <p>
+        \begin{equation}
+          H^{2} = \frac{8\pi G}{3}\bigl(\rho_{m}\,a^{-3} + \rho_{\Lambda}\bigr)
+        \end{equation}
+      </p>
+      <p>
+        reproducing the observed Hubble constant \(H_{0}\), cosmic age \(T_{0}\approx13.8\;\mathrm{Gyr}\), distance–redshift
+        relations, and CMB/BAO shift parameters.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Geometric dark energy:</strong>
+          Cosmic acceleration emerges from the interior geometry rather than an ad-hoc fluid.
+        </li>
+        <li>
+          <strong>Coincidence naturally explained:</strong>
+          Matching at \(r=1\) fixes \(a=1\) at the epoch \(\rho_{m}=\rho_{\Lambda}\), so \(\Omega_{m}\approx\Omega_{\Lambda}\)
+          today requires no fine-tuning.
+        </li>
+        <li>
+          <strong>Singularity deferred:</strong>
+          The central curvature singularity at \(r=0\) is pushed to \(\tau\to\infty\), opening paths toward non-singular
+          interior bounces.
+        </li>
+      </ul>
+      <p>
+        We have laid the groundwork for a unified geometric paradigm that ties gravitational collapse and cosmic expansion
+        into a single framework.  We anticipate that future work on perturbation matching, dynamical-horizon thermodynamics, and horizon accretion
+        dynamics will further clarify and test this framework. Ultimately, Geometric Duality unifies gravitational
+        collapse and cosmic expansion under a single geometric theory, offering fresh perspective into the nature of dark
+        energy, cosmic inflation, and the universe.
+      </p>
+    </section>
+
+    <section id="appendixA">
+      <h2>Appendix A: Derivation of the Infall Function</h2>
+
+      <h3>Painlevé–Gullstrand Transformation of Flat FLRW</h3>
+      <p>
+        We begin with the spatially flat FLRW metric (\(c=1\)):
+        \[
+          ds^2 = -\,dt^2 + a(t)^2\bigl(dR^2 + R^2\,d\Omega^2\bigr).
+        \]
+        Introduce the areal radius
+        \[
+          r = a(t)\,R,
+          \quad
+          dr = a\,dR + \dot a\,R\,dt = a\,dR + H\,r\,dt,
+          \quad
+          H(t)\equiv\frac{\dot a}{a}.
+        \]
+      </p>
+      <p>
+        Substituting \(dR=(dr-H\,r\,dt)/a\) and setting \(d\Omega=0\) gives
+        \[
+          ds^2 = -\,dt^2 + \bigl(dr - H\,r\,dt\bigr)^2 + r^2\,d\Omega^2
+              \\ = -\bigl(1-H^2r^2\bigr)dt^2 + 2H\,r\,dt\,dr + dr^2 + r^2\,d\Omega^2.
+        \]
+        Relabeling \(t\to\tau\) then yields the PG form
+        \[
+          ds^2 = -\,d\tau^2 + \bigl(dr + F(r,\tau)\,d\tau\bigr)^2 + r^2\,d\Omega^2,
+          \quad F(r,\tau)=H(\tau)\,r.
+        \]
+      </p>
+
+      <h3>Direct Einstein–Tensor Derivation</h3>
+      <p>
+        Alternatively, start from the ansatz
+        \[
+          ds^2 = -\,d\tau^2 + \bigl(dr + F(r,\tau)\,d\tau\bigr)^2 + r^2\,d\Omega^2.
+        \]
+        A straightforward computation of the Einstein tensor gives
+        \[
+          G_{\tau\tau} = \frac{1}{r^2}\frac{d}{dr}\bigl[r\,F(r,\tau)^2\bigr].
+        \]
+      </p>
+      <p>
+        Equating \(G_{\tau\tau}=8\pi G\,T_{\tau\tau}\) with
+        \(\;T_{\tau\tau}=\rho_{m}\,a^{-3}(\tau)+\rho_\Lambda\) (constant on each \(\tau\!={\rm const}\) slice) yields
+        \[
+          \frac{d}{dr}\bigl[r\,F^2\bigr]
+          =8\pi G\bigl(\rho_{m}a^{-3}+\rho_\Lambda\bigr)\,r^2.
+        \]
+        Integrating from \(0\) to \(r\) and imposing regularity at \(r=0\),
+        \[
+          r\,F^2 = \frac{8\pi G}{3}\bigl(\rho_{m}a^{-3}+\rho_\Lambda\bigr)\,r^3
+          \quad\Longrightarrow\quad
+          F(r,\tau)=r\,\sqrt{\frac{8\pi G}{3}\bigl(\rho_{m}a^{-3}(\tau)+\rho_\Lambda\bigr)}.
+        \]
+      </p>
+
+      <p class="footnote">
+        <em>See:
+          <span class="ref">[
+            <a href="#ref-06">6</a>,
+            <a href="#ref-07">7</a>,
+            <a href="#ref-08">8</a>,
+            <a href="#ref-15">15</a>,
+            <a href="#ref-16">16</a>,
+            <a href="#ref-18">18</a>,
+            <a href="#ref-32">32</a>
+            ]
+          </span>
+          </em>
+      </p>
+    </section>
+    <section id="appendixB">
+      <h2>Appendix B: Israel–Darmois Junction Conditions</h2>
+
+      <h3>Timelike Shell</h3>
+      <p>
+        The matching hypersurface \(Σ\) is defined by \(r=a(\tau)\).  In PG form the metric reads
+        \[
+          ds^2=-d\tau^2+(dr+F\,d\tau)^2+r^2d\Omega^2,
+        \]
+        so
+        \[
+          g^{\mu\nu}\partial_\mu r\,\partial_\nu r
+          =1-F^2(r,\tau),
+        \]
+        and \(Σ\) is timelike provided \(F^2 < 1\).
+      </p>
+
+      <h3>First Fundamental Form</h3>
+      <p>
+        On \(Σ\), \(dr/d\tau=-F\), so both interior and exterior induce
+        \[
+          ds^2_\Sigma=-d\tau^2+r^2d\Omega^2,
+        \]
+        satisfying \(g_{ab}^{\rm int}=g_{ab}^{\rm ext}\) without further rescaling.
+      </p>
+
+      <h3>Second Fundamental Form</h3>
+      <p>
+        With unit normal \(n_\mu=\{ -F,1,0,0\}/\sqrt{1+F^2}\), one finds
+        \[
+          K_{rr}=\partial_rF,\quad
+          K_{\theta\theta}=rF,\quad
+          K_{\phi\phi}=r\sin^2\!\theta\,F,
+        \]
+        and since \(F_{\rm int}=F_{\rm ext}\) on \(Σ\) all \(K_{ab}\) match, implying no δ‐stress.
+      </p>
+
+      <h3>Parameter Matching</h3>
+      <p>
+        Equating the interior shift \(F=H\,r\) with the exterior \(F=\sqrt{2GM/r+(\Lambda/3)r^2}\) gives
+        \[
+          H^2r^2 = \frac{2GM}{r} + \frac{\Lambda\,r^2}{3}
+          \;\Longrightarrow\;
+          H^2 = \frac{2GM}{r^3} + \frac{\Lambda}{3}.
+        \]
+        Using \(r=a(\tau)\) and the Friedmann relation \(H^2=\tfrac{8\pi G}{3}(\rho_{m}a^{-3}+\rho_\Lambda)\)
+        immediately fixes
+        \(\;M=\tfrac{4\pi G}{3}\rho_{m}\) and \(\;\Lambda=8\pi G\,\rho_\Lambda\).
+      </p>
+
+      <p class="footnote">
+        With both fundamental forms continuous and parameter identities satisfied, the Israel–Darmois conditions
+        guarantee a smooth, stress-free matching.  For full derivations, see Poisson & Visser <span class="ref">[<a href="#ref-26">26</a>]</span>
+        and Bressange <span class="ref">[<a href="#ref-35">35</a>]</span>.
+      </p>
+
+
+      <p class="footnote">
+        <em>See:
+          <span class="ref">[
+            <a href="#ref-06">6</a>,
+            <a href="#ref-15">15</a>,
+            <a href="#ref-16">16</a>,
+            <a href="#ref-22">22</a>,
+            <a href="#ref-26">26</a>,
+            <a href="#ref-35">35</a>
+            ]
+          </span>
+          </em>
+      </p>
+    </section>
+    <section id="appendixC">
+      <h2>Appendix C: Numerical Estimate of \(\Lambda\) from Geometric Duality</h2>
+
+      <p>
+        We derive the cosmological constant \(\Lambda\) from two independent geometric inputs in the
+        geometric duality framework—first from the cosmic horizon radius, then from the universe’s age—and
+        show they agree to within a few tens of percent.
+      </p>
+
+      <h3>From the Horizon Radius</h3>
+      <p>
+        The matching at \(r=1\) implies a Hubble radius
+        \[
+          R_H = \frac{c}{H_0},
+          \quad
+          H_0 = 70\;\mathrm{km\,s^{-1}Mpc^{-1}} \approx 2.27\times10^{-18}\,\mathrm{s^{-1}},
+        \]
+        giving
+        \[
+          R_H \approx \frac{3.0\times10^8\;\mathrm{m/s}}{2.27\times10^{-18}\;\mathrm{s^{-1}}}
+                \approx 1.32\times10^{26}\;\mathrm{m}.
+        \]
+        The geometric duality prediction is then
+        \[
+          \Lambda = \frac{3}{R_H^2}
+          \;\approx\;
+          \frac{3}{(1.32\times10^{26}\,\mathrm{m})^2}
+          \approx 1.7\times10^{-52}\;\mathrm{m^{-2}}.
+        \]
+      </p>
+
+      <h3>From the Universe’s Age</h3>
+      <p>
+        Equivalently, in geometric duality the shell’s proper‐time to the horizon scales like the cosmic age
+        \(T_0\approx13.8\;\mathrm{Gyr}=4.35\times10^{17}\,\mathrm{s}\), so
+        \[
+          \Lambda = \frac{3}{c^2\,T_0^2}
+          = \frac{3}{(3.0\times10^8\,\mathrm{m/s})^2\,(4.35\times10^{17}\,\mathrm{s})^2}
+          \approx 1.6\times10^{-52}\;\mathrm{m^{-2}}.
+        \]
+        These two estimates agree within \(\sim10\%\), validating the geometric input.
+      </p>
+
+      <h3>Corresponding Vacuum‐Energy Density</h3>
+      <p>
+        Converting \(\Lambda\) to an equivalent vacuum‐energy density via
+        \(\rho_{\Lambda} = \Lambda\,c^2/(8\pi G)\) yields
+        \[
+          \rho_{\Lambda}
+          \approx \frac{1.7\times10^{-52}\,\mathrm{m^{-2}}\times(3.0\times10^8\,\mathrm{m/s})^2}
+                {8\pi\times6.67\times10^{-11}\,\mathrm{m^3/kg\,s^2}}
+          \approx 9\times10^{-27}\;\mathrm{kg/m^3}.
+        \]
+      </p>
+
+      <p>
+        A more precise fit—including the matter contribution via
+        \(T_0=\int_0^1da/[a\sqrt{\Omega_m a^{-3}+\Omega_\Lambda}]\)—adjusts \(\Lambda\) by \(\lesssim10\%\).
+        For detailed cosmological fits, see standard reviews.
+      </p>
+      <p class="footnote">
+          <em>See:
+            <span class="ref">[
+              <a href="#ref-11">11</a>,
+              <a href="#ref-12">12</a>,
+              <a href="#ref-23">23</a>,
+              <a href="#ref-24">24</a>
+              ]
+            </span>
+          </em>
+        </p>
+
+    </section>
+    <section id="appendixD">
+      <h2>Appendix D: Connection to the 5D de Sitter Embedding</h2>
+
+      <p>
+        A striking way to see the construction in a unified geometric light is to observe that the late‐time
+        exterior FLRW region with dust + Λ asymptotes to de Sitter spacetime, which may be realized as a
+        4-dimensional hyperboloid embedded in 5-dimensional Minkowski space.  Concretely:
+      </p>
+
+      <p>
+        <strong>De Sitter asymptotics:</strong>  For dust + Λ in a flat FLRW patch, as \(a\to\infty\) (or \(t\gg H_{0}^{-1}\)),
+        the matter term redshifts away and
+        \begin{equation}
+          H^{2}(t)\;\to\;\frac{\Lambda}{3},\quad
+          a(t)\sim e^{\sqrt{\Lambda/3}\,t}.
+        \end{equation}
+        The metric becomes
+        \begin{equation}
+          ds^{2}\;\approx\;-\,dt^{2}+e^{2\sqrt{\Lambda/3}\,t}\,dx^{2},
+        \end{equation}
+        the standard flat‐slicing of de Sitter space.
+      </p>
+
+      <p>
+        <strong>5D hyperboloid:</strong>  That de Sitter geometry is isometric to the hyperboloid
+        \begin{equation}
+          -X_{0}^{2}+X_{1}^{2}+X_{2}^{2}+X_{3}^{2}+X_{4}^{2}
+          = \frac{3}{\Lambda},
+        \end{equation}
+        living in 5D Minkowski \((-++++\)).  Time evolution \(t\mapsto t+\Delta\) is a hyperbolic “boost”
+        in the \((X_{0},X_{4})\) plane, with boost angle \(\sqrt{\Lambda/3}\,c\,\Delta\).
+      </p>
+
+      <p>
+        <strong>Geometric Duality matching:</strong>  In geometric duality we glue our interior Schwarzschild‐like region at \(r=1\)
+        onto this dust + Λ FLRW patch.  Thus our cosmic horizon in the interior corresponds precisely to the
+        de Sitter hyperboloid’s “waist” in the 5D picture:
+        \begin{equation}
+          r=1\;\Longleftrightarrow\;\sqrt{X_{1}^{2}+X_{2}^{2}+X_{3}^{2}}= \sqrt{\tfrac{3}{\Lambda}}.
+        \end{equation}
+        The cosmological constant \(\Lambda=3/R_{H}^{2}\) is then exactly the inverse square of that hyperboloid
+        radius, tying the geometric duality mass/age input to the embedding curvature.
+      </p>
+
+      <p>
+        In this way, geometric duality’s interior-scaling and its matched FLRW exterior fit seamlessly into the
+        classic 5D hyperboloid embedding of de Sitter space.  Dark energy becomes nothing more than the curvature
+        radius of that hyperboloid—a geometric fact rather than an ad‐hoc parameter.
+      </p>
+
+      <p>
+        <em>See: <span class="ref">[<a href="#ref-33">33</a>, <a href="#ref-34">34</a>]</span></em>
+      </p>
+
+    </section>
+
+    <section id="appendixE">
+      <h2>Appendix E: Interactive — Alice's Descent</h2>
+      <p>
+        The slideshow below animates the six stages of Alice's free-fall described in
+        <a href="#section3">Section 3 (A Leap of Faith)</a>.
+        Each frame corresponds to one of the figures in that section.
+        Use the <strong>Prev / Next</strong> buttons or the <strong>← →</strong> arrow keys to step through the sequence.
+      </p>
+
+      <div style="text-align:center; margin:1.5em 0;">
+        <canvas id="alice-canvas" width="1050" height="440"
+          style="max-width:100%; border:1px solid rgba(255,200,80,0.22); border-radius:6px;
+                 background:#07071a; display:block; margin:0 auto;"></canvas>
+        <div id="alice-caption" style="margin:0.9em auto 0; max-width:860px; font-size:0.88em; line-height:1.55; min-height:4em; text-align:left; padding:0 0.5em;">
+        </div>
+        <div style="display:flex; align-items:center; justify-content:center; gap:1.2em; margin-top:0.7em;">
+          <button id="alice-btn-prev"
+            style="padding:0.38em 1.1em; font-size:0.9em; cursor:pointer;">&#8592; Prev</button>
+          <span id="alice-counter"
+            style="font-size:0.9em; font-family:monospace; min-width:4.5em; text-align:center;"></span>
+          <button id="alice-btn-next"
+            style="padding:0.38em 1.1em; font-size:0.9em; cursor:pointer;">Next &#8594;</button>
+        </div>
+        <div class="canvas-toggles" style="margin-top:0.6em; font-size:0.85em; display:flex; gap:1.8em; justify-content:center; flex-wrap:wrap;">
+          <button id="alice-stars-btn" class="toggle-btn">Hide Stars</button>
+          <button id="alice-grid-btn"  class="toggle-btn">Grid Off</button>
+          <button id="alice-road-btn"  class="toggle-btn" style="display:none;">Hide Road</button>
+        </div>
+        <p class="canvas-hint">Arrow keys &#8592; &#8594; also navigate slides.</p>
+      </div>
+    </section>
+
+    <section id="references" style="order: 4">
+      <h2>References</h2>
+      <a href="#resume-here">Back Up</a>
+      <ol>
+        <li id="ref-01">Euclid. <em>Elements</em>, Book I, Proposition 47. (c. 300 BC).</li>
+        <li id="ref-02">Einstein A. Zur Elektrodynamik bewegter Körper. <em>Annalen der Physik</em>. 1905;17(10):891–921.</li>
+        <li id="ref-03">Minkowski H. Raum und Zeit. <em>Physikalische Zeitschrift</em>. 1909;10:104–111.</li>
+        <li id="ref-04">Einstein A. Die Grundlage der allgemeinen Relativitätstheorie. <em>Annalen der Physik</em>. 1916;49(7):769–822.</li>
+        <li id="ref-05">Schwarzschild K. Über das Gravitationsfeld eines Massenpunktes nach der Einsteinschen Theorie. <em>Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften</em>. 1916:189–196.</li>
+        <li id="ref-06">Friedmann A. Über die Krümmung des Raumes. <em>Zeitschrift für Physik</em>. 1922;10(1):377–386.</li>
+        <li id="ref-07">
+          Robertson H. P.
+          <ul style="list-style-type: lower-alpha;">
+            <li>On the Foundations of Relativistic Cosmology. <em>Proceedings of the National Academy of Sciences of the United States of America</em>. 1929;15(11):822–829.</li>
+            <li>Kinematics and World-Structure. <em>Astrophysical Journal</em>. 1935;82:284–301.</li>
+            <li>Kinematics and World-Structure II. <em>Astrophysical Journal</em>. 1936;83:187–201.</li>
+            <li>Kinematics and World-Structure III. <em>Astrophysical Journal</em>. 1936;83:257–271.</li>
+          </ul>
+        </li>
+        <li id="ref-08">
+          Walker A. G.
+          <ul style="list-style-type: lower-alpha;">
+            <li>On Riemannian Spaces with Spherical Symmetry about a Line, and the Conditions for Isotropy in General Relativity. <em>Quarterly Journal of Mathematics</em>. 1935;os-6(1):81–93.</li>
+            <li>On Milne’s Theory of World-Structure. <em>Proceedings of the London Mathematical Society</em>. 1937;s2-42(1):90–127.</li>
+          </ul>
+        </li>
+        <li id="ref-09">Perlmutter S., Aldering G., Goldhaber G., et al. Measurements of Ω and Λ from High-Redshift Supernovae. <em>Astrophysical Journal</em>. 1999;517(2):565–586.</li>
+        <li id="ref-10">Eisenstein D. J., Zehavi I., Hogg D. W., et al. Detection of the Baryon Acoustic Peak in the Large-Scale Correlation Function of SDSS Luminous Red Galaxies. <em>Astrophysical Journal</em>. 2005;633(2):560–574.</li>
+        <li id="ref-11">Planck Collaboration. Planck 2018 results. VI. Cosmological parameters. <em>Astronomy &amp; Astrophysics</em>. 2020;641:A6.</li>
+        <li id="ref-12">Riess A. G., Macri L. M., Hoffmann S. L., et al. A 2.4% Determination of the Local Value of the Hubble Constant. <em>Astrophysical Journal</em>. 2016;826(1):56.</li>
+        <li id="ref-13">Hawking S. W., Penrose R. The Singularities of Gravitational Collapse and Cosmology. <em>Proceedings of the Royal Society A</em>. 1970;314(1519):529–548.</li>
+        <li id="ref-14">Einstein A. Über das Relativitätsprinzip und die aus demselben gezogenen Folgerungen. <em>Jahrbuch der Radioaktivität und Elektronik</em>. 1907;4:411–462.</li>
+        <li id="ref-15">Painlevé P. La mécanique classique et la théorie de la relativité. <em>Comptes Rendus de l’Académie des Sciences (Paris)</em>. 1921;173:677–680.</li>
+        <li id="ref-16">Gullstrand A. Allgemeine Lösung des statischen Einkörperproblems in der Einsteinschen Gravitationstheorie. <em>Arkiv för Matematik, Astronomi och Fysik</em>. 1922;16(8):1–15.</li>
+        <li id="ref-17">Carroll S. M. <em>Spacetime and Geometry: An Introduction to General Relativity</em>. San Francisco: Addison-Wesley; 2004.</li>
+        <li id="ref-18">Wald R. M. <em>General Relativity</em>. Chicago: University of Chicago Press; 1984.</li>
+        <li id="ref-19">
+          Lemaître G.
+          <ul style="list-style-type: lower-alpha;">
+            <li>Un Univers homogène de masse constante et de rayon croissant rendant compte de la vitesse radiale des nébuleuses extra-galactiques. <em>Annales de la Société Scientifique de Bruxelles</em>. 1927;47:49–59.</li>
+            <li>A Homogeneous Universe of Constant Mass and Increasing Radius Accounting for the Radial Velocity of Extra-Galactic Nebulae. <em>Monthly Notices of the Royal Astronomical Society</em>. 1931;91(5):483–490.</li>
+            <li>L’Univers en expansion. <em>Annales de la Société Scientifique de Bruxelles</em>. 1933;53:51–85.</li>
+          </ul>
+        </li>
+        <li id="ref-20">Tolman R. C. Effect of Inhomogeneity on Cosmological Models. <em>Proceedings of the National Academy of Sciences of the United States of America</em>. 1934;20(3):169–176.</li>
+        <li id="ref-21">Bondi H. Spherically Symmetrical Models in General Relativity. <em>Monthly Notices of the Royal Astronomical Society</em>. 1947;107(5–6):410–425.</li>
+        <li id="ref-22">
+          Israel W.
+          <ul style="list-style-type: lower-alpha;">
+            <li>Singular hypersurfaces and thin shells in general relativity. <em>Il Nuovo Cimento B</em>. 1966;44B:1–14.</li>
+            <li>Erratum to “Singular hypersurfaces and thin shells in general relativity.” <em>Il Nuovo Cimento B</em>. 1967;48B:463.</li>
+          </ul>
+        </li>
+        <li id="ref-23">Weinberg S. <em>Gravitation and Cosmology: Principles and Applications of the General Theory of Relativity</em>. New York: Wiley; 1972.</li>
+        <li id="ref-24">Peebles P. J. E. <em>Principles of Physical Cosmology</em>. Princeton: Princeton University Press; 1993.</li>
+        <li id="ref-25">Hogg D. W. Distance measures in cosmology. arXiv:astro-ph/9905116. 1999.</li>
+        <li id="ref-26">Poisson E., Visser M. Thin-shell wormholes: Linearization stability. <em>Physical Review D</em>. 1995;52(12):7318–7321.</li>
+        <li id="ref-27">Ashtekar A., Krishnan B. Dynamical Horizons and Their Properties. <em>Physical Review D</em>. 2003;68(10):104030.</li>
+        <li id="ref-28">Bekenstein J. D. Black holes and entropy. <em>Physical Review D</em>. 1973;7(8):2333–2346.</li>
+        <li id="ref-29">Hawking S. W. Particle creation by black holes. <em>Communications in Mathematical Physics</em>. 1975;43(3):199–220.</li>
+        <li id="ref-30">Dodelson S. <em>Modern Cosmology</em>. San Diego: Academic Press; 2003.</li>
+        <li id="ref-31">Faraoni V., Jacques A. Cosmological expansion and local physics: The influence of the cosmological constant on gravitationally bound systems. <em>Physical Review D</em>. 2007;76(6):063510.</li>
+        <li id="ref-32">Poisson E. <em>A Relativist’s Toolkit: The Mathematics of Black-Hole Mechanics</em>. Cambridge: Cambridge University Press; 2004.</li>
+        <li id="ref-33">
+          de Sitter W.
+          <ul style="list-style-type: lower-alpha;">
+            <li>On the relativity of inertia. Remarks concerning Einstein’s latest hypothesis. <em>Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen</em>. 1917;19(II):1217–1225.</li>
+            <li>On Einstein’s Theory of Gravitation and Its Astronomical Consequences. Third Paper. <em>Monthly Notices of the Royal Astronomical Society</em>. 1917;78:3–28.</li>
+          </ul>
+        </li>
+        <li id="ref-34">Spradlin M., Strominger A., Volovich A. Les Houches Lectures on de Sitter Space. arXiv:hep-th/0110007. 2001.</li>
+        <li id="ref-35">Bressange G. F. On the extension of the concept of thin shells to the Einstein-Cartan theory. <em>Classical and Quantum Gravity</em>. 2000;17(13):2509–2523.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+<footer>
+  <script type="module" src="src/js/alices-descent.js"></script>
+  <script>
+    /* Replace §3 static figure images with improved canvas-rendered slides once the module is ready */
+    document.addEventListener('alicesDescent:ready', function () {
+      var figs = document.querySelectorAll('#section3 figure img');
+      for (var i = 0; i < figs.length; i++) {
+        if (window.alicesDescent) {
+          var url = window.alicesDescent.captureSlide(i);
+          figs[i].src = url;
+          figs[i].style.width = '100%';
+        }
+      }
+    });
+  </script>
+  <script>
+    (function () {
+      var btn  = document.getElementById('theme-toggle');
+      var root = document.documentElement;
+
+      function applyTheme(dark) {
+        root.setAttribute('data-theme', dark ? 'dark' : 'light');
+        btn.textContent = dark ? '☀' : '☽';
+        btn.title = dark ? 'light' : 'dark';
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+      }
+
+      /* Initialise label to match whatever the pre-paint script set */
+      applyTheme(root.getAttribute('data-theme') === 'dark');
+
+      btn.addEventListener('click', function () {
+        applyTheme(root.getAttribute('data-theme') !== 'dark');
+      });
+    }());
+  </script>
+</footer>
+
+</html>
