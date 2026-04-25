@@ -7,14 +7,14 @@ function print(str) {
 
 function copy(str) {
     if (navigator.clipboard) {
-        navigator.clipboard.write(str);
+        return navigator.clipboard.writeText(str);
     }
 }
 
 (function () {
     document.querySelectorAll('.email-container').forEach(el => {
         el.innerHTML = print(email);
-        el.onClick = () => copy(email);
+        el.addEventListener('click', () => copy(email));
     });
 
     document.querySelectorAll('.github-container').forEach(el => {
