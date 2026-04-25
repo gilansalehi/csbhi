@@ -1,212 +1,160 @@
-.scoreboard {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
-    font-size: 0.95rem;
-}
-
-.scoreboard th,
-.scoreboard td {
-    border-bottom: 1px solid currentColor;
-    padding: 0.85rem;
-    vertical-align: top;
-    text-align: left;
-}
-
-.scoreboard th {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    opacity: 0.72;
-}
-
-.scoreboard td:first-child,
-.scoreboard th:first-child {
-    width: 3rem;
-    text-align: center;
-}
-
-.scoreboard td:nth-child(2),
-.scoreboard th:nth-child(2) {
-    width: 9rem;
-}
-
-.scoreboard td:nth-child(3),
-.scoreboard th:nth-child(3) {
-    width: 14rem;
-}
-
-.scoreboard .status {
-    display: inline-block;
-    padding: 0.25rem 0.55rem;
-    border: 1px solid currentColor;
-    border-radius: 999px;
-    font-size: 0.75rem;
-    white-space: nowrap;
-}
-
-.scoreboard .status.addressed {
-    opacity: 1;
-}
-
-.scoreboard .status.in-progress {
-    opacity: 0.82;
-}
-
-.scoreboard .status.open {
-    opacity: 0.62;
-}
-
-@media screen and (max-width: 800px) {
-    .scoreboard {
-        display: block;
-        overflow-x: auto;
-        white-space: normal;
-    }
-
-    .scoreboard th,
-    .scoreboard td {
-        min-width: 10rem;
-    }
-
-    .scoreboard td:nth-child(4) {
-        min-width: 24rem;
-    }
-}
-
 .open-problems {
-    margin-block: 4rem;
+  margin-block: 4rem;
 }
 
-.open-problems>p {
-    max-width: 72ch;
+.open-problems > p {
+  max-width: 72ch;
 }
 
 .problem-scoreboard {
-    width: 100%;
-    margin-block: 2rem;
-    border-collapse: collapse;
-    font-size: 0.94rem;
-    line-height: 1.55;
+  width: 100%;
+  margin-block: 2rem;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  line-height: 1.55;
 }
 
 .problem-scoreboard th {
-    padding: 0.75rem 1rem;
-    border-block: 1px solid color-mix(in srgb, currentColor 28%, transparent);
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-align: left;
-    text-transform: uppercase;
-    opacity: 0.68;
+  padding: 0.75rem 1rem;
+  border-block: 1px solid color-mix(in srgb, currentColor 28%, transparent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-align: left;
+  text-transform: uppercase;
+  opacity: 0.68;
 }
 
 .problem-scoreboard td {
-    padding: 1.15rem 1rem;
-    border-bottom: 1px solid color-mix(in srgb, currentColor 14%, transparent);
-    vertical-align: top;
+  padding: 1.15rem 1rem;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+  vertical-align: top;
 }
 
 .problem-scoreboard td:first-child {
-    width: 24%;
-    min-width: 12rem;
-    font-size: 1rem;
-    line-height: 1.35;
+  width: 20%;
+  min-width: 11rem;
+  font-size: 1rem;
+  line-height: 1.35;
 }
 
-.problem-scoreboard td:nth-child(2) {
-    width: 52%;
-    color: color-mix(in srgb, currentColor 82%, transparent);
+.problem-scoreboard td:nth-child(2),
+.problem-scoreboard td:nth-child(3) {
+  width: 30%;
+  color: color-mix(in srgb, currentColor 82%, transparent);
 }
 
 .problem-scoreboard td:last-child {
-    width: 24%;
-    min-width: 12rem;
+  width: 20%;
+  min-width: 11rem;
 }
 
 .problem-scoreboard tr:hover td {
-    background: color-mix(in srgb, currentColor 3.5%, transparent);
+  background: color-mix(in srgb, currentColor 3.5%, transparent);
 }
 
 .problem-scoreboard .status {
-    display: inline-flex;
-    width: fit-content;
-    margin-bottom: 0.65rem;
-    padding: 0.22rem 0.58rem;
-    border: 1px solid currentColor;
-    border-radius: 999px;
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.055em;
-    line-height: 1.2;
-    text-transform: uppercase;
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 0.65rem;
+  padding: 0.22rem 0.58rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .problem-scoreboard .status.addressed {
-    opacity: 0.95;
+  opacity: 0.95;
 }
 
 .problem-scoreboard .status.in-progress,
 .problem-scoreboard .status.planned {
-    opacity: 0.72;
+  opacity: 0.72;
 }
 
 .problem-scoreboard .status.open {
-    opacity: 0.48;
+  opacity: 0.48;
 }
 
 .problem-scoreboard td:last-child a,
 .problem-scoreboard td:last-child span:not(.status) {
-    display: block;
-    width: fit-content;
-    margin-top: 0.32rem;
-    font-size: 0.84rem;
+  display: block;
+  width: fit-content;
+  margin-top: 0.32rem;
+  font-size: 0.84rem;
 }
 
 .problem-scoreboard td:last-child span:not(.status) {
-    opacity: 0.58;
+  opacity: 0.58;
 }
 
 .problem-scoreboard a {
-    text-underline-offset: 0.18em;
+  text-underline-offset: 0.18em;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
+  .problem-scoreboard,
+  .problem-scoreboard thead,
+  .problem-scoreboard tbody,
+  .problem-scoreboard tr,
+  .problem-scoreboard th,
+  .problem-scoreboard td {
+    display: block;
+  }
 
-    .problem-scoreboard,
-    .problem-scoreboard thead,
-    .problem-scoreboard tbody,
-    .problem-scoreboard tr,
-    .problem-scoreboard th,
-    .problem-scoreboard td {
-        display: block;
-    }
+  .problem-scoreboard thead {
+    display: none;
+  }
 
-    .problem-scoreboard thead {
-        display: none;
-    }
+  .problem-scoreboard tr {
+    padding-block: 1.35rem;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  }
 
-    .problem-scoreboard tr {
-        padding-block: 1.2rem;
-        border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent);
-    }
+  .problem-scoreboard td {
+    width: auto !important;
+    min-width: 0 !important;
+    padding: 0;
+    border: 0;
+  }
 
-    .problem-scoreboard td {
-        width: auto !important;
-        min-width: 0 !important;
-        padding: 0;
-        border: 0;
-    }
+  .problem-scoreboard td + td {
+    margin-top: 0.7rem;
+  }
 
-    .problem-scoreboard td+td {
-        margin-top: 0.7rem;
-    }
+  .problem-scoreboard td:first-child {
+    font-size: 1.05rem;
+  }
 
-    .problem-scoreboard td:first-child {
-        font-size: 1.05rem;
-    }
+  .problem-scoreboard td:nth-child(2)::before {
+    content: "ΛCDM framing";
+  }
 
-    .problem-scoreboard td:last-child {
-        margin-top: 0.9rem;
-    }
+  .problem-scoreboard td:nth-child(3)::before {
+    content: "GD framing";
+  }
+
+  .problem-scoreboard td:last-child::before {
+    content: "Status";
+  }
+
+  .problem-scoreboard td:nth-child(2)::before,
+  .problem-scoreboard td:nth-child(3)::before,
+  .problem-scoreboard td:last-child::before {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.48;
+  }
+
+  .problem-scoreboard td:last-child {
+    margin-top: 0.9rem;
+  }
 }
