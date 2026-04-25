@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Project overview for the Geometric Duality research programme.">
   <title>CSBHI</title>
   <link href="/src/css/index.css" rel="stylesheet" />
+  <link href="/src/css/scoreboard.css" rel="stylesheet" />
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script src="src/js/email.js" async defer type="module"></script>
   <script src="src/js/dark-mode.js" async defer type="module"></script>
 </head>
+
 <body>
   <main>
     <header class="masthead" aria-label="Project header">
@@ -17,20 +21,318 @@
       <div>Updated Thursday, April 23, 2026</div>
     </header>
 
-    <section class="hero" aria-labelledby="project-title">
+    <section id="hero" class="hero" aria-labelledby="project-title">
       <h1 id="project-title">The <br /> Universe <br /> is a <br /> Black Hole</h1>
-      <p>
-        <span class="smallcaps">Geometric Duality</span> is a long-form research programme exploring whether
-        cosmology, horizon structure, and black-hole interior geometry are different presentations of one underlying spacetime picture:
-        the conformal scaling of black hole interiors.
-      </p>
+
+      <span><span class="smallcaps">Geometric Duality</span> is a long-form research programme exploring whether all the
+        open questions
+        in cosmology have a single answer.</span>
+
+    </section>
+
+    <section>
+      <span class="smallcaps">ΛCDM</span> is one of the most successful phenomenological models in modern science, but
+      it leaves a constellation of deep questions unresolved. <span class="smallcaps">Geometric Duality</span> treats
+      these
+      not as disconnected anomalies, but as clues
+      pointing toward a single horizon-centered geometry connecting black-hole interiors, cosmic expansion, de Sitter
+      curvature, and galaxy-scale
+      dynamics, unifying these disparate concepts into one underlying spacetime picture: the
+      <span class="smallcaps">Conformal Scaling of Black Hole Interiors</span>.
+    </section>
+
+    <section id="open-problems" class="open-problems">
+      <details>
+        <summary>Progress & Open Problems</summary>
+        <table class="problem-scoreboard">
+          <thead>
+            <tr>
+              <th scope="col">Problem</th>
+              <th scope="col">GD framing</th>
+              <th scope="col">Answer trail</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <strong>The Origin of Cosmic Acceleration</strong>
+              </td>
+              <td>
+                Why does the universe accelerate at late times? GD1 proposes that late-time acceleration is not caused
+                by an extra dark-energy substance, but emerges from the interior geometry of a horizon-scale spacetime
+                written in Painlevé–Gullstrand form.
+              </td>
+              <td>
+                <span class="status addressed">addressed in GD1</span>
+                <a href="/gd1.html#section4">PG form of FLRW</a>
+                <a href="/gd1.html#appendixA">infall function</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Cosmological Constant Problem</strong>
+              </td>
+              <td>
+                Why is \(\Lambda\) small, nonzero, and tied to a cosmic length scale? GD1 treats \(\Lambda\)
+                as a geometric quantity associated with the horizon/de Sitter radius of the cosmic interior.
+              </td>
+              <td>
+                <span class="status addressed">addressed in GD1</span>
+                <a href="/gd1.html#appendixC">Λ estimate</a>
+                <a href="/gd1.html#appendixD">de Sitter embedding</a>
+                <a href="/note.html?src=pg_flow_from_5d_desitter_embedding">Note I</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Coincidence Problem</strong>
+              </td>
+              <td>
+                Why do we appear to live near the epoch where matter density and dark-energy density are comparable?
+                GD reframes this as a relation between the observer, the horizon scale, and the matching shell.
+              </td>
+              <td>
+                <span class="status addressed">addressed in GD1</span>
+                <a href="/gd1.html#section8-1">conceptual interpretation</a>
+                <a href="/note.html?src=horizon_triple_identity">Note II</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Singularity Problem</strong>
+              </td>
+              <td>
+                Classical black-hole interiors and standard cosmological evolution point toward singular endpoints.
+                GD1 proposes that the would-be singularity is pushed to an asymptotic future boundary rather than
+                encountered as a finite-time local crash.
+              </td>
+              <td>
+                <span class="status addressed">addressed in GD1</span>
+                <a href="/gd1.html#section3">Alice’s descent</a>
+                <a href="/gd1.html#section6">singularity deferral</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Horizon-Scale Problem</strong>
+              </td>
+              <td>
+                Why are the Hubble radius, de Sitter curvature radius, causal horizon, and matching-shell scale so
+                deeply linked? GD2 develops the proposed triple identity: \(L\), \(\mathcal H\), and \(\Sigma\)
+                as distinct presentations of one underlying throat structure.
+              </td>
+              <td>
+                <span class="status in-progress">GD2 target</span>
+                <a href="/note.html?src=horizon_triple_identity">Note II</a>
+                <span>Paper II</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Horizon Problem</strong>
+              </td>
+              <td>
+                Why is the observable universe so causally coherent across regions that appear disconnected in the
+                standard early-universe picture? GD asks whether the relevant causal structure has been misread:
+                the observable universe may be an interior horizon geometry whose global coherence is encoded by
+                the throat structure itself.
+              </td>
+              <td>
+                <span class="status in-progress">GD2 target</span>
+                <a href="/gd1.html#section3">causal track</a>
+                <a href="/note.html?src=horizon_triple_identity">Note II</a>
+                <span>Paper II</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Flatness Problem</strong>
+              </td>
+              <td>
+                Why is the large-scale universe so close to spatially flat? GD begins from spatially flat FLRW because
+                it is the observed late-time background, but the deeper claim is that flat slicing may be the natural
+                intrinsic presentation of the de Sitter/throat geometry.
+              </td>
+              <td>
+                <span class="status in-progress">GD2 target</span>
+                <a href="/gd1.html#section4">FLRW to PG</a>
+                <a href="/note.html?src=pg_flow_from_5d_desitter_embedding">Note I</a>
+                <span>Paper II</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Dark Matter / Galaxy Acceleration Problem</strong>
+              </td>
+              <td>
+                Why do galaxies exhibit flat rotation curves, the radial acceleration relation, and a universal
+                acceleration scale \(a_0\sim cH\)? GD3 asks whether local baryonic gravity and global horizon curvature
+                mix through the same throat geometry, producing \(g\sim\sqrt{g_NcH}\).
+              </td>
+              <td>
+                <span class="status planned">GD3 target</span>
+                <a href="/note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law">Note III</a>
+                <span>Paper III</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Baryonic Tully–Fisher Relation</strong>
+              </td>
+              <td>
+                Why do galaxy rotation velocities obey \(v^4\propto M_b\) with such small scatter? In GD this becomes
+                a direct consequence of the square-root acceleration law selected by local/global curvature mixing.
+              </td>
+              <td>
+                <span class="status planned">GD3 target</span>
+                <a href="/note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law">Note III</a>
+                <span>Paper III</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Hubble Tension</strong>
+              </td>
+              <td>
+                Why do early-universe and late-universe measurements infer different values of \(H_0\)? GD does not
+                yet claim a complete solution, but its horizon-matching framework may change how the global expansion
+                scale is inferred from different observational regimes.
+              </td>
+              <td>
+                <span class="status open">future work</span>
+                <span>future observational paper</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The \(S_8\) / Structure-Growth Tension</strong>
+              </td>
+              <td>
+                Why do some late-time structure measurements appear to prefer weaker clustering than the value inferred
+                from the early-universe CMB fit? GD eventually needs to show how perturbations evolve through the
+                horizon/throat framework.
+              </td>
+              <td>
+                <span class="status open">future work</span>
+                <span>future perturbation paper</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Initial Conditions Problem</strong>
+              </td>
+              <td>
+                Why did the universe begin in such a special large-scale state? GD reframes this question by asking
+                whether the apparent initial condition is actually a boundary condition of an interior horizon geometry.
+              </td>
+              <td>
+                <span class="status open">future work</span>
+                <span>future boundary-condition paper</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Arrow of Time</strong>
+              </td>
+              <td>
+                Why does cosmic history have a preferred temporal direction? GD suggests that the arrow may be tied to
+                the one-way causal structure of horizons and the interior reading of black-hole-like geometry.
+              </td>
+              <td>
+                <span class="status open">future work</span>
+                <span>future thermodynamic/geometric work</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Entropy of Cosmic Horizons</strong>
+              </td>
+              <td>
+                Why do horizons carry entropy, and why does horizon thermodynamics know about cosmic expansion?
+                GD aims to reinterpret horizon entropy as the thermodynamic face of the same throat structure that
+                appears geometrically as \(L\), causally as \(\mathcal H\), and dynamically as \(\Sigma\).
+              </td>
+              <td>
+                <span class="status open">future work</span>
+                <span>future thermodynamic reconciliation paper</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>The Nature of the Big Bang</strong>
+              </td>
+              <td>
+                Was the Big Bang a beginning, a singularity, a horizon-crossing event, or a coordinate boundary of
+                a larger spacetime? GD treats this as one of the central interpretive payoffs of the black-hole interior
+                view.
+              </td>
+              <td>
+                <span class="status open">future work</span>
+                <a href="/gd1.html#section3">Alice’s descent</a>
+                <a href="/gd1.html#section6">singularity deferral</a>
+                <span>Paper II</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>Cosmic Topology and the Observable Patch</strong>
+              </td>
+              <td>
+                Why do we observe only a finite cosmic patch, and what is its relation to the larger global geometry?
+                GD suggests that the observable universe may be a causal interior region bounded by a horizon/throat
+                scale.
+              </td>
+              <td>
+                <span class="status open">future work</span>
+                <a href="/note.html?src=horizon_triple_identity">Note II</a>
+                <span>future topology paper</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>Large-Scale Anomalies</strong>
+              </td>
+              <td>
+                CMB alignments, hemispherical asymmetries, bulk-flow claims, and other large-scale anomalies remain
+                unsettled. GD does not yet explain them, but any horizon-centered cosmology must eventually ask whether
+                such anomalies are statistical accidents or signatures of the global throat geometry.
+              </td>
+              <td>
+                <span class="status open">future work</span>
+                <span>future observational work</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+
     </section>
 
     <section class="grid hidden" aria-label="Project summary">
       <div class="cell">
         <h2 class="section-title">Preamble</h2>
         <p class="lede">
-          The programme begins with a single wager: that some of the deepest structures in modern cosmology may be read more clearly when FLRW expansion, Painlevé–Gullstrand flow, horizon matching, and de Sitter geometry are treated as parts of one geometric story.
+          The programme begins with a single wager: that some of the deepest structures in modern cosmology may be read
+          more clearly when FLRW expansion, Painlevé–Gullstrand flow, horizon matching, and de Sitter geometry are
+          treated as parts of one geometric story.
         </p>
       </div>
       <div class="cell principles">
@@ -43,123 +345,15 @@
         </ul>
       </div>
     </section>
-<section aria-labelledby="publications-title">
-  <div class="cell" style="border-bottom: 1px solid var(--soft-line);">
-    <h2 id="publications-title" class="section-title">Programme</h2>
-    <p class="lede">
-      The current plan is to build Geometric Duality in stages: first the black-hole/cosmology bridge,
-      then the de Sitter embedding, then the throat identity, then the galaxy-scale square-root law.
-    </p>
-  </div>
-
-  <ol class="publications">
-    <li class="pub">
-      <div class="label">Paper I</div>
-      <div>
-        <h3><a href="/gd1.html">Geometric Duality of Black-Hole Interiors</a></h3>
-        <p>
-          The entry paper. Rewrites flat FLRW in Painlevé–Gullstrand form, introduces the Alice/Bob
-          horizon interpretation, and frames the universe as the interior of a black-hole-like geometry.
-        </p>
-        <p class="pub-meta">draft 0.2</p>
-      </div>
-    </li>
-
-    <li class="pub">
-      <div class="label">Note I</div>
-      <div>
-        <h3><a href="/note.html?src=pg_flow_from_5d_desitter_embedding">Painlevé–Gullstrand Flow from the 5D de Sitter Embedding</a></h3>
-        <p>
-          Shows how the Painlevé–Gullstrand flow \(F=Hr\) arises from the 5D embedding of 4D de Sitter
-          spacetime, and clarifies the relation between FLRW slicing, PG coordinates, and the de Sitter
-          curvature scale \(L=\sqrt{3/\Lambda}\).
-        </p>
-        <p class="pub-meta">sketch</p>
-      </div>
-    </li>
-
-    <li class="pub">
-      <div class="label">Paper III</div>
-      <div>
-        <h3><a href="/tbd.html">The Horizon Triple Identity</a></h3>
-        <p>
-          Formalizes the central throat claim: the de Sitter curvature scale, the observer horizon, and
-          the timelike matching shell are not independent ingredients, but different presentations of one
-          underlying horizon-throat structure.
-        </p>
-        <p class="pub-meta">planned</p>
-      </div>
-    </li>
-
-    <li class="pub">
-      <div class="label">Paper IV</div>
-      <div>
-        <h3><a href="/tbd.html">The Square-Root Law</a></h3>
-        <p>
-          Develops the galaxy-scale consequence of the throat picture: a self-dual mixed acceleration law
-          \(g_{\rm mix}\sim\sqrt{g_N cH}\), yielding flat rotation curves and the baryonic Tully–Fisher scaling
-          \(v^4\sim GMcH\).
-        </p>
-        <p class="pub-meta">planned</p>
-      </div>
-    </li>
-
-    <li class="pub">
-      <div class="label">Paper V</div>
-      <div>
-        <h3><a href="/tbd.html">Horizon Thermodynamics and Geometric Synthesis</a></h3>
-        <p>
-          Reconciles GD with horizon thermodynamics, emergent-gravity arguments, MOND phenomenology,
-          and black-hole cosmology as partial views of the same geometric structure.
-        </p>
-        <p class="pub-meta">prospective</p>
-      </div>
-    </li>
-  </ol>
-</section>
-
-<section class="quote" aria-label="Project summary statement">
-  The working thesis is that causal horizons, de Sitter curvature, matching shells, and galaxy-scale acceleration laws
-  are different projections of one throat-centered spacetime geometry.
-</section>
-
-<section class="grid" aria-label="Roadmap and notes">
-  <div class="cell roadmap">
-    <h2 class="section-title">Near-Term Roadmap</h2>
-    <ol>
-      <li>Finish the GD1 revision pass: separate exact geometry, causal interpretation, duality map, and conjecture.</li>
-      <li>Publish the embedding note showing how de Sitter geometry generates PG flow.</li>
-      <li>Promote the matching-shell clarification into a formal throat-identity paper.</li>
-      <li>Stress-test the square-root law and identify its tensorial or curvature-level realization.</li>
-    </ol>
-  </div>
-
-  <div class="cell">
-    <h2 class="section-title">Technical Notes</h2>
-    <p class="lede">
-      The notes are not side material. They are the scaffolding of the programme:
-      short, explicit derivations that isolate one claim at a time before it is folded into a full paper.
-    </p>
-  </div>
-</section>
-
-<section class="notes" aria-labelledby="notes-title">
-  <h2 id="notes-title" class="section-title">Working Notes</h2>
-  <ul>
-    <li><a href="/tbd.html">Embedding and matching-shell clarification</a></li>
-    <li><a href="/tbd.html">Triple identity and strong GD hypothesis</a></li>
-    <li><a href="/tbd.html">PG flow from the 5D de Sitter embedding</a></li>
-    <li><a href="/tbd.html">Recovering the GD infall function</a></li>
-    <li><a href="/tbd.html">Recursive throat self-duality and the square-root law</a></li>
-    <li><a href="/tbd.html">Self-dual homogeneous derivation of the square-root law</a></li>
-    <li><a href="/tbd.html">Dual-track synthesis and GD1 revision lens</a></li>
-    <li><a href="/tbd.html">Bibliography and supporting literature</a></li>
-  </ul>
-</section>
     <section aria-labelledby="publications-title">
       <div class="cell" style="border-bottom: 1px solid var(--soft-line);">
-        <h2 id="publications-title" class="section-title">Programme</h2>
-        <p class="lede">Current and forthcoming papers in the series.</p>
+        <h2 id="publications-title" class="section-title">Program</h2>
+        <p class="lede">
+          Current and forthcoming papers in the series.
+        </p>
+        <p class="hidden">The current plan is to build Geometric Duality in stages: first the black-hole/cosmology
+          bridge,
+          then the de Sitter embedding, then the throat identity, then the galaxy-scale square-root law.</p>
       </div>
 
       <ol class="publications">
@@ -168,49 +362,120 @@
           <div>
             <h3><a href="/gd1.html">Geometric Duality of Black-Hole Interiors</a></h3>
             <p>
-              The foundational paper. Recasts flat FLRW in Painlevé–Gullstrand form, develops the black-hole interior interpretation, and introduces the programme’s central claim.
+              The entry paper. Rewrites flat FLRW in Painlevé–Gullstrand form, introduces the Alice/Bob
+              horizon interpretation, and frames the universe as the interior of a black-hole-like geometry.
             </p>
-            <p class="pub-meta">pre-print available</p>
+            <p class="pub-meta">draft 0.2</p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="label">Note I</div>
+          <div>
+            <h3>
+              <a href="/note.html?src=pg_flow_from_5d_desitter_embedding">
+                Painlevé–Gullstrand Flow from the 5D de Sitter Embedding
+              </a>
+            </h3>
+            <p>
+              Shows how the Painlevé–Gullstrand flow \(F=Hr\) arises from the 5D embedding of 4D de Sitter
+              spacetime, and clarifies the relation between FLRW slicing, PG coordinates, and the de Sitter
+              curvature scale \(L=\sqrt{3/\Lambda}\).
+            </p>
+            <p class="pub-meta">draft note</p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="label">Note II</div>
+          <div>
+            <h3>
+              <a href="/note.html?src=horizon_triple_identity">
+                The Horizon Triple Identity: Curvature Scale, Causal Horizon, and Matching Shell
+              </a>
+            </h3>
+            <p>
+              States the central pre-GD2 clarification: the de Sitter curvature scale \(L\), the causal horizon
+              \(\mathcal H\), and the timelike matching shell \(\Sigma\) are not the same mathematical object,
+              but may be different presentations of one underlying throat structure.
+            </p>
+            <p class="pub-meta">planned</p>
           </div>
         </li>
 
         <li class="pub">
           <div class="label">Paper II</div>
           <div>
-            <h3><a href="/tbd.html">Throat Geometry, Horizon Identity, and the Matching Shell</a></h3>
+            <h3>
+              <a href="/note.html?src=gd2_horizon_triple_identity_outline">
+                Geometric Duality II: The Horizon Triple Identity
+              </a>
+            </h3>
             <p>
-              A formal treatment of the programme’s next step: the relation between the de Sitter curvature scale, the observer horizon, and the timelike matching shell.
+              The geometric completion paper. Synthesizes the causal Alice/Bob track with the exact
+              FLRW-to-PG and de Sitter-embedding track, then develops the hypothesis that \(L\),
+              \(\mathcal H\), and \(\Sigma\) are three faces of a single throat geometry.
             </p>
-            <p class="pub-meta">In development</p>
+            <p class="pub-meta">planned</p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="label">Note III</div>
+          <div>
+            <h3>
+              <a href="/note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law">
+                Self-Dual Homogeneous Derivation of the Square-Root Law
+              </a>
+            </h3>
+            <p>
+              A theorem-style bridge to the galaxy problem. Shows that a scale-free, self-dual mixing law between
+              local Newtonian acceleration \(g_N\) and the global throat scale \(cH\) naturally selects
+              \(g_{\rm mix}\sim\sqrt{g_NcH}\).
+            </p>
+            <p class="pub-meta">technical note</p>
           </div>
         </li>
 
         <li class="pub">
           <div class="label">Paper III</div>
           <div>
-            <h3><a href="/tbd.html">The Square-Root Law</a></h3>
+            <h3>
+              <a href="/note.html?src=gd3_throat_curvature_and_galaxy_law_outline">
+                Geometric Duality III: Throat Curvature and the Galaxy Acceleration Law
+              </a>
+            </h3>
             <p>
-              Investigates whether the galaxy-scale acceleration law \(g \sim \sqrt{g_N cH}\) can arise geometrically from curvature mixing, recursive throat structure, or the weak-field limit of the broader construction.
+              The dynamical payoff paper. Develops the galaxy-scale consequence of GD: local baryonic gravity
+              and the global horizon scale mix through the throat geometry, producing a MOND/BTFR-like relation
+              \(g\sim\sqrt{g_NcH}\) and \(v^4\sim GMcH\).
             </p>
-            <p class="pub-meta">Planned</p>
+            <p class="pub-meta">planned</p>
           </div>
         </li>
 
         <li class="pub">
-          <div class="label">Paper IV</div>
+          <div class="label">Future</div>
           <div>
-            <h3><a href="/tbd.html">Embedding, Horizon Thermodynamics, and Geometric Synthesis</a></h3>
+            <h3>
+              <a href="/note.html?src=gd_thermodynamic_reconciliation_outline">
+                Horizon Thermodynamics and the GD Interpretation
+              </a>
+            </h3>
             <p>
-              A synthesis paper connecting the programme to the 5D de Sitter embedding, horizon-based interpretations of gravity, and the larger geometric unification picture.
+              A later synthesis paper connecting GD to horizon thermodynamics, emergent-gravity arguments,
+              and the work of Verlinde, Padmanabhan, Milgrom, and McGaugh. The goal is to show how these
+              approaches may be partial views of the same throat-centered geometry.
             </p>
-            <p class="pub-meta">Planned</p>
+            <p class="pub-meta">future direction</p>
           </div>
         </li>
       </ol>
     </section>
 
     <section class="quote" aria-label="Project summary statement">
-      This is a research programme, not a single claim. The aim is to build a coherent geometric ladder from horizon intuition to exact metric structure, and from exact metric structure to observable consequences.
+      This is a research programme, not a single claim. The aim is to build a coherent geometric ladder from horizon
+      intuition to exact metric structure, and from exact metric structure to observable consequences.
     </section>
 
     <section class="grid" aria-label="Roadmap and notes">
@@ -246,37 +511,54 @@
 
       <h3>Horizon Thermodynamics &amp; Emergent Gravity</h3>
       <ol>
-        <li>T. Padmanabhan. Gravity and the Thermodynamics of Horizons. <a href="https://arxiv.org/abs/gr-qc/0311036">arXiv:gr-qc/0311036</a>. 2003.</li>
-        <li>T. Padmanabhan. Classical and Quantum Thermodynamics of horizons in spherically symmetric spacetimes. <a href="https://arxiv.org/abs/gr-qc/0204019">arXiv:gr-qc/0204019</a>. 2002.</li>
-        <li>T. Padmanabhan. Emergence and Expansion of Cosmic Space as due to the Quest for Holographic Equipartition. <a href="https://arxiv.org/abs/1206.4916">arXiv:1206.4916</a>. 2012.</li>
-        <li>T. Padmanabhan. Emergent perspective of Gravity and Dark Energy. <a href="https://arxiv.org/abs/1207.0505">arXiv:1207.0505</a>. 2012.</li>
-        <li>Erik P. Verlinde. Emergent Gravity and the Dark Universe. <a href="https://arxiv.org/abs/1611.02269">arXiv:1611.02269</a>. 2016.</li>
+        <li>T. Padmanabhan. Gravity and the Thermodynamics of Horizons. <a
+            href="https://arxiv.org/abs/gr-qc/0311036">arXiv:gr-qc/0311036</a>. 2003.</li>
+        <li>T. Padmanabhan. Classical and Quantum Thermodynamics of horizons in spherically symmetric spacetimes. <a
+            href="https://arxiv.org/abs/gr-qc/0204019">arXiv:gr-qc/0204019</a>. 2002.</li>
+        <li>T. Padmanabhan. Emergence and Expansion of Cosmic Space as due to the Quest for Holographic Equipartition.
+          <a href="https://arxiv.org/abs/1206.4916">arXiv:1206.4916</a>. 2012.
+        </li>
+        <li>T. Padmanabhan. Emergent perspective of Gravity and Dark Energy. <a
+            href="https://arxiv.org/abs/1207.0505">arXiv:1207.0505</a>. 2012.</li>
+        <li>Erik P. Verlinde. Emergent Gravity and the Dark Universe. <a
+            href="https://arxiv.org/abs/1611.02269">arXiv:1611.02269</a>. 2016.</li>
       </ol>
 
       <h3>Conformal / Cyclic / Boundary Cosmology</h3>
       <ol start="6">
-        <li>Krzysztof A. Meissner, Roger Penrose. The Physics of Conformal Cyclic Cosmology. <a href="https://arxiv.org/abs/2503.24263">arXiv:2503.24263</a>. 2025.</li>
-        <li>V. G. Gurzadyan, R. Penrose. Concentric circles in WMAP data may provide evidence of violent pre-Big-Bang activity. <a href="https://arxiv.org/abs/1011.3706">arXiv:1011.3706</a>. 2010.</li>
-        <li>Enrique Gaztañaga. The Cosmological Constant as Event Horizon. <a href="https://arxiv.org/abs/2202.00641">arXiv:2202.00641</a>. 2022.</li>
+        <li>Krzysztof A. Meissner, Roger Penrose. The Physics of Conformal Cyclic Cosmology. <a
+            href="https://arxiv.org/abs/2503.24263">arXiv:2503.24263</a>. 2025.</li>
+        <li>V. G. Gurzadyan, R. Penrose. Concentric circles in WMAP data may provide evidence of violent pre-Big-Bang
+          activity. <a href="https://arxiv.org/abs/1011.3706">arXiv:1011.3706</a>. 2010.</li>
+        <li>Enrique Gaztañaga. The Cosmological Constant as Event Horizon. <a
+            href="https://arxiv.org/abs/2202.00641">arXiv:2202.00641</a>. 2022.</li>
       </ol>
 
       <h3>Painlevé–Gullstrand Cosmology, Embedded Black Holes, and Black-Hole Cosmology</h3>
       <ol start="9">
-        <li>Rudeep Gaur, Matt Visser. Cosmology in Painleve-Gullstrand coordinates. <a href="https://arxiv.org/abs/2207.08375">arXiv:2207.08375</a>. 2022.</li>
-        <li>Valerio Faraoni, Audrey Jacques. Cosmological expansion and local physics. <a href="https://arxiv.org/abs/0707.1350">arXiv:0707.1350</a>. 2007.</li>
-        <li>Valerio Faraoni, Massimiliano Rinaldi. Black hole event horizons are cosmologically coupled. <a href="https://arxiv.org/abs/2407.14549">arXiv:2407.14549</a>. 2024.</li>
-        <li>Nikodem J. Popławski. Mass of the universe in a black hole. <a href="https://arxiv.org/abs/1110.5019">arXiv:1110.5019</a>. 2011.</li>
-        <li>Nikodem J. Popławski. Universe in a black hole with spin and torsion. <a href="https://arxiv.org/abs/1410.3881">arXiv:1410.3881</a>. 2014.</li>
+        <li>Rudeep Gaur, Matt Visser. Cosmology in Painleve-Gullstrand coordinates. <a
+            href="https://arxiv.org/abs/2207.08375">arXiv:2207.08375</a>. 2022.</li>
+        <li>Valerio Faraoni, Audrey Jacques. Cosmological expansion and local physics. <a
+            href="https://arxiv.org/abs/0707.1350">arXiv:0707.1350</a>. 2007.</li>
+        <li>Valerio Faraoni, Massimiliano Rinaldi. Black hole event horizons are cosmologically coupled. <a
+            href="https://arxiv.org/abs/2407.14549">arXiv:2407.14549</a>. 2024.</li>
+        <li>Nikodem J. Popławski. Mass of the universe in a black hole. <a
+            href="https://arxiv.org/abs/1110.5019">arXiv:1110.5019</a>. 2011.</li>
+        <li>Nikodem J. Popławski. Universe in a black hole with spin and torsion. <a
+            href="https://arxiv.org/abs/1410.3881">arXiv:1410.3881</a>. 2014.</li>
       </ol>
     </section>
 
     <footer class="footer">
       <p>Contact</p>
       <dl>
-        <dt>email</dt><dd><span class="email-container"></span></dd><br />
-        <dt>github</dt><dd><a href="/" class="github-container"></a></dd><br />
+        <dt>email</dt>
+        <dd><span class="email-container"></span></dd><br />
+        <dt>github</dt>
+        <dd><a href="/" class="github-container"></a></dd><br />
       </dl>
     </footer>
   </main>
 </body>
+
 </html>
