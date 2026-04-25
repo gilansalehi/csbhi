@@ -1,10 +1,3 @@
----
-title: "Geometric Duality III: Throat Curvature and the Galaxy Acceleration Law"
-slug: "gd3_throat_curvature_and_galaxy_law_outline"
-status: "planned paper outline"
-series: "Geometric Duality"
----
-
 # Geometric Duality III: Throat Curvature and the Galaxy Acceleration Law
 
 ## Abstract

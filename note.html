@@ -82,6 +82,7 @@
       const params = new URLSearchParams(window.location.search);
       const src = params.get("src") || "pg-flow-from-5d-desitter-embedding";
       const url = `/notes/${src}.md`;
+      document.title = src.split('_').join(' ')
 
       try {
         const res = await fetch(url);

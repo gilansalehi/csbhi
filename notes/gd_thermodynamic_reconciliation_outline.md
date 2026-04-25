@@ -1,10 +1,3 @@
----
-title: "Horizon Thermodynamics and the GD Interpretation"
-slug: "gd_thermodynamic_reconciliation_outline"
-status: "future direction outline"
-series: "Geometric Duality"
----
-
 # Horizon Thermodynamics and the GD Interpretation
 
 ## Abstract

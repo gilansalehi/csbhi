@@ -1,10 +1,3 @@
----
-title: "Geometric Duality II: The Horizon Triple Identity"
-slug: "gd2_horizon_triple_identity_outline"
-status: "planned paper outline"
-series: "Geometric Duality"
----
-
 # Geometric Duality II: The Horizon Triple Identity
 
 ## Abstract
