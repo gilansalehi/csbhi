@@ -1,41 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Notes from Geometric Duality">
-    <link href="/src/css/index.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Notes from Geometric Duality">
+  <title>Geometric Duality Note</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script type="module" async defer>
-        const md = window.markdownit({
-            html: false,
-            linkify: true,
-            typographer: true,
-        });
+  <link href="/src/css/index.css" rel="stylesheet">
 
-        const params = new URLSearchParams(window.location.search);
-        const src = params.get("src") || "pg-flow-from-5d-desitter-embedding";
+  <!-- Markdown renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
 
-        const res = await fetch(`/notes/${src}.md`);
-        const text = await res.text();
-
-        document.querySelector("article").innerHTML = md.render(text);
-
-        if (window.MathJax) {
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.querySelector("article")]);
-        }
-    </script>
+  <!-- MathJax v3: configured for LaTeX-style delimiters used in the .md files -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      startup: {
+        typeset: false
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 
 <body>
-    <main>
-        <article>
-            Not Found
-        </article>
-    </main>
-</body>
+  <main>
+    <article id="note-content">Loading...</article>
+  </main>
 
+  <script type="module">
+    const article = document.querySelector("#note-content");
+
+    const md = window.markdownit({
+      html: false,
+      linkify: true,
+      typographer: false
+    });
+
+    function escapeHtml(value) {
+      return value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    }
+
+    /*
+      Markdown parsers can mangle TeX delimiters before MathJax sees them.
+      This preserves the exact \(...\) and \[...\] spans before Markdown render,
+      then restores them into the rendered HTML for MathJax.
+    */
+    function protectMath(source) {
+      const mathBlocks = [];
+
+      const stash = (match) => {
+        const token = `@@GD_MATH_${mathBlocks.length}@@`;
+        mathBlocks.push(match);
+        return token;
+      };
+
+      // Display math first: \[ ... \]
+      source = source.replace(/\\\[[\s\S]*?\\\]/g, stash);
+
+      // Inline math second: \( ... \)
+      source = source.replace(/\\\([\s\S]*?\\\)/g, stash);
+
+      return { source, mathBlocks };
+    }
+
+    function restoreMath(renderedHtml, mathBlocks) {
+      return renderedHtml.replace(/@@GD_MATH_(\d+)@@/g, (_, index) => {
+        return mathBlocks[Number(index)] || "";
+      });
+    }
+
+    async function loadNote() {
+      const params = new URLSearchParams(window.location.search);
+      const src = params.get("src") || "pg-flow-from-5d-desitter-embedding";
+      const url = `/notes/${src}.md`;
+
+      try {
+        const res = await fetch(url);
+
+        if (!res.ok) {
+          throw new Error(`${url} not found`);
+        }
+
+        const text = await res.text();
+
+        const protectedDoc = protectMath(text);
+        const rendered = md.render(protectedDoc.source);
+        article.innerHTML = restoreMath(rendered, protectedDoc.mathBlocks);
+
+        await window.MathJax.startup.promise;
+        await window.MathJax.typesetPromise([article]);
+      } catch (err) {
+        article.innerHTML = `
+          <h1>Note not found</h1>
+          <p>Could not load the requested Markdown file.</p>
+          <pre>${escapeHtml(err.message)}</pre>
+        `;
+      }
+    }
+
+    loadNote();
+  </script>
+</body>
 </html>
