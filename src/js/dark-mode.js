@@ -6,6 +6,7 @@
 
     var btn  = document.getElementById('theme-toggle');
     var root = document.documentElement;
+    var img = root.querySelector('#hero img');
 
     if (!btn) {
         btn = document.createElement('button');
@@ -19,6 +20,10 @@
         btn.textContent = dark ? '☀' : '☽';
         btn.title = dark ? 'light' : 'dark';
         localStorage.setItem('theme', dark ? 'dark' : 'light');
+
+        if (img) {
+            img.src = `/images/banner${dark ? '-dark' : ''}.png`
+        }
     }
 
     /* Initialise label to match whatever the pre-paint script set */

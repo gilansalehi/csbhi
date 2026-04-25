@@ -46,4 +46,4 @@ Finally, I’d look for **one or two observational signatures** that ΛCDM would
 
 ---
 
-**Bottom line:** matching the zero-mode (background expansion) is just the start.  To persuade the broader community—and me—you need the full perturbation machinery, the thermal history, structure formation all falling naturally out of a collapse scenario, and ideally a “smoking-gun” prediction that LCDM can’t mimic.
+**Bottom line:** matching the zero-mode (background expansion) is just the start.  To persuade the broader community—and me—you need the full perturbation machinery, the thermal history, structure formation all falling naturally out of a collapse scenario, and ideally a “smoking-gun” prediction that ΛCDM can’t mimic.
