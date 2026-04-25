@@ -330,11 +330,6 @@
         ctx.stroke();
         ctx.setLineDash([]);
       }
-
-      ctx.font = 'bold ' + fs(9) + ' monospace';
-      ctx.fillStyle = 'rgba(255,255,255,0.55)';
-      ctx.textAlign = 'left';
-      ctx.fillText('r\u202f=\u202f1  (unit circle)', BHX + RH * 0.707 + 4 * sc, BHY - RH * 0.707 - 4 * sc);
     }
 
     function drawSquareGrid() {
@@ -370,10 +365,6 @@
       });
 
       ctx.setLineDash([]);
-      ctx.font = 'bold ' + fs(9) + ' monospace';
-      ctx.fillStyle = 'rgba(255,255,255,0.55)';
-      ctx.textAlign = 'left';
-      ctx.fillText('flat (Minkowski)', BHX + RH * 0.707 + 4 * sc, BHY - RH * 0.707 - 4 * sc);
     }
 
     /* Alice's local reference frame — mini-grid clipped around her position.
