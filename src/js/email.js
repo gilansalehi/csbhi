@@ -14,11 +14,11 @@ function copy(str) {
 (function () {
     document.querySelectorAll('.email-container').forEach(el => {
         el.innerHTML = print(email);
-        el.onClick = copy(email);
-    })
+        el.onClick = () => copy(email);
+    });
 
     document.querySelectorAll('.github-container').forEach(el => {
         el.innerHTML = print(github);
         el.href = github;
-    })
+    });
 })();

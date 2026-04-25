@@ -331,7 +331,15 @@
 
   </div><!-- /scroll-col -->
 
-  <script src="src/js/leap-of-faith.js"></script>
+  <script src="src/js/slideshow.js"></script>
+  <script>
+    createAlicesDescent({
+      canvas:     'bg-canvas',
+      responsive: true,
+      crossfade:  true,
+      namespace:  'leapOfFaith'
+    });
+  </script>
   <script>
     (function () {
       /* Slide trigger — fires when section midpoint crosses viewport centre */

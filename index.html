@@ -6,6 +6,7 @@
   <meta name="description" content="Project overview for the Geometric Duality research programme.">
   <title>CSBHI</title>
   <link href="/src/css/index.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script src="src/js/email.js" async defer type="module"></script>
   <script src="src/js/dark-mode.js" async defer type="module"></script>
 </head>
@@ -42,7 +43,119 @@
         </ul>
       </div>
     </section>
+<section aria-labelledby="publications-title">
+  <div class="cell" style="border-bottom: 1px solid var(--soft-line);">
+    <h2 id="publications-title" class="section-title">Programme</h2>
+    <p class="lede">
+      The current plan is to build Geometric Duality in stages: first the black-hole/cosmology bridge,
+      then the de Sitter embedding, then the throat identity, then the galaxy-scale square-root law.
+    </p>
+  </div>
 
+  <ol class="publications">
+    <li class="pub">
+      <div class="label">Paper I</div>
+      <div>
+        <h3><a href="/gd1.html">Geometric Duality of Black-Hole Interiors</a></h3>
+        <p>
+          The entry paper. Rewrites flat FLRW in Painlevé–Gullstrand form, introduces the Alice/Bob
+          horizon interpretation, and frames the universe as the interior of a black-hole-like geometry.
+        </p>
+        <p class="pub-meta">preprint available</p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <div class="label">Note I: Painlevé–Gullstrand Flow from the 5D de Sitter Embedding</div>
+      <div>
+        <h3><a href="/note.html?src=pg_flow_from_5d_desitter_embedding.md">Embedding, PG Flow, and the de Sitter Throat</a></h3>
+        <p>
+          Shows how the Painlevé–Gullstrand flow \(F=Hr\) arises from the 5D embedding of 4D de Sitter
+          spacetime, and clarifies the relation between FLRW slicing, PG coordinates, and the de Sitter
+          curvature scale \(L=\sqrt{3/\Lambda}\).
+        </p>
+        <p class="pub-meta">in development</p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <div class="label">Paper III</div>
+      <div>
+        <h3><a href="/tbd.html">The Horizon Triple Identity</a></h3>
+        <p>
+          Formalizes the central throat claim: the de Sitter curvature scale, the observer horizon, and
+          the timelike matching shell are not independent ingredients, but different presentations of one
+          underlying horizon-throat structure.
+        </p>
+        <p class="pub-meta">planned</p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <div class="label">Paper IV</div>
+      <div>
+        <h3><a href="/tbd.html">The Square-Root Law</a></h3>
+        <p>
+          Develops the galaxy-scale consequence of the throat picture: a self-dual mixed acceleration law
+          \(g_{\rm mix}\sim\sqrt{g_N cH}\), yielding flat rotation curves and the baryonic Tully–Fisher scaling
+          \(v^4\sim GMcH\).
+        </p>
+        <p class="pub-meta">planned</p>
+      </div>
+    </li>
+
+    <li class="pub">
+      <div class="label">Paper V</div>
+      <div>
+        <h3><a href="/tbd.html">Horizon Thermodynamics and Geometric Synthesis</a></h3>
+        <p>
+          Reconciles GD with horizon thermodynamics, emergent-gravity arguments, MOND phenomenology,
+          and black-hole cosmology as partial views of the same geometric structure.
+        </p>
+        <p class="pub-meta">prospective</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="quote" aria-label="Project summary statement">
+  The working thesis is that causal horizons, de Sitter curvature, matching shells, and galaxy-scale acceleration laws
+  are different projections of one throat-centered spacetime geometry.
+</section>
+
+<section class="grid" aria-label="Roadmap and notes">
+  <div class="cell roadmap">
+    <h2 class="section-title">Near-Term Roadmap</h2>
+    <ol>
+      <li>Finish the GD1 revision pass: separate exact geometry, causal interpretation, duality map, and conjecture.</li>
+      <li>Publish the embedding note showing how de Sitter geometry generates PG flow.</li>
+      <li>Promote the matching-shell clarification into a formal throat-identity paper.</li>
+      <li>Stress-test the square-root law and identify its tensorial or curvature-level realization.</li>
+    </ol>
+  </div>
+
+  <div class="cell">
+    <h2 class="section-title">Technical Notes</h2>
+    <p class="lede">
+      The notes are not side material. They are the scaffolding of the programme:
+      short, explicit derivations that isolate one claim at a time before it is folded into a full paper.
+    </p>
+  </div>
+</section>
+
+<section class="notes" aria-labelledby="notes-title">
+  <h2 id="notes-title" class="section-title">Working Notes</h2>
+  <ul>
+    <li><a href="/tbd.html">Embedding and matching-shell clarification</a></li>
+    <li><a href="/tbd.html">Triple identity and strong GD hypothesis</a></li>
+    <li><a href="/tbd.html">PG flow from the 5D de Sitter embedding</a></li>
+    <li><a href="/tbd.html">Recovering the GD infall function</a></li>
+    <li><a href="/tbd.html">Recursive throat self-duality and the square-root law</a></li>
+    <li><a href="/tbd.html">Self-dual homogeneous derivation of the square-root law</a></li>
+    <li><a href="/tbd.html">Dual-track synthesis and GD1 revision lens</a></li>
+    <li><a href="/tbd.html">Bibliography and supporting literature</a></li>
+  </ul>
+</section>
     <section aria-labelledby="publications-title">
       <div class="cell" style="border-bottom: 1px solid var(--soft-line);">
         <h2 id="publications-title" class="section-title">Programme</h2>
@@ -57,7 +170,7 @@
             <p>
               The foundational paper. Recasts flat FLRW in Painlevé–Gullstrand form, develops the black-hole interior interpretation, and introduces the programme’s central claim.
             </p>
-            <p class="pub-meta">Available now</p>
+            <p class="pub-meta">pre-print available</p>
           </div>
         </li>
 
@@ -161,7 +274,7 @@
       <p>Contact</p>
       <dl>
         <dt>email</dt><dd><span class="email-container"></span></dd><br />
-        <dt>Github</dt><dd><a href="/" class="github-container"></a></dd><br />
+        <dt>github</dt><dd><a href="/" class="github-container"></a></dd><br />
       </dl>
     </footer>
   </main>

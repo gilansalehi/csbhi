@@ -1292,9 +1292,9 @@
   </main>
 </body>
 <footer>
-  <script type="module" src="src/js/alices-descent.js"></script>
+  <script src="src/js/slideshow.js"></script>
   <script>
-    /* Replace §3 static figure images with improved canvas-rendered slides once the module is ready */
+    /* Replace §3 static figure images with canvas-rendered slides once ready */
     document.addEventListener('alicesDescent:ready', function () {
       var figs = document.querySelectorAll('#section3 figure img');
       for (var i = 0; i < figs.length; i++) {
@@ -1304,6 +1304,11 @@
           figs[i].style.width = '100%';
         }
       }
+    });
+    createAlicesDescent({
+      canvas:    'alice-canvas',
+      controls:  true,
+      namespace: 'alicesDescent'
     });
   </script>
   <script>

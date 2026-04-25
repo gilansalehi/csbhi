@@ -50,10 +50,11 @@ h1 {
 
 #project-title {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(2.6rem, 8vw, 5.8rem);
+    font-size: clamp(2.6rem, 12vw, 5.8rem);
     line-height: 0.95;
     letter-spacing: -0.03em;
-    max-width: 66%;
+    max-width: 767px;
+    width: 100%;
     margin: 15vh 0 2rem;
     text-align: left;
 }

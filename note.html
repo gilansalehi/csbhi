@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Project overview for the Geometric Duality research programme.">
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="module" async defer>
+        const md = window.markdownit({
+            html: false,
+            linkify: true,
+            typographer: true,
+        });
+
+        const params = new URLSearchParams(window.location.search);
+        const src = params.get("src") || "pg-flow-from-5d-desitter-embedding";
+
+        const res = await fetch(`/notes/${src}.md`);
+        const text = await res.text();
+
+        document.querySelector("article").innerHTML = md.render(text);
+
+        if (window.MathJax) {
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.querySelector("article")]);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <article>
+            Not Found
+        </article>
+    </main>
+</body>
+
+</html>
