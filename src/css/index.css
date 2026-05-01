@@ -33,6 +33,13 @@ body {
   line-height: 1.6;
 }
 
+header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  position: relative;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -48,14 +55,14 @@ h1 {
 }
 
 #project-title {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(2.6rem, 12vw, 5.8rem);
-    line-height: 0.95;
-    letter-spacing: -0.03em;
-    max-width: 767px;
-    width: 100%;
-    margin: 15vh 0 2rem;
-    text-align: left;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.6rem, 12vw, 5.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  max-width: 767px;
+  width: 100%;
+  margin: 15vh 0 2rem;
+  text-align: left;
 }
 
 p {
@@ -75,31 +82,44 @@ figure {
 
 .email-container,
 a {
-    color: inherit;
-    text-underline-offset: 0.18em;
-    text-decoration-thickness: 1px;
-    cursor: pointer;
-    &:hover {
-        background: var(--text);
-        color: var(--bg);
-        text-decoration: none;
-    }
+  color: inherit;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  cursor: pointer;
+  font-weight: 400;
+
+  &:hover {
+    font-weight: 600;
+  }
 }
 
-dd, dt {
-    display: inline-block;
-    margin: 0;
-}
+dd,
 dt {
-    min-width: 3.5rem;
+  display: inline-block;
+  margin: 0;
+}
+
+dt {
+  min-width: 3.5rem;
+}
+
+details summary:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+details summary::marker {
+  content: "\002b";
+}
+details[open] summary::marker {
+  content: "\2212";
+}
+
+aside {
+  margin: 1em 0;
 }
 
 .email-container {
-    cursor: copy;
-}
-
-.hidden {
-  display: none !important;
+  cursor: copy;
 }
 
 .note {
@@ -112,10 +132,21 @@ dt {
   right: 2rem;
 }
 
-.eq-ref { transform: translateY(-2.5rem); }
-.eq-ref-md { transform: translateY(-3rem); }
-.eq-ref-tall { transform: translateY(-3.5rem); }
-.eq-ref-x-tall { transform: translateY(-4.5rem); }
+.eq-ref {
+  transform: translateY(-2.5rem);
+}
+
+.eq-ref-md {
+  transform: translateY(-3rem);
+}
+
+.eq-ref-tall {
+  transform: translateY(-3.5rem);
+}
+
+.eq-ref-x-tall {
+  transform: translateY(-4.5rem);
+}
 
 .canvas-toggles {
   color: var(--toggle);
@@ -164,11 +195,10 @@ dt {
 }
 
 .masthead {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem 1rem 0;
   font-size: 0.82rem;
   letter-spacing: 0.05em;
 }
@@ -177,13 +207,30 @@ dt {
   padding: 1.5rem 0 .5rem;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
 }
 
-.flex { display: flex; }
-.flex-col { display: flex; flex-direction: column; }
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
 
 .cell,
 .roadmap,
@@ -261,6 +308,10 @@ dt {
   letter-spacing: 0.04em;
 }
 
+.responsive-text .short {
+  display: none;
+}
+
 @media (max-width: 767px) {
   main {
     padding: 1rem;
@@ -287,6 +338,13 @@ dt {
   .hero h1 {
     max-width: 100%;
     margin-top: 0;
+  }
+
+  .responsive-text .short {
+    display: inline;
+  }
+  .responsive-text .long {
+    display: none;
   }
 }
 
