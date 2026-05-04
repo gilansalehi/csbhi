@@ -131,7 +131,7 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Document shell: `body > main > article.paper`.
 - Paper title block: `header.paper-header` with series label, `h1`, subtitle, and `dl.paper-meta`.
 - Table of contents: `nav.paper-toc`, linked to all major sections, appendices, and references.
-- Conventions or assumptions: `aside.paper-callout`, placed before the main argument when they govern the whole paper.
+- Conventions or assumptions: use `aside` inside `article.paper`; paper asides are styled as callouts.
 - Abstracts may use `details` / `summary` when there is a rhetorical reason to let the reader encounter the argument first.
 - Main argument: top-level `section` elements with stable ids; subsections may nest inside their parent section.
 - Figures: use `figure`, `img alt`, and `figcaption`.
@@ -170,6 +170,7 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Start from HTML5 defaults. Add CSS only when there is a clear reason: readable measure, spacing, dark mode, responsive behavior, accessibility, or a concrete UI bug.
 - Good CSS can be tiny. Preserve small rules that improve affordance, state, or reading comfort, such as a round icon button, a clear link hover state, or an open/closed marker.
 - Prefer semantic HTML over classes. If a class does not carry behavior, layout, or stable meaning, remove it.
+- Keep structural classes and presentation utilities distinct. Prefer module-owned selectors over repeated utility classes when a surrounding structure already owns the presentation.
 - Avoid decorative styling that does not strengthen the argument or reading experience.
 - Keep shared CSS small. Delete unused selectors and one-off polish before adding new rules.
 - Use native controls and browser defaults unless custom styling solves a real presentation problem.
