@@ -69,34 +69,3 @@ article > h1 + p {
   color: var(--muted);
   text-align: center;
 }
-
-.sidebar-panel:not(.sidebar) {
-  display: none;
-}
-
-.sidebar {
-  padding: 1rem;
-  border: var(--border);
-  background: var(--bg);
-}
-
-@media (min-width: 1440px) {
-  .sidebar {
-    position: fixed;
-    top: var(--sidebar-top, 4rem);
-    left: 1rem;
-    z-index: 20;
-    width: calc((100vw - var(--measure)) / 2 - 2rem);
-    max-height: var(--sidebar-max-height, calc(100vh - 5rem));
-    overflow: auto;
-  }
-
-  #paper-metadata.sidebar {
-    --sidebar-max-height: 18rem;
-  }
-
-  body:has(#paper-metadata.sidebar) #table-of-contents.sidebar {
-    --sidebar-top: 23rem;
-    --sidebar-max-height: calc(100vh - 24rem);
-  }
-}

@@ -2,8 +2,8 @@
   --bg: #ffffff;
   --text: #111111;
   --muted: #5d5d5d;
-  --measure: 980px;
-  --pad: 40px;
+  --measure: 768px;
+  --pad: 1rem;
   --border: 1px solid currentColor;
   --mono: "Courier New", Courier, monospace;
   --toggle: #aaaaaa;
@@ -23,4 +23,8 @@
   --status-target: #79c0ff;
   --status-planned: #e3b341;
   --status-future: #d2a8ff;
+}
+
+[data-measure="lg"] {
+  --measure: 980px;
 }

@@ -10,56 +10,61 @@
   <link href="src/css/index.css" rel="stylesheet" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="src/js/toggle-class.js" defer></script>
   <script src="src/js/email.js" async defer type="module"></script>
 </head>
 
 <body>
   <a class="skip-link" href="#project-title">Skip to project</a>
   <main>
-    <header id="site-header" aria-label="Project header">
-      <details class="page-meta">
-        <summary>
-          <span class="spread">
-            <span>CSBHI</span>
-            <span>Updated <time datetime="2026-04-30">April 30, 2026</time></span>
-          </span>
-        </summary>
-        <table class="metadata-table">
-          <tbody>
-            <tr>
-              <th scope="row">Project</th>
-              <td>Conformal Scaling of Black Hole Interiors</td>
-            </tr>
-            <tr>
-              <th scope="row">Programme</th>
-              <td>Geometric Duality</td>
-            </tr>
-            <tr>
-              <th scope="row">Scope</th>
-              <td>Landing page, publication roadmap, and open-problem scoreboard</td>
-            </tr>
-            <tr>
-              <th scope="row">Updated</th>
-              <td><time datetime="2026-04-30">Thursday, April 30, 2026</time></td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
-
-      <nav id="table-of-contents" aria-label="Page contents">
-        <details>
-          <summary>
-            Contents: CSBHI
-          </summary>
-          <ol>
-            <li><a href="#roadmap">Publications</a></li>
-            <li><a href="#open-problems">Progress & Open Problems</a></li>
-            <li><a href="#prior-art">Prior Art & Supporting Literature</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-          </ol>
-        </details>
-      </nav>
+    <header id="site-header" class="spread page-meta" aria-label="Project header">
+      <span>
+        <button class="link-button" type="button" aria-controls="table-of-contents" aria-pressed="false"
+          data-toggle-class="sidebar">Contents Sidebar</button>
+        /
+        <button class="link-button" type="button" aria-controls="page-metadata" aria-pressed="false"
+          data-toggle-class="sidebar">Metadata Sidebar</button>
+      </span>
+      <span>Updated <time datetime="2026-05-04">May 4, 2026</time></span>
     </header>
+
+    <nav id="table-of-contents" aria-label="Page contents">
+      <details>
+        <summary>
+          Contents: CSBHI
+        </summary>
+        <ol>
+          <li><a href="#roadmap">Publications</a></li>
+          <li><a href="#open-problems">Progress & Open Problems</a></li>
+          <li><a href="#prior-art">Prior Art & Supporting Literature</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ol>
+      </details>
+    </nav>
+
+    <aside id="page-metadata" class="sidebar-panel" aria-labelledby="page-metadata-title" hidden>
+      <h2 id="page-metadata-title">Project Metadata</h2>
+      <table class="metadata-table">
+        <tbody>
+          <tr>
+            <th scope="row">Project</th>
+            <td>Conformal Scaling of Black Hole Interiors</td>
+          </tr>
+          <tr>
+            <th scope="row">Programme</th>
+            <td>Geometric Duality</td>
+          </tr>
+          <tr>
+            <th scope="row">Scope</th>
+            <td>Landing page, publication roadmap, and open-problem scoreboard</td>
+          </tr>
+          <tr>
+            <th scope="row">Updated</th>
+            <td><time datetime="2026-05-04">Monday, May 4, 2026</time></td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
 
     <section id="banner"></section>
 

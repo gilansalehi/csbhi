@@ -1,0 +1,25 @@
+
+.sidebar-root ol {
+    padding: 1em;
+}
+
+.sidebar-root > .sidebar {
+  display: block;
+  padding: 0;
+  border: none;
+  background: var(--bg);
+}
+
+@media (min-width: 1420px) {
+  .sidebar-root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 20rem;
+    min-height: 100vh;
+    max-height: 100vh;
+    margin: 0;
+    overflow: auto;
+  }
+}

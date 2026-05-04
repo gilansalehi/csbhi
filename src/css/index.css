@@ -5,6 +5,7 @@
 @import "paper.css" layer(paper);
 @import "annotations.css" layer(annotations);
 @import "interactive.css" layer(interactive);
+@import "sidebar.css" layer(interactive);
 @import "home.css" layer(home);
 @import "scoreboard.css" layer(scoreboard);
 @import "responsive.css" layer(responsive);

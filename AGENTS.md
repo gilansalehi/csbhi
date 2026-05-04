@@ -44,6 +44,7 @@ On arrival:
 Before editing:
 
 - Identify whether the change affects public pages, public notes, archival notes, or site behavior.
+- State the governing principle for ambiguous changes. If you cannot state it in one sentence, ask the user before implementing.
 - Keep public content edits conservative unless the user explicitly asks for a stronger rewrite.
 - Preserve provenance: when an argument comes from an older note, keep enough context to avoid flattening draft history.
 - Do not stage, commit, rename, delete, or move files unless the user asks for that action.
@@ -63,16 +64,15 @@ Before final response:
 - Run only the verification that matches the risk of the change.
 - Report changed files, verification performed, and any remaining onboarding or research gaps.
 
-## Collaboration Priorities
+## Collaboration Contract
 
-The user's preferred focus for agents is:
-
-1. Scientific and mathematical coherence.
-2. Composition of the argument, including rhetorical force and careful qualification.
-3. Public presentation quality, including typography, layout, responsive behavior, and UI bugs.
-4. Code quality in service of the above.
-
-Do not spend effort on git staging, commits, branching, or release mechanics unless the user explicitly asks. The user will handle commits and staging.
+- Optimize in this order: scientific coherence, mathematical precision, rhetorical force, public presentation, then code mechanics.
+- Be concise only after resolving the complexity. Show enough reasoning to audit the choice, then compress.
+- Treat the user as an active collaborator who may be staging files and testing pages in parallel. Do not run git workflow commands unless asked.
+- If feedback shows the frame is wrong, stop implementing and ask one direct framing question. This is especially important for CSS architecture, visual taste, rhetorical sequence, mathematical claim status, and tooling assumptions.
+- Do not invent project infrastructure. This repo is intentionally static and light; inspect the files and use the local server/browser path when behavior needs verification.
+- Name verification precisely: `node --check` means "this JavaScript parses," not "the UI works."
+- Prefer document-native behavior over app-like abstractions. If the implementation makes the paper harder to reason about, the abstraction is probably wrong.
 
 ## Research Orientation
 
@@ -132,9 +132,8 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 
 - Document shell: `body > main > article`.
 - Include a skip link near the start of `body` for keyboard users.
-- Page metadata may use one `details.page-meta` with a `table.metadata-table` for useful metadata and revision timestamps.
 - Page controls should be text-first; use `.link-button` for button behavior that should read like a normal link.
-- Optional sidebar panels use `.sidebar-panel` when hidden by default and become visible/out-of-flow when `.sidebar` is toggled onto them.
+- Optional sidebar panels stay in their natural document position. Hidden panels use `.sidebar-panel` plus `hidden`; `src/js/toggle-class.js` moves active `.sidebar` panels into the shared `.sidebar-root` host, then restores them to their original position when untoggled. The host stays in document flow unless the viewport has enough gutter to fix it without covering the paper.
 - Paper title: `article > h1`, followed by an optional subtitle paragraph.
 - Table of contents: `nav > details`, linked to all major sections, appendices, and references. Use lettered appendix markers with `<ol type="A">` rather than repeating "Appendix A" in link text.
 - Conventions or assumptions: use `aside` inside the article; asides are styled as callouts by the shared HTML defaults.
@@ -176,16 +175,15 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Start from HTML5 defaults. Add CSS only when there is a clear reason: readable measure, spacing, dark mode, responsive behavior, accessibility, or a concrete UI bug.
 - Treat semantic HTML as the styling API. Do not create a class for a concept HTML already expresses, such as `article`, `header`, `nav`, `aside`, `figure`, `details`, or `table`.
 - Keep `src/css/index.css` as a CSS-native import manifest using `@layer` and `@import`. Split CSS files for organization around stable responsibilities, not as a substitute for semantic markup.
-- Good CSS can be tiny. Preserve small rules that improve affordance, state, or reading comfort, such as a round icon button, a clear link hover state, or an open/closed marker.
-- Native controls may receive light project styling when browser defaults distract from the reading experience. Keep buttons restrained, theme-aware, and recognizable as buttons.
-- Use classes only where HTML has no native concept or where behavior needs a stable hook, such as `.status`, `.end-ref`, `.eq-ref`, `.email-container`, or `.github-container`.
+- Good CSS can be tiny. Preserve rules that improve affordance, state, or reading comfort: round icon buttons, clear link hovers, readable status colors, useful `summary` markers, and non-overlapping sidebars.
+- Use native controls and browser defaults unless light styling solves a real presentation problem. Buttons should remain restrained, theme-aware, and recognizable as buttons.
+- Use classes only where HTML has no native concept or behavior needs a stable hook, such as `.status`, `.end-ref`, `.eq-ref`, `.email-container`, or `.github-container`.
 - Use `data-*` attributes for semantic state that CSS may theme, such as `data-status` on open-problem status pills.
 - Keep theme colors in `src/css/theme.css`; module CSS should consume theme tokens rather than hard-coding new palettes.
 - Prefer section ids and native elements over module classes when the page already names the thing, such as `#roadmap ol`, `#open-problems table`, or `#alice-descent figure`.
 - Keep structural classes and presentation utilities distinct. Prefer semantic selectors or module-owned selectors over repeated utility classes when a surrounding structure already owns the presentation.
-- Avoid decorative styling that does not strengthen the argument or reading experience.
-- Keep shared CSS small. Delete unused selectors and one-off polish before adding new rules.
-- Use native controls and browser defaults unless custom styling solves a real presentation problem.
+- Remove styling that merely decorates native elements without improving the argument, reading experience, or interaction.
+- Derive responsive behavior from the CSS viewport, content measure, and available gutter, not from physical display resolution. If layout behavior is ambiguous, ask for the user's observed viewport and desired behavior.
 - Use print CSS for medium-specific rhetoric. Mark interactive or screen-only regions with `data-print="omit"` when they should disappear from printed papers, and keep closed `details` content available in print.
 
 ## Markdown And Math
@@ -202,6 +200,10 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 ## Verification
 
 For small content-only edits, inspect the affected HTML/Markdown and check links manually.
+
+There is no package-level verification workflow unless the repo later adds one. Do not search for or assume `package.json`, Vite, Playwright, or similar tooling as the default path.
+
+For JavaScript edits, a syntax check such as `node --check` is only a parse check. Report it as such; do not treat it as browser or layout verification.
 
 For site behavior changes, run a local static server from the repo root, for example:
 
@@ -241,11 +243,3 @@ These are unresolved project conventions that should be clarified over time:
 - Browser support target: especially for cascade layers, `:has()`, `color-mix()`, MathJax, and canvas behavior.
 - Visual/design standard: whether the current restrained paper-like style is the long-term target.
 - Test/validation expectations: whether to add HTML validation, link checking, accessibility checks, or screenshot checks.
-
-## Working Principles
-
-- Read existing notes before making conceptual edits.
-- Keep edits narrowly tied to the requested paper, page, or note.
-- Surface uncertainty explicitly when a change touches physics claims.
-- Do not overwrite user drafts or unpublished notes without confirmation.
-- Treat this repo as both a website and an evolving research notebook; preserve provenance and avoid collapsing draft context prematurely.
