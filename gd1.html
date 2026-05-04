@@ -24,9 +24,15 @@
   <button id="theme-toggle" aria-label="Toggle dark mode">☀</button>
   <main>
     <article aria-labelledby="paper-title">
-      <header>
-        <button class="link-button page-meta" type="button" aria-controls="table-of-contents" aria-pressed="false"
-          data-toggle-class="sidebar">Toggle contents sidebar</button>
+      <header class="spread page-meta">
+        <span>
+          <button class="link-button" type="button" aria-controls="table-of-contents" aria-pressed="false"
+            data-toggle-class="sidebar">Contents Sidebar</button>
+          /
+          <button class="link-button" type="button" aria-controls="paper-metadata" aria-pressed="false"
+            data-toggle-class="sidebar">Metadata Sidebar</button>
+        </span>
+        <span>Updated <time datetime="2026-04-22">April 22, 2026</time></span>
       </header>
 
       <h1 id="paper-title">Geometric Duality: Black Hole Interiors</h1>
@@ -66,6 +72,34 @@
           </ol>
         </details>
       </nav>
+
+      <aside id="paper-metadata" class="sidebar-panel" aria-labelledby="metadata-title">
+        <h2 id="metadata-title">Paper Metadata</h2>
+        <table class="metadata-table">
+          <tbody>
+            <tr>
+              <th scope="row">Author</th>
+              <td>Gilan Salehi</td>
+            </tr>
+            <tr>
+              <th scope="row">Status</th>
+              <td>Pre-print</td>
+            </tr>
+            <tr>
+              <th scope="row">Version</th>
+              <td>0.2</td>
+            </tr>
+            <tr>
+              <th scope="row">Created</th>
+              <td><time datetime="2025-01-16">January 16, 2025</time></td>
+            </tr>
+            <tr>
+              <th scope="row">Revised</th>
+              <td><time datetime="2026-04-22">April 22, 2026</time></td>
+            </tr>
+          </tbody>
+        </table>
+      </aside>
 
     <aside>
       <strong>Legend (Conventions):</strong>

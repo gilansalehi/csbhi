@@ -25,10 +25,10 @@ article > header,
 }
 
 .spread {
-  display: inline-grid;
-  grid-template-columns: minmax(0, 1fr) max-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
-  width: calc(100% - 2rem);
 }
 
 .metadata-table {
@@ -70,20 +70,33 @@ article > h1 + p {
   text-align: center;
 }
 
-nav.sidebar {
+.sidebar-panel:not(.sidebar) {
+  display: none;
+}
+
+.sidebar {
   padding: 1rem;
   border: var(--border);
   background: var(--bg);
 }
 
 @media (min-width: 1440px) {
-  nav.sidebar {
+  .sidebar {
     position: fixed;
-    top: 4rem;
+    top: var(--sidebar-top, 4rem);
     left: 1rem;
     z-index: 20;
     width: calc((100vw - var(--measure)) / 2 - 2rem);
-    max-height: calc(100vh - 5rem);
+    max-height: var(--sidebar-max-height, calc(100vh - 5rem));
     overflow: auto;
+  }
+
+  #paper-metadata.sidebar {
+    --sidebar-max-height: 18rem;
+  }
+
+  body:has(#paper-metadata.sidebar) #table-of-contents.sidebar {
+    --sidebar-top: 23rem;
+    --sidebar-max-height: calc(100vh - 24rem);
   }
 }
