@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: math;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 980px;
+  margin: auto;
+  padding: var(--pad);
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1,
+header > p {
+  text-align: center;
+}
+
+header > p,
+header dl,
+nav h3,
+figcaption {
+  color: var(--muted);
+}
+
+header > p:first-child,
+header dl {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+header dl {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+  margin-top: 1rem;
+}
+
+header dt,
+header dd {
+  min-width: 0;
+  margin: 0;
+}
+
+header dt::after {
+  content: ":";
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  font-weight: 600;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+figure,
+aside {
+  margin: 1em 0;
+}
+
+aside {
+  padding: 1em;
+  border: var(--border);
+}
+
+details summary:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+details summary::marker {
+  content: "\002b";
+}
+
+details[open] summary::marker {
+  content: "\2212";
+}

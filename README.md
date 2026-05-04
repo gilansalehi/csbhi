@@ -14,7 +14,7 @@ The public landing page is `index.html`. The current GD I paper is `gd1.html`, w
 
 Current public notes live in `notes/` and are rendered by `note.html?src=<note-basename>`. Older synthesis documents, section drafts, and research-roadmap material live in `old_notes/`; they are important context, but are not automatically current public content.
 
-`gd1.html` is also the structural HTML5 paper template for the series: `main > article.paper`, a metadata-rich paper header, a linked `nav` table of contents, semantic sections, appendices, references, figure captions, and reusable CSS classes rather than inline page styling.
+`gd1.html` is also the structural HTML5 paper template for the series: `main > article`, a metadata-rich `header`, a linked `nav` table of contents, semantic sections, appendices, references, figure captions, and raw HTML5 structure with light shared CSS.
 
 The expanded research program aims to elevate Geometric Duality (GD) from a clever coordinate matching into a **unifying geometric framework** for:
 
@@ -194,6 +194,6 @@ The entire program reduces to:
 | `old_notes/GD_sections_5_8_draft.md` | Proposed rewrite of GD I sections 5–8 |
 | `old_notes/todos.md` | Skeptic's checklist: what the community would need to be convinced |
 | `old_notes/gd_adjacent_research_tracks.md` | Adjacent research landscape: citations, competitors, and convergences across 11 tracks |
-| `src/css/` | Shared site styles |
+| `src/css/` | CSS import manifest and small semantic/module stylesheets |
 | `src/js/` | Browser scripts for contact links, dark mode, and canvas slideshow |
 | `images/` | Paper figures and banner images |

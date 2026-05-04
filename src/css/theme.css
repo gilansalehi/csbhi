@@ -1,0 +1,15 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #5d5d5d;
+  --pad: 40px;
+  --border: 1px solid currentColor;
+  --mono: "Courier New", Courier, monospace;
+  --toggle: #aaaaaa;
+}
+
+[data-theme="dark"] {
+  --bg: #0e0e16;
+  --text: #dde1e9;
+  --muted: #c3c3c3;
+}

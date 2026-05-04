@@ -1,0 +1,74 @@
+.interactive-panel {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+#alice-canvas {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  border: 1px solid rgba(255, 200, 80, 0.22);
+  background: #07071a;
+}
+
+#alice-caption {
+  max-width: 860px;
+  min-height: 4em;
+  margin: 0.9em auto 0;
+  font-size: 0.88em;
+  text-align: left;
+}
+
+.interactive-controls,
+.interactive-toggles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.interactive-controls {
+  gap: 1.2em;
+  margin-top: 0.7em;
+}
+
+.interactive-toggles {
+  gap: 1.8em;
+  margin-top: 0.6em;
+  font-size: 0.85em;
+}
+
+#alice-counter {
+  min-width: 4.5em;
+  font-family: monospace;
+  text-align: center;
+}
+
+.interactive-panel > p:last-child {
+  margin-top: 0.45em;
+  font-size: 0.76em;
+}
+
+.interactive-toggles,
+.interactive-toggles button {
+  color: var(--toggle);
+}
+
+.interactive-toggles button {
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+  width: 2em;
+  height: 2em;
+  padding: 0;
+  border-radius: 999px;
+  cursor: pointer;
+}

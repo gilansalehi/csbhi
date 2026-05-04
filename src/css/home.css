@@ -1,0 +1,81 @@
+header.masthead {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+header.masthead ol {
+  position: absolute;
+  z-index: 1;
+  background: var(--bg);
+}
+
+.hero {
+  padding: 1.5rem 0 0.5rem;
+}
+
+#project-title {
+  max-width: 767px;
+  margin: 15vh 0 2rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.6rem, 12vw, 5.8rem);
+  line-height: 0.95;
+  text-align: left;
+}
+
+.publications {
+  padding: 0;
+  list-style: none;
+}
+
+.publications > li {
+  display: grid;
+  grid-template-columns: 5.4rem 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.publications h3 {
+  margin-top: 0;
+}
+
+.publications p,
+.publications > li > div:first-child,
+.publications > li > div:last-child > p:last-child {
+  color: var(--muted);
+}
+
+.publications > li > div:first-child,
+.publications > li > div:last-child > p:last-child {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.publications > li > div:first-child {
+  text-align: right;
+}
+
+.publications > li > div:last-child > p:last-child {
+  font-size: 0.78rem;
+}
+
+.smallcaps {
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+.email-container {
+  cursor: copy;
+}
+
+.responsive-text .short {
+  display: none;
+}

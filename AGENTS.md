@@ -14,7 +14,7 @@ The site currently consists of:
 - `leap-of-faith.html` - standalone interactive Alice/Bob descent presentation.
 - `notes/` - current public-facing note outlines and papers loaded by `note.html?src=<filename-without-md>`.
 - `old_notes/` - prior drafts, synthesis notes, revision lenses, and roadmap material. Treat these as source context, not automatically public current content.
-- `src/css/` - shared CSS, including the publication roadmap and open-problem scoreboard.
+- `src/css/` - the CSS import manifest and small semantic/module stylesheets.
 - `src/js/` - small client-side scripts for dark mode, contact links, and the Alice descent canvas.
 - `images/` - paper figures and banner images.
 
@@ -121,6 +121,7 @@ Use `notes/` for current public notes. Use `old_notes/` to recover context, earl
 - `note.html` fetches Markdown from `notes/<src>.md`, renders with `markdown-it`, and then runs MathJax v3.
 - The landing page links to notes using `note.html?src=<basename>`. The basename must exactly match a file in `notes/`.
 - `gd1.html` and `leap-of-faith.html` use `src/js/slideshow.js` for the Alice descent canvas.
+- `src/css/index.css` is the only shared stylesheet entry point. It imports the small CSS files in `src/css/`.
 - `src/js/dark-mode.js` injects or wires a `#theme-toggle` button and persists the selected theme in `localStorage`.
 - `src/js/email.js` fills `.email-container` and `.github-container` elements.
 
@@ -128,16 +129,16 @@ Use `notes/` for current public notes. Use `old_notes/` to recover context, earl
 
 Use `gd1.html` as the structural template for GD-series papers and full notes:
 
-- Document shell: `body > main > article.paper`.
-- Paper title block: `header.paper-header` with series label, `h1`, subtitle, and `dl.paper-meta`.
-- Table of contents: `nav.paper-toc`, linked to all major sections, appendices, and references.
-- Conventions or assumptions: use `aside` inside `article.paper`; paper asides are styled as callouts.
+- Document shell: `body > main > article`.
+- Paper title block: `header` with series label, `h1`, subtitle, and `dl` metadata.
+- Table of contents: `nav`, linked to all major sections, appendices, and references.
+- Conventions or assumptions: use `aside` inside the article; asides are styled as callouts by the shared HTML defaults.
 - Abstracts may use `details` / `summary` when there is a rhetorical reason to let the reader encounter the argument first.
 - Main argument: top-level `section` elements with stable ids; subsections may nest inside their parent section.
 - Figures: use `figure`, `img alt`, and `figcaption`.
 - References: use a linked `section#references`; each citation target should have a stable id such as `ref-01`.
 - Behavior scripts belong at the end of `body`, after `main`, not outside `body`.
-- Avoid inline styles in papers. Add reusable classes to `src/css/index.css` instead.
+- Avoid inline styles in papers. Prefer semantic HTML; add CSS only to the relevant file imported by `src/css/index.css`.
 
 ## Coding Standards
 
@@ -153,7 +154,7 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Keep JavaScript browser-compatible and avoid transpilation assumptions.
 - Prefer relative links for local site assets and pages.
 - Preserve accessibility basics: semantic headings, usable link text, `aria-label` where controls need it, and responsive layouts.
-- Keep CSS changes scoped. Shared typography and theme variables live in `src/css/index.css`; the open-problem table lives in `src/css/scoreboard.css`.
+- Keep CSS changes scoped. `src/css/index.css` is an import manifest, not a place for rules. Add rules to the semantic or module stylesheet that owns the behavior.
 - Do not make broad visual redesigns while editing paper content unless specifically requested.
 - Use ASCII in source files unless the existing file already relies on a specific symbol for mathematical or publication clarity.
 
@@ -168,12 +169,15 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 ## CSS Standard
 
 - Start from HTML5 defaults. Add CSS only when there is a clear reason: readable measure, spacing, dark mode, responsive behavior, accessibility, or a concrete UI bug.
+- Treat semantic HTML as the styling API. Do not create a class for a concept HTML already expresses, such as `article`, `header`, `nav`, `aside`, `figure`, `details`, or `table`.
+- Keep `src/css/index.css` as a list of imports. Split CSS files for organization around stable responsibilities, not as a substitute for semantic markup.
 - Good CSS can be tiny. Preserve small rules that improve affordance, state, or reading comfort, such as a round icon button, a clear link hover state, or an open/closed marker.
-- Prefer semantic HTML over classes. If a class does not carry behavior, layout, or stable meaning, remove it.
-- Keep structural classes and presentation utilities distinct. Prefer module-owned selectors over repeated utility classes when a surrounding structure already owns the presentation.
+- Use classes only where HTML has no native concept or where a reusable module needs a stable hook, such as `.publications`, `.problem-scoreboard`, `.status`, `.end-ref`, or interactive controls.
+- Keep structural classes and presentation utilities distinct. Prefer semantic selectors or module-owned selectors over repeated utility classes when a surrounding structure already owns the presentation.
 - Avoid decorative styling that does not strengthen the argument or reading experience.
 - Keep shared CSS small. Delete unused selectors and one-off polish before adding new rules.
 - Use native controls and browser defaults unless custom styling solves a real presentation problem.
+- Use print CSS for medium-specific rhetoric. Mark interactive or screen-only regions with `data-print="omit"` when they should disappear from printed papers.
 
 ## Markdown And Math
 

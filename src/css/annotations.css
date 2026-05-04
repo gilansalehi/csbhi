@@ -1,0 +1,26 @@
+.note,
+.footnote {
+  color: var(--muted);
+  font-size: 0.75em;
+}
+
+#references li > ul {
+  list-style-type: lower-alpha;
+}
+
+p:has(.end-ref) {
+  position: relative;
+}
+
+.end-ref {
+  position: absolute;
+  right: 2rem;
+}
+
+.eq-ref {
+  transform: translateY(-2.5rem);
+}
+
+.eq-ref-tall {
+  transform: translateY(-3.5rem);
+}

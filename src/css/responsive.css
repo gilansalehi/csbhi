@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+  main {
+    padding: 1rem;
+  }
+
+  .end-ref {
+    position: relative;
+    right: unset;
+  }
+
+  .publications > li {
+    grid-template-columns: 1fr;
+  }
+
+  #project-title {
+    margin-top: 0;
+  }
+
+  .responsive-text .short {
+    display: inline;
+  }
+
+  .responsive-text .long {
+    display: none;
+  }
+}
