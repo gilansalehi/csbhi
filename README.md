@@ -4,13 +4,17 @@
 
 ## What this project is
 
-The foundational paper (`index.html`) presents a **geometric duality** between late-time cosmic acceleration and black-hole infall. By embedding a flat FLRW patch in a Schwarzschild–de Sitter exterior and expressing the interior in Painlevé–Gullstrand (PG) form, the paper shows:
+This repository is a plain static site for the CSBHI / Geometric Duality research programme.
+
+The public landing page is `index.html`. The current GD I paper is `gd1.html`, which presents a **geometric duality** between late-time cosmic acceleration and black-hole infall. By embedding a flat FLRW patch in a Schwarzschild–de Sitter exterior and expressing the interior in Painlevé–Gullstrand (PG) form, the paper argues:
 
 - Cosmic inflation and inertial free-fall are related by a sign flip `τ → -τ`.
 - Dark energy may emerge from interior horizon geometry rather than requiring an explicit negative-pressure fluid.
 - A geometric estimate gives `Λ ≈ 1.6×10⁻⁵² m⁻²` — within 50% of the observed value.
 
-The expanded research program, documented in `notes/`, aims to elevate Geometric Duality (GD) from a clever coordinate matching into a **unifying geometric framework** for:
+Current public notes live in `notes/` and are rendered by `note.html?src=<note-basename>`. Older synthesis documents, section drafts, and research-roadmap material live in `old_notes/`; they are important context, but are not automatically current public content.
+
+The expanded research program aims to elevate Geometric Duality (GD) from a clever coordinate matching into a **unifying geometric framework** for:
 
 - black-hole / cosmology duality
 - de Sitter embedding and horizon thermodynamics
@@ -21,7 +25,7 @@ The expanded research program, documented in `notes/`, aims to elevate Geometric
 
 ## The two tracks
 
-GD has a dual-track structure that must be kept clear (see `gd_dual_track_synthesis_and_revision_lens.md`):
+GD has a dual-track structure that must be kept clear. The detailed revision lens currently lives in `old_notes/gd_dual_track_synthesis_and_revision_lens.md`.
 
 | Track | What it does | Key language |
 |---|---|---|
@@ -36,7 +40,7 @@ The shell/horizon is the **privileged matching locus** where these two descripti
 
 ## The triple identity
 
-The project now points toward a single underlying structure appearing in three guises (see `gd_triple_identity_and_strong_hypothesis.md`):
+The project now points toward a single underlying structure appearing in three guises. The current public note is `notes/horizon_triple_identity.md`; an earlier strong-hypothesis version lives in `old_notes/gd_triple_identity_and_strong_hypothesis.md`.
 
 ```
 L  ↔  H  ↔  Σ
@@ -61,7 +65,7 @@ k_H ~ H / c        (global throat curvature)
 
 The simplest mixed scalar is `c²√(k_M k_H) = √(g_N cH)`.
 
-This is not merely a dimensional argument. A functional-equation proof shows it is the **unique** law consistent with (see `gd_self_dual_homogeneous_derivation_of_the_square_root_law.md`):
+This is not merely a dimensional argument. A functional-equation proof shows it is the **unique** law consistent with the listed assumptions in `notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md`:
 
 1. No new dimensionful scale
 2. Homogeneity
@@ -83,7 +87,7 @@ Flat rotation curves and the BTFR follow immediately. The exponent `1/2` is sele
 ### Phase 0 — Foundation (complete)
 The original paper. Establishes the PG rewriting of flat FLRW, the shell relation, the infall function, the singularity-deferral mechanism, the 5D de Sitter embedding (Appendix D), and a numerical estimate of `Λ`.
 
-**Key file:** `index.html`
+**Key file:** `gd1.html`
 
 ---
 
@@ -91,25 +95,25 @@ The original paper. Establishes the PG rewriting of flat FLRW, the shell relatio
 
 | Task | Status | Note |
 |---|---|---|
-| Dual-track structure: causal vs geometric | Done | `gd_dual_track_synthesis_and_revision_lens.md` |
-| Triple identity `L ↔ H ↔ Σ` | Done | `gd_triple_identity_and_strong_hypothesis.md` |
-| Geometric hierarchy clarification (5D Minkowski → 4D dS → FLRW/PG) | Done | `gd_embedding_and_matching_shell_clarification.md` |
-| Heuristic throat-curvature mixing derivation | Done | `gd_throat_curvature_mixing_note.md` |
-| Self-duality selection of the square-root exponent | Done | `gd_recursive_throat_self_duality_and_square_root_law.md` |
-| Functional-equation proof of the square-root law | Done | `gd_self_dual_homogeneous_derivation_of_the_square_root_law.md` |
+| Dual-track structure: causal vs geometric | Done | `old_notes/gd_dual_track_synthesis_and_revision_lens.md` |
+| Triple identity `L ↔ H ↔ Σ` | Done | `notes/horizon_triple_identity.md`; archival strong version in `old_notes/gd_triple_identity_and_strong_hypothesis.md` |
+| Geometric hierarchy clarification (5D Minkowski → 4D dS → FLRW/PG) | Done | `old_notes/gd_embedding_and_matching_shell_clarification.md`; public note in `notes/pg_flow_from_5d_desitter_embedding.md` |
+| Heuristic throat-curvature mixing derivation | Done | `old_notes/gd_throat_curvature_mixing_note.md` |
+| Self-duality selection of the square-root exponent | Done | `old_notes/gd_recursive_throat_self_duality_and_square_root_law.md` |
+| Functional-equation proof of the square-root law | Done | `notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md` |
 
 ---
 
 ### Phase 2 — Paper revision (in progress)
 
-Revise `index.html` to reflect the dual-track structure. Draft rewrites of all sections exist.
+Revise `gd1.html` to reflect the dual-track structure. Draft rewrites of all sections exist in `old_notes/`.
 
 | Task | Status | Note |
 |---|---|---|
-| Section-by-section revision lens | Done | `gd_dual_track_synthesis_and_revision_lens.md` (§ "Section-by-section revision") |
-| Sections 1–4 draft rewrite | Done | `GD_sections_1_4_draft.md` |
-| Sections 5–8 draft rewrite | Done | `GD_sections_5_8_draft.md` |
-| Merge drafts into `index.html` | **TODO** | Apply edits, publish |
+| Section-by-section revision lens | Done | `old_notes/gd_dual_track_synthesis_and_revision_lens.md` (§ "Section-by-section revision") |
+| Sections 1–4 draft rewrite | Done | `old_notes/GD_sections_1_4_draft.md` |
+| Sections 5–8 draft rewrite | Done | `old_notes/GD_sections_5_8_draft.md` |
+| Merge drafts into `gd1.html` | **TODO** | Apply edits, publish |
 
 Key editorial priorities from the synthesis note:
 - Add a dual-track subsection early in the paper
@@ -140,7 +144,7 @@ The square-root law is proved at the level of symmetry-constrained law selection
 | **P5: Cosmological perturbations** | Scalar perturbations, structure growth, matter power spectra, and CMB acoustic structure. Most natural route: perturbations as fluctuations of the embedded 4D hypersurface in the 5D ambient space. |
 | **P6: Thermodynamic reconciliation** | Show that the throat geometry naturally acquires a thermodynamic / information-theoretic interpretation consistent with Verlinde and Padmanabhan. The throat should emerge as both a geometric matching locus and a causal boundary. |
 
-A "skeptic's checklist" of what the broader community would need to be convinced is in `notes/todos.md`.
+A "skeptic's checklist" of what the broader community would need to be convinced is in `old_notes/todos.md`.
 
 ---
 
@@ -172,15 +176,22 @@ The entire program reduces to:
 
 | File | Description |
 |---|---|
-| `index.html` | The foundational paper |
-| `notes/gd_unification_prospectus.md` | Full research prospectus: mission, open problems, research questions |
-| `notes/gd_dual_track_synthesis_and_revision_lens.md` | Dual-track structure; section-by-section paper revision notes |
-| `notes/gd_triple_identity_and_strong_hypothesis.md` | The triple identity `L ↔ H ↔ Σ`; strong vs weak GD reading |
-| `notes/gd_embedding_and_matching_shell_clarification.md` | Geometric hierarchy; shell as timelike worldtube; horizon vs curvature radius |
-| `notes/gd_throat_curvature_mixing_note.md` | Heuristic derivation of `g_eff ~ √(g_N cH)` from two throat curvature scales |
-| `notes/gd_recursive_throat_self_duality_and_square_root_law.md` | Self-duality selection argument for the square-root exponent |
+| `index.html` | Public landing page, publication roadmap, and open-problem scoreboard |
+| `gd1.html` | Current public GD I paper |
+| `note.html` | Client-side Markdown renderer for current public notes |
+| `leap-of-faith.html` | Standalone interactive Alice/Bob descent presentation |
+| `notes/pg_flow_from_5d_desitter_embedding.md` | Public note on PG flow from the 5D de Sitter embedding |
+| `notes/horizon_triple_identity.md` | Public note on the horizon triple identity |
+| `notes/gd2_horizon_triple_identity_outline.md` | GD II outline |
+| `notes/gd3_throat_curvature_and_galaxy_law_outline.md` | GD III outline |
 | `notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md` | Functional-equation proof (theorem-style) of the unique mixed law |
-| `notes/GD_sections_1_4_draft.md` | Proposed rewrite of paper sections 1–4 |
-| `notes/GD_sections_5_8_draft.md` | Proposed rewrite of paper sections 5–8 |
-| `notes/todos.md` | Skeptic's checklist: what the community would need to be convinced |
-| `notes/gd_adjacent_research_tracks.md` | Adjacent research landscape: citations, competitors, and convergences across 11 tracks |
+| `notes/gd_thermodynamic_reconciliation_outline.md` | Planned thermodynamic reconciliation outline |
+| `old_notes/gd_unification_prospectus.md` | Archival research prospectus: mission, open problems, research questions |
+| `old_notes/gd_dual_track_synthesis_and_revision_lens.md` | Archival dual-track structure and section-by-section paper revision notes |
+| `old_notes/GD_sections_1_4_draft.md` | Proposed rewrite of GD I sections 1–4 |
+| `old_notes/GD_sections_5_8_draft.md` | Proposed rewrite of GD I sections 5–8 |
+| `old_notes/todos.md` | Skeptic's checklist: what the community would need to be convinced |
+| `old_notes/gd_adjacent_research_tracks.md` | Adjacent research landscape: citations, competitors, and convergences across 11 tracks |
+| `src/css/` | Shared site styles |
+| `src/js/` | Browser scripts for contact links, dark mode, and canvas slideshow |
+| `images/` | Paper figures and banner images |
