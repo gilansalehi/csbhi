@@ -123,7 +123,7 @@ Use `notes/` for current public notes. Use `old_notes/` to recover context, earl
 - `gd1.html` and `leap-of-faith.html` use `src/js/slideshow.js` for the Alice descent canvas.
 - `src/css/index.css` is the only shared stylesheet entry point. It uses CSS cascade layers to import the small files in `src/css/`, including `paper.css` for semantic article-shell styling.
 - `src/js/dark-mode.js` is the shared theme script. Load it before the stylesheet so it can set `data-theme` before first paint; it injects or wires a `#theme-toggle` button and persists the selected theme in `localStorage`.
-- `src/js/toggle-class.js` wires controls with `data-toggle-class` and `aria-controls` to toggle a class on the controlled element.
+- `src/js/dialog.js` wires controls with `data-dialog-open` to non-modal `dialog` sidebars and fills `[data-clone="<selector>"]` hosts from existing document elements.
 - `src/js/email.js` fills `.email-container` and `.github-container` elements.
 
 ## HTML Paper Standard
@@ -133,7 +133,7 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Document shell: `body > main > article`.
 - Include a skip link near the start of `body` for keyboard users.
 - Page controls should be text-first; use `.link-button` for button behavior that should read like a normal link.
-- Optional sidebar panels stay in their natural document position. Hidden panels use `.sidebar-panel` plus `hidden`; `src/js/toggle-class.js` moves active `.sidebar` panels into the shared `.sidebar-root` host, then restores them to their original position when untoggled. The host stays in document flow unless the viewport has enough gutter to fix it without covering the paper.
+- Optional sidebar content stays in its natural document position. Use a non-modal `dialog.sidebar-dialog` as the convenience sidebar; fill it with `[data-clone="<selector>"]` so the source table of contents and metadata remain the canonical document content.
 - Paper title: `article > h1`, followed by an optional subtitle paragraph.
 - Table of contents: `nav > details`, linked to all major sections, appendices, and references. Use lettered appendix markers with `<ol type="A">` rather than repeating "Appendix A" in link text.
 - Conventions or assumptions: use `aside` inside the article; asides are styled as callouts by the shared HTML defaults.
@@ -141,7 +141,7 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Main argument: top-level `section` elements with stable ids; subsections may nest inside their parent section.
 - Figures: use `figure`, `img alt`, and `figcaption`.
 - References: use a linked `section#references`; each citation target should have a stable id such as `ref-01`.
-- Behavior scripts belong at the end of `body`, after `main`, not outside `body`.
+- Behavior scripts should be deferred in `head` or placed at the end of `body`; `dark-mode.js` is the exception because it must run before the stylesheet.
 - Avoid inline styles in papers. Prefer semantic HTML; add CSS only to the relevant file imported by `src/css/index.css`.
 
 ## Coding Standards

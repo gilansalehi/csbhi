@@ -15,6 +15,7 @@
 
   <script src="src/js/dark-mode.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="src/js/dialog.js" defer></script>
 
   <link href="src/css/index.css" rel="stylesheet" />
 </head>
@@ -26,11 +27,8 @@
     <article aria-labelledby="paper-title">
       <header class="spread page-meta">
         <span>
-          <button class="link-button" type="button" aria-controls="table-of-contents" aria-pressed="false"
-            data-toggle-class="sidebar">Contents Sidebar</button>
-          /
-          <button class="link-button" type="button" aria-controls="paper-metadata" aria-pressed="false"
-            data-toggle-class="sidebar">Metadata Sidebar</button>
+          <button class="link-button" type="button" aria-controls="page-sidebar" aria-haspopup="dialog"
+            aria-expanded="false" data-dialog-open="#page-sidebar">☰ Sidebar</button>
         </span>
         <span>Updated <time datetime="2026-05-04">May 4, 2026</time></span>
       </header>
@@ -41,8 +39,9 @@
         <h2>Table of Contents</h2>
         <details open>
           <summary id="toc-title">
-            Contents
+            <em>Contents</em>
           </summary>
+          <h3>Geometric Duality</h3>
           <ol>
             <li><a href="#abstract">Abstract</a></li>
             <li><a href="#section1">Introduction &amp; Historical Background</a></li>
@@ -100,6 +99,19 @@
           </tbody>
         </table>
       </aside>
+
+      <dialog id="page-sidebar" class="sidebar-dialog" aria-labelledby="page-sidebar-title" data-print="omit">
+        <header class="spread page-meta">
+          <h2 id="page-sidebar-title">Sidebar</h2>
+          <form method="dialog">
+            <button class="link-button" type="submit" value="close">
+              <span class="text-2x">&#10005;</span>
+            </button>
+          </form>
+        </header>
+        <div data-clone="#table-of-contents"></div>
+        <div data-clone="#paper-metadata"></div>
+      </dialog>
 
     <aside>
       <strong>Legend (Conventions):</strong>
@@ -1328,7 +1340,6 @@
   </main>
 
   <script src="src/js/slideshow.js"></script>
-  <script src="src/js/toggle-class.js"></script>
   <script>
     /* Replace §3 static figure images with canvas-rendered slides once ready */
     document.addEventListener('alicesDescent:ready', function () {

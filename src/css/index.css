@@ -1,7 +1,7 @@
-@layer theme, html, paper, annotations, interactive, home, scoreboard, responsive, print;
+@layer theme, reset, paper, annotations, interactive, home, scoreboard, responsive, print;
 
 @import "theme.css" layer(theme);
-@import "html.css" layer(html);
+@import "reset.css" layer(reset);
 @import "paper.css" layer(paper);
 @import "annotations.css" layer(annotations);
 @import "interactive.css" layer(interactive);

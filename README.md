@@ -195,5 +195,5 @@ The entire program reduces to:
 | `old_notes/todos.md` | Skeptic's checklist: what the community would need to be convinced |
 | `old_notes/gd_adjacent_research_tracks.md` | Adjacent research landscape: citations, competitors, and convergences across 11 tracks |
 | `src/css/` | CSS import manifest and small semantic/module stylesheets |
-| `src/js/` | Browser scripts for contact links, dark mode, and canvas slideshow |
+| `src/js/` | Small browser scripts for dark mode, dialogs, contact links, and canvas slideshow |
 | `images/` | Paper figures and banner images |
