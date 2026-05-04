@@ -21,16 +21,36 @@
 }
 
 #open-problems .status {
+  --status-color: currentColor;
+
   display: inline-block;
   margin-bottom: 0.65rem;
   padding: 0.22rem 0.58rem;
-  border: 1px solid currentColor;
+  border: 1px solid color-mix(in srgb, var(--status-color) 60%, currentColor);
   border-radius: 999px;
+  background: color-mix(in srgb, var(--status-color) 14%, transparent);
+  color: var(--status-color);
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.055em;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+#open-problems .status[data-status="addressed"] {
+  --status-color: var(--status-addressed);
+}
+
+#open-problems .status[data-status="target"] {
+  --status-color: var(--status-target);
+}
+
+#open-problems .status[data-status="planned"] {
+  --status-color: var(--status-planned);
+}
+
+#open-problems .status[data-status="future"] {
+  --status-color: var(--status-future);
 }
 
 #open-problems td:last-child a,

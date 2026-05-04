@@ -173,6 +173,8 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Keep `src/css/index.css` as a CSS-native import manifest using `@layer` and `@import`. Split CSS files for organization around stable responsibilities, not as a substitute for semantic markup.
 - Good CSS can be tiny. Preserve small rules that improve affordance, state, or reading comfort, such as a round icon button, a clear link hover state, or an open/closed marker.
 - Use classes only where HTML has no native concept or where behavior needs a stable hook, such as `.status`, `.end-ref`, `.eq-ref`, `.email-container`, or `.github-container`.
+- Use `data-*` attributes for semantic state that CSS may theme, such as `data-status` on open-problem status pills.
+- Keep theme colors in `src/css/theme.css`; module CSS should consume theme tokens rather than hard-coding new palettes.
 - Prefer section ids and native elements over module classes when the page already names the thing, such as `#roadmap ol`, `#open-problems table`, or `#alice-descent figure`.
 - Keep structural classes and presentation utilities distinct. Prefer semantic selectors or module-owned selectors over repeated utility classes when a surrounding structure already owns the presentation.
 - Avoid decorative styling that does not strengthen the argument or reading experience.

@@ -6,10 +6,18 @@
   --border: 1px solid currentColor;
   --mono: "Courier New", Courier, monospace;
   --toggle: #aaaaaa;
+  --status-addressed: #237a3b;
+  --status-target: #1f6feb;
+  --status-planned: #8a5a00;
+  --status-future: #7a4db3;
 }
 
 [data-theme="dark"] {
   --bg: #0e0e16;
   --text: #dde1e9;
   --muted: #c3c3c3;
+  --status-addressed: #7ee787;
+  --status-target: #79c0ff;
+  --status-planned: #e3b341;
+  --status-future: #d2a8ff;
 }
