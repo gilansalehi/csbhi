@@ -54,6 +54,143 @@ h1 {
   text-align: center;
 }
 
+.paper {
+  width: 100%;
+}
+
+.paper-header {
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.paper-header h1 {
+  margin-bottom: 0.35rem;
+}
+
+.paper-series,
+.paper-subtitle,
+.paper-meta,
+.paper-action,
+.paper-toc h3 {
+  color: var(--muted);
+}
+
+.paper-series,
+.paper-meta,
+.paper-action {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.paper-series,
+.paper-subtitle {
+  margin-bottom: 0.35rem;
+}
+
+.paper-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+  margin: 1rem auto 0;
+}
+
+.paper-meta dt,
+.paper-meta dd {
+  min-width: 0;
+}
+
+.paper-meta dt::after {
+  content: ":";
+}
+
+.paper-meta dd {
+  margin-right: 0.5rem;
+}
+
+.paper-toc {
+  margin-bottom: 1rem;
+}
+
+.paper-callout {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 1em;
+  border: var(--border);
+}
+
+.paper-action {
+  margin-bottom: 1.2em;
+}
+
+.paper-action a {
+  opacity: 0.55;
+}
+
+.reference-sublist {
+  list-style-type: lower-alpha;
+}
+
+.interactive-panel {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.interactive-canvas {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 200, 80, 0.22);
+  border-radius: 6px;
+  background: #07071a;
+}
+
+.interactive-caption {
+  max-width: 860px;
+  min-height: 4em;
+  margin: 0.9em auto 0;
+  padding: 0 0.5em;
+  font-size: 0.88em;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.interactive-controls,
+.interactive-toggles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.interactive-controls {
+  gap: 1.2em;
+  margin-top: 0.7em;
+}
+
+.interactive-toggles {
+  gap: 1.8em;
+  margin-top: 0.6em;
+  font-size: 0.85em;
+}
+
+.paper-button {
+  padding: 0.38em 1.1em;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9em;
+}
+
+.interactive-counter {
+  min-width: 4.5em;
+  font-family: monospace;
+  font-size: 0.9em;
+  text-align: center;
+}
+
 #project-title {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(2.6rem, 12vw, 5.8rem);

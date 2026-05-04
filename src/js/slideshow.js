@@ -625,7 +625,7 @@
         if (elCounter) elCounter.textContent = (current + 1) + ' / ' + slides.length;
         if (elBtnPrev) elBtnPrev.disabled   = current === 0;
         if (elBtnNext) elBtnNext.disabled   = current === slides.length - 1;
-        if (elRoadBtn) elRoadBtn.style.display = current === slides.length - 1 ? '' : 'none';
+        if (elRoadBtn) elRoadBtn.classList.toggle('hidden', current !== slides.length - 1);
       }
     }
 

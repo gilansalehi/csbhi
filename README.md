@@ -14,6 +14,8 @@ The public landing page is `index.html`. The current GD I paper is `gd1.html`, w
 
 Current public notes live in `notes/` and are rendered by `note.html?src=<note-basename>`. Older synthesis documents, section drafts, and research-roadmap material live in `old_notes/`; they are important context, but are not automatically current public content.
 
+`gd1.html` is also the structural HTML5 paper template for the series: `main > article.paper`, a metadata-rich paper header, a linked `nav` table of contents, semantic sections, appendices, references, figure captions, and reusable CSS classes rather than inline page styling.
+
 The expanded research program aims to elevate Geometric Duality (GD) from a clever coordinate matching into a **unifying geometric framework** for:
 
 - black-hole / cosmology duality
@@ -177,7 +179,7 @@ The entire program reduces to:
 | File | Description |
 |---|---|
 | `index.html` | Public landing page, publication roadmap, and open-problem scoreboard |
-| `gd1.html` | Current public GD I paper |
+| `gd1.html` | Current public GD I paper and canonical HTML5 paper skeleton for the series |
 | `note.html` | Client-side Markdown renderer for current public notes |
 | `leap-of-faith.html` | Standalone interactive Alice/Bob descent presentation |
 | `notes/pg_flow_from_5d_desitter_embedding.md` | Public note on PG flow from the 5D de Sitter embedding |

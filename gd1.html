@@ -8,7 +8,8 @@
   <meta name="revised" content="2026-04-22">
   <meta name="dcterms.created" content="2025-01-16">
   <meta name="dcterms.modified" content="2026-04-22">
-  <link rel="canonical" href="https://www.gilansalehi.com/csbhi" />
+  <meta name="author" content="Gilan Salehi">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/gd1.html" />
 
   <title>Geometric Duality of Black-Hole Interiors</title>
 
@@ -29,10 +30,28 @@
 
 <body>
   <button id="theme-toggle" aria-label="Toggle dark mode">☀</button>
-  <h1>Geometric Duality of Black-Hole Interiors</h1>
   <main>
-    <section id="table-of-contents">
-      <h2>Table of Contents</h2>
+    <article class="paper" aria-labelledby="paper-title">
+    <header class="paper-header">
+      <p class="paper-series">Geometric Duality I</p>
+      <h1 id="paper-title">Geometric Duality of Black-Hole Interiors</h1>
+      <p class="paper-subtitle">Conformal Scaling of Black Hole Interiors</p>
+      <dl class="paper-meta">
+        <dt>Author</dt>
+        <dd>Gilan Salehi</dd>
+        <dt>Status</dt>
+        <dd>Pre-print</dd>
+        <dt>Version</dt>
+        <dd>0.2</dd>
+        <dt>Created</dt>
+        <dd><time datetime="2025-01-16">January 16, 2025</time></dd>
+        <dt>Revised</dt>
+        <dd><time datetime="2026-04-22">April 22, 2026</time></dd>
+      </dl>
+    </header>
+
+    <nav id="table-of-contents" class="paper-toc" aria-labelledby="toc-title">
+      <h2 id="toc-title">Table of Contents</h2>
       <ol>
         <li><a href="#abstract">Abstract</a></li>
         <li><a href="#section1">Introduction &amp; Historical Background</a></li>
@@ -60,9 +79,9 @@
         <li class="hidden"><a href="#acknowledgements">Acknowledgements</a></li>
         <li><a href="#references">References</a></li>
       </ol>
-    </section>
+    </nav>
 
-    <aside class="legend" style="border: 1px solid; padding: 1em;">
+    <aside class="paper-callout paper-conventions">
       <strong>Legend (Conventions):</strong>
       Throughout this paper we work in geometrized units where
       \( c=1 \), \( G=1 \), and choose the mass‐scale so that \( 2M=1 \).
@@ -308,8 +327,8 @@
     </section>
     <section id="section3">
       <h2>A Leap of Faith</h2>
-      <p style="font-size:0.82em; margin-bottom:1.2em;">
-        <a href="leap-of-faith.html" style="opacity:0.55;">↗ Follow Alice’s descent — interactive slideshow</a>
+      <p class="paper-action">
+        <a href="leap-of-faith.html">↗ Follow Alice’s descent — interactive slideshow</a>
       </p>
 
       <p>
@@ -334,7 +353,7 @@
         \(r=1\), singularity at \(r=0\)), which looks like this:
       </p>
       <figure>
-        <img src="images/Fig1.webp" />
+        <img src="images/Fig1.webp" alt="Diagram of Alice and Bob far outside a black-hole horizon, with Bob near the station and Alice beginning descent." />
         <figcaption>
           <em>Fig 1. Alice &amp; Bob near each other, both at \(r\gg 1\) (well outside the horizon at \(r=1\)).</em>
         </figcaption>
@@ -342,16 +361,18 @@
 
       <p>
         Bob knows two things from General Relativity <span class="ref">[<a href="#ref-18">18</a>]</span>:
-        <ul>
-          <li>
-            In his own coordinate time \(t\), he will never see Alice cross the horizon at \(r=1\),
-            nor receive any signal from her once she does.
-            As \(t\to\infty\), her light and radio pulses become infinitely redshifted and fade away.
-          </li>
-          <li>
-            In Alice’s proper time \(\tau\), she will reach \( r=1 \) after a finite interval and then continue inward in free fall.
-          </li>
-        </ul>
+      </p>
+      <ul>
+        <li>
+          In his own coordinate time \(t\), he will never see Alice cross the horizon at \(r=1\),
+          nor receive any signal from her once she does.
+          As \(t\to\infty\), her light and radio pulses become infinitely redshifted and fade away.
+        </li>
+        <li>
+          In Alice’s proper time \(\tau\), she will reach \( r=1 \) after a finite interval and then continue inward in free fall.
+        </li>
+      </ul>
+      <p>
         Because Alice's motion remains inertial during the entire journey, she registers no forces.
         In her local frame, her clock ticks normally, and she measures space as flat.
         But what she experiences and what Bob sees are starkly different.
@@ -363,7 +384,7 @@
         In the unit‐circle diagram, Alice slowly approaches the event horizon located at \(r=1\)—see Figure 2.
       </p>
       <figure>
-        <img src="images/Fig2.webp" />
+        <img src="images/Fig2.webp" alt="Diagram of Alice falling toward the event horizon while Bob remains far outside." />
         <figcaption>
           <em>Fig 2. Alice in mid‐descent (\(r>1\)), moving toward the horizon; Bob remains far out at \(r\gg1\).</em>
         </figcaption>
@@ -378,7 +399,7 @@
         In the unit‐circle diagram, she simply passes through the perimeter—see Figure 3.
       </p>
       <figure>
-        <img src="images/Fig3.webp" />
+        <img src="images/Fig3.webp" alt="Diagram of Alice on the event horizon at r equals 1 while Bob remains outside." />
         <figcaption>
           <em>Fig 3. Alice exactly on the horizon (\(r=1\)), Bob still far at \(r\gg1\).</em>
         </figcaption>
@@ -392,7 +413,7 @@
         just as the Equivalence Principle demands.
       </p>
       <figure>
-        <img src="images/Fig4.webp" />
+        <img src="images/Fig4.webp" alt="Diagram of Alice just inside the horizon, with Bob's signals no longer visible." />
         <figcaption>
           <em>
             Fig 4. Just inside the horizon (\(r < 1\)), Alice’s local lab remains Minkowskian;
@@ -413,7 +434,7 @@
         \end{equation}
       </p>
       <figure>
-        <img src="images/Fig5.webp" />
+        <img src="images/Fig5.webp" alt="Diagram of Alice at r equals 0 in the pure-vacuum Schwarzschild interior." />
         <figcaption>
           <em>Fig 5. Alice at the singularity (\(r=0\)) in pure-vacuum Schwarzschild: she arrives at finite proper time
             \(\tau=2/3\).</em>
@@ -429,13 +450,13 @@
         All we need is a little perspective—see Figure 6.
       </p>
       <figure>
-        <img src="images/Fig6.webp" />
+        <img src="images/Fig6.webp" alt="Diagram of radial infall lines converging toward a vanishing point at r equals 0." />
         <figcaption>
           <em>Fig 6. Radial infall lines converge at \(r=0\), recontextualizing the singularity as a vanishing point.</em>
         </figcaption>
       </figure>
 
-      <aside style="border: 1px solid; padding: 1em; max-width: 100%; min-width: 320px;">
+      <aside class="paper-callout">
         Just as a driver will never reach the road's vanishing point, where parallel lines appear to intersect,
         so too will Alice never reach the singularity, where all geodesics appear to converge.
       </aside>
@@ -1191,30 +1212,27 @@
         Use the <strong>Prev / Next</strong> buttons or the <strong>← →</strong> arrow keys to step through the sequence.
       </p>
 
-      <div style="text-align:center; margin:1.5em 0;">
+      <div class="interactive-panel">
         <canvas id="alice-canvas" width="1050" height="440"
-          style="max-width:100%; border:1px solid rgba(255,200,80,0.22); border-radius:6px;
-                 background:#07071a; display:block; margin:0 auto;"></canvas>
-        <div id="alice-caption" style="margin:0.9em auto 0; max-width:860px; font-size:0.88em; line-height:1.55; min-height:4em; text-align:left; padding:0 0.5em;">
+          class="interactive-canvas"
+          aria-label="Interactive Alice descent slideshow"></canvas>
+        <div id="alice-caption" class="interactive-caption">
         </div>
-        <div style="display:flex; align-items:center; justify-content:center; gap:1.2em; margin-top:0.7em;">
-          <button id="alice-btn-prev"
-            style="padding:0.38em 1.1em; font-size:0.9em; cursor:pointer;">&#8592; Prev</button>
-          <span id="alice-counter"
-            style="font-size:0.9em; font-family:monospace; min-width:4.5em; text-align:center;"></span>
-          <button id="alice-btn-next"
-            style="padding:0.38em 1.1em; font-size:0.9em; cursor:pointer;">Next &#8594;</button>
+        <div class="interactive-controls">
+          <button id="alice-btn-prev" class="paper-button">&#8592; Prev</button>
+          <span id="alice-counter" class="interactive-counter"></span>
+          <button id="alice-btn-next" class="paper-button">Next &#8594;</button>
         </div>
-        <div class="canvas-toggles" style="margin-top:0.6em; font-size:0.85em; display:flex; gap:1.8em; justify-content:center; flex-wrap:wrap;">
+        <div class="canvas-toggles interactive-toggles">
           <button id="alice-stars-btn" class="toggle-btn">Hide Stars</button>
           <button id="alice-grid-btn"  class="toggle-btn">Grid Off</button>
-          <button id="alice-road-btn"  class="toggle-btn" style="display:none;">Hide Road</button>
+          <button id="alice-road-btn"  class="toggle-btn hidden">Hide Road</button>
         </div>
         <p class="canvas-hint">Arrow keys &#8592; &#8594; also navigate slides.</p>
       </div>
     </section>
 
-    <section id="references" style="order: 4">
+    <section id="references">
       <h2>References</h2>
       <a href="#resume-here">Back Up</a>
       <ol>
@@ -1226,7 +1244,7 @@
         <li id="ref-06">Friedmann A. Über die Krümmung des Raumes. <em>Zeitschrift für Physik</em>. 1922;10(1):377–386.</li>
         <li id="ref-07">
           Robertson H. P.
-          <ul style="list-style-type: lower-alpha;">
+          <ul class="reference-sublist">
             <li>On the Foundations of Relativistic Cosmology. <em>Proceedings of the National Academy of Sciences of the United States of America</em>. 1929;15(11):822–829.</li>
             <li>Kinematics and World-Structure. <em>Astrophysical Journal</em>. 1935;82:284–301.</li>
             <li>Kinematics and World-Structure II. <em>Astrophysical Journal</em>. 1936;83:187–201.</li>
@@ -1235,7 +1253,7 @@
         </li>
         <li id="ref-08">
           Walker A. G.
-          <ul style="list-style-type: lower-alpha;">
+          <ul class="reference-sublist">
             <li>On Riemannian Spaces with Spherical Symmetry about a Line, and the Conditions for Isotropy in General Relativity. <em>Quarterly Journal of Mathematics</em>. 1935;os-6(1):81–93.</li>
             <li>On Milne’s Theory of World-Structure. <em>Proceedings of the London Mathematical Society</em>. 1937;s2-42(1):90–127.</li>
           </ul>
@@ -1252,7 +1270,7 @@
         <li id="ref-18">Wald R. M. <em>General Relativity</em>. Chicago: University of Chicago Press; 1984.</li>
         <li id="ref-19">
           Lemaître G.
-          <ul style="list-style-type: lower-alpha;">
+          <ul class="reference-sublist">
             <li>Un Univers homogène de masse constante et de rayon croissant rendant compte de la vitesse radiale des nébuleuses extra-galactiques. <em>Annales de la Société Scientifique de Bruxelles</em>. 1927;47:49–59.</li>
             <li>A Homogeneous Universe of Constant Mass and Increasing Radius Accounting for the Radial Velocity of Extra-Galactic Nebulae. <em>Monthly Notices of the Royal Astronomical Society</em>. 1931;91(5):483–490.</li>
             <li>L’Univers en expansion. <em>Annales de la Société Scientifique de Bruxelles</em>. 1933;53:51–85.</li>
@@ -1262,7 +1280,7 @@
         <li id="ref-21">Bondi H. Spherically Symmetrical Models in General Relativity. <em>Monthly Notices of the Royal Astronomical Society</em>. 1947;107(5–6):410–425.</li>
         <li id="ref-22">
           Israel W.
-          <ul style="list-style-type: lower-alpha;">
+          <ul class="reference-sublist">
             <li>Singular hypersurfaces and thin shells in general relativity. <em>Il Nuovo Cimento B</em>. 1966;44B:1–14.</li>
             <li>Erratum to “Singular hypersurfaces and thin shells in general relativity.” <em>Il Nuovo Cimento B</em>. 1967;48B:463.</li>
           </ul>
@@ -1279,7 +1297,7 @@
         <li id="ref-32">Poisson E. <em>A Relativist’s Toolkit: The Mathematics of Black-Hole Mechanics</em>. Cambridge: Cambridge University Press; 2004.</li>
         <li id="ref-33">
           de Sitter W.
-          <ul style="list-style-type: lower-alpha;">
+          <ul class="reference-sublist">
             <li>On the relativity of inertia. Remarks concerning Einstein’s latest hypothesis. <em>Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen</em>. 1917;19(II):1217–1225.</li>
             <li>On Einstein’s Theory of Gravitation and Its Astronomical Consequences. Third Paper. <em>Monthly Notices of the Royal Astronomical Society</em>. 1917;78:3–28.</li>
           </ul>
@@ -1288,9 +1306,9 @@
         <li id="ref-35">Bressange G. F. On the extension of the concept of thin shells to the Einstein-Cartan theory. <em>Classical and Quantum Gravity</em>. 2000;17(13):2509–2523.</li>
       </ol>
     </section>
+    </article>
   </main>
-</body>
-<footer>
+
   <script src="src/js/slideshow.js"></script>
   <script>
     /* Replace §3 static figure images with canvas-rendered slides once ready */
@@ -1330,6 +1348,6 @@
       });
     }());
   </script>
-</footer>
+</body>
 
 </html>

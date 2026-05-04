@@ -104,6 +104,9 @@ Use `notes/` for current public notes. Use `old_notes/` to recover context, earl
 
 ## Argument And Composition
 
+- Earn brevity. First resolve the complexity and ambiguity, then present the simplest durable version of the argument.
+- Keep the load-bearing steps visible. Do not show every scratch-work step, but do not hide a step the reader needs in order to trust the conclusion.
+- Treat final prose as the result of compression, not omission.
 - Lead readers from established geometry to interpretation to conjecture. Do not start with the strongest slogan unless the surrounding section can support it.
 - Prefer section structure that makes the claim status visible: setup, exact result, interpretation, consequence, open problem.
 - Preserve the Alice/Bob framing as an interpretive bridge, not as the derivational foundation.
@@ -114,14 +117,37 @@ Use `notes/` for current public notes. Use `old_notes/` to recover context, earl
 ## Site Architecture
 
 - Pages are static and should remain directly readable as HTML.
+- Series papers should follow the `gd1.html` HTML5 paper skeleton.
 - `note.html` fetches Markdown from `notes/<src>.md`, renders with `markdown-it`, and then runs MathJax v3.
 - The landing page links to notes using `note.html?src=<basename>`. The basename must exactly match a file in `notes/`.
 - `gd1.html` and `leap-of-faith.html` use `src/js/slideshow.js` for the Alice descent canvas.
 - `src/js/dark-mode.js` injects or wires a `#theme-toggle` button and persists the selected theme in `localStorage`.
 - `src/js/email.js` fills `.email-container` and `.github-container` elements.
 
+## HTML Paper Standard
+
+Use `gd1.html` as the structural template for GD-series papers and full notes:
+
+- Document shell: `body > main > article.paper`.
+- Paper title block: `header.paper-header` with series label, `h1`, subtitle, and `dl.paper-meta`.
+- Table of contents: `nav.paper-toc`, linked to all major sections, appendices, and references.
+- Conventions or assumptions: `aside.paper-callout`, placed before the main argument when they govern the whole paper.
+- Abstracts may use `details` / `summary` when there is a rhetorical reason to let the reader encounter the argument first.
+- Main argument: top-level `section` elements with stable ids; subsections may nest inside their parent section.
+- Figures: use `figure`, `img alt`, and `figcaption`.
+- References: use a linked `section#references`; each citation target should have a stable id such as `ref-01`.
+- Behavior scripts belong at the end of `body`, after `main`, not outside `body`.
+- Avoid inline styles in papers. Add reusable classes to `src/css/index.css` instead.
+
 ## Coding Standards
 
+- Fit the existing system first. Read before changing, and match local structure, naming, formatting, and dependency style unless there is a concrete reason not to.
+- Make the smallest complete change: small enough to review, complete enough not to leave the real issue unresolved.
+- Prefer boring code: clear HTML, CSS, and JavaScript over clever abstractions.
+- Name things for the domain rather than generic mechanics.
+- Separate content, presentation, and behavior when doing so keeps the page easier to reason about.
+- Make UI states explicit: loading, error, empty, mobile, dark mode, failed fetch, and missing note states should not be accidental.
+- Leave the repo easier to work in: fewer stale references, clearer file ownership, and fewer surprises.
 - Keep dependencies minimal. Do not add a framework, package manager, or build system unless the user explicitly chooses that direction.
 - Use plain, readable HTML/CSS/JS that matches the existing code style.
 - Keep JavaScript browser-compatible and avoid transpilation assumptions.
