@@ -121,7 +121,7 @@ Use `notes/` for current public notes. Use `old_notes/` to recover context, earl
 - `note.html` fetches Markdown from `notes/<src>.md`, renders with `markdown-it`, and then runs MathJax v3.
 - The landing page links to notes using `note.html?src=<basename>`. The basename must exactly match a file in `notes/`.
 - `gd1.html` and `leap-of-faith.html` use `src/js/slideshow.js` for the Alice descent canvas.
-- `src/css/index.css` is the only shared stylesheet entry point. It uses CSS cascade layers to import the small files in `src/css/`, including `paper.css` for semantic article-shell styling.
+- `src/css/index.css` is the only shared stylesheet entry point. It uses broad CSS cascade layers (`theme`, `reset`, `layout`, `components`, `utilities`, `responsive`, `print`) to import the small files in `src/css/`.
 - `src/js/dark-mode.js` is the shared theme script. Load it before the stylesheet so it can set `data-theme` before first paint; it injects or wires a `#theme-toggle` button and persists the selected theme in `localStorage`.
 - `src/js/dialog.js` wires controls with `data-dialog-open` to non-modal `dialog` sidebars and fills `[data-clone="<selector>"]` hosts from existing document elements.
 - `src/js/email.js` fills `.email-container` and `.github-container` elements.
@@ -174,10 +174,11 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 
 - Start from HTML5 defaults. Add CSS only when there is a clear reason: readable measure, spacing, dark mode, responsive behavior, accessibility, or a concrete UI bug.
 - Treat semantic HTML as the styling API. Do not create a class for a concept HTML already expresses, such as `article`, `header`, `nav`, `aside`, `figure`, `details`, or `table`.
-- Keep `src/css/index.css` as a CSS-native import manifest using `@layer` and `@import`. Split CSS files for organization around stable responsibilities, not as a substitute for semantic markup.
+- Keep `src/css/index.css` as a CSS-native import manifest using broad, conventional `@layer` names and small imported files.
 - Good CSS can be tiny. Preserve rules that improve affordance, state, or reading comfort: round icon buttons, clear link hovers, readable status colors, useful `summary` markers, and non-overlapping sidebars.
 - Use native controls and browser defaults unless light styling solves a real presentation problem. Buttons should remain restrained, theme-aware, and recognizable as buttons.
 - Use classes only where HTML has no native concept or behavior needs a stable hook, such as `.status`, `.end-ref`, `.eq-ref`, `.email-container`, or `.github-container`.
+- Put generic one-rule helpers in `utilities.css`, such as `.text-2x`; keep utilities sparse and literal.
 - Use `data-*` attributes for semantic state that CSS may theme, such as `data-status` on open-problem status pills.
 - Keep theme colors in `src/css/theme.css`; module CSS should consume theme tokens rather than hard-coding new palettes.
 - Prefer section ids and native elements over module classes when the page already names the thing, such as `#roadmap ol`, `#open-problems table`, or `#alice-descent figure`.

@@ -1,12 +1,13 @@
-@layer theme, reset, paper, annotations, interactive, home, scoreboard, responsive, print;
+@layer theme, reset, layout, components, utilities, responsive, print;
 
 @import "theme.css" layer(theme);
 @import "reset.css" layer(reset);
-@import "paper.css" layer(paper);
-@import "annotations.css" layer(annotations);
-@import "interactive.css" layer(interactive);
-@import "sidebar.css" layer(interactive);
-@import "home.css" layer(home);
-@import "scoreboard.css" layer(scoreboard);
+@import "paper.css" layer(layout);
+@import "annotations.css" layer(components);
+@import "interactive.css" layer(components);
+@import "sidebar.css" layer(components);
+@import "home.css" layer(components);
+@import "scoreboard.css" layer(components);
+@import "utilities.css" layer(utilities);
 @import "responsive.css" layer(responsive);
 @import "print.css" layer(print);
