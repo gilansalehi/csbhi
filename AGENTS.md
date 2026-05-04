@@ -121,7 +121,7 @@ Use `notes/` for current public notes. Use `old_notes/` to recover context, earl
 - `note.html` fetches Markdown from `notes/<src>.md`, renders with `markdown-it`, and then runs MathJax v3.
 - The landing page links to notes using `note.html?src=<basename>`. The basename must exactly match a file in `notes/`.
 - `gd1.html` and `leap-of-faith.html` use `src/js/slideshow.js` for the Alice descent canvas.
-- `src/css/index.css` is the only shared stylesheet entry point. It imports the small CSS files in `src/css/`.
+- `src/css/index.css` is the only shared stylesheet entry point. It uses CSS cascade layers to import the small files in `src/css/`.
 - `src/js/dark-mode.js` injects or wires a `#theme-toggle` button and persists the selected theme in `localStorage`.
 - `src/js/email.js` fills `.email-container` and `.github-container` elements.
 
@@ -154,7 +154,7 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Keep JavaScript browser-compatible and avoid transpilation assumptions.
 - Prefer relative links for local site assets and pages.
 - Preserve accessibility basics: semantic headings, usable link text, `aria-label` where controls need it, and responsive layouts.
-- Keep CSS changes scoped. `src/css/index.css` is an import manifest, not a place for rules. Add rules to the semantic or module stylesheet that owns the behavior.
+- Keep CSS changes scoped. `src/css/index.css` is a layered import manifest, not a place for rules. Add rules to the semantic or module stylesheet that owns the behavior.
 - Do not make broad visual redesigns while editing paper content unless specifically requested.
 - Use ASCII in source files unless the existing file already relies on a specific symbol for mathematical or publication clarity.
 
@@ -170,14 +170,15 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 
 - Start from HTML5 defaults. Add CSS only when there is a clear reason: readable measure, spacing, dark mode, responsive behavior, accessibility, or a concrete UI bug.
 - Treat semantic HTML as the styling API. Do not create a class for a concept HTML already expresses, such as `article`, `header`, `nav`, `aside`, `figure`, `details`, or `table`.
-- Keep `src/css/index.css` as a list of imports. Split CSS files for organization around stable responsibilities, not as a substitute for semantic markup.
+- Keep `src/css/index.css` as a CSS-native import manifest using `@layer` and `@import`. Split CSS files for organization around stable responsibilities, not as a substitute for semantic markup.
 - Good CSS can be tiny. Preserve small rules that improve affordance, state, or reading comfort, such as a round icon button, a clear link hover state, or an open/closed marker.
-- Use classes only where HTML has no native concept or where a reusable module needs a stable hook, such as `.publications`, `.problem-scoreboard`, `.status`, `.end-ref`, or interactive controls.
+- Use classes only where HTML has no native concept or where behavior needs a stable hook, such as `.status`, `.end-ref`, `.eq-ref`, `.email-container`, or `.github-container`.
+- Prefer section ids and native elements over module classes when the page already names the thing, such as `#roadmap ol`, `#open-problems table`, or `#alice-descent figure`.
 - Keep structural classes and presentation utilities distinct. Prefer semantic selectors or module-owned selectors over repeated utility classes when a surrounding structure already owns the presentation.
 - Avoid decorative styling that does not strengthen the argument or reading experience.
 - Keep shared CSS small. Delete unused selectors and one-off polish before adding new rules.
 - Use native controls and browser defaults unless custom styling solves a real presentation problem.
-- Use print CSS for medium-specific rhetoric. Mark interactive or screen-only regions with `data-print="omit"` when they should disappear from printed papers.
+- Use print CSS for medium-specific rhetoric. Mark interactive or screen-only regions with `data-print="omit"` when they should disappear from printed papers, and keep closed `details` content available in print.
 
 ## Markdown And Math
 
@@ -229,7 +230,7 @@ These are unresolved project conventions that should be clarified over time:
 - Citation standard: whether references should follow a specific format, DOI/arXiv preference, or bibliography workflow.
 - Mathematical review process: who signs off on physics derivations before public publication.
 - Deployment workflow: where the site is hosted, how it is deployed, and whether there is a preview step.
-- Browser support target: especially for CSS nesting, `color-mix()`, MathJax, and canvas behavior.
+- Browser support target: especially for cascade layers, `:has()`, `color-mix()`, MathJax, and canvas behavior.
 - Visual/design standard: whether the current restrained paper-like style is the long-term target.
 - Test/validation expectations: whether to add HTML validation, link checking, accessibility checks, or screenshot checks.
 

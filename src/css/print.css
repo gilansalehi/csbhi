@@ -18,6 +18,19 @@
     padding: 0;
   }
 
+  details:not([open]) > :not(summary) {
+    display: block;
+  }
+
+  details summary::marker {
+    content: "";
+  }
+
+  figure,
+  table {
+    break-inside: avoid;
+  }
+
   a {
     color: inherit;
   }

@@ -1,26 +1,26 @@
-.problem-scoreboard {
+#open-problems table {
   width: 100%;
   margin-block: 2rem;
   border-collapse: collapse;
   font-size: 0.92rem;
 }
 
-.problem-scoreboard th,
-.problem-scoreboard td {
+#open-problems th,
+#open-problems td {
   padding: 1rem;
   border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
   text-align: left;
   vertical-align: top;
 }
 
-.problem-scoreboard th {
+#open-problems th {
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   opacity: 0.68;
 }
 
-.problem-scoreboard .status {
+#open-problems .status {
   display: inline-block;
   margin-bottom: 0.65rem;
   padding: 0.22rem 0.58rem;
@@ -33,56 +33,56 @@
   text-transform: uppercase;
 }
 
-.problem-scoreboard td:last-child a,
-.problem-scoreboard td:last-child span:not(.status) {
+#open-problems td:last-child a,
+#open-problems td:last-child span:not(.status) {
   display: block;
   margin-top: 0.32rem;
   font-size: 0.84rem;
 }
 
 @media screen and (max-width: 900px) {
-  .problem-scoreboard,
-  .problem-scoreboard thead,
-  .problem-scoreboard tbody,
-  .problem-scoreboard tr,
-  .problem-scoreboard th,
-  .problem-scoreboard td {
+  #open-problems table,
+  #open-problems thead,
+  #open-problems tbody,
+  #open-problems tr,
+  #open-problems th,
+  #open-problems td {
     display: block;
   }
 
-  .problem-scoreboard thead {
+  #open-problems thead {
     display: none;
   }
 
-  .problem-scoreboard tr {
+  #open-problems tr {
     padding-block: 1.35rem;
     border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent);
   }
 
-  .problem-scoreboard td {
+  #open-problems td {
     padding: 0;
     border: 0;
   }
 
-  .problem-scoreboard td + td {
+  #open-problems td + td {
     margin-top: 0.7rem;
   }
 
-  .problem-scoreboard td:nth-child(2)::before {
+  #open-problems td:nth-child(2)::before {
     content: "ΛCDM framing";
   }
 
-  .problem-scoreboard td:nth-child(3)::before {
+  #open-problems td:nth-child(3)::before {
     content: "GD framing";
   }
 
-  .problem-scoreboard td:last-child::before {
+  #open-problems td:last-child::before {
     content: "Status";
   }
 
-  .problem-scoreboard td:nth-child(2)::before,
-  .problem-scoreboard td:nth-child(3)::before,
-  .problem-scoreboard td:last-child::before {
+  #open-problems td:nth-child(2)::before,
+  #open-problems td:nth-child(3)::before,
+  #open-problems td:last-child::before {
     display: block;
     margin-bottom: 0.25rem;
     font-size: 0.68rem;

@@ -14,7 +14,7 @@ The public landing page is `index.html`. The current GD I paper is `gd1.html`, w
 
 Current public notes live in `notes/` and are rendered by `note.html?src=<note-basename>`. Older synthesis documents, section drafts, and research-roadmap material live in `old_notes/`; they are important context, but are not automatically current public content.
 
-`gd1.html` is also the structural HTML5 paper template for the series: `main > article`, a metadata-rich `header`, a linked `nav` table of contents, semantic sections, appendices, references, figure captions, and raw HTML5 structure with light shared CSS.
+`gd1.html` is also the structural HTML5 paper template for the series: `main > article`, a metadata-rich `header`, a linked `nav` table of contents, semantic sections, appendices, references, figure captions, and raw HTML5 structure with light shared CSS. `src/css/index.css` is a cascade-layer import manifest; pages link that one stylesheet and let semantic HTML carry the document structure.
 
 The expanded research program aims to elevate Geometric Duality (GD) from a clever coordinate matching into a **unifying geometric framework** for:
 

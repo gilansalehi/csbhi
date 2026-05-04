@@ -32,23 +32,23 @@
   <button id="theme-toggle" aria-label="Toggle dark mode">☀</button>
   <main>
     <article aria-labelledby="paper-title">
-    <header>
-      <p>Geometric Duality I</p>
-      <h1 id="paper-title">Geometric Duality of Black-Hole Interiors</h1>
-      <p>Conformal Scaling of Black Hole Interiors</p>
-      <dl>
-        <dt>Author</dt>
-        <dd>Gilan Salehi</dd>
-        <dt>Status</dt>
-        <dd>Pre-print</dd>
-        <dt>Version</dt>
-        <dd>0.2</dd>
-        <dt>Created</dt>
-        <dd><time datetime="2025-01-16">January 16, 2025</time></dd>
-        <dt>Revised</dt>
-        <dd><time datetime="2026-04-22">April 22, 2026</time></dd>
-      </dl>
-    </header>
+      <header>
+        <p>Geometric Duality I</p>
+        <h1 id="paper-title">Geometric Duality of Black-Hole Interiors</h1>
+        <p>Conformal Scaling of Black Hole Interiors</p>
+        <dl>
+          <dt>Author</dt>
+          <dd>Gilan Salehi</dd>
+          <dt>Status</dt>
+          <dd>Pre-print</dd>
+          <dt>Version</dt>
+          <dd>0.2</dd>
+          <dt>Created</dt>
+          <dd><time datetime="2025-01-16">January 16, 2025</time></dd>
+          <dt>Revised</dt>
+          <dd><time datetime="2026-04-22">April 22, 2026</time></dd>
+        </dl>
+      </header>
 
     <nav id="table-of-contents" aria-labelledby="toc-title">
       <h2 id="toc-title">Table of Contents</h2>
@@ -1212,23 +1212,22 @@
         Use the <strong>Prev / Next</strong> buttons or the <strong>← →</strong> arrow keys to step through the sequence.
       </p>
 
-      <div class="interactive-panel" data-print="omit">
+      <figure id="alice-descent" data-print="omit">
         <canvas id="alice-canvas" width="1050" height="440"
           aria-label="Interactive Alice descent slideshow"></canvas>
-        <div id="alice-caption">
-        </div>
-        <div class="interactive-controls">
+        <figcaption id="alice-caption"></figcaption>
+        <nav aria-label="Alice descent slides">
           <button id="alice-btn-prev">&#8592; Prev</button>
           <span id="alice-counter"></span>
           <button id="alice-btn-next">Next &#8594;</button>
-        </div>
-        <div class="interactive-toggles">
+        </nav>
+        <p id="alice-toggles">
           <button id="alice-stars-btn">Hide Stars</button>
           <button id="alice-grid-btn">Grid Off</button>
           <button id="alice-road-btn" hidden>Hide Road</button>
-        </div>
+        </p>
         <p>Arrow keys &#8592; &#8594; also navigate slides.</p>
-      </div>
+      </figure>
     </section>
 
     <section id="references">
