@@ -165,6 +165,15 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Preserve the distinction between the landing page, the paper, public notes, and archival notes in the navigation.
 - Keep interactive pieces, especially the Alice descent canvas, understandable without adding explanatory clutter to the main paper.
 
+## CSS Standard
+
+- Start from HTML5 defaults. Add CSS only when there is a clear reason: readable measure, spacing, dark mode, responsive behavior, accessibility, or a concrete UI bug.
+- Good CSS can be tiny. Preserve small rules that improve affordance, state, or reading comfort, such as a round icon button, a clear link hover state, or an open/closed marker.
+- Prefer semantic HTML over classes. If a class does not carry behavior, layout, or stable meaning, remove it.
+- Avoid decorative styling that does not strengthen the argument or reading experience.
+- Keep shared CSS small. Delete unused selectors and one-off polish before adding new rules.
+- Use native controls and browser defaults unless custom styling solves a real presentation problem.
+
 ## Markdown And Math
 
 - Notes in `notes/` use Markdown with LaTeX delimiters `\(...\)` and `\[...\]`.
@@ -194,6 +203,8 @@ Then verify the affected pages in a browser:
 - `http://localhost:8000/leap-of-faith.html`
 
 Opening `note.html` directly from the filesystem may fail because it fetches Markdown files; use a local server for notes.
+
+The user allows `curl` checks against `localhost:8080` for project verification. Ask before using `curl` for non-localhost URLs or broader network access.
 
 ## Git Hygiene
 
