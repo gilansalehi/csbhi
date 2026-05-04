@@ -11,75 +11,61 @@
   <meta name="author" content="Gilan Salehi">
   <link rel="canonical" href="https://www.gilansalehi.com/csbhi/gd1.html" />
 
-  <title>Geometric Duality of Black-Hole Interiors</title>
+  <title>Geometric Duality: Black Hole Interiors</title>
 
+  <script src="src/js/dark-mode.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
   <link href="src/css/index.css" rel="stylesheet" />
-
-  <!-- Apply saved theme before first paint to prevent flash -->
-  <script>
-    (function () {
-      var t = localStorage.getItem('theme');
-      if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }
-    }());
-  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#paper-title">Skip to paper</a>
   <button id="theme-toggle" aria-label="Toggle dark mode">☀</button>
   <main>
     <article aria-labelledby="paper-title">
       <header>
-        <p>Geometric Duality I</p>
-        <h1 id="paper-title">Geometric Duality of Black-Hole Interiors</h1>
-        <p>Conformal Scaling of Black Hole Interiors</p>
-        <dl>
-          <dt>Author</dt>
-          <dd>Gilan Salehi</dd>
-          <dt>Status</dt>
-          <dd>Pre-print</dd>
-          <dt>Version</dt>
-          <dd>0.2</dd>
-          <dt>Created</dt>
-          <dd><time datetime="2025-01-16">January 16, 2025</time></dd>
-          <dt>Revised</dt>
-          <dd><time datetime="2026-04-22">April 22, 2026</time></dd>
-        </dl>
+        <button class="link-button page-meta" type="button" aria-controls="table-of-contents" aria-pressed="false"
+          data-toggle-class="sidebar">Toggle contents sidebar</button>
       </header>
 
-    <nav id="table-of-contents" aria-labelledby="toc-title">
-      <h2 id="toc-title">Table of Contents</h2>
-      <ol>
-        <li><a href="#abstract">Abstract</a></li>
-        <li><a href="#section1">Introduction &amp; Historical Background</a></li>
-        <li><a href="#section2">ΛCDM Model: Predictions &amp; Limitations</a></li>
-        <li><a href="#section3">A Leap of Faith</a></li>
-        <li><a href="#section4">Infall Function: Painlevé–Gullstrand Form of FLRW</a></li>
-        <li><a href="#section5">Geometric Duality</a></li>
-        <li><a href="#section6">Junction Matching &amp; Singularity Deferral</a></li>
-        <li><a href="#section7">Observables</a></li>
-        <li><a href="#section8">Discussion</a></li>
-        <li><a href="#section9">Conclusion</a></li>
-      </ol>
+      <h1 id="paper-title">Geometric Duality: Black Hole Interiors</h1>
 
-      <h3>Appendices</h3>
-      <ol>
-        <li><a href="#appendixA">Appendix A: Derivation of the Infall Function</a></li>
-        <li><a href="#appendixB">Appendix B: Israel–Darmois junction conditions</a></li>
-        <li><a href="#appendixC">Appendix C: Numerical Estimate of Λ from Geometric Duality</a></li>
-        <li><a href="#appendixD">Appendix D: Connection to 5D de Sitter embedding</a></li>
-        <li><a href="#appendixE">Appendix E: Interactive — Alice's Descent</a></li>
-      </ol>
+      <nav id="table-of-contents" aria-labelledby="toc-title">
+        <h2>Table of Contents</h2>
+        <details open>
+          <summary id="toc-title">
+            Contents
+          </summary>
+          <ol>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#section1">Introduction &amp; Historical Background</a></li>
+            <li><a href="#section2">ΛCDM Model: Predictions &amp; Limitations</a></li>
+            <li><a href="#section3">A Leap of Faith</a></li>
+            <li><a href="#section4">Infall Function: Painlevé–Gullstrand Form of FLRW</a></li>
+            <li><a href="#section5">Geometric Duality</a></li>
+            <li><a href="#section6">Junction Matching &amp; Singularity Deferral</a></li>
+            <li><a href="#section7">Observables</a></li>
+            <li><a href="#section8">Discussion</a></li>
+            <li><a href="#section9">Conclusion</a></li>
+          </ol>
 
-      <h3>References</h3>
-      <ol>
-        <li hidden><a href="#acknowledgements">Acknowledgements</a></li>
-        <li><a href="#references">References</a></li>
-      </ol>
-    </nav>
+          <h3>Appendices</h3>
+          <ol type="A">
+            <li><a href="#appendixA">Derivation of the Infall Function</a></li>
+            <li><a href="#appendixB">Israel–Darmois junction conditions</a></li>
+            <li><a href="#appendixC">Numerical Estimate of Λ from Geometric Duality</a></li>
+            <li><a href="#appendixD">Connection to 5D de Sitter embedding</a></li>
+            <li><a href="#appendixE">Interactive — Alice's Descent</a></li>
+          </ol>
+
+          <h3>References</h3>
+          <ol>
+            <li hidden><a href="#acknowledgements">Acknowledgements</a></li>
+            <li><a href="#references">References</a></li>
+          </ol>
+        </details>
+      </nav>
 
     <aside>
       <strong>Legend (Conventions):</strong>
@@ -1308,6 +1294,7 @@
   </main>
 
   <script src="src/js/slideshow.js"></script>
+  <script src="src/js/toggle-class.js"></script>
   <script>
     /* Replace §3 static figure images with canvas-rendered slides once ready */
     document.addEventListener('alicesDescent:ready', function () {
@@ -1325,26 +1312,6 @@
       controls:  true,
       namespace: 'alicesDescent'
     });
-  </script>
-  <script>
-    (function () {
-      var btn  = document.getElementById('theme-toggle');
-      var root = document.documentElement;
-
-      function applyTheme(dark) {
-        root.setAttribute('data-theme', dark ? 'dark' : 'light');
-        btn.textContent = dark ? '☀' : '☽';
-        btn.title = dark ? 'light' : 'dark';
-        localStorage.setItem('theme', dark ? 'dark' : 'light');
-      }
-
-      /* Initialise label to match whatever the pre-paint script set */
-      applyTheme(root.getAttribute('data-theme') === 'dark');
-
-      btn.addEventListener('click', function () {
-        applyTheme(root.getAttribute('data-theme') !== 'dark');
-      });
-    }());
   </script>
 </body>
 

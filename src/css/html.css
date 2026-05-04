@@ -21,60 +21,13 @@ body {
 }
 
 main {
-  max-width: 980px;
+  max-width: var(--measure);
   margin: auto;
   padding: var(--pad);
 }
 
-header {
-  margin-bottom: 2rem;
-}
-
-header h1 {
-  max-width: 18ch;
-  margin: 0.2em auto;
-  font-size: clamp(2.2rem, 7vw, 4rem);
-  line-height: 1.05;
-  text-align: center;
-  text-wrap: balance;
-}
-
-header > p {
-  text-align: center;
-}
-
-header > p,
-header dl,
 figcaption {
   color: var(--muted);
-}
-
-header > p:first-child,
-header dl {
-  font-family: var(--mono);
-  font-size: 0.82rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-header dl {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.35rem 0.8rem;
-  margin-top: 1rem;
-  padding-block: 0.8rem;
-  border-block: 1px solid color-mix(in srgb, currentColor 16%, transparent);
-}
-
-header dt,
-header dd {
-  min-width: 0;
-  margin: 0;
-}
-
-header dt::after {
-  content: ":";
 }
 
 a {
@@ -89,11 +42,48 @@ a:hover {
 }
 
 button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35em 0.75em;
+  border: 1px solid color-mix(in srgb, currentColor 42%, transparent);
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--bg) 88%, currentColor);
+  color: inherit;
   cursor: pointer;
+  font: inherit;
+}
+
+button:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--bg) 78%, currentColor);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 button:disabled {
+  opacity: 0.55;
   cursor: not-allowed;
+}
+
+.link-button {
+  display: inline;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+}
+
+.link-button:hover:not(:disabled) {
+  background: none;
+  font-weight: 600;
 }
 
 img {

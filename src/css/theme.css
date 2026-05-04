@@ -2,10 +2,12 @@
   --bg: #ffffff;
   --text: #111111;
   --muted: #5d5d5d;
+  --measure: 980px;
   --pad: 40px;
   --border: 1px solid currentColor;
   --mono: "Courier New", Courier, monospace;
   --toggle: #aaaaaa;
+  --accent: #1f6feb;
   --status-addressed: #237a3b;
   --status-target: #1f6feb;
   --status-planned: #8a5a00;
@@ -16,6 +18,7 @@
   --bg: #0e0e16;
   --text: #dde1e9;
   --muted: #c3c3c3;
+  --accent: #79c0ff;
   --status-addressed: #7ee787;
   --status-target: #79c0ff;
   --status-planned: #e3b341;

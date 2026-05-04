@@ -3,6 +3,11 @@
     padding: 1rem;
   }
 
+  .spread {
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+
   .end-ref {
     position: relative;
     right: unset;

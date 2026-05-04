@@ -121,8 +121,9 @@ Use `notes/` for current public notes. Use `old_notes/` to recover context, earl
 - `note.html` fetches Markdown from `notes/<src>.md`, renders with `markdown-it`, and then runs MathJax v3.
 - The landing page links to notes using `note.html?src=<basename>`. The basename must exactly match a file in `notes/`.
 - `gd1.html` and `leap-of-faith.html` use `src/js/slideshow.js` for the Alice descent canvas.
-- `src/css/index.css` is the only shared stylesheet entry point. It uses CSS cascade layers to import the small files in `src/css/`.
-- `src/js/dark-mode.js` injects or wires a `#theme-toggle` button and persists the selected theme in `localStorage`.
+- `src/css/index.css` is the only shared stylesheet entry point. It uses CSS cascade layers to import the small files in `src/css/`, including `paper.css` for semantic article-shell styling.
+- `src/js/dark-mode.js` is the shared theme script. Load it before the stylesheet so it can set `data-theme` before first paint; it injects or wires a `#theme-toggle` button and persists the selected theme in `localStorage`.
+- `src/js/toggle-class.js` wires controls with `data-toggle-class` and `aria-controls` to toggle a class on the controlled element.
 - `src/js/email.js` fills `.email-container` and `.github-container` elements.
 
 ## HTML Paper Standard
@@ -130,8 +131,11 @@ Use `notes/` for current public notes. Use `old_notes/` to recover context, earl
 Use `gd1.html` as the structural template for GD-series papers and full notes:
 
 - Document shell: `body > main > article`.
-- Paper title block: `header` with series label, `h1`, subtitle, and `dl` metadata.
-- Table of contents: `nav`, linked to all major sections, appendices, and references.
+- Include a skip link near the start of `body` for keyboard users.
+- Page metadata may use one `details.page-meta` with a `table.metadata-table` for useful metadata and revision timestamps.
+- Page controls should be text-first; use `.link-button` for button behavior that should read like a normal link.
+- Paper title: `article > h1`, followed by an optional subtitle paragraph.
+- Table of contents: `nav > details`, linked to all major sections, appendices, and references. Use lettered appendix markers with `<ol type="A">` rather than repeating "Appendix A" in link text.
 - Conventions or assumptions: use `aside` inside the article; asides are styled as callouts by the shared HTML defaults.
 - Abstracts may use `details` / `summary` when there is a rhetorical reason to let the reader encounter the argument first.
 - Main argument: top-level `section` elements with stable ids; subsections may nest inside their parent section.
@@ -172,6 +176,7 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Treat semantic HTML as the styling API. Do not create a class for a concept HTML already expresses, such as `article`, `header`, `nav`, `aside`, `figure`, `details`, or `table`.
 - Keep `src/css/index.css` as a CSS-native import manifest using `@layer` and `@import`. Split CSS files for organization around stable responsibilities, not as a substitute for semantic markup.
 - Good CSS can be tiny. Preserve small rules that improve affordance, state, or reading comfort, such as a round icon button, a clear link hover state, or an open/closed marker.
+- Native controls may receive light project styling when browser defaults distract from the reading experience. Keep buttons restrained, theme-aware, and recognizable as buttons.
 - Use classes only where HTML has no native concept or where behavior needs a stable hook, such as `.status`, `.end-ref`, `.eq-ref`, `.email-container`, or `.github-container`.
 - Use `data-*` attributes for semantic state that CSS may theme, such as `data-status` on open-problem status pills.
 - Keep theme colors in `src/css/theme.css`; module CSS should consume theme tokens rather than hard-coding new palettes.

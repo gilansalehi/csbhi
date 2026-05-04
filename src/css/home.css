@@ -1,19 +1,12 @@
 #site-header {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
   font-family: var(--mono);
   font-size: 0.82rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-#site-header ol {
-  position: absolute;
-  z-index: 1;
-  background: var(--bg);
+#site-header nav {
+  margin-top: 1rem;
 }
 
 #hero {
