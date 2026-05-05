@@ -1,4 +1,5 @@
-:root {
+:root,
+[data-theme="light"] {
   --bg: #ffffff;
   --surface: #f6f8fa;
 
@@ -12,11 +13,11 @@
 
   --border: 1px solid currentColor;
   --mono: "Courier New", Courier, monospace;
-  --toggle: currentColor;
 
   --control-bg: var(--surface);
   --control-hover: color-mix(in srgb, var(--surface) 95%, currentColor);
   --control-border: color-mix(in srgb, currentColor 36%, var(--surface));
+  --control-active: color-mix(in srgb, var(--surface) 50%, currentColor);
 
   --status-addressed: #237a3b;
   --status-target: #1f6feb;
@@ -26,13 +27,15 @@
 
 [data-theme="dark"] {
   --bg: #0e0e16;
+  --surface: #171923;
+
   --text: #dde1e9;
   --muted: #c3c3c3;
-  --surface: #171923;
 
   --control-bg: var(--surface);
   --control-hover: color-mix(in srgb, var(--surface) 82%, currentColor);
   --control-border: currentColor;
+  --control-active: color-mix(in srgb, var(--surface) 92%, currentColor);
 
   --status-addressed: #7ee787;
   --status-target: #79c0ff;

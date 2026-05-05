@@ -1,7 +1,10 @@
 .button,
 .btn {
     appearance: none;
-    --text: currentColor;
+
+    &:active {
+        background: var(--control-active);
+    }
 }
 
 .btn-text {
@@ -24,7 +27,6 @@
 
     &:hover {
         background: var(--control-hover);
-        border: var(--control-border);
         font-weight: 600;
     }
 }
