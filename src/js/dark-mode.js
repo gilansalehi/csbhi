@@ -54,6 +54,7 @@
             btn = document.createElement('button');
             btn.id = 'theme-toggle';
             btn.type = 'button';
+            btn.classList.add('btn', 'btn-icon');
             main.appendChild(btn);
         }
 

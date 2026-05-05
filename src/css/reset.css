@@ -45,21 +45,23 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.35em 0.75em;
-  border: 1px solid color-mix(in srgb, currentColor 42%, transparent);
-  border-radius: 0.35rem;
-  background: color-mix(in srgb, var(--bg) 88%, currentColor);
+  min-height: 2.15em;
+  padding: 0.35em 0.8em;
+  border: 1px solid var(--control-border);
+  border-radius: 0.4rem;
+  background: var(--control-bg);
   color: inherit;
   cursor: pointer;
   font: inherit;
+  line-height: 1;
 }
 
 button:hover:not(:disabled) {
-  background: color-mix(in srgb, var(--bg) 78%, currentColor);
+  background: var(--control-hover);
 }
 
 button:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid initial;
   outline-offset: 2px;
 }
 
@@ -70,6 +72,7 @@ button:disabled {
 
 .link-button {
   display: inline;
+  min-height: 0;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -84,6 +87,7 @@ button:disabled {
 .link-button:hover:not(:disabled) {
   background: none;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 img {

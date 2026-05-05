@@ -22,13 +22,15 @@
 
 <body>
   <a class="skip-link" href="#paper-title">Skip to paper</a>
-  <button id="theme-toggle" aria-label="Toggle dark mode">☀</button>
+  <!-- <button id="theme-toggle" aria-label="Toggle dark mode" class="btn" type="button">☀</button> -->
   <main>
     <article aria-labelledby="paper-title">
       <header class="spread page-meta">
         <span>
-          <button class="link-button" type="button" aria-controls="page-sidebar" aria-haspopup="dialog"
-            aria-expanded="false" data-dialog-open="#page-sidebar">☰ Sidebar</button>
+          <button class="btn btn-icon" type="button" aria-label="Open sidebar" aria-controls="page-sidebar"
+            aria-haspopup="dialog" aria-expanded="false" data-dialog-open="#page-sidebar">
+            <span class="text-2x" aria-hidden="true">&#9776;</span>
+          </button>
         </span>
         <span>Updated <time datetime="2026-05-04">May 4, 2026</time></span>
       </header>
@@ -39,12 +41,12 @@
         <h2>Table of Contents</h2>
         <details open>
           <summary id="toc-title">
-            <em>Contents</em>
+            Contents
           </summary>
           <h3>Geometric Duality</h3>
           <ol>
             <li><a href="#abstract">Abstract</a></li>
-            <li><a href="#section1">Introduction &amp; Historical Background</a></li>
+            <li><a href="#section1">You Are Here</a></li>
             <li><a href="#section2">ΛCDM Model: Predictions &amp; Limitations</a></li>
             <li><a href="#section3">A Leap of Faith</a></li>
             <li><a href="#section4">Infall Function: Painlevé–Gullstrand Form of FLRW</a></li>
@@ -74,7 +76,9 @@
 
       <section id="paper-metadata" class="metadata-panel" aria-labelledby="metadata-title" hidden>
         <h2 id="metadata-title">Paper Metadata</h2>
-        <dl class="metadata-list">
+        <dl class="metadata-list text-muted">
+          <dt>Title</dt>
+          <dd>Geometric Duality: Black Hole Interiors</dd>
           <dt>Author</dt>
           <dd>Gilan Salehi</dd>
           <dt>Status</dt>
@@ -85,6 +89,10 @@
           <dd><time datetime="2025-01-16">January 16, 2025</time></dd>
           <dt>Revised</dt>
           <dd><time datetime="2026-05-04">May 4, 2026</time></dd>
+          <dt>Modified</dt>
+          <dd><time datetime="2026-05-04">May 4, 2026</time></dd>
+          <dt>Canonical</dt>
+          <dd><a href="https://www.gilansalehi.com/csbhi/gd1.html">gilansalehi.com/csbhi/gd1.html</a></dd>
         </dl>
       </section>
 
@@ -92,7 +100,7 @@
         <header class="spread page-meta">
           <h2 id="page-sidebar-title">Sidebar</h2>
           <form method="dialog">
-            <button class="link-button" type="submit" value="close" aria-label="Close sidebar">
+            <button class="btn btn-icon" type="submit" value="close" aria-label="Close sidebar">
               <span class="text-2x">&#10005;</span>
             </button>
           </form>
@@ -1237,14 +1245,14 @@
           aria-label="Interactive Alice descent slideshow"></canvas>
         <figcaption id="alice-caption"></figcaption>
         <nav aria-label="Alice descent slides">
-          <button id="alice-btn-prev">&#8592; Prev</button>
+          <button type="button" class="btn" id="alice-btn-prev">&#8592; Prev</button>
           <span id="alice-counter"></span>
-          <button id="alice-btn-next">Next &#8594;</button>
+          <button type="button" class="btn" id="alice-btn-next">Next &#8594;</button>
         </nav>
         <p id="alice-toggles">
-          <button id="alice-stars-btn">Hide Stars</button>
-          <button id="alice-grid-btn">Grid Off</button>
-          <button id="alice-road-btn" hidden>Hide Road</button>
+          <button type="button" class="btn btn-text" id="alice-stars-btn">Hide Stars</button>
+          <button type="button" class="btn btn-text" id="alice-grid-btn">Grid Off</button>
+          <button type="button" class="btn btn-text" id="alice-road-btn" hidden>Hide Road</button>
         </p>
         <p>Arrow keys &#8592; &#8594; also navigate slides.</p>
       </figure>

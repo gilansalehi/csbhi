@@ -176,6 +176,8 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Start from HTML5 defaults. Add CSS only when there is a clear reason: readable measure, spacing, dark mode, responsive behavior, accessibility, or a concrete UI bug.
 - Treat semantic HTML as the styling API. Do not create a class for a concept HTML already expresses, such as `article`, `header`, `nav`, `aside`, `figure`, `details`, or `table`.
 - Keep `src/css/index.css` as a CSS-native import manifest using broad, conventional `@layer` names and small imported files.
+- Keep design tokens in `theme.css`. The core accessible pairs are `--bg`/`--text`, `--surface`/`--text`, `--muted`/`--bg`, and `--accent`/`--accent-contrast`.
+- Prefer `currentColor` for borders and state mixes so components inherit theme and context cleanly.
 - Good CSS can be tiny. Preserve rules that improve affordance, state, or reading comfort: round icon buttons, clear link hovers, readable status colors, useful `summary` markers, and non-overlapping sidebars.
 - Use native controls and browser defaults unless light styling solves a real presentation problem. Buttons should remain restrained, theme-aware, and recognizable as buttons.
 - Use classes only where HTML has no native concept or behavior needs a stable hook, such as `.status`, `.end-ref`, `.eq-ref`, `.email-container`, or `.github-container`.

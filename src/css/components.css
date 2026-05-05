@@ -1,0 +1,30 @@
+.button,
+.btn {
+    appearance: none;
+    --text: currentColor;
+}
+
+.btn-text {
+    font-size: 1em;
+
+    border: none;
+    background: var(--bg);
+}
+
+.btn-icon {
+    --size: 2.5em;
+    font-size: 1em;
+    font-weight: 400;
+    padding: .25em;
+    background: var(--control-bg);
+    border: transparent;
+    border-radius: 50%;
+    height: var(--size);
+    width: var(--size);
+
+    &:hover {
+        background: var(--control-hover);
+        border: var(--control-border);
+        font-weight: 600;
+    }
+}

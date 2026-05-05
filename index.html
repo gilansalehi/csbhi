@@ -19,8 +19,10 @@
   <main>
     <header id="site-header" class="spread page-meta" aria-label="Project header">
       <span>
-        <button class="link-button" type="button" aria-controls="page-sidebar" aria-haspopup="dialog"
-          aria-expanded="false" data-dialog-open="#page-sidebar">Sidebar</button>
+        <button class="link-button" type="button" aria-label="Open sidebar" aria-controls="page-sidebar"
+          aria-haspopup="dialog" aria-expanded="false" data-dialog-open="#page-sidebar">
+          <span class="text-2x" aria-hidden="true">&#9776;</span>
+        </button>
       </span>
       <span>Updated <time datetime="2026-05-04">May 4, 2026</time></span>
     </header>
@@ -41,7 +43,11 @@
 
     <section id="page-metadata" class="metadata-panel" aria-labelledby="page-metadata-title" hidden>
       <h2 id="page-metadata-title">Project Metadata</h2>
-      <dl class="metadata-list">
+      <dl class="metadata-list text-muted">
+        <dt>Title</dt>
+        <dd>CSBHI</dd>
+        <dt>Description</dt>
+        <dd>Project overview for the Geometric Duality research programme.</dd>
         <dt>Project</dt>
         <dd>Conformal Scaling of Black Hole Interiors</dd>
         <dt>Programme</dt>

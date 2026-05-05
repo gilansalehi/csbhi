@@ -1,13 +1,23 @@
 :root {
   --bg: #ffffff;
+  --surface: #f6f8fa;
+
   --text: #111111;
   --muted: #5d5d5d;
+
   --measure: 768px;
   --pad: 1rem;
+
+  --md: 1rem;
+
   --border: 1px solid currentColor;
   --mono: "Courier New", Courier, monospace;
-  --toggle: #aaaaaa;
-  --accent: #1f6feb;
+  --toggle: currentColor;
+
+  --control-bg: var(--surface);
+  --control-hover: color-mix(in srgb, var(--surface) 95%, currentColor);
+  --control-border: color-mix(in srgb, currentColor 36%, var(--surface));
+
   --status-addressed: #237a3b;
   --status-target: #1f6feb;
   --status-planned: #8a5a00;
@@ -18,7 +28,12 @@
   --bg: #0e0e16;
   --text: #dde1e9;
   --muted: #c3c3c3;
-  --accent: #79c0ff;
+  --surface: #171923;
+
+  --control-bg: var(--surface);
+  --control-hover: color-mix(in srgb, var(--surface) 82%, currentColor);
+  --control-border: currentColor;
+
   --status-addressed: #7ee787;
   --status-target: #79c0ff;
   --status-planned: #e3b341;
