@@ -5,62 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Project overview for the Geometric Duality research programme.">
+  <meta name="dcterms.modified" content="2026-05-05">
+  <meta name="project" content="Conformal Scaling of Black Hole Interiors">
+  <meta name="programme" content="Geometric Duality">
+  <meta name="scope" content="Landing page, publication roadmap, and open-problem scoreboard">
   <title>CSBHI</title>
   <script src="src/js/dark-mode.js"></script>
   <link href="src/css/index.css" rel="stylesheet" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  <script src="src/js/dialog.js" defer></script>
   <script src="src/js/email.js" async defer type="module"></script>
-  <script src="src/js/main.js" async defer type="module"></script>
+  <script src="src/js/app.js" type="module"></script>
 </head>
 
 <body>
   <a class="skip-link" href="#project-title">Skip to project</a>
   <main>
-    <header id="site-header" class="spread page-meta" aria-label="Project header">
-      <span>
-        <button class="btn btn-icon" type="button" aria-label="Open sidebar" aria-controls="page-sidebar"
-          aria-haspopup="dialog" aria-expanded="false" data-dialog-open="#page-sidebar">
-          <span class="text-2x" aria-hidden="true">&#9776;</span>
-        </button>
-      </span>
-      <span>Updated <time datetime="2026-05-04">May 4, 2026</time></span>
-    </header>
-
-    <section id="page-metadata" class="metadata-panel" aria-labelledby="page-metadata-title" hidden>
-      <h2 id="page-metadata-title">Project Metadata</h2>
-      <dl class="metadata-list text-muted">
-        <dt>Title</dt>
-        <dd>CSBHI</dd>
-        <dt>Description</dt>
-        <dd>Project overview for the Geometric Duality research programme.</dd>
-        <dt>Project</dt>
-        <dd>Conformal Scaling of Black Hole Interiors</dd>
-        <dt>Programme</dt>
-        <dd>Geometric Duality</dd>
-        <dt>Scope</dt>
-        <dd>Landing page, publication roadmap, and open-problem scoreboard</dd>
-        <dt>Updated</dt>
-        <dd><time datetime="2026-05-04">Monday, May 4, 2026</time></dd>
-      </dl>
-    </section>
-
-    <dialog id="page-sidebar" class="sidebar-dialog" aria-labelledby="page-sidebar-title" data-print="omit">
-      <header class="spread page-meta">
-        <h2 id="page-sidebar-title">Sidebar</h2>
-        <form method="dialog">
-          <button class="btn btn-icon" type="submit" value="close" aria-label="Close sidebar">
-            <span class="text-2x">&#10005;</span>
-          </button>
-        </form>
-      </header>
-      <div data-clone="#table-of-contents"></div>
-      <div data-clone="#page-metadata"></div>
-    </dialog>
-
+    <v-component data-src="layout.html"></v-component>
     <section id="banner"></section>
-
     <section id="hero" aria-labelledby="project-title">
       <h1 id="project-title">
         The <br />

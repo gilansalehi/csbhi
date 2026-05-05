@@ -20,6 +20,10 @@ body {
   line-height: 1.6;
 }
 
+v-component {
+  display: contents;
+}
+
 main {
   max-width: var(--measure);
   margin: auto;

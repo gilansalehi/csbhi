@@ -49,8 +49,9 @@
     function initToggle() {
         var btn = document.getElementById('theme-toggle');
         var main = document.querySelector('main');
+        var appFrame = document.querySelector('v-component') || document.querySelector('script[src$="main.js"]');
 
-        if (!btn && main) {
+        if (!btn && main && !appFrame) {
             btn = document.createElement('button');
             btn.id = 'theme-toggle';
             btn.type = 'button';
@@ -59,8 +60,10 @@
         }
 
         if (!btn) return;
+        if (btn.dataset.themeReady) return;
 
         btn.type = 'button';
+        btn.dataset.themeReady = 'true';
 
         var dark = root.getAttribute('data-theme') === 'dark';
         applyTheme(btn, dark, false);
@@ -78,4 +81,6 @@
     } else {
         initToggle();
     }
+
+    document.addEventListener('app:load', initToggle);
 }());

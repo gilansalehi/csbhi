@@ -24,12 +24,6 @@
   transform: translateX(0);
 }
 
-.sidebar-dialog[open][data-entering],
-.sidebar-dialog[open][data-closing] {
-  opacity: 0;
-  transform: translateX(-0.75rem);
-}
-
 .sidebar-dialog > header {
   margin-bottom: 1rem;
 }
@@ -39,7 +33,7 @@
   font: inherit;
 }
 
-.sidebar-dialog [data-clone] + [data-clone] {
+.sidebar-dialog [data-src] + [data-src] {
   margin-top: 1rem;
 }
 
