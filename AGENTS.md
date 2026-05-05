@@ -134,6 +134,7 @@ Use `gd1.html` as the structural template for GD-series papers and full notes:
 - Include a skip link near the start of `body` for keyboard users.
 - Page controls should be text-first; use `.link-button` for button behavior that should read like a normal link.
 - Optional sidebar content stays in its natural document position. Use a non-modal `dialog.sidebar-dialog` as the convenience sidebar; fill it with `[data-clone="<selector>"]` so the source table of contents and metadata remain the canonical document content.
+- Page and paper metadata should use `section > dl`, not tables or asides. Use `aside` for real callouts, notes, and complementary explanatory material.
 - Paper title: `article > h1`, followed by an optional subtitle paragraph.
 - Table of contents: `nav > details`, linked to all major sections, appendices, and references. Use lettered appendix markers with `<ol type="A">` rather than repeating "Appendix A" in link text.
 - Conventions or assumptions: use `aside` inside the article; asides are styled as callouts by the shared HTML defaults.

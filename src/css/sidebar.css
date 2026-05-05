@@ -34,6 +34,16 @@
   padding-left: 1.4rem;
 }
 
+.sidebar-dialog .metadata-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.2rem 0.8rem;
+}
+
+.sidebar-dialog .metadata-list dd {
+  margin: 0;
+}
+
 @media (min-width: 1420px) {
   .sidebar-dialog[open] {
     top: 0;
