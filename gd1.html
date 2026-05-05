@@ -15,7 +15,7 @@
 
   <script src="src/js/dark-mode.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  <script src="src/js/dialog.js" defer></script>
+  <script src="src/js/main.js" async defer type="module"></script>
 
   <link href="src/css/index.css" rel="stylesheet" />
 </head>
@@ -27,7 +27,7 @@
       <header class="spread page-meta">
         <span>
           <button class="btn btn-icon btn-text" type="button" aria-label="Open sidebar" aria-controls="page-sidebar"
-            aria-haspopup="dialog" aria-expanded="false" data-dialog-open="#page-sidebar">
+            aria-haspopup="dialog" aria-expanded="false" data-dialog-open="#page-sidebar" data-action="sidebar:toggle">
             <span class="text-2x" aria-hidden="true">&#9776;</span>
           </button>
         </span>

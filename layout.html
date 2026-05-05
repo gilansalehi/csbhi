@@ -1,0 +1,61 @@
+<section>
+    <header id="site-header" class="spread page-meta" aria-label="Page header">
+        <span>
+            <button class="btn btn-icon btn-text" type="button" aria-label="Open sidebar" aria-controls="page-sidebar"
+                aria-haspopup="dialog" aria-expanded="false" data-dialog-open="#page-sidebar">
+                <span class="text-2x" aria-hidden="true">&#9776;</span>
+            </button>
+        </span>
+        <span data-meta="dcterms.modified" data-fallback="revised" data-format="date" data-label="Updated"></span>
+    </header>
+
+    <dialog id="page-sidebar" class="sidebar-dialog" aria-labelledby="page-sidebar-title" data-print="omit">
+        <header class="spread page-meta">
+            <h2 id="page-sidebar-title">Sidebar</h2>
+            <form method="dialog">
+                <button class="btn btn-icon" type="submit" value="close" aria-label="Close sidebar" data-action="sidebar:close">
+                    <span class="text-2x">&#10005;</span>
+                </button>
+            </form>
+        </header>
+
+        <details open>
+            <summary>Preferences</summary>
+            <p>
+                <button id="theme-toggle" aria-label="Toggle dark mode" class="btn btn-icon" type="button">☀</button>
+            </p>
+        </details>
+
+        <div data-clone="#table-of-contents"></div>
+
+        <section class="metadata-panel" data-page-metadata>
+            <h2>Metadata</h2>
+            <dl class="metadata-list text-muted">
+                <dt>Title</dt>
+                <dd data-meta="title"></dd>
+                <dt>Description</dt>
+                <dd data-meta="description"></dd>
+                <dt>Project</dt>
+                <dd data-meta="project"></dd>
+                <dt>Programme</dt>
+                <dd data-meta="programme"></dd>
+                <dt>Scope</dt>
+                <dd data-meta="scope"></dd>
+                <dt>Author</dt>
+                <dd data-meta="author"></dd>
+                <dt>Status</dt>
+                <dd data-meta="status"></dd>
+                <dt>Version</dt>
+                <dd data-meta="version"></dd>
+                <dt>Created</dt>
+                <dd data-meta="dcterms.created" data-format="date"></dd>
+                <dt>Revised</dt>
+                <dd data-meta="revised" data-format="date"></dd>
+                <dt>Updated</dt>
+                <dd data-meta="dcterms.modified" data-format="date"></dd>
+                <dt>Canonical</dt>
+                <dd data-meta="canonical" data-format="link"></dd>
+            </dl>
+        </section>
+    </dialog>
+</section>
