@@ -22,7 +22,6 @@
 
 <body>
   <a class="skip-link" href="#paper-title">Skip to paper</a>
-  <!-- <button id="theme-toggle" aria-label="Toggle dark mode" class="btn" type="button">☀</button> -->
   <main>
     <article aria-labelledby="paper-title">
       <header class="spread page-meta">
@@ -105,6 +104,12 @@
             </button>
           </form>
         </header>
+        <details open>
+          <summary>Preferences</summary>
+          <p>
+            <button id="theme-toggle" aria-label="Toggle dark mode" class="btn btn-icon" type="button">☀</button>
+          </p>
+        </details>
         <div data-clone="#table-of-contents"></div>
         <div data-clone="#paper-metadata"></div>
       </dialog>

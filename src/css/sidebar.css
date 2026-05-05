@@ -7,14 +7,27 @@
   border: var(--border);
   background: var(--bg);
   color: var(--text);
+  opacity: 0;
+  transform: translateX(-0.75rem);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
 }
 
 .sidebar-dialog[open] {
   position: fixed;
-  top: 1rem;
-  left: 1rem;
+  top: 0;
+  left: 0;
   z-index: 20;
   overflow: auto;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sidebar-dialog[open][data-entering],
+.sidebar-dialog[open][data-closing] {
+  opacity: 0;
+  transform: translateX(-0.75rem);
 }
 
 .sidebar-dialog > header {
@@ -52,5 +65,23 @@
     min-height: 100vh;
     max-height: 100vh;
     border-width: 0 1px 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-dialog[open] {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 420px;
+    min-height: 100vh;
+    max-height: 100vh;
+    border-width: 0 1px 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar-dialog {
+    transition: none;
   }
 }

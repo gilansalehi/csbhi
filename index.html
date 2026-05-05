@@ -19,27 +19,13 @@
   <main>
     <header id="site-header" class="spread page-meta" aria-label="Project header">
       <span>
-        <button class="link-button" type="button" aria-label="Open sidebar" aria-controls="page-sidebar"
+        <button class="btn btn-icon" type="button" aria-label="Open sidebar" aria-controls="page-sidebar"
           aria-haspopup="dialog" aria-expanded="false" data-dialog-open="#page-sidebar">
           <span class="text-2x" aria-hidden="true">&#9776;</span>
         </button>
       </span>
       <span>Updated <time datetime="2026-05-04">May 4, 2026</time></span>
     </header>
-
-    <nav id="table-of-contents" aria-label="Page contents">
-      <details>
-        <summary>
-          Contents: CSBHI
-        </summary>
-        <ol>
-          <li><a href="#roadmap">Publications</a></li>
-          <li><a href="#open-problems">Progress & Open Problems</a></li>
-          <li><a href="#prior-art">Prior Art & Supporting Literature</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ol>
-      </details>
-    </nav>
 
     <section id="page-metadata" class="metadata-panel" aria-labelledby="page-metadata-title" hidden>
       <h2 id="page-metadata-title">Project Metadata</h2>
@@ -63,7 +49,7 @@
       <header class="spread page-meta">
         <h2 id="page-sidebar-title">Sidebar</h2>
         <form method="dialog">
-          <button class="link-button" type="submit" value="close" aria-label="Close sidebar">
+          <button class="btn btn-icon" type="submit" value="close" aria-label="Close sidebar">
             <span class="text-2x">&#10005;</span>
           </button>
         </form>
@@ -95,6 +81,23 @@
       black-hole interiors, cosmic expansion, de Sitter curvature, and galaxy-scale
       dynamics, unifying these disparate concepts into one underlying spacetime picture: the
       <span class="smallcaps">Conformal Scaling of Black Hole Interiors</span>.
+    </section>
+
+    <section id="table-of-contents">
+      <h2>Contents</h2>
+      <nav aria-label="Page contents">
+      <details>
+        <summary>
+          Contents: CSBHI
+        </summary>
+        <ol>
+          <li><a href="#roadmap">Publications</a></li>
+          <li><a href="#open-problems">Progress & Open Problems</a></li>
+          <li><a href="#prior-art">Prior Art & Supporting Literature</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ol>
+      </details>
+    </nav>
     </section>
 
     <section id="roadmap" aria-labelledby="publications-title">

@@ -1,4 +1,6 @@
 (function () {
+    var CLOSE_DELAY = 180;
+
     function getTarget(selector) {
         if (!selector) return null;
 
@@ -45,7 +47,16 @@
         });
     }
 
+    function prefersReducedMotion() {
+        return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+
     function openDialog(dialog) {
+        window.clearTimeout(dialog._closeTimer);
+        dialog.removeAttribute('data-closing');
+        dialog.setAttribute('data-entering', '');
+        dialog._returnFocus = document.activeElement;
+
         if (!dialog.open) {
             if (typeof dialog.show === 'function') {
                 dialog.show();
@@ -54,14 +65,20 @@
             }
         }
 
+        window.requestAnimationFrame(function () {
+            window.requestAnimationFrame(function () {
+                dialog.removeAttribute('data-entering');
+            });
+        });
+
         setExpanded(dialog, true);
 
         var closeButton = dialog.querySelector('button[value="close"]');
         if (closeButton) closeButton.focus();
     }
 
-    function closeDialog(dialog) {
-        if (!dialog.open) return;
+    function finishClose(dialog) {
+        dialog.removeAttribute('data-closing');
 
         if (typeof dialog.close === 'function') {
             dialog.close();
@@ -69,6 +86,27 @@
             dialog.removeAttribute('open');
             setExpanded(dialog, false);
         }
+
+        if (dialog._returnFocus && typeof dialog._returnFocus.focus === 'function') {
+            dialog._returnFocus.focus();
+        }
+    }
+
+    function closeDialog(dialog) {
+        if (!dialog.open || dialog.hasAttribute('data-closing')) return;
+
+        setExpanded(dialog, false);
+
+        if (prefersReducedMotion()) {
+            finishClose(dialog);
+            return;
+        }
+
+        dialog.setAttribute('data-closing', '');
+        window.clearTimeout(dialog._closeTimer);
+        dialog._closeTimer = window.setTimeout(function () {
+            finishClose(dialog);
+        }, CLOSE_DELAY);
     }
 
     function initDialogs() {
@@ -87,8 +125,23 @@
         });
 
         document.querySelectorAll('dialog').forEach(function (dialog) {
+            dialog.addEventListener('cancel', function (event) {
+                event.preventDefault();
+                closeDialog(dialog);
+            });
+
             dialog.addEventListener('close', function () {
+                window.clearTimeout(dialog._closeTimer);
+                dialog.removeAttribute('data-entering');
+                dialog.removeAttribute('data-closing');
                 setExpanded(dialog, false);
+            });
+
+            dialog.querySelectorAll('form[method="dialog"]').forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    closeDialog(dialog);
+                });
             });
 
             dialog.addEventListener('click', function (event) {
