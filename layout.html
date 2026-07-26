@@ -54,7 +54,7 @@
 
     const pageLinksFromHeadings = () => {
         const headings = [...document.querySelectorAll(
-            'main article h1, main article h2, #scroll-col h1, #scroll-col h2',
+            'main article h1, main article h2, .descent-story h1, .descent-story h2',
         )];
         const usedIds = new Set(
             [...document.querySelectorAll('[id]')].map(element => element.id),
@@ -106,7 +106,7 @@
         });
 
         const dynamicPage = document.querySelector(
-            'data-wrapper[src="note-view.html"], data-wrapper[src="leap-of-faith-view.html"]',
+            'data-wrapper[src="note-view.html"]',
         );
         if (dynamicPage) {
             const observer = new MutationObserver(() => {

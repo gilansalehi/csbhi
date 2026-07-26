@@ -1,0 +1,411 @@
+:root {
+  --bg: #0e0e16;
+  --surface: #171923;
+  --text: #dde1e9;
+  --muted: #a5a9b2;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: math, serif;
+  line-height: 1.65;
+}
+
+data-wrapper {
+  display: contents;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+.descent-experience {
+  position: relative;
+  min-height: 100vh;
+}
+
+.descent-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.descent-plane {
+  position: relative;
+  width: 100%;
+  height: min(70vh, 42rem);
+  overflow: hidden;
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--text) 16%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--text) 16%, transparent) 1px, transparent 1px);
+}
+
+.descent-horizon,
+.descent-origin,
+.descent-axis,
+.descent-break,
+.descent-coordinate-label,
+.descent-tick,
+.descent-person,
+.descent-highway {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.descent-axis {
+  background: color-mix(in srgb, var(--text) 46%, transparent);
+}
+
+.descent-axis--x {
+  width: 100%;
+  height: 1px;
+}
+
+.descent-axis--y {
+  width: 1px;
+  height: 100%;
+}
+
+.descent-horizon {
+  border: 1.5px solid color-mix(in srgb, var(--text) 72%, transparent);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--text) 2%, transparent);
+}
+
+.descent-origin {
+  z-index: 3;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text);
+  transform: translate3d(var(--origin-x), var(--origin-y), 0) translate(-50%, -50%);
+}
+
+.descent-coordinate-label {
+  z-index: 3;
+  color: color-mix(in srgb, var(--text) 76%, transparent);
+  font: 600 0.72rem/1.25 var(--ds-font-ui);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.descent-coordinate-label span {
+  display: block;
+  margin-top: 0.2rem;
+  color: color-mix(in srgb, var(--text) 54%, transparent);
+  font: 0.68rem/1.2 var(--ds-font-mono);
+  letter-spacing: 0;
+}
+
+.descent-coordinate-label--singularity {
+  text-align: left;
+}
+
+.descent-coordinate-label--horizon {
+  transform-origin: left bottom;
+}
+
+.descent-break {
+  z-index: 4;
+  width: 2rem;
+  height: 1.5rem;
+  background: var(--bg);
+}
+
+.descent-break::before {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  color: color-mix(in srgb, var(--text) 62%, transparent);
+  content: "//";
+  font: 1rem/1 var(--ds-font-mono);
+  letter-spacing: -0.18em;
+  transform: translate(-50%, -50%) rotate(-18deg);
+}
+
+.descent-tick {
+  z-index: 2;
+  width: 1px;
+  height: 0.75rem;
+  background: color-mix(in srgb, var(--text) 58%, transparent);
+}
+
+.descent-tick span {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  color: color-mix(in srgb, var(--text) 66%, transparent);
+  font: 0.72rem/1 var(--ds-font-mono);
+  transform: translateX(-50%);
+}
+
+.descent-person {
+  z-index: 5;
+  width: 0;
+  height: 0;
+  will-change: transform;
+}
+
+.descent-person__dot,
+.descent-person__label {
+  position: absolute;
+  left: 0;
+}
+
+.descent-person__dot {
+  top: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.descent-person__label {
+  font: 600 0.78rem/1 var(--ds-font-ui);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.descent-person--alice .descent-person__dot {
+  width: 18px;
+  height: 18px;
+  border: 3px solid var(--bg);
+  background: #ef5350;
+}
+
+.descent-person--alice .descent-person__label {
+  bottom: 0.95rem;
+  color: #ef767a;
+  transform: translateX(-50%);
+}
+
+.descent-person--bob .descent-person__dot {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #8ecae6;
+  background: var(--bg);
+}
+
+.descent-person--bob .descent-person__label {
+  top: 1rem;
+  color: #8ecae6;
+  transform: translateX(-50%);
+}
+
+.descent-highway {
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.descent-highway::before {
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--text) 3%, transparent);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  content: "";
+}
+
+.descent-highway span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.descent-highway__line {
+  width: 4px;
+  clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%);
+  transform-origin: 50% 0;
+}
+
+.descent-highway__line--edge {
+  background: #f5f5f2;
+}
+
+.descent-highway__line--center {
+  width: 3px;
+  background: #f5cf48;
+}
+
+.descent-highway__dash {
+  border-radius: 999px;
+  background: #f5f5f2;
+  transform-origin: center;
+}
+
+.descent-story {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  pointer-events: none;
+}
+
+.story-step {
+  display: grid;
+  min-height: 112vh;
+  place-items: center;
+  padding-block: 16vh;
+}
+
+.story-step--intro,
+.story-step--outro {
+  min-height: 100vh;
+}
+
+.story-card {
+  position: fixed;
+  bottom: var(--story-card-bottom, 2rem);
+  left: var(--story-card-left, 50vw);
+  width: min(32rem, calc(100vw - var(--story-card-left, 50vw) - 2rem));
+  padding: clamp(0.9rem, 1.6vw, 1.4rem);
+  border: 0;
+  background: color-mix(in srgb, var(--bg) 91%, transparent);
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 0.14);
+  font-size: clamp(0.86rem, 1.15vw, 1rem);
+  line-height: 1.48;
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(10px);
+  transition: opacity 360ms ease;
+}
+
+.story-step.is-active .story-card {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.story-card h1,
+.story-card h2 {
+  margin: 0 0 0.55rem;
+  font-family: math, serif;
+  font-weight: 500;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+.story-card h1 {
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
+}
+
+.story-card h2 {
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+}
+
+.story-card p {
+  margin: 0.6rem 0 0;
+}
+
+.story-card mjx-container[display="true"] {
+  margin: 0.65em 0 !important;
+}
+
+.story-card aside {
+  margin: 0.8rem 0 0;
+  padding: 0.65rem 0 0;
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--text) 22%, transparent);
+  color: color-mix(in srgb, var(--text) 82%, transparent);
+  font-size: 1.05em;
+  font-style: italic;
+}
+
+.story-instruction,
+.story-continue {
+  color: var(--muted);
+  font-family: var(--ds-font-ui);
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+}
+
+.story-instruction {
+  margin-top: 1.5rem;
+}
+
+.story-continue a {
+  color: var(--text);
+}
+
+@media (max-width: 800px) {
+  .descent-stage {
+    inset: 0 0 auto;
+    height: 48vh;
+    padding: 2.5rem 0.5rem 0;
+    background: linear-gradient(to bottom, var(--bg) 82%, transparent);
+  }
+
+  .descent-plane {
+    width: 100%;
+    height: 42vh;
+  }
+
+  .descent-story {
+    width: auto;
+    margin: 0;
+    padding: 34vh 1rem 0;
+    pointer-events: auto;
+  }
+
+  .story-step {
+    min-height: 105vh;
+    align-items: end;
+    padding-block: 10vh;
+  }
+
+  .story-card {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    background: color-mix(in srgb, var(--bg) 96%, transparent);
+    opacity: 0.24;
+    pointer-events: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .story-card {
+    transition: none;
+  }
+}
+
+@media print {
+  .descent-stage {
+    position: static;
+    height: auto;
+  }
+
+  .descent-story {
+    width: auto;
+    margin: 0;
+  }
+
+  .story-step {
+    min-height: 0;
+    padding-block: 1rem;
+  }
+
+  .story-card {
+    opacity: 1;
+    transform: none;
+  }
+}

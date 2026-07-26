@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A schematic journey through the Schwarzschild horizon and toward the geometric-duality vanishing point.">
   <title>A Leap of Faith — Geometric Duality of Black-Hole Interiors</title>
   <script type="importmap">
     {
@@ -14,333 +15,233 @@
   <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
     data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
     data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']],
+        processEscapes: true
+      },
+      startup: { typeset: false }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   <link href="src/css/design-system.css" rel="stylesheet">
   <link href="src/css/navigation.css" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    data-wrapper { display: contents; }
-
-    html { scroll-snap-type: y mandatory; }
-
-    body {
-      --bg: #07071a;
-      --text: #dde1e9;
-
-      background: #07071a;
-      color: #dde1e9;
-      font-family: math, serif;
-      line-height: 1.7;
-    }
-
-    a { color: currentColor; }
-    /* Canvas pinned behind everything */
-    #bg-canvas {
-      position: fixed;
-      inset: 0;
-      width: auto;
-      height: 100%;
-    }
-
-    /* Scrollable text column — top-left quadrant */
-    #scroll-col {
-      position: relative;
-      z-index: 1;
-      width: min(38vw, 420px);
-      margin-left: 2em;
-      margin-right: auto;
-      padding: 0 0.8em;
-    }
-
-    /* Each section — one viewport height, card sits in top half */
-    .slide-section {
-      min-height: 100vh;
-      display: flex;
-      align-items: flex-start;
-      padding-top: 8vh;
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-
-    /* Text card — dark backing so prose is readable over the canvas */
-    .card {
-      background: rgba(7, 7, 26, 0.80);
-      border-radius: 6px;
-      padding: 2em 2.2em;
-      width: 100%;
-    }
-
-    .card h2 { margin-bottom: 0.6em; font-size: 1.15em; }
-    .card p  { margin-bottom: 0.9em; }
-    .card p:last-child { margin-bottom: 0; }
-
-    .card aside {
-      border: 1px solid rgba(255,255,255,0.15);
-      background: rgba(36, 36, 46, 0.80);
-      padding: 0.9em 1em;
-      margin: 1em 0;
-      font-style: italic;
-      font-weight: 700;
-      font-size: 1.1em;
-    }
-
-    .muted {
-      color: #dde1e988;
-    }
-
-    /* Progress dots — vertical strip, left-centre */
-    #progress {
-      position: fixed;
-      left: 1.2rem;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      gap: 9px;
-    }
-    #progress span {
-      display: block;
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.20);
-      transition: background 0.3s ease, transform 0.3s ease;
-      cursor: default;
-    }
-    #progress span.active {
-      background: rgba(255,255,255,0.72);
-      transform: scale(1.5);
-    }
-    @media (max-width: 600px) { #progress { display: none; } }
-
-    /* Intro — full-height title card with snap */
-    #intro {
-      min-height: 100vh;
-      display: flex;
-      align-items: flex-start;
-      padding-top: 8vh;
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-
-    /* Outro — full-height closing card with snap */
-    #outro {
-      min-height: 100vh;
-      display: flex;
-      align-items: flex-start;
-      padding-top: 8vh;
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-
-    /* Fade-in on scroll */
-    .card, #intro > div, #outro > p {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity 0.55s ease, transform 0.55s ease;
-    }
-    .card.visible, #intro > div.visible, #outro > p.visible {
-      opacity: 1;
-      transform: none;
-    }
-
-    /* Scroll hint */
-    @keyframes bounce {
-      0%, 100% { transform: translateX(-50%) translateY(0); }
-      50%       { transform: translateX(-50%) translateY(7px); }
-    }
-    #scroll-hint {
-      position: fixed;
-      bottom: 1.8rem;
-      left: 50%;
-      transform: translateX(-50%);
-      color: rgba(255,255,255,0.30);
-      font-size: 1em;
-      letter-spacing: 0.12em;
-      z-index: 5;
-      pointer-events: none;
-      user-select: none;
-      animation: bounce 2s ease-in-out infinite;
-      transition: opacity 0.9s ease;
-    }
-    #scroll-hint.hidden { opacity: 0; animation: none; }
-
-    /* Mobile — revert to full-width centered column */
-    @media (max-width: 600px) {
-      #scroll-col { width: 100%; margin-right: 0; padding: 0 0.8em; }
-      .slide-section { align-items: center; padding-top: 0; }
-      .card { padding: 1.4em 1.2em; }
-    }
-  </style>
+  <link href="src/css/leap-of-faith.css" rel="stylesheet">
+  <script src="src/js/leap-of-faith.js" type="module"></script>
 </head>
 <body>
   <data-wrapper src="layout.html" data-theme-control="false"></data-wrapper>
-  <data-wrapper src="leap-of-faith-view.html">
+  <div class="descent-experience">
+    <div class="descent-stage" aria-hidden="true">
+      <div class="descent-plane" data-descent-plane>
+        <div class="descent-axis descent-axis--x" data-x-axis></div>
+        <div class="descent-axis descent-axis--y" data-y-axis></div>
 
-  <canvas id="bg-canvas"></canvas>
-  <div id="scroll-hint" $class="scrollHintClass">↓ scroll</div>
-  <div id="progress" aria-hidden="true">
-    <template *list="progress">
-      <span $class="./class"></span>
-    </template>
+        <div class="descent-highway" data-highway>
+          <span class="descent-highway__line descent-highway__line--edge" data-road-bottom="-1"></span>
+          <span class="descent-highway__line descent-highway__line--edge" data-road-bottom="1"></span>
+          <span class="descent-highway__line descent-highway__line--center" data-road-bottom="-0.012"></span>
+          <span class="descent-highway__line descent-highway__line--center" data-road-bottom="0.012"></span>
+        </div>
+
+        <div class="descent-horizon" data-horizon></div>
+        <div class="descent-origin"></div>
+        <div class="descent-coordinate-label descent-coordinate-label--singularity" data-singularity-label>
+          singularity <span>(0, 0)</span>
+        </div>
+        <div class="descent-coordinate-label descent-coordinate-label--horizon" data-horizon-label>
+          event horizon <span>r = 1 = 2M</span>
+        </div>
+        <div class="descent-break" data-break aria-hidden="true"></div>
+
+        <div class="descent-tick" data-x="-2"><span>−2</span></div>
+        <div class="descent-tick" data-x="-1"><span>−1</span></div>
+        <div class="descent-tick" data-x="0"><span>0</span></div>
+        <div class="descent-tick" data-x="1"><span>1</span></div>
+        <div class="descent-tick" data-x="2"><span>2</span></div>
+        <div class="descent-tick" data-x="3"><span>3</span></div>
+        <div class="descent-tick" data-x="4"><span>∞</span></div>
+        <div class="descent-tick" data-x="5"><span>∞ + 1</span></div>
+
+        <div class="descent-person descent-person--bob" data-bob>
+          <span class="descent-person__dot"></span>
+          <span class="descent-person__label">Bob</span>
+        </div>
+        <div class="descent-person descent-person--alice" data-alice>
+          <span class="descent-person__dot"></span>
+          <span class="descent-person__label">Alice</span>
+        </div>
+      </div>
+    </div>
+
+    <main class="descent-story" aria-label="Alice's descent">
+        <header class="story-step story-step--intro"
+          data-story-step="intro"
+          data-radius="4">
+          <div class="story-card">
+            <h1>A Leap of Faith</h1>
+            <p class="story-instruction">
+              §3 — Geometric Duality of Black-Hole Interiors<br>
+              Scroll to follow Alice into the black hole.
+            </p>
+          </div>
+        </header>
+
+        <section class="story-step"
+          data-story-step="departure"
+          data-radius="4">
+          <div class="story-card">
+            <h2>Before the Fall</h2>
+            <p>
+              Initially, Alice and Bob are very close (both at \(r\gg 1\)), and their relative velocity is
+              small. Alice sees Bob and the station receding in her rearview cameras, eventually shrinking
+              into a single point of light in the sky behind her, while she lets gravity pull the G-Odyssic
+              straight down. Meanwhile, Bob sees Alice begin to drift inward and fall toward the SMBH,
+              accelerating as she does.
+            </p>
+          </div>
+        </section>
+
+        <section class="story-step"
+          data-story-step="exterior"
+          data-radius="3.5">
+          <div class="story-card">
+            <h2>Mid-Descent</h2>
+            <p>
+              Bob knows two things from General Relativity: in his own coordinate time \(t\), he will never
+              see Alice cross the horizon at \(r=1\), nor receive any signal from her once she does —
+              as \(t\to\infty\) her pulses become infinitely redshifted and fade away.
+              In Alice's proper time \(\tau\), however, she will reach \(r=1\) after a finite interval and
+              then continue inward in free fall.
+            </p>
+          </div>
+        </section>
+
+        <section class="story-step"
+          data-story-step="exterior-local"
+          data-radius="2.5">
+          <div class="story-card">
+            <h2>Mid-Descent</h2>
+            <p>
+              Because Alice's motion remains inertial during the entire journey, she registers no forces.
+              In her local frame, her clock ticks normally and she measures space as flat.
+              But what she experiences and what Bob sees are starkly different.
+            </p>
+            <p>
+              As Alice free-falls toward the horizon, her radial coordinate \(r(\tau)\) decreases and her
+              speed relative to Bob increases. The black hole grows larger and larger in her viewport.
+            </p>
+          </div>
+        </section>
+
+        <section class="story-step"
+          data-story-step="horizon"
+          data-radius="1">
+          <div class="story-card">
+            <h2>At the Horizon</h2>
+            <p>
+              At the precise moment Alice's coordinate reaches \(r=1\), Bob's reception interval between
+              successive radio pulses stretches to infinity — he sees her signal smear across the event
+              horizon. To him, Alice asymptotically approaches \(r=1\) as \(t\to+\infty\).
+            </p>
+            <p>
+              Yet in Alice's local frame, crossing \(r=1\) is unremarkable: she registers no sudden forces,
+              space appears locally flat, and her proper time \(\tau\) continues smoothly, as required by
+              the Equivalence Principle.
+            </p>
+          </div>
+        </section>
+
+        <section class="story-step"
+          data-story-step="interior"
+          data-radius="0.5">
+          <div class="story-card">
+            <h2>Inside the Horizon</h2>
+            <p>
+              As Alice moves past \(r=1\), Bob's station vanishes from her instruments entirely —
+              his radio pulses have redshifted to zero. In fact, <em>all</em> light from above the horizon
+              shifts from red to black.
+            </p>
+            <p>
+              Yet aboard the freely-falling G-Odyssic, nothing changes: her local spacetime remains
+              perfectly flat (Minkowskian), just as the Equivalence Principle demands.
+              Below the horizon, the Schwarzschild metric flips: \(r\) becomes timelike and \(t\) becomes
+              spacelike.
+            </p>
+          </div>
+        </section>
+
+        <section class="story-step"
+          data-story-step="vacuum"
+          data-radius="0.16">
+          <div class="story-card">
+            <h2>Vacuum Singularity</h2>
+            <p>
+              Below the horizon, Alice is in uncharted territory. According to GR, in pure-vacuum
+              Schwarzschild, Alice's proper time to reach the central singularity at \(r=0\) is finite:
+            </p>
+            <p>
+              \[
+                \tau_{\text{vac}}
+                = \int_{1}^{0} \frac{dr}{\sqrt{1/r}}
+                = \tfrac{2}{3}
+              \]
+            </p>
+            <p>
+              But this pure-vacuum picture leads to an inevitable singularity at \(r=0\).
+              Is it possible to conceive the black hole interior in such a way that Alice doesn't crash
+              into the singularity?
+            </p>
+          </div>
+        </section>
+
+        <section class="story-step"
+          data-story-step="vanishing"
+          data-radius="0">
+          <div class="story-card">
+            <h2>The Vanishing Point</h2>
+            <p>
+              To preserve Alice's inertial experience all the way down, we replace the vacuum with a
+              dust + Λ Painlevé–Gullstrand interior metric, characterized by the infall function
+              \(F(r)\). In that geometry, the proper time to \(r=0\) becomes
+            </p>
+            <p>
+              \[
+                \tau_{\rm int} = \int_{0}^{1} \frac{dr}{F(r)},
+                \qquad
+                F(r) = r\sqrt{\tfrac{8\pi G}{3}\rho}.
+              \]
+            </p>
+            <p>
+              Because \(F(r)\sim r\sqrt{\rho_\Lambda}\) near \(r=0\), we have \(\tau_{\rm int}\to\infty\):
+              Alice never reaches a singularity in finite proper time.
+            </p>
+          </div>
+        </section>
+
+        <footer class="story-step story-step--outro"
+          data-story-step="outro"
+          data-radius="0">
+          <div class="story-card">
+            <h2>A New Perspective</h2>
+            <p>
+              The coordinate switch means the black hole singularity is not a point in <em>space</em>,
+              but a point in <em>time</em> located at future infinity.
+            </p>
+            <aside>
+              Just as a driver will never reach the road's vanishing point, where parallel lines appear
+              to intersect, so too will Alice never reach the singularity, where all geodesics appear
+              to converge.
+            </aside>
+            <p class="story-continue">
+              Continue reading: <a href="gd1.html#section4">
+              §4 — Infall Function: Painlevé–Gullstrand Form of FLRW →</a>
+            </p>
+          </div>
+        </footer>
+    </main>
   </div>
-
-  <div id="scroll-col">
-
-    <!-- Intro header -->
-    <div id="intro">
-      <div $class="introClass">
-        <h1 style="font-size:1.4em; margin-bottom:0.4em;">A Leap of Faith</h1>
-        <p style="color:rgba(255,255,255,0.45); font-size:0.85em;">
-          §3 — Geometric Duality of Black-Hole Interiors<br>
-          Scroll to follow Alice into the black hole.
-        </p>
-      </div>
-    </div>
-
-    <!-- Slide 0 — Before the Fall -->
-    <section class="slide-section" data-slide="0">
-      <div class="card" $class="slide0Class">
-        <h2>Before the Fall</h2>
-        <p>
-          Initially, Alice and Bob are very close (both at \(r\gg 1\)), and their relative velocity is
-          small. Alice sees Bob and the station receding in her rearview cameras, eventually shrinking
-          into a single point of light in the sky behind her, while she lets gravity pull the G-Odyssic
-          straight down. Meanwhile, Bob sees Alice begin to drift inward and fall toward the SMBH,
-          accelerating as she does.
-        </p>
-      </div>
-    </section>
-
-    <!-- Slide 1 — Mid-Descent -->
-    <section class="slide-section" data-slide="1">
-      <div class="card" $class="slide1Class">
-        <h2>Mid-Descent</h2>
-        <p>
-          Bob knows two things from General Relativity: in his own coordinate time \(t\), he will never
-          see Alice cross the horizon at \(r=1\), nor receive any signal from her once she does —
-          as \(t\to\infty\) her pulses become infinitely redshifted and fade away.
-          In Alice's proper time \(\tau\), however, she will reach \(r=1\) after a finite interval and
-          then continue inward in free fall.
-        </p>
-        <p>
-          Because Alice's motion remains inertial during the entire journey, she registers no forces.
-          In her local frame, her clock ticks normally and she measures space as flat.
-          But what she experiences and what Bob sees are starkly different.
-        </p>
-        <p>
-          As Alice free-falls toward the horizon, her radial coordinate \(r(\tau)\) decreases and her
-          speed relative to Bob increases. The black hole grows larger and larger in her viewport.
-        </p>
-      </div>
-    </section>
-
-    <!-- Slide 2 — At the Horizon -->
-    <section class="slide-section" data-slide="2">
-      <div class="card" $class="slide2Class">
-        <h2>At the Horizon</h2>
-        <p>
-          At the precise moment Alice's coordinate reaches \(r=1\), Bob's reception interval between
-          successive radio pulses stretches to infinity — he sees her signal smear across the event
-          horizon. To him, Alice asymptotically approaches \(r=1\) as \(t\to+\infty\).
-        </p>
-        <p>
-          Yet in Alice's local frame, crossing \(r=1\) is unremarkable: she registers no sudden forces,
-          space appears locally flat, and her proper time \(\tau\) continues smoothly, as required by
-          the Equivalence Principle.
-        </p>
-      </div>
-    </section>
-
-    <!-- Slide 3 — Inside the Horizon -->
-    <section class="slide-section" data-slide="3">
-      <div class="card" $class="slide3Class">
-        <h2>Inside the Horizon</h2>
-        <p>
-          As Alice moves past \(r=1\), Bob's station vanishes from her instruments entirely —
-          his radio pulses have redshifted to zero. In fact, <em>all</em> light from above the horizon
-          shifts from red to black.
-        </p>
-        <p>
-          Yet aboard the freely-falling G-Odyssic, nothing changes: her local spacetime remains
-          perfectly flat (Minkowskian), just as the Equivalence Principle demands.
-          Below the horizon, the Schwarzschild metric flips: \(r\) becomes timelike and \(t\) becomes
-          spacelike.
-        </p>
-      </div>
-    </section>
-
-    <!-- Slide 4 — Vacuum Singularity -->
-    <section class="slide-section" data-slide="4">
-      <div class="card" $class="slide4Class">
-        <h2>Vacuum Singularity</h2>
-        <p>
-          Below the horizon, Alice is in uncharted territory. According to GR, in pure-vacuum
-          Schwarzschild, Alice's proper time to reach the central singularity at \(r=0\) is finite:
-        </p>
-        <p>
-          \[
-            \tau_{\text{vac}}
-            = \int_{1}^{0} \frac{dr}{\sqrt{1/r}}
-            = \tfrac{2}{3}
-          \]
-        </p>
-        <p>
-          But this pure-vacuum picture leads to an inevitable singularity at \(r=0\).
-          Is it possible to conceive the black hole interior in such a way that Alice doesn't crash
-          into the singularity? Fortunately, we already have the mental tools to intuitively grasp
-          the interior geometry. All we need is a little perspective.
-        </p>
-      </div>
-    </section>
-
-    <!-- Slide 5 — The Vanishing Point -->
-    <section class="slide-section" data-slide="5">
-      <div class="card" $class="slide5Class">
-        <h2>The Vanishing Point</h2>
-        <p>
-          To preserve Alice's inertial experience all the way down, we replace the vacuum with a
-          dust + Λ Painlevé–Gullstrand interior metric, characterized by the infall function
-          \(F(r)\). In that geometry, the proper time to \(r=0\) becomes
-        </p>
-        <p>
-          \[
-            \tau_{\rm int} = \int_{0}^{1} \frac{dr}{F(r)},
-            \qquad
-            F(r) = r\sqrt{\tfrac{8\pi G}{3}\rho}.
-          \]
-        </p>
-        <p>
-          Because \(F(r)\sim r\sqrt{\rho_\Lambda}\) near \(r=0\), we have \(\tau_{\rm int}\to\infty\):
-          Alice never reaches a singularity in finite proper time.
-        </p>
-      </div>
-    </section>
-
-    <!-- Outro -->
-    <div id="outro">
-      <div class="card" $class="outroClass">
-        <h2>A New Perspective</h2>
-        <p>
-          The coordinate switch means the black hole singularity is not a point in <em>space</em>,
-          but a point in <em>time</em> located at future infinity.
-        </p>
-        <aside>
-          Just as a driver will never reach the road's vanishing point, where parallel lines appear
-          to intersect, so too will Alice never reach the singularity, where all geodesics appear
-          to converge.
-        </aside>
-        <p class="muted">
-          Continue reading: <a href="gd1.html#section4">
-          §4 — Infall Function: Painlevé–Gullstrand Form of FLRW →</a>
-        </p>
-      </div>
-    </div>
-
-  </div><!-- /scroll-col -->
-
-  </data-wrapper>
 </body>
 </html>

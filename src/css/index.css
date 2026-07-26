@@ -5,11 +5,9 @@
 @import "theme.css" layer(theme);
 @import "reset.css" layer(reset);
 @import "paper.css" layer(layout);
-@import "components.css" layer(components);
 @import "annotations.css" layer(components);
 @import "navigation.css" layer(components);
 @import "home.css" layer(components);
 @import "scoreboard.css" layer(components);
 @import "responsive.css" layer(responsive);
 @import "print.css" layer(print);
-@import "alices-descent.css" layer(components);
