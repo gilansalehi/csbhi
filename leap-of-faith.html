@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A schematic journey through the Schwarzschild horizon and toward the geometric-duality vanishing point.">
   <title>A Leap of Faith — Geometric Duality of Black-Hole Interiors</title>
+  <script>
+    (() => {
+      const parameters = new URLSearchParams(location.search);
+      const figure = parameters.get('figure');
+      const figureMode = /^[1-6]$/.test(figure || '');
+      const requestedTheme = parameters.get('theme');
+      let theme = requestedTheme === 'dark' || requestedTheme === 'light'
+        ? requestedTheme
+        : null;
+
+      if (!theme && figureMode) theme = 'light';
+      if (!theme) {
+        try {
+          const savedTheme = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+          theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        } catch {
+          theme = 'light';
+        }
+      }
+
+      document.documentElement.dataset.theme = theme;
+      if (figureMode) document.documentElement.dataset.figureMode = figure;
+    })();
+  </script>
   <script type="importmap">
     {
       "imports": {
@@ -32,7 +57,7 @@
   <script src="src/js/leap-of-faith.js" type="module"></script>
 </head>
 <body>
-  <data-wrapper src="layout.html" data-theme-control="false"></data-wrapper>
+  <data-wrapper src="layout.html"></data-wrapper>
   <div class="descent-experience">
     <div class="descent-stage" aria-hidden="true">
       <div class="descent-plane" data-descent-plane>
@@ -62,7 +87,7 @@
         <div class="descent-tick" data-x="1"><span>1</span></div>
         <div class="descent-tick" data-x="2"><span>2</span></div>
         <div class="descent-tick" data-x="3"><span>3</span></div>
-        <div class="descent-tick" data-x="4"><span>∞</span></div>
+        <div class="descent-tick" data-x="4"></div>
         <div class="descent-tick" data-x="5"><span>∞ + 1</span></div>
 
         <div class="descent-person descent-person--bob" data-bob>

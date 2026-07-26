@@ -1,5 +1,13 @@
 const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
 const interpolate = (from, to, progress) => from + (to - from) * progress;
+const FIGURE_STATES = Object.freeze({
+    1: { radius: 4, highway: false },
+    2: { radius: 2.5, highway: false },
+    3: { radius: 1, highway: false },
+    4: { radius: 0.5, highway: false },
+    5: { radius: 0, highway: false },
+    6: { radius: 0, highway: true },
+});
 
 function createPerspectiveDashes(highway) {
     const fragment = document.createDocumentFragment();
@@ -33,6 +41,7 @@ function createPerspectiveDashes(highway) {
 }
 
 function initializeDescent() {
+    const figureState = FIGURE_STATES[document.documentElement.dataset.figureMode] || null;
     const plane = document.querySelector('[data-descent-plane]');
     const experience = document.querySelector('.descent-experience');
     const horizon = document.querySelector('[data-horizon]');
@@ -59,7 +68,7 @@ function initializeDescent() {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let animationFrame = null;
     let anchors = [];
-    let currentRadius = Number(steps[0].dataset.radius);
+    let currentRadius = figureState?.radius ?? Number(steps[0].dataset.radius);
     let unit = 1;
     let originX = 0;
     let originY = 0;
@@ -85,7 +94,7 @@ function initializeDescent() {
         horizon.style.height = `${unit * 2}px`;
         horizon.style.transform = `translate3d(${originX - unit}px, ${originY - unit}px, 0)`;
         singularityLabel.style.transform = `translate3d(${originX - 10}px, ${originY - 10}px, 0) translate(-100%, -100%)`;
-        horizonLabel.style.transform = `translate3d(${xForCoordinate(-1)}px, ${originY - unit}px, 0) translate(-50%, -100%)`;
+        horizonLabel.style.transform = `translate3d(${xForCoordinate(-1)}px, ${originY - unit}px, 0) translate(-50%, var(--horizon-label-offset-y, 0.6rem))`;
         xAxis.style.transform = `translate3d(0, ${originY}px, 0)`;
         yAxis.style.transform = `translate3d(${originX}px, 0, 0)`;
         discontinuity.style.transform = `translate3d(${xForCoordinate(3.5)}px, ${originY}px, 0) translate(-50%, -50%)`;
@@ -184,13 +193,32 @@ function initializeDescent() {
 
     const remeasure = () => {
         measurePlane();
+        if (figureState) {
+            setRadius(figureState.radius);
+            highway.style.opacity = String(Number(figureState.highway));
+            return;
+        }
         measureStory();
         requestRender();
     };
 
     remeasure();
-    window.addEventListener('scroll', requestRender, { passive: true });
     window.addEventListener('resize', remeasure);
+
+    if (figureState) {
+        const markFigureReady = () => {
+            remeasure();
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    document.documentElement.dataset.figureReady = 'true';
+                });
+            });
+        };
+        document.fonts?.ready.then(markFigureReady) || markFigureReady();
+        return;
+    }
+
+    window.addEventListener('scroll', requestRender, { passive: true });
     reducedMotion.addEventListener('change', requestRender);
     const typesetMath = async () => {
         if (!window.MathJax?.startup?.promise || !window.MathJax?.typesetPromise) return;
