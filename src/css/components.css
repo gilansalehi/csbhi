@@ -1,32 +1,13 @@
-.button,
 .btn {
-    appearance: none;
+  appearance: none;
 
-    &:active {
-        background: var(--control-active);
-    }
+  &:active {
+    background: var(--control-active);
+  }
 }
 
 .btn-text {
-    font-size: 1em;
-
-    border: none;
-    background: var(--bg);
-}
-
-.btn-icon {
-    --size: 2.5em;
-    font-size: 1em;
-    font-weight: 400;
-    padding: .25em;
-    background: var(--control-bg);
-    border: transparent;
-    border-radius: 50%;
-    height: var(--size);
-    width: var(--size);
-
-    &:hover {
-        background: var(--control-hover);
-        font-weight: 600;
-    }
+  border: none;
+  background: var(--bg);
+  font-size: 1em;
 }

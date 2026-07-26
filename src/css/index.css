@@ -10,7 +10,6 @@
 @import "navigation.css" layer(components);
 @import "home.css" layer(components);
 @import "scoreboard.css" layer(components);
-@import "utilities.css" layer(utilities);
 @import "responsive.css" layer(responsive);
 @import "print.css" layer(print);
 @import "alices-descent.css" layer(components);

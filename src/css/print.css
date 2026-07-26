@@ -1,6 +1,5 @@
 @media print {
-  [data-print="omit"],
-  #theme-toggle {
+  [data-print="omit"] {
     display: none;
   }
 

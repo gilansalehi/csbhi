@@ -12,23 +12,11 @@
   transform: translateY(1rem);
 }
 
-article > header,
-#site-header {
-  margin-bottom: 3rem;
-}
-
 .page-meta {
   font-family: var(--mono);
   font-size: 0.82rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-}
-
-.spread {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
 }
 
 article > h1 {
