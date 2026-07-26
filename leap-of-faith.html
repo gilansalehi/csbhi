@@ -4,9 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Leap of Faith — Geometric Duality of Black-Hole Interiors</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    data-wrapper { display: contents; }
 
     html { scroll-snap-type: y mandatory; }
 
@@ -170,18 +182,27 @@
   </style>
 </head>
 <body>
+  <data-wrapper src="leap-of-faith-view.html">
 
   <canvas id="bg-canvas"></canvas>
-  <div id="scroll-hint">↓ scroll</div>
-  <div id="progress" aria-hidden="true"></div>
+  <div id="scroll-hint" $class="scrollHintClass">↓ scroll</div>
+  <div id="progress" aria-hidden="true">
+    <template *list="progress">
+      <span $class="./class"></span>
+    </template>
+  </div>
 
-  <nav id="nav"><a href="gd1.html">← Back to paper</a></nav>
+  <nav id="nav" aria-label="Site navigation">
+    <a href="index.html">Overview</a>
+    <span aria-hidden="true"> · </span>
+    <a href="gd1.html">← Back to GD I</a>
+  </nav>
 
   <div id="scroll-col">
 
     <!-- Intro header -->
     <div id="intro">
-      <div>
+      <div $class="introClass">
         <h1 style="font-size:1.4em; margin-bottom:0.4em;">A Leap of Faith</h1>
         <p style="color:rgba(255,255,255,0.45); font-size:0.85em;">
           §3 — Geometric Duality of Black-Hole Interiors<br>
@@ -192,7 +213,7 @@
 
     <!-- Slide 0 — Before the Fall -->
     <section class="slide-section" data-slide="0">
-      <div class="card">
+      <div class="card" $class="slide0Class">
         <h2>Before the Fall</h2>
         <p>
           Initially, Alice and Bob are very close (both at \(r\gg 1\)), and their relative velocity is
@@ -206,7 +227,7 @@
 
     <!-- Slide 1 — Mid-Descent -->
     <section class="slide-section" data-slide="1">
-      <div class="card">
+      <div class="card" $class="slide1Class">
         <h2>Mid-Descent</h2>
         <p>
           Bob knows two things from General Relativity: in his own coordinate time \(t\), he will never
@@ -229,7 +250,7 @@
 
     <!-- Slide 2 — At the Horizon -->
     <section class="slide-section" data-slide="2">
-      <div class="card">
+      <div class="card" $class="slide2Class">
         <h2>At the Horizon</h2>
         <p>
           At the precise moment Alice's coordinate reaches \(r=1\), Bob's reception interval between
@@ -246,7 +267,7 @@
 
     <!-- Slide 3 — Inside the Horizon -->
     <section class="slide-section" data-slide="3">
-      <div class="card">
+      <div class="card" $class="slide3Class">
         <h2>Inside the Horizon</h2>
         <p>
           As Alice moves past \(r=1\), Bob's station vanishes from her instruments entirely —
@@ -264,7 +285,7 @@
 
     <!-- Slide 4 — Vacuum Singularity -->
     <section class="slide-section" data-slide="4">
-      <div class="card">
+      <div class="card" $class="slide4Class">
         <h2>Vacuum Singularity</h2>
         <p>
           Below the horizon, Alice is in uncharted territory. According to GR, in pure-vacuum
@@ -288,7 +309,7 @@
 
     <!-- Slide 5 — The Vanishing Point -->
     <section class="slide-section" data-slide="5">
-      <div class="card">
+      <div class="card" $class="slide5Class">
         <h2>The Vanishing Point</h2>
         <p>
           To preserve Alice's inertial experience all the way down, we replace the vacuum with a
@@ -311,7 +332,7 @@
 
     <!-- Outro -->
     <div id="outro">
-      <div class="card">
+      <div class="card" $class="outroClass">
         <h2>A New Perspective</h2>
         <p>
           The coordinate switch means the black hole singularity is not a point in <em>space</em>,
@@ -331,92 +352,6 @@
 
   </div><!-- /scroll-col -->
 
-  <script src="src/js/slideshow.js"></script>
-  <script>
-    createAlicesDescent({
-      canvas:     'bg-canvas',
-      responsive: true,
-      crossfade:  true,
-      namespace:  'leapOfFaith'
-    });
-  </script>
-  <script>
-    (function () {
-      /* Slide trigger — fires when section midpoint crosses viewport centre */
-      var sections = document.querySelectorAll('.slide-section');
-      if (!sections.length) return;
-
-      var slideObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting && window.leapOfFaith) {
-            window.leapOfFaith.goToSlide(
-              parseInt(entry.target.getAttribute('data-slide'), 10)
-            );
-          }
-        });
-      }, { rootMargin: '-50% 0px -50% 0px', threshold: 0 });
-
-      sections.forEach(function (el) { slideObserver.observe(el); });
-
-      /* Fade-in — fires when card / intro / outro enters the viewport */
-      var fadeObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            fadeObserver.unobserve(entry.target);
-          }
-        });
-      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
-
-      document.querySelectorAll('.card, #intro > div, #outro > p')
-        .forEach(function (el) { fadeObserver.observe(el); });
-
-      /* Scroll hint — hide on first scroll */
-      var hint = document.getElementById('scroll-hint');
-      if (hint) {
-        window.addEventListener('scroll', function () {
-          hint.classList.add('hidden');
-        }, { once: true });
-      }
-
-      /* Progress dots — one per snap stop (intro + 6 slides + outro) */
-      var stops = [document.getElementById('intro')]
-        .concat(Array.prototype.slice.call(sections))
-        .concat([document.getElementById('outro')]);
-
-      var prog = document.getElementById('progress');
-      var dots = stops.map(function (_, i) {
-        var d = document.createElement('span');
-        if (i === 0) d.classList.add('active');
-        prog.appendChild(d);
-        return d;
-      });
-
-      var stopObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          var idx = stops.indexOf(entry.target);
-          dots.forEach(function (d, i) { d.classList.toggle('active', i === idx); });
-        });
-      }, { rootMargin: '-50% 0px -50% 0px', threshold: 0 });
-
-      stops.forEach(function (el) { stopObserver.observe(el); });
-
-      /* Keyboard navigation — ↑/↓ or ←/→ step through stops */
-      document.addEventListener('keydown', function (e) {
-        var key = e.key;
-        if (key !== 'ArrowDown' && key !== 'ArrowUp' &&
-            key !== 'ArrowRight' && key !== 'ArrowLeft') return;
-        var activeIdx = 0;
-        dots.forEach(function (d, i) { if (d.classList.contains('active')) activeIdx = i; });
-        var dir = (key === 'ArrowDown' || key === 'ArrowRight') ? 1 : -1;
-        var next = Math.max(0, Math.min(stops.length - 1, activeIdx + dir));
-        if (next !== activeIdx) {
-          e.preventDefault();
-          stops[next].scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    }());
-  </script>
+  </data-wrapper>
 </body>
 </html>

@@ -15,9 +15,28 @@
 
   <title>Geometric Duality: Black Hole Interiors</title>
 
-  <script src="src/js/dark-mode.js"></script>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  <script src="src/js/app.js" type="module"></script>
 
   <link href="src/css/index.css" rel="stylesheet" />
 </head>
@@ -25,7 +44,7 @@
 <body>
   <a class="skip-link" href="#paper-title">Skip to paper</a>
   <main>
-    <v-component data-src="layout.html"></v-component>
+    <data-wrapper src="layout.html"></data-wrapper>
     <article aria-labelledby="paper-title">
       <h1 id="paper-title">Geometric Duality: Black Hole Interiors</h1>
 
@@ -1243,21 +1262,7 @@
           sequence.
         </p>
 
-        <figure id="alice-descent" data-print="omit">
-          <canvas id="alice-canvas" width="1050" height="440" aria-label="Interactive Alice descent slideshow"></canvas>
-          <figcaption id="alice-caption"></figcaption>
-          <nav aria-label="Alice descent slides">
-            <button type="button" class="btn" id="alice-btn-prev">&#8592; Prev</button>
-            <span id="alice-counter"></span>
-            <button type="button" class="btn" id="alice-btn-next">Next &#8594;</button>
-          </nav>
-          <p id="alice-toggles">
-            <button type="button" class="btn btn-text" id="alice-stars-btn">Hide Stars</button>
-            <button type="button" class="btn btn-text" id="alice-grid-btn">Grid Off</button>
-            <button type="button" class="btn btn-text" id="alice-road-btn" hidden>Hide Road</button>
-          </p>
-          <p>Arrow keys &#8592; &#8594; also navigate slides.</p>
-        </figure>
+        <data-wrapper src="alice-descent.html"></data-wrapper>
       </section>
 
       <section id="references">
@@ -1374,25 +1379,6 @@
     </article>
   </main>
 
-  <script src="src/js/slideshow.js"></script>
-  <script>
-    /* Replace §3 static figure images with canvas-rendered slides once ready */
-    document.addEventListener('alicesDescent:ready', function () {
-      var figs = document.querySelectorAll('#section3 figure img');
-      for (var i = 0; i < figs.length; i++) {
-        if (window.alicesDescent) {
-          var url = window.alicesDescent.captureSlide(i);
-          figs[i].src = url;
-          figs[i].style.width = '100%';
-        }
-      }
-    });
-    createAlicesDescent({
-      canvas: 'alice-canvas',
-      controls: true,
-      namespace: 'alicesDescent'
-    });
-  </script>
 </body>
 
 </html>

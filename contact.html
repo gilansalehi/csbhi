@@ -1,0 +1,28 @@
+<script type="module" data-module="@csbhi/contact">
+    const email = 'gilansalehi@gmail.com';
+    const github = 'https://www.github.com/gilansalehi/csbhi';
+
+    export default () => ({
+        emailHtml: email.split('').join('&#8203;'),
+        github,
+        copyEmail() {
+            navigator.clipboard?.writeText(email);
+        },
+    });
+</script>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <dl>
+        <dt>email</dt>
+        <dd>
+            <button class="link-button email-container"
+                type="button"
+                title="Copy email address"
+                $unsafeHTML="emailHtml"
+                @click="copyEmail"></button>
+        </dd>
+        <dt>github</dt>
+        <dd><a class="github-container" $href="github" $text="github"></a></dd>
+    </dl>
+</section>

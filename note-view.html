@@ -1,0 +1,78 @@
+<script type="module" data-module="@csbhi/note">
+    import { flush } from 'data-wrapper';
+
+    const escapeHtml = value => String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+
+    const protectMath = source => {
+        const mathBlocks = [];
+        const stash = match => {
+            const token = `@@GD_MATH_${mathBlocks.length}@@`;
+            mathBlocks.push(match);
+            return token;
+        };
+
+        return {
+            source: source
+                .replace(/\\\[[\s\S]*?\\\]/g, stash)
+                .replace(/\\\([\s\S]*?\\\)/g, stash),
+            mathBlocks,
+        };
+    };
+
+    const restoreMath = (html, mathBlocks) => html.replace(
+        /@@GD_MATH_(\d+)@@/g,
+        (_, index) => mathBlocks[Number(index)] || '',
+    );
+
+    export default () => {
+        let content = '<p>Loading…</p>';
+        const params = new URLSearchParams(window.location.search);
+        const sourceName = params.get('src') || 'pg_flow_from_5d_desitter_embedding';
+
+        const loadNote = async () => {
+            try {
+                if (!/^[a-z0-9_-]+$/i.test(sourceName)) {
+                    throw new Error('Invalid note name');
+                }
+
+                const url = `notes/${sourceName}.md`;
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`${url} not found`);
+
+                const markdown = window.markdownit({
+                    html: false,
+                    linkify: true,
+                    typographer: false,
+                });
+                const protectedDocument = protectMath(await response.text());
+                content = restoreMath(
+                    markdown.render(protectedDocument.source),
+                    protectedDocument.mathBlocks,
+                );
+                document.title = sourceName.split('_').join(' ');
+                flush();
+
+                await window.MathJax.startup.promise;
+                await window.MathJax.typesetPromise([document.querySelector('#note-content')]);
+            } catch (error) {
+                content = `
+                    <h1>Note not found</h1>
+                    <p>Could not load the requested Markdown file.</p>
+                    <pre>${escapeHtml(error.message)}</pre>
+                `;
+                flush();
+            }
+        };
+
+        queueMicrotask(loadNote);
+
+        return {
+            get content() { return content; },
+        };
+    };
+</script>
+
+<article id="note-content" $unsafeHTML="content"></article>

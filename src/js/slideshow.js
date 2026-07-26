@@ -1,18 +1,11 @@
-(function () {
-  'use strict';
-
-  /**
-   * createAlicesDescent(cfg) — factory, call once per canvas.
-   *
-   * cfg:
-   *   canvas      {string|Element}  canvas id (no #) or the element itself
-   *   responsive  {boolean}         full-screen resize mode; default false = fixed 1050×440
-   *   controls    {boolean}         wire up prev/next, toggles, captions; default false
-   *   crossfade   {boolean}         animated crossfade between slides; default false
-   *   namespace   {string}          window key for the public API, e.g. 'alicesDescent'
-   *                                 fires a `<namespace>:ready` CustomEvent after init
-   */
-  function createAlicesDescent(cfg) {
+/**
+ * Canvas renderer for Alice's Descent.
+ *
+ * UI state and event handling belong to the data-wrapper components that
+ * consume this module. This renderer owns only canvas drawing and exposes a
+ * small stateful API for those components.
+ */
+export function createAlicesDescent(cfg = {}) {
     cfg = cfg || {};
 
     var canvas = typeof cfg.canvas === 'string'
@@ -608,25 +601,10 @@
     var offCvs  = cfg.crossfade ? document.createElement('canvas') : null;
     var offCtx2 = offCvs ? offCvs.getContext('2d') : null;
 
-    /* Cached DOM refs — only populated when controls are enabled */
-    var elCaption = cfg.controls ? document.getElementById('alice-caption')  : null;
-    var elCounter = cfg.controls ? document.getElementById('alice-counter')  : null;
-    var elBtnPrev = cfg.controls ? document.getElementById('alice-btn-prev') : null;
-    var elBtnNext = cfg.controls ? document.getElementById('alice-btn-next') : null;
-    var elRoadBtn = cfg.controls ? document.getElementById('alice-road-btn') : null;
-
     function render() {
       ctx.clearRect(0, 0, W, H);
       slides[current].draw();
       drawGrid();
-
-      if (cfg.controls) {
-        if (elCaption) elCaption.innerHTML  = slides[current].caption;
-        if (elCounter) elCounter.textContent = (current + 1) + ' / ' + slides.length;
-        if (elBtnPrev) elBtnPrev.disabled   = current === 0;
-        if (elBtnNext) elBtnNext.disabled   = current === slides.length - 1;
-        if (elRoadBtn) elRoadBtn.hidden = current !== slides.length - 1;
-      }
     }
 
     function fadeTo(n) {
@@ -661,48 +639,6 @@
 
     function goTo(n) {
       fadeTo(Math.max(0, Math.min(n, slides.length - 1)));
-    }
-
-    /* ================================================================
-       Controls wiring
-       ================================================================ */
-    if (cfg.controls) {
-      if (elBtnPrev) elBtnPrev.addEventListener('click', function () { if (current > 0) goTo(current - 1); });
-      if (elBtnNext) elBtnNext.addEventListener('click', function () { if (current < slides.length - 1) goTo(current + 1); });
-
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'ArrowRight' && current < slides.length - 1) goTo(current + 1);
-        if (e.key === 'ArrowLeft'  && current > 0)                 goTo(current - 1);
-      });
-
-      var frameBtn = document.getElementById('alice-frame-btn');
-      if (frameBtn) frameBtn.addEventListener('click', function () {
-        localFrameOn = !localFrameOn;
-        frameBtn.textContent = localFrameOn ? 'Hide Frame' : 'Local Frame';
-        render();
-      });
-
-      var starsBtn = document.getElementById('alice-stars-btn');
-      if (starsBtn) starsBtn.addEventListener('click', function () {
-        starsOn = !starsOn;
-        starsBtn.textContent = starsOn ? 'Hide Stars' : 'Show Stars';
-        render();
-      });
-
-      var GRID_LABELS = { 'off': 'Grid Off', 'radial': 'Radial Grid', 'square': 'Square Grid' };
-      var GRID_CYCLE  = ['off', 'radial', 'square'];
-      var gridBtn = document.getElementById('alice-grid-btn');
-      if (gridBtn) gridBtn.addEventListener('click', function () {
-        gridMode = GRID_CYCLE[(GRID_CYCLE.indexOf(gridMode) + 1) % GRID_CYCLE.length];
-        gridBtn.textContent = GRID_LABELS[gridMode];
-        render();
-      });
-
-      if (elRoadBtn) elRoadBtn.addEventListener('click', function () {
-        roadOn = !roadOn;
-        elRoadBtn.textContent = roadOn ? 'Hide Road' : 'Show Road';
-        render();
-      });
     }
 
     /* ================================================================
@@ -741,29 +677,48 @@
     /* ================================================================
        Resize + init
        ================================================================ */
+    var handleResize = null;
     if (cfg.responsive) {
-      window.addEventListener('resize', function () {
+      handleResize = function () {
         if (animId) { cancelAnimationFrame(animId); animId = null; }
         computeLayout();
         render();
-      });
+      };
+      window.addEventListener('resize', handleResize);
     }
 
     computeLayout();
     render();
 
-    /* ================================================================
-       Public API
-       ================================================================ */
-    if (cfg.namespace) {
-      window[cfg.namespace] = {
-        slideCount:    slides.length,
-        goToSlide:     goTo,
-        captureSlide:  captureSlide
-      };
-      document.dispatchEvent(new CustomEvent(cfg.namespace + ':ready'));
-    }
+    var GRID_LABELS = { 'off': 'Grid Off', 'radial': 'Radial Grid', 'square': 'Square Grid' };
+    var GRID_CYCLE = ['off', 'radial', 'square'];
+
+    return {
+      get current() { return current; },
+      get slideCount() { return slides.length; },
+      get caption() { return slides[current].caption; },
+      get atStart() { return current === 0; },
+      get atEnd() { return current === slides.length - 1; },
+      get counter() { return (current + 1) + ' / ' + slides.length; },
+      get starsLabel() { return starsOn ? 'Hide Stars' : 'Show Stars'; },
+      get gridLabel() { return GRID_LABELS[gridMode]; },
+      get roadLabel() { return roadOn ? 'Hide Road' : 'Show Road'; },
+      get roadHidden() { return current !== slides.length - 1; },
+      previous: function () { goTo(current - 1); },
+      next: function () { goTo(current + 1); },
+      goToSlide: goTo,
+      captureSlide: captureSlide,
+      toggleStars: function () { starsOn = !starsOn; render(); },
+      toggleGrid: function () {
+        gridMode = GRID_CYCLE[(GRID_CYCLE.indexOf(gridMode) + 1) % GRID_CYCLE.length];
+        render();
+      },
+      toggleRoad: function () { roadOn = !roadOn; render(); },
+      destroy: function () {
+        if (handleResize) window.removeEventListener('resize', handleResize);
+        if (animId) cancelAnimationFrame(animId);
+      }
+    };
   }
 
-  window.createAlicesDescent = createAlicesDescent;
-}());
+export default createAlicesDescent;

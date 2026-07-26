@@ -1,0 +1,20 @@
+<script type="module" data-module="@csbhi/alice-descent" src="src/js/alice-descent.js"></script>
+
+<figure id="alice-descent" data-print="omit" tabindex="0" @keydown="handleKey">
+    <canvas id="alice-canvas"
+        width="1050"
+        height="440"
+        aria-label="Interactive Alice descent slideshow"></canvas>
+    <figcaption id="alice-caption" $unsafeHTML="caption"></figcaption>
+    <nav aria-label="Alice descent slides">
+        <button type="button" class="btn" $disabled="atStart" @click="previous">&#8592; Prev</button>
+        <span id="alice-counter" $text="counter"></span>
+        <button type="button" class="btn" $disabled="atEnd" @click="next">Next &#8594;</button>
+    </nav>
+    <p id="alice-toggles">
+        <button type="button" class="btn btn-text" $text="starsLabel" @click="toggleStars"></button>
+        <button type="button" class="btn btn-text" $text="gridLabel" @click="toggleGrid"></button>
+        <button type="button" class="btn btn-text" $text="roadLabel" $hidden="roadHidden" @click="toggleRoad"></button>
+    </p>
+    <p>Arrow keys &#8592; &#8594; also navigate slides while the interactive is focused.</p>
+</figure>

@@ -10,18 +10,36 @@
   <meta name="programme" content="Geometric Duality">
   <meta name="scope" content="Landing page, publication roadmap, and open-problem scoreboard">
   <title>CSBHI</title>
-  <script src="src/js/dark-mode.js"></script>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
   <link href="src/css/index.css" rel="stylesheet" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  <script src="src/js/email.js" async defer type="module"></script>
-  <script src="src/js/app.js" type="module"></script>
 </head>
 
 <body>
   <a class="skip-link" href="#project-title">Skip to project</a>
   <main>
-    <v-component data-src="layout.html"></v-component>
+    <data-wrapper src="layout.html"></data-wrapper>
     <section id="banner"></section>
     <section id="hero" aria-labelledby="project-title">
       <h1 id="project-title">
@@ -543,19 +561,15 @@
               href="https://arxiv.org/abs/1410.3881">arXiv:1410.3881</a>. 2014.</li>
         </ol>
       </details>
+
+      <h3>Video</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=Pd9P7CibbHc">Dr. Becky, “The Universe might not be flat (and cosmologists are quietly freaking out)”</a></li>
+      </ul>
     </section>
 
     <footer>
-      <section id="contact">
-
-        <h2>Contact</h2>
-        <dl>
-          <dt>email</dt>
-          <dd><span class="email-container"></span></dd><br />
-          <dt>github</dt>
-          <dd><a href="" class="github-container"></a></dd><br />
-        </dl>
-      </section>
+      <data-wrapper src="contact.html"></data-wrapper>
     </footer>
   </main>
 </body>

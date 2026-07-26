@@ -6,12 +6,30 @@
   <meta name="description" content="Notes from Geometric Duality">
   <title>Geometric Duality Note</title>
 
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+
   <link href="src/css/index.css" rel="stylesheet">
-
-  <!-- Markdown renderer -->
   <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
-
-  <!-- MathJax v3: configured for LaTeX-style delimiters used in the .md files -->
   <script>
     window.MathJax = {
       tex: {
@@ -20,96 +38,17 @@
         processEscapes: true,
         processEnvironments: true
       },
-      startup: {
-        typeset: false
-      }
+      startup: { typeset: false }
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#note-content">Skip to note</a>
   <main>
-    <article id="note-content">Loading...</article>
+    <data-wrapper src="layout.html"></data-wrapper>
+    <data-wrapper src="note-view.html"></data-wrapper>
   </main>
-
-  <script type="module">
-    const article = document.querySelector("#note-content");
-
-    const md = window.markdownit({
-      html: false,
-      linkify: true,
-      typographer: false
-    });
-
-    function escapeHtml(value) {
-      return value
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;");
-    }
-
-    /*
-      Markdown parsers can mangle TeX delimiters before MathJax sees them.
-      This preserves the exact \(...\) and \[...\] spans before Markdown render,
-      then restores them into the rendered HTML for MathJax.
-    */
-    function protectMath(source) {
-      const mathBlocks = [];
-
-      const stash = (match) => {
-        const token = `@@GD_MATH_${mathBlocks.length}@@`;
-        mathBlocks.push(match);
-        return token;
-      };
-
-      // Display math first: \[ ... \]
-      source = source.replace(/\\\[[\s\S]*?\\\]/g, stash);
-
-      // Inline math second: \( ... \)
-      source = source.replace(/\\\([\s\S]*?\\\)/g, stash);
-
-      return { source, mathBlocks };
-    }
-
-    function restoreMath(renderedHtml, mathBlocks) {
-      return renderedHtml.replace(/@@GD_MATH_(\d+)@@/g, (_, index) => {
-        return mathBlocks[Number(index)] || "";
-      });
-    }
-
-    async function loadNote() {
-      const params = new URLSearchParams(window.location.search);
-      const src = params.get("src") || "pg-flow-from-5d-desitter-embedding";
-      const url = `notes/${src}.md`;
-      document.title = src.split('_').join(' ')
-
-      try {
-        const res = await fetch(url);
-
-        if (!res.ok) {
-          throw new Error(`${url} not found`);
-        }
-
-        const text = await res.text();
-
-        const protectedDoc = protectMath(text);
-        const rendered = md.render(protectedDoc.source);
-        article.innerHTML = restoreMath(rendered, protectedDoc.mathBlocks);
-
-        await window.MathJax.startup.promise;
-        await window.MathJax.typesetPromise([article]);
-      } catch (err) {
-        article.innerHTML = `
-          <h1>Note not found</h1>
-          <p>Could not load the requested Markdown file.</p>
-          <pre>${escapeHtml(err.message)}</pre>
-        `;
-      }
-    }
-
-    loadNote();
-  </script>
-  <script src="src/js/dark-mode.js" async defer type="module"></script>
 </body>
 </html>
