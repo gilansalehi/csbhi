@@ -1,0 +1,189 @@
+.project-nav {
+  --nav-width: min(18rem, 82vw);
+  --nav-bg: var(--bg);
+  --nav-text: var(--text);
+  --nav-interaction: #ffffff;
+  --nav-rule: color-mix(in srgb, var(--nav-text) 20%, transparent);
+  --nav-highlight: color-mix(in srgb, var(--nav-interaction) 14%, transparent);
+
+  font-family: var(--ds-font-ui);
+}
+
+.project-nav__toggle {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 32;
+  display: grid;
+  width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0.65rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  place-content: center;
+  gap: 0.25rem;
+  background: color-mix(in srgb, var(--bg) 76%, transparent);
+  color: var(--text);
+  backdrop-filter: blur(6px);
+}
+
+.project-nav__toggle:hover,
+.project-nav__toggle:focus-visible {
+  border-color: color-mix(in srgb, currentColor 28%, transparent);
+  background: color-mix(in srgb, var(--text) 10%, var(--bg));
+}
+
+.project-nav__toggle-line {
+  display: block;
+  width: 1.2rem;
+  height: 1px;
+  background: currentColor;
+  transition: transform 500ms ease-in-out, opacity 350ms ease-in-out, width 500ms ease-in-out;
+}
+
+.project-nav.open .project-nav__toggle {
+  border-color: color-mix(in srgb, var(--nav-interaction) 58%, var(--nav-bg));
+  background: color-mix(in srgb, var(--nav-interaction) 12%, var(--nav-bg));
+  color: var(--nav-text);
+}
+
+.project-nav.open .project-nav__toggle-line:nth-child(1) {
+  transform: translateY(0.3125rem) rotate(225deg);
+}
+
+.project-nav.open .project-nav__toggle-line:nth-child(2) {
+  width: 0;
+  opacity: 0;
+  transform: rotate(225deg);
+}
+
+.project-nav.open .project-nav__toggle-line:nth-child(3) {
+  transform: translateY(-0.3125rem) rotate(315deg);
+}
+
+.project-nav__menu {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 31;
+  width: var(--nav-width);
+  overflow-y: auto;
+  padding: 4.5rem 0 2rem;
+  border-right: 1px solid var(--nav-rule);
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  box-shadow: 0 0 1.5rem rgb(0 0 0 / 0.16);
+  transform: translateX(-102%);
+  transition: transform 220ms ease-out, visibility 0s linear 220ms;
+  visibility: hidden;
+}
+
+.project-nav.open .project-nav__menu {
+  transform: translateX(0);
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.project-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-nav__heading {
+  margin: 0;
+  padding: 0.5rem 1.25rem;
+  color: color-mix(in srgb, var(--nav-text) 64%, transparent);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.project-nav__section {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--nav-rule);
+}
+
+.project-nav__link,
+.project-nav__theme {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 0;
+  border-left: 2px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.project-nav__link:hover,
+.project-nav__link:focus-visible,
+.project-nav__link.is-current,
+.project-nav__theme:hover,
+.project-nav__theme:focus-visible {
+  border-left-color: var(--nav-interaction);
+  background: var(--nav-highlight);
+  text-decoration: none;
+  transform: translateX(0.35rem);
+}
+
+.project-nav__list--page .project-nav__link {
+  padding-block: 0.7rem;
+  font-size: 0.76rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.project-nav__preferences {
+  margin: 1.5rem 1.25rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--nav-rule);
+}
+
+.project-nav__preferences .project-nav__theme {
+  padding-inline: 0;
+}
+
+.project-nav__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: rgb(0 0 0 / 0.22);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+.project-nav.open .project-nav__backdrop {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-updated {
+  margin: 0 0 3rem;
+  text-align: right;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-nav__toggle-line,
+  .project-nav__menu,
+  .project-nav__backdrop {
+    transition: none;
+  }
+}

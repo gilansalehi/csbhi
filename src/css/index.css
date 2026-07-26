@@ -1,11 +1,13 @@
-@layer theme, reset, layout, components, utilities, responsive, print, exceptions;
+@layer ds-reset, ds-tokens, ds-base, ds-layout, ds-components, ds-utilities,
+  theme, reset, layout, components, utilities, responsive, print, exceptions;
 
+@import "design-system.css";
 @import "theme.css" layer(theme);
 @import "reset.css" layer(reset);
 @import "paper.css" layer(layout);
 @import "components.css" layer(components);
 @import "annotations.css" layer(components);
-@import "sidebar.css" layer(components);
+@import "navigation.css" layer(components);
 @import "home.css" layer(components);
 @import "scoreboard.css" layer(components);
 @import "utilities.css" layer(utilities);

@@ -2,6 +2,24 @@
   box-sizing: border-box;
 }
 
+/* Preserve the browser's familiar document rhythm after the lower-priority
+   design-system reset removes margins globally. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul {
+  margin: revert;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -38,10 +56,10 @@ a {
   color: inherit;
   text-underline-offset: 0.18em;
   text-decoration: none;
+  text-decoration-thickness: 1px;
 }
 
 a:hover {
-  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -90,7 +108,6 @@ button:disabled {
 
 .link-button:hover:not(:disabled) {
   background: none;
-  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -111,7 +128,6 @@ aside {
 
 details summary:hover {
   cursor: pointer;
-  font-weight: 600;
 }
 
 details summary::marker {

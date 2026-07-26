@@ -15,6 +15,8 @@
     data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
     data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/design-system.css" rel="stylesheet">
+  <link href="src/css/navigation.css" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -23,6 +25,9 @@
     html { scroll-snap-type: y mandatory; }
 
     body {
+      --bg: #07071a;
+      --text: #dde1e9;
+
       background: #07071a;
       color: #dde1e9;
       font-family: math, serif;
@@ -83,17 +88,6 @@
     .muted {
       color: #dde1e988;
     }
-
-    /* Nav */
-    #nav {
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      z-index: 10;
-      font-size: 0.8em;
-    }
-    #nav a { color: rgba(255,255,255,0.45); text-decoration: none; }
-    #nav a:hover { color: rgba(255,255,255,0.85); }
 
     /* Progress dots — vertical strip, left-centre */
     #progress {
@@ -182,6 +176,7 @@
   </style>
 </head>
 <body>
+  <data-wrapper src="layout.html" data-theme-control="false"></data-wrapper>
   <data-wrapper src="leap-of-faith-view.html">
 
   <canvas id="bg-canvas"></canvas>
@@ -191,12 +186,6 @@
       <span $class="./class"></span>
     </template>
   </div>
-
-  <nav id="nav" aria-label="Site navigation">
-    <a href="index.html">Overview</a>
-    <span aria-hidden="true"> · </span>
-    <a href="gd1.html">← Back to GD I</a>
-  </nav>
 
   <div id="scroll-col">
 
