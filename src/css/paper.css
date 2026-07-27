@@ -30,3 +30,15 @@ article > h1 + p {
   color: var(--muted);
   text-align: center;
 }
+
+.theme-figure__image--dark {
+  display: none;
+}
+
+[data-theme="dark"] .theme-figure__image--light {
+  display: none;
+}
+
+[data-theme="dark"] .theme-figure__image--dark {
+  display: block;
+}

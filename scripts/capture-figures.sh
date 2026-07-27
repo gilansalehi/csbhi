@@ -17,21 +17,35 @@ if ! curl -fsS "$base_url/leap-of-faith.html" >/dev/null; then
   exit 1
 fi
 
-for figure in 1 2 3 4 5 6; do
-  source_image="$capture_dir/Fig$figure.png"
-  destination="$project_root/images/Fig$figure.webp"
+for theme in light dark; do
+  for figure in 1 2 3 4 5 6; do
+    source_image="$capture_dir/Fig$figure-$theme.png"
+    chrome_log="$capture_dir/Fig$figure-$theme.log"
+    if [ "$theme" = light ]; then
+      destination="$project_root/images/Fig$figure.webp"
+    else
+      destination="$project_root/images/Fig$figure-dark.webp"
+    fi
 
-  "$chrome" \
-    --headless=new \
-    --hide-scrollbars \
-    --force-device-scale-factor=1 \
-    --run-all-compositor-stages-before-draw \
-    --virtual-time-budget=2000 \
-    --window-size=1440,960 \
-    --screenshot="$source_image" \
-    "$base_url/leap-of-faith.html?figure=$figure"
+    printf 'Capturing Fig%s (%s)…\n' "$figure" "$theme"
+    if ! "$chrome" \
+      --headless=new \
+      --hide-scrollbars \
+      --force-device-scale-factor=1 \
+      --run-all-compositor-stages-before-draw \
+      --virtual-time-budget=2000 \
+      --window-size=1440,768 \
+      --screenshot="$source_image" \
+      "$base_url/leap-of-faith.html?figure=$figure&theme=$theme" \
+      >"$chrome_log" 2>&1
+    then
+      echo "Chrome failed while capturing Fig$figure ($theme):" >&2
+      cat "$chrome_log" >&2
+      exit 1
+    fi
 
-  "$encoder" -quiet -q 92 "$source_image" -o "$destination"
+    "$encoder" -quiet -q 92 "$source_image" -o "$destination"
+  done
 done
 
-echo "Captured figures 1–6 in $project_root/images"
+echo "Captured light and dark figures 1–6 in $project_root/images"

@@ -30,6 +30,14 @@
     break-inside: avoid;
   }
 
+  .theme-figure__image--light {
+    display: block;
+  }
+
+  .theme-figure__image--dark {
+    display: none;
+  }
+
   a {
     color: inherit;
   }
