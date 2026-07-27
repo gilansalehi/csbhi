@@ -106,8 +106,7 @@
   border-top: 1px solid var(--nav-rule);
 }
 
-.project-nav__link,
-.project-nav__theme {
+.project-nav__link {
   display: block;
   width: 100%;
   padding: 1rem 1.25rem;
@@ -128,9 +127,7 @@
 
 .project-nav__link:hover,
 .project-nav__link:focus-visible,
-.project-nav__link.is-current,
-.project-nav__theme:hover,
-.project-nav__theme:focus-visible {
+.project-nav__link.is-current {
   border-left-color: var(--nav-interaction);
   background: var(--nav-highlight);
   text-decoration: none;
@@ -146,13 +143,30 @@
 }
 
 .project-nav__preferences {
-  margin: 1.5rem 1.25rem 0;
-  padding-top: 1rem;
-  border-top: 1px solid var(--nav-rule);
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
 }
 
-.project-nav__preferences .project-nav__theme {
-  padding-inline: 0;
+.project-nav__theme {
+  display: grid;
+  width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0;
+  border: 1px solid var(--nav-rule);
+  border-radius: 50%;
+  place-items: center;
+  background: color-mix(in srgb, var(--nav-text) 6%, var(--nav-bg));
+  color: var(--nav-text);
+  font: 1.2rem/1 var(--ds-font-ui);
+  transition: background 180ms ease, border-color 180ms ease, transform 260ms ease;
+}
+
+.project-nav__theme:hover,
+.project-nav__theme:focus-visible {
+  border-color: color-mix(in srgb, var(--nav-text) 42%, transparent);
+  background: var(--nav-highlight);
+  transform: rotate(12deg);
 }
 
 .project-nav__backdrop {
@@ -182,6 +196,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .project-nav__toggle-line,
+  .project-nav__theme,
   .project-nav__menu,
   .project-nav__backdrop {
     transition: none;

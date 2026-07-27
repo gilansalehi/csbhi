@@ -130,7 +130,8 @@
             get headerStateClass() { return menuOpen ? 'open' : ''; },
             get menuOpen() { return menuOpen; },
             get menuHidden() { return !menuOpen; },
-            get themeMenuLabel() { return dark ? '☀ Light mode' : '☽ Dark mode'; },
+            get themeMenuLabel() { return dark ? 'Switch to light mode' : 'Switch to dark mode'; },
+            get themeMenuIcon() { return dark ? '☀︎' : '☾'; },
             toggleMenu: action(() => {
                 menuOpen = !menuOpen;
             }),
@@ -170,6 +171,17 @@
         class="project-nav__menu"
         aria-label="Project navigation"
         $aria-hidden="menuHidden">
+        <template *if="showThemeControl">
+            <div class="project-nav__preferences">
+                <button class="project-nav__theme"
+                    type="button"
+                    $aria-label="themeMenuLabel"
+                    $title="themeMenuLabel"
+                    $text="themeMenuIcon"
+                    @click="toggleTheme"></button>
+            </div>
+        </template>
+
         <p class="project-nav__heading">Project</p>
         <ul class="project-nav__list" role="list">
             <template *list="directoryLinks">
@@ -200,14 +212,6 @@
             </section>
         </template>
 
-        <template *if="showThemeControl">
-            <div class="project-nav__preferences">
-                <button class="project-nav__theme"
-                    type="button"
-                    $text="themeMenuLabel"
-                    @click="toggleTheme"></button>
-            </div>
-        </template>
     </nav>
 
     <button class="project-nav__backdrop"
