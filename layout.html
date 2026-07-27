@@ -131,7 +131,7 @@
             get menuOpen() { return menuOpen; },
             get menuHidden() { return !menuOpen; },
             get themeMenuLabel() { return dark ? 'Switch to light mode' : 'Switch to dark mode'; },
-            get themeMenuIcon() { return dark ? '☀︎' : '☾'; },
+            get themeMenuText() { return dark ? 'DARK' : 'LIGHT'; },
             toggleMenu: action(() => {
                 menuOpen = !menuOpen;
             }),
@@ -177,7 +177,7 @@
                     type="button"
                     $aria-label="themeMenuLabel"
                     $title="themeMenuLabel"
-                    $text="themeMenuIcon"
+                    $text="themeMenuText"
                     @click="toggleTheme"></button>
             </div>
         </template>
