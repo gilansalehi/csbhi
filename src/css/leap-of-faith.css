@@ -70,9 +70,21 @@ a {
   width: 100%;
   height: min(70vh, 42rem);
   overflow: hidden;
+}
+
+.descent-plane::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
   background-image:
-    linear-gradient(to right, color-mix(in srgb, var(--text) 16%, transparent) 1px, transparent 1px),
-    linear-gradient(to bottom, color-mix(in srgb, var(--text) 16%, transparent) 1px, transparent 1px);
+    linear-gradient(to right, color-mix(in srgb, var(--text) 10%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--text) 10%, transparent) 1px, transparent 1px);
+  background-position: inherit;
+  background-size: inherit;
+  content: "";
+  -webkit-mask-image: radial-gradient(ellipse closest-side, #000 58%, transparent 100%);
+  mask-image: radial-gradient(ellipse closest-side, #000 58%, transparent 100%);
+  pointer-events: none;
 }
 
 .descent-horizon,
@@ -89,21 +101,25 @@ a {
 }
 
 .descent-axis {
-  background: color-mix(in srgb, var(--text) 46%, transparent);
+  border-color: color-mix(in srgb, var(--text) 38%, transparent);
+  border-style: dashed;
+  background: none;
 }
 
 .descent-axis--x {
   width: 100%;
-  height: 1px;
+  height: 0;
+  border-width: 1.5px 0 0;
 }
 
 .descent-axis--y {
-  width: 1px;
+  width: 0;
   height: 100%;
+  border-width: 0 0 0 1.5px;
 }
 
 .descent-horizon {
-  border: 3px solid color-mix(in srgb, var(--text) 78%, transparent);
+  border: 4px dashed color-mix(in srgb, var(--text) 78%, transparent);
   border-radius: 50%;
   background: color-mix(in srgb, var(--text) 2%, transparent);
 }
@@ -228,7 +244,7 @@ a {
 }
 
 .descent-highway {
-  z-index: 1;
+  z-index: 4;
   overflow: hidden;
   opacity: 0;
 }
@@ -236,7 +252,7 @@ a {
 .descent-highway::before {
   position: absolute;
   inset: 0;
-  background: color-mix(in srgb, var(--text) 3%, transparent);
+  background: color-mix(in srgb, var(--bg) 68%, transparent);
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
   content: "";
 }
