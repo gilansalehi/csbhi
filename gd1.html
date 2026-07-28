@@ -561,8 +561,8 @@
           \equiv
           -\frac{dr}{d\tau}.
           \]
-          The infall function introduced above follows from the inverse-radius geometry and the dust + Λ energy
-          constraint. Geometric Duality sets
+          The infall function introduced above follows from the inverse-radius geometry and the
+          matter + radiation + Λ energy constraint. Geometric Duality sets
           \[
           a(\tau)=\frac{1}{r(\tau)},
           \]
@@ -578,14 +578,18 @@
           \qquad
           F(r)=rH_{\rm GD}.
           \]
-          For conserved dust plus Λ, this gives
+          With matter, radiation, and Λ, this gives
           \[
           \boxed{
           F(r)
           =
           r\sqrt{
           \frac{8\pi G}{3}
-          \left(\rho_{m0}r^3+\rho_\Lambda\right)
+          \left(
+          \rho_{m0}r^3
+          +\rho_{r0}r^4
+          +\rho_\Lambda
+          \right)
           }
           }.
           \]
@@ -657,7 +661,7 @@
           isotropically.
         </p>
 
-        <h3>From probes to dust</h3>
+        <h3>From probes to density</h3>
         <p>
           The probes are test particles, but the same collection of non-interacting, freely falling particles becomes
           pressureless dust once its mass density is included. Conservation of matter requires
@@ -676,15 +680,26 @@
           conservation of the dust cloud.
         </p>
 
+        <p>
+          Radiation shares the same volume dilution, while the stretching of each photon's wavelength contributes one
+          additional factor of \(a^{-1}\). Its density therefore evolves as
+          \[
+          \boxed{
+          \rho_r(\tau)=\rho_{r0}a(\tau)^{-4}
+          },
+          \]
+          where \(\rho_{r0}\) is the radiation density at \(a=1\).
+        </p>
+
         <h3>The resulting expansion</h3>
         <p>
-          Substituting the dust density into the energy constraint gives
+          Substituting these densities into the energy constraint gives
           \[
           \frac{F(r)}{r}
           =
           \sqrt{
           \frac{8\pi G}{3}
-          \left(\rho_m+\rho_\Lambda\right)
+          \left(\rho_m+\rho_r+\rho_\Lambda\right)
           }.
           \]
           Since \(H_{\rm GD}=F(r)/r\), Alice's expansion obeys
@@ -694,21 +709,25 @@
           =
           \frac{8\pi G}{3}
           \left(
-          \rho_{m0}a^{-3}+\rho_\Lambda
+          \rho_{m0}a^{-3}
+          +\rho_{r0}a^{-4}
+          +\rho_\Lambda
           \right)
           }.
           \]
-          Differentiating and using \(\dot\rho_m=-3H_{\rm GD}\rho_m\) gives
+          Differentiating and using
+          \(\dot\rho_m=-3H_{\rm GD}\rho_m\) and
+          \(\dot\rho_r=-4H_{\rm GD}\rho_r\) gives
           \[
           \boxed{
           \frac{\ddot a}{a}
           =
           -\frac{4\pi G}{3}
-          \left(\rho_m-2\rho_\Lambda\right)
+          \left(\rho_m+2\rho_r-2\rho_\Lambda\right)
           }.
           \]
-          The cloud expands at every stage. Its expansion initially decelerates while matter dominates, then
-          accelerates when \(2\rho_\Lambda>\rho_m\).
+          The cloud expands at every stage. Radiation and matter initially decelerate its expansion; vacuum energy
+          accelerates it once \(2\rho_\Lambda>\rho_m+2\rho_r\).
         </p>
 
         <h3>The geometry that emerges</h3>
