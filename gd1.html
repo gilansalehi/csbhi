@@ -71,9 +71,9 @@
             <li><a href="#section2">ΛCDM Model: Predictions &amp; Limitations</a></li>
             <li><a href="#section3">A Leap of Faith</a></li>
             <li><a href="#section4">Infall Becomes Expansion</a></li>
-            <li><a href="#section5">Geometric Duality: The Inverse-Radius Interior</a></li>
-            <li><a href="#section6">The Origin at Future Infinity</a></li>
-            <li><a href="#section7">Observational Correspondence</a></li>
+            <li><a href="#section5">The Inverse-Radius Interior</a></li>
+            <li><a href="#section6">Singularity Deferred</a></li>
+            <li><a href="#section7">Observables</a></li>
             <li><a href="#section8">Discussion</a></li>
             <li><a href="#section9">Conclusion</a></li>
           </ol>
@@ -534,12 +534,11 @@
         </aside>
 
         <p>
-          A pure-vacuum interior, as Schwarzschild envisioned, forces a real crash at \(r=0\) in finite \( \tau \)
-          <span class="ref">[<a href="#ref-18">18</a>, <a href="#ref-32">32</a>]</span>.
+          A pure-vacuum interior, as Schwarzschild envisioned, forces a real crash at \(r=0\) in finite \( \tau \).
           This is where we depart from the standard story:
           to preserve Alice’s inertial experience all the way down, we replace the vacuum with a dust + Λ
           Painlevé-Gullstrand interior metric
-          <span class="ref">[<a href="#ref-15">15</a>, <a href="#ref-16">16</a>, <a href="#ref-36">36</a>]</span>,
+          <span class="ref">[<a href="#ref-15">15</a>, <a href="#ref-16">16</a>]</span>,
           characterized by the infall function \(F(r)\).
           In that geometry, the proper‐time \( \tau_{\rm int} \) to \(r=0\) becomes
         </p>
@@ -613,7 +612,7 @@
           Return to the cloud of probes falling alongside Alice. At the event horizon, \(r=a=1\). Let \(\ell_H\) be
           Alice's initial separation from a neighboring probe. As Alice falls, the scale factor stretches this
           separation equally in every spatial direction:
-          \[
+          \begin{equation}\label{eq:probe-separation}
           \boxed{
           d\ell_\alpha^2
           =
@@ -625,7 +624,7 @@
           =
           \frac{\ell_H}{r(\tau)}
           }.
-          \]
+          \end{equation}
           Thus, as Alice moves toward \(r=0\) on Bob's diagram, the distance she measures between the parallel
           worldlines grows without bound.
         </p>
@@ -645,7 +644,7 @@
           V_\alpha(\tau)=a(\tau)^3V_H.
           \]
           Its expansion, shear, and rotation are therefore
-          \[
+          \begin{equation}\label{eq:probe-congruence}
           \boxed{
           \Theta
           =
@@ -656,7 +655,7 @@
           \qquad
           \omega_{\mu\nu}=0
           }.
-          \]
+          \end{equation}
           These are the standard kinematic invariants of a timelike congruence
           <span class="ref">[<a href="#ref-37">37</a>, <a href="#ref-38">38</a>]</span>.
           Here we depart from the standard Schwarzschild interior. Schwarzschild tides stretch a freely falling cloud
@@ -668,18 +667,20 @@
         <h3>From probes to density</h3>
         <p>
           The probes are test particles, but the same collection of non-interacting, freely falling particles becomes
-          pressureless dust once its mass density is included. Conservation of matter requires
+          pressureless dust once its mass density is included
+          <span class="ref">[<a href="#ref-19">19</a>, <a href="#ref-20">20</a>, <a href="#ref-21">21</a>]</span>.
+          Conservation of matter requires
           \[
           \rho_m(\tau)V_\alpha(\tau)
           =
           \rho_{m0}V_H,
           \]
           where \(\rho_{m0}\) is the density at \(a=1\). The expanding probe volume therefore gives
-          \[
+          \begin{equation}\label{eq:matter-dilution}
           \boxed{
           \rho_m(\tau)=\rho_{m0}a(\tau)^{-3}
           }.
-          \]
+          \end{equation}
           The inverse-radius volume and conservation of the dust cloud produce the familiar matter dilution law
           <span class="ref">[<a href="#ref-30">30</a>, <a href="#ref-38">38</a>, <a href="#ref-40">40</a>]</span>.
         </p>
@@ -687,11 +688,11 @@
         <p>
           Radiation shares the same volume dilution, while the stretching of each photon's wavelength contributes one
           additional factor of \(a^{-1}\). Its density therefore evolves as
-          \[
+          \begin{equation}\label{eq:radiation-dilution}
           \boxed{
           \rho_r(\tau)=\rho_{r0}a(\tau)^{-4}
           },
-          \]
+          \end{equation}
           where \(\rho_{r0}\) is the radiation density at \(a=1\)
           <span class="ref">[<a href="#ref-30">30</a>, <a href="#ref-40">40</a>]</span>.
         </p>
@@ -725,14 +726,14 @@
           Differentiating and using
           \(\dot\rho_m=-3H_{\rm A}\rho_m\) and
           \(\dot\rho_r=-4H_{\rm A}\rho_r\) gives
-          \[
+          \begin{equation}\label{eq:alice-acceleration}
           \boxed{
           \frac{\ddot a}{a}
           =
           -\frac{4\pi G}{3}
           \left(\rho_m+2\rho_r-2\rho_\Lambda\right)
           }.
-          \]
+          \end{equation}
           The cloud expands at every stage. Radiation and matter initially decelerate its expansion; vacuum energy
           accelerates it once \(2\rho_\Lambda>\rho_m+2\rho_r\).
         </p>
@@ -754,11 +755,11 @@
           Equation \eqref{eq:alice-metric} is the spatially flat FLRW metric in
           Equation \eqref{eq:flrw-metric}, written in Alice's proper time. The equation for
           \(H_{\rm A}\) above is its matter, radiation, and Λ Friedmann equation
-          <span class="ref">[<a href="#ref-07">7</a>, <a href="#ref-08">8</a>, <a href="#ref-38">38</a>]</span>.
+          <span class="ref">[<a href="#ref-07">7</a>, <a href="#ref-08">8</a>, <a href="#ref-36">36</a>, <a href="#ref-38">38</a>]</span>.
         </p>
       </section>
       <section id="section5">
-        <h2>Geometric Duality: The Inverse-Radius Interior</h2>
+        <h2>The Inverse-Radius Interior</h2>
 
         <p>
           Equation \eqref{eq:alice-metric} gives Alice's spatially flat interior geometry in terms of her proper time.
@@ -813,7 +814,7 @@
         </p>
       </section>
       <section id="section6">
-        <h2>The Origin at Future Infinity</h2>
+        <h2>Singularity Deferred</h2>
 
         <h3>Infinite Alice proper time</h3>
         <p>
@@ -885,7 +886,7 @@
           \left[
           \left(\frac{\ddot a}{a}\right)^2+H_{\rm A}^4
           \right].
-          \]
+          \]\right]
           In the vacuum-dominated limit,
           \(\dot H_{\rm A}\to0\) and \(\ddot a/a\to H_\Lambda^2\), so
           \[
@@ -915,7 +916,7 @@
 
       </section>
       <section id="section7">
-        <h2>Observational Correspondence</h2>
+        <h2>Observables</h2>
 
         <p>
           Alice's Friedmann equation, Equation \eqref{eq:alice-friedmann}, is the spatially flat ΛCDM expansion history.
