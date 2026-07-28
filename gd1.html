@@ -918,28 +918,145 @@
       <section id="section7">
         <h2>Observables</h2>
 
+        <h3>The background survives intact</h3>
         <p>
-          Alice's Friedmann equation, Equation \eqref{eq:alice-friedmann}, is the spatially flat ΛCDM expansion history.
-          The same \(H(a)\) produces the same Hubble history, cosmic age, luminosity and angular-diameter distances,
-          and radiation–matter and matter–vacuum transitions
-          <span class="ref">[<a href="#ref-25">25</a>]</span>. We therefore retain the successful background
-          observables of ΛCDM while giving that expansion history a reciprocal geometric interpretation.
+          Equation \eqref{eq:alice-friedmann} is the spatially flat matter–radiation–Λ Friedmann equation. Given the
+          observed densities, it produces the same Hubble history, cosmic age, distance–redshift relations, and
+          radiation–matter and matter–vacuum transitions as ΛCDM
+          <span class="ref">[<a href="#ref-11">11</a>, <a href="#ref-25">25</a>,
+            <a href="#ref-44">44</a>]</span>. The reciprocal interior therefore preserves the successful homogeneous
+          expansion history while Equation \eqref{eq:future-proper-time} sends Bob's \(r=0\) endpoint to Alice's
+          infinite future.
         </p>
 
         <p>
-          We take \(\rho_{r0}\), \(\rho_{m0}\), and \(\rho_\Lambda\) from observation; together they determine \(H_0\)
-          and reproduce the ΛCDM background within the inverse-radius interior developed above
-          <span class="ref">[<a href="#ref-11">11</a>, <a href="#ref-12">12</a>, <a href="#ref-44">44</a>]</span>.
-          Equation
-          \eqref{eq:future-proper-time} turns Bob's \(r=0\) singular endpoint into Alice's infinite future.
+          The normalization of the scale factor does not affect this result. If \(a_0\) is its value at the present
+          epoch, then \(\bar a=a/a_0\) satisfies \(\bar a_0=1\) and
+          \(\dot{\bar a}/\bar a=\dot a/a=H_{\rm A}\). We can therefore use the standard observational normalization
+          without changing any of the flow equations above.
+        </p>
+
+        <h3>Two exact horizon identities</h3>
+        <p>
+          Restore physical units and define the present Hubble radius \(R_H=c/H_0\), the critical density
+          \(\rho_c=3H_0^2/(8\pi G)\), and \(\Omega_\Lambda=\rho_\Lambda/\rho_c\). Since
+          \(H_\Lambda=H_0\sqrt{\Omega_\Lambda}\), the asymptotic de Sitter horizon is
+          \(R_\Lambda=c/H_\Lambda\). The total critical mass inside the Hubble sphere is
+          \(M_H=(4\pi/3)\rho_cR_H^3\). These definitions give
+          <span class="ref">[<a href="#ref-11">11</a>, <a href="#ref-34">34</a>,
+            <a href="#ref-42">42</a>]</span>
+          \begin{equation}\label{eq:horizon-identities}
+          \boxed{
+          \left(\frac{R_H}{R_\Lambda}\right)^2
+          =
+          \Omega_\Lambda,
+          \qquad
+          \frac{2GM_H}{c^2}
+          =
+          R_H
+          }.
+          \end{equation}
+          The first identity makes the observed vacuum fraction the square of a reciprocal horizon ratio. The second
+          says that a Hubble sphere filled at the total critical density has a Schwarzschild radius exactly equal to
+          its Hubble radius.
         </p>
 
         <p>
-          The inverse-radius description and spatially flat ΛCDM are therefore observationally equivalent at the
-          homogeneous level. Local dynamics, perturbations, structure formation, and horizon thermodynamics contain
-          information beyond the background \(H(a)\) and therefore offer the next opportunities for distinguishing
-          predictions <span class="ref">[<a href="#ref-27">27</a>, <a href="#ref-28">28</a>,
-          <a href="#ref-29">29</a>, <a href="#ref-31">31</a>]</span>.
+          Using the Planck best-fit values \(H_0=67.4\;\mathrm{km\,s^{-1}Mpc^{-1}}\) and
+          \(\Omega_\Lambda\simeq0.6849\) gives
+          \[
+          R_H=14.51\;\mathrm{Gly},
+          \qquad
+          R_\Lambda=17.53\;\mathrm{Gly},
+          \qquad
+          M_H=9.24\times10^{52}\;\mathrm{kg}
+          =4.65\times10^{22}M_\odot.
+          \]
+          Accordingly, \(R_H/R_\Lambda=0.82759=\sqrt{\Omega_\Lambda}\).
+        </p>
+
+        <h3>The integrated horizons</h3>
+        <p>
+          The particle horizon records the complete past expansion history, while the event horizon records the future
+          causal reach:
+          \[
+          R_p
+          =
+          c\int_0^1\frac{da}{a^2H(a)},
+          \qquad
+          R_e
+          =
+          c\int_1^\infty\frac{da}{a^2H(a)}.
+          \]
+          Evaluating these integrals with the same Planck parameters gives
+          \[
+          R_p=46.13\;\mathrm{Gly},
+          \qquad
+          R_e=16.68\;\mathrm{Gly}.
+          \]
+          The reciprocal particle-horizon ratio then lands almost exactly on the observed matter fraction:
+          \[
+          \frac{R_H}{R_p}
+          =
+          0.31447,
+          \qquad
+          \Omega_m
+          =
+          0.315.
+          \]
+          Unlike Equation \eqref{eq:horizon-identities}, this is an integrated numerical correspondence rather than
+          an algebraic identity. Together, the two results give
+          \[
+          \frac{R_H}{R_p}
+          +
+          \left(\frac{R_H}{R_\Lambda}\right)^2
+          =
+          0.99937.
+          \]
+          The fitted matter content, vacuum content, and causal size of the universe are therefore locked to the same
+          expansion history with remarkable precision.
+        </p>
+
+        <h3>The Planck hierarchy as a horizon ratio</h3>
+        <p>
+          The de Sitter radius also exposes the familiar hierarchy between the observed cosmological constant and the
+          Planck scale. With \(\ell_P=1.616255\times10^{-35}\;\mathrm{m}\), normalize a radial scale to
+          \(R_\Lambda\) and evaluate the reciprocal map at one Planck length:
+          \begin{equation}\label{eq:planck-hierarchy}
+          \boxed{
+          r_P
+          =
+          \frac{\ell_P}{R_\Lambda}
+          =
+          9.75\times10^{-62},
+          \qquad
+          a_P
+          =
+          \frac{1}{r_P}
+          =
+          1.03\times10^{61},
+          \qquad
+          \Lambda\ell_P^2
+          =
+          \frac{3}{a_P^2}
+          \simeq
+          2.85\times10^{-122}
+          }.
+          \end{equation}
+          The notorious \(10^{-122}\) vacuum scale is the square of the reciprocal gap between the Planck length and
+          the asymptotic cosmic horizon
+          <span class="ref">[<a href="#ref-11">11</a>, <a href="#ref-39">39</a>,
+            <a href="#ref-40">40</a>]</span>.
+        </p>
+
+        <p>
+          The four cosmic scales now have distinct roles. The Hubble radius fixes the present expansion scale, the
+          de Sitter horizon fixes the asymptotic curvature, the particle horizon records the integrated past, and the
+          event horizon bounds future causal contact. Their relations preserve the ΛCDM background while placing its
+          characteristic scales inside one reciprocal geometric picture. Local dynamics, perturbations, structure
+          formation, and horizon thermodynamics provide the next tests
+          <span class="ref">[<a href="#ref-27">27</a>, <a href="#ref-28">28</a>,
+            <a href="#ref-29">29</a>, <a href="#ref-31">31</a>]</span>.
         </p>
       </section>
       <section id="section8">
