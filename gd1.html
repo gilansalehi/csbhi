@@ -771,113 +771,57 @@
         <h2>Geometric Duality: The Inverse-Radius Interior</h2>
 
         <p>
-          Section 4 shows that the inverse-radius ansatz maps the proposed inward flow onto Alice's FLRW expansion. We
-          can now use that ansatz to write Alice's interior geometry directly in terms of \(r_\beta\).
-        </p>
-
-        <h3>Alice’s interior metric</h3>
-        <p>
-          Substituting \(a=1/r_\beta\) into the spatially flat FLRW metric gives
+          Section 4 gives Alice's spatially flat interior geometry in terms of her proper time:
           \[
           ds^2
           =
           -d\tau^2
-          +\frac{1}{r_\beta(\tau)^2}
+          +a(\tau)^2
           \left(dR^2+R^2d\Omega^2\right).
           \]
-          Since \(dr_\beta/d\tau=-Hr_\beta\), the same geometry may be written with \(r_\beta\) as its time coordinate:
+          Her position on Bob's radial diagram decreases monotonically from the horizon at \(r=1\) toward \(r=0\), so
+          \(r\) can also label her interior evolution. From Section 4,
+          \[
+          \frac{dr}{d\tau}
+          =
+          -F(r)
+          =
+          -rH_{\rm GD}(r),
+          \qquad
+          d\tau
+          =
+          -\frac{dr}{rH_{\rm GD}(r)}.
+          \]
+        </p>
+
+        <p>
+          Substituting this relation and \(a=1/r\) into Alice's metric gives
           \[
           \boxed{
           ds^2
           =
-          \frac{1}{r_\beta^2}
+          \frac{1}{r^2}
           \left[
-          -\frac{dr_\beta^2}{H(r_\beta)^2}
+          -\frac{dr^2}{H_{\rm GD}(r)^2}
           +dR^2+R^2d\Omega^2
           \right]
           }.
           \]
-          In this chart, \(r_\beta=1\) marks the horizon and \(r_\beta\to0\) marks Alice's future endpoint. Bob's radial
-          label has become a time coordinate in Alice's description.
-        </p>
-
-        <h3>The probe experiment</h3>
-        <p>
-          Return to the probe cloud Alice released during her descent. Let \(\delta R\) be the fixed comoving separation
-          between Alice and one of the probes. The distance Alice measures to it is
-          \[
-          \ell_\alpha(\tau)
-          =
-          a(\tau)\lvert\delta R\rvert
-          =
-          \frac{\lvert\delta R\rvert}{r_\beta(\tau)}.
-          \]
-          Therefore
-          \[
-          \boxed{
-          \frac{\dot\ell_\alpha}{\ell_\alpha}=H
-          },
-          \qquad
-          \frac{\ddot\ell_\alpha}{\ell_\alpha}
-          =
-          \frac{\ddot a}{a}.
-          \]
-          As Bob's radial coordinate assigned to Alice decreases, the distance Alice measures to the probe increases.
-          Because the same scale factor multiplies every spatial direction, a cloud of such probes expands isotropically
-          around her.
+          Bob's \(r\) now parameterizes time in Alice's description, while \(R\) remains her spatial coordinate. The
+          reciprocal factor \(1/r^2\) scales the complete metric: as Bob's radial coordinate shrinks, every spatial
+          interval Alice measures grows.
         </p>
 
         <p>
-          The comoving four-velocity is \(U^\mu=(1,0,0,0)\) in \((\tau,R,\theta,\phi)\) coordinates. It is normalized
-          and geodesic. Its kinematical invariants are
-          \[
-          \boxed{
-          \Theta=\nabla_\mu U^\mu=3H,
-          \qquad
-          \sigma_{\mu\nu}=0,
-          \qquad
-          \omega_{\mu\nu}=0
-          }.
-          \]
-          The expansion is the same in all three directions, with no shear or rotation. This is the operational content
-          of the GD role reassignment: \(r_\beta\) measures Alice's progress through time, while \(1/r_\beta\) scales her
-          space.
-        </p>
-
-        <h3>Dust + Λ evolution</h3>
-        <p>
-          For the late-time matter content considered here,
-          \[
-          H(r_\beta)^2
-          =
-          H_0^2\left(\Omega_m r_\beta^3+\Omega_\Lambda\right)
-          =
-          \frac{8\pi G}{3}
-          \left(\rho_{m0}r_\beta^3+\rho_\Lambda\right).
-          \]
-          Probe separations obey
-          \[
-          \frac{\ddot\ell_\alpha}{\ell_\alpha}
-          =
-          H_0^2
-          \left(
-          \Omega_\Lambda-\frac{1}{2}\Omega_m r_\beta^3
-          \right).
-          \]
-          Their distances grow whenever \(H>0\), decelerating during matter domination and accelerating after the
-          Λ term becomes dominant. In the pure-Λ limit,
-          \[
-          r_\beta=e^{-H_\Lambda(\tau-\tau_H)},
-          \qquad
-          a=e^{+H_\Lambda(\tau-\tau_H)}.
-          \]
-          These exponentials are reciprocal descriptions along the same future-directed Alice evolution, not solutions
-          connected by \(\tau\to-\tau\).
+          The factor \(1/r^2\) diverges as \(r\to0\), but a divergent conformal factor does not necessarily indicate a
+          curvature singularity. As matter and radiation dilute, \(H_{\rm GD}(r)\) approaches the constant
+          \(H_\Lambda\), and the metric approaches de Sitter space in conformal form. Determining the nature of
+          \(r=0\) requires examining Alice's proper time and the curvature itself.
         </p>
 
         <p class="note">
           <em>
-            The probe calculation and its assumptions are developed in
+            The inverse-radius metric and its probe-congruence interpretation are developed in
             <a href="note.html?src=gd_inverse_radius_probe_congruence">The Inverse-Radius Interior and Alice’s Probe
               Congruence</a>.
           </em>
