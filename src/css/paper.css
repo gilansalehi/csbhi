@@ -19,6 +19,32 @@
   text-transform: uppercase;
 }
 
+article {
+  counter-reset: paper-section -1;
+}
+
+article > #abstract,
+article > section[id^="section"] {
+  counter-increment: paper-section;
+  counter-reset: paper-subsection;
+  position: relative;
+}
+
+article > section[id^="section"] > h2::before {
+    content: counter(paper-section) ".";
+    margin-inline-end: 0.35em;
+    color: var(--muted);
+    font-family: serif;
+    font-size: 3rem;
+    font-variant-numeric: lining-nums;
+    margin-left: -3.5rem;
+}
+
+article > section[id^="section"] > h3,
+article > section[id^="section"] > section {
+  counter-increment: paper-subsection;
+}
+
 article > h1 {
   max-width: 18ch;
   font-size: clamp(2.2rem, 7vw, 4rem);
