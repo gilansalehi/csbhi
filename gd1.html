@@ -62,7 +62,7 @@
             <li><a href="#section3">A Leap of Faith</a></li>
             <li><a href="#section4">Infall Becomes Expansion</a></li>
             <li><a href="#section5">Geometric Duality: The Inverse-Radius Interior</a></li>
-            <li><a href="#section6">Singularity Deferral and the Horizon Map</a></li>
+            <li><a href="#section6">The Origin at Future Infinity</a></li>
             <li><a href="#section7">Observables</a></li>
             <li><a href="#section8">Discussion</a></li>
             <li><a href="#section9">Conclusion</a></li>
@@ -828,37 +828,59 @@
         </p>
       </section>
       <section id="section6">
-        <h2>Singularity Deferral and the Horizon Map</h2>
+        <h2>The Origin at Future Infinity</h2>
 
         <h3>Infinite Alice proper time</h3>
         <p>
-          The inverse-radius relation gives
+          In the spatially flat interior derived above,
           \[
-          \frac{du}{d\tau}=-uH_A(u).
+          H_{\rm GD}(r)^2
+          =
+          \frac{8\pi G}{3}
+          \left(
+          \rho_{m0}r^3
+          +\rho_{r0}r^4
+          +\rho_\Lambda
+          \right).
           \]
-          The proper time elapsed while \(u\) decreases from \(u_0\) to \(u\) is therefore
+          As \(r\to0\), the matter and radiation terms vanish while \(\rho_\Lambda\) remains. Define
+          \[
+          H_\Lambda
+          \equiv
+          \sqrt{\frac{8\pi G}{3}\rho_\Lambda}
+          =
+          \sqrt{\frac{\Lambda}{3}}.
+          \]
+          The expansion rate and inward flow therefore approach
+          \[
+          H_{\rm GD}(r)\longrightarrow H_\Lambda,
+          \qquad
+          F(r)=rH_{\rm GD}(r)\longrightarrow H_\Lambda r.
+          \]
+          Alice's radial evolution becomes
+          \[
+          \frac{dr}{d\tau}\longrightarrow-H_\Lambda r,
+          \qquad
+          r(\tau)\propto e^{-H_\Lambda\tau}.
+          \]
+          Bob's radial coordinate approaches zero exponentially but never reaches it at finite Alice proper time.
+        </p>
+
+        <p>
+          The proper-time integral makes the same result explicit:
           \[
           \boxed{
-          \tau(u)-\tau(u_0)
+          \tau(r)-\tau_H
           =
-          \int_u^{u_0}\frac{du'}{u'H_A(u')}
+          \int_1^r\frac{-\,dr'}{F(r')}
+          \sim
+          -\frac{\ln r}{H_\Lambda}
+          \longrightarrow\infty
+          \qquad
+          (r\to0)
           }.
           \]
-          For dust + Λ,
-          \[
-          H_A(u)^2
-          =
-          H_0^2\left(\Omega_m u^3+\Omega_\Lambda\right).
-          \]
-          As \(u\to0\), \(H_A(u)\to H_\Lambda=H_0\sqrt{\Omega_\Lambda}\), so
-          \[
-          \tau(u)-\tau(u_0)
-          \sim
-          \frac{1}{H_\Lambda}\ln\frac{u_0}{u}
-          \longrightarrow\infty.
-          \]
-          The endpoint that Bob labels \(\rho_B=0\) is therefore never reached at finite Alice proper time within the
-          GD interior metric.
+          Alice's future continues without reaching \(r=0\).
         </p>
 
         <h3>Finite limiting curvature</h3>
@@ -868,61 +890,49 @@
           \[
           \mathcal R
           =
-          6\left(\dot H_A+2H_A^2\right),
+          6\left(\dot H_{\rm GD}+2H_{\rm GD}^2\right),
           \qquad
           K
           =
           12
           \left[
-          \left(\frac{\ddot a_A}{a_A}\right)^2+H_A^4
+          \left(\frac{\ddot a}{a}\right)^2+H_{\rm GD}^4
           \right].
           \]
-          With dust + Λ these become
+          In the vacuum-dominated limit,
+          \(\dot H_{\rm GD}\to0\) and \(\ddot a/a\to H_\Lambda^2\), so
           \[
           \mathcal R
+          \longrightarrow
+          12H_\Lambda^2
           =
-          3H_0^2\Omega_m u^3
-          +12H_0^2\Omega_\Lambda
-          \longrightarrow4\Lambda,
-          \]
-          and
-          \[
-          K\longrightarrow\frac{8}{3}\Lambda^2
+          4\Lambda,
           \qquad
-          (u\to0).
+          K
+          \longrightarrow
+          24H_\Lambda^4
+          =
+          \frac{8}{3}\Lambda^2.
           \]
-          Hence \(u=0\) is a regular future conformal boundary of this Alice-frame geometry, not a curvature
-          singularity. This is the precise mathematical content of singularity deferral in GD.
+          Both invariants remain finite. In Alice's proposed interior geometry, \(r=0\) lies at infinite future proper
+          time and is a future conformal boundary, not a scalar-curvature singularity.
         </p>
 
-        <h3>What remains to be derived</h3>
+        <h3>What remains to be constructed</h3>
         <p>
-          The preceding result follows exactly from the inverse-radius map and Alice metric: probe expansion, infinite
-          future proper time, and finite late-time curvature. What remains is the smooth map from a Schwarzschild or
-          Kottler exterior to that interior at the event horizon.
+          These results establish the future limit of Alice's proposed interior. The complete map from the Schwarzschild
+          exterior, across its null event horizon, to her isotropic interior remains to be constructed.
+          <a href="#appendixC">Appendix C</a> states that geometric problem precisely.
         </p>
 
-        <p>
-          This distinction matters. A vacuum Schwarzschild interior is anisotropic and has nonzero Weyl curvature,
-          whereas FLRW is isotropic and conformally flat. No coordinate rotation or regular scalar conformal rescaling
-          can turn one into the other. Moreover, an event horizon is null, so the timelike Israel–Darmois shell argument
-          previously used here does not establish matching at the horizon
-          <span class="ref">[<a href="#ref-17">17</a>, <a href="#ref-18">18</a>]</span>.
-        </p>
-
-        <p>
-          A complete GD construction must therefore supply additional geometric structure. Viable directions include:
-        </p>
-        <ol>
-          <li>a null-horizon matching calculation in horizon-regular coordinates;</li>
-          <li>a finite timelike transition layer away from the horizon, including any required surface stress;</li>
-          <li>a higher-dimensional throat for which the exterior and Alice interior arise as distinct projections or
-            slicings.</li>
-        </ol>
-
-        <p>
-          Appendix C records this junction problem explicitly. GD1 defines and tests the Alice interior geometry; the
-          stress-free embedding of that geometry inside Schwarzschild–de Sitter remains to be constructed.
+        <p class="footnote">
+          <em>See:
+            <span class="ref">[
+              <a href="#ref-17">17</a>,
+              <a href="#ref-18">18</a>
+              ]
+            </span>
+          </em>
         </p>
       </section>
       <section id="section7">
@@ -1699,6 +1709,9 @@
           <dt>\(\mathcal R\)</dt>
           <dd>The Ricci scalar.</dd>
 
+          <dt>\(K\)</dt>
+          <dd>The Kretschmann scalar \(R_{\alpha\beta\gamma\delta}R^{\alpha\beta\gamma\delta}\).</dd>
+
           <dt>\(T_{\mu\nu}\)</dt>
           <dd>The stress-energy tensor.</dd>
 
@@ -1711,8 +1724,8 @@
           <dt>\(a(t),a(\tau)\)</dt>
           <dd>The scale factor. In Section 4, GD defines \(a(\tau)=1/r(\tau)\) and then identifies it with the FLRW scale factor.</dd>
 
-          <dt>\(\dot a,\ddot a\)</dt>
-          <dd>The first and second derivatives of the scale factor with respect to the time used in context.</dd>
+          <dt>\(\dot a,\ddot a,\dot H\)</dt>
+          <dd>An overdot denotes differentiation with respect to the time used in context.</dd>
 
           <dt>\(H_{\rm GD},H\)</dt>
           <dd>The expansion rate \(H_{\rm GD}=\dot a/a=F(r)/r\), shortened to \(H\) where the GD context is clear.</dd>
