@@ -40,7 +40,7 @@
     MathJax.Hub.Config({
       TeX: {
         equationNumbers: {
-          autoNumber: "all",
+          autoNumber: "AMS",
           useLabelIds: true
         }
       }
@@ -122,22 +122,22 @@
 
           <p>
             In the exterior chart, with coordinate time \( t \), the areal radius evolves as
-            \begin{equation}
+            \[
             \frac{dr}{dt} \;=\; -\,F(r),
             \quad
             F(r) \;=\; r\,\sqrt{\frac{8\pi G}{3}\,\rho},
-            \end{equation}
+            \]
             where \( \rho = \rho_{m} r^{3}\ + \rho_{\Lambda} \) is the energy density contained in \( r \).
           </p>
 
           <p>
             In the interior FLRW chart, with proper time \( \tau \), the matching shell follows
-            \begin{equation}
+            \[
             r(\tau) \;=\; a(\tau)
             \;\propto\; e^{+H\,\tau},
             \quad
             H \;=\;\sqrt{\frac{8\pi G}{3}\,\rho}.
-            \end{equation}
+            \]
           </p>
 
           <p>
@@ -149,9 +149,9 @@
           <p>
             This construction suggests dark energy may emerge naturally from the interior geometry of a cosmic horizon,
             rather than requiring an explicit fluid with negative pressure. The geometric model estimates
-            \begin{equation}
+            \[
             \Lambda \approx 1.6\times10^{-52}\,\mathrm{m^{-2}},
-            \end{equation}
+            \]
             within 50% of the conventionally inferred value, and we anticipate that re‐analysing data within a
             geometric framework will drive the predicted and observed Λ into even closer agreement.
           </p>
@@ -167,17 +167,17 @@
           grid \((x,y)\) is given by <span class="ref">[<a href="#ref-01">1</a>]</span>:
         </p>
         <p>
-          \begin{equation}
+          \[
           ds^{2} = dx^{2} + dy^{2}
-          \end{equation}
+          \]
         </p>
         <p>
           This immediately generalizes to three (and higher) dimensions:
         </p>
         <p>
-          \begin{equation}
+          \[
           ds^{2} = dx^{2} + dy^{2} + dz^{2} + \dots
-          \end{equation}
+          \]
         </p>
         <p>
           This positive-definite quadratic form of the Euclidean metric is invariant under rotations and translations,
@@ -188,17 +188,17 @@
           the spacetime interval <span class="ref">[<a href="#ref-02">2</a>]</span>:
         </p>
         <p>
-          \begin{equation}
+          \[
           ds^{2} = -\,dt^{2} + dx^{2} + dy^{2} + dz^{2}
-          \end{equation}
+          \]
         </p>
         <p>
           or, for purely radial separations,
         </p>
         <p>
-          \begin{equation}
+          \[
           ds^{2} = -\,dt^{2} + dr^{2}.
-          \end{equation}
+          \]
         </p>
 
         <p>
@@ -221,45 +221,46 @@
           <span class="ref">[<a href="#ref-04">4</a>]</span>:
         </p>
         <p>
-          \begin{equation}
+          \[
           G_{\mu\nu}
           = R_{\mu\nu} - \tfrac12\,\mathcal R\,g_{\mu\nu}
           = 8\pi\,T_{\mu\nu}
-          \end{equation}
+          \]
         </p>
 
         <p>
-          In 1916 Schwarzschild found the first unique spherically symmetric vacuum solution of these field equations,
+          In 1916 Schwarzschild found the first spherically symmetric vacuum solution of these field equations,
           describing a Black Hole <span class="ref">[<a href="#ref-05">5</a>]</span>:
         </p>
         <p>
-          \begin{equation}
+          \[
           ds^{2}
           = -\Bigl(1 - \frac{2M}{r}\Bigr)\,dt^{2}
           + \Bigl(1 - \frac{2M}{r}\Bigr)^{-1}\,dr^{2}
           + r^{2}\,d\Omega^{2}.
-          \end{equation}
+          \]
         </p>
         <p>
           Adopting conventional units where \(2M=1\) locates the Black Hole's Event Horizon at \(r=1\).
           If we only consider radial motion, the \(d\Omega\) term goes to 0, leaving just
         </p>
         <p>
-          \begin{equation}
+          \[
           ds^{2}
           = -\Bigl(1 - \frac{1}{r}\Bigr)\,dt^{2}
           + \Bigl(1 - \frac{1}{r}\Bigr)^{-1}\,dr^{2}
-          \end{equation}
+          \]
         </p>
         <p>
           Above the Event Horizon (\( r > 1 \)), the factor \((1 - 1/r)\) is positive, so \(t\) remains a timelike
           coordinate and \(r\) remains spacelike, in accordance with our usual notion of time and space, but
           below the Event Horizon (\( r < 1 \)), the factor \((1 - 1/r)\) becomes negative, flipping the signs in front
-            of \(dt^{2}\) and \(dr^{2}\) and thus exchanging the roles of \(t\) and \(r\): the radial direction becomes
-            timelike and the timelike direction becomes spacelike. </p>
-            <p>
-              But what does it mean for space and time to exchange roles at the horizon?
-            </p>
+          of \(dt^{2}\) and \(dr^{2}\) and thus exchanging the roles of \(t\) and \(r\): the radial direction becomes
+          timelike and the timelike direction becomes spacelike.
+        </p>
+        <p>
+          But what does it mean for space and time to exchange roles at the horizon?
+        </p>
       </section>
       <section id="section2">
         <h2>ΛCDM Model: Predictions &amp; Limitations</h2>
@@ -268,20 +269,21 @@
           But first: what does it mean for the coordinate roles to be fixed?
           In standard cosmology we enforce a global comoving time parameter \(t\) that remains timelike everywhere,
           so space and time never swap roles. Let \(R\) be the comoving radial coordinate in FLRW space. This gives
-          the spatially flat FLRW line element:
+          the spatially flat FLRW line element
+          <span class="ref">[<a href="#ref-07">7</a>, <a href="#ref-08">8</a>, <a href="#ref-38">38</a>]</span>:
         </p>
         <p>
-          \begin{equation}
+          \begin{equation}\label{eq:flrw-metric}
           ds^{2} = -\,dt^{2} + a(t)^{2}\bigl(dR^{2} + R^{2}\,d\Omega^{2}\bigr).
           \end{equation}
         </p>
 
         <p>
           The Hubble expansion rate is \(H\equiv\dot a/a\). Its dynamics follow from the Friedmann equations
-          <span class="ref">[<a href="#ref-06">6</a>]</span>:
+          <span class="ref">[<a href="#ref-06">6</a>, <a href="#ref-40">40</a>]</span>:
         </p>
         <p>
-          \begin{equation}
+          \begin{equation}\label{eq:friedmann-background}
           H^{2} = \frac{8\pi G}{3}\bigl(\rho_{m} + \rho_{r} + \rho_{\Lambda}\bigr),
           \quad
           \frac{\ddot a}{a} = -\frac{4\pi G}{3}\bigl(\rho_{m} + 2\rho_{r} - 2\rho_{\Lambda}\bigr),
@@ -290,16 +292,17 @@
         <p>
           Here \(\rho_m\), \(\rho_r\), and \(\rho_\Lambda\) are the matter, radiation, and vacuum-energy densities,
           with \(\rho_m\propto a^{-3}\), \(\rho_r\propto a^{-4}\), and
-          \(\rho_\Lambda=\Lambda/(8\pi G)\).
+          \(\rho_\Lambda=\Lambda/(8\pi G)\)
+          <span class="ref">[<a href="#ref-30">30</a>, <a href="#ref-40">40</a>]</span>.
         </p>
 
         <p>ΛCDM excels at matching:</p>
         <ul>
           <li>Type Ia supernovae indicating late‐time acceleration
-            <span class="ref">[<a href="#ref-09">9</a>],</span>
+            <span class="ref">[<a href="#ref-09">9</a>, <a href="#ref-41">41</a>],</span>
           </li>
           <li>Baryon Acoustic Oscillation scales
-            <span class="ref">[<a href="#ref-10">10</a>],</span>
+            <span class="ref">[<a href="#ref-10">10</a>, <a href="#ref-44">44</a>],</span>
           </li>
           <li>Cosmic Microwave Background anisotropies
             <span class="ref">[<a href="#ref-11">11</a>],</span>
@@ -313,19 +316,23 @@
         <ul>
           <li>
             <strong>Cosmological constant problem:</strong>
-            Quantum‐field estimates of \(\rho_{\Lambda}\) exceed observations by 50+ orders of magnitude.
+            Quantum‐field estimates of \(\rho_{\Lambda}\) exceed observations by 50+ orders of magnitude
+            <span class="ref">[<a href="#ref-39">39</a>, <a href="#ref-40">40</a>]</span>.
           </li>
           <li>
             <strong>Fine-tuning:</strong>
-            Why is \(\rho_{\Lambda}\) nonzero yet so extraordinarily small?
+            Why is \(\rho_{\Lambda}\) nonzero yet so extraordinarily small
+            <span class="ref">[<a href="#ref-39">39</a>, <a href="#ref-40">40</a>]</span>?
           </li>
           <li>
             <strong>Coincidence problem:</strong>
-            Why do we happen to live at the epoch where \(\Omega_{m}\approx\Omega_{\Lambda}\)?
+            Why do we happen to live at the epoch where \(\Omega_{m}\approx\Omega_{\Lambda}\)
+            <span class="ref">[<a href="#ref-40">40</a>]</span>?
           </li>
           <li>
             <strong>No direct detection:</strong>
             Dark energy interacts only via gravity, with no nongravitational signature.
+            <span class="ref">[<a href="#ref-39">39</a>, <a href="#ref-40">40</a>]</span>.
           </li>
           <li>
             <strong>Hubble Tension:</strong>
@@ -333,8 +340,8 @@
               class="ref">[<a href="#ref-11">11</a>, <a href="#ref-12">12</a>]</span>.
           </li>
           <li>
-            <strong>Inevitable singularities:</strong>
-            Hawking–Penrose theorems guarantee classical GR produces spacetime singularities under reasonable conditions
+            <strong>Geodesic incompleteness:</strong>
+            The Hawking–Penrose theorems establish incomplete causal geodesics under specified energy and causal conditions
             <span class="ref">[<a href="#ref-13">13</a>].</span>
           </li>
         </ul>
@@ -346,8 +353,8 @@
       </section>
       <section id="section3">
         <h2>A Leap of Faith</h2>
-        <p>
-          <a href="leap-of-faith.html">↗ Follow Alice’s descent — interactive slideshow</a>
+        <p class="footnote">
+          <a href="leap-of-faith.html">↗ slideshow</a>
         </p>
 
         <p>
@@ -473,11 +480,11 @@
           singularity at \(r=0\) is finite:
         </p>
         <p>
-          \begin{equation}
+          \[
           \tau_{\text{vac}}
           = \int_{1}^{0} \frac{-\,dr}{\sqrt{1/r}}
           = \tfrac{2}{3}
-          \end{equation}
+          \]
         </p>
         <p class="footnote">
           <em>Inside the horizon, Alice's proper time increases toward the future while the Schwarzschild radius
@@ -527,16 +534,17 @@
         </aside>
 
         <p>
-          A pure-vacuum interior, as Schwarzschild envisioned, forces a real crash at \(r=0\) in finite \( \tau \).
+          A pure-vacuum interior, as Schwarzschild envisioned, forces a real crash at \(r=0\) in finite \( \tau \)
+          <span class="ref">[<a href="#ref-18">18</a>, <a href="#ref-32">32</a>]</span>.
           This is where we depart from the standard story:
           to preserve Alice’s inertial experience all the way down, we replace the vacuum with a dust + Λ
           Painlevé-Gullstrand interior metric
-          <span class="ref">[<a href="#ref-15">15</a>, <a href="#ref-16">16</a>]</span>,
+          <span class="ref">[<a href="#ref-15">15</a>, <a href="#ref-16">16</a>, <a href="#ref-36">36</a>]</span>,
           characterized by the infall function \(F(r)\).
           In that geometry, the proper‐time \( \tau_{\rm int} \) to \(r=0\) becomes
         </p>
         <p>
-          \begin{equation}
+          \begin{equation}\label{eq:interior-flow}
           \tau_{\rm int} = \int_{1}^{0} \frac{-\,dr}{F(r)},
           \quad
           F(r) = r \sqrt{\frac{8\pi G}{3}\rho}.
@@ -565,13 +573,13 @@
           \equiv
           -\frac{dr}{d\tau}.
           \]
-          The infall function introduced above follows from the inverse-radius geometry and the
+          The late-time infall function in Equation \eqref{eq:interior-flow} follows from the inverse-radius geometry and the
           matter, radiation, and Λ energy constraint. Let
-          \[
+          \begin{equation}\label{eq:reciprocal-ansatz}
           a(\tau)=\frac{1}{r(\tau)},
-          \]
+          \end{equation}
           so
-          \[
+          \begin{equation}\label{eq:alice-hubble}
           H_{\rm A}
           =
           \frac{\dot a}{a}
@@ -581,9 +589,9 @@
           \frac{F(r)}{r},
           \qquad
           F(r)=rH_{\rm A}.
-          \]
+          \end{equation}
           With matter, radiation, and Λ, this gives
-          \[
+          \begin{equation}\label{eq:infall-function}
           \boxed{
           F(r)
           =
@@ -596,8 +604,8 @@
           \right)
           }
           }.
-          \]
-          <a href="#appendixA">Appendix A</a> provides the full derivation.
+          \end{equation}
+          <a href="#appendixA">Appendix A</a> derives Equation \eqref{eq:infall-function}.
         </p>
 
         <h3>The inverse-radius ansatz</h3>
@@ -624,19 +632,8 @@
 
         <p>
           Differentiating the probe separation gives
-          \[
-          \boxed{
-          H_{\rm A}
-          \equiv
-          \frac{\dot\ell_\alpha}{\ell_\alpha}
-          =
-          \frac{\dot a}{a}
-          =
-          -\frac{\dot r}{r}
-          =
-          \frac{F(r)}{r}
-          }.
-          \]
+          \(\dot\ell_\alpha/\ell_\alpha=H_{\rm A}\), the expansion rate defined in
+          Equation \eqref{eq:alice-hubble}.
           The same inward flow that carries Alice toward \(r=0\) drives the outward expansion of her probe cloud.
         </p>
 
@@ -660,8 +657,12 @@
           \omega_{\mu\nu}=0
           }.
           \]
+          These are the standard kinematic invariants of a timelike congruence
+          <span class="ref">[<a href="#ref-37">37</a>, <a href="#ref-38">38</a>]</span>.
           Here we depart from the standard Schwarzschild interior. Schwarzschild tides stretch a freely falling cloud
-          in one direction while compressing it in the other two; our inverse-radius cloud expands isotropically.
+          in the radial direction while compressing it in the two transverse directions
+          <span class="ref">[<a href="#ref-18">18</a>, <a href="#ref-32">32</a>]</span>; our inverse-radius cloud
+          expands isotropically.
         </p>
 
         <h3>From probes to density</h3>
@@ -679,7 +680,8 @@
           \rho_m(\tau)=\rho_{m0}a(\tau)^{-3}
           }.
           \]
-          The inverse-radius volume and conservation of the dust cloud produce the familiar matter dilution law.
+          The inverse-radius volume and conservation of the dust cloud produce the familiar matter dilution law
+          <span class="ref">[<a href="#ref-30">30</a>, <a href="#ref-38">38</a>, <a href="#ref-40">40</a>]</span>.
         </p>
 
         <p>
@@ -690,7 +692,8 @@
           \rho_r(\tau)=\rho_{r0}a(\tau)^{-4}
           },
           \]
-          where \(\rho_{r0}\) is the radiation density at \(a=1\).
+          where \(\rho_{r0}\) is the radiation density at \(a=1\)
+          <span class="ref">[<a href="#ref-30">30</a>, <a href="#ref-40">40</a>]</span>.
         </p>
 
         <h3>The resulting expansion</h3>
@@ -705,7 +708,7 @@
           }.
           \]
           Since \(H_{\rm A}=F(r)/r\), Alice's expansion obeys
-          \[
+          \begin{equation}\label{eq:alice-friedmann}
           \boxed{
           H_{\rm A}^2
           =
@@ -716,7 +719,9 @@
           +\rho_\Lambda
           \right)
           }.
-          \]
+          \end{equation}
+          This is the spatially flat matter–radiation–Λ Friedmann equation
+          <span class="ref">[<a href="#ref-06">6</a>, <a href="#ref-40">40</a>]</span>.
           Differentiating and using
           \(\dot\rho_m=-3H_{\rm A}\rho_m\) and
           \(\dot\rho_r=-4H_{\rm A}\rho_r\) gives
@@ -737,7 +742,7 @@
           Center a spatial coordinate system on Alice and use \((R,\theta,\phi)\) to label the probes at the horizon.
           These labels are distinct from Bob's black-hole-centered coordinate \(r\). Applying the derived scale factor
           throughout Alice's interior gives
-          \[
+          \begin{equation}\label{eq:alice-metric}
           \boxed{
           ds^2
           =
@@ -745,43 +750,20 @@
           +a(\tau)^2
           \left(dR^2+R^2d\Omega^2\right)
           }.
-          \]
-          The inverse-scaled probe cloud therefore has the spatially flat FLRW metric, and the equation for
-          \(H_{\rm A}\) above is its matter, radiation, and Λ Friedmann equation.
-        </p>
-
-        <p class="footnote">
-          <em>
-            See:
-            <span class="ref">[
-              <a href="#ref-06">6</a>,
-              <a href="#ref-07">7</a>,
-              <a href="#ref-15">15</a>,
-              <a href="#ref-16">16</a>,
-              <a href="#ref-19">19</a>,
-              <a href="#ref-20">20</a>,
-              <a href="#ref-21">21</a>,
-              <a href="#ref-31">31</a>,
-              <a href="#ref-37">37</a>
-              ]
-            </span>
-          </em>
+          \end{equation}
+          Equation \eqref{eq:alice-metric} is the spatially flat FLRW metric in
+          Equation \eqref{eq:flrw-metric}, written in Alice's proper time. The equation for
+          \(H_{\rm A}\) above is its matter, radiation, and Λ Friedmann equation
+          <span class="ref">[<a href="#ref-07">7</a>, <a href="#ref-08">8</a>, <a href="#ref-38">38</a>]</span>.
         </p>
       </section>
       <section id="section5">
         <h2>Geometric Duality: The Inverse-Radius Interior</h2>
 
         <p>
-          Section 4 gives Alice's spatially flat interior geometry in terms of her proper time:
-          \[
-          ds^2
-          =
-          -d\tau^2
-          +a(\tau)^2
-          \left(dR^2+R^2d\Omega^2\right).
-          \]
+          Equation \eqref{eq:alice-metric} gives Alice's spatially flat interior geometry in terms of her proper time.
           Her position on Bob's radial diagram decreases monotonically from the horizon at \(r=1\) toward \(r=0\), so
-          \(r\) can also label her interior evolution. From Section 4,
+          \(r\) can also label her interior evolution. Equation \eqref{eq:alice-hubble} gives
           \[
           \frac{dr}{d\tau}
           =
@@ -796,8 +778,9 @@
         </p>
 
         <p>
-          Substituting this relation and \(a=1/r\) into Alice's metric gives
-          \[
+          Substituting this relation and Equation \eqref{eq:reciprocal-ansatz} into
+          Equation \eqref{eq:alice-metric} gives
+          \begin{equation}\label{eq:inverse-radius-metric}
           \boxed{
           ds^2
           =
@@ -807,15 +790,17 @@
           +dR^2+R^2d\Omega^2
           \right]
           }.
-          \]
-          Bob's \(r\) now parameterizes time in Alice's description, while \(R\) remains her spatial coordinate. The
+          \end{equation}
+          In Equation \eqref{eq:inverse-radius-metric}, Bob's \(r\) parameterizes time in Alice's description, while
+          \(R\) remains her spatial coordinate. The
           reciprocal factor \(1/r^2\) scales the complete metric: as Bob's radial coordinate shrinks, every spatial
           interval Alice measures grows.
         </p>
 
         <p>
           The factor \(1/r^2\) diverges as \(r\to0\). As matter and radiation dilute, \(H_{\rm A}(r)\) approaches the
-          constant \(H_\Lambda\), and the metric approaches de Sitter space in conformal form. We now determine whether
+          constant \(H_\Lambda\), and the metric approaches de Sitter space in conformal form
+          <span class="ref">[<a href="#ref-34">34</a>, <a href="#ref-42">42</a>]</span>. We now determine whether
           \(r=0\) lies at finite Alice proper time and whether its curvature remains finite.
         </p>
 
@@ -832,8 +817,9 @@
 
         <h3>Infinite Alice proper time</h3>
         <p>
-          In the spatially flat interior derived above,
-          \[
+          Substituting Equation \eqref{eq:reciprocal-ansatz} into
+          Equation \eqref{eq:alice-friedmann} gives
+          \begin{equation}\label{eq:alice-friedmann-radius}
           H_{\rm A}(r)^2
           =
           \frac{8\pi G}{3}
@@ -842,8 +828,9 @@
           +\rho_{r0}r^4
           +\rho_\Lambda
           \right).
-          \]
-          As \(r\to0\), the matter and radiation terms vanish while \(\rho_\Lambda\) remains. Define
+          \end{equation}
+          Equation \eqref{eq:alice-friedmann-radius} shows that the matter and radiation terms vanish as
+          \(r\to0\), while \(\rho_\Lambda\) remains. Define
           \[
           H_\Lambda
           \equiv
@@ -868,7 +855,7 @@
 
         <p>
           The proper-time integral makes the same result explicit:
-          \[
+          \begin{equation}\label{eq:future-proper-time}
           \boxed{
           \tau(r)-\tau_H
           =
@@ -879,15 +866,15 @@
           \qquad
           (r\to0)
           }.
-          \]
+          \end{equation}
           Alice's future continues without reaching \(r=0\).
         </p>
 
         <h3>Finite limiting curvature</h3>
         <p>
           Proper time and curvature provide independent tests of singular behavior. For spatially flat FLRW, the Ricci
-          and Kretschmann scalars are
-          \[
+          and Kretschmann scalars are <span class="ref">[<a href="#ref-17">17</a>, <a href="#ref-18">18</a>]</span>:
+          \begin{equation}\label{eq:finite-curvature}
           \mathcal R
           =
           6\left(\dot H_{\rm A}+2H_{\rm A}^2\right),
@@ -913,9 +900,10 @@
           24H_\Lambda^4
           =
           \frac{8}{3}\Lambda^2.
-          \]
-          Both invariants remain finite. In Alice's interior geometry, \(r=0\) lies at infinite future proper time and
-          forms a future conformal boundary with finite scalar curvature.
+          \end{equation}
+          Equations \eqref{eq:future-proper-time} and \eqref{eq:finite-curvature} place \(r=0\) at infinite future
+          proper time with finite scalar curvature. In Alice's interior geometry, it therefore forms a future
+          conformal boundary <span class="ref">[<a href="#ref-34">34</a>, <a href="#ref-42">42</a>]</span>.
         </p>
 
         <h3>The horizon map</h3>
@@ -925,51 +913,33 @@
           Alice's isotropic interior.
         </p>
 
-        <p class="footnote">
-          <em>See:
-            <span class="ref">[
-              <a href="#ref-17">17</a>,
-              <a href="#ref-18">18</a>
-              ]
-            </span>
-          </em>
-        </p>
       </section>
       <section id="section7">
         <h2>Observational Correspondence</h2>
 
         <p>
-          The inverse-radius interior preserves the spatially flat ΛCDM expansion history:
-          \[
-          H_{\rm A}(a)^2
-          =
-          \frac{8\pi G}{3}
-          \left(
-          \rho_{r0}a^{-4}
-          +\rho_{m0}a^{-3}
-          +\rho_\Lambda
-          \right).
-          \]
+          Alice's Friedmann equation, Equation \eqref{eq:alice-friedmann}, is the spatially flat ΛCDM expansion history.
           The same \(H(a)\) produces the same Hubble history, cosmic age, luminosity and angular-diameter distances,
-          and radiation–matter and matter–vacuum transitions. We therefore retain the successful background
+          and radiation–matter and matter–vacuum transitions
+          <span class="ref">[<a href="#ref-25">25</a>]</span>. We therefore retain the successful background
           observables of ΛCDM while giving that expansion history a reciprocal geometric interpretation.
         </p>
 
         <p>
           We take \(\rho_{r0}\), \(\rho_{m0}\), and \(\rho_\Lambda\) from observation; together they determine \(H_0\)
-          and reproduce the ΛCDM background within the inverse-radius interior developed above. Bob's \(r=0\) singular
-          endpoint becomes Alice's infinite future.
+          and reproduce the ΛCDM background within the inverse-radius interior developed above
+          <span class="ref">[<a href="#ref-11">11</a>, <a href="#ref-12">12</a>, <a href="#ref-44">44</a>]</span>.
+          Equation
+          \eqref{eq:future-proper-time} turns Bob's \(r=0\) singular endpoint into Alice's infinite future.
         </p>
 
         <p>
           The inverse-radius description and spatially flat ΛCDM are therefore observationally equivalent at the
-          homogeneous level. The completed horizon map, cosmological perturbations, structure formation, and horizon
-          thermodynamics offer the next opportunities for distinguishing predictions.
+          homogeneous level. Local dynamics, perturbations, structure formation, and horizon thermodynamics contain
+          information beyond the background \(H(a)\) and therefore offer the next opportunities for distinguishing
+          predictions <span class="ref">[<a href="#ref-27">27</a>, <a href="#ref-28">28</a>,
+          <a href="#ref-29">29</a>, <a href="#ref-31">31</a>]</span>.
         </p>
-        <p class="footnote"><em>
-            See: <span class="ref">[<a href="#ref-06">6</a>, <a href="#ref-11">11</a>, <a href="#ref-12">12</a>, <a
-                href="#ref-25">25</a>]</span>
-          </em></p>
       </section>
       <section id="section8">
         <h2>Discussion</h2>
@@ -982,12 +952,11 @@
           </p>
 
           <p>
-            In the standard ΛCDM paradigm, the cosmological constant is introduced as an extra term in Einstein’s
-            equations
-            purely to fit the observed late-time acceleration <span class="ref">[<a href="#ref-33">33</a>]</span>.
-            Although it provides an excellent phenomenological match to
-            supernova, CMB and large-scale-structure data, Λ remains an ad-hoc parameter without deeper geometric origin
-            <span class="ref">[<a href="#ref-24">24</a>]</span>.
+            In spatially flat ΛCDM, the cosmological constant represents the observed late-time acceleration and fits
+            supernova, CMB, and BAO measurements
+            <span class="ref">[<a href="#ref-09">9</a>, <a href="#ref-11">11</a>, <a href="#ref-41">41</a>,
+              <a href="#ref-44">44</a>]</span>. Its small observed vacuum-energy scale has no accepted microscopic
+            explanation <span class="ref">[<a href="#ref-39">39</a>, <a href="#ref-40">40</a>]</span>.
           </p>
 
           <p>
@@ -1045,7 +1014,9 @@
               <strong>Horizon thermodynamics:</strong>
               The familiar black-hole area law is derived for stationary vacuum horizons. The horizon structure used
               here is more general;
-              deriving a complete entropy or flux law is beyond the scope of this paper.
+              deriving a complete entropy or flux law is beyond the scope of this paper
+              <span class="ref">[<a href="#ref-27">27</a>, <a href="#ref-28">28</a>,
+                <a href="#ref-29">29</a>, <a href="#ref-42">42</a>]</span>.
             </li>
             <li>
               <strong>Time orientation:</strong>
@@ -1134,24 +1105,24 @@
           constructed a concrete model of geometric duality. Its central relation is
         </p>
         <p>
-          \begin{equation}
+          \[
           u=\frac{\rho_B}{\rho_H},
           \qquad
           a_A=\frac{1}{u},
-          \end{equation}
+          \]
         </p>
         <p>
           which gives
-          \begin{equation}
+          \[
           \dot u=-H_Au
-          \end{equation}
+          \]
           and, within Alice’s dust + Λ interior,
-          \begin{equation}
+          \[
           H_A^{2}
           =
           \frac{8\pi G}{3}
           \bigl(\rho_{m0}u^3+\rho_{\Lambda}\bigr).
-          \end{equation}
+          \]
           This is the flat ΛCDM Friedmann evolution written in the inverse-radius variable. It reproduces the standard
           Hubble, age, and distance–redshift relations.
         </p>
@@ -1194,31 +1165,16 @@
           \[
           F(r)\equiv-\frac{dr}{d\tau}.
           \]
-          Geometric Duality introduces the inverse-radius ansatz
-          \[
-          a(\tau)=\frac{1}{r(\tau)}.
-          \]
-          Differentiating with respect to \(\tau\) gives
-          \[
-          \frac{\dot a}{a}
-          =
-          -\frac{\dot r}{r}
-          =
-          \frac{F(r)}{r}.
-          \]
-          Section 4 identifies \(a\) as the scale of Alice's probe cloud, so its fractional expansion rate is
-          \[
-          H_{\rm A}
-          \equiv\frac{\dot a}{a}
-          =\frac{F(r)}{r}.
-          \]
+          Equation \eqref{eq:reciprocal-ansatz} introduces the inverse-radius ansatz. Differentiating it with respect
+          to \(\tau\) gives Alice's expansion rate in Equation \eqref{eq:alice-hubble}.
           This is the kinematic content of the ansatz: Alice's inward speed in Bob's radial description fixes the
           fractional expansion rate of her probe cloud. The dynamics determine how that rate changes with time.
         </p>
 
         <p>
-          Recall from Section 2 that a universe containing matter, radiation, and vacuum energy obeys the Friedmann
-          acceleration equation <span class="ref">[<a href="#ref-06">6</a>]</span>:
+          Recall from Equation \eqref{eq:friedmann-background} that a universe containing matter, radiation, and vacuum
+          energy obeys the Friedmann acceleration equation
+          <span class="ref">[<a href="#ref-06">6</a>, <a href="#ref-40">40</a>]</span>:
           \[
           \frac{\ddot a}{a}
           =
@@ -1234,6 +1190,8 @@
           \qquad
           \rho_\Lambda=\text{constant}.
           \]
+          These conservation laws are standard FLRW fluid dynamics
+          <span class="ref">[<a href="#ref-30">30</a>, <a href="#ref-38">38</a>, <a href="#ref-40">40</a>]</span>.
           Under \(a=1/r\), the same densities become
           \[
           \rho_m=\rho_{m0}r^3,
@@ -1245,8 +1203,8 @@
         </p>
 
         <p>
-          We can now express the acceleration equation in terms of Alice's inward speed. Since
-          \(H_{\rm A}=F/r\) and \(\dot r=-F\),
+          We can now express the acceleration equation in terms of Alice's inward speed. From
+          Equation \eqref{eq:alice-hubble}, \(H_{\rm A}=F/r\) and \(\dot r=-F\), so
           \[
           \frac{\ddot a}{a}
           =
@@ -1289,7 +1247,7 @@
           \]
           The final term is the usual spatial-curvature term written with \(a=1/r\), with \(C=-k\). For the spatially
           flat geometry used in Section 2, \(C=0\). More generally, taking the positive root for inward motion gives
-          \[
+          \begin{equation}\label{eq:general-infall-function}
           \boxed{
           F(r)
           =
@@ -1303,11 +1261,12 @@
           +Cr^2
           }
           }.
-          \]
+          \end{equation}
         </p>
 
         <p>
-          The late-time model used in Section 3 neglects radiation and takes \(C=0\), reducing the complete expression
+          The late-time model used in Section 3 neglects radiation and sets \(C=0\) in
+          Equation \eqref{eq:general-infall-function}, reducing the complete expression
           to
           \[
           F(r)
@@ -1327,23 +1286,14 @@
           exactly onto the infall function. Appendix B examines how much physical structure survives that map.
         </p>
 
-        <p class="footnote">
-          <em>See:
-            <span class="ref">[
-              <a href="#ref-06">6</a>,
-              <a href="#ref-07">7</a>,
-              <a href="#ref-08">8</a>
-              ]
-            </span>
-          </em>
-        </p>
       </section>
       <section id="appendixB">
         <h2>Appendix B: What the Reciprocal Map Preserves</h2>
 
         <p>
           The Friedmann equations and their matter, radiation, curvature, and vacuum-energy terms are established
-          results. The central result proposed by GD is the reciprocal ansatz
+          results <span class="ref">[<a href="#ref-06">6</a>, <a href="#ref-30">30</a>,
+            <a href="#ref-40">40</a>]</span>. The central result proposed here is the reciprocal ansatz
           \[
           a(\tau)=\frac{1}{r(\tau)}.
           \]
@@ -1354,6 +1304,7 @@
         <h3>Four components, one map</h3>
         <p>
           A fluid with equation of state \(p_i=w_i\rho_i\) dilutes according to
+          <span class="ref">[<a href="#ref-38">38</a>, <a href="#ref-40">40</a>]</span>:
           \[
           \rho_i(a)=\rho_{i0}a^{-3(1+w_i)}.
           \]
@@ -1385,7 +1336,8 @@
           Curvature occupies a special place in this sequence. It affects \(H_{\rm A}^2\), but its effective equation
           of state \(w=-1/3\) makes \(\rho_k+3p_k=0\), so it does not appear in the acceleration equation. It returns as
           the integration constant \(C=-k\) when that equation is solved. Setting \(C=0\) selects the spatially flat
-          model used in Section 2; retaining it carries an open or closed FLRW geometry into the infall picture.
+          model used in Section 2; retaining it carries an open or closed FLRW geometry into the infall picture
+          <span class="ref">[<a href="#ref-30">30</a>, <a href="#ref-40">40</a>]</span>.
         </p>
 
         <h3>Cosmic history in a shrinking radius</h3>
@@ -1450,7 +1402,8 @@
         <h3>Why ordinary conformal matching is insufficient</h3>
         <p>
           A vacuum Schwarzschild interior is a Kantowski–Sachs geometry: its distinguished radial direction and its
-          two angular directions evolve differently. It also has nonzero Weyl curvature,
+          two angular directions evolve differently
+          <span class="ref">[<a href="#ref-18">18</a>, <a href="#ref-43">43</a>]</span>. It also has nonzero Weyl curvature,
           \[
           C_{\alpha\beta\gamma\delta}
           C^{\alpha\beta\gamma\delta}
@@ -1470,10 +1423,11 @@
           hypersurfaces geometrically identical.
         </p>
         <p>
-          The Israel–Darmois calculation for a timelike shell therefore cannot establish a smooth, stress-free match
+          The Israel–Darmois calculation for a timelike shell
+          <span class="ref">[<a href="#ref-22">22</a>]</span> therefore cannot establish a smooth, stress-free match
           at the horizon. A null match requires horizon-regular coordinates and the null-shell junction formalism,
           including continuity of the degenerate intrinsic geometry and the appropriate transverse-curvature data
-          <span class="ref">[<a href="#ref-36">36</a>]</span>. Those data have not yet been supplied for the GD map.
+          <span class="ref">[<a href="#ref-35">35</a>]</span>. Those data have not yet been supplied for the GD map.
         </p>
 
         <h3>Open construction routes</h3>
@@ -1486,7 +1440,9 @@
           <li>
             <strong>Timelike transition layer:</strong>
             place a finite layer away from the null horizon and use the ordinary Israel–Darmois formalism there,
-            retaining rather than assuming away any resulting surface stress.
+            retaining rather than assuming away any resulting surface stress; its stability can then be analyzed with
+            standard thin-shell methods
+            <span class="ref">[<a href="#ref-22">22</a>, <a href="#ref-26">26</a>]</span>.
           </li>
           <li>
             <strong>Higher-dimensional throat:</strong>
@@ -1516,7 +1472,8 @@
 
         <h3>From the Horizon Radius</h3>
         <p>
-          Approximating the late-time de Sitter curvature radius by the present Hubble radius gives
+          Using the representative value \(H_0=70\;\mathrm{km\,s^{-1}Mpc^{-1}}\), between the current CMB-inferred
+          and local determinations <span class="ref">[<a href="#ref-11">11</a>, <a href="#ref-12">12</a>]</span>, gives
           \[
           R_H = \frac{c}{H_0},
           \quad
@@ -1539,7 +1496,8 @@
         <h3>From the Universe’s Age</h3>
         <p>
           A second dimensional estimate uses the measured cosmic age
-          \(T_0\approx13.8\;\mathrm{Gyr}=4.35\times10^{17}\,\mathrm{s}\) as a proxy for \(L_\Lambda/c\):
+          \(T_0\approx13.8\;\mathrm{Gyr}=4.35\times10^{17}\,\mathrm{s}\)
+          <span class="ref">[<a href="#ref-11">11</a>]</span> as a proxy for \(L_\Lambda/c\):
           \[
           \Lambda = \frac{3}{c^2\,T_0^2}
           = \frac{3}{(3.0\times10^8\,\mathrm{m/s})^2\,(4.35\times10^{17}\,\mathrm{s})^2}
@@ -1566,18 +1524,8 @@
           A quantitative comparison must distinguish \(H_0\) from
           \(H_\Lambda=H_0\sqrt{\Omega_\Lambda}\) and include the matter contribution in
           \(T_0=\int_0^1da/[aH(a)]\). Such a calculation uses fitted cosmological parameters and remains a consistency
-          test until GD supplies an independent rule fixing the curvature scale.
-        </p>
-        <p class="footnote">
-          <em>See:
-            <span class="ref">[
-              <a href="#ref-11">11</a>,
-              <a href="#ref-12">12</a>,
-              <a href="#ref-23">23</a>,
-              <a href="#ref-24">24</a>
-              ]
-            </span>
-          </em>
+          test until GD supplies an independent rule fixing the curvature scale
+          <span class="ref">[<a href="#ref-23">23</a>, <a href="#ref-24">24</a>]</span>.
         </p>
 
       </section>
@@ -1586,22 +1534,23 @@
 
         <p>
           A useful exact check on the Alice geometry is that its late-time dust + Λ limit is de Sitter spacetime, which
-          may be realized as a
-          4-dimensional hyperboloid embedded in 5-dimensional Minkowski space. Concretely:
+          may be realized as a 4-dimensional hyperboloid embedded in 5-dimensional Minkowski space
+          <span class="ref">[<a href="#ref-33">33</a>, <a href="#ref-34">34</a>,
+            <a href="#ref-42">42</a>]</span>. Concretely:
         </p>
 
         <p>
           <strong>De Sitter asymptotics:</strong> For dust + Λ in a flat FLRW patch, as \(a\to\infty\) (or \(t\gg
           H_{0}^{-1}\)),
           the matter term redshifts away and
-          \begin{equation}
+          \[
           H^{2}(t)\;\to\;\frac{\Lambda}{3},\quad
           a(t)\sim e^{\sqrt{\Lambda/3}\,t}.
-          \end{equation}
+          \]
           The metric becomes
-          \begin{equation}
+          \[
           ds^{2}\;\approx\;-\,dt^{2}+e^{2\sqrt{\Lambda/3}\,t}\,d\vec x^{\,2},
-          \end{equation}
+          \]
           the standard flat‐slicing of de Sitter space.
         </p>
 
@@ -1625,10 +1574,10 @@
 
         <p>
           <strong>5D hyperboloid:</strong> That de Sitter geometry is isometric to the hyperboloid
-          \begin{equation}
+          \[
           -X_{0}^{2}+X_{1}^{2}+X_{2}^{2}+X_{3}^{2}+X_{4}^{2}
           = \frac{3}{\Lambda},
-          \end{equation}
+          \]
           living in 5D Minkowski space with signature \((-++++\)). The flat FLRW coordinates above cover one patch of
           this hyperboloid.
         </p>
@@ -1645,10 +1594,6 @@
           The embedding is therefore supporting structure rather than a completed junction. Its value is that one end
           of the GD construction—the asymptotic Alice geometry—already has an exact and familiar
           higher-dimensional realization.
-        </p>
-
-        <p class="footnote">
-          <em>See: <span class="ref">[<a href="#ref-33">33</a>, <a href="#ref-34">34</a>]</span></em>
         </p>
 
       </section>
@@ -1830,14 +1775,17 @@
         <ol>
           <li id="ref-01">Euclid. <em>Elements</em>, Book I, Proposition 47. (c. 300 BC).</li>
           <li id="ref-02">Einstein A. Zur Elektrodynamik bewegter Körper. <em>Annalen der Physik</em>.
-            1905;17(10):891–921.</li>
+            1905;17(10):891–921.
+            <a href="https://doi.org/10.1002/andp.19053221004">doi:10.1002/andp.19053221004</a>.</li>
           <li id="ref-03">Minkowski H. Raum und Zeit. <em>Physikalische Zeitschrift</em>. 1909;10:104–111.</li>
           <li id="ref-04">Einstein A. Die Grundlage der allgemeinen Relativitätstheorie. <em>Annalen der Physik</em>.
-            1916;49(7):769–822.</li>
+            1916;49(7):769–822.
+            <a href="https://doi.org/10.1002/andp.19163540702">doi:10.1002/andp.19163540702</a>.</li>
           <li id="ref-05">Schwarzschild K. Über das Gravitationsfeld eines Massenpunktes nach der Einsteinschen Theorie.
             <em>Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften</em>. 1916:189–196.</li>
           <li id="ref-06">Friedmann A. Über die Krümmung des Raumes. <em>Zeitschrift für Physik</em>.
-            1922;10(1):377–386.</li>
+            1922;10(1):377–386.
+            <a href="https://doi.org/10.1007/BF01332580">doi:10.1007/BF01332580</a>.</li>
           <li id="ref-07">
             Robertson H. P.
             <ul>
@@ -1858,16 +1806,21 @@
             </ul>
           </li>
           <li id="ref-09">Perlmutter S., Aldering G., Goldhaber G., et al. Measurements of Ω and Λ from High-Redshift
-            Supernovae. <em>Astrophysical Journal</em>. 1999;517(2):565–586.</li>
+            Supernovae. <em>Astrophysical Journal</em>. 1999;517(2):565–586.
+            <a href="https://doi.org/10.1086/307221">doi:10.1086/307221</a>.</li>
           <li id="ref-10">Eisenstein D. J., Zehavi I., Hogg D. W., et al. Detection of the Baryon Acoustic Peak in the
             Large-Scale Correlation Function of SDSS Luminous Red Galaxies. <em>Astrophysical Journal</em>.
-            2005;633(2):560–574.</li>
+            2005;633(2):560–574. <a href="https://doi.org/10.1086/466512">doi:10.1086/466512</a>.</li>
           <li id="ref-11">Planck Collaboration. Planck 2018 results. VI. Cosmological parameters. <em>Astronomy &amp;
-              Astrophysics</em>. 2020;641:A6.</li>
-          <li id="ref-12">Riess A. G., Macri L. M., Hoffmann S. L., et al. A 2.4% Determination of the Local Value of
-            the Hubble Constant. <em>Astrophysical Journal</em>. 2016;826(1):56.</li>
+              Astrophysics</em>. 2020;641:A6.
+            <a href="https://doi.org/10.1051/0004-6361/201833910">doi:10.1051/0004-6361/201833910</a>.</li>
+          <li id="ref-12">H0DN Collaboration, Casertano S., Anand G., Anderson R. I., et al. The Local Distance Network:
+            A community consensus report on the measurement of the Hubble constant at ∼1% precision.
+            <em>Astronomy &amp; Astrophysics</em>. 2026;708:A166.
+            <a href="https://doi.org/10.1051/0004-6361/202557993">doi:10.1051/0004-6361/202557993</a>.</li>
           <li id="ref-13">Hawking S. W., Penrose R. The Singularities of Gravitational Collapse and Cosmology.
-            <em>Proceedings of the Royal Society A</em>. 1970;314(1519):529–548.</li>
+            <em>Proceedings of the Royal Society A</em>. 1970;314(1519):529–548.
+            <a href="https://doi.org/10.1098/rspa.1970.0021">doi:10.1098/rspa.1970.0021</a>.</li>
           <li id="ref-14">Einstein A. Über das Relativitätsprinzip und die aus demselben gezogenen Folgerungen.
             <em>Jahrbuch der Radioaktivität und Elektronik</em>. 1907;4:411–462.</li>
           <li id="ref-15">Painlevé P. La mécanique classique et la théorie de la relativité. <em>Comptes Rendus de
@@ -1906,18 +1859,22 @@
               of Relativity</em>. New York: Wiley; 1972.</li>
           <li id="ref-24">Peebles P. J. E. <em>Principles of Physical Cosmology</em>. Princeton: Princeton University
             Press; 1993.</li>
-          <li id="ref-25">Hogg D. W. Distance measures in cosmology. arXiv:astro-ph/9905116. 1999.</li>
+          <li id="ref-25">Hogg D. W. Distance measures in cosmology. arXiv:astro-ph/9905116. 1999.
+            <a href="https://arxiv.org/abs/astro-ph/9905116">arXiv:astro-ph/9905116</a>.</li>
           <li id="ref-26">Poisson E., Visser M. Thin-shell wormholes: Linearization stability. <em>Physical Review
-              D</em>. 1995;52(12):7318–7321.</li>
+              D</em>. 1995;52(12):7318–7321.
+            <a href="https://doi.org/10.1103/PhysRevD.52.7318">doi:10.1103/PhysRevD.52.7318</a>.</li>
           <li id="ref-27">Ashtekar A., Krishnan B. Dynamical Horizons and Their Properties. <em>Physical Review D</em>.
-            2003;68(10):104030.</li>
+            2003;68(10):104030. <a href="https://doi.org/10.1103/PhysRevD.68.104030">doi:10.1103/PhysRevD.68.104030</a>.</li>
           <li id="ref-28">Bekenstein J. D. Black holes and entropy. <em>Physical Review D</em>. 1973;7(8):2333–2346.
-          </li>
+            <a href="https://doi.org/10.1103/PhysRevD.7.2333">doi:10.1103/PhysRevD.7.2333</a>.</li>
           <li id="ref-29">Hawking S. W. Particle creation by black holes. <em>Communications in Mathematical
-              Physics</em>. 1975;43(3):199–220.</li>
+              Physics</em>. 1975;43(3):199–220.
+            <a href="https://doi.org/10.1007/BF02345020">doi:10.1007/BF02345020</a>.</li>
           <li id="ref-30">Dodelson S. <em>Modern Cosmology</em>. San Diego: Academic Press; 2003.</li>
           <li id="ref-31">Faraoni V., Jacques A. Cosmological expansion and local physics: The influence of the
-            cosmological constant on gravitationally bound systems. <em>Physical Review D</em>. 2007;76(6):063510.</li>
+            cosmological constant on gravitationally bound systems. <em>Physical Review D</em>. 2007;76(6):063510.
+            <a href="https://doi.org/10.1103/PhysRevD.76.063510">doi:10.1103/PhysRevD.76.063510</a>.</li>
           <li id="ref-32">Poisson E. <em>A Relativist’s Toolkit: The Mathematics of Black-Hole Mechanics</em>.
             Cambridge: Cambridge University Press; 2004.</li>
           <li id="ref-33">
@@ -1930,15 +1887,34 @@
             </ul>
           </li>
           <li id="ref-34">Spradlin M., Strominger A., Volovich A. Les Houches Lectures on de Sitter Space.
-            arXiv:hep-th/0110007. 2001.</li>
-          <li id="ref-35">Bressange G. F. On the extension of the concept of thin shells to the Einstein-Cartan theory.
-            <em>Classical and Quantum Gravity</em>. 2000;17(13):2509–2523.</li>
-          <li id="ref-36">Barrabès C., Israel W. Thin shells in general relativity and cosmology: The lightlike limit.
+            arXiv:hep-th/0110007. 2001. <a href="https://arxiv.org/abs/hep-th/0110007">arXiv:hep-th/0110007</a>.</li>
+          <li id="ref-35">Barrabès C., Israel W. Thin shells in general relativity and cosmology: The lightlike limit.
             <em>Physical Review D</em>. 1991;43(4):1129–1142.
             <a href="https://doi.org/10.1103/PhysRevD.43.1129">doi:10.1103/PhysRevD.43.1129</a>.</li>
-          <li id="ref-37">Gaur R., Visser M. Cosmology in Painlevé–Gullstrand coordinates.
+          <li id="ref-36">Gaur R., Visser M. Cosmology in Painlevé–Gullstrand coordinates.
             <em>Journal of Cosmology and Astroparticle Physics</em>. 2022;09:030.
-            <a href="https://arxiv.org/abs/2207.08375">arXiv:2207.08375</a>.</li>
+            <a href="https://doi.org/10.1088/1475-7516/2022/09/030">doi:10.1088/1475-7516/2022/09/030</a>.</li>
+          <li id="ref-37">Raychaudhuri A. Relativistic Cosmology. I. <em>Physical Review</em>.
+            1955;98(4):1123–1126. <a href="https://doi.org/10.1103/PhysRev.98.1123">doi:10.1103/PhysRev.98.1123</a>.</li>
+          <li id="ref-38">Ellis G. F. R., van Elst H. Cosmological Models. In: Lachièze-Rey M., ed.
+            <em>Theoretical and Observational Cosmology</em>. NATO Science Series C, vol. 541. Dordrecht: Kluwer;
+            1999:1–116. <a href="https://doi.org/10.1007/978-94-011-4455-1_1">doi:10.1007/978-94-011-4455-1_1</a>.</li>
+          <li id="ref-39">Weinberg S. The cosmological constant problem. <em>Reviews of Modern Physics</em>.
+            1989;61(1):1–23. <a href="https://doi.org/10.1103/RevModPhys.61.1">doi:10.1103/RevModPhys.61.1</a>.</li>
+          <li id="ref-40">Carroll S. M. The Cosmological Constant. <em>Living Reviews in Relativity</em>.
+            2001;4:1. <a href="https://doi.org/10.12942/lrr-2001-1">doi:10.12942/lrr-2001-1</a>.</li>
+          <li id="ref-41">Riess A. G., Filippenko A. V., Challis P., et al. Observational Evidence from Supernovae for
+            an Accelerating Universe and a Cosmological Constant. <em>Astronomical Journal</em>.
+            1998;116(3):1009–1038. <a href="https://doi.org/10.1086/300499">doi:10.1086/300499</a>.</li>
+          <li id="ref-42">Gibbons G. W., Hawking S. W. Cosmological event horizons, thermodynamics, and particle
+            creation. <em>Physical Review D</em>. 1977;15(10):2738–2751.
+            <a href="https://doi.org/10.1103/PhysRevD.15.2738">doi:10.1103/PhysRevD.15.2738</a>.</li>
+          <li id="ref-43">Kantowski R., Sachs R. K. Some Spatially Homogeneous Anisotropic Relativistic Cosmological
+            Models. <em>Journal of Mathematical Physics</em>. 1966;7(3):443–446.
+            <a href="https://doi.org/10.1063/1.1704952">doi:10.1063/1.1704952</a>.</li>
+          <li id="ref-44">DESI Collaboration. DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon
+            Acoustic Oscillations. <em>Journal of Cosmology and Astroparticle Physics</em>. 2025;02:021.
+            <a href="https://doi.org/10.1088/1475-7516/2025/02/021">doi:10.1088/1475-7516/2025/02/021</a>.</li>
         </ol>
       </section>
     </article>
