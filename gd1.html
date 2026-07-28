@@ -274,7 +274,8 @@
         </p>
 
         <p>
-          The expansion dynamics follow from the Friedmann equations <span class="ref">[<a href="#ref-06">6</a>]</span>:
+          The Hubble expansion rate is \(H\equiv\dot a/a\). Its dynamics follow from the Friedmann equations
+          <span class="ref">[<a href="#ref-06">6</a>]</span>:
         </p>
         <p>
           \begin{equation}
@@ -284,7 +285,9 @@
           \end{equation}
         </p>
         <p>
-          where \(\rho_{m}\propto a^{-3}\), \(\rho_{r}\propto a^{-4}\), and \(\rho_{\Lambda}=\Lambda/(8\pi G)\).
+          Here \(\rho_m\), \(\rho_r\), and \(\rho_\Lambda\) are the matter, radiation, and vacuum-energy densities,
+          with \(\rho_m\propto a^{-3}\), \(\rho_r\propto a^{-4}\), and
+          \(\rho_\Lambda=\Lambda/(8\pi G)\).
         </p>
 
         <p>ΛCDM excels at matching:</p>
@@ -349,8 +352,7 @@
           just the scenario Schwarzschild describes.
           Their space station is in deep space, where the spacetime curvature is negligible, observing a supermassive
           black hole (SMBH) from a super‐safe distance.
-          Let \(r_\beta\) denote the Schwarzschild areal radius Bob assigns to Alice; where the perspective is clear, we
-          write it simply as \(r\).
+          Let \(r\) denote the Schwarzschild areal radius Bob assigns to Alice.
           For now, let us say they are hovering far above the horizon, at \(r\gg 1\) (in conventional units where
           \(r=2M=1\)) with thrusters,
           so that Bob's clock tracks the idealized FLRW comoving time parameter with negligible error.
@@ -467,12 +469,17 @@
           Below the horizon, Alice is in uncharted territory. According to GR, in pure‐vacuum Schwarzschild, Alice’s proper‐time to reach the central
           singularity at \(r=0\) is finite:
         </p>
-        <p title="Note: We drop the minus sign introduced by the direction of integration, since tau denotes Alice's elapsed proper time.">
+        <p>
           \begin{equation}
           \tau_{\text{vac}}
-          = \int_{1}^{0} \frac{dr}{\sqrt{1/r}}
+          = \int_{1}^{0} \frac{-\,dr}{\sqrt{1/r}}
           = \tfrac{2}{3}
           \end{equation}
+        </p>
+        <p class="footnote">
+          <em>Inside the horizon, Alice's proper time increases toward the future while the Schwarzschild radius
+            decreases. Thus \(d\tau/dr<0\), and the oriented element \(-dr/F(r)\) measures positive elapsed proper
+            time.</em>
         </p>
         <figure>
           <div class="theme-figure">
@@ -525,7 +532,7 @@
         </p>
         <p>
           \begin{equation}
-          \tau_{\rm int} = \int_{0}^{1} \frac{dr}{F(r)},
+          \tau_{\rm int} = \int_{1}^{0} \frac{-\,dr}{F(r)},
           \quad
           F(r) = r \sqrt{\frac{8\pi G}{3}\rho}.
           \end{equation}
@@ -1672,8 +1679,8 @@
       <section id="appendixF">
         <h2>Appendix F: Legend</h2>
         <p>
-          The symbols below are introduced in Sections 1–5. Subscripts identify the frame, component, or limiting case
-          to which a quantity belongs.
+          The symbols below follow the conventions established in Sections 1–4 and the supporting appendices.
+          Subscripts identify the frame, component, or limiting case to which a quantity belongs.
         </p>
 
         <h3>Geometry and coordinates</h3>
@@ -1690,8 +1697,8 @@
           <dt>\(t\)</dt>
           <dd>Coordinate time. In Section 2 it is FLRW comoving time; in Section 3 it is Bob's Schwarzschild coordinate time.</dd>
 
-          <dt>\(r,r_\beta\)</dt>
-          <dd>Bob's Schwarzschild areal radius, normalized so the event horizon is at \(r=1\). The subscript \(\beta\) denotes “Bob” and is omitted when the perspective is clear.</dd>
+          <dt>\(r\)</dt>
+          <dd>The Schwarzschild areal radius Bob assigns to Alice, normalized so the event horizon is at \(r=1\).</dd>
 
           <dt>\(R\)</dt>
           <dd>Alice-centered radial label assigned to the probes at the horizon; it becomes the comoving radial coordinate in the resulting geometry.</dd>
@@ -1754,7 +1761,7 @@
           <dd>The constant Hubble parameter in the pure-\(\Lambda\) limit.</dd>
 
           <dt>\(\rho\)</dt>
-          <dd>The total dust-plus-vacuum energy density used in the Section 3 interior flow function: \(\rho=\rho_{m0}a^{-3}+\rho_\Lambda\).</dd>
+          <dd>The total interior energy density used in Section 3. For the late-time dust-plus-vacuum model, \(\rho=\rho_{m0}a^{-3}+\rho_\Lambda\).</dd>
 
           <dt>\(\rho_m\)</dt>
           <dd>The evolving matter energy density in Section 2; the subscript \(m\) denotes “matter.”</dd>
@@ -1798,8 +1805,8 @@
           <dt>\(\tau_H\)</dt>
           <dd>Alice's proper time at the horizon, where \(r=a=1\).</dd>
 
-          <dt>\(F(r),F_\beta(r_\beta)\)</dt>
-          <dd>The inward flow magnitude introduced in Section 3. The subscript \(\beta\) is included when Bob's radial description must be distinguished from Alice's.</dd>
+          <dt>\(F(r)\)</dt>
+          <dd>The positive inward flow introduced in Section 3 and defined by \(F(r)=-dr/d\tau\) in Section 4.</dd>
 
           <dt>\(F'(r)\)</dt>
           <dd>The derivative of the infall function with respect to \(r\).</dd>
