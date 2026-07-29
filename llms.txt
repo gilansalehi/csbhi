@@ -1,0 +1,44 @@
+# CSBHI — Conformal Scaling of Black Hole Interiors
+
+> CSBHI is a developing research programme investigating whether the reciprocal ansatz a(tau) = 1/r(tau) relates black-hole infall to cosmological expansion. The primary paper states the proposal and its observable consequences; the accompanying notes distinguish established calculations, conditional results, conjectures, and open problems.
+
+The public site is static. Its main pages contain their substantive text directly in the HTML response. Research notes are also available as raw Markdown at the URLs below, so no JavaScript execution is required to read them. Equations use LaTeX notation.
+
+## Primary document
+
+- [Geometric Duality: Conformal Scaling of Black Hole Interiors](https://www.gilansalehi.com/csbhi/gd1.html): The principal CSBHI preprint by Gilan Salehi. Introduces the reciprocal ansatz, relates inward flow to expansion, discusses singularity deferral, and compares the construction with cosmological observables.
+
+## Project pages
+
+- [CSBHI project overview](https://www.gilansalehi.com/csbhi/): Publication map, progress, open problems, and further reading.
+- [Frequently Asked Questions](https://www.gilansalehi.com/csbhi/faqs.html): Short answers to recurring conceptual and mathematical objections.
+- [Alice's Descent](https://www.gilansalehi.com/csbhi/leap-of-faith.html): Interactive geometric illustration accompanying the primary paper.
+- [Source repository](https://github.com/gilansalehi/csbhi): HTML source, research notes, figures, and revision history.
+
+## Derivations and checks
+
+- [Field Equations of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md): Derives the reciprocal interior dynamics from the metric ansatz, Einstein's equations, and stress-energy conservation; does not derive the reciprocal ansatz or exterior junction.
+- [The Reciprocal Interior: An Independent Verification](https://www.gilansalehi.com/csbhi/notes/reciprocal_interior_independent_verification.md): Independent calculation and audit of the reciprocal-interior field equations.
+- [The Horizon Flow and Density Identity](https://www.gilansalehi.com/csbhi/notes/horizon_flow_density_identity.md): Examines the horizon density identity and the geodesic boundary condition on which it depends.
+- [Toward the Horizon Map: The Exact Shell Identity and a Mass-Growth Obstruction](https://www.gilansalehi.com/csbhi/notes/horizon_map_shell_identity_and_mass_growth.md): Separates an exact matching-shell identity from the stronger reciprocal horizon map and identifies a mass-growth constraint.
+- [Vacuum-Energy Cancellation at an FLRW-Kottler Junction](https://www.gilansalehi.com/csbhi/notes/vacuum_energy_cancellation_at_a_kottler_junction.md): Studies vacuum-energy terms at a spherical FLRW-Kottler junction.
+- [Constraints on the Horizon Map](https://www.gilansalehi.com/csbhi/notes/constraints_on_the_horizon_map.md): Catalogues mathematical conditions that a complete horizon map must satisfy.
+- [The Inverse-Radius Interior and Alice's Probe Congruence](https://www.gilansalehi.com/csbhi/notes/gd_inverse_radius_probe_congruence.md): Develops the probe-cloud interpretation of inverse-radius spatial scaling.
+- [Painleve-Gullstrand Flow from the 5D de Sitter Embedding](https://www.gilansalehi.com/csbhi/notes/pg_flow_from_5d_desitter_embedding.md): Explores the relation between de Sitter embedding geometry and Painleve-Gullstrand flow.
+
+## Context and research programme
+
+- [Black-Hole Cosmology: Lineage, Mechanisms, and CSBHI](https://www.gilansalehi.com/csbhi/notes/black_hole_cosmology_lineage.md): Historical comparison with earlier black-hole cosmology proposals.
+- [Geometric Duality Research Roadmap](https://www.gilansalehi.com/csbhi/notes/gd_research_roadmap.md): Current sequence of questions, notation, and planned investigations. The roadmap is provisional.
+- [The Horizon Triple-Identity Hypothesis](https://www.gilansalehi.com/csbhi/notes/horizon_triple_identity.md): States and examines a conjectured relation among black-hole, cosmological, and acceleration horizons.
+- [GD Self-Dual Homogeneous Derivation of the Square-Root Law](https://www.gilansalehi.com/csbhi/notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md): Conditional functional-equation derivation relevant to a proposed galaxy-scale law.
+
+## Future-paper outlines
+
+- [Geometric Duality II: The Horizon Triple Identity](https://www.gilansalehi.com/csbhi/notes/gd2_horizon_triple_identity_outline.md): Working outline, not a completed result.
+- [Geometric Duality III: Throat Curvature and the Galaxy Acceleration Law](https://www.gilansalehi.com/csbhi/notes/gd3_throat_curvature_and_galaxy_law_outline.md): Working outline, not a completed result.
+- [Horizon Thermodynamics and the GD Interpretation](https://www.gilansalehi.com/csbhi/notes/gd_thermodynamic_reconciliation_outline.md): Working outline for thermodynamic consistency questions.
+
+## Reading guidance
+
+Begin with the primary paper, then use the field-equations note and independent verification for the central mathematical derivation. Treat documents explicitly labeled as hypotheses, constraints, roadmaps, or outlines as research directions rather than established conclusions.
