@@ -83,7 +83,7 @@
             <li><a href="#appendixA">From Friedmann expansion to the infall function</a></li>
             <li><a href="#appendixB">What the reciprocal map preserves</a></li>
             <li><a href="#appendixC">Status of the horizon map</a></li>
-            <li><a href="#appendixD">Horizon-scale consistency estimate for Λ</a></li>
+            <li><a href="#appendixD">Restoring units and comparing cosmic horizons</a></li>
             <li><a href="#appendixE">Connection to 5D de Sitter embedding</a></li>
             <li><a href="#appendixF">Legend</a></li>
           </ol>
@@ -112,48 +112,48 @@
             <i>The Universe is a Black Hole.</i>
           </summary>
           <p id="resume-here">
-          </p>
-
-          <p>
-            We present a geometric duality between late‐time cosmic acceleration and black‐hole infall by
-            embedding a flat FLRW patch in a Schwarzschild–de Sitter exterior and expressing the interior in
-            Painlevé–Gullstrand form.
-          </p>
-
-          <p>
-            In the exterior chart, with coordinate time \( t \), the areal radius evolves as
+            We propose that black-hole infall and cosmological expansion are reciprocal descriptions of one geometry.
+            Let \(r(\tau)\) be the horizon-normalized areal radius along a future-directed, freely falling worldline,
+            and introduce the inverse-radius ansatz
             \[
-            \frac{dr}{dt} \;=\; -\,F(r),
-            \quad
-            F(r) \;=\; r\,\sqrt{\frac{8\pi G}{3}\,\rho},
+            a(\tau)=\frac{1}{r(\tau)}.
             \]
-            where \( \rho = \rho_{m} r^{3}\ + \rho_{\Lambda} \) is the energy density contained in \( r \).
+            If \(F(r)=-dr/d\tau\) is the positive inward flow, then
+            \(H=\dot a/a=F(r)/r\). A shrinking radial coordinate therefore corresponds to a growing spatial scale
+            without reversing the direction of proper time.
           </p>
 
           <p>
-            In the interior FLRW chart, with proper time \( \tau \), the matching shell follows
+            Applying this reciprocal factor isotropically to neighboring freely falling worldlines maps the spatially
+            flat matter–radiation–Λ Friedmann expansion into the infall function
             \[
-            r(\tau) \;=\; a(\tau)
-            \;\propto\; e^{+H\,\tau},
-            \quad
-            H \;=\;\sqrt{\frac{8\pi G}{3}\,\rho}.
+            F(r)
+            =
+            r\sqrt{
+            \frac{8\pi G}{3}
+            \left(
+            \rho_{m0}r^3+\rho_{r0}r^4+\rho_\Lambda
+            \right)
+            }.
             \]
+            Matter and radiation dilute as the reciprocal scale grows, while vacuum energy remains constant. Near
+            \(r=0\), \(F(r)\sim H_\Lambda r\): the required proper time diverges and the limiting curvature remains
+            finite.
           </p>
 
           <p>
-            A perspective‐shift thought experiment compares these two exponentials under the sign flip \( \tau \to -\tau
-            \),
-            showing that cosmic inflation is mathematically equivalent to inertial infall.
-          </p>
-
-          <p>
-            This construction suggests dark energy may emerge naturally from the interior geometry of a cosmic horizon,
-            rather than requiring an explicit fluid with negative pressure. The geometric model estimates
+            Restoring physical units with the observed \(H_0\) and \(\Omega_\Lambda\) gives the de Sitter radius
+            \(R_\Lambda=c/(H_0\sqrt{\Omega_\Lambda})\) and
             \[
-            \Lambda \approx 1.6\times10^{-52}\,\mathrm{m^{-2}},
+            \Lambda=\frac{3}{R_\Lambda^2}
+            \simeq1.09\times10^{-52}\;\mathrm{m^{-2}},
             \]
-            within 50% of the conventionally inferred value, and we anticipate that re‐analysing data within a
-            geometric framework will drive the predicted and observed Λ into even closer agreement.
+            matching the observed cosmological scale.
+          </p>
+
+          <p>
+            The same construction also expresses \(\Omega_\Lambda\), the critical Hubble mass, the particle horizon,
+            and the Planck-scale vacuum hierarchy as reciprocal relations among the observed cosmic horizons.
           </p>
         </details>
       </section>
