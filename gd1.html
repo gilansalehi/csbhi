@@ -1506,15 +1506,13 @@
 
         <h3>The map to be constructed</h3>
         <p>
-          The results in Sections 5–6 define a relation between two geometries:
+          The results in Sections 4–6 define a relation between two geometries:
           \[
-          \left(\mathcal M_B,g_B,\rho_B\right)
+          \left(\mathcal M_B,g_B,r\right)
           \xrightarrow{\;\mathcal D_{\rm GD}\;}
-          \left(\mathcal M_A,g_A,u,a_A\right),
+          \left(\mathcal M_A,g_A,\tau,a\right),
           \qquad
-          u=\frac{\rho_B}{\rho_H},
-          \quad
-          a_A=\frac1u.
+          a(\tau)=\frac{1}{r(\tau)}.
           \]
           The inverse-radius relation specifies the desired correspondence along Alice’s history. It does not by itself
           give the junction data needed to derive \(g_A\) from \(g_B\).
@@ -1529,7 +1527,7 @@
           C_{\alpha\beta\gamma\delta}
           C^{\alpha\beta\gamma\delta}
           =
-          \frac{48G^2M^2}{\rho_B^6},
+          \frac{48G^2M^2}{r^6},
           \]
           whereas every FLRW spacetime is conformally flat. Because a regular conformal transformation preserves
           whether the Weyl tensor vanishes, no change of coordinates plus scalar conformal factor can convert the
@@ -1537,11 +1535,11 @@
           geometric structure <span class="ref">[<a href="#ref-17">17</a>, <a href="#ref-18">18</a>]</span>.
         </p>
 
-        <h3>Why the previous timelike-shell argument is not a horizon proof</h3>
+        <h3>Why a timelike shell does not prove the horizon match</h3>
         <p>
-          The black-hole event horizon is a null hypersurface. By contrast, \(u=\mathrm{constant}\) surfaces in
-          Alice’s FLRW metric are spacelike spatial slices. Setting both labels equal to one does not make those
-          hypersurfaces geometrically identical.
+          The black-hole event horizon is a null hypersurface. By contrast, \(r=\mathrm{constant}\) surfaces in
+          Alice’s inverse-radius metric are spacelike spatial slices. Setting \(r=1\) in both descriptions does not
+          make those hypersurfaces geometrically identical.
         </p>
         <p>
           The Israel–Darmois calculation for a timelike shell
@@ -1575,78 +1573,146 @@
 
         <p class="note">
           <em>
-            Consequently, this paper claims exact results within the Alice interior but leaves
-            \(\mathcal D_{\rm GD}\) as an open problem. No stress-free Schwarzschild–FLRW horizon matching is assumed in
-            the calculations.
+            The Alice-interior results are exact within Equation \eqref{eq:alice-metric}. Completing
+            \(\mathcal D_{\rm GD}\) requires junction data that determine whether the horizon carries surface stress.
           </em>
         </p>
       </section>
       <section id="appendixD">
-        <h2>Appendix D: Horizon-Scale Consistency Estimate for \(\Lambda\)</h2>
+        <h2>Appendix D: Restoring Units and Comparing Cosmic Horizons</h2>
 
         <p>
-          This appendix records a dimensional consistency check, not an independent derivation of \(\Lambda\).
-          It inserts the measured Hubble and age scales into the de Sitter relation
-          \(\Lambda=3/L_\Lambda^2\). Because \(H_0^{-1}\) and the cosmic age are observationally related, the two
-          estimates below are not statistically independent.
+          Sections 1–6 use \(c=G=1\) and normalize Bob’s event-horizon radius to \(r=1\). Section 7 restores physical
+          units to compare the characteristic radii of the observed cosmological background. This appendix derives
+          those relations using the Planck best-fit values
+          \[
+          H_0=67.4\;\mathrm{km\,s^{-1}Mpc^{-1}},
+          \qquad
+          \Omega_m=0.315,
+          \qquad
+          \Omega_r\simeq9.2\times10^{-5},
+          \qquad
+          \Omega_\Lambda\simeq0.6849
+          \]
+          <span class="ref">[<a href="#ref-11">11</a>]</span>.
         </p>
 
-        <h3>From the Horizon Radius</h3>
+        <h3>The Hubble and de Sitter radii</h3>
         <p>
-          Using the representative value \(H_0=70\;\mathrm{km\,s^{-1}Mpc^{-1}}\), between the current CMB-inferred
-          and local determinations <span class="ref">[<a href="#ref-11">11</a>, <a href="#ref-12">12</a>]</span>, gives
+          Define the present Hubble radius and the asymptotic de Sitter radius by
           \[
-          R_H = \frac{c}{H_0},
-          \quad
-          H_0 = 70\;\mathrm{km\,s^{-1}Mpc^{-1}} \approx 2.27\times10^{-18}\,\mathrm{s^{-1}},
+          R_H=\frac{c}{H_0},
+          \qquad
+          R_\Lambda=\frac{c}{H_\Lambda},
+          \qquad
+          H_\Lambda=H_0\sqrt{\Omega_\Lambda}.
           \]
-          giving
+          Their ratio therefore obeys
           \[
-          R_H \approx \frac{3.0\times10^8\;\mathrm{m/s}}{2.27\times10^{-18}\;\mathrm{s^{-1}}}
-          \approx 1.32\times10^{26}\;\mathrm{m}.
+          \left(\frac{R_H}{R_\Lambda}\right)^2
+          =
+          \Omega_\Lambda.
           \]
-          Assigning \(L_\Lambda\approx R_H\) then gives
+          This is exact within spatially flat ΛCDM. Numerically,
           \[
-          \Lambda = \frac{3}{R_H^2}
-          \;\approx\;
-          \frac{3}{(1.32\times10^{26}\,\mathrm{m})^2}
-          \approx 1.7\times10^{-52}\;\mathrm{m^{-2}}.
+          R_H=1.3725\times10^{26}\;\mathrm{m}=14.51\;\mathrm{Gly},
+          \qquad
+          R_\Lambda=1.6584\times10^{26}\;\mathrm{m}=17.53\;\mathrm{Gly}.
           \]
-        </p>
-
-        <h3>From the Universe’s Age</h3>
-        <p>
-          A second dimensional estimate uses the measured cosmic age
-          \(T_0\approx13.8\;\mathrm{Gyr}=4.35\times10^{17}\,\mathrm{s}\)
-          <span class="ref">[<a href="#ref-11">11</a>]</span> as a proxy for \(L_\Lambda/c\):
+          The corresponding cosmological constant is
           \[
-          \Lambda = \frac{3}{c^2\,T_0^2}
-          = \frac{3}{(3.0\times10^8\,\mathrm{m/s})^2\,(4.35\times10^{17}\,\mathrm{s})^2}
-          \approx 1.6\times10^{-52}\;\mathrm{m^{-2}}.
-          \]
-          Their agreement within \(\sim10\%\) reflects the observed order-unity relation \(H_0T_0\sim1\). It motivates
-          a common horizon-scale interpretation, but does not validate the GD map or predict \(\Lambda\) without
-          observational input.
-        </p>
-
-        <h3>Corresponding Vacuum‐Energy Density</h3>
-        <p>
-          Converting \(\Lambda\) to an equivalent vacuum‐energy density via
-          \(\rho_{\Lambda} = \Lambda\,c^2/(8\pi G)\) yields
-          \[
-          \rho_{\Lambda}
-          \approx \frac{1.7\times10^{-52}\,\mathrm{m^{-2}}\times(3.0\times10^8\,\mathrm{m/s})^2}
-          {8\pi\times6.67\times10^{-11}\,\mathrm{m^3/kg\,s^2}}
-          \approx 9\times10^{-27}\;\mathrm{kg/m^3}.
+          \Lambda
+          =
+          \frac{3}{R_\Lambda^2}
+          =
+          \frac{3\Omega_\Lambda H_0^2}{c^2}
+          \simeq
+          1.09\times10^{-52}\;\mathrm{m^{-2}}.
           \]
         </p>
 
+        <h3>The critical mass identity</h3>
         <p>
-          A quantitative comparison must distinguish \(H_0\) from
-          \(H_\Lambda=H_0\sqrt{\Omega_\Lambda}\) and include the matter contribution in
-          \(T_0=\int_0^1da/[aH(a)]\). Such a calculation uses fitted cosmological parameters and remains a consistency
-          test until GD supplies an independent rule fixing the curvature scale
-          <span class="ref">[<a href="#ref-23">23</a>, <a href="#ref-24">24</a>]</span>.
+          The critical density and total mass-energy inside the Hubble sphere are
+          \[
+          \rho_c
+          =
+          \frac{3H_0^2}{8\pi G},
+          \qquad
+          M_H
+          =
+          \frac{4\pi}{3}\rho_cR_H^3.
+          \]
+          Substituting \(R_H=c/H_0\) gives
+          \[
+          M_H
+          =
+          \frac{c^3}{2GH_0}
+          =
+          \frac{c^2R_H}{2G},
+          \qquad
+          \frac{2GM_H}{c^2}
+          =
+          R_H.
+          \]
+          Thus the Schwarzschild radius associated with the critical mass inside the Hubble sphere equals the Hubble
+          radius. For the Planck parameters,
+          \[
+          \rho_c=8.53\times10^{-27}\;\mathrm{kg\,m^{-3}},
+          \qquad
+          M_H=9.24\times10^{52}\;\mathrm{kg}
+          =4.65\times10^{22}M_\odot.
+          \]
+        </p>
+
+        <h3>The integrated causal horizons</h3>
+        <p>
+          The particle and event horizons require the complete expansion history:
+          <span class="ref">[<a href="#ref-25">25</a>, <a href="#ref-42">42</a>]</span>
+          \[
+          R_p
+          =
+          c\int_0^1\frac{da}{a^2H(a)},
+          \qquad
+          R_e
+          =
+          c\int_1^\infty\frac{da}{a^2H(a)}.
+          \]
+          Evaluating both integrals with the same matter, radiation, and vacuum densities gives
+          \[
+          R_p=46.13\;\mathrm{Gly},
+          \qquad
+          R_e=16.68\;\mathrm{Gly},
+          \qquad
+          \frac{R_H}{R_p}=0.31447.
+          \]
+          The last value lies within \(0.17\%\) of the fitted matter fraction \(\Omega_m=0.315\). This numerical
+          correspondence is produced by the integrated Planck expansion history; Equation
+          \eqref{eq:horizon-identities} records the exact algebraic identities.
+        </p>
+
+        <h3>The Planck hierarchy</h3>
+        <p>
+          Finally, normalizing a radial scale to \(R_\Lambda\) and evaluating its reciprocal at the Planck length gives
+          \[
+          r_P=\frac{\ell_P}{R_\Lambda}=9.75\times10^{-62},
+          \qquad
+          a_P=\frac{1}{r_P}=1.03\times10^{61}.
+          \]
+          Since \(\Lambda=3/R_\Lambda^2\),
+          \[
+          \Lambda\ell_P^2
+          =
+          3\left(\frac{\ell_P}{R_\Lambda}\right)^2
+          =
+          \frac{3}{a_P^2}
+          \simeq
+          2.85\times10^{-122}.
+          \]
+          The small dimensionless vacuum scale is therefore the square of the reciprocal separation between the Planck
+          length and the asymptotic de Sitter horizon
+          <span class="ref">[<a href="#ref-11">11</a>, <a href="#ref-39">39</a>,
+            <a href="#ref-40">40</a>]</span>.
         </p>
 
       </section>
@@ -1654,23 +1720,26 @@
         <h2>Appendix E: Connection to the 5D de Sitter Embedding</h2>
 
         <p>
-          A useful exact check on the Alice geometry is that its late-time dust + Λ limit is de Sitter spacetime, which
+          A useful exact check on the Alice geometry is that its late-time matter–radiation–Λ limit is de Sitter
+          spacetime, which
           may be realized as a 4-dimensional hyperboloid embedded in 5-dimensional Minkowski space
           <span class="ref">[<a href="#ref-33">33</a>, <a href="#ref-34">34</a>,
             <a href="#ref-42">42</a>]</span>. Concretely:
         </p>
 
         <p>
-          <strong>De Sitter asymptotics:</strong> For dust + Λ in a flat FLRW patch, as \(a\to\infty\) (or \(t\gg
-          H_{0}^{-1}\)),
-          the matter term redshifts away and
+          <strong>De Sitter asymptotics:</strong> In a flat matter–radiation–Λ patch, both matter and radiation dilute
+          as \(a\to\infty\), leaving
           \[
-          H^{2}(t)\;\to\;\frac{\Lambda}{3},\quad
-          a(t)\sim e^{\sqrt{\Lambda/3}\,t}.
+          H_{\rm A}^{2}(\tau)\;\longrightarrow\;\frac{\Lambda}{3},
+          \qquad
+          a(\tau)\propto e^{H_\Lambda\tau}.
           \]
-          The metric becomes
+          After a constant rescaling of \(R\), the metric approaches
           \[
-          ds^{2}\;\approx\;-\,dt^{2}+e^{2\sqrt{\Lambda/3}\,t}\,d\vec x^{\,2},
+          ds^{2}\;\longrightarrow\;-\,d\tau^{2}
+          +e^{2H_\Lambda\tau}
+          \left(dR^2+R^2d\Omega^2\right),
           \]
           the standard flat‐slicing of de Sitter space.
         </p>
@@ -1678,16 +1747,18 @@
         <p>
           In the pure-Λ GD variables,
           \[
-          u=e^{-H_\Lambda(\tau-\tau_H)},
+          r=e^{-H_\Lambda(\tau-\tau_H)},
           \qquad
           H_\Lambda=\sqrt{\frac{\Lambda}{3}}.
           \]
-          Defining conformal time \(\eta=-u/H_\Lambda\) gives
+          Defining conformal time \(\eta=-r/H_\Lambda\) gives
           \[
           ds_A^2
           =
           \frac{1}{H_\Lambda^2\eta^2}
-          \left(-d\eta^2+d\vec\chi^{\,2}\right),
+          \left[
+          -d\eta^2+dR^2+R^2d\Omega^2
+          \right],
           \]
           exactly the flat de Sitter patch. Thus the inverse-radius Alice metric has a standard geometric realization
           in its asymptotic pure-Λ limit.
@@ -1706,8 +1777,9 @@
         <p>
           <strong>What the embedding establishes:</strong>
           The five-dimensional hyperboloid realizes the Alice metric exactly in the pure-Λ limit and identifies
-          \(L_\Lambda=\sqrt{3/\Lambda}\) as its curvature radius. It does not by itself embed a Schwarzschild exterior,
-          identify the black-hole horizon with a particular hyperboloid section, or derive the dust contribution.
+          \(R_\Lambda=\sqrt{3/\Lambda}\) as its curvature radius. It does not by itself embed a Schwarzschild exterior,
+          identify the black-hole horizon with a particular hyperboloid section, or derive the matter and radiation
+          contributions.
           Those are additional requirements on the higher-dimensional version of \(\mathcal D_{\rm GD}\).
         </p>
 
@@ -1722,7 +1794,7 @@
       <section id="appendixF">
         <h2>Appendix F: Legend</h2>
         <p>
-          The symbols below follow the conventions established in Sections 1–4 and the supporting appendices.
+          The symbols below follow the conventions established throughout the paper and its appendices.
           Subscripts identify the frame, component, or limiting case to which a quantity belongs.
         </p>
 
@@ -1746,10 +1818,13 @@
           <dt>\(R\)</dt>
           <dd>Alice-centered radial label assigned to the probes at the horizon; it becomes the comoving radial coordinate in the resulting geometry.</dd>
 
+          <dt>\(\eta\)</dt>
+          <dd>Conformal time in the asymptotic de Sitter geometry of Appendix E.</dd>
+
           <dt>\(k,C\)</dt>
           <dd>The FLRW spatial-curvature parameter and its equivalent integration constant in Appendix A, related by \(C=-k\).</dd>
 
-          <dt>\(\theta,\phi,\Omega,d\Omega^2\)</dt>
+          <dt>\(\theta,\phi,d\Omega^2\)</dt>
           <dd>\(\theta\) and \(\phi\) are angular coordinates; \(d\Omega^2\) is their angular line element on a unit sphere.</dd>
 
           <dt>\(g_{\mu\nu}\)</dt>
@@ -1757,18 +1832,36 @@
 
           <dt>\(\mu,\nu\)</dt>
           <dd>Indices running over the spacetime coordinates.</dd>
+
+          <dt>\(\mathcal M_A,\mathcal M_B\)</dt>
+          <dd>Alice's interior spacetime and Bob's black-hole spacetime in Appendix C.</dd>
+
+          <dt>\(g_A,g_B\)</dt>
+          <dd>The metrics on Alice's and Bob's respective spacetime descriptions.</dd>
+
+          <dt>\(\mathcal D_{\rm GD}\)</dt>
+          <dd>The horizon map to be constructed between Bob's geometry and Alice's geometry.</dd>
+
+          <dt>\(X_0,\ldots,X_4\)</dt>
+          <dd>Coordinates of the 5-dimensional Minkowski embedding space used in Appendix E.</dd>
         </dl>
 
         <h3>Constants and gravitational quantities</h3>
         <dl>
           <dt>\(c\)</dt>
-          <dd>The speed of light, set to \(1\) throughout the paper.</dd>
+          <dd>The speed of light, set to \(1\) in the geometric derivations and restored in Section 7 and Appendix D.</dd>
 
           <dt>\(G\)</dt>
-          <dd>Newton's gravitational constant, set to \(1\) throughout the paper.</dd>
+          <dd>Newton's gravitational constant, set to \(1\) where stated and restored in the dimensional results.</dd>
 
           <dt>\(M\)</dt>
           <dd>The black-hole mass parameter, normalized by \(2M=1\).</dd>
+
+          <dt>\(M_H\)</dt>
+          <dd>The total critical mass-energy inside the present Hubble sphere.</dd>
+
+          <dt>\(M_\odot\)</dt>
+          <dd>One solar mass.</dd>
 
           <dt>\(G_{\mu\nu}\)</dt>
           <dd>The Einstein tensor.</dd>
@@ -1782,6 +1875,9 @@
           <dt>\(K\)</dt>
           <dd>The Kretschmann scalar \(R_{\alpha\beta\gamma\delta}R^{\alpha\beta\gamma\delta}\).</dd>
 
+          <dt>\(C_{\alpha\beta\gamma\delta}\)</dt>
+          <dd>The Weyl curvature tensor; it is distinct from the integration constant \(C\) in Appendix A.</dd>
+
           <dt>\(T_{\mu\nu}\)</dt>
           <dd>The stress-energy tensor.</dd>
 
@@ -1793,6 +1889,9 @@
         <dl>
           <dt>\(a(t),a(\tau)\)</dt>
           <dd>The scale factor. In Section 4, GD defines \(a(\tau)=1/r(\tau)\) and then identifies it with the FLRW scale factor.</dd>
+
+          <dt>\(a_0,\bar a\)</dt>
+          <dd>The value of \(a\) at the present epoch and the observationally normalized scale factor \(\bar a=a/a_0\), for which \(\bar a_0=1\).</dd>
 
           <dt>\(\dot a,\ddot a,\dot H\)</dt>
           <dd>An overdot denotes differentiation with respect to the time used in context.</dd>
@@ -1822,19 +1921,37 @@
           <dd>The radiation energy density at \(a=1\).</dd>
 
           <dt>\(\rho_\Lambda\)</dt>
-          <dd>Vacuum-energy density associated with \(\Lambda\), defined by \(\rho_\Lambda=\Lambda/(8\pi G)\).</dd>
+          <dd>Vacuum-energy density associated with \(\Lambda\): \(\rho_\Lambda=\Lambda/(8\pi G)\) for \(c=1\), or \(\rho_\Lambda=\Lambda c^2/(8\pi G)\) in SI mass-density units.</dd>
 
-          <dt>\(\rho_i,p_i,w_i\)</dt>
-          <dd>The density, pressure, and equation-of-state parameter of component \(i\), related by \(p_i=w_i\rho_i\).</dd>
+          <dt>\(\rho_c\)</dt>
+          <dd>The present critical density, \(\rho_c=3H_0^2/(8\pi G)\).</dd>
+
+          <dt>\(\rho_i,\rho_{i0},p_i,w_i\)</dt>
+          <dd>The density, reference density, pressure, and equation-of-state parameter of component \(i\), related by \(p_i=w_i\rho_i\).</dd>
 
           <dt>\(\rho_k,p_k\)</dt>
           <dd>The effective density and pressure used to represent spatial curvature, with \(p_k=-\rho_k/3\).</dd>
 
-          <dt>\(\Omega_m\)</dt>
-          <dd>The matter density parameter; the subscript \(m\) denotes “matter.”</dd>
+          <dt>\(\Omega_m,\Omega_r,\Omega_\Lambda\)</dt>
+          <dd>The present matter, radiation, and vacuum density parameters, defined as the corresponding densities divided by \(\rho_c\).</dd>
+        </dl>
 
-          <dt>\(\Omega_\Lambda\)</dt>
-          <dd>The vacuum-energy density parameter; the subscript \(\Lambda\) denotes the cosmological-constant component.</dd>
+        <h3>Observed horizon scales</h3>
+        <dl>
+          <dt>\(R_H\)</dt>
+          <dd>The present Hubble radius, \(R_H=c/H_0\).</dd>
+
+          <dt>\(R_\Lambda\)</dt>
+          <dd>The asymptotic de Sitter horizon and curvature radius, \(R_\Lambda=c/H_\Lambda=\sqrt{3/\Lambda}\).</dd>
+
+          <dt>\(R_p,R_e\)</dt>
+          <dd>The present particle horizon and cosmological event horizon, obtained by integrating the past and future expansion history.</dd>
+
+          <dt>\(\ell_P\)</dt>
+          <dd>The Planck length.</dd>
+
+          <dt>\(r_P,a_P\)</dt>
+          <dd>The Planck-to-de Sitter radius ratio \(r_P=\ell_P/R_\Lambda\) and its reciprocal \(a_P=1/r_P\).</dd>
         </dl>
 
         <h3>Alice's descent and flow functions</h3>
@@ -1849,7 +1966,7 @@
           <dd>Alice's elapsed proper time from the event horizon toward \(r=0\) in the proposed interior model.</dd>
 
           <dt>\(\tau_H\)</dt>
-          <dd>Alice's proper time at the horizon, where \(r=a=1\).</dd>
+          <dd>Alice's proper time at the event horizon, where the derivation normalizes \(r=a=1\).</dd>
 
           <dt>\(F(r)\)</dt>
           <dd>The positive inward flow introduced in Section 3 and defined by \(F(r)=-dr/d\tau\) in Section 4.</dd>
@@ -1861,9 +1978,6 @@
 
         <h3>Probe congruence</h3>
         <dl>
-          <dt>\(\delta R\)</dt>
-          <dd>A small, fixed comoving separation between Alice and a neighboring probe.</dd>
-
           <dt>\(\ell_\alpha\)</dt>
           <dd>The physical separation Alice measures to a probe.</dd>
 
@@ -1872,12 +1986,6 @@
 
           <dt>\(V_\alpha,V_H\)</dt>
           <dd>The volume Alice measures for the probe cloud and its value at the event horizon.</dd>
-
-          <dt>\(U^\mu\)</dt>
-          <dd>The four-velocity of Alice's comoving probe congruence.</dd>
-
-          <dt>\(\nabla_\mu\)</dt>
-          <dd>The spacetime covariant derivative.</dd>
 
           <dt>\(\Theta\)</dt>
           <dd>The expansion scalar of the probe congruence, equal to \(3H_{\rm A}\).</dd>
