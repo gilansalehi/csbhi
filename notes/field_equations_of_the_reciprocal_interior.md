@@ -14,7 +14,7 @@ The result is conditional but exact: Einstein's equations force Friedmann evolut
 
 ## 1. Independent inputs
 
-We work in units where \(c=1\), retain \(G\), and use metric signature \((-+++ )\). Let
+We work in units where \(c=1\), retain \(G\), and use metric signature \((-+++)\). Let
 
 \[
 r(\tau)>0
@@ -51,7 +51,7 @@ ds_A^2
 \tag{2}
 \]
 
-Equation (2) fixes the symmetry and spatial scale of Alice's geometry, but it leaves the function \(a(\tau)\) undetermined. Its FLRW form is kinematic. Einstein's equations determine its dynamics.
+Equation (2) fixes the symmetry and spatial scale of Alice's geometry, but it leaves the function \(a(\tau)\) undetermined. Its FLRW form is kinematic. Einstein's equations determine its dynamics [2–4, 6].
 
 For the curvature calculation, use local Cartesian spatial coordinates \(x^i\), so
 
@@ -124,7 +124,7 @@ p=\frac{1}{3}\rho_r-\rho_\Lambda.
 
 Here vacuum energy is included as a fluid with \(p_\Lambda=-\rho_\Lambda\), equivalent to moving \(\Lambda g_{\mu\nu}\) to the matter side of Einstein's equations.
 
-Substituting Equations (7)–(9) into
+Substituting Equations (7)–(9) into Einstein's field equations [1],
 
 \[
 G_{\mu\nu}=8\pi G T_{\mu\nu}
@@ -175,6 +175,8 @@ For non-interacting components with constant equations of state \(p_i=w_i\rho_i\
 \rho_i(a)=\rho_{i0}a^{-3(1+w_i)}.
 \tag{14}
 \]
+
+Here \(\rho_{i0}\) is the density of component \(i\) at the reference epoch \(a=1\).
 
 Therefore
 
@@ -317,7 +319,7 @@ K_{ij}K^{ij}=3H_A^2.
 \tag{23}
 \]
 
-The spatial curvature is \({}^{(3)}\mathcal R=0\). The ADM Hamiltonian constraint is
+The spatial curvature is \({}^{(3)}\mathcal R=0\). The ADM Hamiltonian constraint is [5]
 
 \[
 {}^{(3)}\mathcal R+K^2-K_{ij}K^{ij}=16\pi G\rho.
@@ -352,7 +354,7 @@ ds_A^2
 \tag{26}
 \]
 
-This is the Painlevé–Gullstrand form of flat FLRW, with spatial flow \(H_A\bar R\). The two flow functions share the same expansion rate,
+This is the Painlevé–Gullstrand form of flat FLRW [7], with spatial flow \(H_A\bar R\). The two flow functions share the same expansion rate,
 
 \[
 F_B(r)=H_A(r)r,
