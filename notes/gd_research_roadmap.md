@@ -42,7 +42,7 @@ The intrinsic FLRW identity \(\bar R=aR\) and the GD ansatz \(a=1/r\) relate dif
 
 ## GD1: the reciprocal interior
 
-[*Geometric Duality: Black Hole Interiors*](gd1.html) introduces \(a=1/r\) and follows its consequences inside Alice's proposed spatially flat geometry.
+[*Geometric Duality: Conformal Scaling of Black Hole Interiors*](gd1.html) introduces \(a=1/r\) and follows its consequences inside Alice's proposed spatially flat geometry.
 
 Its principal results are:
 
@@ -55,6 +55,8 @@ Its principal results are:
 - an exact de Sitter endpoint with PG flow \(F_{\rm dS}=H_\Lambda\bar R\).
 
 GD1 does not derive the horizon map connecting Bob's exterior to Alice's interior. The note [Constraints on the Horizon Map](note.html?src=constraints_on_the_horizon_map) states that problem explicitly.
+
+The companion note [*Field Equations of the Reciprocal Interior*](note.html?src=field_equations_of_the_reciprocal_interior) derives the Friedmann energy and acceleration equations directly from Alice's reciprocal metric, Einstein's equations, and stress-energy conservation, then translates them into Bob's infall function.
 
 ---
 
