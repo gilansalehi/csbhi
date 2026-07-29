@@ -33,7 +33,7 @@ article > section[id^="section"] {
 article > section[id^="section"] > h2::before {
     content: counter(paper-section) ".";
     margin-inline-end: 0.35em;
-    color: var(--muted);
+    color: currentColor;
     font-family: serif;
     font-size: 1em;
     font-variant-numeric: lining-nums;
