@@ -1721,8 +1721,7 @@
 
         <p>
           A useful exact check on the Alice geometry is that its late-time matter–radiation–Λ limit is de Sitter
-          spacetime, which
-          may be realized as a 4-dimensional hyperboloid embedded in 5-dimensional Minkowski space
+          spacetime, which may be realized as a 4-dimensional hyperboloid embedded in 5-dimensional Minkowski space
           <span class="ref">[<a href="#ref-33">33</a>, <a href="#ref-34">34</a>,
             <a href="#ref-42">42</a>]</span>. Concretely:
         </p>
@@ -1764,29 +1763,69 @@
           in its asymptotic pure-Λ limit.
         </p>
 
+        <h3>The 5D hyperboloid</h3>
         <p>
-          <strong>5D hyperboloid:</strong> That de Sitter geometry is isometric to the hyperboloid
+          Let \(R_\Lambda=\sqrt{3/\Lambda}=1/H_\Lambda\) in units where \(c=1\). De Sitter space is isometric to
           \[
           -X_{0}^{2}+X_{1}^{2}+X_{2}^{2}+X_{3}^{2}+X_{4}^{2}
-          = \frac{3}{\Lambda},
+          = R_\Lambda^2,
           \]
-          living in 5D Minkowski space with signature \((-++++\)). The flat FLRW coordinates above cover one patch of
-          this hyperboloid.
+          in 5-dimensional Minkowski space with signature \((-++++\)). Writing
+          \(\mathbf x=(x_1,x_2,x_3)\), the flat coordinates are embedded by
+          \[
+          \begin{aligned}
+          X_0
+          &=
+          R_\Lambda\sinh\!\left(\frac{\tau}{R_\Lambda}\right)
+          +\frac{e^{\tau/R_\Lambda}|\mathbf x|^2}{2R_\Lambda},
+          \\
+          X_i
+          &=
+          e^{\tau/R_\Lambda}x_i,
+          \qquad i=1,2,3,
+          \\
+          X_4
+          &=
+          R_\Lambda\cosh\!\left(\frac{\tau}{R_\Lambda}\right)
+          -\frac{e^{\tau/R_\Lambda}|\mathbf x|^2}{2R_\Lambda}.
+          \end{aligned}
+          \]
+          These coordinates satisfy the hyperboloid equation exactly and cover its expanding flat patch,
+          \(X_0+X_4>0\).
+        </p>
+
+        <h3>Expansion as a boost</h3>
+        <p>
+          A shift \(\tau\mapsto\tau+\Delta\tau\), accompanied by the comoving rescaling
+          \(\mathbf x\mapsto e^{-H_\Lambda\Delta\tau}\mathbf x\), acts on the embedding as a Lorentz boost in the
+          \((X_0,X_4)\) plane with rapidity
+          \[
+          H_\Lambda\Delta\tau
+          =
+          \sqrt{\frac{\Lambda}{3}}\,\Delta\tau.
+          \]
+          At the comoving origin, this is simply the hyperbolic motion
+          \(X_0=R_\Lambda\sinh(H_\Lambda\tau)\),
+          \(X_4=R_\Lambda\cosh(H_\Lambda\tau)\). Exponential expansion in the flat patch is therefore ordinary
+          hyperbolic rotation in the embedding space.
+        </p>
+
+        <h3>The bridge to the horizon map</h3>
+        <p>
+          The embedding establishes one side of the Geometric Duality construction exactly: Alice’s asymptotic
+          interior is a patch of a hyperboloid whose curvature radius obeys
+          \[
+          \Lambda=\frac{3}{R_\Lambda^2}.
+          \]
+          The next geometric step is to locate the parent black-hole horizon and the matching surface within a common
+          construction. In particular, the condition \(r=1\) has not yet been identified with a specific section of
+          the hyperboloid. Determining whether the de Sitter curvature scale, causal horizon, and matching surface are
+          distinct presentations of one throat structure is the bridge from this paper to the next.
         </p>
 
         <p>
-          <strong>What the embedding establishes:</strong>
-          The five-dimensional hyperboloid realizes the Alice metric exactly in the pure-Λ limit and identifies
-          \(R_\Lambda=\sqrt{3/\Lambda}\) as its curvature radius. It does not by itself embed a Schwarzschild exterior,
-          identify the black-hole horizon with a particular hyperboloid section, or derive the matter and radiation
-          contributions.
-          Those are additional requirements on the higher-dimensional version of \(\mathcal D_{\rm GD}\).
-        </p>
-
-        <p>
-          The embedding is therefore supporting structure rather than a completed junction. Its value is that one end
-          of the GD construction—the asymptotic Alice geometry—already has an exact and familiar
-          higher-dimensional realization.
+          In this 5-dimensional picture, the vacuum term is the curvature of Alice’s asymptotic hyperboloid. A horizon
+          map that fixes \(R_\Lambda\) from the parent geometry would therefore fix \(\Lambda\) geometrically as well.
         </p>
 
       </section>
