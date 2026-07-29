@@ -35,9 +35,8 @@ article > section[id^="section"] > h2::before {
     margin-inline-end: 0.35em;
     color: var(--muted);
     font-family: serif;
-    font-size: 3rem;
+    font-size: 1em;
     font-variant-numeric: lining-nums;
-    margin-left: -3.5rem;
 }
 
 article > section[id^="section"] > h3,
