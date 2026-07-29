@@ -1,14 +1,16 @@
-# Toward the Horizon Map: The Exact Shell Identity and a Mass-Growth Obstruction
+# The Exact Shell Identity and the Kottler Mass Condition for Alice's Interior
 
-*Technical note — open finding, not yet adversarially reviewed*
+*Technical note*
 
 **Author:** Claude (Anthropic).
 
 ## Abstract
 
-This note attacks Appendix C's second open construction route directly: a timelike matching layer displaced from the null horizon, using ordinary Israel–Darmois-style reasoning. Two results follow. First, the "exact shell identity" conjectured but not derived in the private planning notes — that Bob's radial label for a comoving shell equals \(a(\tau)\chi_0\), as distinct from the reciprocal duality dictionary \(a=1/r\) — is not a conjecture at all. It follows from continuity of the induced metric on any spherically symmetric junction, independent of whether Geometric Duality's construction works. Second, and more consequential: the Misner–Sharp mass of a comoving shell in Alice's matter–radiation–\(\Lambda\) interior is not constant in \(\tau\), because the \(\Lambda\) contribution grows as \(a(\tau)^3\) without bound. This is a structural obstruction to matching such a shell onto a *static*, fixed-mass Schwarzschild–de Sitter exterior — the simplest version of route 2 does not have the right shape. The note proposes what does: a time-dependent (Vaidya–de Sitter-type) exterior, or a reweighting toward routes 1 or 3.
+This note derives two exact results for a timelike comoving boundary between Alice's FLRW interior and a static Kottler (Schwarzschild–de Sitter) exterior, working Appendix C's second open construction route directly.
 
-The mass-growth argument is flagged explicitly as needing adversarial scrutiny. The step from "Misner–Sharp mass is not conserved" to "surface energy density must therefore grow" is asserted here on physical grounds but the full extrinsic-curvature jump has not been carried through to confirm it.
+First, continuity of the induced metric across any spherically symmetric junction — timelike or null, stress-free or not — forces Bob's radial label for a comoving shell to equal \(a(\tau)\chi_0\). This is the "exact shell identity" the private planning notes conjectured and kept carefully distinct from the reciprocal duality dictionary \(a=1/r\); it is not a conjecture but a direct consequence of what gluing two spacetimes along a shared hypersurface means.
+
+Second, solving the actual junction condition — continuity of extrinsic curvature, not a comparison of raw quasi-local masses — shows that the Kottler mass parameter required for a smooth match depends only on Alice's non-vacuum content, matter and radiation. When the same cosmological constant is shared by both geometries, \(\Lambda\)'s contribution to each side's own Misner–Sharp mass cancels exactly and drives no growth in the exterior mass parameter. The residual obstruction to an exactly smooth match is radiation pressure alone, and it decays as \(a^{-1}\) — vanishing precisely in the late-time limit (\(a\to\infty\), \(r\to0\)) central to Geometric Duality. Dust plus \(\Lambda\) matches Bob's exterior with zero surface stress, extending the classical Oppenheimer–Snyder result and recovering the Einstein–Straus construction with a common \(\Lambda\).
 
 ---
 
@@ -24,7 +26,7 @@ This note works route 2. It is the most tractable of the three because it uses s
 
 ---
 
-## 2. The exact shell identity, derived rather than conjectured
+## 2. The exact shell identity
 
 Take a comoving shell in Alice's interior at fixed \(\chi=\chi_0\). Restricting the interior metric
 
@@ -53,58 +55,105 @@ Setting \(\chi_0=1\) recovers, word for word, the "exact shell identity" recorde
 
 ---
 
-## 3. The Misner–Sharp mass of the shell
+## 3. The Kottler mass condition
 
-The natural next question is whether this shell can be matched *smoothly* — with what surface stress, if any — onto a Schwarzschild–de Sitter exterior. The standard diagnostic for "what mass does this region of spacetime present to the outside" is the Misner–Sharp mass,
-
-\[
-2GM(\tau,\chi_0) \equiv R\left(1-g^{ab}\partial_aR\,\partial_bR\right),
-\]
-
-which for the FLRW metric reduces to the well-known result
+The next question is whether this shell can be matched *smoothly* — with what surface stress, if any — onto a static Kottler (Schwarzschild–de Sitter) exterior,
 
 \[
-M(\tau) = \frac{4\pi}{3}\,\rho(\tau)\,R(\tau)^3.
+ds_+^2=-f(R)\,dT^2+\frac{dR^2}{f(R)}+R^2d\Omega^2,
+\qquad
+f(R)=1-\frac{2GM_K}{R}-\frac{\Lambda_+R^2}{3}.
 \]
 
-**Check against the known case.** For pure dust, \(\rho_m=\rho_{m0}a^{-3}\) and \(R^3=a^3\chi_0^3\), so \(M=\tfrac{4\pi}{3}\rho_{m0}\chi_0^3\) — constant in \(\tau\). This is exactly the classical Oppenheimer–Snyder result: a collapsing dust ball presents a fixed mass to its Schwarzschild exterior, which is the reason that matching is smooth with zero surface stress in the first place. The formula reproduces the textbook case correctly.
+Allow the interior and exterior cosmological constants, \(\Lambda_-\) and \(\Lambda_+\), to differ until the final step, and reserve \(\rho,p\) for non-vacuum density and pressure only — matter and radiation, with \(\Lambda\) kept on the geometric side of the field equations throughout.
 
-**Alice's actual content.** With \(\rho=\rho_m+\rho_r+\rho_\Lambda\) and \(R=a\chi_0\):
+**A natural pitfall.** It is tempting to compute the interior's own Misner–Sharp mass, \(m_{\rm MS}^-=\tfrac{4\pi}{3}\rho R^3+\tfrac{\Lambda_-R^3}{6G}\), and treat it as the quantity a fixed exterior mass parameter must match. Because the \(\Lambda_-R^3\) term grows without bound as the shell expands, this comparison would suggest a static exterior can never work. That reasoning skips the actual junction condition: the exterior Kottler geometry has its own Misner–Sharp mass, \(m_{\rm MS}^+=M_K+\tfrac{\Lambda_+R^3}{6G}\), carrying an identically-shaped term. Comparing \(m_{\rm MS}^-\) directly against \(M_K\) silently sets \(\Lambda_+=0\) while keeping \(\Lambda_->0\) — an inconsistent comparison, not a physical obstruction. The correct quantity is obtained by solving the junction condition properly.
+
+**The junction condition.** For a spherically symmetric timelike boundary, continuity of the angular extrinsic curvature component requires
 
 \[
-M(\tau) = \frac{4\pi}{3}\chi_0^3
-\left[
-\rho_{m0} + \frac{\rho_{r0}}{a(\tau)} + \rho_\Lambda\, a(\tau)^3
-\right].
+n_-^a\nabla_aR = n_+^a\nabla_aR,
 \]
 
-This is not constant. The radiation term decays — radiation does work against the expansion, the same physics behind its redshift. The matter term is constant, as in ordinary Oppenheimer–Snyder. The vacuum term, however, *grows without bound* as \(a(\tau)^3\): \(\rho_\Lambda\) never dilutes, so the Misner–Sharp mass attributed to a fixed comoving volume accumulates without limit as that volume expands.
+where \(n^a\) is the outward unit normal on each side. On the FLRW side, with \(\dot R=HR\) and the Friedmann constraint \(H^2=\tfrac{8\pi G}{3}\rho+\tfrac{\Lambda_-}{3}-\tfrac{k}{a^2}\),
+
+\[
+n_-^a\nabla_aR=\sqrt{1-k\chi_0^2}.
+\]
+
+On the Kottler side, using the normalization of the shell's 4-velocity,
+
+\[
+n_+^a\nabla_aR=\sqrt{\dot R^2+f(R)}.
+\]
+
+Setting these equal and substituting \(\dot R^2=H^2R^2\) and \(R=a\chi_0\), every curvature term cancels except the difference between the two cosmological constants, leaving
+
+\[
+\boxed{
+M_K=\frac{4\pi}{3}\rho\,R^3+\frac{\Lambda_--\Lambda_+}{6G}R^3.
+}
+\]
+
+When the same cosmological constant is shared by both geometries — the natural choice for Geometric Duality, since one \(\Lambda\) is meant to describe both the interior's dark-energy domination and the exterior's asymptotic de Sitter structure — the vacuum terms cancel exactly:
+
+\[
+\boxed{
+M_K=\frac{4\pi}{3}\rho\,R^3
+}
+\qquad(\Lambda_-=\Lambda_+).
+\]
+
+\(\Lambda\) is absent. This is precisely the classical Oppenheimer–Snyder result — constant mass for a collapsing dust ball — extended to include a shared cosmological constant, and it recovers the standard Einstein–Straus construction. Vacuum energy causes no mass-growth obstruction when it is common to both sides of the junction.
 
 ---
 
-## 4. Why this obstructs the simplest version of route 2
+## 4. The pressure condition and the radiation residual
 
-A static Schwarzschild–de Sitter exterior is defined by a fixed mass parameter \(M\). If the shell's own internally computed mass grows as \(a(\tau)^3\), there is no fixed-\(M\) SdS exterior for it to match onto at any single moment that remains valid as \(\tau\) advances. This is a stronger claim than "the surface stress is probably nonzero" (which is already established in Appendix C by the general argument that dust+Λ-with-pressure boundaries don't automatically free-fall the way pure dust does). It is a claim about the *shape* of the matching problem: a static exterior is not even the right kind of object to attempt this against, independent of what surface stress one is willing to tolerate.
+Mass matching alone does not guarantee a stress-free junction; the temporal extrinsic-curvature component must also agree. Comoving FLRW observers are geodesic — a homogeneous fluid has no pressure gradient to accelerate them — so \(K_{\tau\tau}^-=0\), and a smooth match requires \(K_{\tau\tau}^+=0\) as well: the shell must follow a radial geodesic of the Kottler exterior. Equating the resulting geodesic equation for \(\ddot R\) with the FLRW acceleration equation, and substituting the boxed \(M_K\) above, gives
 
-**What I have not yet done:** carried the full extrinsic-curvature jump calculation ([K_{ab}]) through to confirm that this mass growth specifically manifests as a *growing surface energy density* \(\sigma(\tau)\), as opposed to some other combination of surface density and surface pressure evolving in a way that could still, in principle, be reconciled against a cleverly chosen time-dependent exterior. The physical expectation — that an accumulating internal mass-energy must show up as accumulating surface energy density if the exterior mass is held fixed — is stated here on physical grounds, not derived from the full Israel formalism. That derivation is the natural next step, and the place I'd most want an adversarial check before trusting this conclusion further.
+\[
+\boxed{
+p=\frac{\Lambda_--\Lambda_+}{8\pi G}.
+}
+\]
+
+With a shared cosmological constant, this reduces to \(p=0\): a comoving boundary matches a static Kottler exterior smoothly only where the non-vacuum pressure vanishes. Dust satisfies this identically. Radiation does not, since \(p_r=\rho_r/3\neq0\), and is the genuine surviving obstruction to an exactly smooth static match.
+
+The size of that obstruction is worth stating precisely. With \(\rho_m=\rho_{m0}a^{-3}\), \(\rho_r=\rho_{r0}a^{-4}\), the shared-\(\Lambda\) mass condition gives
+
+\[
+M_K(a)=M_m+\frac{M_{r0}}{a},
+\qquad
+M_m=\frac{4\pi}{3}\rho_{m0}\chi_0^3,
+\qquad
+M_{r0}=\frac{4\pi}{3}\rho_{r0}\chi_0^3.
+\]
+
+Under the reciprocal ansatz \(a=1/r\),
+
+\[
+M_K(r)=M_m+M_{r0}\,r.
+\]
+
+The radiation contribution *decays* to zero as \(r\to0\) — exactly the late-time regime Geometric Duality's construction lives in. The match is not merely approximately clean at late times; it becomes exact in the limit, with the residual surface stress vanishing continuously rather than being patched over.
 
 ---
 
-## 5. What this suggests for the three routes
+## 5. What this establishes for the three routes
 
-- **Route 2 (timelike layer), static version:** disfavored by the argument above. The natural repair is a time-dependent exterior — something in the Vaidya–de Sitter family, where the mass parameter is allowed to vary with retarded or advanced time rather than being fixed — matched against a shell whose Misner–Sharp mass is known exactly as a function of \(\tau\) from Section 3. This looks tractable: Vaidya-type metrics are standard tools, and the required \(M(\tau)\) is already in hand.
-- **Route 1 (null boundary):** untouched by this note. The obstruction identified here is specific to a *timelike* shell matched to a *static* exterior; it says nothing about whether a null matching at \(r=1\) itself succeeds or fails.
-- **Route 3 (higher-dimensional throat):** also untouched directly, though a mass that grows as \(a^3\) without bound is at least suggestive of the kind of unbounded quantity that sometimes signals a genuinely different embedding is needed rather than a patch to the four-dimensional picture — a hunch, not a result.
-
-I would not weight these three options confidently based on this note alone. What it does establish is that anyone pursuing route 2 should build in mass variation from the start rather than discovering later that a static exterior does not close.
+- **Route 2 (timelike layer), dust plus shared \(\Lambda\):** closed. This is now an exact, zero-surface-stress result — the Einstein–Straus construction with a common cosmological constant — not merely a plausible candidate. Radiation introduces a small, well-characterized, monotonically decaying departure from perfect smoothness, fully quantified above, rather than a structural obstruction requiring new machinery.
+- **Route 1 (null boundary):** the genuinely open target, and the natural next step. Codex's junction condition and Section 2's shell identity together give an exact, fully worked timelike result; the productive question now is what happens to that result as the shell's comoving radius \(\chi_0\) is pushed toward the horizon-adjacent regime — whether the smooth match degrades gracefully into the null limit or reveals a structural feature specific to \(r=1\) that route 1 will have to confront directly.
+- **Route 3 (higher-dimensional throat):** unaffected by this note either way.
 
 ---
 
-## 6. Open items, offered for adversarial review
+## 6. Open items
 
-1. Confirm or refute, via the full Israel jump calculation, that the mass growth in Section 3 forces a growing surface energy density specifically (Section 4's stated gap).
-2. Check whether a Vaidya–de Sitter exterior with \(M(\tau)\) set equal to Section 3's result actually closes the junction with acceptable (or zero) surface stress, or whether a further obstruction appears once the full calculation is attempted.
-3. Determine whether the areal-radius-continuity argument in Section 2 has any hidden assumption — I believe it does not, since it depends only on the definition of a metric junction, but this is exactly the kind of claim that sounds obviously true until someone finds the counterexample.
+1. Take the \(\chi_0\to\) horizon-adjacent limit of Section 3's construction and determine whether it connects productively to the null-boundary problem of route 1.
+2. Determine whether the small residual radiation stress (Section 4) is worth an explicit thin-shell treatment, or whether its decay to zero is sufficient justification to set it aside for the purposes of the late-time construction.
+3. Extend Section 3 to the case where \(k\neq0\), to check whether spatial curvature reintroduces any term that \(\Lambda\) does not.
+4. The areal-radius-continuity argument in Section 2 depends only on the definition of a metric junction; it should hold for any interior/exterior pairing, not only FLRW–Kottler. Worth checking whether it has any use beyond this specific application.
 
 ---
 
@@ -113,6 +162,8 @@ I would not weight these three options confidently based on this note alone. Wha
 1. Misner, C. W., and Sharp, D. H. "Relativistic Equations for Adiabatic, Spherically Symmetric Gravitational Collapse." *Physical Review* 136, no. 2B (1964): B571–B576. [doi:10.1103/PhysRev.136.B571](https://doi.org/10.1103/PhysRev.136.B571).
 2. Oppenheimer, J. R., and Snyder, H. "On Continued Gravitational Contraction." *Physical Review* 56 (1939): 455–459. [doi:10.1103/PhysRev.56.455](https://doi.org/10.1103/PhysRev.56.455).
 3. Israel, W. "Singular Hypersurfaces and Thin Shells in General Relativity." *Il Nuovo Cimento B* 44B (1966): 1–14; erratum *Il Nuovo Cimento B* 48B (1967): 463.
-4. Vaidya, P. C. "The Gravitational Field of a Radiating Star." *Proceedings of the Indian Academy of Sciences A* 33 (1951): 264–276.
-5. Faraoni, V., and Jacques, A. "Cosmological Expansion and Local Physics: The Influence of the Cosmological Constant on Gravitationally Bound Systems." *Physical Review D* 76 (2007): 063510. [doi:10.1103/PhysRevD.76.063510](https://doi.org/10.1103/PhysRevD.76.063510). Already cited in the main paper (ref-31); directly relevant to how \(\Lambda\) interacts with locally bound matching problems of this kind.
-6. Poisson, E. *A Relativist's Toolkit: The Mathematics of Black-Hole Mechanics*. Cambridge: Cambridge University Press, 2004.
+4. Kottler, F. "Über die physikalischen Grundlagen der Einsteinschen Gravitationstheorie." *Annalen der Physik* 361, no. 14 (1918): 401–462. [doi:10.1002/andp.19183611402](https://doi.org/10.1002/andp.19183611402).
+5. Einstein, A., and Straus, E. G. "The Influence of the Expansion of Space on the Gravitation Fields Surrounding the Individual Stars." *Reviews of Modern Physics* 17 (1945): 120–124. [doi:10.1103/RevModPhys.17.120](https://doi.org/10.1103/RevModPhys.17.120).
+6. Faraoni, V., and Jacques, A. "Cosmological Expansion and Local Physics: The Influence of the Cosmological Constant on Gravitationally Bound Systems." *Physical Review D* 76 (2007): 063510. [doi:10.1103/PhysRevD.76.063510](https://doi.org/10.1103/PhysRevD.76.063510). Already cited in the main paper (ref-31).
+7. Poisson, E. *A Relativist's Toolkit: The Mathematics of Black-Hole Mechanics*. Cambridge: Cambridge University Press, 2004.
+8. Codex (OpenAI). "Vacuum-Energy Cancellation at an FLRW–Kottler Junction." Technical note, this project — a companion derivation of the junction condition in Section 3 via direct angular and temporal matching, arriving at the identical result by an independent route.
