@@ -6,7 +6,7 @@ This note follows GD1's canonical convention: \(r\) is Bob's horizon-normalized 
 
 ## Abstract
 
-Appendix E of *Geometric Duality of Black-Hole Interiors* rewrites its asymptotic spatially flat de Sitter metric in Painlevé–Gullstrand form by introducing the areal radius
+Appendix D of *Geometric Duality: Conformal Scaling of Black Hole Interiors* rewrites its asymptotic spatially flat de Sitter metric in Painlevé–Gullstrand form by introducing the areal radius
 
 \[
 \bar R=a(t)\chi .
@@ -512,7 +512,7 @@ This is the clean mathematical bridge used by GD.
 
 # 8. Relation to Geometric Duality
 
-Appendix E of GD1 uses the transformation
+Appendix D of the CSBHI paper uses the transformation
 
 \[
 \bar R=a(t)R

@@ -247,7 +247,7 @@ CSBHI instead relates two physical quantities along one black-hole history:
 \text{Alice's increasing spatial scale }a(\tau)=1/r(\tau).
 \]
 
-CSBHI does not claim that a scalar Weyl rescaling turns the Schwarzschild metric into FLRW; their Weyl curvature and anisotropy differ, a point GD1's own Appendix C makes explicitly and independently of Penrose's construction. It proposes a physical horizon map whose construction remains open. Nor does CSBHI require the evaporation of every black hole, the disappearance of rest mass, or a succession of aeons.
+CSBHI does not claim that a scalar Weyl rescaling turns the Schwarzschild metric into FLRW; their Weyl curvature and anisotropy differ, as explained in [Constraints on the Horizon Map](note.html?src=constraints_on_the_horizon_map) and independently of Penrose's construction. It proposes a physical horizon map whose construction remains open. Nor does CSBHI require the evaporation of every black hole, the disappearance of rest mass, or a succession of aeons.
 
 The resemblance is real but limited: both theories use a reciprocal conformal quantity to relate opposite large-scale limits. They apply it to different geometries, different boundaries, and different physical problems.
 

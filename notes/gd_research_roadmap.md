@@ -54,7 +54,7 @@ Its principal results are:
 - reciprocal relations among the observed horizon scales;
 - an exact de Sitter endpoint with PG flow \(F_{\rm dS}=H_\Lambda\bar R\).
 
-GD1 does not derive the horizon map connecting Bob's exterior to Alice's interior. Appendix C states that problem explicitly.
+GD1 does not derive the horizon map connecting Bob's exterior to Alice's interior. The note [Constraints on the Horizon Map](note.html?src=constraints_on_the_horizon_map) states that problem explicitly.
 
 ---
 
@@ -96,7 +96,7 @@ No stress-free timelike or null junction is assumed. GD2 must calculate the junc
 
 ---
 
-## Supporting Note III and GD3: throat dynamics
+## Supporting Note IV and GD3: throat dynamics
 
 [*The Self-Dual Homogeneous Derivation of the Square-Root Law*](note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law) shows that homogeneity, local/global exchange symmetry, and exact deep-regime scale invariance select
 
