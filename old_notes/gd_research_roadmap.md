@@ -1,5 +1,7 @@
 # Geometric Duality Research Roadmap
 
+> **Archived:** This drafting roadmap has been superseded by `notes/gd_research_roadmap.md` and the current GD1 paper. Its claims that a timelike matching shell is already established and its overloaded uses of \(r\) are not part of the current formulation.
+
 ## Purpose
 
 This roadmap records the current working structure of the Geometric Duality (GD) research program after completion of **GD1** and before drafting **GD2**.

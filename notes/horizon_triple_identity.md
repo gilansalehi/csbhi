@@ -1,142 +1,158 @@
-# GD Triple Identity and Strong Hypothesis
+# The Horizon Triple-Identity Hypothesis
 
 ## Purpose
 
-This note records the strongest conceptual formulation reached so far in the GD project.
+This note states the central question that follows from *Geometric Duality: Black Hole Interiors* (GD1): whether the de Sitter curvature scale, the causal horizon, and the still-unconstructed matching history arise from one underlying throat geometry.
 
-The central claim is no longer merely that several useful scales happen to coincide. The stronger thesis is that the project is uncovering one underlying throat structure that appears in different geometric guises.
-
----
-
-## 1. The triple identity
-
-The project now points toward a threefold identification:
+The proposed correspondence is
 
 \[
-L \;\leftrightarrow\; \mathcal H \;\leftrightarrow\; \Sigma
+L \;\leftrightarrow\; \mathcal H \;\leftrightarrow\; \Sigma,
 \]
 
-where:
+where
 
-- \(L\) is the **global curvature/throat scale** of de Sitter geometry,
-- \(\mathcal H\) is the **causal horizon** associated with that scale,
-- \(\Sigma\) is the **timelike matching shell** whose worldtube tracks that same distinguished scale through time.
+- \(L\) is the de Sitter curvature scale;
+- \(\mathcal H\) is a null, observer-causal horizon;
+- \(\Sigma\) denotes the candidate matching structure or history that a completed horizon map must derive.
 
-These are not literally identical as raw differential-geometric objects:
-
-- \(L\) is a scalar invariant,
-- \(\mathcal H\) is a null hypersurface,
-- \(\Sigma\) is a timelike hypersurface.
-
-But the stronger GD claim is that they are **different manifestations of one underlying throat structure**.
+These are different mathematical objects. The hypothesis is that a completed GD geometry may reveal them as different presentations of one horizon-centered structure.
 
 ---
 
-## 2. The shell is the history-bearing horizon seam
+## 1. What GD1 establishes
 
-A useful refinement emerged:
-
-- the horizon is the **null, observer-causal manifestation** of the scale,
-- the matching shell is the **timelike, history-bearing geometric manifestation** of the same scale.
-
-So the shell should not be treated as literally identical to the light cone or the null horizon. Instead, it is the timelike worldtube that tracks the same distinguished boundary scale through time.
-
-This gives a much cleaner interpretation of the shell:
-
-> the matching shell is the location-history of the distinguished cosmic-horizon scale in the GD construction.
-
----
-
-## 3. What the shell matches
-
-The matching shell \(\Sigma\) is the seam where GD glues together:
-
-- an **interior FLRW description**
-- and an **exterior Schwarzschild–de Sitter description**
-
-with the exact on-shell relation
+GD1 introduces Bob's horizon-normalized radius \(r\), Alice's scale factor \(a\), and the reciprocal ansatz
 
 \[
-R = 1, \qquad r = a(\tau).
+a(\tau)=\frac{1}{r(\tau)}.
 \]
 
-At the shell, the induced metric and extrinsic curvature match, so \(\Sigma\) is a genuine junction hypersurface rather than a merely heuristic boundary.
+Within Alice's proposed spatially flat geometry, the ansatz gives
 
-This means the shell is not just a convenient bookkeeping device. It is a geometrically privileged worldtube built into the construction.
+\[
+H_{\rm A}=\frac{\dot a}{a}=\frac{F(r)}{r}.
+\]
+
+It carries the matter-radiation-\(\Lambda\) Friedmann history into the infall function, makes the probe congruence expand isotropically, and places Bob's \(r=0\) endpoint at infinite Alice proper time with finite limiting curvature.
+
+In the pure-\(\Lambda\) limit, Alice's geometry is exactly the flat patch of de Sitter space. If \(R\) labels Alice's comoving radius and
+
+\[
+\bar R=a(\tau)R
+\]
+
+is her areal radius, then the embedded de Sitter geometry takes the PG form
+
+\[
+ds^2=-d\tau^2+
+\left(d\bar R-H_\Lambda\bar R\,d\tau\right)^2
++\bar R^2d\Omega^2.
+\]
+
+Thus the asymptotic PG flow is exact:
+
+\[
+F_{\rm dS}=H_\Lambda\bar R.
+\]
 
 ---
 
-## 4. Strong GD reading versus weak GD reading
+## 2. Two radii that must remain distinct
 
-Two levels of interpretation should be distinguished.
+The intrinsic FLRW identity
+
+\[
+\bar R=aR
+\]
+
+defines Alice's areal radius. On the comoving label \(R=1\), it reduces to \(\bar R=a\).
+
+This is not the GD reciprocal ansatz
+
+\[
+a=\frac1r,
+\]
+
+because \(\bar R\) and \(r\) belong to different descriptions. At the horizon GD1 normalizes \(r=a=1\); choosing the comoving label \(R=1\) also gives \(\bar R=1\) for that labeled sphere. This shared numerical value is a coordinate normalization, not a junction theorem. Deriving a relation between Bob's geometry and Alice's geometry is the horizon-map problem.
+
+---
+
+## 3. The three objects
+
+### Curvature scale \(L\)
+
+For pure de Sitter space,
+
+\[
+L=\sqrt{\frac{3}{\Lambda}}=\frac{c}{H_\Lambda}.
+\]
+
+This is an invariant curvature radius of the de Sitter hyperboloid.
+
+### Causal horizon \(\mathcal H\)
+
+\(\mathcal H\) is a null boundary of causal access. In pure de Sitter, every geodesic observer has a horizon whose radius equals \(L\). Equality of scale does not make a null horizon identical to a curvature scalar.
+
+### Candidate matching history \(\Sigma\)
+
+\(\Sigma\) is notation for the structure that would connect Bob's exterior to Alice's interior. Its character has not been fixed. It may emerge through a null junction, a timelike transition layer, or a common higher-dimensional throat.
+
+A timelike worldtube cannot literally be the null event horizon. If the completed construction contains both, their relationship must be derived rather than asserted.
+
+---
+
+## 4. Weak and strong readings
 
 ### Weak reading
 
-The conservative statement is that:
+The exact de Sitter result supplies a shared scale:
 
-- the de Sitter curvature radius,
-- the cosmological/observer horizon scale,
-- and the matching-shell radius
+\[
+R_{\mathcal H}=L
+\]
 
-all coincide in the symmetric limit.
-
-This is already interesting, but it treats the coincidence as structurally suggestive rather than ontologically decisive.
+in the maximally symmetric limit. A completed GD geometry may also select its matching structure using that same scale.
 
 ### Strong reading
 
-The stronger GD hypothesis is:
+The stronger hypothesis is:
 
-> the black-hole interior picture and the cosmological picture are not merely analogous or dual descriptions of different situations. They are different presentations of one underlying geometry, read through different foliations, matching structures, and causal standpoints.
+> Curvature, causal access, and the history connecting the interior and exterior are different manifestations of one throat geometry.
 
-On this reading, the coincidence of \(L\), \(\mathcal H\), and \(\Sigma\) is not an accident. It is the signature of an underlying throat identity.
-
----
-
-## 5. Relation to the Equivalence Principle
-
-The Equivalence Principle remains the seed intuition:
-
-- local inertial experience is primary,
-- free fall is locally Minkowskian,
-- horizon crossing is locally unremarkable.
-
-But the strong GD hypothesis goes beyond the ordinary local Equivalence Principle.
-
-It suggests a global extrapolation:
-
-> if local inertial experience is primary, then distinctions such as “black-hole interior” and “cosmic expansion” may be distinctions of foliation and causal standpoint rather than distinctions of ontology.
-
-This is not merely a small correction to GR. It is a recontextualization of what the GR geometry is saying.
+This is the theorem target of GD2, not a result already established by GD1.
 
 ---
 
-## 6. Why this sharpens the research goal
+## 5. What GD2 must determine
 
-This discussion clarifies that the project is not merely trying to prove that one formula gives another formula.
+GD2 must construct the horizon map
 
-The deeper theorem target is now:
+\[
+(\mathcal M_B,g_B,r)
+\xrightarrow{\;\mathcal D_{\rm GD}\;}
+(\mathcal M_A,g_A,\tau,a)
+\]
 
-> show that the curvature radius, the causal horizon, and the matching shell are different geometric presentations of one throat structure.
+and answer four questions:
 
-If that identity can be made precise, then the MOND-like throat-curvature law becomes a downstream dynamical consequence rather than an isolated dimensional coincidence.
+1. What geometric structure connects the Schwarzschild or Kottler exterior to Alice's conformally flat interior?
+2. Is the connection null, timelike, higher-dimensional, or some combination of these descriptions?
+3. What stress-energy or junction data does it require?
+4. Does the completed construction fix \(L\), \(\mathcal H\), and \(\Sigma\) from one parent-horizon scale?
+
+Only then can the triple identity advance from organizing hypothesis to geometric result.
 
 ---
 
-## 7. Provisional strongest formulation
+## 6. Why the hypothesis matters
 
-A strong working statement of the GD hypothesis is:
+If the construction succeeds, several parts of the GD programme acquire one source:
 
-> If the universe is the interior of a black-hole-like geometry, then the cosmic horizon, the observer horizon, the de Sitter throat scale, and the matching shell are not independent ingredients. They are different presentations of one underlying throat structure: causal when read through null access, geometric when read through curvature, and timelike when read as the evolving junction seam.
+- \(\Lambda\) becomes the curvature of the asymptotic throat geometry;
+- the causal horizon becomes its null-access face;
+- the matching history becomes its dynamical connection between parent and child descriptions;
+- horizon thermodynamics becomes its macroscopic accounting;
+- the scale \(cH\) becomes the global input for the galaxy-dynamics question developed in GD3.
 
-This is the bold version of the theory.
-
----
-
-## 8. Consequence for project framing
-
-The project should now be framed not as a meek amendment to GR, but as a strong reinterpretation of GR’s own geometric content.
-
-The thesis is not that GR needs an extra ad hoc ingredient. It is that GR, read through the equivalence principle, horizon structure, and de Sitter embedding, may already be pointing toward a unified black-hole/cosmological throat geometry.
-
-That is why this formulation feels more crystallizing than earlier versions: it says what the theory is really claiming.
-
+The triple identity is therefore the bridge between GD1's reciprocal interior and the later dynamical papers. It is also the place where the programme can fail cleanly: the proposed common geometry must actually be constructed.

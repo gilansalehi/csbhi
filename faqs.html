@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" id="project-root">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Frequently asked questions about the Geometric Duality research programme.">
+  <meta name="dcterms.modified" content="2026-07-28">
+  <meta name="project" content="Conformal Scaling of Black Hole Interiors">
+  <meta name="programme" content="Geometric Duality">
+  <meta name="scope" content="Frequently asked questions">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/faqs.html">
+  <title>Frequently Asked Questions | CSBHI</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#faq-title">Skip to questions</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article aria-labelledby="faq-title">
+      <h1 id="faq-title">Frequently Asked Questions</h1>
+      <p>
+        These answers distinguish results established within the GD1 model from the horizon-map questions reserved
+        for later papers.
+      </p>
+
+      <nav id="table-of-contents" aria-labelledby="toc-title">
+        <h2>Questions</h2>
+        <details open>
+          <summary id="toc-title">Contents</summary>
+          <ol>
+            <li><a href="#infall-and-expansion">How does Alice’s infall become isotropic expansion?</a></li>
+            <li><a href="#two-radius-relations">Are \(a=1/r\) and \(\bar R=aR\) the same equation?</a></li>
+            <li><a href="#coordinate-transformation">Is GD merely a coordinate transformation?</a></li>
+            <li><a href="#horizon-map">Has the exterior-to-interior horizon map been derived?</a></li>
+            <li><a href="#de-sitter-embedding">Does the 5D de Sitter embedding prove the complete theory?</a></li>
+            <li><a href="#flrw-assumption">Does GD assume FLRW expansion and then rediscover it?</a></li>
+            <li><a href="#prior-cosmologies">How does GD relate to earlier black-hole cosmologies and to ’t Hooft?</a></li>
+          </ol>
+        </details>
+      </nav>
+
+      <section id="infall-and-expansion">
+        <details open>
+          <summary>How does Alice’s infall become isotropic cosmological expansion?</summary>
+          <p>
+            Bob assigns Alice a decreasing, horizon-normalized radius \(r(\tau)\). GD sets Alice's spatial scale to
+            \(a(\tau)=1/r(\tau)\), so \(H_{\rm A}=\dot a/a=F(r)/r\). Applied equally in every spatial direction, this
+            scale makes the probe cloud expand with \(\Theta=3H_{\rm A}\), zero shear, and zero vorticity. Alice and
+            Bob both remain future-directed; the opposite signs come from differentiating the reciprocal.
+          </p>
+          <p><a href="gd1.html#section4">Read the calculation in GD1.</a></p>
+        </details>
+      </section>
+
+      <section id="two-radius-relations">
+        <details>
+          <summary>Is \(a=1/r\) the same equation as \(\bar R=aR\)?</summary>
+          <p>
+            No. The equation \(\bar R=aR\) defines Alice's areal radius from her scale factor and comoving radial
+            label. The ansatz \(a=1/r\) relates Alice's scale to the radius Bob assigns to her infall. At the horizon
+            GD1 normalizes \(r=a=1\); choosing the comoving label \(R=1\) also gives \(\bar R=1\) for that labeled
+            sphere. This shared value is a coordinate normalization, not a proof that the two radii are one
+            coordinate.
+          </p>
+        </details>
+      </section>
+
+      <section id="coordinate-transformation">
+        <details>
+          <summary>Is Geometric Duality merely a coordinate transformation?</summary>
+          <p>
+            No. Vacuum Schwarzschild has anisotropic interior evolution and nonzero Weyl curvature, while Alice's
+            FLRW interior is isotropic and conformally flat. No coordinate change followed by an ordinary scalar
+            conformal rescaling can erase that difference. GD proposes a map between two geometries; deriving that
+            map is the next construction problem.
+          </p>
+          <p><a href="gd1.html#appendixC">See Appendix C: Status of the Horizon Map.</a></p>
+        </details>
+      </section>
+
+      <section id="horizon-map">
+        <details>
+          <summary>Has the exterior-to-interior horizon map been derived?</summary>
+          <p>
+            Not yet. GD1 constructs Alice's reciprocal interior and its de Sitter endpoint. GD2 must determine whether
+            a null junction, a timelike transition layer, or a common higher-dimensional throat connects it to Bob's
+            exterior, and what stress-energy that construction requires.
+          </p>
+          <p><a href="note.html?src=gd2_horizon_triple_identity_outline">Read the GD2 construction outline.</a></p>
+        </details>
+      </section>
+
+      <section id="de-sitter-embedding">
+        <details>
+          <summary>Does the 5D de Sitter embedding prove the complete theory?</summary>
+          <p>
+            It proves a narrower exact result. In the pure-Λ limit, the standard 4D de Sitter hyperboloid produces
+            the flat FLRW patch and its areal-radius PG flow \(F_{\rm dS}=H_\Lambda\bar R\). The embedding does not yet
+            produce the full matter–radiation history or the parent-child horizon map.
+          </p>
+          <p><a href="note.html?src=pg_flow_from_5d_desitter_embedding">Read the de Sitter embedding note.</a></p>
+        </details>
+      </section>
+
+      <section id="flrw-assumption">
+        <details>
+          <summary>Does GD assume FLRW expansion and then rediscover it?</summary>
+          <p>
+            GD does not claim to derive the Friedmann equations from vacuum Schwarzschild. It introduces the
+            reciprocal spatial scale \(a=1/r\), applies it to Alice's probe cloud, and asks whether the established
+            matter–radiation–Λ dynamics survive the map. They do: every component retains its characteristic power,
+            and the same expansion history becomes an infall function. Deriving the reciprocal relation from a common
+            geometry remains the task of GD2.
+          </p>
+        </details>
+      </section>
+
+      <section id="prior-cosmologies">
+        <details>
+          <summary>How does GD relate to earlier black-hole cosmologies and to ’t Hooft?</summary>
+          <p>
+            Earlier programmes explored closed universes inside horizons, de Sitter cores, child-universe generation,
+            and torsion-driven bounces. ’t Hooft's complementarity and conformal scale arguments are especially close
+            to GD's observer-based intuition, although his aim is quantum black-hole information rather than
+            cosmological background geometry.
+          </p>
+          <p><a href="note.html?src=black_hole_cosmology_lineage">Read the lineage and comparison note.</a></p>
+        </details>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+  </main>
+</body>
+
+</html>

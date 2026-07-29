@@ -2,9 +2,9 @@
 
 ## Abstract
 
-This paper is the dynamical payoff of the Geometric Duality program. GD1 establishes the black-hole/cosmology bridge by rewriting flat FLRW in Painleve-Gullstrand form. GD2 develops the Horizon Triple Identity, treating the de Sitter curvature scale \(L\), the causal horizon \(\mathcal H\), and the matching shell \(\Sigma\) as different presentations of one throat structure.
+This paper is the proposed dynamical payoff of the Geometric Duality programme. GD1 introduces the reciprocal black-hole/cosmology map and identifies its exact de Sitter endpoint. GD2 tests the Horizon Triple Identity by attempting to derive the de Sitter curvature scale \(L\), the causal horizon \(\mathcal H\), and a matching history \(\Sigma\) from one throat geometry.
 
-GD3 asks whether this same throat geometry explains the galaxy acceleration problem. The target is the MOND/BTFR-like scaling
+If that construction succeeds, GD3 asks whether the same throat geometry explains the galaxy acceleration problem. The target is the MOND/BTFR-like scaling
 
 \[
 g_{\rm mix}\sim\sqrt{g_N cH},

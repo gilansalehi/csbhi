@@ -2,6 +2,8 @@
 
 ## A technical note on the geometric-duality map
 
+> **Notation:** This note predates GD1's final convention. Its \(u=\rho_B/\rho_H\) is the quantity now called Bob's horizon-normalized \(r\); \(a_A\) is now \(a\); \(\chi\) is now \(R\); and \(\mathcal R_A\) is now \(\bar R\). The underlying calculation is unchanged.
+
 ## Abstract
 
 This note gives a precise mathematical realization of the central kinematic claim in Geometric Duality (GD): a future-directed infall variable that decreases toward zero can serve as an interior time coordinate, while its reciprocal becomes an isotropic cosmological scale factor.

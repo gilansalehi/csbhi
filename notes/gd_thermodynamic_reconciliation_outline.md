@@ -76,14 +76,14 @@ In this framing, entropy arguments are not discarded. They become macroscopic sh
 
 Padmanabhan's work emphasizes horizon degrees of freedom, holographic equipartition, and the emergence of cosmic space.
 
-GD can reinterpret these ideas through the matching shell:
+GD can reinterpret these ideas through the proposed horizon map:
 
-- \(\Sigma\) is the history-bearing geometric seam;
+- \(\Sigma\) is the candidate history-bearing structure that GD2 must derive;
 - \(\mathcal H\) is the causal/informational boundary;
 - \(L\) is the curvature scale;
-- thermodynamic quantities may describe the coarse-grained accounting of this same structure.
+- thermodynamic quantities may describe the coarse-grained accounting of the completed throat geometry.
 
-This suggests that the thermodynamic and geometric languages may be complementary descriptions of the same throat.
+If GD2 constructs that map, the thermodynamic and geometric languages may become complementary descriptions of the same throat.
 
 ---
 
@@ -113,13 +113,13 @@ The GD answer should be:
 
 ## 7. Thermodynamic Face of the Triple Identity
 
-GD2 centers the triple identity:
+GD2 tests the triple identity:
 
 \[
 L \leftrightarrow \mathcal H \leftrightarrow \Sigma.
 \]
 
-A thermodynamic synthesis would add a fourth face:
+If the geometric identity is established, a thermodynamic synthesis would add a fourth face:
 
 \[
 L \leftrightarrow \mathcal H \leftrightarrow \Sigma \leftrightarrow S_H,
@@ -136,7 +136,7 @@ This should be treated carefully. The claim is not that all four objects are lit
 1. Why does the de Sitter horizon appear in galaxy-scale arguments?
 2. Why does \(a_0\sim cH\) appear in MOND phenomenology?
 3. Why do thermodynamic derivations of gravity so often involve horizons?
-4. What does the matching shell add that previous thermodynamic approaches lacked?
+4. What does the completed horizon map add that previous thermodynamic approaches lacked?
 5. Can horizon entropy be reinterpreted as the coarse-grained face of GD throat geometry?
 6. Does GD recover the successes of emergent-gravity reasoning without relying on entropy as the fundamental cause?
 
@@ -162,7 +162,7 @@ Its job is reconciliation and synthesis.
 
 A mature version of the paper could state:
 
-> We propose that several apparently distinct lines of thought in modern gravitational physics — MOND phenomenology, radial acceleration scaling, de Sitter horizon thermodynamics, emergent gravity, and black-hole/cosmology duality — are partial manifestations of a single underlying geometric regime. In this regime, the observable universe is naturally described as a throat-centered spacetime whose PG flow, de Sitter embedding, and horizon structure together provide the missing bridge between local baryonic gravity and cosmological curvature.
+> We propose that several apparently distinct lines of thought in modern gravitational physics — MOND phenomenology, radial acceleration scaling, de Sitter horizon thermodynamics, emergent gravity, and black-hole/cosmology duality — may be partial manifestations of a single geometric regime. The proposed bridge is a throat-centered spacetime whose PG flow and de Sitter embedding are exact in the symmetric limit, and whose complete horizon map would connect local baryonic gravity to cosmological curvature.
 
 ---
 

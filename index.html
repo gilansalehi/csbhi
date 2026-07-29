@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Project overview for the Geometric Duality research programme.">
-  <meta name="dcterms.modified" content="2026-07-27">
+  <meta name="dcterms.modified" content="2026-07-28">
   <meta name="project" content="Conformal Scaling of Black Hole Interiors">
   <meta name="programme" content="Geometric Duality">
   <meta name="scope" content="Landing page, publication roadmap, and open-problem scoreboard">
@@ -74,7 +74,7 @@
         <ol>
           <li><a href="#roadmap">Publications</a></li>
           <li><a href="#open-problems">Progress & Open Problems</a></li>
-          <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+          <li><a href="#faqs">Frequently Asked Questions</a></li>
           <li><a href="#prior-art">Prior Art & Supporting Literature</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ol>
@@ -95,8 +95,8 @@
             <div>
               <h3><a href="gd1.html">Geometric Duality of Black-Hole Interiors</a></h3>
               <p>
-                The entry paper. Rewrites flat FLRW in Painlevé–Gullstrand form, introduces the Alice/Bob
-                horizon interpretation, and frames the universe as the interior of a black-hole-like geometry.
+                The entry paper. Introduces the reciprocal map between Bob's infall coordinate and Alice's spatial
+                scale, derives its matter–radiation–Λ consequences, and identifies its exact de Sitter endpoint.
               </p>
               <p>pre-print available</p>
             </div>
@@ -111,11 +111,11 @@
                 </a>
               </h3>
               <p>
-                Shows how the Painlevé–Gullstrand flow \(F=Hr\) arises from the 5D embedding of 4D de Sitter
+                Shows how the Painlevé–Gullstrand flow \(F_{\rm dS}=H_\Lambda\bar R\) arises from the 5D embedding of 4D de Sitter
                 spacetime, and clarifies the relation between FLRW slicing, PG coordinates, and the de Sitter
                 curvature scale \(L=\sqrt{3/\Lambda}\).
               </p>
-              <p>outline</p>
+              <p>technical note</p>
             </div>
           </li>
 
@@ -129,10 +129,10 @@
               </h3>
               <p>
                 States the central pre-GD2 clarification: the de Sitter curvature scale \(L\), the causal horizon
-                \(\mathcal H\), and the timelike matching shell \(\Sigma\) are not the same mathematical object,
-                but may be different presentations of one underlying throat structure.
+                \(\mathcal H\), and a candidate matching history \(\Sigma\) are different mathematical objects that
+                may emerge as three presentations of one throat structure.
               </p>
-              <p>outline</p>
+              <p>concept note</p>
             </div>
           </li>
 
@@ -145,9 +145,9 @@
                 </a>
               </h3>
               <p>
-                The geometric completion paper. Synthesizes the causal Alice/Bob track with the exact
-                FLRW-to-PG and de Sitter-embedding track, then develops the hypothesis that \(L\),
-                \(\mathcal H\), and \(\Sigma\) are three faces of a single throat geometry.
+                The geometric completion paper. Attempts to construct the horizon map between Bob's exterior and
+                Alice's interior, then tests whether \(L\), \(\mathcal H\), and \(\Sigma\) arise from one throat
+                geometry.
               </p>
               <p>outline</p>
             </div>
@@ -209,6 +209,9 @@
 
     <section id="open-problems">
       <h2>Progress & Open Problems</h2>
+      <p>
+        <a href="note.html?src=gd_research_roadmap">Read the current research roadmap and notation conventions.</a>
+      </p>
       <details open>
         <summary>
           A table of open problems in ΛCDM Cosmology, and new perspectives offered by Geometric Duality.
@@ -253,8 +256,8 @@
               </td>
               <td>
                 <span class="status" data-status="addressed">✓ GD1</span>
-                <a href="gd1.html#appendixC">Λ estimate</a>
-                <a href="gd1.html#appendixD">de Sitter embedding</a>
+                <a href="gd1.html#appendixD">Λ estimate</a>
+                <a href="gd1.html#appendixE">de Sitter embedding</a>
                 <a href="note.html?src=pg_flow_from_5d_desitter_embedding">Note I</a>
               </td>
             </tr>
@@ -267,7 +270,7 @@
               </td>
               <td>
                 The apparent coincidence is reframed as a geometric relation between the observer, the distinguished
-                horizon scale, and the matching shell.
+                horizon scale, and the matching history sought in GD2.
               </td>
               <td>
                 <span class="status" data-status="addressed">✓ GD1</span>
@@ -515,24 +518,9 @@
       </details>
     </section>
 
-    <section id="frequently-asked-questions" aria-labelledby="faq-title">
-      <h2 id="faq-title">Frequently Asked Questions</h2>
-
-      <details open>
-        <summary>How does Alice’s infall become isotropic cosmological expansion?</summary>
-        <p>
-          It is not a time reversal of Alice’s worldline. Geometric Duality identifies Bob’s decreasing,
-          horizon-normalized areal-radius label &#92;(u=\rho_B/\rho_H&#92;) with an interior time variable and assigns
-          Alice the reciprocal spatial scale factor &#92;(a_A=1/u&#92;). In the resulting Alice-frame geometry, a
-          freely falling, initially comoving probe congruence has proper separations proportional to &#92;(1/u&#92;),
-          expansion &#92;(\Theta=3H_A&#92;), and zero shear.
-        </p>
-        <p>
-          <a href="note.html?src=gd_inverse_radius_probe_congruence">
-            Read the calculation: The Inverse-Radius Interior and Alice’s Probe Congruence
-          </a>
-        </p>
-      </details>
+    <section id="faqs">
+      <h2>Frequently Asked Questions</h2>
+      <p><a href="faqs.html">Read the CSBHI FAQs.</a></p>
     </section>
 
     <section id="prior-art">
@@ -586,6 +574,9 @@
         </ol>
 
         <h3>Painlevé–Gullstrand Cosmology, Embedded Black Holes, and Black-Hole Cosmology</h3>
+        <p>
+          <a href="note.html?src=black_hole_cosmology_lineage">Read the annotated black-hole cosmology lineage and GD comparison.</a>
+        </p>
         <ol start="15">
           <li>Rudeep Gaur, Matt Visser. Cosmology in Painleve-Gullstrand coordinates. <a
               href="https://arxiv.org/abs/2207.08375">arXiv:2207.08375</a>. 2022.</li>
