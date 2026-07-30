@@ -29,6 +29,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - AI VII, Horizon-Crossing History and Future Causal Patches: AI VI and Note II.
 - AI VIII, Null-Horizon Matching of the Reciprocal Interior: AI III.
 - AI IX, Recursive Kottler Horizons and the Galaxy Acceleration Scale: AI VIII.
+- AI X, Dynamic Throat Kinematics and the Cosmological Clock: AI VIII.
 
 ## Project pages
 
@@ -48,6 +49,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - [Horizon-Crossing History and Future Causal Patches](https://www.gilansalehi.com/csbhi/notes/horizon_crossing_history_and_future_patches.md), by Codex (OpenAI): Proposes a map from ordered horizon-crossing history to interior comoving separation and derives its causal-contact and de Sitter limits.
 - [Null-Horizon Matching of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/null_horizon_matching_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the Schwarzschild-radius/Hubble-radius identity from the first null junction condition and computes the transverse-curvature mismatch for direct Schwarzschild–de Sitter solderings.
 - [Recursive Kottler Horizons and the Galaxy Acceleration Scale](https://www.gilansalehi.com/csbhi/notes/recursive_kottler_horizons_and_the_galaxy_scale.md), by Codex (OpenAI): Derives a conditional parent–child cosmological-constant relation in the minimal recursive Kottler model and compares its horizon surface gravity with the empirical galaxy acceleration scale.
+- [Dynamic Throat Kinematics and the Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/dynamic_throat_kinematics_and_the_cosmological_clock.md), by Codex (OpenAI): Derives the moving-null-boundary expansion identities, reconstructs the boundary history required by the observed cosmological epochs, and identifies present-day targets for a parent horizon-growth calculation.
 
 ## Supporting derivations and planned notes
 

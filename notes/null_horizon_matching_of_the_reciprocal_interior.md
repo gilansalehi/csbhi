@@ -351,7 +351,7 @@ Consequently,
 
 \[
 \boxed{
-[\mathcal C_{vv}]=-rac{1}{2R_S},
+[\mathcal C_{vv}]=-\frac{1}{2R_S},
 \qquad
 [\mathcal C_{\theta\theta}]=-2R_S
 }.
