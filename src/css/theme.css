@@ -23,6 +23,7 @@
   --status-target: #1f6feb;
   --status-planned: #8a5a00;
   --status-future: #7a4db3;
+  --danger: #cf222e;
 }
 
 [data-theme="dark"] {
@@ -41,6 +42,7 @@
   --status-target: #79c0ff;
   --status-planned: #e3b341;
   --status-future: #d2a8ff;
+  --danger: #ff7b72;
 }
 
 [data-measure="lg"] {

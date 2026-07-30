@@ -8,6 +8,26 @@ The public site is static. Its main pages contain their substantive text directl
 
 - [Geometric Duality: Conformal Scaling of Black Hole Interiors](https://www.gilansalehi.com/csbhi/gd1.html): The principal CSBHI preprint by Gilan Salehi. Introduces the reciprocal ansatz, relates inward flow to expansion, discusses singularity deferral, and compares the construction with cosmological observables.
 
+## Prerequisite graph
+
+Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
+
+- GD1: start here.
+- Note I, Painleve-Gullstrand Flow from the 5D de Sitter Embedding: GD1.
+- Note II, The Horizon Triple Identity: Note I.
+- GD II outline: Note II.
+- Note III, Constraints on the Horizon Map: GD1.
+- Note IV, Self-Dual Homogeneous Derivation of the Square-Root Law: Note II.
+- GD III outline: GD II and Note IV.
+- Horizon Thermodynamics outline: GD III.
+- AI I, Field Equations of the Reciprocal Interior: GD1.
+- AI II, Independent Verification: AI I.
+- AI III, Horizon Flow and Density Identity: AI I.
+- AI IV, Exact Shell Identity and Kottler Mass Condition: AI I.
+- AI V, Vacuum-Energy Cancellation at an FLRW-Kottler Junction: AI I.
+- AI VI, Null Optics of the Reciprocal Interior: AI I and Note III.
+- AI VII, Horizon-Crossing History and Future Causal Patches: AI VI and Note II.
+
 ## Project pages
 
 - [CSBHI project overview](https://www.gilansalehi.com/csbhi/): Publication map, progress, open problems, and further reading.
