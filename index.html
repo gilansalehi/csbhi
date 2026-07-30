@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Project overview for the Geometric Duality research programme.">
-  <meta name="dcterms.modified" content="2026-07-29">
+  <meta name="dcterms.modified" content="2026-07-30">
   <meta name="project" content="Conformal Scaling of Black Hole Interiors">
   <meta name="programme" content="Geometric Duality">
   <meta name="scope" content="Landing page, publication roadmap, and open-problem scoreboard">
@@ -78,6 +78,7 @@
         </summary>
         <ol>
           <li><a href="#roadmap">Publications</a></li>
+          <li><a href="#ai-notes">AI Technical Notes</a></li>
           <li><a href="#open-problems">Progress & Open Problems</a></li>
           <li><a href="#faqs">Frequently Asked Questions</a></li>
           <li><a href="#prior-art">Prior Art & Supporting Literature</a></li>
@@ -108,22 +109,6 @@
           </li>
 
           <li>
-            <div>Companion</div>
-            <div>
-              <h3>
-                <a href="note.html?src=field_equations_of_the_reciprocal_interior">
-                  Field Equations of the Reciprocal Interior
-                </a>
-              </h3>
-              <p>
-                Derives the matter–radiation–Λ Friedmann equations from Alice's reciprocal metric, Einstein's field
-                equations, and stress-energy conservation before translating the result into Bob's infall function.
-              </p>
-              <p>technical note</p>
-            </div>
-          </li>
-
-          <li>
             <div>Note I</div>
             <div>
               <h3>
@@ -132,11 +117,11 @@
                 </a>
               </h3>
               <p>
-                Shows how the Painlevé–Gullstrand flow \(F_{\rm dS}=H_\Lambda\bar R\) arises from the 5D embedding of 4D de Sitter
-                spacetime, and clarifies the relation between FLRW slicing, PG coordinates, and the de Sitter
-                curvature scale \(L=\sqrt{3/\Lambda}\).
+                Shows how the Painlevé–Gullstrand flow \(F_{\rm dS}=H_\Lambda\bar R\) arises from the 5D embedding of
+                4D de Sitter spacetime, and clarifies the relation between FLRW slicing, PG coordinates, and the de
+                Sitter curvature scale \(L=\sqrt{3/\Lambda}\).
               </p>
-              <p>technical note</p>
+              <p>draft note</p>
             </div>
           </li>
 
@@ -153,7 +138,7 @@
                 \(\mathcal H\), and a candidate matching history \(\Sigma\) are different mathematical objects that
                 may emerge as three presentations of one throat structure.
               </p>
-              <p>concept note</p>
+              <p>draft concept note</p>
             </div>
           </li>
 
@@ -170,7 +155,7 @@
                 Alice's interior, then tests whether \(L\), \(\mathcal H\), and \(\Sigma\) arise from one throat
                 geometry.
               </p>
-              <p>outline</p>
+              <p>working outline</p>
             </div>
           </li>
 
@@ -187,7 +172,7 @@
                 scalar conformal transformation is insufficient, and identifies the geometric data a complete map
                 must supply.
               </p>
-              <p>research note</p>
+              <p>draft research note</p>
             </div>
           </li>
 
@@ -204,7 +189,7 @@
                 local Newtonian acceleration \(g_N\) and the global throat scale \(cH\) naturally selects
                 \(g_{\rm mix}\sim\sqrt{g_NcH}\).
               </p>
-              <p>outline</p>
+              <p>draft note</p>
             </div>
           </li>
 
@@ -221,7 +206,7 @@
                 and the global horizon scale mix through the throat geometry, producing a MOND/BTFR-like relation
                 \(g\sim\sqrt{g_NcH}\) and \(v^4\sim GMcH\).
               </p>
-              <p>outline</p>
+              <p>working outline</p>
             </div>
           </li>
 
@@ -238,9 +223,138 @@
                 and the work of Verlinde, Padmanabhan, Milgrom, and McGaugh. The goal is to show how these
                 approaches may be partial views of the same throat-centered geometry.
               </p>
-              <p>planned</p>
+              <p>planned outline</p>
             </div>
           </li>
+        </ol>
+      </details>
+    </section>
+
+    <section id="ai-notes" aria-labelledby="ai-notes-title">
+      <h2 id="ai-notes-title">AI Technical Notes</h2>
+      <p>
+        The publications above are the papers and notes I plan to develop in my own voice. The working notes below
+        were authored independently by the credited AI collaborators. I am publishing them to expose useful
+        calculations, audits, and exploratory results to scrutiny without folding every claim into the main papers.
+      </p>
+      <details open>
+        <summary>
+          Independently authored technical contributions from Codex, Claude, and Gemini.
+        </summary>
+
+        <ol>
+          <li>
+            <div>AI I</div>
+            <div>
+              <h3>
+                <a href="note.html?src=field_equations_of_the_reciprocal_interior">
+                  Field Equations of the Reciprocal Interior
+                </a>
+              </h3>
+              <p>
+                Derives the matter–radiation–Λ Friedmann dynamics from Alice's reciprocal metric, Einstein's field
+                equations, and stress-energy conservation before translating the result into Bob's infall function.
+              </p>
+              <p>derivation · Codex (OpenAI)</p>
+            </div>
+          </li>
+
+          <li>
+            <div>AI II</div>
+            <div>
+              <h3>
+                <a href="note.html?src=reciprocal_interior_independent_verification">
+                  The Reciprocal Interior: An Independent Verification
+                </a>
+              </h3>
+              <p>
+                Independently recomputes the reciprocal-interior field equations in spherical coordinates, checks
+                the curvature invariants, and verifies the branchwise equivalence of the \(a\)- and \(r\)-space laws.
+              </p>
+              <p>independent audit · Claude (Anthropic)</p>
+            </div>
+          </li>
+
+          <li>
+            <div>AI III</div>
+            <div>
+              <h3>
+                <a href="note.html?src=horizon_flow_density_identity">
+                  The Horizon Flow and Density Identity
+                </a>
+              </h3>
+              <p>
+                Shows that the reciprocal horizon-flow normalization fixes the same total density as the exterior
+                Schwarzschild compactness relation at \(r=1\).
+              </p>
+              <p>observation · Gemini; reviewed by Codex</p>
+            </div>
+          </li>
+
+          <li>
+            <div>AI IV</div>
+            <div>
+              <h3>
+                <a href="note.html?src=vacuum_energy_cancellation_at_a_kottler_junction">
+                  Vacuum-Energy Cancellation at an FLRW–Kottler Junction
+                </a>
+              </h3>
+              <p>
+                Derives the timelike matching conditions and shows that a cosmological constant shared across the
+                junction cancels from the Kottler mass condition, leaving non-vacuum pressure as the obstruction.
+              </p>
+              <p>junction calculation · Codex (OpenAI)</p>
+            </div>
+          </li>
+
+          <li>
+            <div>AI V</div>
+            <div>
+              <h3>
+                <a href="note.html?src=horizon_map_shell_identity_and_mass_growth">
+                  The Exact Shell Identity and the Kottler Mass Condition
+                </a>
+              </h3>
+              <p>
+                Independently derives areal-radius continuity, the Kottler mass condition, and the radiation-pressure
+                residual for a comoving timelike boundary.
+              </p>
+              <p>junction calculation · Claude (Anthropic)</p>
+            </div>
+          </li>
+
+          <li>
+            <div>AI VI</div>
+            <div>
+              <h3>
+                <a href="note.html?src=null_optics_of_the_reciprocal_interior">
+                  Null Optics of the Reciprocal Interior
+                </a>
+              </h3>
+              <p>
+                Derives the interior frequency, wavelength, intensity, and temperature transfer laws; isolates the
+                missing radial event map; and tests the first null-junction condition.
+              </p>
+              <p>optical calculation · Codex (OpenAI)</p>
+            </div>
+          </li>
+
+          <li>
+            <div>AI VII</div>
+            <div>
+              <h3>
+                <a href="note.html?src=horizon_crossing_history_and_future_patches">
+                  Horizon-Crossing History and Future Causal Patches
+                </a>
+              </h3>
+              <p>
+                Proposes \(R=\Psi(v_H)\), then derives the exact causal-contact, common-future, and de Sitter horizon
+                conditions that would turn the Horizon Triple Identity into an operational theorem target.
+              </p>
+              <p>horizon-map result · Codex (OpenAI)</p>
+            </div>
+          </li>
+
         </ol>
       </details>
     </section>

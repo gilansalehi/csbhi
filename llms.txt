@@ -15,13 +15,18 @@ The public site is static. Its main pages contain their substantive text directl
 - [Alice's Descent](https://www.gilansalehi.com/csbhi/leap-of-faith.html): Interactive geometric illustration accompanying the primary paper.
 - [Source repository](https://github.com/gilansalehi/csbhi): HTML source, research notes, figures, and revision history.
 
-## Derivations and checks
+## Independently authored AI technical notes
 
-- [Field Equations of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md): Derives the reciprocal interior dynamics from the metric ansatz, Einstein's equations, and stress-energy conservation; does not derive the reciprocal ansatz or exterior junction.
-- [The Reciprocal Interior: An Independent Verification](https://www.gilansalehi.com/csbhi/notes/reciprocal_interior_independent_verification.md): Independent calculation and audit of the reciprocal-interior field equations.
-- [The Horizon Flow and Density Identity](https://www.gilansalehi.com/csbhi/notes/horizon_flow_density_identity.md): Examines the horizon density identity and the geodesic boundary condition on which it depends.
-- [Toward the Horizon Map: The Exact Shell Identity and a Mass-Growth Obstruction](https://www.gilansalehi.com/csbhi/notes/horizon_map_shell_identity_and_mass_growth.md): Separates an exact matching-shell identity from the stronger reciprocal horizon map and identifies a mass-growth constraint.
-- [Vacuum-Energy Cancellation at an FLRW-Kottler Junction](https://www.gilansalehi.com/csbhi/notes/vacuum_energy_cancellation_at_a_kottler_junction.md): Studies vacuum-energy terms at a spherical FLRW-Kottler junction.
+- [Field Equations of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the reciprocal interior dynamics from the metric ansatz, Einstein's equations, and stress-energy conservation; does not derive the reciprocal ansatz or exterior junction.
+- [The Reciprocal Interior: An Independent Verification](https://www.gilansalehi.com/csbhi/notes/reciprocal_interior_independent_verification.md), by Claude (Anthropic): Independently calculates and audits the reciprocal-interior field equations.
+- [The Horizon Flow and Density Identity](https://www.gilansalehi.com/csbhi/notes/horizon_flow_density_identity.md), observed by Gemini and reviewed by Codex: Examines the horizon density identity and the geodesic boundary condition on which it depends.
+- [The Exact Shell Identity and the Kottler Mass Condition for Alice's Interior](https://www.gilansalehi.com/csbhi/notes/horizon_map_shell_identity_and_mass_growth.md), by Claude (Anthropic): Derives areal-radius continuity, the Kottler mass condition, and the radiation-pressure residual for a comoving timelike boundary.
+- [Vacuum-Energy Cancellation at an FLRW-Kottler Junction](https://www.gilansalehi.com/csbhi/notes/vacuum_energy_cancellation_at_a_kottler_junction.md), by Codex (OpenAI): Independently derives the corresponding timelike junction conditions and vacuum-energy cancellation.
+- [Null Optics of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/null_optics_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the interior optical transfer laws, isolates the missing radial event map, and tests the first null-junction condition.
+- [Horizon-Crossing History and Future Causal Patches](https://www.gilansalehi.com/csbhi/notes/horizon_crossing_history_and_future_patches.md), by Codex (OpenAI): Proposes a map from ordered horizon-crossing history to interior comoving separation and derives its causal-contact and de Sitter limits.
+
+## Supporting derivations and planned notes
+
 - [Constraints on the Horizon Map](https://www.gilansalehi.com/csbhi/notes/constraints_on_the_horizon_map.md): Catalogues mathematical conditions that a complete horizon map must satisfy.
 - [The Inverse-Radius Interior and Alice's Probe Congruence](https://www.gilansalehi.com/csbhi/notes/gd_inverse_radius_probe_congruence.md): Develops the probe-cloud interpretation of inverse-radius spatial scaling.
 - [Painleve-Gullstrand Flow from the 5D de Sitter Embedding](https://www.gilansalehi.com/csbhi/notes/pg_flow_from_5d_desitter_embedding.md): Explores the relation between de Sitter embedding geometry and Painleve-Gullstrand flow.

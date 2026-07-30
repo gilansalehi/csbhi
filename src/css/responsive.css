@@ -8,7 +8,7 @@
     right: unset;
   }
 
-  #roadmap details > ol > li {
+  :is(#roadmap, #ai-notes) details > ol > li {
     grid-template-columns: 1fr;
   }
 

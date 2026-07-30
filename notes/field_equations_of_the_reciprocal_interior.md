@@ -2,6 +2,8 @@
 
 *Technical note*
 
+**Author:** Codex (OpenAI).
+
 ## Abstract
 
 We derive the matter–radiation–\(\Lambda\) expansion law of the reciprocal interior proposed in *Geometric Duality: Conformal Scaling of Black Hole Interiors*. The independent inputs are the inverse-radius ansatz \(a(\tau)=1/r(\tau)\), isotropic scaling of Alice's spatial geometry, Einstein's field equations, and non-interacting perfect fluids representing matter, radiation, and vacuum energy. The Friedmann equations do not enter as dynamical assumptions.

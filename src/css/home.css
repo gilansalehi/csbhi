@@ -11,41 +11,41 @@
   text-align: left;
 }
 
-#roadmap details > ol {
+:is(#roadmap, #ai-notes) details > ol {
   padding: 0;
   list-style: none;
 }
 
-#roadmap details > ol > li {
+:is(#roadmap, #ai-notes) details > ol > li {
   display: grid;
   grid-template-columns: 5.4rem 1fr;
   gap: 1rem;
   padding: 1rem;
 }
 
-#roadmap h3 {
+:is(#roadmap, #ai-notes) h3 {
   margin-top: 0;
 }
 
-#roadmap p,
-#roadmap details > ol > li > div:first-child,
-#roadmap details > ol > li > div:last-child > p:last-child {
+:is(#roadmap, #ai-notes) p,
+:is(#roadmap, #ai-notes) details > ol > li > div:first-child,
+:is(#roadmap, #ai-notes) details > ol > li > div:last-child > p:last-child {
   color: var(--muted);
 }
 
-#roadmap details > ol > li > div:first-child,
-#roadmap details > ol > li > div:last-child > p:last-child {
+:is(#roadmap, #ai-notes) details > ol > li > div:first-child,
+:is(#roadmap, #ai-notes) details > ol > li > div:last-child > p:last-child {
   font-family: var(--mono);
   font-size: 0.82rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-#roadmap details > ol > li > div:first-child {
+:is(#roadmap, #ai-notes) details > ol > li > div:first-child {
   text-align: right;
 }
 
-#roadmap details > ol > li > div:last-child > p:last-child {
+:is(#roadmap, #ai-notes) details > ol > li > div:last-child > p:last-child {
   font-size: 0.78rem;
 }
 
