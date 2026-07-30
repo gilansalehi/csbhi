@@ -32,6 +32,8 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - AI X, Dynamic Throat Kinematics and the Cosmological Clock: AI VIII.
 - AI XI, Thermodynamic Accounting of the Transverse Junction: AI VIII.
 - AI XII, The Nonequilibrium Event Horizon and the CMB Clock: AI X and AI XI.
+- AI XIII, The Hyperbolic Cosmological Clock: AI X.
+- AI XIV, The Finite-Throat Transition and the Absolute Reciprocal Coordinate: AI XII and AI XIII.
 
 ## Project pages
 
@@ -54,6 +56,8 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - [Dynamic Throat Kinematics and the Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/dynamic_throat_kinematics_and_the_cosmological_clock.md), by Codex (OpenAI): Derives the moving-null-boundary expansion identities, reconstructs the boundary history required by the observed cosmological epochs, and identifies present-day targets for a parent horizon-growth calculation.
 - [Thermodynamic Accounting of the Transverse Junction](https://www.gilansalehi.com/csbhi/notes/thermodynamic_accounting_of_the_transverse_junction.md), by Codex (OpenAI): Shows that the same-orientation stationary null-shell tension is the interior work density projected from volume to area, tracks how causal orientation redistributes the shell data, and derives the corresponding apparent-horizon target through the radiation, matter, and vacuum epochs.
 - [The Nonequilibrium Event Horizon and the CMB Clock](https://www.gilansalehi.com/csbhi/notes/nonequilibrium_event_horizon_and_the_cmb_clock.md), by Codex (OpenAI): Derives the nonequilibrium residual on the reconstructed event horizon and shows that the CMB fixes the radiation work and reciprocal scale-factor clock rather than the horizon temperature.
+- [The Hyperbolic Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/hyperbolic_cosmological_clock.md), by Codex (OpenAI): Uses the asymptotic 5D de Sitter embedding to define a geometric boost clock, obtains the same present rapidity from age and density data, and separates that clock from the finite-throat contribution to absolute expansion.
+- [The Finite-Throat Transition and the Absolute Reciprocal Coordinate](https://www.gilansalehi.com/csbhi/notes/finite_throat_transition_and_the_absolute_reciprocal_coordinate.md), by Codex (OpenAI): Integrates the moving-boundary identity into an absolute reciprocal normalization, distinguishes the early event horizon from the apparent horizon, and conditionally calibrates the first junction with a conservative thermal landmark.
 
 ## Supporting derivations and planned notes
 
