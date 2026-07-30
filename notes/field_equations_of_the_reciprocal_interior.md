@@ -357,7 +357,7 @@ ds_A^2
 This is the Painlevé–Gullstrand form of flat FLRW [7], with spatial flow \(H_A\bar R\). The two flow functions share the same expansion rate,
 
 \[
-F_B(r)=H_A(r)r,
+F(r)=H_A(r)r,
 \qquad
 F_{\mathrm{PG}}(\bar R,\tau)=H_A(\tau)\bar R,
 \tag{27}

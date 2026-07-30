@@ -48,8 +48,8 @@ ds_-^2
 -d\tau^2
 +a(\tau)^2
 \left[
-\frac{d\chi^2}{1-k\chi^2}
-+\chi^2d\Omega^2
+\frac{dR^2}{1-kR^2}
++R^2d\Omega^2
 \right].
 \tag{1}
 \]
@@ -73,12 +73,12 @@ H^2
 \tag{3}
 \]
 
-Take a comoving boundary \(\Sigma\) at \(\chi=\chi_0\). Its areal radius is
+Take a comoving boundary \(\Sigma\) at \(R=R_0\). Its areal radius is
 
 \[
-R(\tau)=a(\tau)\chi_0,
+\bar R(\tau)=a(\tau)R_0,
 \qquad
-\dot R=H R.
+\dot{\bar R}=H\bar R.
 \tag{4}
 \]
 
@@ -87,25 +87,25 @@ The Kottler metric is [3]
 \[
 ds_+^2
 =
--f(R)dT^2
-+\frac{dR^2}{f(R)}
-+R^2d\Omega^2,
+-f(\bar R)dT^2
++\frac{d\bar R^2}{f(\bar R)}
++\bar R^2d\Omega^2,
 \tag{5}
 \]
 
 with
 
 \[
-f(R)
+f(\bar R)
 =
-1-\frac{2GM_K}{R}-\frac{\Lambda_+R^2}{3}.
+1-\frac{2GM_K}{\bar R}-\frac{\Lambda_+\bar R^2}{3}.
 \tag{6}
 \]
 
 The first junction condition identifies the same areal radius on both sides. Parametrizing the Kottler trajectory by the shell's proper time gives
 
 \[
--f\dot T^2+\frac{\dot R^2}{f}=-1.
+-f\dot T^2+\frac{\dot{\bar R}^{\,2}}{f}=-1.
 \tag{7}
 \]
 
@@ -114,43 +114,43 @@ The first junction condition identifies the same areal radius on both sides. Par
 For a spherically symmetric timelike boundary,
 
 \[
-K_{\theta\theta}=R\,n^a\nabla_aR,
+K_{\theta\theta}=\bar R\,n^a\nabla_a\bar R,
 \tag{8}
 \]
 
 where \(n^a\) is the unit normal. On the FLRW side,
 
 \[
-n_-^a\nabla_aR
+n_-^a\nabla_a\bar R
 =
-\sqrt{1-k\chi_0^2}.
+\sqrt{1-kR_0^2}.
 \tag{9}
 \]
 
 On the Kottler side, Equation (7) gives
 
 \[
-n_+^a\nabla_aR
+n_+^a\nabla_a\bar R
 =
-\sqrt{\dot R^2+f(R)}.
+\sqrt{\dot{\bar R}^{\,2}+f(\bar R)}.
 \tag{10}
 \]
 
 Continuity of \(K_{\theta\theta}\) therefore requires
 
 \[
-\dot R^2+f(R)=1-k\chi_0^2.
+\dot{\bar R}^{\,2}+f(\bar R)=1-kR_0^2.
 \tag{11}
 \]
 
-Using \(\dot R=HR\), Equations (2) and (6), and \(R=a\chi_0\), every curvature term cancels except the difference between the two cosmological constants. The result is
+Using \(\dot{\bar R}=H\bar R\), Equations (2) and (6), and \(\bar R=aR_0\), every curvature term cancels except the difference between the two cosmological constants. The result is
 
 \[
 \boxed{
 M_K
 =
-\frac{4\pi}{3}\rho R^3
-+\frac{\Lambda_- - \Lambda_+}{6G}R^3
+\frac{4\pi}{3}\rho \bar R^3
++\frac{\Lambda_- - \Lambda_+}{6G}\bar R^3
 }.
 \tag{12}
 \]
@@ -159,7 +159,7 @@ When the same cosmological constant appears on both sides,
 
 \[
 \boxed{
-M_K=\frac{4\pi}{3}\rho R^3
+M_K=\frac{4\pi}{3}\rho \bar R^3
 }
 \qquad
 (\Lambda_-=\Lambda_+).
@@ -170,14 +170,14 @@ Vacuum energy is absent from Equation (13). This is not an approximation: its co
 
 ## 4. Misner–Sharp mass explains the cancellation
 
-The geometric Misner–Sharp mass of a sphere of areal radius \(R\) is [1]
+The geometric Misner–Sharp mass of a sphere of areal radius \(\bar R\) is [1]
 
 \[
 m_{\rm MS}
 =
-\frac{R}{2G}
+\frac{\bar R}{2G}
 \left(
-1-g^{ab}\nabla_aR\nabla_bR
+1-g^{ab}\nabla_a\bar R\nabla_b\bar R
 \right).
 \tag{14}
 \]
@@ -187,8 +187,8 @@ For the FLRW geometry, Equation (2) gives
 \[
 m_{\rm MS}^-
 =
-\frac{4\pi}{3}\rho R^3
-+\frac{\Lambda_-R^3}{6G}.
+\frac{4\pi}{3}\rho \bar R^3
++\frac{\Lambda_-\bar R^3}{6G}.
 \tag{15}
 \]
 
@@ -198,11 +198,11 @@ For Kottler, Equations (6) and (14) give
 m_{\rm MS}^+
 =
 M_K
-+\frac{\Lambda_+R^3}{6G}.
++\frac{\Lambda_+\bar R^3}{6G}.
 \tag{16}
 \]
 
-Equating the two quasilocal masses reproduces Equation (12). The term proportional to \(\Lambda R^3\) grows with volume on both sides. Comparing \(m_{\rm MS}^-\) directly with \(M_K\) omits the identical Kottler contribution and produces a false vacuum-driven mass growth.
+Equating the two quasilocal masses reproduces Equation (12). The term proportional to \(\Lambda\bar R^3\) grows with volume on both sides. Comparing \(m_{\rm MS}^-\) directly with \(M_K\) omits the identical Kottler contribution and produces a false vacuum-driven mass growth.
 
 One may instead define a \(\Lambda\)-subtracted Misner–Sharp mass. That convention removes the vacuum term from both Equations (15) and (16) and again yields Equation (13). Either convention works if it is used consistently.
 
@@ -218,20 +218,20 @@ K_{\tau\tau}^-=0.
 A smooth match requires \(K_{\tau\tau}^+=0\), so the shell follows a radial Kottler geodesic. Differentiating Equation (11) for constant \(M_K\) gives
 
 \[
-\ddot R
+\ddot{\bar R}
 =
--\frac{GM_K}{R^2}
-+\frac{\Lambda_+R}{3}.
+-\frac{GM_K}{\bar R^2}
++\frac{\Lambda_+\bar R}{3}.
 \tag{18}
 \]
 
 The FLRW acceleration equation gives
 
 \[
-\ddot R
+\ddot{\bar R}
 =
--\frac{4\pi G}{3}(\rho+3p)R
-+\frac{\Lambda_-R}{3}.
+-\frac{4\pi G}{3}(\rho+3p)\bar R
++\frac{\Lambda_-\bar R}{3}.
 \tag{19}
 \]
 
@@ -264,12 +264,12 @@ Stress-energy conservation gives
 \tag{22}
 \]
 
-Differentiate Equation (12), use \(\dot R=HR\), and hold \(\Lambda_\pm\) constant:
+Differentiate Equation (12), use \(\dot{\bar R}=H\bar R\), and hold \(\Lambda_\pm\) constant:
 
 \[
 \dot M_K
 =
-R^2\dot R
+\bar R^2\dot{\bar R}
 \left[
 -4\pi p
 +\frac{\Lambda_- - \Lambda_+}{2G}
@@ -281,7 +281,7 @@ A static Kottler geometry requires \(\dot M_K=0\). For an evolving boundary, Equ
 
 \[
 \boxed{
-\dot M_K=-4\pi pR^2\dot R
+\dot M_K=-4\pi p\bar R^2\dot{\bar R}
 }.
 \tag{24}
 \]
@@ -306,7 +306,7 @@ With equal cosmological constants, Equation (13) becomes
 \[
 M_K
 =
-\frac{4\pi}{3}\chi_0^3
+\frac{4\pi}{3}R_0^3
 \left(
 \rho_{m0}+\frac{\rho_{r0}}{a}
 \right).
@@ -318,11 +318,11 @@ Define
 \[
 M_m
 =
-\frac{4\pi}{3}\rho_{m0}\chi_0^3,
+\frac{4\pi}{3}\rho_{m0}R_0^3,
 \qquad
 M_{r0}
 =
-\frac{4\pi}{3}\rho_{r0}\chi_0^3.
+\frac{4\pi}{3}\rho_{r0}R_0^3.
 \tag{27}
 \]
 
@@ -360,7 +360,7 @@ If the cosmological constants differ, Equation (12) instead gives
 M_K(r)
 =
 M_m+M_{r0}r
-+\frac{(\Lambda_- - \Lambda_+)\chi_0^3}{6G\,r^3}
++\frac{(\Lambda_- - \Lambda_+)R_0^3}{6G\,r^3}
 }.
 \tag{31}
 \]
@@ -371,7 +371,7 @@ The divergent \(r^{-3}\) term therefore measures a mismatch between the two vacu
 
 Three conclusions follow.
 
-1. **The junction responds to the difference between the cosmological constants, not their common value.** A shared \(R^3\) contribution belongs to the Misner–Sharp mass on both sides and cancels from the Kottler mass parameter.
+1. **The junction responds to the difference between the cosmological constants, not their common value.** A shared \(\bar R^3\) contribution belongs to the Misner–Sharp mass on both sides and cancels from the Kottler mass parameter.
 2. **Radiation is the surviving obstruction for a comoving static match.** Its pressure prevents smooth matching to a static Kottler region and makes the mass demanded by angular matching decrease as \(a^{-1}\).
 3. **A time-dependent exterior is optional for dust plus \(\Lambda\), but relevant when radiation is retained.** A Vaidya-type exterior or a thin shell may carry the changing energy associated with radiation. Neither is required merely because \(\Lambda>0\).
 

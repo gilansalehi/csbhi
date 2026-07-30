@@ -9,7 +9,7 @@ This note follows GD1's canonical convention: \(r\) is Bob's horizon-normalized 
 Appendix D of *Geometric Duality: Conformal Scaling of Black Hole Interiors* rewrites its asymptotic spatially flat de Sitter metric in Painlevé–Gullstrand form by introducing the areal radius
 
 \[
-\bar R=a(t)\chi .
+\bar R=a(t)R .
 \]
 
 This turns ordinary cosmological expansion into a radial flow geometry with shift function
@@ -23,10 +23,10 @@ In this note we show that, in the pure de Sitter limit, the same flow form arise
 Starting from the embedded de Sitter hyperboloid, the induced metric in flat-slicing coordinates is
 
 \[
-ds^2=-dt^2+e^{2Ht}\left(d\chi^2+\chi^2d\Omega^2\right).
+ds^2=-dt^2+e^{2Ht}\left(dR^2+R^2d\Omega^2\right).
 \]
 
-Defining the areal radius \(\bar R=e^{Ht}\chi\), this becomes
+Defining the areal radius \(\bar R=e^{Ht}R\), this becomes
 
 \[
 ds^2=-dt^2+\left(d\bar R-H\bar R\,dt\right)^2+\bar R^2d\Omega^2.
@@ -190,7 +190,7 @@ In spherical comoving coordinates,
 \[
 \delta_{ij}dx^i dx^j
 =
-d\chi^2+\chi^2d\Omega^2,
+dR^2+R^2d\Omega^2,
 \]
 
 so
@@ -202,7 +202,7 @@ ds^2
 +
 e^{2Ht}
 \left(
-d\chi^2+\chi^2d\Omega^2
+dR^2+R^2d\Omega^2
 \right).
 \]
 
@@ -233,20 +233,20 @@ ds^2
 +
 a(t)^2
 \left(
-d\chi^2+\chi^2d\Omega^2
+dR^2+R^2d\Omega^2
 \right),
 \]
 
 the angular term is
 
 \[
-a(t)^2\chi^2d\Omega^2.
+a(t)^2R^2d\Omega^2.
 \]
 
 Therefore the areal radius is
 
 \[
-\bar R=a(t)\chi.
+\bar R=a(t)R.
 \]
 
 For pure de Sitter,
@@ -258,7 +258,7 @@ a(t)=e^{Ht},
 so
 
 \[
-\bar R=e^{Ht}\chi.
+\bar R=e^{Ht}R.
 \]
 
 Differentiate:
@@ -266,9 +266,9 @@ Differentiate:
 \[
 d\bar R
 =
-\dot a\,\chi\,dt
+\dot a\,R\,dt
 +
-a\,d\chi.
+a\,dR.
 \]
 
 Since
@@ -280,9 +280,9 @@ Since
 we have
 
 \[
-\dot a\,\chi
+\dot a\,R
 =
-Ha\chi
+HaR
 =
 H\bar R.
 \]
@@ -292,15 +292,15 @@ Therefore
 \[
 d\bar R
 =
-a\,d\chi
+a\,dR
 +
 H\bar R\,dt.
 \]
 
-Solving for \(a\,d\chi\),
+Solving for \(a\,dR\),
 
 \[
-a\,d\chi
+a\,dR
 =
 d\bar R-H\bar R\,dt.
 \]
@@ -308,7 +308,7 @@ d\bar R-H\bar R\,dt.
 The angular term becomes
 
 \[
-a^2\chi^2d\Omega^2
+a^2R^2d\Omega^2
 =
 \bar R^2d\Omega^2.
 \]
@@ -473,10 +473,10 @@ X_i=e^{Ht}x_i.
 Thus the physical spatial coordinates grow exponentially relative to the comoving labels \(x_i\). In spherical symmetry, this says
 
 \[
-\bar R=e^{Ht}\chi.
+\bar R=e^{Ht}R.
 \]
 
-At fixed comoving label \(\chi\),
+At fixed comoving label \(R\),
 
 \[
 \frac{d\bar R}{dt}=H\bar R.
@@ -619,14 +619,14 @@ ds_5^2\big|_{dS_4}
 +
 e^{2Ht}
 \left(
-d\chi^2+\chi^2d\Omega^2
+dR^2+R^2d\Omega^2
 \right),
 \]
 
 with
 
 \[
-\bar R=e^{Ht}\chi,
+\bar R=e^{Ht}R,
 \]
 
 so that
