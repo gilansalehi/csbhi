@@ -6,7 +6,7 @@
 
 ## Abstract
 
-The apparent horizon of a spatially flat FLRW universe satisfies an equilibrium horizon first law. The cosmological event horizon generally does not. This distinction matters for the reciprocal-interior construction because its reconstructed moving boundary is the event horizon \(B(\tau)\), while the local Friedmann constraint selects the apparent horizon \(R_A=c/H_A\).
+The apparent horizon of a spatially flat FLRW universe satisfies an equilibrium horizon first law. The cosmological event horizon generally does not. This distinction matters for the reciprocal-interior construction because its reconstructed moving boundary is the cosmological event horizon \(B(\tau)\), while the local Friedmann constraint selects the apparent horizon \(R_A=c/H_A\).
 
 Define their ratio by
 
@@ -486,7 +486,7 @@ R_T
 \tag{44}
 \]
 
-which is unrelated to the cosmic horizon. The CMB is relic radiation within the interior, not Hawking radiation at the present cosmological boundary.
+which is unrelated to any present cosmological horizon scale. The CMB is relic radiation within the interior, not Hawking radiation at the present cosmological boundary.
 
 The two temperatures cross only in the remote de Sitter future: the CMB cools as \(\bar a^{-1}\), while \(T_{\rm dS}\) approaches a nonzero constant. That crossover marks the loss of a recoverable primordial thermal signal, not the present location of the throat.
 
@@ -495,7 +495,7 @@ The two temperatures cross only in the remote de Sitter future: the CMB cools as
 The thermodynamic calculation separates three pieces that had been easy to conflate:
 
 1. the **apparent horizon** carries the local equilibrium Friedmann identity;
-2. the **event horizon** carries the global causal history and requires the nonequilibrium residual in Equation (20); and
+2. the **cosmological event horizon** carries the global causal history and requires the nonequilibrium residual in Equation (20); and
 3. the **CMB** fixes the radiation work and normalized scale-factor clock, not the horizon temperature.
 
 The remaining geometric target is now precise. A complete throat metric must reproduce both

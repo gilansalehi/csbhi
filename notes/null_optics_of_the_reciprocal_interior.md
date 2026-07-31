@@ -14,7 +14,7 @@ a(\tau)=\frac{1}{r(\tau)}.
 
 Once radiation has entered Alice's spatially flat interior, its optical evolution is fixed. A freely propagating mode has frequency \(\nu\propto r\), wavelength \(\lambda\propto1/r\), blackbody temperature \(T\propto r\), and bolometric specific intensity \(I\propto r^4\). These relations define an exact transfer operator from any specified interior boundary or initial radiation field to Alice's later sky.
 
-The remaining question is whether the entire static exterior event horizon can supply that boundary data through a local null junction. Continuity of the horizon's angular geometry gives a sharp answer. A spherical ingoing null boundary in the reciprocal interior has areal radius \(B\) satisfying \(\dot B=H_A B-1\). Matching it to a static horizon of fixed radius \(r_h\) requires \(B=r_h\), and therefore \(H_A=1/r_h\) along the boundary. This intrinsic-area condition holds along a static boundary in the de Sitter limit, but not throughout a matter-and-radiation era with changing \(H_A\).
+The remaining question is whether the entire parent black-hole event horizon can supply that boundary data through a local null junction. Continuity of the horizon's angular geometry gives a sharp answer. A spherical ingoing null boundary in the reciprocal interior has areal radius \(B\) satisfying \(\dot B=H_A B-1\). Matching it to a static horizon of fixed radius \(r_h\) requires \(B=r_h\), and therefore \(H_A=1/r_h\) along the boundary. This intrinsic-area condition holds along a static boundary in the de Sitter limit, but not throughout a matter-and-radiation era with changing \(H_A\).
 
 Thus the current construction determines the interior optical transfer exactly, while a unique image of the exterior sky still requires a dynamical boundary, a transition layer, or a completed nonlocal or higher-dimensional horizon map.
 
@@ -272,7 +272,7 @@ For a Hubble radius of \(14.51\) billion light-years, this is \(16.68\) billion 
 
 ## 5. The first null-junction condition
 
-The horizon-screen rule in Section 3 supplies an optical transfer at one cross-section. To decide whether the entire exterior event horizon can act as a local boundary, compare the intrinsic angular geometry of the two null surfaces.
+The horizon-screen rule in Section 3 supplies an optical transfer at one cross-section. To decide whether the entire parent black-hole event horizon can act as a local boundary, compare the intrinsic angular geometry of the two null surfaces.
 
 The static exterior horizon has fixed areal radius \(r_h\) and angular metric
 

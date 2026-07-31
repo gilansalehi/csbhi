@@ -98,7 +98,7 @@ This is an invariant curvature radius of the de Sitter hyperboloid.
 
 \(\Sigma\) is notation for the structure that would connect Bob's exterior to Alice's interior. Its character has not been fixed. It may emerge through a null junction, a timelike transition layer, or a common higher-dimensional throat.
 
-A timelike worldtube cannot literally be the null event horizon. If the completed construction contains both, their relationship must be derived rather than asserted.
+A timelike worldtube cannot literally be the null observer-causal horizon \(\mathcal H\). If the completed construction contains both, their relationship must be derived rather than asserted.
 
 ---
 

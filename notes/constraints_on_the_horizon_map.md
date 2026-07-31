@@ -8,7 +8,7 @@ The reciprocal ansatz
 a(\tau)=\frac{1}{r(\tau)}
 \]
 
-relates Bob's horizon-normalized radial description of Alice's infall to the scale factor of Alice's isotropic interior. It does not construct the spacetime that joins those descriptions across the event horizon. This note records the constraints on that separate geometric problem.
+relates Bob's horizon-normalized radial description of Alice's infall to the scale factor of Alice's isotropic interior. It does not construct the spacetime that joins those descriptions across the parent black-hole event horizon. This note records the constraints on that separate geometric problem.
 
 ## The unresolved map
 
@@ -33,11 +33,11 @@ C_{\alpha\beta\gamma\delta}C^{\alpha\beta\gamma\delta}
 
 whereas every FLRW spacetime is conformally flat. A regular scalar conformal transformation preserves whether the Weyl tensor vanishes. No coordinate change followed by a scalar conformal rescaling can therefore turn the vacuum Schwarzschild interior into the isotropic FLRW interior. The horizon map requires additional geometric structure.
 
-## The event horizon requires a null treatment
+## The black-hole event horizon requires a null treatment
 
 The black-hole event horizon is a null hypersurface. Constant-radius surfaces in the inverse-radius FLRW description are spacelike spatial slices. Assigning both surfaces the normalized value \(r=1\) does not make them geometrically identical.
 
-The Israel-Darmois formalism describes non-null matching surfaces [4]. It cannot establish a smooth, stress-free match at the event horizon. A horizon match requires regular coordinates and the null-shell junction formalism, including continuity of the degenerate intrinsic geometry and the appropriate transverse-curvature data [5].
+The Israel-Darmois formalism describes non-null matching surfaces [4]. It cannot establish a smooth, stress-free match at the black-hole event horizon. A horizon match requires regular coordinates and the null-shell junction formalism, including continuity of the degenerate intrinsic geometry and the appropriate transverse-curvature data [5].
 
 ## Three construction routes
 

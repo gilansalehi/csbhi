@@ -11,9 +11,9 @@ This note replaces the isolated-Schwarzschild approximation by the simplest late
 Requiring Alice's de Sitter radius to be a root of Bob's Kottler horizon equation gives the exact conditional relation
 
 \[
-M=M_{\Lambda_C}\left(1-\frac{\Lambda_P}{\Lambda_C}\right),
+M=M_{\Lambda,C}\left(1-\frac{\Lambda_P}{\Lambda_C}\right),
 \qquad
-M_{\Lambda_C}=\frac{c^2}{2G}\sqrt{\frac{3}{\Lambda_C}}.
+M_{\Lambda,C}=\frac{c^2}{2G}\sqrt{\frac{3}{\Lambda_C}}.
 \]
 
 If Bob's mass is identified with the present critical Hubble mass, the observed parameters used in GD1 imply \(\Lambda_P/\Lambda_C=0.172408\). The shared root is then on the Kottler black-hole branch. In the standard Kottler time normalization, its surface gravity is \(1.308\times10^{-10}\,\mathrm{m\,s^{-2}}\), close to the acceleration scale fitted from galaxy rotation curves. Conversely, inserting the empirical galaxy scale predicts a parent mass within two percent of the critical Hubble mass.
@@ -43,14 +43,14 @@ the cosmological constant governing Alice's asymptotic child universe. Define th
 \[
 H_P=c\sqrt{\frac{\Lambda_P}{3}},
 \qquad
-R_P=\sqrt{\frac{3}{\Lambda_P}}=\frac{c}{H_P},
+R_{\Lambda,P}=\sqrt{\frac{3}{\Lambda_P}}=\frac{c}{H_P},
 \tag{3}
 \]
 
 \[
 H_C=c\sqrt{\frac{\Lambda_C}{3}},
 \qquad
-R_C=\sqrt{\frac{3}{\Lambda_C}}=\frac{c}{H_C}.
+R_{\Lambda,C}=\sqrt{\frac{3}{\Lambda_C}}=\frac{c}{H_C}.
 \tag{4}
 \]
 
@@ -76,18 +76,18 @@ This model is not the completed recursive geometry. It is the simplest exact lat
 
 ## 2. Common-horizon equation
 
-Assume Alice's asymptotic de Sitter horizon is a root of Bob's Kottler function:
+Assume Alice's asymptotic de Sitter cosmological-horizon radius is a root of Bob's Kottler function:
 
 \[
-f_P(R_C)=0.
+f_P(R_{\Lambda,C})=0.
 \tag{7}
 \]
 
-Because \(R_C^2=3/\Lambda_C\), Equation (7) becomes
+Because \(R_{\Lambda,C}^2=3/\Lambda_C\), Equation (7) becomes
 
 \[
 1
--\frac{2GM}{c^2R_C}
+-\frac{2GM}{c^2R_{\Lambda,C}}
 -\frac{\Lambda_P}{\Lambda_C}
 =0.
 \tag{8}
@@ -98,7 +98,7 @@ Define
 \[
 \alpha:=\frac{\Lambda_P}{\Lambda_C},
 \qquad
-M_{\Lambda_C}:=\frac{c^2R_C}{2G}.
+M_{\Lambda,C}:=\frac{c^2R_{\Lambda,C}}{2G}.
 \tag{9}
 \]
 
@@ -106,7 +106,7 @@ Then Equation (8) gives
 
 \[
 \boxed{
-\frac{M}{M_{\Lambda_C}}=1-\alpha
+\frac{M}{M_{\Lambda,C}}=1-\alpha
 }
 \tag{10}
 \]
@@ -117,7 +117,7 @@ or equivalently
 \boxed{
 \frac{\Lambda_P}{\Lambda_C}
 =
-1-\frac{M}{M_{\Lambda_C}}
+1-\frac{M}{M_{\Lambda,C}}
 }.
 \tag{11}
 \]
@@ -126,13 +126,13 @@ Equation (11) is the minimal parent-child density relation. Positive mass requir
 
 ## 3. Which Kottler horizon?
 
-The sign of \(f_P'\) distinguishes the black-hole and cosmological roots. At \(R=R_C\), use Equation (8) to obtain
+The sign of \(f_P'\) distinguishes the black-hole and cosmological roots. At \(R=R_{\Lambda,C}\), use Equation (8) to obtain
 
 \[
-R_Cf_P'(R_C)
+R_{\Lambda,C}f_P'(R_{\Lambda,C})
 =
-\frac{2GM}{c^2R_C}
--\frac{2\Lambda_PR_C^2}{3}
+\frac{2GM}{c^2R_{\Lambda,C}}
+-\frac{2\Lambda_PR_{\Lambda,C}^2}{3}
 =
 (1-\alpha)-2\alpha
 =
@@ -155,7 +155,7 @@ On the black-hole branch, Equations (10) and (13) require
 
 \[
 \boxed{
-\frac{2}{3}M_{\Lambda_C}<M\leq M_{\Lambda_C}
+\frac{2}{3}M_{\Lambda,C}<M\leq M_{\Lambda,C}
 }.
 \tag{14}
 \]
@@ -165,7 +165,7 @@ The Nariai endpoint obeys
 \[
 \Lambda_C=3\Lambda_P,
 \qquad
-M=\frac23M_{\Lambda_C}.
+M=\frac23M_{\Lambda,C}.
 \tag{15}
 \]
 
@@ -198,7 +198,7 @@ H_C=H_0\sqrt{\Omega_\Lambda}
 \]
 
 \[
-R_C
+R_{\Lambda,C}
 =
 \frac{c}{H_C}
 =
@@ -210,9 +210,9 @@ R_C
 The corresponding pure-de-Sitter horizon mass is
 
 \[
-M_{\Lambda_C}
+M_{\Lambda,C}
 =
-\frac{c^2R_C}{2G}
+\frac{c^2R_{\Lambda,C}}{2G}
 =
 1.11661\times10^{53}\;\mathrm{kg}.
 \tag{20}
@@ -232,9 +232,9 @@ M_H
 Their ratio is
 
 \[
-\frac{M_H}{M_{\Lambda_C}}
+\frac{M_H}{M_{\Lambda,C}}
 =
-\frac{R_H}{R_C}
+\frac{R_H}{R_{\Lambda,C}}
 =
 \sqrt{\Omega_\Lambda}
 =
@@ -281,7 +281,7 @@ H_P
 =
 23.1609\;\mathrm{km\,s^{-1}Mpc^{-1}},
 \qquad
-R_P
+R_{\Lambda,P}
 =
 42.2174\;\mathrm{Gly}
 }.
@@ -306,7 +306,7 @@ In the standard static Kottler normalization, the signed acceleration surface gr
 \[
 \kappa_P
 =
-\frac{c^2}{2}f_P'(R_C).
+\frac{c^2}{2}f_P'(R_{\Lambda,C}).
 \tag{28}
 \]
 
@@ -316,7 +316,7 @@ On the black-hole branch, Equations (12) and (28) give
 \boxed{
 \kappa_P
 =
-\frac{c^2}{2R_C}(1-3\alpha)
+\frac{c^2}{2R_{\Lambda,C}}(1-3\alpha)
 }.
 \tag{29}
 \]
@@ -378,7 +378,7 @@ The reverse substitution is also informative. Set \(\kappa_P=a_0\) in Equation (
 =
 \frac13
 \left(
-1-\frac{2a_0R_C}{c^2}
+1-\frac{2a_0R_{\Lambda,C}}{c^2}
 \right),
 \tag{34}
 \]
@@ -388,10 +388,10 @@ and then use Equation (10):
 \[
 M
 =
-M_{\Lambda_C}
+M_{\Lambda,C}
 \left[
 \frac23
-+\frac{2a_0R_C}{3c^2}
++\frac{2a_0R_{\Lambda,C}}{3c^2}
 \right].
 \tag{35}
 \]
@@ -425,21 +425,21 @@ The comparison is a numerical clue rather than a fit or a prediction. Neither Eq
 The child de Sitter radial function is
 
 \[
-f_C(R)=1-\frac{R^2}{R_C^2},
+f_C(R)=1-\frac{R^2}{R_{\Lambda,C}^2},
 \tag{38}
 \]
 
 so
 
 \[
-R_Cf_C'(R_C)=-2.
+R_{\Lambda,C}f_C'(R_{\Lambda,C})=-2.
 \tag{39}
 \]
 
 Bob's Kottler derivative is given by Equation (12). Under Equation (24),
 
 \[
-R_Cf_P'(R_C)
+R_{\Lambda,C}f_P'(R_{\Lambda,C})
 =
 1-3\alpha
 =
@@ -454,7 +454,7 @@ Therefore the standard static soldering still has a signed surface-gravity jump:
 =
 \kappa_P-\kappa_C
 =
-\frac{3c^2}{2R_C}(1-\alpha).
+\frac{3c^2}{2R_{\Lambda,C}}(1-\alpha).
 \tag{41}
 \]
 

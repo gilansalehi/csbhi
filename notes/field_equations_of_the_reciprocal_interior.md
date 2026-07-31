@@ -22,7 +22,7 @@ We work in units where \(c=1\), retain \(G\), and use metric signature \((-+++)\
 r(\tau)>0
 \]
 
-be the horizon-normalized radius that Bob assigns to Alice's trajectory, parametrized by Alice's proper time. During infall, \(r\) decreases monotonically. Define
+be the radius that Bob assigns to Alice's trajectory, normalized to the parent black-hole horizon and parametrized by Alice's proper time. During infall, \(r\) decreases monotonically. Define
 
 \[
 a(\tau)=\frac{1}{r(\tau)},

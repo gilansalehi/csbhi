@@ -139,7 +139,7 @@ An ordinary coordinate transformation or scalar conformal rescaling cannot compl
 The principal construction routes are:
 
 1. a null junction in horizon-regular coordinates;
-2. a timelike transition layer away from the event horizon;
+2. a timelike transition layer away from the parent black-hole event horizon;
 3. two 4D projections or slicings of a common higher-dimensional throat.
 
 The calculation must determine the junction data rather than assume a stress-free match.

@@ -53,9 +53,9 @@ Equation (1) makes no reference to any black hole, recursive embedding, or condi
 \[
 [\kappa]
 =
-\frac{3c^2(1-\alpha)}{2R_C},
+\frac{3c^2(1-\alpha)}{2R_{\Lambda,C}},
 \qquad
-1-\alpha=\frac{M}{M_{\Lambda_C}}.
+1-\alpha=\frac{M}{M_{\Lambda,C}}.
 \tag{3}
 \]
 
@@ -87,17 +87,17 @@ This matches the vacuum-row entry in the component table of "Thermodynamic Accou
 
 ## 3. Route B, reduced
 
-The recursive-Kottler note fixes \(R_C\) to the observed de Sitter radius,
+The recursive-Kottler note fixes \(R_{\Lambda,C}\) to the observed de Sitter radius,
 
 \[
-R_C=R_\Lambda=\frac{R_H}{\sqrt{\Omega_{\Lambda,0}}},
+R_{\Lambda,C}=R_\Lambda=\frac{R_H}{\sqrt{\Omega_{\Lambda,0}}},
 \tag{6}
 \]
 
 and, under the conditional identification \(M=M_H\), uses the independently established ratio identity
 
 \[
-\frac{M_H}{M_{\Lambda_C}}=\frac{R_H}{R_C}=\sqrt{\Omega_{\Lambda,0}}
+\frac{M_H}{M_{\Lambda,C}}=\frac{R_H}{R_{\Lambda,C}}=\sqrt{\Omega_{\Lambda,0}}
 \tag{7}
 \]
 
@@ -125,25 +125,25 @@ Equations (2) and (8) were derived using the conditional assumption \(M=M_H\) al
 Set Equation (3), in its general form (not yet substituting \(M=M_H\)), equal to Equation (2):
 
 \[
-\frac{3c^2}{2R_C}\cdot\frac{M}{M_{\Lambda_C}}
+\frac{3c^2}{2R_{\Lambda,C}}\cdot\frac{M}{M_{\Lambda,C}}
 =
 \frac32\,\Omega_{\Lambda,0}\,cH_0.
 \tag{9}
 \]
 
-Solve for \(M/M_{\Lambda_C}\):
+Solve for \(M/M_{\Lambda,C}\):
 
 \[
-\frac{M}{M_{\Lambda_C}}
+\frac{M}{M_{\Lambda,C}}
 =
-\frac{\Omega_{\Lambda,0}\,H_0R_C}{c}.
+\frac{\Omega_{\Lambda,0}\,H_0R_{\Lambda,C}}{c}.
 \tag{10}
 \]
 
-Using \(R_C=R_H/\sqrt{\Omega_{\Lambda,0}}\) and \(H_0R_H=c\):
+Using \(R_{\Lambda,C}=R_H/\sqrt{\Omega_{\Lambda,0}}\) and \(H_0R_H=c\):
 
 \[
-\frac{M}{M_{\Lambda_C}}
+\frac{M}{M_{\Lambda,C}}
 =
 \frac{\Omega_{\Lambda,0}}{\sqrt{\Omega_{\Lambda,0}}}
 =
@@ -153,7 +153,7 @@ Using \(R_C=R_H/\sqrt{\Omega_{\Lambda,0}}\) and \(H_0R_H=c\):
 
 \[
 \boxed{
-\frac{M}{M_{\Lambda_C}}=\sqrt{\Omega_{\Lambda,0}}
+\frac{M}{M_{\Lambda,C}}=\sqrt{\Omega_{\Lambda,0}}
 \quad\Longrightarrow\quad
 M=M_H
 }
@@ -166,7 +166,7 @@ by Equation (7). The mass that makes the recursive-Kottler surface gravity equal
 
 Two logically distinct conditions now select \(M=M_H\):
 
-1. \(M_H/M_{\Lambda_C}=R_H/R_C\) — a ratio of horizon radii, established independently in GD1 Section 7 and used to define \(M_H\) in the first place.
+1. \(M_H/M_{\Lambda,C}=R_H/R_{\Lambda,C}\) — a ratio of horizon radii, established independently in GD1 Section 7 and used to define \(M_H\) in the first place.
 2. The recursive-Kottler surface-gravity jump equals the FLRW apparent-horizon vacuum work term — a dimensionful acceleration-scale match, established here.
 
 Agreement between two conditions of different type is stronger evidence for treating \(M=M_H\) as physically apt than either condition alone, since a generic incorrect mass would satisfy neither. It is not a derivation of \(M=M_H\) from first principles: both conditions could in principle share a deeper, still-unidentified reason for preferring this mass, in which case they would not be independent checks so much as two faces of the same fact. Distinguishing those possibilities requires the same missing ingredient as everywhere else in this program — an independently derived law for how the recursive parent horizon's mass relates to the child's observed cosmology, rather than a mass supplied by hand.
@@ -177,7 +177,7 @@ Agreement between two conditions of different type is stronger evidence for trea
 \Delta\kappa_\Lambda=[\kappa]=\frac32\,\Omega_{\Lambda,0}\,cH_0=6.7275\times10^{-10}\ \mathrm{m\,s^{-2}}
 \]
 
-exactly, given \(R_C=R_\Lambda\) and \(M=M_H\); and requiring this equality without assuming \(M=M_H\) recovers it as the unique solution. The two notes were computing the same physical quantity by construction, not by coincidence.
+exactly, given \(R_{\Lambda,C}=R_\Lambda\) and \(M=M_H\); and requiring this equality without assuming \(M=M_H\) recovers it as the unique solution. The two notes were computing the same physical quantity by construction, not by coincidence.
 
 ---
 

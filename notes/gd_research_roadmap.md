@@ -94,7 +94,7 @@ L\leftrightarrow\mathcal H\leftrightarrow\Sigma.
 
 can be derived from one throat geometry.
 
-No stress-free timelike or null junction is assumed. GD2 must calculate the junction data, stress-energy, and relation between any timelike matching history and the null event horizon.
+No stress-free timelike or null junction is assumed. GD2 must calculate the junction data, stress-energy, and relation between any timelike matching history and the parent black-hole event horizon.
 
 ---
 

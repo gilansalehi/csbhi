@@ -11,10 +11,10 @@ This note tests the most direct four-dimensional null junction between Bob's sta
 \[
 H_A=\frac{c}{R_S},
 \qquad
-R_H=\frac{c}{H_A}=R_S.
+R_A=\frac{c}{H_A}=R_S.
 \]
 
-Thus the Schwarzschild-radius/Hubble-radius identity follows from the first null junction condition rather than being inserted. Requiring the direct junction to persist along Bob's stationary horizon also forces \(\dot H_A=0\). Under Einstein's equations, the matched reciprocal interior is therefore de Sitter, with \(P=-\rho c^2\) and \(\Lambda=3/R_S^2\).
+Thus the Schwarzschild-radius/apparent-horizon-radius identity follows from the first null junction condition rather than being inserted. Requiring the direct junction to persist along Bob's stationary horizon also forces \(\dot H_A=0\). Under Einstein's equations, the matched reciprocal interior is therefore de Sitter, with \(P=-\rho c^2\) and \(\Lambda=3/R_S^2\).
 
 The second null junction condition is more restrictive. Under the simplest static soldering, the Schwarzschild and de Sitter radial functions agree at the horizon but have unequal transverse derivatives. The associated jump in signed surface gravity produces a null surface stress in the Barrabès-Israel formalism. Consequently, the direct piecewise Schwarzschild/de Sitter construction is continuous but not stress-free. A complete CSBHI junction must supply a nontrivial null soldering, a finite conformal transition, or the parent cosmological geometry omitted by the isolated-Schwarzschild approximation.
 
@@ -57,7 +57,7 @@ f_+(R)=1-\frac{R_S}{R}.
 \tag{2}
 \]
 
-The future event horizon is
+The future black-hole event horizon is
 
 \[
 \Sigma_+:\quad R=R_S.
@@ -114,7 +114,7 @@ q_-=\mathcal R(\tau)^2d\Omega^2.
 \tag{9}
 \]
 
-## 4. The first junction condition derives \(R_S=R_H\)
+## 4. The first junction condition derives \(R_S=R_A\)
 
 Continuity of the induced metric, \(q_-=q_+\), requires
 
@@ -143,11 +143,11 @@ H_A=\frac{c}{R_S}
 \tag{12}
 \]
 
-and Alice's Hubble radius at the junction is
+and Alice's apparent-horizon radius at the junction is
 
 \[
 \boxed{
-R_H=\frac{c}{H_A}=R_S
+R_A=\frac{c}{H_A}=R_S
 }.
 \tag{13}
 \]
@@ -331,7 +331,7 @@ The sign depends on the chosen orientation; the nonzero jump does not.
 
 ### Future black-hole to future cosmological orientation
 
-Bob's future event horizon is regular in the advanced orientation \(\epsilon_+=+1\). Alice's future de Sitter cosmological horizon is regular in the retarded orientation \(\epsilon_-=-1\). With this causal identification, Equation (26) instead gives
+Bob's future black-hole event horizon is regular in the advanced orientation \(\epsilon_+=+1\). Alice's future de Sitter cosmological horizon is regular in the retarded orientation \(\epsilon_-=-1\). With this causal identification, Equation (26) instead gives
 
 \[
 \mathcal C_{vv}^+=\frac{1}{2R_S},
@@ -387,7 +387,7 @@ The direct null calculation establishes
 \boxed{
 q_+=q_-
 \quad\Longrightarrow\quad
-R_S=R_H
+R_S=R_A
 }
 \tag{35}
 \]

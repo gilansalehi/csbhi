@@ -68,7 +68,7 @@ The notation must distinguish quantities that were previously all denoted by \(r
 r
 \]
 
-is the horizon-normalized Schwarzschild or Kottler areal-radius coordinate Bob assigns to Alice's trajectory. In the paper's normalized units, symmetry spheres have area \(4\pi r^2\). The horizon is at \(r=1\), and the proposed infinite interior future corresponds to \(r\to0\).
+is the Schwarzschild or Kottler areal-radius coordinate Bob assigns to Alice's trajectory, normalized to the parent black-hole horizon selected by the construction. In the paper's normalized units, symmetry spheres have area \(4\pi r^2\). That horizon is at \(r=1\), and the proposed infinite interior future corresponds to \(r\to0\).
 
 ### 2.2 Alice's comoving radial coordinate
 

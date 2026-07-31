@@ -6,7 +6,7 @@
 
 ## Abstract
 
-The reciprocal ansatz \(a=1/r\) translates Alice's scale factor into Bob's radial coordinate, but a translation rule does not by itself locate the present epoch on Bob's diagram. The moving-null-boundary identity supplies the missing normalization. If \(B(\tau)\) is the areal radius of the shared finite throat, then
+The reciprocal ansatz \(a=1/r\) translates Alice's scale factor into Bob's radial coordinate, but a translation rule does not by itself locate the present epoch on Bob's diagram. The moving-null-boundary identity supplies the missing normalization. Let \(B(\tau)\) be Alice's cosmological event-horizon radius; if the horizon map identifies its history with the finite throat, then
 
 \[
 H_A=\frac{c+\dot B}{B}
@@ -23,7 +23,7 @@ r_0
 }.
 \]
 
-The absolute reciprocal coordinate is therefore fixed by the throat history. No recombination model is required for this identity.
+The absolute reciprocal coordinate is therefore fixed by the candidate throat history. No recombination model is required for this identity.
 
 The observed expansion history reconstructs the target boundary and yields a second geometric result. Near the hot early universe, the cosmological event horizon behaves as
 
@@ -40,7 +40,7 @@ If the first junction identifies Bob's Schwarzschild radius with this event hori
 
 ## 1. The normalization problem
 
-Let Alice cross the newly formed parent horizon at \(\tau=\tau_H\). Set
+Let Alice cross the newly formed parent black-hole event horizon at \(\tau=\tau_H\). Set
 
 \[
 a_H=1,

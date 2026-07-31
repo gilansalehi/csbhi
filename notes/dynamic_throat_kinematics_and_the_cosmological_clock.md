@@ -6,7 +6,7 @@
 
 ## Abstract
 
-The stationary null-junction calculation identifies the Schwarzschild radius with Alice's de Sitter Hubble radius, but a stationary boundary describes only the vacuum-dominated limit. This note allows the shared null boundary to have a time-dependent areal radius \(B(\tau)\). In Alice's spatially flat geometry, the ingoing null condition gives the exact kinematic identity
+The stationary null-junction calculation identifies the Schwarzschild radius with Alice's de Sitter apparent-horizon radius, but a stationary boundary describes only the vacuum-dominated limit. This note gives Alice's ingoing cosmological event horizon a time-dependent areal radius \(B(\tau)\). In her spatially flat geometry, the ingoing null condition gives the exact kinematic identity
 
 \[
 \boxed{
@@ -14,7 +14,7 @@ H_A=\frac{c+\dot B}{B}
 }.
 \]
 
-The stationary limit \(\dot B=0\) recovers \(H_A=c/B\). A growing parent horizon adds the term \(\dot B/B\) to Alice's expansion rate, while the acceleration history depends on \(\ddot B\). This turns a proposed parent-horizon evolution \(B(\tau)\) into a complete homogeneous expansion history \(H_A(\tau)\).
+The stationary limit \(\dot B=0\) recovers \(H_A=c/B\). Evolution of Alice's event-horizon radius contributes the term \(\dot B/B\) to her expansion rate, while the acceleration history depends on \(\ddot B\). If the horizon map identifies this history with a parent-side horizon history, the identity turns that parent input into a complete homogeneous expansion history \(H_A(\tau)\).
 
 Extending the stationary density identity \(\rho_{\rm geom}=3c^2/(8\pi G B^2)\) to a changing throat suggests a conditional energy-transfer mechanism: growth of \(B\) lowers the geometric vacuum density and can source radiation. An early small-radius plateau, a growing transition, and a late large-radius plateau would then appear to Alice as high-scale de Sitter expansion, reheating and decelerating expansion, and the observed low-scale de Sitter future. This energy-transfer interpretation is a hypothesis, not a consequence of the null condition alone.
 
@@ -28,7 +28,7 @@ The construction also permits an observational reconstruction. Using the Planck 
 \frac{\ddot B_0}{cH_0}=-0.39373.
 \]
 
-The reconstructed boundary is \(95.15\%\) of its asymptotic de Sitter radius, while \(73.45\%\) of the finite conformal-time interval from the hot early universe to future infinity has elapsed. These values define targets for the parent-collapse calculation. They become predictions only when \(B(\tau)\) is derived independently from the parent horizon's matter and gravitational fluxes.
+The reconstructed boundary is \(95.15\%\) of its asymptotic de Sitter radius, while \(73.45\%\) of the finite conformal-time interval from the hot early universe to future infinity has elapsed. These values define targets for the parent-collapse calculation. They become predictions only when the horizon map derives \(B(\tau)\) independently from the relevant parent-side area history and its matter and gravitational fluxes.
 
 ---
 
@@ -112,7 +112,7 @@ H_A
 \tag{7}
 \]
 
-The first is the stationary horizon term. The second records evolution of the boundary itself. A parent horizon growing in the matching history therefore appears as an additional contribution to Alice's homogeneous expansion.
+The first is the stationary-horizon term. The second records evolution of Alice's event-horizon radius. If the horizon map identifies \(B(\tau)\) with a parent-side area history, growth of that history appears as an additional contribution to Alice's homogeneous expansion.
 
 ## 3. Stationary limit and acceleration
 
@@ -551,8 +551,8 @@ Equation (45) is an operational answer to where the present epoch lies in the re
 
 Equations (22)-(44) describe the boundary required by the observed homogeneous history. A test of CSBHI must reverse the direction of inference:
 
-1. derive the parent horizon's area \(A=4\pi B^2\) from its matter and gravitational-radiation fluxes;
-2. translate the resulting parent parameter into Alice's proper time through the horizon map;
+1. derive the relevant parent-side area history from its matter and gravitational-radiation fluxes;
+2. map that parent history to a predicted Alice-side radius \(B_{\rm pred}(\tau)\);
 3. compute
 
    \[

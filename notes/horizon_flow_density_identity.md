@@ -160,7 +160,7 @@ Equations (9) and (12) give the density identity
 The dimensionless rate in Equation (7) corresponds to
 
 \[
-H_H=\frac{c}{R_S}.
+H_{A,H}=\frac{c}{R_S}.
 \tag{14}
 \]
 
@@ -169,7 +169,7 @@ The mass-equivalent critical density associated with this rate is
 \[
 \rho_{c,H}
 =
-\frac{3H_H^2}{8\pi G}
+\frac{3H_{A,H}^2}{8\pi G}
 =
 \frac{3c^2}{8\pi G R_S^2}.
 \tag{15}
@@ -239,7 +239,7 @@ a=\frac{1}{r}
 \[
 \Longrightarrow
 \quad
-H_H=\frac{c}{R_S}
+H_{A,H}=\frac{c}{R_S}
 \quad
 \Longrightarrow
 \quad
