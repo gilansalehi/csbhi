@@ -45,6 +45,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - [CSBHI project overview](https://www.gilansalehi.com/csbhi/): Publication map, progress, open problems, and further reading.
 - [Frequently Asked Questions](https://www.gilansalehi.com/csbhi/faqs.html): Short answers to recurring conceptual and mathematical objections.
 - [CSBHI Cosmological Glossary](https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md): Canonical terminology and notation for cosmological horizons, black-hole horizons, distances, expansion, and junction geometry across the project.
+- [What Remains Mathematically Illegible](https://www.gilansalehi.com/csbhi/notes/open_questions.md): Living index of the unresolved geometric, cosmological, empirical, and extension questions, ordered by dependency.
 - [Alice's Descent](https://www.gilansalehi.com/csbhi/leap-of-faith.html): Interactive geometric illustration accompanying the primary paper.
 - [Source repository](https://github.com/gilansalehi/csbhi): HTML source, research notes, figures, and revision history.
 
