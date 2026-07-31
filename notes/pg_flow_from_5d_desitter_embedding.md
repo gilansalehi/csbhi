@@ -52,7 +52,7 @@ This is not yet the full GD construction.
 
 It does not prove the full dust+\(\Lambda\) spacetime.
 
-It does not prove the Horizon Triple Identity.
+It does not construct the relationships among the curvature scale, causal horizons, and matching history.
 
 It does not prove the galaxy-scale square-root law.
 

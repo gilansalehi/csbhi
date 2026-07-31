@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This paper is the proposed dynamical payoff of the Geometric Duality programme. GD1 introduces the reciprocal black-hole/cosmology map and identifies its exact de Sitter endpoint. GD2 tests the Horizon Triple Identity by attempting to derive the de Sitter curvature scale \(L\), the causal horizon \(\mathcal H\), and a matching history \(\Sigma\) from one throat geometry.
+This paper is the proposed dynamical payoff of the Geometric Duality programme. GD1 introduces the reciprocal black-hole/cosmology map and identifies its exact de Sitter endpoint. GD2 attempts to construct a 5D throat geometry that relates the de Sitter curvature scale \(L\), the relevant causal horizons, and a matching history \(\Sigma\) without identifying them.
 
 If that construction succeeds, GD3 asks whether the same throat geometry explains the galaxy acceleration problem. The target is the MOND/BTFR-like scaling
 
@@ -239,7 +239,7 @@ It can honestly present:
 
 ## 9. Conclusion
 
-GD3 should frame the galaxy problem as the first dynamical test of the Horizon Triple Identity.
+GD3 should frame the galaxy problem as the first dynamical test of the completed throat geometry.
 
 If the universe is governed by a throat geometry whose global scale is \(cH\), then galaxy dynamics may not be governed by local baryonic gravity alone. The natural mixed acceleration is the geometric mean of local and global scales:
 

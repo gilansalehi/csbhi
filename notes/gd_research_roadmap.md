@@ -78,27 +78,22 @@ This result establishes the standard geometric origin of the pure-de Sitter PG f
 
 ---
 
-## Supporting Note II and GD2: the horizon map
+## GD2: the 5D de Sitter throat
 
-[*The Horizon Triple-Identity Hypothesis*](note.html?src=horizon_triple_identity) defines the proposed relation
-
-\[
-L\leftrightarrow\mathcal H\leftrightarrow\Sigma.
-\]
-
-[*Geometric Duality II*](note.html?src=gd2_horizon_triple_identity_outline) must determine whether
+[*Geometric Duality II*](note.html?src=gd2_5d_de_sitter_throat_outline) must construct a throat geometry that derives
+the relationships among
 
 - the de Sitter curvature scale \(L\),
 - the null causal horizon \(\mathcal H\), and
 - a matching structure or history \(\Sigma\)
 
-can be derived from one throat geometry.
+without treating them as one object.
 
 No stress-free timelike or null junction is assumed. GD2 must calculate the junction data, stress-energy, and relation between any timelike matching history and the parent black-hole event horizon.
 
 ---
 
-## Supporting Note IV and GD3: throat dynamics
+## Supporting Note III and GD3: throat dynamics
 
 [*The Self-Dual Homogeneous Derivation of the Square-Root Law*](note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law) shows that homogeneity, local/global exchange symmetry, and exact deep-regime scale invariance select
 

@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.gilansalehi.com/csbhi/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/gd1.html</loc>
     <lastmod>2026-07-30</lastmod>
   </url>
   <url>
+    <loc>https://www.gilansalehi.com/csbhi/junctions.html</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.gilansalehi.com/csbhi/faqs.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/leap-of-faith.html</loc>
@@ -18,7 +22,7 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/llms.txt</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/black_hole_cosmology_lineage.md</loc>
@@ -30,7 +34,7 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/dynamic_throat_kinematics_and_the_cosmological_clock.md</loc>
@@ -38,15 +42,15 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
-    <loc>https://www.gilansalehi.com/csbhi/notes/gd2_horizon_triple_identity_outline.md</loc>
-    <lastmod>2026-07-29</lastmod>
+    <loc>https://www.gilansalehi.com/csbhi/notes/gd2_5d_de_sitter_throat_outline.md</loc>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/gd3_throat_curvature_and_galaxy_law_outline.md</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/gd_inverse_radius_probe_congruence.md</loc>
@@ -54,7 +58,7 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/gd_research_roadmap.md</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md</loc>
@@ -66,7 +70,7 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/gd_thermodynamic_reconciliation_outline.md</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/horizon_flow_density_identity.md</loc>
@@ -78,15 +82,15 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/horizon_crossing_history_and_future_patches.md</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/horizon_triple_identity.md</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/pg_flow_from_5d_desitter_embedding.md</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/hyperbolic_cosmological_clock.md</loc>

@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="version" content="0.1">
+  <meta name="revised" content="2026-07-31">
+  <meta name="dcterms.created" content="2026-07-31">
+  <meta name="dcterms.modified" content="2026-07-31">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="Timelike, null, thermodynamic, and dynamical junction conditions for the reciprocal black-hole interior.">
+  <meta name="status" content="Early draft">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/junctions.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <title>Junction Conditions for the Reciprocal Interior</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS",
+          useLabelIds: true
+        }
+      }
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <link href="src/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#paper-title">Skip to paper</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article aria-labelledby="paper-title">
+      <h1 id="paper-title">Junction Conditions for the Reciprocal Interior</h1>
+      <p class="page-meta">Reciprocal Interior II · Early draft · Codex (OpenAI) · July 31, 2026</p>
+
+      <nav id="table-of-contents" aria-labelledby="toc-title">
+        <h2>Table of Contents</h2>
+        <details open>
+          <summary id="toc-title">Contents</summary>
+          <h3>Junction Conditions for the Reciprocal Interior</h3>
+          <ol start="0">
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#section1">The Missing Bridge</a></li>
+            <li><a href="#section2">Surfaces, Radii, and the Horizon Map</a></li>
+            <li><a href="#section3">The Timelike Junction</a></li>
+            <li><a href="#section4">The Null Junction</a></li>
+            <li><a href="#section5">The Transverse Work Term</a></li>
+            <li><a href="#section6">The Dynamic Causal Boundary</a></li>
+            <li><a href="#section7">The Recursive Parent Geometry</a></li>
+            <li><a href="#section8">Three Distinct Geometric Structures</a></li>
+            <li><a href="#section9">Discussion</a></li>
+            <li><a href="#section10">Conclusion</a></li>
+          </ol>
+
+          <h3>Appendices</h3>
+          <ol type="A">
+            <li><a href="#appendixA">Result hierarchy</a></li>
+            <li><a href="#appendixB">Supplementary calculations</a></li>
+            <li><a href="#appendixC">Symbol legend</a></li>
+          </ol>
+
+          <h3>References</h3>
+          <ol>
+            <li><a href="#references">References</a></li>
+          </ol>
+        </details>
+      </nav>
+
+      <aside>
+        <strong>Status:</strong>
+        This independently authored technical paper is an early synthesis draft, not a peer-reviewed result. It
+        gathers the exact junction calculations, conditional reconstructions, and remaining geometric problem into
+        one argument for review.
+        Unless physical units are displayed explicitly, we use \(c=1\), retain \(G\), and adopt signature
+        \((-,+,+,+)\).
+      </aside>
+
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <details open>
+          <summary>The reciprocal interior has a boundary problem.</summary>
+          <p>
+            The primary CSBHI paper introduced the reciprocal ansatz \(a(\tau)=1/r(\tau)\), while
+            <a href="note.html?src=field_equations_of_the_reciprocal_interior">the first paper in this technical
+              sequence</a> derived the field equations of Alice's spatially flat
+            matter–radiation–\(\Lambda\) interior. Those results relate black-hole infall to cosmological expansion,
+            but they do not join Alice's interior four-geometry to Bob's exterior. Here we isolate that missing
+            junction and test its timelike, null, thermodynamic, and dynamical limits.
+          </p>
+
+          <p>
+            A comoving timelike FLRW boundary has shared areal radius \(\bar R=aR_0\). Matching it to Kottler geometry
+            fixes the exterior mass parameter. When the cosmological constant agrees on both sides, its volume term
+            cancels exactly:
+            \[
+            M_K=\frac{4\pi}{3}\rho\,\bar R^3.
+            \]
+            A stress-free static match further requires vanishing non-vacuum pressure. Dust plus a shared
+            cosmological constant therefore matches smoothly; radiation supplies the remaining pressure residual,
+            which decays as \(a^{-1}\) in the required mass.
+          </p>
+
+          <p>
+            In the direct stationary Schwarzschild–FLRW null geometry studied here, continuity of the spherical
+            induced metric and the null condition give
+            \[
+            R_S=R_A=\frac{c}{H_A}.
+            \]
+            If the junction remains stationary, Alice's side must be de Sitter and
+            \(\Lambda=3/R_S^2\). The transverse derivatives do not match under the simplest Schwarzschild–de Sitter
+            soldering. Their jump is fixed, however: at Alice's apparent horizon it equals her interior work density
+            projected from volume to area,
+            \[
+            \Delta\kappa=\frac{4\pi G R_A}{c^2}W,
+            \qquad
+            \gamma\,dA=W\,dV.
+            \]
+          </p>
+
+          <p>
+            Finally, Alice's cosmological event-horizon radius \(B(\tau)\) obeys the exact kinematic law
+            \[
+            H_A=\frac{c+\dot B}{B}.
+            \]
+            The measured expansion history therefore reconstructs the boundary history that a completed parent
+            geometry must produce independently. The junction problem has not disappeared; it has been reduced to a
+            precise target: derive a parent-side area history that maps to \(B(\tau)\) and a finite throat whose
+            transverse geometry carries the work term above. In the stationary de Sitter limit, the curvature radius,
+            causal-horizon radius, and junction radius coincide. Away from that limit they are distinct, and their
+            relationship must be derived by the completed throat geometry.
+          </p>
+        </details>
+      </section>
+
+      <section id="section1">
+        <h2>The Missing Bridge</h2>
+
+        <p>
+          GD1 begins with two ingredients <span class="ref">[<a href="#ref-01">1</a>]</span>. Bob assigns Alice a
+          horizon-normalized areal coordinate \(r(\tau)\), decreasing from \(r=1\) toward \(r=0\), while Alice's
+          interior scale factor is
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:reciprocal}
+          \boxed{a(\tau)=\frac{1}{r(\tau)}}.
+          \end{equation}
+        </p>
+
+        <p>
+          Alice's proposed interior metric is
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:alice-metric}
+          ds_A^2
+          =
+          -d\tau^2
+          +
+          a(\tau)^2
+          \left[
+          \frac{dR^2}{1-kR^2}
+          +
+          R^2d\Omega^2
+          \right].
+          \end{equation}
+        </p>
+
+        <p>
+          Equation \eqref{eq:reciprocal} is a dictionary between Bob's infall description and Alice's spatial scale.
+          Equation \eqref{eq:alice-metric} specifies Alice's intrinsic geometry. Neither equation supplies the
+          four-dimensional region that connects them.
+        </p>
+
+        <p>
+          That region cannot be replaced by a change of coordinates. Vacuum Schwarzschild has anisotropic
+          Kantowski–Sachs evolution and nonzero Weyl curvature, whereas FLRW is isotropic and conformally flat
+          <span class="ref">[<a href="#ref-02">2</a>, <a href="#ref-03">3</a>,
+            <a href="#ref-04">4</a>]</span>. A regular scalar conformal rescaling preserves whether the Weyl tensor
+          vanishes. The reciprocal scalar may be smooth at \(r=1\), but smoothness of one scalar does not make the
+          joined four-metric differentiable.
+        </p>
+
+        <p>
+          The horizon map must therefore provide three things
+          <span class="ref">[<a href="#ref-19">19</a>]</span>:
+        </p>
+
+        <ol>
+          <li>a common intrinsic geometry on the matching surface;</li>
+          <li>the transverse or extrinsic geometry on both sides; and</li>
+          <li>the surface or distributed stress-energy required when those derivatives differ.</li>
+        </ol>
+
+        <p>
+          The calculations below determine how much of that programme already follows from standard junction
+          geometry, and where new geometry must enter.
+        </p>
+      </section>
+
+      <section id="section2">
+        <h2>Surfaces, Radii, and the Horizon Map</h2>
+
+        <p>
+          Several geometrically different objects meet in this problem. They must remain distinct even when their
+          radii happen to agree.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Object</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>\(R_S\)</td>
+              <td>Bob's Schwarzschild scale</td>
+              <td>Parent black-hole radius in the isolated exterior limit</td>
+            </tr>
+            <tr>
+              <td>\(R_A=c/H_A\)</td>
+              <td>Alice's apparent-horizon radius</td>
+              <td>Local marginal surface selected by the flat Friedmann geometry</td>
+            </tr>
+            <tr>
+              <td>\(B(\tau)\)</td>
+              <td>Alice's cosmological event-horizon radius</td>
+              <td>Global null boundary fixed by the complete future history</td>
+            </tr>
+            <tr>
+              <td>\(R_\Lambda=c/H_\Lambda\)</td>
+              <td>de Sitter curvature radius</td>
+              <td>Invariant asymptotic curvature scale</td>
+            </tr>
+            <tr>
+              <td>\(\Sigma\)</td>
+              <td>Matching history</td>
+              <td>Null surface, timelike layer, or finite throat to be derived</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          In exact de Sitter space, \(R_A\), \(B\), and \(R_\Lambda\) have the same numerical value. They remain a
+          quasi-local marginal radius, a global causal radius, and a curvature radius respectively
+          <span class="ref">[<a href="#ref-13">13</a>, <a href="#ref-18">18</a>]</span>. At finite matter or
+          radiation density, \(R_A\neq B\).
+        </p>
+
+        <p>
+          The same distinction applies to the matching history. A timelike worldtube cannot be a null event horizon.
+          A null junction can coincide with a horizon, but its degenerate induced metric and transverse curvature
+          require the null-shell formalism rather than the ordinary timelike Israel equations
+          <span class="ref">[<a href="#ref-05">5</a>, <a href="#ref-06">6</a>,
+            <a href="#ref-07">7</a>]</span>. We therefore analyze the timelike and null limits separately.
+        </p>
+      </section>
+
+      <section id="section3">
+        <h2>The Timelike Junction</h2>
+
+        <h3>The first condition fixes the shared radius</h3>
+
+        <p>
+          Place a comoving timelike boundary at \(R=R_0\) in Equation \eqref{eq:alice-metric}. Its induced metric is
+        </p>
+
+        <p>
+          \[
+          ds_\Sigma^2=-d\tau^2+\bar R(\tau)^2d\Omega^2,
+          \qquad
+          \bar R(\tau)=a(\tau)R_0.
+          \]
+        </p>
+
+        <p>
+          The area \(4\pi\bar R^2\) is intrinsic to the boundary. Any spherically symmetric exterior joined to it
+          must assign the same areal radius. This shell identity is exact:
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:shell-identity}
+          \boxed{\bar R_\Sigma(\tau)=a(\tau)R_0}.
+          \end{equation}
+        </p>
+
+        <p>
+          Equation \eqref{eq:shell-identity} is not the reciprocal ansatz. Alice's shell radius \(\bar R\) grows with
+          \(a\); Bob's normalized trajectory label \(r=1/a\) decreases. Confusing them erases the junction problem
+          before it has been solved.
+        </p>
+
+        <h3>Angular matching fixes the exterior mass</h3>
+
+        <p>
+          Take the exterior to be Kottler,
+        </p>
+
+        <p>
+          \[
+          ds_+^2
+          =
+          -f(\bar R)dT^2
+          +
+          \frac{d\bar R^2}{f(\bar R)}
+          +
+          \bar R^2d\Omega^2,
+          \qquad
+          f(\bar R)
+          =
+          1-\frac{2GM_K}{\bar R}-\frac{\Lambda_+\bar R^2}{3}.
+          \]
+        </p>
+
+        <p>
+          Let the FLRW and Kottler cosmological constants be \(\Lambda_-\) and \(\Lambda_+\), while \(\rho\) and \(p\)
+          denote non-vacuum density and pressure. Continuity of the angular extrinsic curvature gives
+          <span class="ref">[<a href="#ref-08">8</a>, <a href="#ref-09">9</a>,
+            <a href="#ref-21">21</a>, <a href="#ref-22">22</a>]</span>
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:kottler-mass}
+          \boxed{
+          M_K
+          =
+          \frac{4\pi}{3}\rho\,\bar R^3
+          +
+          \frac{\Lambda_--\Lambda_+}{6G}\bar R^3
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          When the same cosmological constant belongs to both geometries, its contribution cancels:
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:vacuum-cancellation}
+          \boxed{
+          M_K=\frac{4\pi}{3}\rho\,\bar R^3
+          }
+          \qquad(\Lambda_-=\Lambda_+).
+          \end{equation}
+        </p>
+
+        <p>
+          The cancellation is geometric. The Misner–Sharp mass on each side contains the same
+          \(\Lambda\bar R^3/(6G)\) term. Comparing the complete interior mass with only the bare Kottler parameter
+          counts vacuum curvature on one side and omits it on the other.
+        </p>
+
+        <h3>Temporal matching fixes the pressure</h3>
+
+        <p>
+          Continuity of the temporal extrinsic curvature adds
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:pressure-condition}
+          \boxed{
+          p=\frac{\Lambda_--\Lambda_+}{8\pi G}
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          For a shared cosmological constant, \(p=0\). A comoving dust–\(\Lambda\) region therefore joins smoothly to
+          a static Kottler exterior, recovering the Oppenheimer–Snyder and Einstein–Straus matching structure
+          <span class="ref">[<a href="#ref-10">10</a>, <a href="#ref-11">11</a>,
+            <a href="#ref-12">12</a>]</span>. Radiation does not satisfy the pressure condition. For independently
+          conserved matter and radiation,
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:radiation-residual}
+          \boxed{
+          M_K(a)=M_m+\frac{M_{r0}}{a}
+          =
+          M_m+M_{r0}r
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          The radiation obstruction decays continuously as \(a\to\infty\), or \(r\to0\). The local timelike junction
+          conditions therefore close exactly for dust plus a shared \(\Lambda\), and approach that result in a
+          controlled way when radiation is retained. This local match does not construct the reciprocal map or extend
+          the boundary through a null black-hole horizon.
+        </p>
+      </section>
+
+      <section id="section4">
+        <h2>The Null Junction</h2>
+
+        <h3>The first condition fixes the horizon rate</h3>
+
+        <p>
+          Use ingoing Eddington–Finkelstein coordinates for an isolated Schwarzschild exterior,
+        </p>
+
+        <p>
+          \[
+          ds_+^2
+          =
+          -\left(1-\frac{R_S}{R}\right)dv^2
+          +2\,dv\,dR
+          +
+          R^2d\Omega^2.
+          \]
+        </p>
+
+        <p>
+          The induced metric on its future event horizon \(R=R_S\) is
+          \(q_+=R_S^2d\Omega^2\). On Alice's side, an ingoing radial null hypersurface
+          \(\chi=\chi(\tau)\) obeys
+        </p>
+
+        <p>
+          \[
+          \dot\chi=-\frac{c}{a},
+          \qquad
+          \mathcal R(\tau)=a(\tau)\chi(\tau),
+          \qquad
+          \dot{\mathcal R}=H_A\mathcal R-c.
+          \]
+        </p>
+
+        <p>
+          Continuity of the induced metric along a stationary Schwarzschild horizon requires
+          \(\mathcal R=R_S\) and \(\dot{\mathcal R}=0\). Therefore
+          <span class="ref">[<a href="#ref-20">20</a>]</span>
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:first-null}
+          \boxed{
+          H_A=\frac{c}{R_S},
+          \qquad
+          R_A=\frac{c}{H_A}=R_S
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          Equation \eqref{eq:first-null} follows from nullness and the first junction condition. It does not assume a
+          Friedmann density. If the identification persists along the stationary horizon, \(H_A\) is constant.
+          Einstein's equations then select vacuum pressure:
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:stationary-vacuum}
+          \boxed{
+          \dot H_A=0,
+          \qquad
+          P=-\rho c^2,
+          \qquad
+          \Lambda=\frac{3}{R_S^2}
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          Here \(\rho\) is total mass-equivalent density, so \(\rho c^2\) is the corresponding energy density.
+        </p>
+
+        <p>
+          The direct stationary null match therefore reaches the exact de Sitter endpoint already identified in GD1.
+          It does not reproduce the finite-time matter and radiation eras.
+        </p>
+
+        <h3>The second condition finds the obstruction</h3>
+
+        <p>
+          In the stationary limit, write the Schwarzschild and de Sitter radial functions as
+        </p>
+
+        <p>
+          \[
+          f_+(R)=1-\frac{R_S}{R},
+          \qquad
+          f_-(R)=1-\frac{R^2}{R_S^2}.
+          \]
+        </p>
+
+        <p>
+          Both vanish at \(R_S\), so the intrinsic horizon geometry matches. Their transverse derivatives do not:
+        </p>
+
+        <p>
+          \[
+          f_+'(R_S)=\frac{1}{R_S},
+          \qquad
+          f_-'(R_S)=-\frac{2}{R_S}.
+          \]
+        </p>
+
+        <p>
+          Under the same-radial-orientation static soldering, the Barrabès–Israel transverse curvature has
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:null-jump}
+          \boxed{
+          [\mathcal C_{vv}]
+          =
+          \frac{3}{2R_S},
+          \qquad
+          [\kappa]
+          =
+          \frac{3c^2}{2R_S}
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          Reversing the orientation to map a future black-hole horizon to a future cosmological horizon redistributes
+          the mismatch between longitudinal and angular transverse curvature; it does not remove it. The split also
+          depends on the normalization of the null generators. The invariant conclusion is the presence of
+          distributional curvature in the abrupt piecewise geometry.
+        </p>
+      </section>
+
+      <section id="section5">
+        <h2>The Transverse Work Term</h2>
+
+        <p>
+          The derivative jump in Equation \eqref{eq:null-jump} is not an arbitrary extra source. Horizon
+          thermodynamics identifies the interior quantity it represents
+          <span class="ref">[<a href="#ref-13">13</a>, <a href="#ref-14">14</a>,
+            <a href="#ref-15">15</a>, <a href="#ref-23">23</a>]</span>.
+        </p>
+
+        <p>
+          For Alice's spatially flat FLRW geometry, define the apparent-horizon radius, deceleration parameter, and
+          work density by
+        </p>
+
+        <p>
+          \[
+          R_A=\frac{c}{H_A},
+          \qquad
+          q=-\frac{\ddot a}{aH_A^2},
+          \qquad
+          W=\frac{\epsilon-P}{2}.
+          \]
+        </p>
+
+        <p>
+          The Hayward–Kodama surface gravity at \(R_A\) is
+        </p>
+
+        <p>
+          \[
+          \kappa_A=-\frac{cH_A}{2}(1-q),
+          \]
+        </p>
+
+        <p>
+          while a vacuum Schwarzschild horizon of the same instantaneous radius has
+          \(\kappa_B=cH_A/2\). Their signed difference is
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:work-jump}
+          \boxed{
+          \Delta\kappa
+          \equiv
+          \kappa_B-\kappa_A
+          =
+          \frac{cH_A}{2}(2-q)
+          =
+          \frac{4\pi G R_A}{c^2}W
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          Define the corresponding effective tension by
+          \(\gamma=c^2\Delta\kappa/(8\pi G)\). Since \(dV/dA=R_A/2\),
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:work-projection}
+          \boxed{
+          \gamma=\frac{R_AW}{2},
+          \qquad
+          \gamma\,dA=W\,dV
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          In the stationary de Sitter limit, Equation \eqref{eq:work-projection} reproduces the same-orientation
+          null-shell tension in Equation \eqref{eq:null-jump}. The sharp shell compresses the interior
+          pressure–volume work onto a surface. A finite throat may distribute the same work through a region of
+          changing curvature.
+        </p>
+
+        <p>
+          This accounting explains the transverse term; it does not make the abrupt metric \(C^1\). A completed throat
+          must reproduce Equation \eqref{eq:work-jump} through its Einstein tensor and conservation law rather than
+          attaching the identity to an otherwise discontinuous geometry.
+        </p>
+      </section>
+
+      <section id="section6">
+        <h2>The Dynamic Causal Boundary</h2>
+
+        <p>
+          The apparent horizon \(R_A\) carries the local Friedmann constraint. Alice's cosmological event horizon
+          carries her global future causal history. Its areal radius is
+          <span class="ref">[<a href="#ref-13">13</a>, <a href="#ref-18">18</a>,
+            <a href="#ref-24">24</a>]</span>
+        </p>
+
+        <p>
+          \[
+          B(\tau)
+          =
+          a(\tau)c
+          \int_\tau^\infty\frac{d\tau'}{a(\tau')}.
+          \]
+        </p>
+
+        <p>
+          Differentiation gives the exact moving-boundary identity
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:moving-boundary}
+          \boxed{
+          \dot B=H_AB-c,
+          \qquad
+          H_A=\frac{c+\dot B}{B}
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          A second derivative gives
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:boundary-acceleration}
+          \boxed{
+          \frac{\ddot a}{a}
+          =
+          \frac{\ddot B}{B}
+          +
+          \frac{c(c+\dot B)}{B^2}
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          Equations \eqref{eq:moving-boundary}–\eqref{eq:boundary-acceleration} turn any independently derived
+          boundary history into a homogeneous expansion history. Running them backward from an observed
+          \(H_A(a)\) reconstructs the target \(B(\tau)\); it does not predict it.
+        </p>
+
+        <p>
+          Using the matter–radiation–\(\Lambda\) background adopted in GD1
+          <span class="ref">[<a href="#ref-17">17</a>]</span> gives
+        </p>
+
+        <p>
+          Here \(R_H=c/H_0\) is the present Hubble radius and \(R_p\) is the present proper radius of the particle
+          horizon. The ratio \(R_p/(R_p+B_0)\) is the fraction of the finite conformal-time interval already elapsed.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Present quantity</th>
+              <th>Reconstructed value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>\(B_0/R_H\)</td>
+              <td>\(1.14972\)</td>
+            </tr>
+            <tr>
+              <td>\(\dot B_0/c\)</td>
+              <td>\(0.14972\)</td>
+            </tr>
+            <tr>
+              <td>\(\ddot B_0/(cH_0)\)</td>
+              <td>\(-0.39373\)</td>
+            </tr>
+            <tr>
+              <td>\(B_0/R_\Lambda\)</td>
+              <td>\(0.95150\)</td>
+            </tr>
+            <tr>
+              <td>\(R_p/(R_p+B_0)\)</td>
+              <td>\(0.73446\)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          The local and global horizons are also thermodynamically distinct. Let
+          \(x=B/R_A=H_AB/c\). Evaluating the apparent-horizon equilibrium identity on the event-horizon sphere leaves
+          the exact residual
+          <span class="ref">[<a href="#ref-25">25</a>]</span>
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:nonequilibrium}
+          \boxed{
+          \dot{\mathcal Q}_{\rm neq}
+          =
+          -\frac{c^5}{G}x^2(1+qx)
+          =
+          \frac{c^5}{G}x^2\frac{\ddot B}{cH_A}
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          The residual vanishes when the event and apparent horizons settle into the stationary de Sitter limit. It
+          is a geometric balance term, not a luminosity. Together, Equations \eqref{eq:work-projection} and
+          \eqref{eq:nonequilibrium} give a finite throat two exact targets: carry the local transverse work and reproduce
+          the global departure from equilibrium.
+        </p>
+
+        <p>
+          Parent-side dynamical-horizon balance laws already relate changing black-hole area to matter and
+          gravitational flux <span class="ref">[<a href="#ref-16">16</a>]</span>. They supply candidate input, not the
+          map itself: the parent event horizon is null, while a quasi-local trapping or dynamical horizon can have a
+          different causal character. The completed geometry must select the parent surface and derive how its area
+          history becomes \(B(\tau)\).
+        </p>
+      </section>
+
+      <section id="section7">
+        <h2>The Recursive Parent Geometry</h2>
+
+        <p>
+          Isolated Schwarzschild omits the parent universe in which Bob's black hole forms. The simplest stationary
+          correction is a Kottler exterior with parent cosmological constant \(\Lambda_P\). Let Alice's child
+          de Sitter curvature radius be
+        </p>
+
+        <p>
+          \[
+          R_{\Lambda,C}
+          =
+          \sqrt{\frac{3}{\Lambda_C}}.
+          \]
+        </p>
+
+        <p>
+          If this radius is required to be a root of Bob's parent Kottler function, then
+          <span class="ref">[<a href="#ref-26">26</a>]</span>
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:recursive-root}
+          \boxed{
+          \frac{M}{M_{\Lambda,C}}
+          =
+          1-\frac{\Lambda_P}{\Lambda_C},
+          \qquad
+          M_{\Lambda,C}
+          =
+          \frac{c^2R_{\Lambda,C}}{2G}
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          The sign of the Kottler derivative identifies the branch:
+        </p>
+
+        <p>
+          \[
+          \frac{\Lambda_P}{\Lambda_C}&lt;\frac13
+          \quad\Longrightarrow\quad
+          \text{black-hole root},
+          \]
+          \[
+          \frac{\Lambda_P}{\Lambda_C}=\frac13
+          \quad\Longrightarrow\quad
+          \text{degenerate Nariai root},
+          \]
+          \[
+          \frac{\Lambda_P}{\Lambda_C}>\frac13
+          \quad\Longrightarrow\quad
+          \text{cosmological root}.
+          \]
+        </p>
+
+        <p>
+          Equation \eqref{eq:recursive-root} is conditional on the common-root identification. It shows how parent
+          curvature changes the isolated-Schwarzschild mass relation, but it does not derive which parent horizon
+          maps to Alice's causal boundary.
+        </p>
+
+        <p>
+          More importantly, the Kottler correction does not erase the transverse problem. Under the standard static
+          normalization, the parent and child radial derivatives still leave
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:recursive-jump}
+          \boxed{
+          [\kappa]
+          =
+          \frac{3c^2}{2R_{\Lambda,C}}
+          \left(
+          1-\frac{\Lambda_P}{\Lambda_C}
+          \right)
+          }.
+          \end{equation}
+        </p>
+
+        <p>
+          The recursive exterior solves a common-root problem, not the complete junction. It also lacks an
+          asymptotically flat infinity that would fix the normalization of its static Killing field. Both the
+          normalization and the transverse geometry must come from the completed parent–child construction.
+        </p>
+      </section>
+
+      <section id="section8">
+        <h2>Three Distinct Geometric Structures</h2>
+
+        <p>
+          The junction problem contains three objects that no single identity can collapse:
+        </p>
+
+        <p>
+          \[
+          L
+          \;\leftrightarrow\;
+          \mathcal H
+          \;\leftrightarrow\;
+          \Sigma.
+          \]
+        </p>
+
+        <ul>
+          <li>\(L\) is the invariant de Sitter curvature scale.</li>
+          <li>\(\mathcal H\) is the relevant observer-causal null horizon.</li>
+          <li>\(\Sigma\) is the matching history or finite throat joining the parent and child descriptions.</li>
+        </ul>
+
+        <p>
+          In the stationary de Sitter limit, several associated radii coincide:
+        </p>
+
+        <p>
+          \begin{equation}\label{eq:stationary-radii}
+          \boxed{
+          R_S=R_A=B=R_\Lambda=L
+          }
+          \qquad
+          \text{(stationary de Sitter radii)}.
+          \end{equation}
+        </p>
+
+        <p>
+          Equation \eqref{eq:stationary-radii} is an equality of radii in a symmetric limit, not an identity of
+          geometric objects. Curvature, causal access, and a matching surface remain different mathematical
+          structures.
+        </p>
+
+        <p>
+          At finite matter and radiation density, the apparent horizon and cosmological event horizon separate.
+          Equation \eqref{eq:moving-boundary} governs the latter, Equation \eqref{eq:work-jump} governs the former,
+          and the parent map must relate both to \(\Sigma\). The constructive target is therefore:
+        </p>
+
+        <blockquote>
+          One throat geometry derives the curvature scale, the causal boundary, and the matching history as different
+          aspects of the same solution.
+        </blockquote>
+
+        <p>
+          The present calculations identify the stationary coincidence of radii and the differential data such a
+          geometry must reproduce. They provide constraints for the construction, not the construction itself.
+        </p>
+      </section>
+
+      <section id="section9">
+        <h2>Discussion</h2>
+
+        <p>
+          The junction problem began as a broad objection: the reciprocal ansatz specifies Alice's scale but not the
+          geometry connecting her to Bob. It now has a much narrower form.
+        </p>
+
+        <p>
+          The timelike route is not obstructed by a common cosmological constant. Vacuum curvature cancels from the
+          Kottler mass condition, dust joins smoothly, and radiation leaves a decaying pressure term. The null route
+          fixes the horizon rate without a density assumption and selects de Sitter when held stationary. Its failure
+          occurs one derivative later, in the transverse curvature.
+        </p>
+
+        <p>
+          That derivative mismatch carries recognizable physics. At Alice's apparent horizon it is exactly her
+          interior work density projected onto area. A sharp junction represents that work as surface stress; a
+          smooth throat must distribute it geometrically. Meanwhile, Alice's cosmological event horizon provides a
+          second, global condition through its motion and nonequilibrium residual.
+        </p>
+
+        <p>
+          These results rule out two shortcuts. First, smoothness of \(a=1/r\) cannot substitute for four-metric
+          matching. Second, equality of horizon radii in de Sitter cannot be extended as literal equality through the
+          matter and radiation eras. The apparent horizon, event horizon, and matching history carry different data.
+        </p>
+
+        <p>
+          They also identify the next constructive move. A candidate throat metric must interpolate between parent
+          and child curvature, reproduce the induced spherical geometry, and generate the transverse work in Equation
+          \eqref{eq:work-projection}. Its parent-side area law must then map to a child event-horizon history satisfying
+          Equation \eqref{eq:moving-boundary}. Deriving those two facts from one metric would convert the reconstructed
+          cosmological history into a prediction.
+        </p>
+      </section>
+
+      <section id="section10">
+        <h2>Conclusion</h2>
+
+        <p>
+          The reciprocal interior admits a clean local timelike dust–\(\Lambda\) junction and an exact intrinsic match
+          in the stated direct null geometry. That null match fixes the Schwarzschild and apparent-horizon radii,
+          while stationarity fixes the de Sitter curvature. The remaining transverse derivative is neither arbitrary
+          nor hidden: it is the boundary form of Alice's interior work density.
+        </p>
+
+        <p>
+          A dynamical cosmological event horizon then extends the problem beyond the stationary limit. Its measured
+          history is known, its kinematic relation to expansion is exact, and its departure from apparent-horizon
+          equilibrium is calculable. What remains is to derive that history and its transverse work from the parent
+          geometry.
+        </p>
+
+        <p>
+          The remaining task is a concrete construction problem: find one throat geometry whose distinct curvature,
+          causal-boundary, and junction data reduce to the relations established here.
+        </p>
+      </section>
+
+      <section id="appendixA">
+        <h2>Appendix A: Result Hierarchy</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Result</th>
+              <th>Status</th>
+              <th>Remaining condition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>\(\bar R_\Sigma=aR_0\)</td>
+              <td>Exact first junction condition</td>
+              <td>None for spherical areal-radius continuity</td>
+            </tr>
+            <tr>
+              <td>Common-\(\Lambda\) cancellation in \(M_K\)</td>
+              <td>Exact timelike junction result</td>
+              <td>Static smoothness also requires \(p=0\)</td>
+            </tr>
+            <tr>
+              <td>\(R_S=R_A\)</td>
+              <td>Exact for the stated stationary null geometry</td>
+              <td>Nullness and intrinsic metric continuity</td>
+            </tr>
+            <tr>
+              <td>\(\Lambda=3/R_S^2\)</td>
+              <td>Exact stationary de Sitter consequence</td>
+              <td>The null identification must persist along the horizon</td>
+            </tr>
+            <tr>
+              <td>\(\gamma\,dA=W\,dV\)</td>
+              <td>Exact apparent-horizon thermodynamic identity</td>
+              <td>A throat metric must realize it geometrically</td>
+            </tr>
+            <tr>
+              <td>\(H_A=(c+\dot B)/B\)</td>
+              <td>Exact event-horizon kinematics</td>
+              <td>The parent geometry must derive \(B(\tau)\)</td>
+            </tr>
+            <tr>
+              <td>Observed \(B(\tau)\) history</td>
+              <td>Reconstruction</td>
+              <td>Not an independent prediction</td>
+            </tr>
+            <tr>
+              <td>Recursive Kottler common root</td>
+              <td>Conditional exact algebra</td>
+              <td>The common-root map and normalization must be derived</td>
+            </tr>
+            <tr>
+              <td>Unified throat construction</td>
+              <td>Open geometric problem</td>
+              <td>One metric must relate the distinct data \(L\), \(\mathcal H\), and \(\Sigma\)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="appendixB">
+        <h2>Appendix B: Supplementary Calculations</h2>
+
+        <p>
+          The detailed tensor calculations, orientation conventions, numerical integrations, and independent checks
+          behind this synthesis remain available as technical notes:
+        </p>
+
+        <ul>
+          <li><a href="note.html?src=horizon_map_shell_identity_and_mass_growth">The Exact Shell Identity and the Kottler Mass Condition</a></li>
+          <li><a href="note.html?src=vacuum_energy_cancellation_at_a_kottler_junction">Vacuum-Energy Cancellation at an FLRW–Kottler Junction</a></li>
+          <li><a href="note.html?src=null_horizon_matching_of_the_reciprocal_interior">Null-Horizon Matching of the Reciprocal Interior</a></li>
+          <li><a href="note.html?src=thermodynamic_accounting_of_the_transverse_junction">Thermodynamic Accounting of the Transverse Junction</a></li>
+          <li><a href="note.html?src=two_routes_to_the_vacuum_surface_gravity_jump">Two Routes to the Vacuum Surface-Gravity Jump</a></li>
+          <li><a href="note.html?src=dynamic_throat_kinematics_and_the_cosmological_clock">Dynamic Throat Kinematics and the Cosmological Clock</a></li>
+          <li><a href="note.html?src=nonequilibrium_event_horizon_and_the_cmb_clock">The Nonequilibrium Event Horizon and the CMB Clock</a></li>
+          <li><a href="note.html?src=finite_throat_transition_and_the_absolute_reciprocal_coordinate">The Finite-Throat Transition and the Absolute Reciprocal Coordinate</a></li>
+          <li><a href="note.html?src=recursive_kottler_horizons_and_the_galaxy_scale">Recursive Kottler Horizons and the Galaxy Acceleration Scale</a></li>
+          <li><a href="note.html?src=horizon_crossing_history_and_future_patches">Horizon-Crossing History and Future Causal Patches</a></li>
+        </ul>
+      </section>
+
+      <section id="appendixC">
+        <h2>Appendix C: Symbol Legend</h2>
+
+        <p>
+          The <a href="note.html?src=cosmological_glossary">CSBHI Cosmological Glossary</a> supplies complete
+          definitions and usage rules. The symbols central to this paper are:
+        </p>
+
+        <dl>
+          <dt>\(r\)</dt>
+          <dd>Bob's areal coordinate along Alice's trajectory, normalized to the parent black-hole horizon.</dd>
+
+          <dt>\(a(\tau)\)</dt>
+          <dd>Alice's interior scale factor, related to Bob's coordinate by \(a=1/r\).</dd>
+
+          <dt>\(R,\bar R\)</dt>
+          <dd>Alice's comoving radial label and areal radius, with \(\bar R=aR\).</dd>
+
+          <dt>\(R_S\)</dt>
+          <dd>Bob's Schwarzschild radius in the isolated exterior limit.</dd>
+
+          <dt>\(R_A\)</dt>
+          <dd>Alice's apparent-horizon radius; in spatially flat FLRW, \(R_A=c/H_A\).</dd>
+
+          <dt>\(B(\tau)\)</dt>
+          <dd>Alice's cosmological event-horizon radius.</dd>
+
+          <dt>\(R_\Lambda,L\)</dt>
+          <dd>The de Sitter curvature radius and the invariant curvature scale.</dd>
+
+          <dt>\(\Sigma,\mathcal H\)</dt>
+          <dd>The candidate matching history and observer-causal null horizon.</dd>
+
+          <dt>\(W,\gamma\)</dt>
+          <dd>The interior work density and its effective surface-tension representation.</dd>
+        </dl>
+      </section>
+
+      <section id="references">
+        <h2>References</h2>
+        <ol>
+          <li id="ref-01">Salehi G. <a href="gd1.html">Geometric Duality: Conformal Scaling of Black Hole Interiors.</a>
+            GD1. 2026.</li>
+          <li id="ref-02">Carroll S. M. <em>Spacetime and Geometry: An Introduction to General Relativity.</em>
+            Addison-Wesley; 2004.</li>
+          <li id="ref-03">Wald R. M. <em>General Relativity.</em> University of Chicago Press; 1984.</li>
+          <li id="ref-04">Kantowski R., Sachs R. K. Some Spatially Homogeneous Anisotropic Relativistic Cosmological
+            Models. <em>Journal of Mathematical Physics.</em> 1966;7:443–446.
+            <a href="https://doi.org/10.1063/1.1704952">doi:10.1063/1.1704952</a>.</li>
+          <li id="ref-05">Israel W. Singular Hypersurfaces and Thin Shells in General Relativity.
+            <em>Il Nuovo Cimento B.</em> 1966;44:1–14.
+            <a href="https://doi.org/10.1007/BF02710419">doi:10.1007/BF02710419</a>.</li>
+          <li id="ref-06">Barrabès C., Israel W. Thin Shells in General Relativity and Cosmology: The Lightlike Limit.
+            <em>Physical Review D.</em> 1991;43:1129–1142.
+            <a href="https://doi.org/10.1103/PhysRevD.43.1129">doi:10.1103/PhysRevD.43.1129</a>.</li>
+          <li id="ref-07">Poisson E. <em>A Relativist's Toolkit: The Mathematics of Black-Hole Mechanics.</em>
+            Cambridge University Press; 2004.</li>
+          <li id="ref-08">Kottler F. Über die physikalischen Grundlagen der Einsteinschen Gravitationstheorie.
+            <em>Annalen der Physik.</em> 1918;361:401–462.
+            <a href="https://doi.org/10.1002/andp.19183611402">doi:10.1002/andp.19183611402</a>.</li>
+          <li id="ref-09">Misner C. W., Sharp D. H. Relativistic Equations for Adiabatic, Spherically Symmetric
+            Gravitational Collapse. <em>Physical Review.</em> 1964;136:B571–B576.
+            <a href="https://doi.org/10.1103/PhysRev.136.B571">doi:10.1103/PhysRev.136.B571</a>.</li>
+          <li id="ref-10">Oppenheimer J. R., Snyder H. On Continued Gravitational Contraction.
+            <em>Physical Review.</em> 1939;56:455–459.
+            <a href="https://doi.org/10.1103/PhysRev.56.455">doi:10.1103/PhysRev.56.455</a>.</li>
+          <li id="ref-11">Einstein A., Straus E. G. The Influence of the Expansion of Space on the Gravitation Fields
+            Surrounding the Individual Stars. <em>Reviews of Modern Physics.</em> 1945;17:120–124.
+            <a href="https://doi.org/10.1103/RevModPhys.17.120">doi:10.1103/RevModPhys.17.120</a>.</li>
+          <li id="ref-12">Mars M., Mena F. C., Vera R. Review on Exact and Perturbative Deformations of the
+            Einstein–Straus Model. <em>General Relativity and Gravitation.</em> 2013;45:2143–2173.
+            <a href="https://doi.org/10.1007/s10714-013-1574-1">doi:10.1007/s10714-013-1574-1</a>.</li>
+          <li id="ref-13">Gibbons G. W., Hawking S. W. Cosmological Event Horizons, Thermodynamics, and Particle
+            Creation. <em>Physical Review D.</em> 1977;15:2738–2751.
+            <a href="https://doi.org/10.1103/PhysRevD.15.2738">doi:10.1103/PhysRevD.15.2738</a>.</li>
+          <li id="ref-14">Hayward S. A. Unified First Law of Black-Hole Dynamics and Relativistic Thermodynamics.
+            <em>Classical and Quantum Gravity.</em> 1998;15:3147–3162.
+            <a href="https://arxiv.org/abs/gr-qc/9710089">arXiv:gr-qc/9710089</a>.</li>
+          <li id="ref-15">Akbar M., Cai R.-G. Thermodynamic Behavior of Friedmann Equation at Apparent Horizon of FRW
+            Universe. <em>Physical Review D.</em> 2007;75:084003.
+            <a href="https://arxiv.org/abs/hep-th/0609128">arXiv:hep-th/0609128</a>.</li>
+          <li id="ref-16">Ashtekar A., Krishnan B. Dynamical Horizons and Their Properties.
+            <em>Physical Review D.</em> 2003;68:104030.
+            <a href="https://doi.org/10.1103/PhysRevD.68.104030">doi:10.1103/PhysRevD.68.104030</a>.</li>
+          <li id="ref-17">Planck Collaboration. Planck 2018 Results. VI. Cosmological Parameters.
+            <em>Astronomy &amp; Astrophysics.</em> 2020;641:A6.
+            <a href="https://doi.org/10.1051/0004-6361/201833910">doi:10.1051/0004-6361/201833910</a>.</li>
+          <li id="ref-18">Davis T. M., Lineweaver C. H. Expanding Confusion: Common Misconceptions of Cosmological
+            Horizons and the Superluminal Expansion of the Universe. <em>Publications of the Astronomical Society of
+              Australia.</em> 2004;21:97–109.
+            <a href="https://arxiv.org/abs/astro-ph/0310808">arXiv:astro-ph/0310808</a>.</li>
+          <li id="ref-19"><a href="note.html?src=constraints_on_the_horizon_map">Constraints on the Horizon Map.</a>
+            Research note, this project.</li>
+          <li id="ref-20">Codex (OpenAI).
+            <a href="note.html?src=null_horizon_matching_of_the_reciprocal_interior">Null-Horizon Matching of the
+              Reciprocal Interior.</a> Technical note, this project.</li>
+          <li id="ref-21">Codex (OpenAI).
+            <a href="note.html?src=vacuum_energy_cancellation_at_a_kottler_junction">Vacuum-Energy Cancellation at an
+              FLRW–Kottler Junction.</a> Technical note, this project.</li>
+          <li id="ref-22">Claude (Anthropic).
+            <a href="note.html?src=horizon_map_shell_identity_and_mass_growth">The Exact Shell Identity and the Kottler
+              Mass Condition for Alice's Interior.</a> Technical note, this project.</li>
+          <li id="ref-23">Codex (OpenAI).
+            <a href="note.html?src=thermodynamic_accounting_of_the_transverse_junction">Thermodynamic Accounting of the
+              Transverse Junction.</a> Technical note, this project.</li>
+          <li id="ref-24">Codex (OpenAI).
+            <a href="note.html?src=dynamic_throat_kinematics_and_the_cosmological_clock">Dynamic Throat Kinematics and
+              the Cosmological Clock.</a> Technical note, this project.</li>
+          <li id="ref-25">Codex (OpenAI).
+            <a href="note.html?src=nonequilibrium_event_horizon_and_the_cmb_clock">The Nonequilibrium Event Horizon and
+              the CMB Clock.</a> Technical note, this project.</li>
+          <li id="ref-26">Codex (OpenAI).
+            <a href="note.html?src=recursive_kottler_horizons_and_the_galaxy_scale">Recursive Kottler Horizons and the
+              Galaxy Acceleration Scale.</a> Technical note, this project.</li>
+          <li id="ref-27">Codex (OpenAI).
+            <a href="note.html?src=finite_throat_transition_and_the_absolute_reciprocal_coordinate">The Finite-Throat
+              Transition and the Absolute Reciprocal Coordinate.</a> Technical note, this project.</li>
+          <li id="ref-28">Codex (OpenAI).
+            <a href="note.html?src=horizon_crossing_history_and_future_patches">Horizon-Crossing History and Future
+              Causal Patches.</a> Technical note, this project.</li>
+          <li id="ref-29"><a href="note.html?src=cosmological_glossary">CSBHI Cosmological Glossary.</a>
+            Project terminology reference.</li>
+        </ol>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>

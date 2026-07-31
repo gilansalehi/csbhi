@@ -111,15 +111,15 @@ The GD answer should be:
 
 ---
 
-## 7. Thermodynamic Face of the Triple Identity
+## 7. Thermodynamic face of the throat
 
-GD2 tests the triple identity:
+GD2 asks one throat geometry to relate three distinct structures:
 
 \[
 L \leftrightarrow \mathcal H \leftrightarrow \Sigma.
 \]
 
-If the geometric identity is established, a thermodynamic synthesis would add a fourth face:
+If those relations are derived, a thermodynamic synthesis would add horizon entropy to the same construction:
 
 \[
 L \leftrightarrow \mathcal H \leftrightarrow \Sigma \leftrightarrow S_H,
@@ -127,7 +127,7 @@ L \leftrightarrow \mathcal H \leftrightarrow \Sigma \leftrightarrow S_H,
 
 where \(S_H\) denotes horizon entropy or the coarse-grained thermodynamic accounting of the horizon/throat structure.
 
-This should be treated carefully. The claim is not that all four objects are literally identical. The claim is that they may be different languages for the same underlying regime.
+The four quantities remain different mathematical objects. The question is whether one geometry fixes their relationships.
 
 ---
 
@@ -148,7 +148,7 @@ This paper should not try to replace GD2 or GD3.
 
 It should not:
 
-- prove the triple identity from scratch,
+- derive the 5D throat from scratch,
 - derive the square-root galaxy law from scratch,
 - claim Verlinde or Padmanabhan were simply wrong,
 - reduce geometry to thermodynamics,

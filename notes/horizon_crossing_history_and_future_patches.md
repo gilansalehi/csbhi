@@ -1,12 +1,12 @@
 # Horizon-Crossing History and Future Causal Patches
 
-*Technical note on the Horizon Triple-Identity Hypothesis*
+*Technical note on the horizon-crossing map*
 
 **Author:** Codex (OpenAI).
 
 ## Abstract
 
-This note gives an operational formulation of the Horizon Triple-Identity Hypothesis. Consider a radial congruence of objects entering one black hole at different horizon-crossing times. Label each worldline by its advanced crossing time \(v_H\). We propose that the missing horizon map assigns this ordered exterior history an interior comoving position,
+This note gives an operational formulation of one part of the horizon map. Consider a radial congruence of objects entering one black hole at different horizon-crossing times. Label each worldline by its advanced crossing time \(v_H\). We propose that the missing horizon map assigns this ordered exterior history an interior comoving position,
 
 \[
 R=\Psi(v_H).
@@ -202,7 +202,7 @@ Multiplying Equation (13) by \(a_e\) gives the physical condition
 \tag{16}
 \]
 
-The de Sitter curvature radius is therefore also the physical causal-separation radius. This is the exact equality already underlying the weak Horizon Triple Identity.
+The de Sitter curvature radius therefore has the same numerical value as the physical causal-separation radius in this limit. The curvature scale and causal boundary remain different geometric objects.
 
 For two observers who both maneuver toward one another, Equation (13a) becomes
 
@@ -241,16 +241,16 @@ L\ln\!\left[
 
 An immediately trailing probe can therefore remain in causal contact for a long time, while a sufficiently late Bob may be mapped outside Alice's causal patch from the beginning. The dependence is logarithmic in the initial separation.
 
-## 6. An operational Horizon Triple Identity
+## 6. Three structures in the de Sitter limit
 
-The proposed triple
+The throat construction must relate
 
 \[
 L\longleftrightarrow\mathcal H\longleftrightarrow\Sigma
 \tag{19}
 \]
 
-now has an operational reading.
+while preserving the distinctions among its terms.
 
 ### Matching history \(\Sigma\)
 
@@ -288,7 +288,7 @@ L.
 \tag{22}
 \]
 
-The same \(L\) controls the asymptotic curvature, the observer horizon, and the causal separation of the mapped crossing history. The strong triple identity would be established if one global construction derives \(\Psi\), its normalization, and \(L\) from the parent throat rather than specifying them independently.
+The same numerical scale \(L\) controls the asymptotic curvature, the observer horizon radius, and the causal separation of the mapped crossing history. One global construction must derive \(\Psi\), its normalization, and \(L\) from the parent throat rather than specifying them independently.
 
 ## 7. Coupling the worldline and optical maps
 
@@ -364,7 +364,7 @@ a(\tau)|\Delta R|=L
 \tag{27}
 \]
 
-This target makes the Horizon Triple Identity falsifiable. A candidate geometry must produce the crossing-history map, preserve the optical incidence relations, and recover the de Sitter causal radius without inserting the same scale independently into each part of the construction.
+This target makes the proposed crossing-history map falsifiable. A candidate geometry must produce the map, preserve the optical incidence relations, and recover the de Sitter causal radius without inserting the same scale independently into each part of the construction.
 
 ---
 
@@ -374,4 +374,4 @@ This target makes the Horizon Triple Identity falsifiable. A candidate geometry 
 2. Hawking, S. W., and Ellis, G. F. R. *The Large Scale Structure of Space-Time*. Cambridge University Press, 1973.
 3. Barrabès, C., and Israel, W. “Thin Shells in General Relativity and Cosmology: The Lightlike Limit.” *Physical Review D* 43, no. 4 (1991): 1129–1142. [doi:10.1103/PhysRevD.43.1129](https://doi.org/10.1103/PhysRevD.43.1129).
 4. Codex (OpenAI). [“Null Optics of the Reciprocal Interior.”](note.html?src=null_optics_of_the_reciprocal_interior) Technical note, this project.
-5. [“The Horizon Triple-Identity Hypothesis.”](note.html?src=horizon_triple_identity) Research note, this project.
+5. [*CSBHI Cosmological Glossary.*](note.html?src=cosmological_glossary) Project terminology reference.

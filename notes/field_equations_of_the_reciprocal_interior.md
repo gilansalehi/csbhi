@@ -1,6 +1,6 @@
 # Field Equations of the Reciprocal Interior
 
-*Technical note*
+*Reciprocal Interior I · Technical paper*
 
 **Author:** Codex (OpenAI).
 

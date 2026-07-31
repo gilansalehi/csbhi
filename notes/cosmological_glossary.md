@@ -31,8 +31,8 @@ The definitions follow standard general relativity and relativistic cosmology. E
 | \(R_p\) | Present particle-horizon radius. |
 | \(R_\Lambda\) | De Sitter curvature radius, \(R_\Lambda=c/H_\Lambda=\sqrt{3/\Lambda}\). In exact de Sitter space it also equals the observer's apparent- and event-horizon radii. |
 | \(R_{\Lambda,P},R_{\Lambda,C}\) | Parent- and child-universe de Sitter curvature radii in the recursive Kottler notes. For the child identified with our observed cosmology, \(R_{\Lambda,C}=R_\Lambda\). These symbols replace the visually ambiguous \(R_P\) and \(R_C\); \(R_p\) remains reserved for the particle horizon. |
-| \(L\) | In the Horizon Triple-Identity programme, the invariant asymptotic curvature scale. In the exact de Sitter limit, \(L=R_\Lambda\). |
-| \(\mathcal H\) | A null observer-causal horizon considered by the Horizon Triple-Identity programme. It is a hypersurface, not a radius. The completed horizon map must determine whether it is the relevant cosmological event horizon throughout the construction. |
+| \(L\) | The invariant asymptotic curvature scale used in the 5D throat programme. In the exact de Sitter limit, \(L=R_\Lambda\). |
+| \(\mathcal H\) | A generic null observer-causal horizon considered in the throat construction. It is a hypersurface, not a radius; final calculations should replace it with the specific horizon being studied. |
 | \(\Sigma\) | A candidate matching hypersurface or finite matching history. It is not automatically null and must not be called an event horizon unless its causal character has been derived. |
 | \(r_h\) | A local symbol for a generic fixed horizon radius in a calculation. It should not replace the canonical symbols above in a final cross-note statement. |
 
@@ -364,9 +364,9 @@ a(\tau)=\frac{1}{r(\tau)},
 
 where \(r\) is Bob's horizon-normalized areal coordinate along Alice's infall and \(a\) scales Alice's spatial geometry. It is a relation between descriptions, not an ordinary coordinate transformation of vacuum Schwarzschild spacetime.
 
-### Horizon Triple Identity
+### Three-structure throat problem
 
-The proposal that the de Sitter curvature scale \(L\), an observer-causal null horizon \(\mathcal H\), and the matching history \(\Sigma\) arise from one throat geometry. It does not declare those three geometric objects identical.
+The construction problem of deriving the relationships among the curvature scale \(L\), a specified observer-causal null horizon, and the matching history \(\Sigma\) from one throat geometry. These remain distinct geometric objects even when associated radii coincide in the stationary de Sitter limit.
 
 ## 10. Horizon thermodynamics
 
