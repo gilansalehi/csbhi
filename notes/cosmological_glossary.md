@@ -2,9 +2,11 @@
 
 *Project terminology reference*
 
-This glossary establishes the terminology used in *Geometric Duality: Conformal Scaling of Black Hole Interiors* (GD1) and the papers and notes that follow it. Its main purpose is to keep geometrically different horizons from acquiring the same name.
+This glossary establishes the symbols and terminology used in *Geometric Duality: Conformal Scaling of Black Hole Interiors* (GD1) and the papers and notes that follow it. It is written for readers who may know the mathematics without already knowing every convention of general relativity and cosmology. Its main purposes are to define the project's notation, translate specialist vocabulary into plain language, and keep geometrically different horizons from acquiring the same name.
 
 The definitions follow standard general relativity and relativistic cosmology. Entries labeled **CSBHI usage** specify how this project applies or notates the standard concept.
+
+Use this document as the shared legend for the series. Individual papers need only define symbols that depart from this reference or acquire a special local meaning.
 
 ---
 
@@ -19,7 +21,57 @@ The definitions follow standard general relativity and relativistic cosmology. E
 7. **Say spatially flat when that is what is meant.** A spatially flat FLRW universe can have nonzero four-dimensional spacetime curvature.
 8. **Keep the horizon map separate from the reciprocal ansatz.** The relation \(a=1/r\) defines the proposed scale correspondence. It does not by itself construct a junction between Bob's and Alice's four-geometries.
 
-## 2. Canonical horizon notation
+## 2. Canonical symbol reference
+
+### Units and signature
+
+GD1 uses geometrized units
+
+\[
+c=G=1,
+\qquad
+2M=1,
+\]
+
+so lengths and times are measured in units of the parent Schwarzschild radius and the parent black-hole event horizon is at \(r=1\). Most Reciprocal Interior technical papers set \(c=1\), retain \(G\), and use metric signature \((-+++)\). A paper restores \(c\), SI lengths, seconds, kilograms, or solar masses when comparing with observations. The convention stated in the document being read takes precedence.
+
+### Core geometry and dynamics
+
+| Symbol | Canonical meaning |
+|---|---|
+| \(c\) | Speed of light in vacuum. Setting \(c=1\) expresses time and length in the same units. |
+| \(G\) | Newton's gravitational constant. Setting \(G=1\) expresses mass in geometric length units. |
+| \(M\) | Parent black-hole mass parameter. GD1 chooses \(2M=1\). |
+| \(ds^2\) | Infinitesimal spacetime interval defined by the metric. |
+| \(g_{\mu\nu}\) | Spacetime metric tensor. Greek indices label spacetime components. |
+| \(t\) | Coordinate time. Its specific meaning depends on the chart and is stated in context. |
+| \(\tau\) | Alice's proper time; in her FLRW description it is also cosmic time. |
+| \(r(\tau)\) | Bob's horizon-normalized areal coordinate assigned to Alice's trajectory. It decreases from \(r=1\) toward \(r=0\). |
+| \(R\) | Alice's comoving radial coordinate, used to label probes or fluid worldlines. |
+| \(\bar R=aR\) | Alice's areal radius corresponding to the comoving label \(R\). |
+| \(a(\tau)\) | Alice's spatial scale factor. CSBHI proposes \(a=1/r\). |
+| \(F(r)\) | Positive inward flow along Alice's trajectory, \(F=-dr/d\tau\). |
+| \(H_A\) | Alice's fractional expansion rate, \(H_A=\dot a/a=F/r\). |
+| \(\eta\) | Alice's conformal time, defined by \(d\eta=d\tau/a\). |
+| \(k\) | FLRW spatial-curvature parameter. The primary reciprocal interior is spatially flat, \(k=0\). |
+| \(q\) | Deceleration parameter, \(q=-\ddot a/(aH_A^2)\). |
+| \(d\Omega^2\) | Angular line element on a unit two-sphere. |
+
+### Matter and observed parameters
+
+| Symbol | Canonical meaning |
+|---|---|
+| \(\rho\) | Energy density or mass density, according to the stated unit convention. |
+| \(p\) or \(P\) | Isotropic pressure. A document states which capitalization it uses. |
+| \(w=p/\rho\) | Equation-of-state parameter when \(c=1\). |
+| \(\rho_m,\rho_r,\rho_\Lambda\) | Matter, radiation, and vacuum-energy densities. |
+| \(\Lambda\) | Cosmological constant. |
+| \(\Omega_i\) | Density of component \(i\) divided by the critical density at the stated epoch. |
+| \(H_0\) | Present measured Hubble parameter. |
+| \(H_\Lambda\) | Constant expansion rate of the asymptotic de Sitter limit. |
+| \(z\) | Cosmological redshift, with \(1+z=a_{\rm obs}/a_{\rm em}\). |
+
+### Horizon and throat symbols
 
 | Symbol | Canonical meaning |
 |---|---|
@@ -36,7 +88,67 @@ The definitions follow standard general relativity and relativistic cosmology. E
 | \(\Sigma\) | A candidate matching hypersurface or finite matching history. It is not automatically null and must not be called an event horizon unless its causal character has been derived. |
 | \(r_h\) | A local symbol for a generic fixed horizon radius in a calculation. It should not replace the canonical symbols above in a final cross-note statement. |
 
-## 3. Distances and coordinates
+## 3. Core physics and geometry terms
+
+### Ansatz
+
+A proposed mathematical form adopted provisionally so its consequences can be derived and tested. An ansatz is more structured than an arbitrary guess but is not itself a proof. A successful theory should eventually derive it from deeper principles or show that observations select it.
+
+**CSBHI usage:** the central ansatz is \(a(\tau)=1/r(\tau)\). The papers derive consequences from it; the planned throat construction seeks its geometric origin.
+
+### Theory, model, and solution
+
+A *theory* supplies general laws, such as Einstein's field equations. A *model* specifies a geometry, matter content, symmetries, and boundary conditions to which those laws are applied. A *solution* is a configuration that satisfies the resulting equations. CSBHI is presently a developing model and research programme within relativistic gravitation, not a replacement set of field equations.
+
+### Coordinate and coordinate chart
+
+A coordinate is a numerical label assigned to events. A coordinate chart is a consistent collection of such labels covering part of a spacetime. Coordinate values can behave strangely or become singular even when the local geometry remains regular.
+
+### Metric and line element
+
+The metric \(g_{\mu\nu}\) determines spacetime intervals, clock readings, spatial lengths on specified slices, light cones, and causal structure. The expression \(ds^2=g_{\mu\nu}dx^\mu dx^\nu\) is its line element. Matching one scalar function across a boundary does not by itself match the full metric.
+
+### Invariant
+
+A quantity whose physical value does not depend on the coordinate chart used to calculate it. Proper time, the area of a specified symmetry sphere, and scalar curvature invariants are examples. Coordinate components are not generally invariants.
+
+### Geodesic and free fall
+
+A geodesic is the straightest available path through curved spacetime. An ideal freely falling test body follows a timelike geodesic when nongravitational forces are negligible. A radial coordinate may accelerate along that path even though the traveler feels no proper acceleration.
+
+### Equivalence principle
+
+The local statement that a freely falling observer can choose a sufficiently small laboratory in which nongravitational physics takes its special-relativistic form and gravity is absent to first order at one event. It does not make a finite curved region globally Minkowski or erase tidal effects.
+
+### Congruence, expansion, and shear
+
+A congruence is a family of neighboring worldlines filling a region. Its *expansion* measures the fractional change of a small volume carried by the congruence. Its *shear* measures shape distortion at fixed volume, such as stretching in one direction while compressing in another. FLRW comoving congruences are shear-free.
+
+### Homogeneous and isotropic
+
+*Homogeneous* means that spatial locations are equivalent on the chosen slices. *Isotropic* means that spatial directions are equivalent around each comoving observer. Isotropy about every point implies homogeneity under the usual cosmological assumptions; isotropy about one privileged point does not.
+
+### Minkowski spacetime and local flatness
+
+Minkowski spacetime is the flat spacetime of special relativity. Curved spacetime is locally Minkowskian at a point in a freely falling frame, but curvature appears through tidal effects across a finite region.
+
+### Conformal scaling and conformal transformation
+
+A conformal transformation multiplies a metric by a positive position-dependent factor. It preserves local null directions but changes proper lengths, proper times, and generally curvature. A scalar conformal rescaling of vacuum Schwarzschild cannot by itself produce an FLRW geometry because their Weyl curvature differs.
+
+### Ricci curvature and Weyl curvature
+
+Ricci curvature is the part directly tied to local stress-energy by Einstein's equations. Weyl curvature is the tidal, trace-free part that can remain in vacuum and carries gravitational influence not fixed by the local density alone. FLRW spacetime has zero Weyl curvature; Schwarzschild vacuum has nonzero Weyl curvature.
+
+### Stress-energy tensor
+
+The tensor \(T_{\mu\nu}\) encoding local energy density, momentum density, pressure, and stress. Einstein's equations relate it to spacetime curvature. Specifying only a total mass does not specify the full stress-energy distribution.
+
+### Embedding
+
+A representation of one geometry as a surface inside a space of higher dimension. The standard 4D de Sitter hyperboloid can be embedded in 5D Minkowski space. An embedding can clarify geometry without implying that the extra dimension is directly observable.
+
+## 4. Distances and coordinates
 
 ### Areal radius
 
@@ -48,7 +160,7 @@ A=4\pi R_{\rm ar}^2.
 
 It is not generally the proper radial distance to the sphere.
 
-**CSBHI usage:** Bob's \(r\), Alice's \(\bar R\), the parent Schwarzschild radius \(R_S\), and the horizon radii in Section 2 are areal radii or normalized versions of them.
+**CSBHI usage:** Bob's \(r\), Alice's \(\bar R\), the parent Schwarzschild radius \(R_S\), and the horizon radii in the canonical symbol table are areal radii or normalized versions of them.
 
 ### Comoving coordinate
 
@@ -72,7 +184,7 @@ The difference between the observer's present cosmic time and the emission time 
 
 The elapsed light-travel time multiplied by \(c\). In an expanding universe it is not generally equal to the source's present proper distance.
 
-## 4. Time, motion, and causal structure
+## 5. Time, motion, and causal structure
 
 ### Coordinate time
 
@@ -118,7 +230,7 @@ The null surface formed by light rays arriving at an observation event. It is no
 
 An observer-dependent region defined by causal accessibility. The phrase must be qualified by the question being asked. A present observable region is limited by the past light cone and particle horizon; a future-accessible patch in an accelerating universe is limited by the cosmological event horizon.
 
-## 5. Expansion and the FLRW background
+## 6. Expansion and the FLRW background
 
 ### FLRW geometry
 
@@ -190,7 +302,7 @@ The maximally symmetric vacuum solution with positive cosmological constant. In 
 
 A spacetime whose late-time geometry approaches de Sitter as matter and radiation dilute. Alice's matter–radiation–\(\Lambda\) interior is asymptotically, not exactly, de Sitter at finite times.
 
-## 6. Matter, radiation, and observed parameters
+## 7. Matter, radiation, and observed parameters
 
 ### Perfect fluid
 
@@ -244,7 +356,17 @@ For comoving emission and observation in FLRW,
 
 It measures a scale-factor ratio, not an absolute value of \(a\).
 
-## 7. Cosmological horizons and observational surfaces
+## 8. Cosmological horizons and observational surfaces
+
+These objects answer different questions:
+
+| Object | What it represents | Is it a causal boundary? |
+|---|---|---|
+| Hubble radius \(c/H\) | Instantaneous expansion scale | Not generally |
+| Apparent horizon \(R_A\) | Quasi-local marginal surface | Not necessarily null |
+| Particle horizon \(R_p\) | Limit of signals received since the modeled beginning | Past causal limit |
+| Last-scattering surface / CMB | Observable source shell from one early epoch | No |
+| Cosmological event horizon \(B\) | Limit of signals that can ever reach a specified observer | Yes |
 
 ### Hubble radius and Hubble sphere
 
@@ -278,6 +400,10 @@ It is global, observer-dependent, and null. It is not the outer edge of the enti
 
 The region from which signals have reached the observer by the present epoch. In an idealized transparent cosmology its limiting scale is the particle horizon. The whole universe can be much larger or spatially infinite.
 
+### Cosmic microwave background (CMB)
+
+The nearly thermal relic photon field observed across the sky. Most CMB photons last scattered when the primordial plasma became transparent. The CMB is radiation received by an observer, not a horizon, boundary, or physical shell surrounding the whole universe.
+
 ### Last-scattering surface
 
 The spherical intersection of our past light cone with the epoch when the primordial plasma became transparent to photons. It is the source surface of the observed CMB, not an event horizon.
@@ -290,7 +416,7 @@ The greatest distance an acoustic disturbance could propagate through the primor
 
 An umbrella phrase, not a preferred name for a specific surface. Use it only when deliberately discussing more than one cosmological horizon. Avoid the still less precise phrase *cosmic horizon*.
 
-## 8. Black-hole horizons
+## 9. Black-hole horizons
 
 ### Black-hole event horizon
 
@@ -328,7 +454,7 @@ A spacelike marginally trapped tube used to track local black-hole growth and fl
 
 A quasi-local null horizon in equilibrium, defined without requiring the whole exterior spacetime to be stationary.
 
-## 9. Junction and throat terminology
+## 10. Junction and throat terminology
 
 ### Junction or matching hypersurface
 
@@ -368,7 +494,7 @@ where \(r\) is Bob's horizon-normalized areal coordinate along Alice's infall an
 
 The construction problem of deriving the relationships among the curvature scale \(L\), a specified observer-causal null horizon, and the matching history \(\Sigma\) from one throat geometry. These remain distinct geometric objects even when associated radii coincide in the stationary de Sitter limit.
 
-## 10. Horizon thermodynamics
+## 11. Horizon thermodynamics
 
 ### Surface gravity
 
@@ -390,7 +516,7 @@ In spherical horizon thermodynamics, the scalar \(W=(\epsilon-P)/2\) built from 
 
 **CSBHI usage:** the geometric balance term that appears when the apparent-horizon equilibrium identity is evaluated instead on the moving cosmological event horizon. It is not an ordinary luminosity available to a detector.
 
-## 11. Preferred corrections
+## 12. Preferred corrections
 
 | Avoid | Prefer |
 |---|---|

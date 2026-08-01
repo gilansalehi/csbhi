@@ -44,12 +44,13 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - The Crossing Epoch as the Single Free Parameter: AI IX and AI XIV.
 - The Evolving Galactic Acceleration Scale and its High-Redshift Test: Note III and the GD III outline.
 - The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution: GD1 and Note III.
+- The Weyl Curvature Hypothesis as a Structural Feature of the Reciprocal Interior: GD1 and the Reciprocal Ansatz Involution note.
 
 ## Project pages
 
 - [CSBHI project overview](https://www.gilansalehi.com/csbhi/): Publication map, progress, open problems, and further reading.
 - [Frequently Asked Questions](https://www.gilansalehi.com/csbhi/faqs.html): Short answers to recurring conceptual and mathematical objections.
-- [CSBHI Cosmological Glossary](https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md): Canonical terminology and notation for cosmological horizons, black-hole horizons, distances, expansion, and junction geometry across the project.
+- [CSBHI Cosmological Glossary](https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md): Shared symbol legend and plain-language reference for the physics, cosmology, horizons, distances, expansion, and junction geometry used across the project.
 - [What Remains Mathematically Illegible](https://www.gilansalehi.com/csbhi/notes/open_questions.md): Living index of the unresolved geometric, cosmological, empirical, and extension questions, ordered by dependency.
 - [Alice's Descent](https://www.gilansalehi.com/csbhi/leap-of-faith.html): Interactive geometric illustration accompanying the primary paper.
 - [Source repository](https://github.com/gilansalehi/csbhi): HTML source, research notes, figures, and revision history.
@@ -74,6 +75,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - [The Crossing Epoch as the Single Free Parameter](https://www.gilansalehi.com/csbhi/notes/the_crossing_epoch_as_the_single_free_parameter.md), by Claude (Anthropic): Restores the crossing epoch as one free parameter and derives the corresponding mass bound and accretion requirement.
 - [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md), by Claude (Anthropic): Develops the conditional redshift-dependent galaxy-scale prediction associated with the planned GD III dynamics.
 - [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html), by Claude (Anthropic): Proves that a = 1/r is the unique non-trivial scale-free horizon-fixing involution, deriving the reciprocal power from a symmetry shared with the GD III galaxy law (closes Open Question Q1).
+- [The Weyl Curvature Hypothesis as a Structural Feature of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/weyl_curvature_hypothesis_reciprocal_interior.md), by Claude (Anthropic): Draft arguing that the conformally flat reciprocal interior realizes the low-Weyl initial condition of Penrose's Weyl Curvature Hypothesis as a structural feature, with honest tiering of what is exact, inherited from Conformal Cyclic Cosmology / cosmological natural selection, and open.
 
 ## Supporting derivations and planned notes
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Project overview for the Geometric Duality research programme.">
-  <meta name="dcterms.modified" content="2026-07-31">
+  <meta name="dcterms.modified" content="2026-08-01">
   <meta name="project" content="Conformal Scaling of Black Hole Interiors">
   <meta name="programme" content="Geometric Duality">
   <meta name="scope" content="Landing page, publication roadmap, and open-problem scoreboard">
@@ -69,14 +69,15 @@
       <span class="smallcaps">Conformal Scaling of Black Hole Interiors</span>.
     </section>
 
-    <section id="table-of-contents">
-      <h2>Contents</h2>
-      <nav aria-label="Page contents">
-      <details>
-        <summary>
-          Contents: CSBHI
+    <nav id="table-of-contents" aria-labelledby="toc-title">
+      <h2>Table of Contents</h2>
+      <details open>
+        <summary id="toc-title">
+          Contents
         </summary>
+        <h3>CSBHI</h3>
         <ol>
+          <li><a href="#project-legend">Project Legend</a></li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#ai-notes">Reciprocal Interior Technical Series</a></li>
           <li><a href="#open-problems">Progress & Open Problems</a></li>
@@ -86,7 +87,18 @@
         </ol>
       </details>
     </nav>
-    </section>
+
+    <fieldset id="project-legend" class="legend-box project-legend">
+      <legend>Legend</legend>
+      <p>
+        GD I uses geometrized units with \(c=G=1\) and \(2M=1\), placing the parent Schwarzschild radius and
+        event horizon at \(r=1\). Technical papers usually set \(c=1\), retain \(G\), and use metric signature
+        \((-+++)\). Physical units are restored wherever measured values are compared.
+      </p>
+      <p>
+        <a href="note.html?src=cosmological_glossary">View Glossary</a>
+      </p>
+    </fieldset>
 
     <section id="publications" aria-labelledby="publications-title">
       <h2 id="publications-title">Publications</h2>
@@ -727,14 +739,15 @@
 
     <section id="prior-art">
       <h2>Further reading: Prior Art & Supporting Literature</h2>
-      <p>
-        <a href="note.html?src=black_hole_cosmology_lineage">Read the historical analysis of black-hole cosmology and its relationship to CSBHI.</a>
-      </p>
-      <details open>
+      <details>
         <summary>
           Direct prior art in black-hole cosmology, regular black-hole interiors, junction conditions, horizon
           thermodynamics, holography, and galaxy dynamics, plus the adjacent traditions CSBHI draws on.
         </summary>
+
+        <p>
+          <a href="note.html?src=black_hole_cosmology_lineage">Read the historical analysis of black-hole cosmology and its relationship to CSBHI.</a>
+        </p>
 
         <p><strong>Direct Prior Art</strong></p>
 
@@ -917,22 +930,21 @@
             Gravitation. <a href="https://doi.org/10.1103/RevModPhys.21.447">Reviews of Modern Physics 21, 447</a>.
             1949.</li>
         </ol>
+        <h3>Conceptual &amp; Philosophical Antecedents</h3>
+        <ul>
+          <li>Zeno of Elea. Paradoxes of motion (the dichotomy paradox), as reported in Aristotle, <em>Physics</em>,
+            Book VI. c. 450 BC.</li>
+          <li>M. C. Escher. <em>Circle Limit IV</em> — a visual study of conformal (Poincaré disk) infinity, developed
+            following correspondence with H. S. M. Coxeter on hyperbolic tessellation. 1960.</li>
+        </ul>
+
+        <h3>Video</h3>
+        <ul>
+          <li><a href="https://curtjaimungal.substack.com/p/the-story-of-conformal-gravity">Philip Mannheim, “The
+              Story of Conformal Gravity” — Theories of Everything with Curt Jaimungal</a> (2026)</li>
+          <li><a href="https://www.youtube.com/watch?v=Pd9P7CibbHc">Dr. Becky, “The Universe might not be flat (and cosmologists are quietly freaking out)”</a></li>
+        </ul>
       </details>
-
-      <h3>Conceptual &amp; Philosophical Antecedents</h3>
-      <ul>
-        <li>Zeno of Elea. Paradoxes of motion (the dichotomy paradox), as reported in Aristotle, <em>Physics</em>,
-          Book VI. c. 450 BC.</li>
-        <li>M. C. Escher. <em>Circle Limit IV</em> — a visual study of conformal (Poincaré disk) infinity, developed
-          following correspondence with H. S. M. Coxeter on hyperbolic tessellation. 1960.</li>
-      </ul>
-
-      <h3>Video</h3>
-      <ul>
-        <li><a href="https://curtjaimungal.substack.com/p/the-story-of-conformal-gravity">Philip Mannheim, “The
-            Story of Conformal Gravity” — Theories of Everything with Curt Jaimungal</a> (2026)</li>
-        <li><a href="https://www.youtube.com/watch?v=Pd9P7CibbHc">Dr. Becky, “The Universe might not be flat (and cosmologists are quietly freaking out)”</a></li>
-      </ul>
     </section>
 
     <footer>
