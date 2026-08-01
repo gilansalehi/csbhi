@@ -63,6 +63,11 @@ a:hover {
   text-decoration: underline;
 }
 
+a[href^="http"],
+a[href^="note"] {
+  font-weight: 600;
+}
+
 button {
   display: inline-flex;
   align-items: center;
