@@ -69,11 +69,27 @@ These results are conditional on the specified interior and do not yet constitut
 H_A=\frac{c+\dot B}{B}.
 \]
 
-Candidate calculations also map a parent crossing label \(v_H\) to an interior comoving label \(R=\Psi(v_H)\).
+The radial crossing map now has a double-null form,
 
-**Missing:** A derivation of \(B(\tau)\), \(\Psi(v_H)\), and the synchronization between Bob's exterior time and Alice's proper time from one parent geometry.
+\[
+v_A=v_A(v_H),
+\qquad
+u_A=u_A(v_H),
+\]
 
-**Closure test:** Produce the maps from the throat metric, preserve null incidence and causal ordering, and recover the reconstructed event-horizon history without feeding the observed \(H_A(a)\) back into the construction.
+so that
+
+\[
+\eta=\frac{v_A+u_A}{2},
+\qquad
+R=\Psi(v_H)=\frac{v_A-u_A}{2}.
+\]
+
+The optical calculation fixes \(dv_A/dv_H\) locally at the idealized matching cross-section. Mapping the parent crossing history to one child time slice would then require \(du_A/dv_H=-dv_A/dv_H\) [*The Missing Null Coordinate and the Horizon Map*](note.html?src=the_missing_null_coordinate_and_the_horizon_map).
+
+**Missing:** A derivation of \(B(\tau)\), the global maps \(v_A(v_H)\) and \(u_A(v_H)\), and the synchronization between Bob's exterior time and Alice's proper time from one parent geometry.
+
+**Closure test:** Produce both characteristic maps from the throat metric, preserve null incidence and causal ordering, derive the child slicing and radial normalization, and recover the reconstructed event-horizon history without feeding the observed \(H_A(a)\) back into the construction.
 
 ---
 

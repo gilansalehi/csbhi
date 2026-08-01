@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.gilansalehi.com/csbhi/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-01</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/gd1.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/llms.txt</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-01</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/black_hole_cosmology_lineage.md</loc>
@@ -39,6 +39,10 @@
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/dynamic_throat_kinematics_and_the_cosmological_clock.md</loc>
     <lastmod>2026-07-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md</loc>
+    <lastmod>2026-08-01</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md</loc>
@@ -85,7 +89,7 @@
     <lastmod>2026-07-31</lastmod>
   </url>
   <url>
-    <loc>https://www.gilansalehi.com/csbhi/notes/horizon_triple_identity.md</loc>
+    <loc>https://www.gilansalehi.com/csbhi/notes/the_missing_null_coordinate_and_the_horizon_map.md</loc>
     <lastmod>2026-07-31</lastmod>
   </url>
   <url>
@@ -102,7 +106,7 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/open_questions.md</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-01</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/null_horizon_matching_of_the_reciprocal_interior.md</loc>
@@ -122,6 +126,14 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/thermodynamic_accounting_of_the_transverse_junction.md</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gilansalehi.com/csbhi/notes/the_crossing_epoch_as_the_single_free_parameter.md</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gilansalehi.com/csbhi/notes/two_routes_to_the_vacuum_surface_gravity_jump.md</loc>
     <lastmod>2026-07-30</lastmod>
   </url>
   <url>

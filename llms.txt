@@ -39,6 +39,10 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - AI XII, The Nonequilibrium Event Horizon and the CMB Clock: AI X and AI XI.
 - AI XIII, The Hyperbolic Cosmological Clock: AI X.
 - AI XIV, The Finite-Throat Transition and the Absolute Reciprocal Coordinate: AI XII and AI XIII.
+- AI XV, The Missing Null Coordinate and the Horizon Map: AI VII.
+- AI XVI, Two Routes to the Vacuum Surface-Gravity Jump: AI IX and AI XI.
+- The Crossing Epoch as the Single Free Parameter: AI IX and AI XIV.
+- The Evolving Galactic Acceleration Scale and its High-Redshift Test: Note III and the GD III outline.
 
 ## Project pages
 
@@ -57,6 +61,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - [Vacuum-Energy Cancellation at an FLRW-Kottler Junction](https://www.gilansalehi.com/csbhi/notes/vacuum_energy_cancellation_at_a_kottler_junction.md), by Codex (OpenAI): Independently derives the corresponding timelike junction conditions and vacuum-energy cancellation.
 - [Null Optics of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/null_optics_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the interior optical transfer laws, isolates the missing radial event map, and tests the first null-junction condition.
 - [Horizon-Crossing History and Future Causal Patches](https://www.gilansalehi.com/csbhi/notes/horizon_crossing_history_and_future_patches.md), by Codex (OpenAI): Proposes a map from ordered horizon-crossing history to interior comoving separation and derives its causal-contact and de Sitter limits.
+- [The Missing Null Coordinate and the Horizon Map](https://www.gilansalehi.com/csbhi/notes/the_missing_null_coordinate_and_the_horizon_map.md), by Codex (OpenAI): Shows that a null horizon orders crossing events without supplying a longitudinal distance, then unifies the optical and worldline maps as a paired double-null map whose sum gives child time and whose difference gives child radius.
 - [Null-Horizon Matching of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/null_horizon_matching_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the Schwarzschild-radius/apparent-horizon-radius identity from the first null junction condition and computes the transverse-curvature mismatch for direct Schwarzschild–de Sitter solderings.
 - [Recursive Kottler Horizons and the Galaxy Acceleration Scale](https://www.gilansalehi.com/csbhi/notes/recursive_kottler_horizons_and_the_galaxy_scale.md), by Codex (OpenAI): Derives a conditional parent–child cosmological-constant relation in the minimal recursive Kottler model and compares its horizon surface gravity with the empirical galaxy acceleration scale.
 - [Dynamic Throat Kinematics and the Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/dynamic_throat_kinematics_and_the_cosmological_clock.md), by Codex (OpenAI): Derives the moving-null-boundary expansion identities, reconstructs the boundary history required by the observed cosmological epochs, and identifies present-day targets for a parent horizon-growth calculation.
@@ -64,6 +69,9 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - [The Nonequilibrium Event Horizon and the CMB Clock](https://www.gilansalehi.com/csbhi/notes/nonequilibrium_event_horizon_and_the_cmb_clock.md), by Codex (OpenAI): Derives the nonequilibrium residual on the reconstructed event horizon and shows that the CMB fixes the radiation work and reciprocal scale-factor clock rather than the horizon temperature.
 - [The Hyperbolic Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/hyperbolic_cosmological_clock.md), by Codex (OpenAI): Uses the asymptotic 5D de Sitter embedding to define a geometric boost clock, obtains the same present rapidity from age and density data, and separates that clock from the finite-throat contribution to absolute expansion.
 - [The Finite-Throat Transition and the Absolute Reciprocal Coordinate](https://www.gilansalehi.com/csbhi/notes/finite_throat_transition_and_the_absolute_reciprocal_coordinate.md), by Codex (OpenAI): Integrates the moving-boundary identity into an absolute reciprocal normalization, distinguishes the early cosmological event horizon from the apparent horizon, and conditionally calibrates the first junction with a conservative thermal landmark.
+- [Two Routes to the Vacuum Surface-Gravity Jump](https://www.gilansalehi.com/csbhi/notes/two_routes_to_the_vacuum_surface_gravity_jump.md), by Claude (Anthropic): Shows that the FLRW vacuum-work and recursive Kottler calculations select the same surface-gravity scale and recover the critical Hubble mass when the equality is imposed in reverse.
+- [The Crossing Epoch as the Single Free Parameter](https://www.gilansalehi.com/csbhi/notes/the_crossing_epoch_as_the_single_free_parameter.md), by Claude (Anthropic): Restores the crossing epoch as one free parameter and derives the corresponding mass bound and accretion requirement.
+- [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md), by Claude (Anthropic): Develops the conditional redshift-dependent galaxy-scale prediction associated with the planned GD III dynamics.
 
 ## Supporting derivations and planned notes
 
