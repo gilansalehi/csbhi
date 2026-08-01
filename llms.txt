@@ -43,6 +43,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - AI XVI, Two Routes to the Vacuum Surface-Gravity Jump: AI IX and AI XI.
 - The Crossing Epoch as the Single Free Parameter: AI IX and AI XIV.
 - The Evolving Galactic Acceleration Scale and its High-Redshift Test: Note III and the GD III outline.
+- The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution: GD1 and Note III.
 
 ## Project pages
 
@@ -72,6 +73,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - [Two Routes to the Vacuum Surface-Gravity Jump](https://www.gilansalehi.com/csbhi/notes/two_routes_to_the_vacuum_surface_gravity_jump.md), by Claude (Anthropic): Shows that the FLRW vacuum-work and recursive Kottler calculations select the same surface-gravity scale and recover the critical Hubble mass when the equality is imposed in reverse.
 - [The Crossing Epoch as the Single Free Parameter](https://www.gilansalehi.com/csbhi/notes/the_crossing_epoch_as_the_single_free_parameter.md), by Claude (Anthropic): Restores the crossing epoch as one free parameter and derives the corresponding mass bound and accretion requirement.
 - [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md), by Claude (Anthropic): Develops the conditional redshift-dependent galaxy-scale prediction associated with the planned GD III dynamics.
+- [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html), by Claude (Anthropic): Proves that a = 1/r is the unique non-trivial scale-free horizon-fixing involution, deriving the reciprocal power from a symmetry shared with the GD III galaxy law (closes Open Question Q1).
 
 ## Supporting derivations and planned notes
 

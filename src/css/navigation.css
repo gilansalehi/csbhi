@@ -144,6 +144,37 @@
   text-transform: none;
 }
 
+.project-nav__list--publications {
+  margin: -0.25rem 0 0.5rem 1.25rem;
+  border-left: 1px solid var(--nav-rule);
+}
+
+.project-nav__link--publication {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.25rem 0.65rem 1rem;
+  border-left: 0;
+  color: color-mix(in srgb, var(--nav-text) 78%, transparent);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.project-nav__link--publication::after {
+  content: "\2192";
+  color: color-mix(in srgb, var(--nav-text) 48%, transparent);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.project-nav__link--publication:hover,
+.project-nav__link--publication:focus-visible,
+.project-nav__link--publication.is-current {
+  border-left: 0;
+  transform: translateX(0.2rem);
+}
+
 .project-nav__preferences {
   position: absolute;
   top: 1em;

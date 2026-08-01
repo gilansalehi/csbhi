@@ -37,13 +37,11 @@ These results are conditional on the specified interior and do not yet constitut
 
 ## I. Load-bearing geometric questions
 
-### Q1. What selects the reciprocal ansatz?
+### Q1. What selects the reciprocal ansatz? — **CLOSED**
 
-**Known:** The relation \(a=1/r\) produces the central infall–expansion correspondence and preserves the characteristic matter, radiation, and vacuum powers.
+**Answered.** The reciprocal *power* is derived from a symmetry: \(a=1/r\) is the unique non-trivial scale-free horizon-fixing involution, and the same scale-free self-duality underlies GD III's galaxy law. Proof: [*The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution*](reciprocal-involution.html).
 
-**Missing:** A derivation of the reciprocal power from a symmetry, variational principle, embedding, or boundary condition. At present the ansatz is proposed rather than forced.
-
-**Closure test:** Derive \(a=1/r\), or a tightly constrained equivalence class containing it, from the completed throat geometry without inserting the reciprocal relation as an independent premise.
+**Residual → Q15.** The proof assumes the parent/child exchange *is* a scale-free horizon-fixing involution; deriving that symmetry from the throat geometry is a deeper, still-open question.
 
 ### Q2. What is the full 5D throat geometry?
 
@@ -139,7 +137,7 @@ The optical calculation fixes \(dv_A/dv_H\) locally at the idealized matching cr
 
 **Known:** At the homogeneous background level, the construction deliberately reproduces much of the successful matter–radiation–\(\Lambda\) history.
 
-**Missing:** A robust observable that differs from \(\Lambda\)CDM and cannot be absorbed into initial conditions or parameter choices.
+**Missing:** A robust observable that differs from \(\Lambda\)CDM and cannot be absorbed into initial conditions or parameter choices. (A candidate — an evolving galaxy acceleration scale — is under development but not yet a closure; see Q16.)
 
 **Closure test:** Produce a quantitative prediction for perturbations, horizon-scale correlations, black-hole/cosmology relations, gravitational waves, galaxy dynamics, or another measurable sector before fitting the relevant data.
 
@@ -173,7 +171,7 @@ g_{\rm mix}\sim\sqrt{g_NcH},
 
 which has the form needed for MOND-like phenomenology and the baryonic Tully–Fisher relation.
 
-**Missing:** A covariant field equation or throat-response law producing that scaling, including lensing, clusters, and relativistic systems.
+**Missing:** A covariant field equation or throat-response law producing that scaling, including lensing, clusters, and relativistic systems. (A newly surfaced sub-question — whether the selected scale is the instantaneous \(cH_A(z)\) or the fixed \(c\sqrt{\Lambda/3}\) — is recorded as Q16.)
 
 **Closure test:** Derive the weak-field equations from the completed geometry and fit rotation curves, lensing, cluster dynamics, and cosmological structure without adding an unconstrained interpolation law.
 
@@ -187,13 +185,33 @@ which has the form needed for MOND-like phenomenology and the baryonic Tully–F
 
 ---
 
+## IV. Residual and newly surfaced questions
+
+### Q15. What forces the parent–child exchange to be a scale-free horizon-fixing involution?
+
+**Known:** Given that the exchange is scale-free, self-dual (involutive), and fixes the horizon, the reciprocal ansatz \(a=1/r\) is uniquely forced (Q1, now closed — see [proof](reciprocal-involution.html)). The same three properties select GD III's galaxy law, so one symmetry governs both sectors.
+
+**Missing:** A derivation of the three properties themselves from the completed throat or parent/child geometry — why the exchange introduces no new scale, why it is exactly involutive, and why it fixes the crossing surface. This is the sharpened successor to the closed Q1 and inherits its foundational priority: it stands at the head of the dependency chain in Q1's place.
+
+**Closure test:** Show that the throat construction *forces* the local/global exchange to be a scale-free horizon-fixing involution, rather than admitting it as a premise.
+
+### Q16. Does the galaxy acceleration scale evolve?
+
+**Known:** If GD's galaxy law is \(g_{\rm mix}\sim\sqrt{g_N\,g_\dagger}\) with \(g_\dagger\) the horizon acceleration, then \(g_\dagger=cH_A\). Whether this is the **instantaneous** \(cH_A(z)\) — so \(g_\dagger\) evolves (the baryonic Tully–Fisher zero-point sliding as \(-\log E(z)\), the radial-acceleration-relation knee at \(cH_A(z)\), distinct from both MOND and \(\Lambda\)CDM) — or the **fixed** \(c\sqrt{\Lambda/3}\) — so \(g_\dagger\) is constant and GD reduces to standard MOND on galaxy scales — is unresolved. The instantaneous reading is more natural (a galaxy should couple to its own contemporaneous horizon) but is not forced. Development and falsification spec: [*The Evolving Galactic Acceleration Scale and its High-Redshift Test*](note.html?src=evolving_acceleration_scale_high_z_test).
+
+**Missing:** A derivation of which horizon the galaxy-scale coupling references, from the GD III mixing law rather than by assertion. This decides whether the galaxy sector distinguishes GD from MOND at all, and it gates the distinguishing-observable half of Q10.
+
+**Closure test:** Derive the horizon argument of \(g_\dagger\) from the throat-response law; independently, measure the high-\(z\) baryonic Tully–Fisher zero-point at fixed redshift to the \(<0.15\) dex precision the prediction requires (current data fall ~3× short).
+
+---
+
 ## Dependency order
 
 The questions do not all have equal priority:
 
 \[
 \boxed{
-Q1+Q2
+Q15+Q2
 \longrightarrow
 Q3+Q4
 \longrightarrow
@@ -203,7 +221,7 @@ Q7+Q8+Q9+Q10
 }
 \]
 
-Questions 11–14 test the construction's generality and reach. They matter, but they cannot repair a missing throat geometry. The immediate mathematical frontier is therefore narrow: derive the reciprocal map and its junction from one 5D parent–child construction.
+Questions 11–14 test the construction's generality and reach; Q16 sits under Q10 as the galaxy-sector distinguishing-observable question. They matter, but they cannot repair a missing throat geometry. With Q1 closed, the immediate mathematical frontier is narrow: derive the exchange symmetry (Q15) and the throat junction (Q2, Q3) from one 5D parent–child construction.
 
 ---
 

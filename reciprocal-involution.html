@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="version" content="1.0">
+  <meta name="revised" content="2026-08-01">
+  <meta name="dcterms.created" content="2026-08-01">
+  <meta name="dcterms.modified" content="2026-08-01">
+  <meta name="author" content="Claude (Anthropic)">
+  <meta name="description"
+    content="A short proof that the reciprocal ansatz a = 1/r is the unique non-trivial scale-free horizon-fixing involution, deriving the reciprocal power from a symmetry shared with the Geometric Duality galaxy law.">
+  <meta name="status" content="Result">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/reciprocal-involution.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <title>The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS",
+          useLabelIds: true
+        }
+      }
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <link href="src/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#paper-title">Skip to paper</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article aria-labelledby="paper-title">
+      <h1 id="paper-title">The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution</h1>
+      <p class="page-meta">Supporting result · Claude (Anthropic), from a conjecture by G. Salehi · August 1, 2026</p>
+
+      <aside>
+        <strong>Status:</strong> This note closes Open Question&nbsp;Q1 <em>as posed</em> — "derive the reciprocal
+        power from a symmetry." It does not derive the symmetry itself from the throat geometry; that residual is
+        stated at the end and tracked as Q15 in
+        <a href="note.html?src=open_questions">the open-questions index</a>.
+      </aside>
+
+      <section id="claim">
+        <h2>Claim</h2>
+        <p>
+          The reciprocal ansatz \(a=1/r\) is not an arbitrary choice of power. It is the <strong>unique</strong> map
+          from Bob's horizon-normalized radial coordinate to Alice's scale factor satisfying three minimal
+          requirements:
+        </p>
+        <ol>
+          <li><strong>scale-free</strong> — a power law \(a=Cr^{p}\), introducing no new dimensionful constant;</li>
+          <li><strong>self-dual involution</strong> — the parent/child exchange is its own inverse,
+            \(a(a(r))=r\);</li>
+          <li><strong>horizon-fixing</strong> — the exchange fixes the crossing surface, \(a(1)=1\).</li>
+        </ol>
+        <p>
+          Under (1)–(3), \(a=1/r\) is forced. This derives the reciprocal <em>power</em> from a symmetry — the content
+          Q1 asked for — and shows the ansatz and the
+          <a href="note.html?src=gd3_throat_curvature_and_galaxy_law_outline">GD&nbsp;III galaxy law</a> are two faces
+          of one local/global exchange symmetry.
+        </p>
+      </section>
+
+      <section id="proof">
+        <h2>Proof</h2>
+        <p>Write the map as a power law (scale-freeness),</p>
+        <p>\[ a=f(r)=Cr^{p},\qquad C>0 . \]</p>
+        <p>Impose the involution condition:</p>
+        <p>\[ f(f(r))=C\,(Cr^{p})^{p}=C^{\,1+p}\,r^{\,p^{2}}\stackrel{!}{=}r . \]</p>
+        <p>Matching the power of \(r\) and the constant separately requires</p>
+        <p>\[ p^{2}=1,\qquad C^{\,1+p}=1 . \]</p>
+        <ul>
+          <li>The root \(p=+1\) gives \(f(r)=Cr\); the involution then forces \(C^{2}=1\Rightarrow C=1\), i.e. the
+            identity \(f(r)=r\). This is the trivial exchange and is excluded by requiring a non-trivial parent/child
+            map.</li>
+          <li>The root \(p=-1\) gives \(C^{\,0}=1\) for any \(C>0\), so \(f(r)=C/r\).</li>
+        </ul>
+        <p>The horizon-fixing condition \(f(1)=C=1\) then selects</p>
+        <p>\[ \boxed{\,a=\dfrac1r\,}. \]</p>
+        <p>No other map satisfies (1)–(3). \(\blacksquare\)</p>
+      </section>
+
+      <section id="corollaries">
+        <h2>Two corollaries</h2>
+        <ul>
+          <li>
+            <strong>The fixed point is the crossing surface.</strong> The only fixed point of \(a=1/r\) on \(r>0\) is
+            \(r=1\), the horizon. The exchange symmetry pins itself to exactly the surface where Bob's exterior and
+            Alice's interior meet — it does not have to be imposed there; it is the unique fixed point.
+          </li>
+          <li>
+            <strong>The map swaps the two ends.</strong> \(a=1/r\) sends \(r\to0\) (the would-be singularity) to
+            \(a\to\infty\) (unbounded expansion) and \(r\to\infty\) (spatial infinity) to \(a\to0\) (vanishing scale).
+            Singularity and infinity are exchanged; the deferral of the singularity into Alice's infinite future is a
+            structural consequence of the involution, not a separate assumption.
+          </li>
+        </ul>
+      </section>
+
+      <section id="unification">
+        <h2>Unification with the galaxy law</h2>
+        <p>
+          Conditions (1)–(2) are the <em>same</em> assumptions GD&nbsp;III uses to select the galaxy acceleration law.
+          There, homogeneity (scale-freeness) and self-duality under local/global exchange yield the functional
+          equation \(\phi(x)=x\,\phi(1/x)\), whose scale-invariant solution is the geometric mean
+          \(g_{\rm mix}=\kappa\sqrt{g_N\,cH}\). Here the same scale-free self-duality, applied to the radial coordinate
+          instead of the acceleration ratio, yields \(a=1/r\). The reciprocal interior and the galaxy law are therefore
+          two realizations of one local/global exchange symmetry — the exchange acting on radius in the first case, on
+          acceleration in the second. Whatever ultimately justifies that symmetry justifies both at once.
+        </p>
+      </section>
+
+      <section id="residual">
+        <h2>Status and residual</h2>
+        <p>
+          <strong>What is closed:</strong> Q1 as posed — "derive the reciprocal power from a symmetry, variational
+          principle, embedding, or boundary condition." The power \(p=-1\) is derived, uniquely, from the scale-free
+          horizon-fixing involution symmetry.
+        </p>
+        <p>
+          <strong>What remains (the residual, a deeper question):</strong> the proof <em>assumes</em> the parent/child
+          exchange is a scale-free horizon-fixing involution. It does not derive those three properties from the
+          completed throat geometry. Why must the exchange introduce no new scale? Why exactly involutive rather than
+          some other self-map? Why fixed at the horizon? Closing that requires showing the throat construction
+          <em>forces</em> the exchange to take this form — the sharpened successor to Q1, recorded as Q15 in
+          <a href="note.html?src=open_questions">the open-questions index</a>.
+        </p>
+      </section>
+
+      <section id="references">
+        <h2>References</h2>
+        <ol>
+          <li>G. Salehi, <a href="gd1.html">Geometric Duality: Conformal Scaling of Black Hole Interiors</a>. GD1.</li>
+          <li><a href="note.html?src=gd3_throat_curvature_and_galaxy_law_outline">Geometric Duality III: Throat
+              Curvature and the Galaxy Acceleration Law</a>. Working outline, this project.</li>
+          <li><a href="note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law">The Self-Dual
+              Homogeneous Derivation of the Square-Root Law</a>. Technical note, this project.</li>
+        </ol>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>

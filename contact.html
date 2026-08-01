@@ -1,10 +1,12 @@
 <script type="module" data-module="@csbhi/contact">
     const email = 'gilansalehi@gmail.com';
     const github = 'https://www.github.com/gilansalehi/csbhi';
+    const personalSite = 'https://www.gilansalehi.com/';
 
     export default () => ({
         emailHtml: email.split('').join('&#8203;'),
         github,
+        personalSite,
         copyEmail() {
             navigator.clipboard?.writeText(email);
         },
@@ -12,8 +14,11 @@
 </script>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <dl>
+    <header class="contact-card__header">
+        <p class="contact-card__eyebrow">Questions, criticism, collaboration</p>
+        <h2>Contact Me</h2>
+    </header>
+    <dl class="contact-card__links">
         <dt>email</dt>
         <dd>
             <button class="link-button email-container"
@@ -23,6 +28,8 @@
                 @click="copyEmail"></button>
         </dd>
         <dt>github</dt>
-        <dd><a class="github-container" $href="github" $text="github"></a></dd>
+        <dd><a class="github-container" $href="github">CSBHI repository ↗</a></dd>
+        <dt>website</dt>
+        <dd><a $href="personalSite">gilansalehi.com ↗</a></dd>
     </dl>
 </section>
