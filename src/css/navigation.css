@@ -11,6 +11,10 @@
   font-family: var(--ds-font-ui);
 }
 
+[data-theme="light"] .project-nav {
+  --nav-interaction: var(--text);
+}
+
 .project-nav__toggle {
   position: fixed;
   top: 0.5rem;
