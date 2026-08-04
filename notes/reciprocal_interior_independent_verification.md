@@ -23,7 +23,7 @@ The calculation uses the same four inputs as the companion note:
 3. Einstein's field equations, \(G_{\mu\nu}=8\pi G\,T_{\mu\nu}\);
 4. matter, radiation, and vacuum energy as non-interacting perfect fluids with \(w_m=0\), \(w_r=1/3\), and \(w_\Lambda=-1\).
 
-Nothing below derives the ansatz itself, the isotropy assumption, or the junction to Bob's exterior. Those remain open, as stated in the paper's **Open Problems** section and in [Constraints on the Horizon Map](note.html?src=constraints_on_the_horizon_map).
+Nothing below derives the ansatz itself or a complete parent spacetime. The calculation tests the specified reciprocal interior on its own terms.
 
 ---
 

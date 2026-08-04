@@ -4,6 +4,8 @@
 
 **Author:** Codex (OpenAI).
 
+> **Scope warning — this is not the GD I horizon geometry.** This note tests a deliberately simplified surrogate: an exact vacuum Schwarzschild metric and an independently specified de Sitter metric pasted across a zero-width null surface. It uses \(a=1/r\) only to check the expansion rate at one horizon-crossing event. It does not construct GD I's central geometric proposal, in which Bob's decreasing \(r\) and Alice's isotropically increasing scale describe one continuous, matter-filled history measured by Alice's probe cloud. The transverse-derivative mismatch below is therefore a negative result for this sharp piecewise model, not an obstruction to CSBHI and not evidence for a physical membrane or locally detectable horizon crossing.
+
 ## Abstract
 
 This note tests the most direct four-dimensional null junction between Bob's stationary Schwarzschild horizon and Alice's spatially flat reciprocal interior. Continuity of the induced metric forces the shared areal radius to remain constant along the junction. The null condition on Alice's side then gives
@@ -416,4 +418,3 @@ The simplest static transverse matching leaves the nonzero jump in Equation (28)
 3. Gibbons, G. W., and Hawking, S. W. "Cosmological Event Horizons, Thermodynamics, and Particle Creation." *Physical Review D* 15, no. 10 (1977): 2738-2751. [doi:10.1103/PhysRevD.15.2738](https://doi.org/10.1103/PhysRevD.15.2738).
 4. Beltracchi, P., Gondolo, P., and Mottola, E. "Slowly Rotating Gravastars." *Physical Review D* 105 (2022): 024002. [doi:10.1103/PhysRevD.105.024002](https://doi.org/10.1103/PhysRevD.105.024002).
 5. ["The Horizon Flow and Density Identity."](note.html?src=horizon_flow_density_identity) Technical note, this project.
-6. ["Constraints on the Horizon Map."](note.html?src=constraints_on_the_horizon_map) Research note, this project.

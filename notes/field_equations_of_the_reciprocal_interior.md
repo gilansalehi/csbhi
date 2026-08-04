@@ -391,7 +391,7 @@ F(r).
 
 The Friedmann equation is the time-time field equation of the proposed reciprocal interior; it is not inserted as the premise of this derivation. The CSBHI-specific input is the identification \(a=1/r\). The standard GR calculation determines the dynamics that follow from it.
 
-The remaining geometric problem is separate: derive the reciprocal interior and its normalization from a common spacetime containing Bob's exterior and Alice's interior. That problem is recorded in [Constraints on the Horizon Map](note.html?src=constraints_on_the_horizon_map).
+The separate global problem is to determine how the reciprocal description belongs to the complete parent spacetime without replacing it with a direct Schwarzschild–FLRW paste.
 
 ## References
 

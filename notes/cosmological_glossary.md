@@ -44,6 +44,11 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(M\) | Parent black-hole mass parameter. GD1 chooses \(2M=1\). |
 | \(ds^2\) | Infinitesimal spacetime interval defined by the metric. |
 | \(g_{\mu\nu}\) | Spacetime metric tensor. Greek indices label spacetime components. |
+| \(R_{\mu\nu}\) | Ricci curvature tensor. |
+| \(\mathcal R\) | Ricci scalar, obtained by contracting the Ricci tensor. |
+| \(C_{\alpha\beta\gamma\delta}\) | Weyl curvature tensor, the trace-free tidal part of spacetime curvature. |
+| \(\mathcal W\equiv C_{\alpha\beta\gamma\delta}C^{\alpha\beta\gamma\delta}\) | Quadratic Weyl curvature invariant used in the curvature-ledger notes. |
+| \(K\) | Kretschmann scalar, \(R_{\alpha\beta\gamma\delta}R^{\alpha\beta\gamma\delta}\). |
 | \(t\) | Coordinate time. Its specific meaning depends on the chart and is stated in context. |
 | \(\tau\) | Alice's proper time; in her FLRW description it is also cosmic time. |
 | \(r(\tau)\) | Bob's horizon-normalized areal coordinate assigned to Alice's trajectory. It decreases from \(r=1\) toward \(r=0\). |
@@ -52,10 +57,15 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(a(\tau)\) | Alice's spatial scale factor. CSBHI proposes \(a=1/r\). |
 | \(F(r)\) | Positive inward flow along Alice's trajectory, \(F=-dr/d\tau\). |
 | \(H_A\) | Alice's fractional expansion rate, \(H_A=\dot a/a=F/r\). |
+| \(H_{A,H}\) | Alice's expansion rate at the parent black-hole crossing event, where \(a=r=1\). |
 | \(\eta\) | Alice's conformal time, defined by \(d\eta=d\tau/a\). |
 | \(k\) | FLRW spatial-curvature parameter. The primary reciprocal interior is spatially flat, \(k=0\). |
 | \(q\) | Deceleration parameter, \(q=-\ddot a/(aH_A^2)\). |
 | \(d\Omega^2\) | Angular line element on a unit two-sphere. |
+| \(V_\alpha,V_H\) | Volume Alice measures for her probe cloud and its value at the parent black-hole crossing event. |
+| \(\Theta\) | Expansion scalar of Alice's probe congruence; in the FLRW interior, \(\Theta=3H_A\). |
+| \(\sigma_{\mu\nu}\) | Shear tensor of the probe congruence. |
+| \(\omega_{\mu\nu}\) | Vorticity tensor of the probe congruence. |
 
 ### Matter and observed parameters
 
@@ -65,7 +75,9 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(p\) or \(P\) | Isotropic pressure. A document states which capitalization it uses. |
 | \(w=p/\rho\) | Equation-of-state parameter when \(c=1\). |
 | \(\rho_m,\rho_r,\rho_\Lambda\) | Matter, radiation, and vacuum-energy densities. |
+| \(\rho_{m0},\rho_{r0}\) | Matter and radiation densities at the reciprocal reference epoch \(a=1\). |
 | \(\Lambda\) | Cosmological constant. |
+| \(\Lambda_P,\Lambda_C\) | Parent- and child-universe cosmological constants. |
 | \(\Omega_i\) | Density of component \(i\) divided by the critical density at the stated epoch. |
 | \(H_0\) | Present measured Hubble parameter. |
 | \(H_\Lambda\) | Constant expansion rate of the asymptotic de Sitter limit. |

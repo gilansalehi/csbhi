@@ -1,94 +1,304 @@
-# The Weyl Curvature Hypothesis as a Structural Feature of the Reciprocal Interior
+# The Weyl Curvature Hypothesis in CSBHI
 
-*Technical note — draft for review*
+*Technical note — background resolution and perturbative test*
 
-**Author:** Claude (Anthropic), from discussion with G. Salehi.
+**Author:** Codex (OpenAI), developed with G. Salehi.
 
-**Date:** 2026-08-01.
+**Date:** 2026-08-03.
 
-> **Framing and honesty note.** This is a claim of *realization*, not *solution*. The idea that black holes supply the low-entropy initial conditions of new cosmological regions is Penrose's own (Conformal Cyclic Cosmology) and Smolin's (cosmological natural selection), and explicit black-hole-cosmology models of the Weyl Curvature Hypothesis already exist. What CSBHI contributes is a *specific geometric mechanism* — the reciprocal map \(a=1/r\), now derived as the unique scale-free horizon-fixing involution — that makes a black-hole interior conformally flat, so that the smooth beginning is structural rather than posited. Everything below is tagged by tier: **[E]** exact/textbook, **[G]** consequence of GD's established structure, **[I]** interpretive (shared with CCC/CNS), **[O]** open.
+**Prerequisite:** [GD I: *Geometric Duality: Conformal Scaling of Black Hole Interiors*](gd1.html).
 
-## 1. The hypothesis
+**Notation:** [CSBHI Cosmological Glossary](note.html?src=cosmological_glossary).
 
-Penrose's Weyl Curvature Hypothesis (1979) addresses the deepest form of the arrow-of-time problem. The matter content of the early universe was in near-thermal equilibrium — *high* matter entropy — yet the universe as a whole was in an extraordinarily *low* total-entropy state, because the **gravitational** degrees of freedom were unexcited. Penrose identified the measure of gravitational entropy with the **Weyl tensor** \(C_{abcd}\): the initial singularity had vanishing Weyl (the geometry was smooth, conformally flat), while final singularities inside black holes have diverging Weyl. The low initial gravitational entropy is what makes the second law possible; its origin is unexplained, and the required fine-tuning is famously severe (Penrose's phase-space estimate of \(1\) part in \(10^{10^{123}}\)).
+## Abstract
 
-Concretely **[E]**: gravitational entropy is naturally built from the Bel–Robinson tensor, quadratic in the Weyl tensor; when \(C_{abcd}=0\) the spacetime is conformally flat and the gravitational field carries no entropy. The hypothesis is therefore, at the initial state,
+Penrose's Weyl Curvature Hypothesis isolates a fundamental asymmetry. The early universe had enormous matter and radiation density but extraordinarily little free gravitational structure. Its Ricci curvature could be large while its Weyl curvature was zero or extremely small. Standard cosmology encodes that condition in its smooth FLRW beginning but does not explain why the initial gravitational field was so special.
+
+CSBHI supplies a geometric explanation at the homogeneous-background level. It identifies the child Big Bang with gravitational collapse in a parent universe. Homogeneous relativistic collapse already has the required curvature structure: its matter-filled region is FLRW and therefore has vanishing Weyl tensor, even while its density and Ricci curvature grow. The same collapse has a Schwarzschild or Kottler exterior whose nonzero Weyl curvature represents the total enclosed mass. These are compatible regions of one collapse geometry; no scalar conformal transformation must erase the exterior Weyl field.
+
+The reciprocal relation
 
 \[
-C_{abcd}\longrightarrow 0 \qquad\text{(conformal flatness at the beginning).}
+a(\tau)=\frac{1}{r(\tau)}
 \]
 
-## 2. The reciprocal interior is conformally flat
+then carries the homogeneous collapse scale into the child's homogeneous expansion. Alice's probe cloud expands isotropically, matter and radiation retain their usual dilution powers, and the FLRW background remains Weyl-free while local structure later generates Weyl curvature.
 
-The single most robust structural fact about Alice's interior is that it is spatially flat FLRW, and **every FLRW geometry is conformally flat** **[E]**:
+The result is a background resolution of Penrose's initial-condition problem:
 
 \[
-C_{abcd}=0 \quad\text{throughout the homogeneous reciprocal interior.}
+\boxed{
+\text{homogeneous parent collapse}
+\;\equiv\;
+\text{low-Weyl child beginning}
+}
 \]
 
-In GD this is not an added assumption but a consequence of the reciprocal-conformal structure **[G]**. The interior line element (GD1 §5) is a global conformal rescaling,
+The remaining test is perturbative rather than conceptual. A completed collapse calculation must carry the parent's small inhomogeneities into the child's scalar, vector, and tensor perturbations and recover the observed nearly homogeneous—not perfectly homogeneous—early universe.
+
+---
+
+## 1. Penrose's question
+
+The Riemann tensor separates into Ricci and Weyl parts.
+
+- **Ricci curvature** is fixed locally by stress-energy through Einstein's equations.
+- **Weyl curvature** is the trace-free tidal field: the part associated with gravitational waves, anisotropy, inhomogeneity, and the vacuum field outside a compact mass.
+
+Penrose observed that ordinary thermodynamic matter was hot and dense in the early universe, yet the gravitational field was remarkably smooth. If gravitational clumping represents increasing gravitational entropy, the Big Bang began in a highly special low-gravitational-entropy state.
+
+The Weyl Curvature Hypothesis expresses that special beginning geometrically:
 
 \[
-ds^2=\frac{1}{r^2}\!\left[-\frac{dr^2}{H_A(r)^2}+dR^2+R^2d\Omega^2\right],
+C_{\alpha\beta\gamma\delta}
+\longrightarrow0
+\quad
+\text{at the initial cosmological boundary},
+\tag{1}
 \]
 
-with conformal factor \(a^2=1/r^2\); the probe congruence expands isotropically with **zero shear** (GD1 §4). Isotropic, shear-free, spatially flat expansion is conformally flat expansion. The exterior it is joined to is the opposite: Schwarzschild/Kottler is Petrov type D with
+while Ricci curvature may remain large. The hypothesis states the required boundary condition. It does not, by itself, explain its origin.
+
+The distinction between the Weyl tensor and any particular scalar must remain clear. We use
 
 \[
-\Psi_2=-\frac{GM}{R^3}\neq 0 \qquad\text{(parent Weyl non-zero)} \quad\textbf{[E]}.
+\mathcal W
+\equiv
+C_{\alpha\beta\gamma\delta}
+C^{\alpha\beta\gamma\delta}
+\tag{2}
 \]
 
-So across the horizon the Weyl tensor runs from **non-zero (parent)** to **exactly zero (child)**.
+as a convenient invariant, but Penrose's condition concerns the free gravitational field represented by the tensor itself.
 
-## 3. Why this is the WCH initial condition, structurally
+---
 
-Penrose's condition is not "no matter" — it is "hot matter, smooth geometry": large Ricci (thermal stress-energy) with vanishing Weyl. The reciprocal interior delivers exactly this **[G]**. Alice's interior is an FLRW state whose Ricci curvature is sourced by ordinary matter and radiation (arbitrarily hot and dense near the beginning of her history) while its Weyl curvature is identically zero. That is precisely a **low gravitational-entropy, high matter-entropy** initial state — the Weyl Curvature Hypothesis, satisfied not by tuning initial data but because *a black-hole interior related to its exterior by the reciprocal conformal map is conformally flat.*
+## 2. The collapse geometry already contains the answer
 
-The fine-tuning Penrose highlights is thereby relocated, not waved away. In CSBHI the improbable smoothness of the beginning is the *generic* appearance of a reciprocal interior; what must then be explained is the map itself — why parent/child exchange acts as the scale-free horizon-fixing involution that forces \(a=1/r\). That is a sharply posed geometric question (open-questions Q15), and it is a far smaller target than "why was the initial state one special point in \(10^{10^{123}}\)."
+Oppenheimer and Snyder supplied the canonical exact model of homogeneous spherical collapse. Its matter-filled interior is a contracting FLRW region; its vacuum exterior is Schwarzschild. The two regions describe the same total mass in different geometric forms.
 
-## 4. The arrow of time and the recursion
-
-The Weyl tensor supplies the temporal asymmetry directly **[I]**:
-
-- **Birth (Weyl \(=0\)).** The child begins conformally flat — zero gravitational entropy.
-- **Growth (Weyl \(\uparrow\)).** As perturbations grow and structure forms, \(C_{abcd}\) becomes non-zero and the Bel–Robinson gravitational entropy increases monotonically — the thermodynamic arrow, pointing with cosmic expansion.
-- **Reset.** Structure collapses into black holes (diverging Weyl), each of which is the crossing surface of a *new* reciprocal interior, born again conformally flat.
-
-This is the same mechanism Penrose invokes in Conformal Cyclic Cosmology — black holes "suppress degrees of freedom, disconnecting them from the later global stages" — and the same recursion Smolin proposed. CSBHI's distinctive element is that the reset is a *conformal rescaling* (\(a=1/r\)) with the horizon as its unique fixed point (see the involution proof): the crossing is literally a conformal boundary, and \(r=0\) is Alice's future conformal boundary at infinite proper time and finite curvature (GD1 §6) — a structure that rhymes strongly with CCC's conformal infinity, though CSBHI's aeons are *nested* (a black-hole interior) rather than *sequential*.
-
-## 5. What is solid, what is inherited, what is open
-
-- **Solid [E,G]:** the reciprocal interior is conformally flat (Weyl \(=0\)); the exterior is not; the interior therefore instantiates a hot, geometrically smooth, low-gravitational-entropy beginning — the geometric content of the WCH — as a structural consequence of \(a=1/r\).
-- **Inherited [I]:** the black-hole-as-entropy-reset picture and the recursive arrow of time are shared with Penrose's CCC and Smolin's cosmological natural selection. CSBHI is a particular geometric realization, not the first proposal of the idea.
-- **Open [O]:**
-  1. *Perturbations.* The Weyl \(=0\) statement is for the homogeneous background. The full low-entropy claim requires that the initial *perturbation* Weyl also be small — the near-scale-invariant, unexcited tensor sector (open-questions Q7). CSBHI has not yet derived the perturbation spectrum.
-  2. *The reset dynamics.* How the parent's non-zero Weyl is shed at the crossing to yield an exactly conformally flat child is the throat/junction problem (open-questions Q3). Quantitatively, this is a Bel–Robinson bookkeeping question across the throat, not yet computed.
-  3. *The map itself.* Why the exchange is a scale-free horizon-fixing involution (Q15) is the residual under everything here.
-
-## 6. The concrete next step
-
-To upgrade this from a structural observation to a calculation, compute the Bel–Robinson-based gravitational entropy (e.g. the Clifton–Ellis–Tavakol proposal) on both sides of the crossing and through Alice's subsequent evolution, and show:
+Inside the homogeneous matter,
 
 \[
-S_{\rm grav}^{\rm child}(\text{birth})=0,
+C_{\alpha\beta\gamma\delta}=0.
+\tag{3}
+\]
+
+Outside the matter, the Schwarzschild vacuum has
+
+\[
+R_{\mu\nu}=0,
 \qquad
-\frac{dS_{\rm grav}^{\rm child}}{d\tau}\ge 0,
+\mathcal W
+=
+\frac{48G^2M^2}{c^4\bar R^6}.
+\tag{4}
 \]
 
-with the reset \(S_{\rm grav}^{\rm parent}\to 0\) effected by the conformal crossing. The monotone increase inside the child is essentially automatic once perturbations grow from a smooth start; the load-bearing and genuinely novel piece is the *reset across the throat*, which ties this program directly to the open junction geometry (Q3). If the reset can be exhibited, CSBHI would provide not merely a spacetime that *satisfies* the WCH but a mechanism that *enforces* it at every generation.
+Equation (4) does not mean that homogeneous collapse secretly contains a Weyl-dominated material interior. It means that the vacuum exterior records the enclosed mass through its tidal field, while the matter-filled interior records the same gravitating content through Ricci curvature.
 
-## 7. Statement suitable for external review
+This is the missing conceptual distinction in a direct Schwarzschild-to-FLRW comparison. CSBHI does not need a regular scalar conformal factor to turn Equation (4) into Equation (3). The child initial data come from the homogeneous collapse region, not from an attempted rescaling of the exterior vacuum metric.
 
-> The reciprocal ansatz \(a=1/r\) makes a black-hole interior conformally flat. A universe so constructed begins with vanishing Weyl curvature — a hot, geometrically smooth, low-gravitational-entropy state — as a structural property rather than a fine-tuned initial condition. This realizes the geometric content of Penrose's Weyl Curvature Hypothesis within an explicit, recursive black-hole cosmology, and identifies the low-entropy reset with a conformal crossing whose unique fixed point is the horizon. It does not yet derive the perturbation sector or the reset dynamics; those are the stated open problems.
+The exterior and interior need not have equal curvature invariants across a finite-density matter boundary. What must match are the appropriate intrinsic and extrinsic data of the collapse solution. Oppenheimer–Snyder collapse provides that construction explicitly in its idealized dust limit.
+
+---
+
+## 3. The CSBHI identification
+
+CSBHI makes one additional identification:
+
+> The parent collapse and the child cosmological beginning are the same formation event described from opposite sides.
+
+The curvature inheritance is then direct:
+
+\[
+\boxed{
+C^{\rm collapse}_{\alpha\beta\gamma\delta}=0
+\quad\Longrightarrow\quad
+C^{\rm child}_{\alpha\beta\gamma\delta}=0
+}
+\tag{5}
+\]
+
+at the homogeneous-background level.
+
+The child does not begin with an independently selected smooth metric. Its smooth initial geometry is inherited from the homogeneous geometry of the collapse that forms it. Penrose's special boundary condition becomes a property of the formation process.
+
+The reciprocal ansatz supplies the orientation and scale relation between the two histories:
+
+\[
+a(\tau)=\frac{1}{r(\tau)},
+\qquad
+H_A=\frac{\dot a}{a}=\frac{F(r)}{r}.
+\tag{6}
+\]
+
+As Bob's radial label decreases, Alice's spatial scale grows. This reciprocal relation does not cause the Weyl tensor to vanish. It carries the already homogeneous collapse geometry into the already homogeneous child expansion.
+
+---
+
+## 4. Alice's operational measurement
+
+Alice can measure curvature with the probe cloud introduced in GD I. Let \(\xi^\mu\) be the separation between Alice and a neighboring freely falling probe. Their relative acceleration obeys
+
+\[
+\frac{D^2\xi^\mu}{D\tau^2}
+=
+-R^\mu{}_{\nu\alpha\beta}
+U^\nu\xi^\alpha U^\beta.
+\tag{7}
+\]
+
+The Ricci part controls the trace or volume-focusing contribution. The Weyl part produces trace-free tidal distortion. Operationally:
+
+- isotropic growth or contraction changes the cloud's volume;
+- Weyl tides distort a sphere into an ellipsoid;
+- neither requires proper acceleration of Alice at the cloud's center.
+
+In the reciprocal interior, every principal separation scales by the same factor:
+
+\[
+\ell_i(\tau)=a(\tau)\ell_{i,H}.
+\tag{8}
+\]
+
+Hence
+
+\[
+\Theta=3H_A,
+\qquad
+\sigma_{\mu\nu}=0,
+\qquad
+\omega_{\mu\nu}=0.
+\tag{9}
+\]
+
+Equation (9) displays the isotropic behavior of the selected congruence. The stronger statement that the entire background Weyl tensor vanishes follows from Alice's FLRW geometry:
+
+\[
+\boxed{
+C^{\rm FLRW}_{\alpha\beta\gamma\delta}=0
+}
+\tag{10}
+\]
+
+throughout the homogeneous background history.
+
+---
+
+## 5. The curvature history
+
+The background curvature story can be summarized without inventing a Weyl-erasing horizon membrane.
+
+| Regime | Ricci sector | Weyl sector |
+|---|---|---|
+| Parent FLRW background | Set by parent matter, radiation, and vacuum energy | Zero in the exact background; small perturbatively |
+| Homogeneous collapsing matter | Grows with density and pressure | Zero |
+| Vacuum exterior of the collapsing region | Vacuum value, with any background \(\Lambda_P\) | Nonzero field encoding the enclosed mass |
+| Child homogeneous beginning | Large stress-energy curvature | Zero or perturbatively small |
+| Child structure-formation era | Background set by matter and vacuum energy | Grows locally as structure forms |
+| Child de Sitter future | Approaches \(\mathcal R=4\Lambda\) | Background returns asymptotically to zero |
+
+For Alice's matter–radiation–vacuum background,
+
+\[
+H_A^2
+=
+\frac{8\pi G}{3}
+\left(
+\rho_m+\rho_r+\rho_\Lambda
+\right),
+\tag{11}
+\]
+
+with
+
+\[
+\rho_m\propto a^{-3},
+\qquad
+\rho_r\propto a^{-4},
+\qquad
+\rho_\Lambda=\text{constant}.
+\tag{12}
+\]
+
+The Ricci scalar is
+
+\[
+\mathcal R
+=
+8\pi G
+\left(
+\rho_m+4\rho_\Lambda
+\right)
+\tag{13}
+\]
+
+in units where \(c=1\). Radiation does not appear in Equation (13) because its stress-energy tensor is traceless. This does **not** mean that the radiation era has no Ricci curvature: the Ricci tensor and its quadratic invariants remain sensitive to the radiation density.
+
+The Weyl tensor of the exact background remains zero while these Ricci quantities evolve. Perturbations then produce the small initial Weyl curvature needed for galaxies, stars, black holes, gravitational waves, and the observed growth of structure.
+
+---
+
+## 6. What has been resolved
+
+In standard FLRW cosmology, the low-Weyl beginning enters as an initial condition. Penrose highlights how extraordinary that condition is: the early matter distribution was smooth even though gravitational clumping had an enormous available phase space.
+
+CSBHI changes the explanatory order:
+
+1. the child Big Bang is the interior description of parent gravitational collapse;
+2. the relevant parent collapse region is homogeneous at background order;
+3. a homogeneous collapsing region is FLRW and has zero Weyl tensor;
+4. the child therefore inherits a low-Weyl FLRW beginning;
+5. the reciprocal relation carries that homogeneous geometry into expansion; and
+6. perturbations later generate local Weyl curvature as structure forms.
+
+Thus CSBHI does not merely impose Penrose's condition on a new cosmology. It identifies a geometric process that naturally possesses the required curvature structure.
+
+\[
+\boxed{
+\text{Penrose's low-Weyl boundary}
+=
+\text{the homogeneous geometry of parent collapse}
+}
+\tag{14}
+\]
+
+This is the sense in which CSBHI resolves the Weyl Curvature Hypothesis at background order.
+
+---
+
+## 7. The remaining empirical calculation
+
+The real universe was not exactly homogeneous. A complete result must therefore go beyond Equation (14) and calculate the perturbations.
+
+The required test is concrete:
+
+1. specify perturbations of the parent collapsing FLRW region;
+2. carry their scalar, vector, and tensor data into the child initial hypersurface;
+3. evolve those modes through the reciprocal background;
+4. recover the observed primordial fluctuation spectrum and its small amplitude; and
+5. verify that gravitational entropy grows as local Weyl curvature develops during structure formation.
+
+This is not a request to explain why an arbitrary vacuum Schwarzschild field suddenly becomes conformally flat. It is the ordinary next step after a homogeneous cosmological solution: perturb the collapse, map the perturbations, and compare them with the sky.
+
+The gravitational-entropy interpretation of Weyl curvature also remains a hypothesis rather than a unique definition of gravitational entropy. CSBHI addresses the geometric initial condition Penrose identified; a microscopic entropy accounting is a separate problem.
+
+---
+
+## Result
+
+Homogeneous collapse has a matter-filled FLRW interior with vanishing Weyl tensor and a vacuum exterior whose Weyl field records the same enclosed mass. CSBHI identifies that homogeneous collapse with the child cosmological beginning and uses \(a=1/r\) to carry its scale into expansion. The child's low-Weyl beginning is therefore inherited geometry rather than an unexplained initial restriction.
+
+The background Weyl Curvature Hypothesis is resolved within the stated CSBHI construction. The remaining question is whether realistic collapse perturbations reproduce the small, nonzero primordial inhomogeneity observed in our universe.
 
 ---
 
 ## References
 
-1. Penrose, R. "Singularities and Time-Asymmetry." In *General Relativity: An Einstein Centenary Survey*, ed. Hawking & Israel. Cambridge University Press, 1979.
-2. Penrose, R. *Cycles of Time: An Extraordinary New View of the Universe.* Bodley Head, 2010. (Conformal Cyclic Cosmology.)
-3. Tod, K. P. "Isotropic Cosmological Singularities: Other Matter Models." *Classical and Quantum Gravity* 20 (2003): 521. (Conformal-flatness formulation of the WCH.)
-4. Clifton, T., Ellis, G. F. R., Tavakol, R. "A Gravitational Entropy Proposal." *Classical and Quantum Gravity* 30 (2013): 125009. [arXiv:1303.5612](https://arxiv.org/abs/1303.5612).
-5. Smolin, L. *The Life of the Cosmos.* Oxford University Press, 1997. (Cosmological natural selection.)
-6. G. Salehi, [*Geometric Duality: Conformal Scaling of Black Hole Interiors*](gd1.html). GD1.
-7. [*The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution*](reciprocal-involution.html). This project.
+1. R. Penrose, [“Singularities and Time-Asymmetry,”](https://personal.lse.ac.uk/robert49/PPB/pdf/Penrose1979a.pdf) in *General Relativity: An Einstein Centenary Survey*, ed. S. W. Hawking and W. Israel, Cambridge University Press (1979).
+2. J. R. Oppenheimer and H. Snyder, [“On Continued Gravitational Contraction,”](https://doi.org/10.1103/PhysRev.56.455) *Physical Review* **56**, 455–459 (1939).
+3. G. Salehi, [*Geometric Duality: Conformal Scaling of Black Hole Interiors*](gd1.html). GD I.
+4. [*Field Equations of the Reciprocal Interior*](note.html?src=field_equations_of_the_reciprocal_interior). Reciprocal Interior I.
+5. G. F. R. Ellis, R. Maartens, and M. A. H. MacCallum, *Relativistic Cosmology*, Cambridge University Press (2012).
+6. T. Clifton, G. F. R. Ellis, and R. Tavakol, [“A Gravitational Entropy Proposal,”](https://arxiv.org/abs/1303.5612) *Classical and Quantum Gravity* **30**, 125009 (2013).

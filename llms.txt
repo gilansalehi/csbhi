@@ -20,31 +20,25 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - GD1: start here.
 - Note I, Painleve-Gullstrand Flow from the 5D de Sitter Embedding: GD1.
 - GD II outline, The 5D de Sitter Throat: Note I.
-- Note II, Constraints on the Horizon Map: GD1.
 - Note III, Self-Dual Homogeneous Derivation of the Square-Root Law: GD II.
 - GD III outline: GD II and Note III.
 - Horizon Thermodynamics outline: GD III.
 - RI I, Field Equations of the Reciprocal Interior: GD1.
+- AI XVII, The Weyl Curvature Hypothesis in CSBHI: GD1.
 - RI II, Junction Conditions for the Reciprocal Interior: RI I.
 - Independent Verification: RI I.
 - AI III, Horizon Flow and Density Identity: RI I.
 - AI IV, Exact Shell Identity and Kottler Mass Condition: RI I.
 - AI V, Vacuum-Energy Cancellation at an FLRW-Kottler Junction: RI I.
-- AI VI, Null Optics of the Reciprocal Interior: RI I and Note II.
-- AI VII, Horizon-Crossing History and Future Causal Patches: AI VI.
+- AI VI, Null Optics of the Reciprocal Interior: RI I.
 - AI VIII, Null-Horizon Matching of the Reciprocal Interior: AI III.
 - AI IX, Recursive Kottler Horizons and the Galaxy Acceleration Scale: AI VIII.
 - AI X, Dynamic Throat Kinematics and the Cosmological Clock: AI VIII.
 - AI XI, Thermodynamic Accounting of the Transverse Junction: AI VIII.
 - AI XII, The Nonequilibrium Event Horizon and the CMB Clock: AI X and AI XI.
 - AI XIII, The Hyperbolic Cosmological Clock: AI X.
-- AI XIV, The Finite-Throat Transition and the Absolute Reciprocal Coordinate: AI XII and AI XIII.
-- AI XV, The Missing Null Coordinate and the Horizon Map: AI VII.
-- AI XVI, Two Routes to the Vacuum Surface-Gravity Jump: AI IX and AI XI.
-- The Crossing Epoch as the Single Free Parameter: AI IX and AI XIV.
 - The Evolving Galactic Acceleration Scale and its High-Redshift Test: Note III and the GD III outline.
 - The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution: GD1 and Note III.
-- The Weyl Curvature Hypothesis as a Structural Feature of the Reciprocal Interior: GD1 and the Reciprocal Ansatz Involution note.
 
 ## Project pages
 
@@ -62,24 +56,18 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - [The Exact Shell Identity and the Kottler Mass Condition for Alice's Interior](https://www.gilansalehi.com/csbhi/notes/horizon_map_shell_identity_and_mass_growth.md), by Claude (Anthropic): Derives areal-radius continuity, the Kottler mass condition, and the radiation-pressure residual for a comoving timelike boundary.
 - [Vacuum-Energy Cancellation at an FLRW-Kottler Junction](https://www.gilansalehi.com/csbhi/notes/vacuum_energy_cancellation_at_a_kottler_junction.md), by Codex (OpenAI): Independently derives the corresponding timelike junction conditions and vacuum-energy cancellation.
 - [Null Optics of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/null_optics_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the interior optical transfer laws, isolates the missing radial event map, and tests the first null-junction condition.
-- [Horizon-Crossing History and Future Causal Patches](https://www.gilansalehi.com/csbhi/notes/horizon_crossing_history_and_future_patches.md), by Codex (OpenAI): Proposes a map from ordered horizon-crossing history to interior comoving separation and derives its causal-contact and de Sitter limits.
-- [The Missing Null Coordinate and the Horizon Map](https://www.gilansalehi.com/csbhi/notes/the_missing_null_coordinate_and_the_horizon_map.md), by Codex (OpenAI): Shows that a null horizon orders crossing events without supplying a longitudinal distance, then unifies the optical and worldline maps as a paired double-null map whose sum gives child time and whose difference gives child radius.
 - [Null-Horizon Matching of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/null_horizon_matching_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the Schwarzschild-radius/apparent-horizon-radius identity from the first null junction condition and computes the transverse-curvature mismatch for direct Schwarzschild–de Sitter solderings.
 - [Recursive Kottler Horizons and the Galaxy Acceleration Scale](https://www.gilansalehi.com/csbhi/notes/recursive_kottler_horizons_and_the_galaxy_scale.md), by Codex (OpenAI): Derives a conditional parent–child cosmological-constant relation in the minimal recursive Kottler model and compares its horizon surface gravity with the empirical galaxy acceleration scale.
 - [Dynamic Throat Kinematics and the Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/dynamic_throat_kinematics_and_the_cosmological_clock.md), by Codex (OpenAI): Derives the moving-null-boundary expansion identities, reconstructs the boundary history required by the observed cosmological epochs, and identifies present-day targets for a parent horizon-growth calculation.
 - [Thermodynamic Accounting of the Transverse Junction](https://www.gilansalehi.com/csbhi/notes/thermodynamic_accounting_of_the_transverse_junction.md), by Codex (OpenAI): Shows that the same-orientation stationary null-shell tension is the interior work density projected from volume to area, tracks how causal orientation redistributes the shell data, and derives the corresponding apparent-horizon target through the radiation, matter, and vacuum epochs.
 - [The Nonequilibrium Event Horizon and the CMB Clock](https://www.gilansalehi.com/csbhi/notes/nonequilibrium_event_horizon_and_the_cmb_clock.md), by Codex (OpenAI): Derives the nonequilibrium residual on the reconstructed event horizon and shows that the CMB fixes the radiation work and reciprocal scale-factor clock rather than the horizon temperature.
 - [The Hyperbolic Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/hyperbolic_cosmological_clock.md), by Codex (OpenAI): Uses the asymptotic 5D de Sitter embedding to define a geometric boost clock, obtains the same present rapidity from age and density data, and separates that clock from the finite-throat contribution to absolute expansion.
-- [The Finite-Throat Transition and the Absolute Reciprocal Coordinate](https://www.gilansalehi.com/csbhi/notes/finite_throat_transition_and_the_absolute_reciprocal_coordinate.md), by Codex (OpenAI): Integrates the moving-boundary identity into an absolute reciprocal normalization, distinguishes the early cosmological event horizon from the apparent horizon, and conditionally calibrates the first junction with a conservative thermal landmark.
-- [Two Routes to the Vacuum Surface-Gravity Jump](https://www.gilansalehi.com/csbhi/notes/two_routes_to_the_vacuum_surface_gravity_jump.md), by Claude (Anthropic): Shows that the FLRW vacuum-work and recursive Kottler calculations select the same surface-gravity scale and recover the critical Hubble mass when the equality is imposed in reverse.
-- [The Crossing Epoch as the Single Free Parameter](https://www.gilansalehi.com/csbhi/notes/the_crossing_epoch_as_the_single_free_parameter.md), by Claude (Anthropic): Restores the crossing epoch as one free parameter and derives the corresponding mass bound and accretion requirement.
 - [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md), by Claude (Anthropic): Develops the conditional redshift-dependent galaxy-scale prediction associated with the planned GD III dynamics.
+- [The Weyl Curvature Hypothesis in CSBHI](https://www.gilansalehi.com/csbhi/notes/weyl_curvature_hypothesis_reciprocal_interior.md), by Codex (OpenAI), developed with Gilan Salehi: Explains how homogeneous parent collapse supplies the child's low-Weyl FLRW beginning at background order and identifies perturbation transfer as the remaining empirical test.
 - [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html), by Claude (Anthropic): Proves that a = 1/r is the unique non-trivial scale-free horizon-fixing involution, deriving the reciprocal power from a symmetry shared with the GD III galaxy law (closes Open Question Q1).
-- [The Weyl Curvature Hypothesis as a Structural Feature of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/weyl_curvature_hypothesis_reciprocal_interior.md), by Claude (Anthropic): Draft arguing that the conformally flat reciprocal interior realizes the low-Weyl initial condition of Penrose's Weyl Curvature Hypothesis as a structural feature, with honest tiering of what is exact, inherited from Conformal Cyclic Cosmology / cosmological natural selection, and open.
 
 ## Supporting derivations and planned notes
 
-- [Constraints on the Horizon Map](https://www.gilansalehi.com/csbhi/notes/constraints_on_the_horizon_map.md): Catalogues mathematical conditions that a complete horizon map must satisfy.
 - [The Inverse-Radius Interior and Alice's Probe Congruence](https://www.gilansalehi.com/csbhi/notes/gd_inverse_radius_probe_congruence.md): Develops the probe-cloud interpretation of inverse-radius spatial scaling.
 - [Painleve-Gullstrand Flow from the 5D de Sitter Embedding](https://www.gilansalehi.com/csbhi/notes/pg_flow_from_5d_desitter_embedding.md): Explores the relation between de Sitter embedding geometry and Painleve-Gullstrand flow.
 

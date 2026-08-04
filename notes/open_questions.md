@@ -61,29 +61,7 @@ These results are conditional on the specified interior and do not yet constitut
 
 ### Q4. What is the horizon and clock map?
 
-**Known:** Alice's cosmological event-horizon radius obeys
-
-\[
-H_A=\frac{c+\dot B}{B}.
-\]
-
-The radial crossing map now has a double-null form,
-
-\[
-v_A=v_A(v_H),
-\qquad
-u_A=u_A(v_H),
-\]
-
-so that
-
-\[
-\eta=\frac{v_A+u_A}{2},
-\qquad
-R=\Psi(v_H)=\frac{v_A-u_A}{2}.
-\]
-
-The optical calculation fixes \(dv_A/dv_H\) locally at the idealized matching cross-section. Mapping the parent crossing history to one child time slice would then require \(du_A/dv_H=-dv_A/dv_H\) [*The Missing Null Coordinate and the Horizon Map*](note.html?src=the_missing_null_coordinate_and_the_horizon_map).
+**Known:** GD1 assigns time evolution to Alice's proper time \(\tau\), Bob's trajectory label \(r(\tau)\), and the reciprocal scale \(a(\tau)=1/r(\tau)\). Alice's probe positions are independently labeled by \((R,\theta,\phi)\). No conversion from horizon-crossing time into comoving radius is required.
 
 **Missing:** A derivation of \(B(\tau)\), the global maps \(v_A(v_H)\) and \(u_A(v_H)\), and the synchronization between Bob's exterior time and Alice's proper time from one parent geometry.
 
@@ -230,6 +208,5 @@ Questions 11–14 test the construction's generality and reach; Q16 sits under Q
 1. [Geometric Duality: Conformal Scaling of Black Hole Interiors](/csbhi/gd1.html)
 2. [RI I: Field Equations of the Reciprocal Interior](note.html?src=field_equations_of_the_reciprocal_interior)
 3. [RI II: Junction Conditions for the Reciprocal Interior](/csbhi/junctions.html)
-4. [Constraints on the Horizon Map](note.html?src=constraints_on_the_horizon_map)
-5. [Geometric Duality II: The 5D de Sitter Throat](note.html?src=gd2_5d_de_sitter_throat_outline)
-6. [CSBHI Cosmological Glossary](note.html?src=cosmological_glossary)
+4. [Geometric Duality II: The 5D de Sitter Throat](note.html?src=gd2_5d_de_sitter_throat_outline)
+5. [CSBHI Cosmological Glossary](note.html?src=cosmological_glossary)

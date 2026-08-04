@@ -4,6 +4,8 @@
 
 **Author:** Codex (OpenAI).
 
+> **Scope warning — this explains the surrogate mismatch; it does not construct the GD I geometry.** This note extends the sharp Schwarzschild–FLRW comparison by restoring Alice's matter, radiation, and vacuum work. It shows that the apparent surface stress is the boundary representation of bulk FLRW work when two separately specified metrics are compressed onto a zero-width junction. GD I instead proposes a continuous Alice/Bob geometry governed by \(a=1/r\), with isotropic probe-cloud expansion and no physical horizon membrane. The calculation below explains why the abrupt surrogate fails; it neither tests nor replaces that reciprocal construction.
+
 ## Abstract
 
 The direct Schwarzschild–de Sitter junction has matching intrinsic geometry but unequal transverse derivatives. This note shows that the mismatch has an exact thermodynamic interpretation. At a shared spherical radius \(R\), the Schwarzschild and de Sitter horizons carry the same area entropy and enclosed energy, but their signed surface gravities differ because the cosmological horizon includes vacuum pressure–volume work with the opposite orientation.

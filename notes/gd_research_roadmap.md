@@ -54,7 +54,7 @@ Its principal results are:
 - reciprocal relations among the observed horizon scales;
 - an exact de Sitter endpoint with PG flow \(F_{\rm dS}=H_\Lambda\bar R\).
 
-GD1 does not derive the horizon map connecting Bob's exterior to Alice's interior. The note [Constraints on the Horizon Map](note.html?src=constraints_on_the_horizon_map) states that problem explicitly.
+GD1 defines the reciprocal correspondence along Alice's worldline. A complete global model must preserve that construction rather than replace it with a direct junction between independently chosen Schwarzschild and FLRW metrics.
 
 The companion note [*Field Equations of the Reciprocal Interior*](note.html?src=field_equations_of_the_reciprocal_interior) derives the Friedmann energy and acceleration equations directly from Alice's reciprocal metric, Einstein's equations, and stress-energy conservation, then translates them into Bob's infall function.
 
