@@ -10,13 +10,13 @@
 
 **Prerequisites:** [GD I](gd1.html); [RI I — Field Equations of the Reciprocal Interior](note.html?src=field_equations_of_the_reciprocal_interior); [The Reciprocal Scale Field and the Smooth-Throat Problem](note.html?src=reciprocal_scale_field).
 
-**Notation:** [Glossary](note.html?src=cosmological_glossary). We use (c=1), retain (G), and denote physical areal radius by (mathcal R). The cosmological constant is common to both descriptions and is omitted from the material mass below because its homogeneous contribution cancels from the Weyl tensor.
+**Notation:** [Glossary](note.html?src=cosmological_glossary). We use \(c=1\), retain \(G\), and denote physical areal radius by \(\mathcal R\). The cosmological constant is common to both descriptions and is omitted from the material mass below because its homogeneous contribution cancels from the Weyl tensor.
 
 ---
 
 ## 1. The exact spherical identity
 
-Let (m(	au,mathcal R)) be the material part of the Misner–Sharp mass inside a sphere of areal radius (mathcal R). On a regular spherical slice without shell crossing,
+Let \(m(\tau,\mathcal R)\) be the material part of the Misner–Sharp mass inside a sphere of areal radius \(\mathcal R\). On a regular spherical slice without shell crossing,
 
 \[
 \frac{\partial m}{\partial\mathcal R}=4\pi\rho\,\mathcal R^2.
@@ -48,8 +48,8 @@ For an isotropic perfect fluid, the single independent Newman–Penrose Weyl sca
 
 Equation (3) states the conversion target in one line:
 
-- in vacuum, (ho=0) and (m=M), so (Psi_2=-GM/mathcal R^3), the Schwarzschild/Kottler value;
-- in a homogeneous region, (m=4pihomathcal R^3/3), so (arho=ho) and (Psi_2=0), the FLRW value;
+- in vacuum, \(\rho=0\) and \(m=M\), so \(\Psi_2=-GM/\mathcal R^3\), the Schwarzschild/Kottler value;
+- in a homogeneous region, \(m=4\pi\rho\mathcal R^3/3\), so \(\bar\rho=\rho\) and \(\Psi_2=0\), the FLRW value;
 - between them, Weyl curvature measures density contrast rather than an additional source.
 
 For anisotropic matter, pressure anisotropy contributes an additional term. Equation (3) therefore supplies the clean perfect-fluid target; any proposed throat with anisotropic stress must carry that correction explicitly.
@@ -58,7 +58,7 @@ For anisotropic matter, pressure anisotropy contributes an additional term. Equa
 
 ## 2. An explicit finite transition
 
-Choose two radii (mathcal R_1<mathcal R_2) on one spherical slice and define
+Choose two radii \(\mathcal R_1<\mathcal R_2\) on one spherical slice and define
 
 \[
 u\equiv\frac{\mathcal R-\mathcal R_1}{\Delta},
@@ -118,7 +118,7 @@ m(\mathcal R_1)=\frac{4\pi}{3}\rho_c\mathcal R_1^3,
 \tag{9}
 \]
 
-At the vacuum endpoint, writing (M=m(mathcal R_2)),
+At the vacuum endpoint, writing \(M=m(\mathcal R_2)\),
 
 \[
 \rho(\mathcal R_2)=0,
@@ -127,7 +127,7 @@ At the vacuum endpoint, writing (M=m(mathcal R_2)),
 \tag{10}
 \]
 
-The transition is continuous in both density and Weyl curvature. To see why, let (D\equiv\bar\rho-\rho). Equations (1) and (2) imply
+The transition is continuous in both density and Weyl curvature. To see why, let \(D\equiv\bar\rho-\rho\). Equations (1) and (2) imply
 
 \[
 \frac{\partial\bar\rho}{\partial\mathcal R}
@@ -139,15 +139,305 @@ The transition is continuous in both density and Weyl curvature. To see why, let
 \tag{11}
 \]
 
-At (mathcal R_1), both (D) and (partial_{mathcal R}ho) vanish, so the Weyl field begins smoothly at zero. At (mathcal R_2), (partial_{mathcal R}ho=0), and Equation (11) becomes the vacuum falloff (D'=-3D/mathcal R). The profile therefore joins the exterior Schwarzschild/Kottler Weyl field with the correct first derivative.
+At \(\mathcal R_1\), both \(D\) and \(\partial_{\mathcal R}\rho\) vanish, so the Weyl field begins smoothly at zero. At \(\mathcal R_2\), \(\partial_{\mathcal R}\rho=0\), and Equation (11) becomes the vacuum falloff \(D'=-3D/\mathcal R\). The profile therefore joins the exterior Schwarzschild/Kottler Weyl field with the correct first derivative.
 
 This is an existence proof for a smooth **curvature ledger**: concentrated exterior mass and homogeneous interior density can be connected without a discontinuous Weyl scalar.
 
 ---
 
-## 3. What the profile does not yet prove
+## 3. Exact evolution of the density contrast
 
-Specifying (ho(mathcal R)) on one slice does not construct a spacetime. The remaining Einstein and conservation equations must determine the pressure, radial motion, and any energy flux.
+The Misner–Sharp equations also determine how the contrast evolves. Let
+
+\[
+H_\perp\equiv\frac{D_\tau\mathcal R}{\mathcal R},
+\qquad
+H_\parallel\equiv D_\tau\ln\ell_\parallel,
+\qquad
+\Theta=H_\parallel+2H_\perp.
+\tag{12}
+\]
+
+Here \(\ell_\parallel\) is an infinitesimal radial proper separation between neighboring comoving shells.
+
+For a comoving perfect fluid, local conservation and the Misner–Sharp work equation give
+
+\[
+D_\tau\rho=-(\rho+p)\Theta,
+\qquad
+D_\tau\bar\rho=-3H_\perp(\bar\rho+p).
+\tag{13}
+\]
+
+Subtracting the two equations yields the exact contrast law
+
+\[
+\boxed{
+D_\tau D+3H_\perp D
+=(\rho+p)(H_\parallel-H_\perp).
+}
+\tag{14}
+\]
+
+Using Equation (3), the equivalent Weyl law is
+
+\[
+\boxed{
+D_\tau\Psi_2+3H_\perp\Psi_2
+=-\frac{4\pi G}{3}(\rho+p)
+\left(H_\parallel-H_\perp\right).
+}
+\tag{15}
+\]
+
+Equation (15) identifies the two available channels:
+
+1. isotropic expansion dilutes an existing Weyl contrast as inverse volume;
+2. unequal radial and angular rates source or drain Weyl curvature through shear.
+
+In Alice's shear-free reciprocal interior, \(H_\parallel=H_\perp=H_A\), so
+
+\[
+\Psi_2\propto a^{-3}=r^3=e^{-3\sigma}.
+\tag{16}
+\]
+
+Thus any residual Weyl field carried into the reciprocal interior decays with precisely the inverse power of the exterior Schwarzschild field.
+
+Equation (16) is a propagation law, not an existence theorem for an inhomogeneous shear-free perfect-fluid solution. The remaining Einstein constraints may force the residual amplitude to vanish or require acceleration, anisotropic stress, flux, or a projected higher-dimensional term. That restriction is useful: it identifies exactly what the throat completion must supply beyond isotropic scaling.
+
+---
+
+## 4. The reciprocal self-dual profile
+
+Define the horizon Weyl scale
+
+\[
+W_H\equiv\frac{GM}{R_S^3}.
+\tag{17}
+\]
+
+On the parent-side Kottler branch, Equation (3) of the scale-field note gives the radial law
+
+\[
+\Psi_2^{\rm out}(\sigma)=-W_H e^{3\sigma},
+\qquad \sigma<0.
+\tag{18}
+\]
+
+On a shear-free child branch, Equation (16) gives
+
+\[
+\Psi_2^{\rm in}(\sigma)=-W_H e^{-3\sigma},
+\qquad \sigma>0,
+\tag{19}
+\]
+
+where the common coefficient is the continuity condition at the self-dual surface. Together,
+
+\[
+\boxed{
+\Psi_2^{(0)}(\sigma)
+=-W_H e^{-3|\sigma|}.
+}
+\tag{20}
+\]
+
+This profile is continuous, reciprocal-reflection invariant, and has the correct exact power on both asymptotic branches. It is not differentiable at \(\sigma=0\):
+
+\[
+\left[\partial_\sigma\Psi_2^{(0)}\right]_{0^-}^{0^+}
+=6W_H.
+\tag{21}
+\]
+
+Equation (20) is therefore the natural **thin-throat scale profile**. Its cusp is the scale-space version of compressing the conversion into zero width. It does not by itself prove a metric shell, because the parent expression is a radial law while the child expression is an evolution law; a complete horizon map must show that \(\sigma\) parametrizes both within one geometry.
+
+The absolute value admits a simple reflection-symmetric thickening:
+
+\[
+h_\epsilon(\sigma)
+\equiv
+\epsilon\ln\cosh\left(\frac{\sigma}{\epsilon}\right),
+\qquad
+\boxed{
+\Psi_2^{(\epsilon)}(\sigma)
+=-W_H e^{-3h_\epsilon(\sigma)}.
+}
+\tag{22}
+\]
+
+For \(|\sigma|\gg\epsilon\), \(h_\epsilon=|\sigma|-\epsilon\ln2+o(1)\), recovering the two exponential powers up to the finite normalization accumulated through the transition. At the horizon, \(h_\epsilon(0)=h_\epsilon'(0)=0\), so the Weyl profile and its first derivative are smooth. The parameter \(\epsilon\) is the throat's width in scale space.
+
+Equation (22) is not selected uniquely; it is an explicit regularization demonstrating that reciprocity, the two asymptotic powers, horizon continuity, and smoothness are mutually compatible. Einstein's equations must determine whether this profile—or another in the same class—has admissible matter and 5D projection data.
+
+The corresponding density contrast follows directly from Equation (3):
+
+\[
+D^{(\epsilon)}(\sigma)
+=\bar\rho_H e^{-3h_\epsilon(\sigma)},
+\qquad
+\bar\rho_H\equiv\frac{3M}{4\pi R_S^3}.
+\tag{23}
+\]
+
+The normalization is not new: \(\bar\rho_H\) is exactly the exterior black hole's average density inside its horizon. The new statement is that the reciprocal powers promote that boundary identity into a candidate scale-dependent **density-contrast profile**. The contrast is maximal at the self-dual surface and decays toward both asymptotic descriptions.
+
+---
+
+## 5. The 4D shear budget
+
+On the child side, use \(D_\tau\sigma=H_A\) and \(H_\perp=H_A\). Differentiating Equation (23) and substituting it into Equation (14) gives the radial/angular rate difference required by a four-dimensional perfect-fluid realization:
+
+\[
+\boxed{
+H_\parallel-H_\perp
+=
+\frac{3H_A D}{\rho+p}
+\left(1-h_\epsilon'(\sigma)\right)
+=
+\frac{3H_A D}{\rho+p}
+\left[1-\tanh\left(\frac{\sigma}{\epsilon}\right)\right].
+}
+\tag{24}
+\]
+
+This is the first dynamical discriminator between the two realizations:
+
+- In a purely four-dimensional perfect-fluid throat, smooth Weyl relaxation requires a finite interval of unequal radial and angular expansion rates. The rate difference is largest at the self-dual surface and decays continuously to zero.
+- If Alice's reciprocal probe cloud must remain exactly shear-free throughout the transition, another term must carry the right-hand side of Equation (15). A projected 5D Weyl term, anisotropic effective stress, or conformal-gauge contribution then has a precise value to reproduce.
+- In the zero-width limit, the finite interval collapses onto the null surface and recovers the sharp-shell problem.
+
+Writing that additional contribution as \(\mathcal Q_{\rm scale}\), the shear-free propagation equation becomes
+
+\[
+D_\tau\Psi_2+3H_A\Psi_2=\mathcal Q_{\rm scale}.
+\]
+
+For the smooth profile in Equation (22),
+
+\[
+\boxed{
+\mathcal Q_{\rm scale}(\sigma)
+=3H_A
+\left[1-\tanh\left(\frac{\sigma}{\epsilon}\right)\right]
+\Psi_2^{(\epsilon)}(\sigma).
+}
+\tag{24a}
+\]
+
+Equation (24a) is a quantitative target for the 5D or conformal calculation: its projected correction must reproduce this function if Alice's induced four-dimensional probe geometry is to remain exactly isotropic while the Weyl field relaxes smoothly.
+
+Equation (24) describes relative motion within an extended probe cloud, not a local impulse on Alice. A smooth finite profile produces tidal evolution rather than an abrupt horizon kick.
+
+The magnitude depends on \(D/(\rho+p)\). Determining that ratio from the collapse data is therefore the next numerical target: after the horizon map places the transition in cosmic history, it will show whether the entirely 4D realization lies within observational shear bounds or whether the higher-dimensional channel is required.
+
+---
+
+## 6. A reciprocal curvature-mixing angle [C]
+
+The definition of \(D\) supplies an exact ledger:
+
+\[
+\boxed{
+\bar\rho=\rho+D.
+}
+\tag{25}
+\]
+
+The two terms have distinct geometric roles. The local perfect-fluid density contributes to Ricci curvature through Einstein's equations; the contrast \(D\) determines the Weyl scalar through Equation (3). Because radiation is trace-free, this statement concerns Ricci **content**, not the Ricci scalar alone.
+
+Whenever \(\rho\geq0\) and \(D\geq0\), Equation (25) admits the angular parameterization
+
+\[
+\rho=\bar\rho\sin^2\vartheta,
+\qquad
+D=\bar\rho\cos^2\vartheta,
+\qquad
+0\leq\vartheta\leq\frac{\pi}{2}.
+\tag{26}
+\]
+
+Then:
+
+- vacuum Schwarzschild/Kottler has \(\rho=0\), \(D=\bar\rho\), and \(\vartheta=0\);
+- homogeneous FLRW has \(\rho=\bar\rho\), \(D=0\), and \(\vartheta=\pi/2\);
+- the conversion between them is literally a quarter-turn in this two-component curvature ledger.
+
+The reciprocal reflection suggests
+
+\[
+\vartheta(-\sigma)=\frac{\pi}{2}-\vartheta(\sigma),
+\tag{27}
+\]
+
+so the self-dual surface has \(\vartheta(0)=\pi/4\): equal Weyl-side contrast and Ricci-side local density. This gives a precise version of the claim that the horizon is the midpoint, rather than an endpoint, of the geometric conversion.
+
+The simplest scale-composing odds ratio is
+
+\[
+\frac{\rho}{D}
+=\tan^2\vartheta
+=e^{3\sigma}
+=a^3
+=\frac1{r^3}.
+\tag{28}
+\]
+
+The power \(3\) is the spatial-volume power. Equation (28) gives
+
+\[
+\boxed{
+\frac{\rho}{\bar\rho}
+=\frac{e^{3\sigma}}{1+e^{3\sigma}},
+\qquad
+\frac{D}{\bar\rho}
+=\frac{1}{1+e^{3\sigma}},
+\qquad
+\vartheta(\sigma)=\arctan e^{3\sigma/2}.
+}
+\tag{29}
+\]
+
+This logistic rotation is not derived from Einstein's equations. It is the minimal candidate satisfying:
+
+1. the exact ledger in Equation (25);
+2. reciprocal exchange of local density and density contrast;
+3. the self-dual midpoint at \(\sigma=0\);
+4. composition under additive changes of logarithmic scale;
+5. the three-dimensional volume power already governing dust dilution and exterior Weyl curvature.
+
+Unlike a vacuum Schwarzschild patch pasted directly onto exact FLRW, Equation (29) contains matter and Weyl curvature simultaneously near the horizon. It therefore models the recursive CSBHI premise—locally black-hole-like, cosmological on larger scales—rather than treating the isolated vacuum solution as the complete parent geometry.
+
+The decisive test is now explicit: insert Equation (29), the RI I expansion history, and the Misner–Sharp equations into the remaining radial Einstein constraint. If they close with regular pressure and flux, the geometric “rotation” becomes a solution. If they do not, the residual identifies the effective 5D or conformal term quantitatively.
+
+There is already one nontrivial closure. On a shear-free child branch, Equation (16) fixes
+
+\[
+D(a)=D_Ha^{-3}.
+\tag{30}
+\]
+
+Combining this exact propagation law with the candidate reciprocal odds in Equation (28) gives
+
+\[
+\boxed{
+\rho(a)=a^3D(a)=D_H,
+\qquad
+\bar\rho(a)=\rho+D=D_H\left(1+a^{-3}\right).
+}
+\tag{31}
+\]
+
+The two sides of the curvature ledger therefore acquire precisely the characteristic powers of vacuum and dust: the local Ricci-side component is constant, while the Weyl-side density contrast dilutes as inverse volume. This is not yet a derivation of cosmological dust plus vacuum. \(D\) measures inhomogeneity, not homogeneous matter density, and Equation (28) remains a geometric hypothesis. The result is nevertheless a sharp consistency clue: the simplest reciprocal rotation converts the exact spherical Weyl propagation law into the same two powers that dominate the late-time RI I expansion history.
+
+At \(a=1\), Equation (31) gives equal ledger components. This does **not** assert \(\Omega_m=\Omega_\Lambda\) at horizon crossing; the ledger components are Weyl contrast and local Ricci density, not the standard FLRW density parameters. A completed field equation must determine how each projects onto the cosmological matter and vacuum terms.
+
+---
+
+## 7. What the profile does not yet prove
+
+Specifying \(\rho(\mathcal R)\) on one slice does not construct a spacetime. The remaining Einstein and conservation equations must determine the pressure, radial motion, and any energy flux.
 
 For a comoving perfect fluid, the Misner–Sharp work equation is
 
@@ -155,26 +445,30 @@ For a comoving perfect fluid, the Misner–Sharp work equation is
 D_\tau m
 =
 -4\pi p\,\mathcal R^2D_\tau\mathcal R.
-\tag{12}
+\tag{32}
 \]
 
-Equation (12) identifies the next calculation. Dust has (p=0), so material Misner–Sharp mass is conserved and the classical Oppenheimer–Snyder/Einstein–Straus match can be stress-free. Radiation has (p=\rho_r/3), so a dynamical transition must carry pressure work. This is the same radiation residual isolated independently by the FLRW–Kottler junction and throat-thermodynamic notes.
+Equation (32) identifies the next dynamical calculation. Dust has \(p=0\), so material Misner–Sharp mass is conserved and the classical Oppenheimer–Snyder/Einstein–Straus match can be stress-free. Radiation has \(p=\rho_r/3\), so a dynamical transition must carry pressure work. This is the same radiation residual isolated independently by the FLRW–Kottler junction and throat-thermodynamic notes.
 
 The smooth density profile therefore resolves the **kinematic** Weyl jump but does not yet solve the **dynamical** throat. A completed solution must:
 
-1. evolve Equations (1) and (12) together with the radial Euler equation;
-2. impose the reciprocal boundary history (a=1/r);
+1. evolve Equations (1), (15), (29), and (32) together with the radial Euler equation;
+2. impose the reciprocal boundary history \(a=1/r\);
 3. determine whether the transition is timelike, null, or changes causal character;
 4. verify continuity of the induced metric and transverse/extrinsic curvature;
-5. recover the known Barrabès–Israel surface stress when (Delta\to0) in the appropriate null limit.
+5. recover the known Barrabès–Israel surface stress when \(\Delta\to0\) in the appropriate null limit.
 
 ---
 
-## 4. Result and next target
+## 8. Result and next target
 
 The first result is constructive:
 
 > In spherical perfect-fluid geometry, Weyl-to-Ricci conversion is density homogenization. Once the local density profile is specified, the Weyl profile is fixed by the Misner–Sharp mass and can relax continuously from Kottler to FLRW without a compulsory curvature jump.
+
+The reciprocal scale adds a second result:
+
+> The exact exterior Weyl power and the exact shear-free interior dilution power are reciprocal. Their continuous self-dual completion is \(e^{-3|\sigma|}\); a finite throat is a smooth regularization of this scale-space cusp.
 
 The next target is correspondingly narrow: solve the time-dependent Misner–Sharp fluid equations for a finite layer containing dust, radiation, and the common vacuum term, with the reciprocal history fixing its interior boundary data. That calculation—not the comparison of endpoint Weyl scalars—decides whether the physical throat is smooth.
 
