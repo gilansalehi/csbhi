@@ -14,6 +14,8 @@
 
 **Companion history:** [*Black-Hole Cosmology: Lineage, Mechanisms, and CSBHI*](note.html?src=black_hole_cosmology_lineage).
 
+**Companion proposal:** [*The Reciprocal Interior as a Conformal Crossover*](note.html?src=reciprocal_interior_conformal_crossover) gives the shorter conceptual statement; this note supplies its broader source map and comparison.
+
 ---
 
 ## Abstract
@@ -39,17 +41,17 @@ The candidate causal chain is
 
 \[
 \boxed{
-\mathcal P_{mathrm{FLRW}}
+\mathcal P_{\mathrm{FLRW}}
 \longrightarrow
 \mathcal B_P
 \longrightarrow
 \mathcal H_P
 \longrightarrow
-\mathcal I_{mathrm{rec}}
+\mathcal I_{\mathrm{rec}}
 \longrightarrow
 \Sigma
 \longrightarrow
-\mathcal C_{mathrm{FLRW}}
+\mathcal C_{\mathrm{FLRW}}
 }.
 \tag{2}
 \]
@@ -76,11 +78,21 @@ The limit \(r_P\to\infty\) in a local black-hole chart is not the parent Big Ban
 
 The proposed recursion must therefore relate complete causal boundaries, not merely exchange the endpoints of one radial coordinate.
 
+### Which region contains our observed history?
+
+The three-stage interpretation creates an important fork that must be resolved explicitly.
+
+GD I currently calibrates the reciprocal FLRW patch to the radiation–matter–vacuum history of our observed universe. On that reading, \(\mathcal I_{\mathrm{rec}}\) already *is* our cosmological interior. The new reading instead places the child universe \(\mathcal C_{\mathrm{FLRW}}\) beyond the reciprocal patch's future conformal boundary.
+
+Both identifications cannot be made silently. If our observed universe is \(\mathcal C_{\mathrm{FLRW}}\), the crossover must show why the expansion law derived for \(\mathcal I_{\mathrm{rec}}\) also governs \(\mathcal C_{\mathrm{FLRW}}\). If our observed universe is \(\mathcal I_{\mathrm{rec}}\), then \(\Sigma\) is the Big Bang of a later descendant, not ours. Recursive self-similarity may relate the two histories, but that relationship requires a map; it does not follow from their shared FLRW form.
+
+This is a productive ambiguity because it identifies a concrete decision rather than another junction coefficient. The completed causal diagram must mark where our observed Big Bang, present epoch, and de Sitter future lie.
+
 ---
 
 ## 2. Schwarzschild and Kruskal: the problem in its sharpest form
 
-The Schwarzschild solution supplies the local exterior field of an isolated, nonrotating spherical mass. Its maximal Kruskal extension shows that the horizon is regular while the classical \(r=0\) singularity is a spacelike future boundary for every infalling timelike observer.
+The Schwarzschild solution supplies the local exterior field of an isolated, nonrotating spherical mass. Its maximal Kruskal extension shows that the horizon is regular while the classical \(r=0\) singularity is a spacelike future boundary for every infalling timelike observer [31,32].
 
 This establishes three facts that any replacement must respect:
 
@@ -171,7 +183,7 @@ These models place the child cosmology immediately within a finite collapsing cl
 
 Markov proposed a limiting density, and Frolov, Markov, and Mukhanov applied a limiting-curvature hypothesis to black-hole interiors. They replaced the deep Schwarzschild interior with a de Sitter region across a short spacelike transition layer and investigated continuation into a new universe [10–12].
 
-Regular-black-hole models developed another version of the same geometric idea. Hayward constructed nonsingular dynamical black-hole spacetimes whose central stress-energy behaves like a cosmological constant [13]. Dymnikova-type solutions likewise replace the central singularity with a de Sitter core.
+Regular-black-hole models developed another version of the same geometric idea. Hayward constructed nonsingular dynamical black-hole spacetimes whose central stress-energy behaves like a cosmological constant [13]. Dymnikova's vacuum nonsingular black hole likewise replaces the central singularity with a de Sitter core [33].
 
 The shared insight is geometric:
 
@@ -279,6 +291,8 @@ CCC is not a black-hole cosmology. Its crossover joins complete cosmic aeons, re
 
 Penrose's Weyl Curvature Hypothesis adds a boundary condition: the child beginning must have vanishing or extremely small free tidal curvature even while its Ricci curvature and matter density are large [28]. A de Sitter-like reciprocal future has vanishing background Weyl curvature, making it a promising conformal precursor. Whether perturbations remain regular and produce the observed small primordial fluctuations is still open.
 
+The mathematical literature on **isotropic singularities** makes the child-side requirement more precise. Goode and Wainwright define cosmological singularities whose conformal geometry extends regularly even though the physical metric is singular [34]. Anguige and Tod show that, for important perfect-fluid equations of state, the conformal Einstein equations admit a well-posed initial-value problem with data posed at that singular surface [35]. Lübbe and Tod provide curvature conditions for extending conformal structure through an isotropic singularity [36]. These results do not prove that the reciprocal future supplies the required data, but they turn “continue it as a smooth Big Bang” into an established geometric problem rather than a metaphor.
+
 **Contribution:** the future-infinity-to-Big-Bang conformal operation and its low-Weyl requirement.
 
 **Missing piece:** a black-hole origin, a reciprocal radial scale, and a derived matter/entropy transfer.
@@ -357,6 +371,7 @@ Show that the \(r_P\to0\), \(a_I\to\infty\) limit admits a regular conformal com
 3. a child physical metric extends away from \(\Sigma\) with an FLRW hot-Big-Bang history;
 4. the Weyl tensor satisfies the required low-Weyl boundary condition;
 5. matter, entropy, and perturbation data obey a stated transfer law.
+6. the map identifies whether our measured cosmic history belongs to the reciprocal patch, the child patch, or recursively to both.
 
 The second problem is not an ordinary junction across a finite material surface. It is a conformal-boundary problem, closer to CCC than to a thin-shell matching.
 
@@ -371,7 +386,8 @@ The prior literature supports the plausibility of each geometric ingredient. It 
 - a de Sitter endpoint does not automatically admit a hot FLRW continuation;
 - a conformal identification does not automatically transfer matter, entropy, or quantum information;
 - Einstein–Cartan, limiting-curvature, phantom-matter, and loop-gravity mechanisms do not derive \(a_I=1/r_P\);
-- the present CSBHI equations do not yet supply one global metric covering Equation (2).
+- the present CSBHI equations do not yet supply one global metric covering Equation (2);
+- the present GD I calibration cannot be assigned to both \(\mathcal I_{\mathrm{rec}}\) and \(\mathcal C_{\mathrm{FLRW}}\) without a derived recursive map.
 
 What the review does license is a sharper conjecture:
 
@@ -432,3 +448,9 @@ The next calculation is no longer “put FLRW inside Schwarzschild.” The liter
 28. R. Penrose, “Singularities and Time-Asymmetry,” in *General Relativity: An Einstein Centenary Survey*, ed. S. W. Hawking and W. Israel, Cambridge University Press (1979).
 29. L. Boyle, K. Finn, and N. Turok, “CPT-Symmetric Universe,” *Physical Review Letters* **121**, 251301 (2018). [arXiv:1803.08928](https://arxiv.org/abs/1803.08928).
 30. L. Boyle, K. Finn, and N. Turok, “The Big Bang, CPT, and Neutrino Dark Matter,” *Annals of Physics* **438**, 168767 (2022). [arXiv:1803.08930](https://arxiv.org/abs/1803.08930).
+31. K. Schwarzschild, “On the Gravitational Field of a Mass Point According to Einstein's Theory” (1916), English translation. [arXiv:physics/9905030](https://arxiv.org/abs/physics/9905030).
+32. M. D. Kruskal, “Maximal Extension of Schwarzschild Metric,” *Physical Review* **119**, 1743–1745 (1960). [doi:10.1103/PhysRev.119.1743](https://doi.org/10.1103/PhysRev.119.1743).
+33. I. Dymnikova, “Vacuum Nonsingular Black Hole,” *General Relativity and Gravitation* **24**, 235–242 (1992). [doi:10.1007/BF00760226](https://doi.org/10.1007/BF00760226).
+34. S. W. Goode and J. Wainwright, “Isotropic Singularities in Cosmological Models,” *Classical and Quantum Gravity* **2**, 99–115 (1985). [doi:10.1088/0264-9381/2/1/010](https://doi.org/10.1088/0264-9381/2/1/010).
+35. K. Anguige and K. P. Tod, “Isotropic Cosmological Singularities I: Polytropic Perfect Fluid Spacetimes,” *Annals of Physics* **276**, 257–293 (1999). [arXiv:gr-qc/9903008](https://arxiv.org/abs/gr-qc/9903008).
+36. C. Lübbe and P. Tod, “An Extension Theorem for Conformal Gauge Singularities,” *Journal of Mathematical Physics* **49**, 032501 (2008). [arXiv:0710.5552](https://arxiv.org/abs/0710.5552).
