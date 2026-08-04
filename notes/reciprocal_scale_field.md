@@ -160,7 +160,7 @@ If a smooth 5D bulk and a smooth family of slices connect the two descriptions, 
 
 ## 8. Open computations
 
-1. **Matter-filled Weyl profile [decisive].** Use the spherical Misner–Sharp/Weyl relation to construct a finite density profile that carries the exterior Weyl curvature continuously into the homogeneous FLRW value. Test the Darmois data and identify whether any shell remains.
+1. **Matter-filled Weyl profile [completed kinematically].** [A Spherical Weyl-Relaxation Profile for the Reciprocal Throat](note.html?src=spherical_weyl_relaxation_profile) constructs a finite density profile, derives its Weyl field, and shows that a smooth transition is kinematically possible. Its four-dimensional closure test fixes the effective transverse stress required to preserve exact shear freedom. The full dynamical spacetime and Darmois data remain open.
 2. **Conformal compensator.** Write the locally Weyl-invariant action using a multiplicative field \(\chi=\chi_H e^{-\sigma}\); identify its gauge-invariant metric and determine whether reciprocal scaling is gauge, dynamics, or higher-dimensional geometry.
 3. **Local 5D throat.** Introduce a fifth coordinate independently of \(\sigma\), solve the Gauss–Codazzi constraints in a near-throat expansion, and determine whether the finite 4D profile admits a smooth common bulk.
 4. **Sharp-limit recovery.** Take the width of the smooth profile to zero and verify that its integrated work tends to the existing Barrabès–Israel null-shell stress.

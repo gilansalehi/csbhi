@@ -8,7 +8,7 @@
     right: unset;
   }
 
-  :is(#publications, #ai-notes) details > ol > li {
+  :is(#review-packet, #publications, #ai-notes) details > ol > li {
     grid-template-columns: 1fr;
   }
 

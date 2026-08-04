@@ -253,6 +253,8 @@ This profile is continuous, reciprocal-reflection invariant, and has the correct
 
 Equation (20) is therefore the natural **thin-throat scale profile**. Its cusp is the scale-space version of compressing the conversion into zero width. It does not by itself prove a metric shell, because the parent expression is a radial law while the child expression is an evolution law; a complete horizon map must show that \(\sigma\) parametrizes both within one geometry.
 
+The child-side power is conditional on shear-free propagation. Section 7 shows that a nonzero amplitude cannot be carried by a geodesic, exactly shear-free four-dimensional perfect fluid alone; an effective anisotropic or projected geometric term must support it.
+
 The absolute value admits a simple reflection-symmetric thickening:
 
 \[
@@ -407,6 +409,8 @@ This logistic rotation is not derived from Einstein's equations. It is the minim
 4. composition under additive changes of logarithmic scale;
 5. the three-dimensional volume power already governing dust dilution and exterior Weyl curvature.
 
+These conditions motivate Equation (28), but they do not make it unique among all smooth reciprocal interpolations. Other odd functions of \(\sigma\), or other profiles with the same endpoint powers, can obey the reflection rule. The logistic form is a deliberately economical hypothesis whose value is that the remaining field equations can falsify it directly.
+
 Unlike a vacuum Schwarzschild patch pasted directly onto exact FLRW, Equation (29) contains matter and Weyl curvature simultaneously near the horizon. It therefore models the recursive CSBHI premise—locally black-hole-like, cosmological on larger scales—rather than treating the isolated vacuum solution as the complete parent geometry.
 
 The decisive test is now explicit: insert Equation (29), the RI I expansion history, and the Misner–Sharp equations into the remaining radial Einstein constraint. If they close with regular pressure and flux, the geometric “rotation” becomes a solution. If they do not, the residual identifies the effective 5D or conformal term quantitatively.
@@ -468,6 +472,15 @@ and \(\Pi\equiv p_r-p_t\) is radial minus tangential pressure. For the density c
 \[
 \mathcal E=-4\pi G D.
 \]
+
+This normalization differs by a factor of three from the Newman–Penrose scalar used in Equation (3):
+
+\[
+\boxed{\mathcal E=3\Psi_2=-4\pi G D.}
+\tag{33a}
+\]
+
+Indeed, in vacuum Equation (3) gives \(\Psi_2=-GM/\mathcal R^3\), while the definition above gives electric-Weyl eigenvalues \(2\mathcal E/3=-2GM/\mathcal R^3\) in the radial direction and \(-\mathcal E/3=GM/\mathcal R^3\) in each tangential direction. Equation (33a) therefore fixes both the convention and the factor that enters the anisotropic-stress result below.
 
 If Alice's congruence is initially shear-free and must remain exactly shear-free, Equation (32) requires \(Y_{TF}=0\). Two conclusions follow.
 
@@ -541,7 +554,7 @@ The closure test adds the final result:
 
 > A nonzero Weyl-relaxation profile cannot coexist with a geodesic, exactly shear-free four-dimensional perfect fluid. Preserving Alice's isotropic probe geometry requires an effective transverse stress satisfying \(p_t^{\rm scale}-p_r^{\rm scale}=D\).
 
-This completes the present research arc. The next construction belongs to the 5D/conformal programme: derive Equation (34) from the projected geometry and compare its integrated pressure with the independently computed transverse junction work.
+This completes the present **four-dimensional perfect-fluid analysis** with a no-go result and a quantitative target. The next construction belongs to the 5D/conformal programme: derive Equation (34) from the projected geometry and compare its integrated pressure with the independently computed transverse junction work.
 
 ---
 

@@ -57,51 +57,51 @@
   margin: 0;
 }
 
-:is(#publications, #ai-notes) details > ol {
+:is(#review-packet, #publications, #ai-notes) details > ol {
   padding: 0;
   list-style: none;
 }
 
-:is(#publications, #ai-notes) details > ol > li {
+:is(#review-packet, #publications, #ai-notes) details > ol > li {
   display: grid;
   grid-template-columns: 5.4rem 1fr;
   gap: 1rem;
   padding: 1rem;
 }
 
-:is(#publications, #ai-notes) h3 {
+:is(#review-packet, #publications, #ai-notes) h3 {
   margin-top: 0;
 }
 
-:is(#publications, #ai-notes) p,
-:is(#publications, #ai-notes) details > ol > li > div:first-child,
-:is(#publications, #ai-notes) details > ol > li > div:last-child > p:last-child {
+:is(#review-packet, #publications, #ai-notes) p,
+:is(#review-packet, #publications, #ai-notes) details > ol > li > div:first-child,
+:is(#review-packet, #publications, #ai-notes) details > ol > li > div:last-child > p:last-child {
   color: var(--muted);
 }
 
-:is(#publications, #ai-notes) details > ol > li > div:first-child,
-:is(#publications, #ai-notes) details > ol > li > div:last-child > p:last-child {
+:is(#review-packet, #publications, #ai-notes) details > ol > li > div:first-child,
+:is(#review-packet, #publications, #ai-notes) details > ol > li > div:last-child > p:last-child {
   font-family: var(--mono);
   font-size: 0.82rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-:is(#publications, #ai-notes) details > ol > li > div:first-child {
+:is(#review-packet, #publications, #ai-notes) details > ol > li > div:first-child {
   text-align: right;
 }
 
-:is(#publications, #ai-notes) details > ol > li > div:last-child > p:last-child {
+:is(#review-packet, #publications, #ai-notes) details > ol > li > div:last-child > p:last-child {
   font-size: 0.78rem;
 }
 
-:is(#publications, #ai-notes) .prq-label {
+:is(#review-packet, #publications, #ai-notes) .prq-label {
   font-family: var(--mono);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
-:is(#publications, #ai-notes) .start-here {
+:is(#review-packet, #publications, #ai-notes) .start-here {
   display: inline-block;
   padding: 0.2rem 0.55rem;
   border: 1px solid color-mix(in srgb, var(--danger) 65%, currentColor);
@@ -114,6 +114,14 @@
   letter-spacing: 0.055em;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+.review-packet__guide {
+  margin-top: 1.5rem;
+}
+
+.review-packet__guide li + li {
+  margin-top: 0.45rem;
 }
 
 .smallcaps {

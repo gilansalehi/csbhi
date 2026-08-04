@@ -1,40 +1,42 @@
 # The Reciprocal Interior as Two-Dimensional Dilaton Gravity
 
-*Research-direction note — the spherical reduction that turns the scale field into a Liouville mode and opens a holographic dual.*
+*Research-direction note — the spherical reduction that tests whether the reciprocal scale admits a dilaton or holographic formulation.*
 
 **Author:** Claude (Anthropic), developed with G. Salehi; verification in progress by Codex (OpenAI).
 
 **Date:** 2026-08-04.
 
-**Status:** New direction. The spherical reduction (§2) is textbook up to conventions Codex should fix; the identification of $\sigma$ with the Liouville/dilaton mode (§3) is exact; the holographic-dual proposal (§5) is a program, not a result. Tiered **[E]**, **[C]**, **[O]**.
+**Status:** New direction. The spherical reduction (§2) is textbook. The relation between the reciprocal scale and the reduced dilaton is exact only branchwise (§3); whether the reciprocal map relates the two reduced theories is open. The holographic proposal (§5) is a research programme, not a result. Tiered **[E]**, **[C]**, **[O]**.
 
-**Prerequisites:** [GD I](gd1.html); [The Reciprocal Scale Field and the Throat Brane](note.html?src=reciprocal_scale_field); [modular note](note.html?src=modular_self_duality_and_the_reciprocal_symmetry).
+**Prerequisites:** [GD I](gd1.html); [The Reciprocal Scale Field and the Smooth-Throat Problem](note.html?src=reciprocal_scale_field); [modular note](note.html?src=modular_self_duality_and_the_reciprocal_symmetry).
 
-**Notation:** [Glossary](note.html?src=cosmological_glossary). $c=1$; $a,b\in\{0,1\}$ the 2D $(\tau,r)$ indices; $\phi$ = 2D dilaton (areal radius); $\sigma=-\ln\phi$ the scale field (up to the horizon normalization $R_S$).
+**Notation:** [Glossary](note.html?src=cosmological_glossary). $c=1$; $a,b\in\{0,1\}$ are 2D orbit-space indices; $\phi$ is the dimensionful areal radius and $x\equiv\phi/\phi_H$ its horizon-normalized value. On Bob's branch, $x_B=r$ and $\sigma=-\ln x_B$. On a fixed comoving shell in Alice's FLRW branch, $x_A=a$ and $\sigma=\ln x_A$. The reciprocal proposal is $x_Ax_B=1$ for corresponding shells.
 
 ---
 
 ## Abstract
 
-Every geometry in CSBHI is spherically symmetric, so the angular 2-sphere is a spectator and the physics lives in the two-dimensional $(\tau,r)$ plane. Reducing 4D general relativity on that sphere is standard and yields a **two-dimensional dilaton gravity**, with the areal radius as the dilaton $\phi$. The scale field of the reciprocal arc, $\sigma=-\ln(\text{areal radius})=-\ln\phi$, is then *exactly* the logarithmic dilaton — and the Liouville equation Crunch 1 found for $\sigma$ is the Liouville sector of that 2D theory, not a coincidence.
+In the exactly spherically symmetric sector, reducing 4D general relativity on the angular 2-sphere is standard and yields a **two-dimensional dilaton gravity**, with the areal radius as the dilaton $\phi$. This is a natural language for CSBHI, but it also exposes an important distinction. Bob's normalized areal radius obeys $\sigma=-\ln x_B$, whereas Alice's FLRW areal radius on a fixed comoving shell obeys $\sigma=\ln x_A$. The reciprocal proposal relates the two branch variables; it does not make one dimensionful dilaton satisfy $\sigma=-\ln\phi$ globally.
 
-This reframing is worth the whole note because 2D dilaton gravity is the best-understood *holographic* corner of gravity: JT gravity has a Schwarzian/boundary dual, CGHS is exactly solvable, and horizon entropies follow from a boundary Cardy formula. So the reciprocal interior, reduced, inherits a candidate **boundary dual** — and the four threads of the session (the scale field, the modular self-duality $a\leftrightarrow1/a$, the gravitational-entropy identity, and the dS/CFT resonance) become four faces of one 2D-gravity/boundary duality. The horizon $\sigma=0$ is the natural boundary; the reciprocal involution is the dilaton inversion $\phi\to1/\phi$; and the $S_{\rm BH}=S_{\rm dS}$ identity is a candidate Cardy matching.
+The reduction is valuable because 2D dilaton gravity has powerful exact tools and, in special cases such as nearly AdS$_2$ JT gravity, a controlled boundary description. It therefore supplies a concrete arena in which to test three conjectures: whether the reciprocal is a map between reduced solutions, whether the null horizon supports an appropriate boundary phase space, and whether any resulting boundary theory has modular structure. None follows from spherical reduction alone.
 
-The concrete deliverable this direction targets: identify the boundary theory and test whether its partition function is modular-covariant under $a\leftrightarrow1/a$ with the entropy fixed by Cardy — the falsifying test the modular note asked for, now with a construction behind it.
+The first concrete deliverable is more basic than a partition function: write the two branch dilatons and matter terms explicitly, then test whether $x_A=1/x_B$ maps their reduced equations and conserved mass data. Only if that map produces a boundary symmetry does a modular/Cardy test become well posed.
 
 ---
 
-## 1. Why 2D is not a truncation but the natural arena
+## 1. Why 2D is the natural spherical arena
 
 CSBHI's metrics — Kottler exterior, FLRW interior, the throat — are all spherically symmetric:
 \[
 ds_4^2=g_{ab}(x)\,dx^a dx^b+\phi(x)^2\,d\Omega_2^2,\qquad a,b\in\{0,1\},
 \]
-with $\phi$ the **areal radius**. The angular sphere carries no independent dynamics; all of the reciprocal construction is dynamics of $(g_{ab},\phi)$ on the 2D $(\tau,r)$ plane. The scale field is the sphere's own radius, logarithmically: $\sigma=-\ln\phi$ (up to $R_S$). So passing to 2D loses nothing and exposes exactly the variable the arc is built on. **[E]**
+with $\phi$ the **areal radius**. Within exact spherical symmetry, the angular dependence is integrated out while the sphere's changing size remains dynamical through $\phi$. The reduced pair $(g_{ab},\phi)$ therefore preserves the classical spherical sector, but not rotation, nonspherical perturbations, or independent angular matter modes. **[E]**
+
+The scale relation is branchwise. In the exterior, $\phi_B=R_Sr$ and $\sigma=-\ln(\phi_B/R_S)$. In spatially flat FLRW, $\phi_A=a(\tau)R$ for a comoving shell $R$, so $\sigma=\ln a=\ln(\phi_A/\phi_{A,H})$ when that shell is normalized to $a_H=1$. Establishing $x_A=1/x_B$ as a map between these reduced geometries is an open dynamical step, not a consequence of reduction. **[E/O]**
 
 ---
 
-## 2. The spherical reduction [E, coefficients to verify]
+## 2. The spherical reduction [E]
 
 Inserting the ansatz into the 4D Einstein–Hilbert action and integrating over the sphere gives a 2D dilaton-gravity action of the standard form
 \[
@@ -44,51 +46,51 @@ S_2=\frac{1}{4G}\int d^2x\,\sqrt{-g_2}\left[\phi^2 R_2+2(\nabla\phi)^2+2-2\Lambd
 \[
 S_2=\int d^2x\sqrt{-g_2}\big[\Phi R_2 + U(\Phi)(\nabla\Phi)^2 + V(\Phi)\big],
 \]
-with dilaton $\Phi=\phi^2$ (areal-radius squared). Schwarzschild/Kottler and FLRW are both 2D dilaton-gravity solutions; the black-hole mass $M$ is an integration constant of the 2D theory (its conserved "energy"). **[E]**
+with dilaton $\Phi=\phi^2$ (areal-radius squared). Schwarzschild/Kottler and FLRW reduce to solutions of this theory with their respective matter content. In the vacuum sector, the black-hole mass $M$ is the conserved Casimir/integration constant; with matter, its evolution includes the corresponding flux and work terms. **[E]**
 
 ---
 
-## 3. The scale field is the Liouville mode [E→C]
+## 3. The scale field and the log-dilaton [E→C]
 
-Two standard moves turn a 2D dilaton gravity into Liouville form: solve the dilaton constraint, and Weyl-fix the 2D metric $g_{ab}=e^{2\rho}\hat g_{ab}$. The conformal mode $\rho$ obeys a Liouville equation. In our variables the relevant scalar is $\sigma=-\ln\phi$, and Crunch 1 already computed its equation on the Schwarzschild background:
+Two-dimensional dilaton theories can sometimes be placed in a Liouville-like form after solving constraints and fixing the 2D conformal gauge $g_{ab}=e^{2\rho}\hat g_{ab}$. Here $\rho$ is the metric's conformal mode; it is not automatically the reciprocal scale $\sigma$. Independently, the scale-field calculation evaluated the **4D** wave operator on Bob's Schwarzschild/Kottler branch:
 \[
-\Box\sigma=-e^{2\sigma}\quad(\text{Schwarzschild}),\qquad \Box\sigma=-e^{2\sigma}+\Lambda\quad(\text{Kottler}),
+\Box_4\sigma=-\frac{e^{2\sigma}}{R_S^2}\quad(\text{Schwarzschild}),\qquad \Box_4\sigma=-\frac{e^{2\sigma}}{R_S^2}+\Lambda\quad(\text{Kottler}),
 \]
-i.e. a **Liouville equation with an exponential potential**. This is now understood, not stipulated: $\sigma=-\ln\phi$ is the logarithm of the 2D dilaton, and Liouville dynamics for the conformal/dilaton sector is generic in 2D dilaton gravity. The exponential potential — forced independently by scale-freeness in Crunch 1 — is the Liouville cosmological term. **[E for the equation; [C] for "this is the Liouville sector of the reduced theory," pending the explicit Weyl-fixing.]**
+i.e. a **Liouville-shaped exponential identity** on that fixed background. The equation is exact, and the 2D reduction explains why the areal radius participates. It is not yet the independent Liouville equation of motion of the reduced theory: that requires explicit gauge fixing and variation of the reduced action. **[E for the operator identity; C for a Liouville-sector interpretation.]**
 
-The reciprocal involution is, in these variables, the **dilaton inversion**
+The reciprocal proposal can be written as an inversion of the **dimensionless branch dilatons**
 \[
-\phi\to1/\phi\quad\Longleftrightarrow\quad\sigma\to-\sigma,
+x_A=\frac1{x_B}\quad\Longleftrightarrow\quad\sigma\to-\sigma,
 \]
-a $\mathbb{Z}_2$ of the 2D theory fixing $\phi=1$ (the horizon). Identifying it as a genuine symmetry of $S_2$ (not merely of a solution) is a concrete sub-task. **[O]**
+with $x_A=x_B=1$ at the horizon-normalized shell. Determining whether this is a symmetry, a canonical map between solutions, or only a CSBHI boundary condition is a concrete sub-task. **[O]**
 
 ---
 
-## 4. The horizon is the boundary [C]
+## 4. The horizon as a candidate boundary [C/O]
 
-In 2D dilaton gravity the dilaton $\phi$ plays the role of a radial/holographic coordinate, and a **boundary** is placed at a chosen dilaton value (in JT gravity, large $\phi$; the Schwarzian lives there). CSBHI hands us a *distinguished* dilaton value for free: the horizon $\phi=1$, $\sigma=0$ — the self-dual fixed point of the involution and the 4D Einstein surface. The proposal is that the **horizon is the holographic boundary** of the reduced theory, with the interior ($\sigma>0$) and exterior ($\sigma<0$) as the two bulks the boundary separates. This lines up with the throat-brane result: the $\sigma=0$ surface is where the boundary data / shell lives. **[C]**
+In some 2D dilaton theories the dilaton serves as a radial coordinate and boundary data are imposed at a chosen dilaton value. CSBHI supplies a distinguished null surface, $x_A=x_B=1$ and $\sigma=0$. Treating that horizon as an **internal null boundary** is natural, but treating it as a *holographic* boundary requires a boundary action, boundary conditions, and a nontrivial asymptotic-symmetry algebra. Moreover, $\sigma=0$ alone is not an Einstein configuration: $\nabla\sigma$ remains nonzero there. An Einstein description would require a compensator to be gauge-fixed throughout a region, not merely evaluated at its horizon value. **[C/O]**
 
 ---
 
 ## 5. The holographic dual, and the falsifying test [C/O]
 
-2D dilaton gravity is where holography is sharpest, which is the point of coming here:
+Two-dimensional dilaton gravity supplies several relevant precedents, but each has a narrower domain than the present conjecture:
 
-- **JT gravity** (near-horizon $\phi\approx$const, linear dilaton potential) has a **Schwarzian** boundary dual and reproduces near-extremal black-hole thermodynamics. The CSBHI horizon region is a candidate JT regime.
-- **CGHS** (exponential potential — *our* Liouville case) is exactly solvable and has a well-studied boundary description.
-- **Cardy.** Boundary 2D CFT entropy is fixed by modular $S$-invariance. The session's $S_{\rm BH}=S_{\rm dS}$ identity (parent black-hole horizon $=$ child de Sitter horizon, via $\Lambda=3/R_S^2$) is exactly the shape of a **Cardy matching between the two ends** exchanged by $a\leftrightarrow1/a$.
+- **JT gravity** has a Schwarzian description at the asymptotic boundary of nearly AdS$_2$ and reproduces near-extremal black-hole thermodynamics. A generic nonextremal CSBHI horizon has not been shown to lie in that regime.
+- **CGHS** is an exactly solvable 2D dilaton model with conformal matter. It demonstrates tractability, but it is neither the spherical reduction above nor an already-identified CSBHI boundary dual.
+- **Cardy.** Modular invariance fixes the high-energy density of states in a two-dimensional CFT. A spherically reduced 2D bulk ordinarily has a one-dimensional boundary, so applying Cardy requires an independently derived Virasoro or 2D-CFT structure.
 
-So the four threads collapse into one **[C]**: the scale field is the 2D dilaton; the modular $a\leftrightarrow1/a$ is the boundary CFT's $S$-transformation; the gravitational-entropy identity is its Cardy formula; and the dS/CFT resonance is this boundary dual for the de Sitter end.
+The possible synthesis is therefore conditional **[C]**: if the reciprocal branch map induces a boundary symmetry with a genuine modular parameter and spectrum, then the modular and entropy threads acquire a common mechanism. Spherical reduction identifies where to look; it does not supply that mechanism by itself.
 
-**The concrete test [O]** — and it is the falsifying test the modular note asked for, now with a construction: reduce, Weyl-fix, and identify the boundary theory of the reciprocal interior; compute its partition function; and check whether it is **modular-covariant under $\sigma\to-\sigma$** with the horizon entropy fixed by **Cardy**. If yes, the modular analogy becomes a holographic result and the entropy identity is derived, not conditional. If the boundary theory carries no such invariance, the modular/holographic picture is demoted to a resonance — cleanly, by computation.
+**The concrete test [O]** has an ordered sequence: first derive the reduced branch map and the null-boundary phase space; next determine whether its symmetry algebra contains a Virasoro structure and compute any central charge; only then compute a partition function and test modular covariance. If the first two steps fail, the Cardy/modular picture remains an analogy and no partition-function calculation is warranted.
 
 ---
 
-## 6. Why this completes the arc
+## 6. What the reduction contributes
 
-The scale-field arc produced a chain of structural results — Liouville scale field, real throat, throat brane — but each was a statement about the 4D geometry in isolation. The 2D reduction is what would bind them: it gives the scale field a *theory* (2D dilaton gravity), the involution a *symmetry* (dilaton inversion), the horizon a *role* (boundary), and the entropy identity a *mechanism* (Cardy). It also connects forward to the conformal-crossover and WCH threads, since a boundary/CFT description is exactly what a "child sourced across the horizon" needs.
+The scale-field arc produced a radial operator identity, a minimal-scalar no-go, and a quantitative Weyl-relaxation target. The 2D reduction places those results in a standard spherical action and makes the next question precise: does the reciprocal relation map the reduced exterior and interior dynamics? A positive answer could give the involution a dynamical role and the horizon a controlled boundary description. A negative answer would still identify the residual term required from the conformal or higher-dimensional sector.
 
-It is also the tractable direction: spherical reduction and 2D dilaton gravity are mature, so progress does not wait on the unbuilt throat metric — the 2D theory can be analyzed with Kottler and FLRW as its known solutions.
+This is tractable because spherical reduction and 2D dilaton gravity are mature. It complements, rather than replaces, the unbuilt throat metric: the reduced equations can determine which boundary and stress data that metric must reproduce.
 
 ---
 
@@ -98,57 +100,59 @@ It is also the tractable direction: spherical reduction and 2D dilaton gravity a
 \[
 S_2=\frac1{4G}\int d^2x\sqrt{-g_2}\Big[\phi^2R_2+2(\nabla\phi)^2+2-2\Lambda\phi^2\Big],
 \]
-the areal radius $\phi$ as dilaton, with Kottler and FLRW as solutions and $M$ the 2D conserved energy.
+the areal radius $\phi$ as dilaton, with Kottler and FLRW as solutions. In vacuum, $M$ is the conserved 2D Casimir; with matter, the corresponding mass function obeys flux and work equations.
 
-**(b) $\sigma=-\ln\phi$ is the log-dilaton, and its Liouville equation is the dilaton-coupled operator [E].** The clean Crunch-1 result uses the *4D* d'Alembertian, which on a spherically symmetric field is $\Box_4\sigma=\Box_2\sigma+\tfrac2\phi\nabla^a\phi\,\nabla_a\sigma$. Verified on Schwarzschild: $\Box_2\sigma=1/\mathcal R^2-2R_S/\mathcal R^3$ and $\tfrac2\phi\nabla\phi\!\cdot\!\nabla\sigma=-2f/\mathcal R^2$ sum to $\Box_4\sigma=-1/\mathcal R^2=-e^{2\sigma}/R_S^2$. So the Liouville structure is the log-dilaton dynamics, the exponential being the 2D cosmological term — not a coincidence, a reduction identity.
+**(b) The exterior reciprocal scale is the negative log-dilaton, and its operator identity is exact [E].** On Bob's branch, $\sigma=-\ln(\phi_B/R_S)$. The clean scale-field result uses the *4D* d'Alembertian, which on a spherically symmetric field is $\Box_4\sigma=\Box_2\sigma+\tfrac2\phi\nabla^a\phi\,\nabla_a\sigma$. Verified on Schwarzschild: $\Box_2\sigma=1/\mathcal R^2-2R_S/\mathcal R^3$ and $\tfrac2\phi\nabla\phi\!\cdot\!\nabla\sigma=-2f/\mathcal R^2$ sum to $\Box_4\sigma=-1/\mathcal R^2=-e^{2\sigma}/R_S^2$. This is a reduction identity with Liouville form, not yet the independently varied equation of a Liouville conformal mode.
 
-**(c) The involution $\phi\to1/\phi$ is not a bulk symmetry — so the modular structure lives on the boundary [E→C].** Under $\phi\to1/\phi$ the dilaton–curvature coupling $\phi^2R_2\to\phi^{-2}R_2$. No 2D Weyl rescaling restores it: $g\to\Omega^2 g$ sends $\sqrt{-g}\,\phi^2R\to\sqrt{-g}\,\phi^{-2}(R-2\Box\ln\Omega)$, and matching to $\sqrt{-g}\,\phi^2R$ would demand $2\Box\ln\Omega=R(1-\phi^4)$ — a curvature-valued PDE, not a local Weyl factor. So **$\phi\to1/\phi$ is not an off-shell symmetry of $S_2$**; it is a solution-relating duality (interior$\leftrightarrow$exterior), consistent with the whole arc.
+**(c) Direct inversion is not an off-shell symmetry of the reduced action [E→O].** After normalizing the dilaton, a direct inversion changes the dilaton–curvature coupling from $x^2R_2$ to $x^{-2}R_2$. The straightforward local Weyl transformations tested here do not restore the action. Thus the reciprocal is not an off-shell symmetry of the ordinary spherical reduction in these frames. Whether it is a canonical map between solutions, a boundary condition, or a transformation of an enlarged theory remains open.
 
-The consequence is the useful, sharpening one: if $a\leftrightarrow1/a$ is a symmetry at all, it is realized **on the boundary**, exactly as an $S$-transformation is a boundary-CFT operation and not a bulk diffeomorphism. The reduction thus moves the modular claim from "bulk symmetry" (untenable) to **"boundary modular symmetry"** (the holographic reading) — a genuine tightening, not a loss.
+Failure as a bulk symmetry does not by itself prove a boundary symmetry. It narrows the available realizations and makes the null-boundary phase-space calculation decisive.
 
-**The obstruction is frame-independent [E] — the exponential-frame route, tested, fails.** One might hope the *exponential* (string-frame) coupling rescues it. Set $\phi^2=e^{-2\sigma}$, so the dilaton frame *is* the scale-field frame; the action becomes
+**The obstruction survives the two natural local frames tested [E].** One might hope the *exponential* (string-frame) coupling rescues it. Set $\phi=R_Se^{-\sigma}$, so the dilaton frame is the scale-field frame; the action becomes
 \[
-S_2=\frac1{4G}\int\sqrt{-g_2}\Big[e^{-2\sigma}R_2+2e^{-2\sigma}(\nabla\sigma)^2+2-2\Lambda e^{-2\sigma}\Big],
+S_2=\frac1{4G}\int\sqrt{-g_2}\Big[R_S^2e^{-2\sigma}R_2+2R_S^2e^{-2\sigma}(\nabla\sigma)^2+2-2\Lambda R_S^2e^{-2\sigma}\Big],
 \]
-now carrying the string-frame coupling $e^{-2\sigma}R_2$ that makes T-duality a bulk symmetry in string theory. But $\sigma\to-\sigma$ still fails here: it sends $e^{-2\sigma}R_2\to e^{+2\sigma}R_2$, and no 2D Weyl transform flips that exponent (Weyl shifts $R_2$ *additively* by $-2\Box\ln\Omega$; it cannot rescale the multiplicative dilaton prefactor). So **$\sigma\to-\sigma$ is not a bulk symmetry in *any* frame.**
+with the familiar exponential dilaton coupling. But $\sigma\to-\sigma$ still fails here: it sends $e^{-2\sigma}R_2\to e^{+2\sigma}R_2$, and the direct 2D Weyl transformations considered do not restore the original action. Thus **$\sigma\to-\sigma$ is not a bulk symmetry in either of the two natural local frames tested.**
 
-The reason is instructive and worth stating: **T-duality does not invert the dilaton** — it inverts a compactification *modulus* and *shifts* the dilaton (Buscher). Here $\phi$ is a dynamical dilaton, not a modulus, and $a\leftrightarrow1/a$ inverts *it*. So the modular note's "T-duality-shaped" reading is a genuine **resonance but not a dynamical identity**. The definitive conclusion: the reciprocal involution is a **boundary / solution-relating duality, not a bulk gauge symmetry** — precisely where a holographic $S$-transformation is supposed to live. The two negative results (Einstein frame §7c, string frame here) close the "bulk symmetry" question for good and hand the modular structure to the boundary.
+The reason is instructive: **T-duality does not simply invert the dilaton** — it inverts a compactification modulus while shifting the dilaton. Here the areal-radius dilaton is not such a modulus. The modular note's T-duality comparison therefore remains a structural resemblance, not a dynamical identity. The calculations exclude the direct inversion in the two natural local frames considered; they do not exclude nonlocal canonical maps, enlarged field content, or a higher-dimensional realization.
 
-**(d) The boundary sits at the horizon; the entropy is Cardy-type [C].** The dilaton is the holographic coordinate and $\phi=R_S$ ($\sigma=0$) is the distinguished boundary locus — the self-dual surface where the throat null shell already lives. The near-horizon 2D geometry of a non-extremal crossing is Rindler-like, with a thermal (Cardy-type) boundary entropy; the near-extremal case specializes to JT/Schwarzian. The $S_{\rm BH}=S_{\rm dS}$ identity is then a **two-end Cardy matching** between the $\sigma\to\pm\infty$ ends the reflection exchanges.
+**(d) The horizon supplies candidate null-boundary data [C/O].** The normalized dilaton takes the distinguished value $x=1$ there, and the sharp surrogate already supplies null-junction data. A nonextremal near-horizon region is Rindler-like, but that alone does not produce a Cardy theory; JT/Schwarzian applies only after an appropriate nearly AdS$_2$, near-extremal limit is established. The entropy equality below is therefore a target for a future boundary theory, not evidence that one already exists.
 
 ---
 
-## 8. The boundary entropy and the self-dual reading of $S_{\rm BH}=S_{\rm dS}$ [E→C]
+## 8. The horizon entropy and the equal-radius reading of $S_{\rm BH}=S_{\rm dS}$ [E→C]
 
-Executing the boundary/Cardy step as far as it goes without yet constructing the boundary CFT.
+Recording the exact thermodynamic data that any proposed boundary theory would have to reproduce.
 
-**Exact entropies and temperatures [E].** The reduction preserves black-hole entropy, so each end carries $S=A/4G=\pi\phi_h^2/G$ with $\phi_h$ the horizon areal radius. The two ends the reflection $\sigma\to-\sigma$ exchanges are:
+**Exact entropies and temperatures [E].** The reduction preserves horizon entropy, so each horizon carries $S=A/4G=\pi\phi_h^2/G$ with $\phi_h$ its areal radius. Compare the parent Schwarzschild horizon with the proposed child de Sitter horizon:
 
 | end | horizon $\phi_h$ | entropy | temperature |
 |---|---|---|---|
 | parent exterior (Schwarzschild) | $R_S$ | $S_{\rm BH}=\pi R_S^2/G$ | $T_{\rm BH}=\dfrac{1}{4\pi R_S}$ |
 | child interior (de Sitter) | $\sqrt{3/\Lambda}$ | $S_{\rm dS}=\dfrac{3\pi}{\Lambda G}$ | $T_{\rm dS}=\dfrac{1}{2\pi}\sqrt{\dfrac{\Lambda}{3}}$ |
 
-At the self-dual condition $\Lambda=3/R_S^2$ both horizons have radius $R_S$, so
+At the equal-radius condition $\Lambda=3/R_S^2$ both horizons have radius $R_S$, so
 \[
 S_{\rm BH}=S_{\rm dS}=\frac{\pi R_S^2}{G},\qquad\text{while}\qquad \frac{T_{\rm dS}}{T_{\rm BH}}=2 .
 \]
 
-**The self-dual reading [C].** $\Lambda=3/R_S^2$ is *exactly* the condition for $\sigma\to-\sigma$ to exchange the two ends **as a symmetry** (equal horizon radii). Under that symmetry:
+**The equal-radius reading [E→C].** $\Lambda=3/R_S^2$ is exactly the condition that the two horizon radii agree. Under that condition:
 
-- **entropy is invariant** — $S\propto\phi_h^2$ is equal at the swapped ends, so $S_{\rm BH}=S_{\rm dS}$ is a *consequence of the self-duality*, holding exactly when the reciprocal is a symmetry — not a coincidence, and not merely a matched number;
-- **temperature is not** — $T_{\rm dS}/T_{\rm BH}=2$, so $T$ is a *covariant* quantity that transforms under the reflection, as a modular/temperature parameter should; the fixed point $\sigma=0$ (the horizon) is where the two would coincide.
+- **entropy agrees** because equal areas carry equal Bekenstein–Hawking entropy;
+- **temperature does not agree** because Schwarzschild and de Sitter surface gravities differ by a factor of two at the same radius.
 
-That combination — a state-counting entropy invariant under the $S$-type reflection while the temperature transforms — is the **boundary-CFT signature**. It reframes $S_{\rm BH}=S_{\rm dS}$ from a conditional identity into *the self-duality condition itself*, and the Cardy formula would be its CFT realization. This is the concrete payoff of the reduction: the entropy identity that the WCH/entropy thread found by hand is here a structural consequence of the reciprocal symmetry realized on the horizon boundary.
+The entropy identity is therefore exact **conditional on the equal-radius relation**. The reciprocal ansatz alone has not yet derived $\Lambda=3/R_S^2$, and the temperature factor of two is a constraint that any proposed duality must explain rather than evidence that a modular transformation already exists. A boundary derivation would need to reproduce both facts from one state-counting framework.
 
 ---
 
 ## 9. What remains open [O]
 
-*Settled: the bulk-symmetry question (§7 — no, in either frame) and the entropy/temperature structure (§8).*
+*Settled within the stated scope: the direct inversion is not an off-shell symmetry in the two natural local frames tested, and the conditional entropy/temperature arithmetic is exact.*
 
-1. **The explicit boundary theory** — a horizon-boundary CFT with computed central charge $c$ and modular parameter, from which the Cardy formula *derives* $S=\pi\phi_h^2/G$ rather than matching it. Constraints it must satisfy: a modular-invariant $S$, and $T_{\rm dS}/T_{\rm BH}=2$ (does that factor match a specific modular image?).
-2. **Conformal-compensator consistency** — shared with the scale-field note §8; the $\phi^2=e^{-2\sigma}$ frame here *is* the compensator frame, so the two calculations are one object.
+1. **The branch map** — formulate Bob's and Alice's normalized dilatons separately and test whether $x_A=1/x_B$ maps their reduced field equations, matter terms, and Misner–Sharp/Casimir mass data.
+2. **The null-boundary phase space** — derive the boundary action and allowed horizon variations; determine whether the symmetry algebra contains a Virasoro sector and, only then, whether a central charge and Cardy calculation exist.
+3. **The equal-radius condition** — derive or falsify $\Lambda=3/R_S^2$ rather than inserting it, while retaining the observed factor-of-two temperature relation.
+4. **Conformal-compensator consistency** — shared with the scale-field note §8; determine whether the exponential frame represents gauge redundancy, new dynamics, or only a reparameterization of the areal radius.
 
 ---
 
