@@ -435,7 +435,74 @@ At \(a=1\), Equation (31) gives equal ledger components. This does **not** asser
 
 ---
 
-## 7. What the profile does not yet prove
+## 7. The remaining 4D Einstein constraint [E]
+
+The remaining closure condition is the shear-propagation equation. To avoid confusing the shear with the scale field \(\sigma\), denote the spherical shear scalar by \(\varsigma\). For a geodesic, nondissipative spherical fluid,
+
+\[
+D_\tau\varsigma
++\frac{\varsigma^2}{3}
++\frac{2}{3}\Theta\varsigma
++Y_{TF}=0,
+\tag{32}
+\]
+
+where the trace-free structure scalar is
+
+\[
+Y_{TF}
+=\mathcal E-4\pi G\Pi.
+\tag{33}
+\]
+
+Here \(\mathcal E\) is the electric-Weyl scalar in the convention
+
+\[
+E_{ab}
+=\mathcal E
+\left(e_ae_b-\frac13h_{ab}\right),
+\]
+
+and \(\Pi\equiv p_r-p_t\) is radial minus tangential pressure. For the density convention used in this note, Equations (2) and (3) give
+
+\[
+\mathcal E=-4\pi G D.
+\]
+
+If Alice's congruence is initially shear-free and must remain exactly shear-free, Equation (32) requires \(Y_{TF}=0\). Two conclusions follow.
+
+**Pure 4D perfect fluid.** With \(\Pi=0\), shear-free propagation requires \(\mathcal E=0\), hence \(D=0\). A geodesic, exactly shear-free perfect-fluid interior is FLRW; it cannot simultaneously carry the nonzero Weyl-relaxation profile of Sections 4–6. The four-dimensional perfect-fluid version of the thick throat therefore does not close.
+
+**Effective scale/5D sector.** If ordinary matter remains isotropic but the projected scale geometry supplies an effective anisotropic stress, the required value is fixed:
+
+\[
+\boxed{
+\Pi_{\rm scale}
+=p_r^{\rm scale}-p_t^{\rm scale}
+=-D,
+\qquad
+p_t^{\rm scale}-p_r^{\rm scale}=D.
+}
+\tag{34}
+\]
+
+For the reciprocal mixing profile,
+
+\[
+\boxed{
+p_t^{\rm scale}-p_r^{\rm scale}
+=\frac{\bar\rho}{1+a^3}.
+}
+\tag{35}
+\]
+
+This is the closure result. The missing term is transverse, has the dimensions of pressure, is maximal on the Weyl-dominated side of the conversion, and vanishes as the geometry becomes homogeneous FLRW. It is therefore the local tensorial target against which the independently derived transverse junction work must be compared.
+
+Equation (34) does not prove that a 5D embedding supplies the term. It removes the ambiguity about what that embedding must do: its projected trace-free stress must cancel the electric-Weyl source in the shear equation while leaving Alice's induced expansion isotropic.
+
+---
+
+## 8. What the profile does not yet prove
 
 Specifying \(\rho(\mathcal R)\) on one slice does not construct a spacetime. The remaining Einstein and conservation equations must determine the pressure, radial motion, and any energy flux.
 
@@ -445,14 +512,14 @@ For a comoving perfect fluid, the Misner–Sharp work equation is
 D_\tau m
 =
 -4\pi p\,\mathcal R^2D_\tau\mathcal R.
-\tag{32}
+\tag{36}
 \]
 
-Equation (32) identifies the next dynamical calculation. Dust has \(p=0\), so material Misner–Sharp mass is conserved and the classical Oppenheimer–Snyder/Einstein–Straus match can be stress-free. Radiation has \(p=\rho_r/3\), so a dynamical transition must carry pressure work. This is the same radiation residual isolated independently by the FLRW–Kottler junction and throat-thermodynamic notes.
+Equation (36) identifies the remaining dynamical calculation. Dust has \(p=0\), so material Misner–Sharp mass is conserved and the classical Oppenheimer–Snyder/Einstein–Straus match can be stress-free. Radiation has \(p=\rho_r/3\), so a dynamical transition must carry pressure work. This is the same radiation residual isolated independently by the FLRW–Kottler junction and throat-thermodynamic notes.
 
 The smooth density profile therefore resolves the **kinematic** Weyl jump but does not yet solve the **dynamical** throat. A completed solution must:
 
-1. evolve Equations (1), (15), (29), and (32) together with the radial Euler equation;
+1. evolve Equations (1), (15), (29), (34), and (36) together with the radial Euler equation;
 2. impose the reciprocal boundary history \(a=1/r\);
 3. determine whether the transition is timelike, null, or changes causal character;
 4. verify continuity of the induced metric and transverse/extrinsic curvature;
@@ -460,7 +527,7 @@ The smooth density profile therefore resolves the **kinematic** Weyl jump but do
 
 ---
 
-## 8. Result and next target
+## 9. Result and next target
 
 The first result is constructive:
 
@@ -470,7 +537,11 @@ The reciprocal scale adds a second result:
 
 > The exact exterior Weyl power and the exact shear-free interior dilution power are reciprocal. Their continuous self-dual completion is \(e^{-3|\sigma|}\); a finite throat is a smooth regularization of this scale-space cusp.
 
-The next target is correspondingly narrow: solve the time-dependent Misner–Sharp fluid equations for a finite layer containing dust, radiation, and the common vacuum term, with the reciprocal history fixing its interior boundary data. That calculation—not the comparison of endpoint Weyl scalars—decides whether the physical throat is smooth.
+The closure test adds the final result:
+
+> A nonzero Weyl-relaxation profile cannot coexist with a geodesic, exactly shear-free four-dimensional perfect fluid. Preserving Alice's isotropic probe geometry requires an effective transverse stress satisfying \(p_t^{\rm scale}-p_r^{\rm scale}=D\).
+
+This completes the present research arc. The next construction belongs to the 5D/conformal programme: derive Equation (34) from the projected geometry and compare its integrated pressure with the independently computed transverse junction work.
 
 ---
 
@@ -480,4 +551,5 @@ The next target is correspondingly narrow: solve the time-dependent Misner–Sha
 2. J. R. Oppenheimer and H. Snyder, “On Continued Gravitational Contraction,” *Physical Review* **56**, 455–459 (1939), [doi:10.1103/PhysRev.56.455](https://doi.org/10.1103/PhysRev.56.455).
 3. A. Einstein and E. G. Straus, “The Influence of the Expansion of Space on the Gravitation Fields Surrounding the Individual Stars,” *Reviews of Modern Physics* **17**, 120–124 (1945), [doi:10.1103/RevModPhys.17.120](https://doi.org/10.1103/RevModPhys.17.120).
 4. L. Herrera, A. Di Prisco, J. Ospino, and E. Fuenmayor, “Conformally flat anisotropic spheres in general relativity,” *Journal of Mathematical Physics* **42**, 2129–2143 (2001), [doi:10.1063/1.1364503](https://doi.org/10.1063/1.1364503).
-5. [The Exact Shell Identity and the Kottler Mass Condition for Alice's Interior](note.html?src=horizon_map_shell_identity_and_mass_growth); [Thermodynamic Accounting of the Transverse Junction](note.html?src=thermodynamic_accounting_of_the_transverse_junction), this project.
+5. L. Herrera, A. Di Prisco, and J. Ospino, “On the stability of the shear-free condition,” *General Relativity and Gravitation* **42**, 1585–1599 (2010), [arXiv:1001.3020](https://arxiv.org/abs/1001.3020).
+6. [The Exact Shell Identity and the Kottler Mass Condition for Alice's Interior](note.html?src=horizon_map_shell_identity_and_mass_growth); [Thermodynamic Accounting of the Transverse Junction](note.html?src=thermodynamic_accounting_of_the_transverse_junction), this project.
