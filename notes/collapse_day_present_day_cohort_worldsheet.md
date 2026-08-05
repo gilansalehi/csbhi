@@ -24,17 +24,17 @@ This fixes the causal shape of the radial map. One monotone function, \(\Phi(v_H
 
 ## 1. Repeat the experiment
 
-Let \(v_H\) label the parent epoch at which an Alice cohort crosses one angular generator of the black-hole event horizon. Let \(\tau\) be elapsed proper time after crossing. Write the cohort as
+Let \(v_H\) label the parent epoch at which an Alice cohort crosses one angular generator of the black-hole event horizon. Let \(\tau\) be child cosmic time, let \(\tau_i\) be the time assigned to cohort \(i\)'s crossing, and let \(\Delta\tau_i=\tau-\tau_i\) be her elapsed proper time after crossing. Write the cohort as
 
 \[
-\gamma_{v_H}(\tau).
+\gamma_{v_H}(\Delta\tau).
 \tag{1}
 \]
 
 The family
 
 \[
-X:(v_H,\tau)\longmapsto\gamma_{v_H}(\tau)
+X:(v_H,\Delta\tau)\longmapsto\gamma_{v_H}(\Delta\tau)
 \tag{2}
 \]
 
@@ -151,7 +151,7 @@ This resolves the false choice between parent time becoming child time and paren
 
 ## 5. Continue each cohort
 
-Let cohort \(i\) cross at \(v_i\), with
+Let cohort \(i\) cross at \(v_i\) and child time \(\tau_i\), with
 
 \[
 R_i=\Phi(v_i).
@@ -162,14 +162,14 @@ If it joins the child Hubble flow, it remains at fixed \(R_i\). Its reciprocal e
 
 \[
 \boxed{
-\frac{a(T)}{a(T_i)}
+\frac{a(\tau)}{a(\tau_i)}
 =
-\frac{1}{r_i(\tau)}
+\frac{1}{r_i(\Delta\tau_i)}
 }.
 \tag{11}
 \]
 
-Every Alice calls her crossing scale one, while the shared global scale \(a(T_i)\) can differ between cohorts. The exact formation-boundary observer is a limit \(T_i\to0^+\).
+Every Alice calls her crossing scale one, while the shared global scale \(a(\tau_i)\) can differ between cohorts. The exact formation-boundary observer is a limit \(\tau_i\to0^+\).
 
 ---
 
@@ -181,7 +181,7 @@ Every Alice calls her crossing scale one, while the shared global scale \(a(T_i)
 | Black-hole event-horizon generator | Particle-horizon null history \(R=\eta\) |
 | Successive horizon-crossing cohorts | Points \(R=\eta=\Phi(v_H)\) |
 | Reciprocal interior | FLRW region inside the causal boundary |
-| Decreasing \(r_i(\tau)\) | Increasing \(a(T)/a(T_i)\) |
+| Decreasing \(r_i(\Delta\tau_i)\) | Increasing \(a(\tau)/a(\tau_i)\) |
 | \(r\to0\) | Infinite de Sitter-like future |
 
 Bob's exterior supplies parent boundary data. This note does not identify it with a particular child region outside the causal patch.

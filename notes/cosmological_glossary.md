@@ -53,6 +53,7 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(K\) | Kretschmann scalar, \(R_{\alpha\beta\gamma\delta}R^{\alpha\beta\gamma\delta}\). |
 | \(t\) | Coordinate time. Its specific meaning depends on the chart and is stated in context. |
 | \(\tau\) | Alice's proper time; in her FLRW description it is also cosmic time. |
+| \(\tau_i,\Delta\tau_i\) | Child cosmic time assigned to cohort \(i\)'s crossing, and that cohort's elapsed proper time afterward: \(\Delta\tau_i=\tau-\tau_i\). |
 | \(r(\tau)\) | Bob's horizon-normalized areal coordinate assigned to Alice's trajectory. It decreases from \(r=1\) toward \(r=0\). |
 | \(R\) | Alice's comoving radial coordinate, used to label probes or fluid worldlines. |
 | \(\bar R=aR\) | Alice's areal radius corresponding to the comoving label \(R\). |
@@ -90,16 +91,21 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | Symbol | Canonical meaning |
 |---|---|
 | \(R_S\) | Schwarzschild radius of Bob's parent black hole. For an isolated nonrotating black hole, it is the areal radius of the black-hole event horizon. |
+| \(R_{\rm BH}(v_H)\) | Areal radius of a cross-section of a dynamical parent black-hole event horizon. It reduces to \(R_S\) in the stationary Schwarzschild limit. |
 | \(R_A(\tau)\) | Alice's FLRW apparent-horizon radius. In the spatially flat case, \(R_A=c/H_A\). |
 | \(R_H\) | Present Hubble radius, \(R_H=c/H_0\). In the spatially flat background, \(R_H=R_{A0}\). The project reserves \(R_H\) for the present value rather than a general time-dependent radius. |
 | \(B(\tau)\) | Areal radius of Alice's cosmological event horizon in the dynamical-throat notes. The future boundary condition, not the radial null equation alone, selects this particular null surface. |
 | \(R_e\) | Present cosmological event-horizon radius in GD1. Thus \(R_e=B_0\). |
 | \(R_p\) | Present particle-horizon radius. |
+| \(\bar R_p(\tau)\) | Time-dependent particle-horizon areal radius in the collapse-cohort notes; \(\bar R_p(\tau_0)=R_p\). |
 | \(R_\Lambda\) | De Sitter curvature radius, \(R_\Lambda=c/H_\Lambda=\sqrt{3/\Lambda}\). In exact de Sitter space it also equals the observer's apparent- and event-horizon radii. |
 | \(R_{\Lambda,P},R_{\Lambda,C}\) | Parent- and child-universe de Sitter curvature radii in the recursive Kottler notes. For the child identified with our observed cosmology, \(R_{\Lambda,C}=R_\Lambda\). These symbols replace the visually ambiguous \(R_P\) and \(R_C\); \(R_p\) remains reserved for the particle horizon. |
 | \(L\) | The invariant asymptotic curvature scale used in the 5D throat programme. In the exact de Sitter limit, \(L=R_\Lambda\). |
 | \(\mathcal H\) | A generic null observer-causal horizon considered in the throat construction. It is a hypersurface, not a radius; final calculations should replace it with the specific horizon being studied. |
 | \(\Sigma\) | A candidate matching hypersurface or finite matching history. It is not automatically null and must not be called an event horizon unless its causal character has been derived. |
+| \(v_H\) | Physically normalized parameter along a parent black-hole event-horizon generator in the collapse-cohort programme. |
+| \(\Phi(v_H)\) | Candidate clock map assigning parent horizon progress to child conformal time and comoving radius through \(\eta=R=\Phi(v_H)\). |
+| \(\Omega_\Sigma(v_H)\) | Conformal factor relating the parent and child angular metrics on the candidate null correspondence. |
 | \(r_h\) | A local symbol for a generic fixed horizon radius in a calculation. It should not replace the canonical symbols above in a final cross-note statement. |
 
 ## 3. Core physics and geometry terms

@@ -35,9 +35,9 @@ The proposed child image is the particle-horizon history of one FLRW causal patc
 For homogeneous spherical matter, enclosed mass fraction \(\mu\) labels both parent collapse shells and child comoving shells:
 
 \[
-R_P(\mu)=B_*\mu^{1/3},
+s_*(\mu)=B_*\mu^{1/3},
 \qquad
-R_C(\mu)=R_b\mu^{1/3}.
+R(\mu)=R_b\mu^{1/3}.
 \tag{2}
 \]
 
@@ -48,15 +48,15 @@ One conformal factor therefore maps the complete finite shell family. Departures
 After cohort \(i\) crosses, GD I supplies
 
 \[
-\frac{a(T)}{a(T_i)}
+\frac{a(\tau)}{a(\tau_i)}
 =
-\frac{1}{r_i(\tau)}.
+\frac{1}{r_i(\Delta\tau_i)}.
 \tag{3}
 \]
 
 Equation (3) evolves each cohort away from its crossing. It does not compare different crossings because \(r_i=1\) for every cohort at the horizon.
 
-The sole unresolved radial function is therefore
+At the causal-diagram level, the sole unresolved radial parameterization is therefore
 
 \[
 \boxed{\Phi(v_H)}.
@@ -72,9 +72,9 @@ The derivative \(\Phi'(v_H)\) converts progress along the parent horizon into ch
 Along the child null history,
 
 \[
-dT_H
+d\tau_H
 =
-a\bigl(\Phi(v_H)\bigr)\Phi'(v_H)\,dv_H.
+a\bigl(\tau_H(v_H)\bigr)\Phi'(v_H)\,dv_H.
 \tag{5}
 \]
 
@@ -107,7 +107,7 @@ The immediate problem is narrower: map one parent null history to one child null
 The parent event horizon carries spherical sections with intrinsic angular metric
 
 \[
-q_P(v_H)
+q_{\rm BH}(v_H)
 =
 R_{\rm BH}(v_H)^2d\Omega^2.
 \tag{6}
@@ -116,28 +116,28 @@ R_{\rm BH}(v_H)^2d\Omega^2.
 The proposed child particle-horizon history carries
 
 \[
-q_C(v_H)
+q_p(v_H)
 =
 \left[
-a\bigl(\Phi(v_H)\bigr)\Phi(v_H)
+a\bigl(\tau_H(v_H)\bigr)\Phi(v_H)
 \right]^2d\Omega^2.
 \tag{7}
 \]
 
-An ordinary isometric identification would set \(q_C=q_P\). CSBHI instead proposes a conformal correspondence, so the general relation is
+An ordinary isometric identification would set \(q_p=q_{\rm BH}\). CSBHI instead proposes a conformal correspondence, so the general relation is
 
 \[
 \boxed{
-a\bigl(\Phi(v_H)\bigr)\Phi(v_H)
+a\bigl(\tau_H(v_H)\bigr)\Phi(v_H)
 =
-\Omega_H(v_H)R_{\rm BH}(v_H)
+\Omega_\Sigma(v_H)R_{\rm BH}(v_H)
 }.
 \tag{8}
 \]
 
-Here \(\Omega_H\) is the conformal scale assigned to the horizon sections. Equation (8) must not be replaced silently by equal physical areas.
+Here \(\Omega_\Sigma\) is the conformal scale assigned to the candidate null correspondence. Equation (8) must not be replaced silently by equal physical areas.
 
-The first decisive test is whether the reciprocal shell construction fixes \(\Omega_H\). If it does, Equation (8) becomes an equation for \(\Phi\). If it does not, then the residual is a coupled pair \((\Phi,\Omega_H)\), and the scale-field or higher-dimensional geometry has a precisely defined job.
+The equation audit found that shell homogeneity fixes relative radii within a slice but remains invariant under a common time-dependent rescaling. It therefore does not fix \(\Omega_\Sigma\) by itself. The residual at the metric level is the coupled pair \((\Phi,\Omega_\Sigma)\); the next calculation must seek their normalization in the crossing dynamics, optical map, or completed scale geometry.
 
 ---
 
@@ -164,7 +164,7 @@ Normalize \(v_H\) using the parent cosmological clock or Bob's asymptotic proper
 
 ### Step 3: Pull back the angular geometry
 
-Evaluate Equations (6)–(8). Insert the homogeneous shell relation and the cohort normalization of Equation (3). Determine whether those data fix \(\Omega_H\), its derivative, or only its value at the formation anchor.
+Evaluate Equations (6)–(8). Insert the homogeneous shell relation and the cohort normalization of Equation (3). Determine whether the crossing dynamics fix \(\Omega_\Sigma\), its derivative, or only its value at the formation anchor.
 
 ### Step 4: Derive the generator clock
 
@@ -172,11 +172,11 @@ Use the parent horizon evolution—area change, accretion flux, null expansion, 
 
 ### Step 5: Cross-check with optics
 
-The earlier event-map calculation retains a derivative of the form \(dV/dv_A\). Show explicitly that it is the inverse or equivalent representation of \(\Phi'(v_H)\). The clock derived from horizon geometry and the clock inferred from photon-frequency transfer must agree.
+The equation audit gives the exact relation \(\Phi'=J_H/(2V')\) on the proposed child null history, where \(J_H=dv_B/dv_H\) converts the physical parent clock into the advanced null coordinate used by the optical calculation. The horizon and optical clocks must obey it at every cross-section.
 
 ### Deliverable
 
-Produce one explicit coupled system for \(\Phi\) and \(\Omega_H\), with every input classified as:
+Produce one explicit coupled system for \(\Phi\) and \(\Omega_\Sigma\), with every input classified as:
 
 - parent collapse data;
 - reciprocal ansatz;
@@ -233,12 +233,14 @@ This rules out any proposed global law that makes \(\Phi\) advance only when the
 
 ## 8. Late-time asymptotic clue
 
-In a child de Sitter limit, the remaining conformal time decays exponentially:
+The mapped child surface is the particle-horizon history, whose areal radius \(a\eta\) diverges in a de Sitter future. It must not be confused with the cosmological event-horizon radius \(B=a(\eta_\infty-\eta)\), which tends to \(R_\Lambda\).
+
+The finite remaining conformal interval nevertheless decays exponentially:
 
 \[
-\eta_\infty-\eta(T)
+\eta_\infty-\eta(\tau)
 \propto
-e^{-H_\Lambda T}.
+e^{-H_\Lambda \tau}.
 \tag{11}
 \]
 
@@ -254,13 +256,13 @@ e^{-\kappa_{\rm BH}v_H},
 and therefore
 
 \[
-H_\Lambda\frac{dT_H}{dv_H}
+H_\Lambda\frac{d\tau_H}{dv_H}
 \longrightarrow
 \kappa_{\rm BH}.
 \tag{13}
 \]
 
-Equation (13) is a clue, not yet a derivation. Under the idealized radius identity \(R_S=R_\Lambda\), Schwarzschild and de Sitter surface gravities differ by a factor of two. The same factor appears in their horizon-temperature comparison. The completed clock calculation should determine whether this factor is physical, conventional, or removed by the conformal normalization.
+Equation (13) is a clue about the clock normalization, not an area identification between the parent event horizon and the child particle horizon. Under the idealized radius identity \(R_S=R_\Lambda\), Schwarzschild and de Sitter surface gravities differ by a factor of two. The same factor appears in their horizon-temperature comparison and in the exact relation between \(\Phi'\) and the optical derivative \(V'\). The completed clock calculation should determine whether these factors share one geometric origin.
 
 ---
 
@@ -269,7 +271,7 @@ Equation (13) is a clue, not yet a derivation. Under the idealized radius identi
 The direct collapse map succeeds if one matter-filled parent collapse produces:
 
 1. a monotone \(\Phi(v_H)\) with a physical normalization;
-2. a horizon scale \(\Omega_H(v_H)\) fixed by existing reciprocal geometry or by one explicit new field equation;
+2. a horizon scale \(\Omega_\Sigma(v_H)\) fixed by existing reciprocal geometry or by one explicit new field equation;
 3. agreement between horizon, shell, and optical clocks;
 4. GD I reciprocal evolution for every cohort;
 5. preserved shell ordering and a homogeneous child background;
@@ -294,26 +296,26 @@ Failure of one clock law does not reject the reciprocal ansatz, the causal wedge
 
 Resume the calculation in this order:
 
-1. **Audit prior work.** Extract every existing equation involving \(\Phi\), \(dV/dv_A\), horizon area, shell mass, and reciprocal scale. Deduplicate notation before calculating.
-2. **Select the benchmark.** Choose the simplest dynamical spherical collapse with a physically normalized parent time and state exactly which features are idealizations.
+1. **Audit prior work — completed.** See [Horizon-Map Equation and Notation Audit](note.html?src=horizon_map_equation_and_notation_audit). It separates the two child null branches, derives \(\Phi'=J_H/(2V')\), and shows that shell homogeneity alone does not fix \(\Omega_\Sigma\).
+2. **Select the benchmark — completed.** Use a broad compensated \(\Lambda\)LTB overdensity inside a flat dust–\(\Lambda\) FLRW parent, with \(v_H=t_P\). See [Selecting the Parent Collapse Benchmark](note.html?src=collapse_benchmark_selection).
 3. **Write the two null embeddings.** Parameterize the parent event horizon and child particle-horizon history without joining their surrounding metrics.
-4. **Derive Equation (8).** Pull back their angular metrics and use the shell map to test whether \(\Omega_H\) is already fixed.
+4. **Derive Equation (8).** Pull back their angular metrics and use the crossing dynamics to determine \(\Omega_\Sigma\).
 5. **Derive \(\Phi'\).** Use normalized horizon evolution and verify the result independently through optical frequency transfer.
 6. **Check the asymptotes.** Test formation, stationary-horizon, and child de Sitter limits separately.
 7. **Extend to the cohort neighborhood.** Only then calculate shell ordering, Weyl relaxation, effective stress, and dimensional sufficiency.
 8. **Write the result as a calculation note.** Separate exact results, CSBHI identifications, and unresolved inputs. Do not promote a calibrated correspondence into a derivation.
 
-The first concrete question for the next session is:
+The first concrete question for the next step is:
 
 \[
 \boxed{
-\text{Does the reciprocal shell map determine }\Omega_H(v_H)
-\text{ in Equation (8)?}
+\text{What equations constrain }\Phi(t_P),\ J_H(t_P),
+\text{ and }\Omega_\Sigma(t_P)\text{ on the two null embeddings?}
 }
 \tag{14}
 \]
 
-If yes, the horizon map has one unknown and \(\Phi\) can be attacked directly. If no, the calculation will have isolated the exact conformal degree of freedom that the scale-field programme must supply.
+The selected \(\Lambda\)LTB geometry supplies the parent clock and horizon generator. Step three must write its embedding beside the child particle-horizon embedding without prematurely imposing an isometric junction.
 
 ---
 

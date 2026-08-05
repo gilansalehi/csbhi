@@ -30,9 +30,9 @@ The reciprocal ansatz determines how each Alice evolves away from her crossing, 
 For cohort \(i\), GD I gives
 
 \[
-\frac{a(T)}{a(T_i)}
+\frac{a(\tau)}{a(\tau_i)}
 =
-\frac1{r_i(\tau)}.
+\frac1{r_i(\Delta\tau_i)}.
 \tag{2}
 \]
 
@@ -53,10 +53,10 @@ R_i=\eta_i=\Phi(v_i).
 Once \(\Phi\) is known, these relations organize the radial map as
 
 \[
-(v_i,\mu_i,\tau)
+(v_i,\mu_i,\Delta\tau_i)
 \longmapsto
 \left(
-T(v_i,\tau),
+\tau_i(v_i)+\Delta\tau_i,
 R(\mu_i,v_i)
 \right).
 \tag{5}
@@ -117,11 +117,11 @@ Equation (9) is an observational calibration, not a derivation.
 Along the null history,
 
 \[
-dT
+d\tau_H
 =
 a(\eta)d\eta
 =
-a\bigl(\Phi(v_H)\bigr)
+a\bigl(\tau_H(v_H)\bigr)
 \Phi'(v_H)dv_H.
 \tag{10}
 \]
@@ -130,9 +130,9 @@ Therefore
 
 \[
 \boxed{
-\frac{dT_H}{dv_H}
+\frac{d\tau_H}{dv_H}
 =
-a\bigl(T_H(v_H)\bigr)\Phi'(v_H)
+a\bigl(\tau_H(v_H)\bigr)\Phi'(v_H)
 }.
 \tag{11}
 \]

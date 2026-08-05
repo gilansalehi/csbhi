@@ -71,7 +71,7 @@ If \(B_*\) is the areal radius of the outer shell, then
 
 \[
 \boxed{
-R_P(\mu)=B_*\mu^{1/3}
+s_*(\mu)=B_*\mu^{1/3}
 }.
 \tag{4}
 \]
@@ -86,17 +86,17 @@ Let \(R_b\) be the comoving radius of the selected child causal patch. Identifyi
 
 \[
 \boxed{
-R_C(\mu)=R_b\mu^{1/3}
+R(\mu)=R_b\mu^{1/3}
 }.
 \tag{5}
 \]
 
-At child time \(T\), the areal radius is
+At child cosmic time \(\tau\), the areal radius is
 
 \[
-\bar R_C(T,\mu)
+\bar R(\tau,\mu)
 =
-a(T)R_b\mu^{1/3}.
+a(\tau)R_b\mu^{1/3}.
 \tag{6}
 \]
 
@@ -104,9 +104,9 @@ Equations (4) and (6) give
 
 \[
 \boxed{
-\frac{\bar R_C(T,\mu)}{R_P(\mu)}
+\frac{\bar R(\tau,\mu)}{s_*(\mu)}
 =
-\frac{a(T)R_b}{B_*}
+\frac{a(\tau)R_b}{B_*}
 }.
 \tag{7}
 \]
@@ -119,29 +119,29 @@ Equation (7) makes precise the statement that every surface in the present causa
 
 ## 5. Add reciprocal evolution
 
-For cohort \(i\) entering at child epoch \(T_i\), GD I gives
+For cohort \(i\) entering at child epoch \(\tau_i\), with elapsed proper time \(\Delta\tau_i=\tau-\tau_i\), GD I gives
 
 \[
-\frac{a(T)}{a(T_i)}
+\frac{a(\tau)}{a(\tau_i)}
 =
-\frac{1}{r_i(\tau)}.
+\frac{1}{r_i(\Delta\tau_i)}.
 \tag{8}
 \]
 
 Therefore
 
 \[
-\bar R_C(T,\mu)
+\bar R(\tau,\mu)
 =
-\frac{a(T_i)R_b}{r_i(\tau)}
+\frac{a(\tau_i)R_b}{r_i(\Delta\tau_i)}
 \mu^{1/3}.
 \tag{9}
 \]
 
 The operations are distinct:
 
-- \(\mu\mapsto R_C(\mu)\) is the collapse-to-child **spatial map**;
-- \(r_i(\tau)\mapsto1/r_i(\tau)\) is the **evolution map**.
+- \(\mu\mapsto R(\mu)\) is the collapse-to-child **spatial map**;
+- \(r_i(\Delta\tau_i)\mapsto1/r_i(\Delta\tau_i)\) is the **evolution map**.
 
 The shell label preserves spatial identity while the reciprocal factor expands the common geometry.
 
@@ -152,9 +152,9 @@ The shell label preserves spatial identity while the reciprocal factor expands t
 For an inhomogeneous parent, write
 
 \[
-R_P(\mu)=B_*f_P(\mu),
+s_*(\mu)=B_*f_P(\mu),
 \qquad
-R_C(\mu)=R_bf_C(\mu).
+R(\mu)=R_bf_C(\mu).
 \tag{10}
 \]
 
@@ -183,7 +183,7 @@ The Weyl-to-Ricci problem and the shell-map problem are therefore the same calcu
 
 An ideal Big Bang is a conformal boundary, not a regular hypersurface occupied by an astronaut. Define the map on regular surfaces \(\Sigma_*(\epsilon)\) and \(T=\epsilon\), then take \(\epsilon\to0^+\).
 
-The comoving labels \(R_C(\mu)\) remain meaningful while all physical radii \(a(T)R_C(\mu)\) shrink. Collapse-day Alice is therefore a limiting construction. The argument does not require a physical observer to depart from a point singularity.
+The comoving labels \(R(\mu)\) remain meaningful while all physical radii \(a(\tau)R(\mu)\) shrink. Collapse-day Alice is therefore a limiting construction. The argument does not require a physical observer to depart from a point singularity.
 
 ---
 
