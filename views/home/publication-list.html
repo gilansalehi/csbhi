@@ -4,7 +4,7 @@
     export default ({ wrapper }) => getCollection(wrapper.dataset.collection);
 </script>
 
-<section $aria-labelledby="headingId">
+<section class="publication-list" $aria-labelledby="headingId">
     <h2 $id="headingId" $text="title"></h2>
     <template *if="hasIntro">
         <p $unsafeHTML="introHtml"></p>

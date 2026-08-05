@@ -1,6 +1,6 @@
 <script type="module" data-module="@csbhi/home/math-typesetter">
     export default ({ cleanup }) => {
-        const mounts = [...document.querySelectorAll('[data-home-section]')];
+        const mounts = [...document.querySelectorAll('[data-home-section], [data-typeset-section]')];
         const main = document.querySelector('main');
         let observer;
 

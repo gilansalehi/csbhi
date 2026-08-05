@@ -2,7 +2,7 @@
 
 > CSBHI is a developing research programme investigating whether the reciprocal ansatz a(tau) = 1/r(tau) relates black-hole infall to cosmological expansion. The primary paper states the proposal and its observable consequences; the accompanying notes distinguish established calculations, conditional results, conjectures, and open problems.
 
-The public site is static. Its main pages contain their substantive text directly in the HTML response. Research notes are also available as raw Markdown at the URLs below, so no JavaScript execution is required to read them. Equations use LaTeX notation.
+The public site is statically hosted. Core papers contain their substantive text directly in HTML; the project overview and review packet compose some sections from static data-wrapper views. Research notes are also available as raw Markdown at the URLs below, so no JavaScript execution is required to read them. Equations use LaTeX notation.
 
 ## AI collaborator onboarding and debugging
 
@@ -57,6 +57,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 ## Project pages
 
 - [CSBHI project overview](https://www.gilansalehi.com/csbhi/): Publication map, progress, open problems, and further reading.
+- [Review Packet I](https://www.gilansalehi.com/csbhi/review.html): Guided professional-review packet separating the foundational ansatz, conditional results, theorem, correspondence, prediction, and open construction problems.
 - [Frequently Asked Questions](https://www.gilansalehi.com/csbhi/faqs.html): Short answers to recurring conceptual and mathematical objections.
 - [CSBHI Cosmological Glossary](https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md): Shared symbol legend and plain-language reference for the physics, cosmology, horizons, distances, expansion, and junction geometry used across the project.
 - [What Remains Mathematically Illegible](https://www.gilansalehi.com/csbhi/notes/open_questions.md): Living index of the unresolved geometric, cosmological, empirical, and extension questions, ordered by dependency.

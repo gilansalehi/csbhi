@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" id="project-root">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A guided technical review packet for the reciprocal-interior proposal and its evolving galactic acceleration-scale prediction.">
+  <meta name="dcterms.modified" content="2026-08-05">
+  <meta name="project" content="Conformal Scaling of Black Hole Interiors">
+  <meta name="programme" content="Geometric Duality">
+  <meta name="scope" content="Early professional review packet">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/review.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Review Packet I | CSBHI</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/review.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#review-title">Skip to review packet</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article id="review-page" class="review-packet" aria-labelledby="review-title">
+      <header class="review-packet__header">
+        <p class="review-packet__eyebrow">Early professional review · Packet I</p>
+        <h1 id="review-title">The Reciprocal Interior and an Evolving Galactic Acceleration Scale</h1>
+        <p class="review-packet__lede">
+          One geometric ansatz, its exact conditional consequences, and a prediction that can be wrong.
+        </p>
+        <p class="review-packet__status">Pre-peer-review · August 2026</p>
+      </header>
+
+      <nav id="table-of-contents" aria-labelledby="toc-title">
+        <h2>Contents</h2>
+        <details open>
+          <summary id="toc-title">Review packet</summary>
+          <ol>
+            <li><a href="#case-for-review">The case for review</a></li>
+            <li><a href="#claim-ledger">Claim ledger</a></li>
+            <li><a href="#reading-paths">Choose a reading path</a></li>
+            <li><a href="#packet-documents">Documents in the packet</a></li>
+            <li><a href="#break-it">Please try to break it</a></li>
+            <li><a href="#response">How to respond</a></li>
+          </ol>
+        </details>
+      </nav>
+
+      <section id="case-for-review" aria-labelledby="case-title">
+        <h2 id="case-title">The case for review</h2>
+        <p>
+          CSBHI asks whether black-hole infall and cosmic expansion are reciprocal descriptions related by
+          (a(	au)=1/r(	au)). The ansatz is not derived. Given the reciprocal interior metric, ordinary
+          matter, radiation, vacuum energy, and Einstein's equations, the familiar Friedmann dynamics follow.
+          A separate symmetry result distinguishes (1/r) within a stated class of horizon-fixing maps. At
+          galactic scales, applying the same inverse-horizon correspondence predicts
+          (g_\dagger(z)/g_\dagger(0)=H(z)/H_0): a rising ratio rather than a constant one. The present data are
+          suggestive, not decisive. This packet asks reviewers to identify the first premise, calculation, or
+          physical interpretation that fails.
+        </p>
+
+        <fieldset class="legend-box review-packet__prediction">
+          <legend>Flagship prediction</legend>
+          <p class="review-packet__equation">
+            \[
+              \frac{g_\dagger(z)}{g_\dagger(0)}=\frac{H(z)}{H_0}
+            \]
+          </p>
+          <p>
+            The absolute normalization remains open. The redshift dependence does not: the evolving
+            correspondence predicts a rising ratio; a fixed acceleration scale predicts (1).
+          </p>
+        </fieldset>
+      </section>
+
+      <section id="claim-ledger" aria-labelledby="ledger-title">
+        <h2 id="ledger-title">Claim ledger</h2>
+        <p>Each claim should be judged at the level actually asserted.</p>
+        <div class="review-packet__table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Status</th>
+                <th scope="col">Claim</th>
+                <th scope="col">What remains</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Ansatz</th>
+                <td>Alice's interior spatial scale and Bob's infall radius obey (a=1/r).</td>
+                <td>Derive or replace the correspondence within a complete parent–child geometry.</td>
+              </tr>
+              <tr>
+                <th scope="row">Conditional result</th>
+                <td>The reciprocal interior metric plus Einstein's equations and conserved matter, radiation, and vacuum energy produce Friedmann dynamics.</td>
+                <td>Check every premise, sign, coefficient, and matter assumption in RI I.</td>
+              </tr>
+              <tr>
+                <th scope="row">Theorem</th>
+                <td>(1/r) is the unique nontrivial power-law map that is scale-free, involutive, and fixes the normalized horizon.</td>
+                <td>Test whether the stated function class is physically justified or unnecessarily narrow.</td>
+              </tr>
+              <tr>
+                <th scope="row">Working result</th>
+                <td>A smooth spherical Weyl-relaxation profile exists, while a shear-free four-dimensional completion requires a specific transverse stress.</td>
+                <td>Independent verification and a dynamical realization of that stress.</td>
+              </tr>
+              <tr>
+                <th scope="row">Correspondence</th>
+                <td>The galactic global scale is identified with the inverse radius of the contemporaneous cosmological horizon: (A=cH(z)).</td>
+                <td>Determine whether the completed dynamics select the evolving horizon rather than the asymptotic de Sitter horizon.</td>
+              </tr>
+              <tr>
+                <th scope="row">Prediction</th>
+                <td>(g_\dagger(z)/g_\dagger(0)=H(z)/H_0).</td>
+                <td>Discriminate this curve from a constant scale and from feedback-driven galaxy evolution.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="reading-paths" aria-labelledby="paths-title">
+        <h2 id="paths-title">Choose a reading path</h2>
+        <div class="review-packet__paths">
+          <section>
+            <p class="review-packet__path-time">Five-minute triage</p>
+            <h3>Is this worth your time?</h3>
+            <p>Read this page, then the status and Sections 1–3 of the evolving-(g_\dagger) note.</p>
+          </section>
+          <section>
+            <p class="review-packet__path-time">Conceptual review</p>
+            <h3>Does the picture cohere?</h3>
+            <p>Read GD I, the involution result, and the prediction note in that order.</p>
+          </section>
+          <section>
+            <p class="review-packet__path-time">Technical audit</p>
+            <h3>Where does the mathematics fail?</h3>
+            <p>Follow all five documents below, checking each result only from its stated premises.</p>
+          </section>
+        </div>
+      </section>
+
+      <data-wrapper id="packet-documents"
+        src="views/home/publication-list.html"
+        data-collection="review"
+        data-typeset-section></data-wrapper>
+
+      <section id="break-it" class="review-packet__break" aria-labelledby="break-title">
+        <p class="review-packet__eyebrow">The assignment</p>
+        <h2 id="break-title">Please try to break it.</h2>
+        <ol>
+          <li>Find a conclusion imported into the premises that supposedly establish it.</li>
+          <li>Find a sign, coefficient, dimensional, or tensorial error in the conditional derivations.</li>
+          <li>Identify where the Alice–Bob interpretation ceases to describe the equations being used.</li>
+          <li>Show that the evolving acceleration-scale test is observationally degenerate with a better-motivated model.</li>
+          <li>Point to prior work that already proves, refutes, or materially changes the construction.</li>
+        </ol>
+        <p>The most useful response identifies the first point at which the argument fails.</p>
+      </section>
+
+      <section id="response" aria-labelledby="response-title">
+        <h2 id="response-title">How to respond</h2>
+        <p>
+          A short verdict, an annotated document, or a list of objections is welcome. Please distinguish mathematical
+          errors, physical objections, missing literature, and presentation problems where possible. Corrections and
+          negative results are useful; agreement is not required.
+        </p>
+        <p>
+          This project was developed through sustained adversarial collaboration with several AI systems. Each
+          document identifies its authorship and review history. Cross-checking among models is not a substitute for
+          professional review; it is why this packet is now being presented for one.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>

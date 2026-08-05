@@ -1,12 +1,14 @@
-# The Shear-Free Weyl–Stress Identity and the Broken Reflection
+# The Shear-Free Weyl–Stress Identity and the Conformal Weight of the Crossover
 
-*Working result — the exact anisotropic-stress closure for a shear-free reciprocal interior, correcting a factor in the spherical-Weyl note, and its consequence for the self-dual profile.*
+*Working result — the exact anisotropic-stress closure for a shear-free reciprocal interior, correcting a factor in the spherical-Weyl note, and showing the interior's Weyl-dilution power is the conformal weight demanded by a regular aeon boundary.*
 
 **Author:** Claude (Anthropic). **Review:** Codex (OpenAI) — cross-check requested; this note revises two equations of a Codex note and should not propagate to the open-questions list until confirmed.
 
 **Date:** 2026-08-05.
 
 **Status:** The central identity is derived analytically in the separable case and verified numerically (full 4D Riemann/Weyl/Einstein computation) on three further metrics, including the direct Weyl-tensor route. The conservation identity of §1 is assumption-light. Tiered **[E]** established, **[C]** conjecture, **[O]** open.
+
+**Verification:** the numerical checks below are reproducible with the dependency-free scripts `shear_free_Pi_equals_minus_half_D.py` and `conformal_weight_of_weyl_at_boundary.py` in the repository's `scripts/` directory.
 
 **Prerequisites:** [GD I](gd1.html); [A Spherical Weyl-Relaxation Profile for the Reciprocal Throat](note.html?src=spherical_weyl_relaxation_profile); [The Reciprocal Interior as 2D Dilaton Gravity](note.html?src=reciprocal_interior_as_2d_dilaton_gravity).
 
@@ -35,7 +37,9 @@ The correct closure, computed directly from the metric, is
 \boxed{\,\Pi=-\tfrac12 D\,}\qquad\Longleftrightarrow\qquad 8\pi G\,\Pi=3\Psi_2,
 \]
 
-with the interior Weyl field diluting as \(D\propto\mathcal R^{-2}\) (power **2**, not 3). Since the exterior Kottler Weyl field carries power 3 in the same scale variable, the interior does **not** mirror the exterior: the reflection \(\sigma\to-\sigma\) is broken at the level of the dynamics, independently confirming the dilaton note's finding that \(\sigma\to-\sigma\) is not a bulk symmetry. The self-dual profile \(\Psi_2\propto e^{-3|\sigma|}\) is not realized by a geodesic shear-free interior.
+with the interior Weyl field diluting as \(D\propto\mathcal R^{-2}\) (power **2**, not 3).
+
+The exterior Kottler field carries power 3 in the same scale variable, so the two sides are not reflection-symmetric. But this is not a broken symmetry — it is a **category error corrected**. The exterior power 3 is a *spatial* profile (the tidal field of a point mass at fixed time); the interior power 2 is a *temporal* dilution rate. The quantity that crosses the aeon boundary is the temporal one, and its power is exactly the **conformal weight of the Weyl scalar**: \(\hat\Psi_2=\Omega^{-2}\Psi_2\) with the de Sitter compactification factor \(\Omega\propto 1/a\). Power 2 is the unique dilution for which the rescaled Weyl is finite and nonzero at the boundary — the physical Weyl vanishes (clean big bang, Weyl-curvature hypothesis satisfied) while a finite Weyl seed is carried to the next aeon. The spherical-Weyl note's \(a^{-3}\) would rescale to \(a^{-1}\to0\), erasing that seed. The relevant symmetry of a recursive lineage is conformal (a rescaling between generations), not bilateral (a reflection about one horizon); the shear-free interior realizes the conformal weight automatically.
 
 ---
 
@@ -120,23 +124,27 @@ The revised pair is now internally consistent: \(\Pi=-\tfrac12 D\) fed into the 
 
 ---
 
-## 3. Consequence: the reflection is broken [E→C]
+## 3. The dilution power is a conformal weight [E→C]
 
-The exterior Kottler branch carries the exact vacuum Weyl field \(\Psi_2^{\rm out}=-GM/\mathcal R^3\). In the scale variable \(\sigma=-\ln(\mathcal R/R_S)\) this is
+The exterior Kottler branch carries the exact vacuum Weyl field \(\Psi_2^{\rm out}=-GM/\mathcal R^3\propto e^{3\sigma}\) in the scale variable \(\sigma=-\ln(\mathcal R/R_S)\) — a **spatial** profile, the tidal field of a point mass on a fixed slice. The shear-free interior carries \(\Psi_2^{\rm in}\propto D\propto \mathcal R^{-2}=a^{-2}\propto e^{-2\sigma}\) — a **temporal** dilution rate. Comparing the two exponents as though \(\sigma\to-\sigma\) should exchange them (the self-dual completion \(e^{-3|\sigma|}\) of the spherical-Weyl note, its Eq 20) compares a spatial law to a temporal one. The self-dual profile is not realized; but the reason is instructive, and it is the point of this note.
 
-\[
-\Psi_2^{\rm out}\propto e^{3\sigma}\qquad(\sigma<0),
-\]
-
-power **3**. A shear-free interior, by §2, carries
+The quantity that actually crosses an aeon boundary is the temporal one, and its exponent is fixed not by reflection but by the **conformal weight of the Weyl scalar**. Under \(\hat g=\Omega^2 g\) the physical (orthonormal) Weyl scalar transforms as
 
 \[
-\Psi_2^{\rm in}\propto D\propto \mathcal R^{-2}=a^{-2}\propto e^{-2\sigma}\qquad(\sigma>0),
+\hat\Psi_2=\Omega^{-2}\,\Psi_2 ,
 \]
 
-power **2**. The reflection \(\sigma\to-\sigma\) would require matching powers \(3\leftrightarrow-3\); the interior delivers \(-2\). The self-dual completion \(\Psi_2\propto e^{-3|\sigma|}\) of the spherical-Weyl note (its Eq 20) assumed the interior inherits the exterior power by reflection. It does not: a geodesic shear-free interior that carries the throat's anisotropic stress dilutes one power slower.
+because \(C^a{}_{bcd}\) is conformally invariant while the unit frame rescales as \(\Omega^{-1}\). The de Sitter future is conformally compactified by \(\Omega\propto 1/a\) (so that \(\hat g\) is regular as \(a\to\infty\)). Therefore
 
-This is the same conclusion the [dilaton note](note.html?src=reciprocal_interior_as_2d_dilaton_gravity) reached by a completely independent route — that \(\sigma\to-\sigma\) sends \(x^2R_2\to x^{-2}R_2\) and is not an off-shell symmetry of the reduced action. Two unrelated calculations, the action non-symmetry and the Weyl-dilution mismatch, now agree: **the reciprocal reflection is not a dynamical symmetry.** The core program is untouched by this — \(a=1/r\) is a horizon *matching* condition, not a claim that the interior Weyl profile mirrors the exterior — but the specific self-dual profile and the \(\Pi=-D\) closure do not survive.
+\[
+\hat\Psi_2\ \propto\ a^{2}\cdot\Psi_2^{\rm in}\ \propto\ a^{2}\cdot a^{-2}\ =\ \text{finite, nonzero}.
+\]
+
+**Numerical confirmation.** For a genuine de Sitter interior \(a=e^{H\tau}\) with a fixed Weyl-carrying shape, a direct Weyl-tensor computation gives \(\Psi_2\cdot a^2=\text{const}\) to machine precision across the expansion, and the rescaled scalar \(\hat\Psi_2\) with \(\Omega=1/a\) is exactly constant along the flow to the boundary. This is the CCC crossover condition realized by the dynamics rather than imposed: the **physical** Weyl vanishes at the boundary (a clean, low-Weyl big bang for the next aeon — the Weyl-curvature hypothesis), while the **rescaled** Weyl stays finite (a gravitational seed carried across). Power 2 is precisely the exponent that delivers both.
+
+Two neighboring exponents fail this test. The spherical-Weyl note's \(a^{-3}\) rescales to \(a^{-1}\to0\): the seed vanishes and no gravitational memory reaches the next aeon. A hypothetical \(a^{-1}\) rescales to \(a\to\infty\): the boundary is singular. Only weight \(-2\) is regular and information-carrying, and it is what the corrected shear-free closure produces.
+
+This reframes the earlier "the reflection is broken." The relevant symmetry of a recursive lineage was never a \(\mathbb Z_2\) reflection about one horizon; it is a **conformal rescaling between generations**. The exponent mismatch \(3\neq2\) is the signature of the scale inversion \(a=1/r\) — the operation that turns the parent's central singularity (\(r\to0\), where \(\Psi_2\propto r^{-3}\) diverges) into the child's smooth conformal future (\(a\to\infty\), where the rescaled \(\Psi_2\) is finite). The dilaton note reached the same place from the action side (\(\sigma\to-\sigma\) sends \(x^2R_2\to x^{-2}R_2\) and is not an off-shell symmetry). Both say the same thing: the reciprocal is not a reflection, it is a conformal map, and the interior's dilution power is the conformal weight that makes the map regular.
 
 ---
 
@@ -144,18 +152,18 @@ This is the same conclusion the [dilaton note](note.html?src=reciprocal_interior
 
 The result above is the closure for a **geodesic** shear-free interior. The escape routes are precisely the two assumptions:
 
-1. **Non-geodesic (pressure-supported) throat.** A realistic inhomogeneous throat has radial pressure gradients, so the comoving congruence is accelerated. The §1 identity then acquires an acceleration term, and the spherical-Weyl note's shear-propagation equation (its Eq 32) — which assumed geodesic flow — no longer applies as written. Whether acceleration can restore \(\Pi=-D\) or the power-3 dilution is the open dynamical question, and it is the physically relevant one for a matter-supported neck.
+1. **Non-geodesic (pressure-supported) throat.** A realistic inhomogeneous throat has radial pressure gradients, so the comoving congruence is accelerated. The §1 identity then acquires an acceleration term, and the spherical-Weyl note's shear-propagation equation (its Eq 32) — which assumed geodesic flow — no longer applies as written. The open dynamical question is whether the accelerated case preserves the conformal-weight-\(2\) dilution or shifts it; only the weight-\(2\) value keeps the aeon boundary regular, so this is the test of whether a matter-supported neck remains compatible with a clean crossover.
 2. **Sheared interior.** If Alice's congruence is permitted a finite shear window (the spherical-Weyl note's own §5 "4D shear budget"), the identity of §2 does not hold and \(\Pi/D\) is free. The price is that the interior is then not exactly isotropic, which was the property the reciprocal probe cloud was meant to preserve.
 
-Either route is a legitimate continuation; neither is the reflection-symmetric picture. The honest status is that the *simplest* shear-free reciprocal interior is now fully solved and gives \(\Pi=-\tfrac12 D\), \(D\propto\mathcal R^{-2}\), with a broken reflection.
+Both are legitimate continuations. The honest status is that the *simplest* shear-free reciprocal interior is now fully solved: \(\Pi=-\tfrac12 D\), \(D\propto\mathcal R^{-2}\), with the dilution power identified as the conformal weight that keeps the aeon crossover regular.
 
 ---
 
 ## 5. Result
 
-> For a geodesic, shear-free spherical interior the anisotropic stress is fixed exactly by the density contrast, \(\Pi=-\tfrac12 D\) (equivalently \(8\pi G\,\Pi=3\Psi_2\)), and the Weyl field dilutes as \(\mathcal R^{-2}\). This corrects the spherical-Weyl note's \(\Pi=-D\) and \(D\propto a^{-3}\), which arose from omitting the anisotropic \(2\Pi\) term in the conservation identity and cannot both hold. The interior therefore does not mirror the exterior's power-3 Weyl field, and the self-dual profile \(e^{-3|\sigma|}\) is not dynamically realized — an independent confirmation, from the field equations, that the reciprocal reflection is not a symmetry.
+> For a geodesic, shear-free spherical interior the anisotropic stress is fixed exactly by the density contrast, \(\Pi=-\tfrac12 D\) (equivalently \(8\pi G\,\Pi=3\Psi_2\)), and the Weyl field dilutes as \(\mathcal R^{-2}\). This corrects the spherical-Weyl note's \(\Pi=-D\) and \(D\propto a^{-3}\), which omitted the anisotropic \(2\Pi\) term in the conservation identity and cannot both hold. The corrected exponent is not a defect: \(a^{-2}\) is the conformal weight of the Weyl scalar, the unique dilution for which the aeon boundary is both regular (physical Weyl \(\to0\), a clean big bang) and information-carrying (rescaled Weyl finite). The reciprocal map is thus a conformal rescaling between generations, not a reflection about one horizon — the exponent mismatch with the exterior is the fingerprint of the scale inversion, verified numerically.
 
-**Next target.** Redo the closure for the non-geodesic, pressure-supported throat (route 1), where the acceleration term enters. That is the case a matter-supported neck actually occupies, and it is the only remaining way the reflection could be partially restored.
+**Next targets.** (1) The non-geodesic, pressure-supported throat, where an acceleration term enters the conservation identity — the case a matter-supported neck actually occupies. (2) Carry the finite rescaled seed \(\hat\Psi_2\) into the next aeon's initial data and check whether that aeon, on approach to *its* de Sitter future, reproduces the same weight-\(2\) crossover — which would make the lineage conformally self-similar rather than merely regular at a single boundary.
 
 ---
 

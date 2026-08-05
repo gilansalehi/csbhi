@@ -160,11 +160,9 @@ const DOCUMENTS = {
 export const COLLECTIONS = {
   review: {
     headingId: 'review-packet-title',
-    title: 'Review Packet',
-    introHtml: 'The core documents, in reading order. Begin with the <a href="note.html?src=review_packet_introduction">Note to Reviewers</a>. Speculative directions are kept in the archive below.',
-    summary: 'Core documents prepared for technical review.',
+    title: 'Documents in the Packet',
+    summary: 'Five documents, ordered from the foundational proposal to the falsifiable prediction.',
     documentIds: ['gd1', 'ri1', 'involution', 'weylRelaxation', 'evolvingGDagger'],
-    showReviewerGuide: true,
   },
   publications: {
     headingId: 'publications-title',

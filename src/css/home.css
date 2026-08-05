@@ -61,51 +61,51 @@ data-wrapper[data-home-section] {
   margin: 0;
 }
 
-:is(#review-packet, #publications, #ai-notes) details > ol {
+.publication-list details > ol {
   padding: 0;
   list-style: none;
 }
 
-:is(#review-packet, #publications, #ai-notes) details > ol > li {
+.publication-list details > ol > li {
   display: grid;
   grid-template-columns: 5.4rem 1fr;
   gap: 1rem;
   padding: 1rem;
 }
 
-:is(#review-packet, #publications, #ai-notes) h3 {
+.publication-list h3 {
   margin-top: 0;
 }
 
-:is(#review-packet, #publications, #ai-notes) p,
-:is(#review-packet, #publications, #ai-notes) details > ol > li > div:first-child,
-:is(#review-packet, #publications, #ai-notes) details > ol > li > div:last-child > p:last-child {
+.publication-list p,
+.publication-list details > ol > li > div:first-child,
+.publication-list details > ol > li > div:last-child > p:last-child {
   color: var(--muted);
 }
 
-:is(#review-packet, #publications, #ai-notes) details > ol > li > div:first-child,
-:is(#review-packet, #publications, #ai-notes) details > ol > li > div:last-child > p:last-child {
+.publication-list details > ol > li > div:first-child,
+.publication-list details > ol > li > div:last-child > p:last-child {
   font-family: var(--mono);
   font-size: 0.82rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-:is(#review-packet, #publications, #ai-notes) details > ol > li > div:first-child {
+.publication-list details > ol > li > div:first-child {
   text-align: right;
 }
 
-:is(#review-packet, #publications, #ai-notes) details > ol > li > div:last-child > p:last-child {
+.publication-list details > ol > li > div:last-child > p:last-child {
   font-size: 0.78rem;
 }
 
-:is(#review-packet, #publications, #ai-notes) .prq-label {
+.publication-list .prq-label {
   font-family: var(--mono);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
-:is(#review-packet, #publications, #ai-notes) .start-here {
+.publication-list .start-here {
   display: inline-block;
   padding: 0.2rem 0.55rem;
   border: 1px solid color-mix(in srgb, var(--danger) 65%, currentColor);
@@ -126,6 +126,46 @@ data-wrapper[data-home-section] {
 
 .review-packet__guide li + li {
   margin-top: 0.45rem;
+}
+
+.review-card {
+  position: relative;
+  margin-block: clamp(3rem, 8vw, 6rem);
+  padding: clamp(1.25rem, 5vw, 2.5rem);
+  border: 2px solid currentColor;
+}
+
+.review-card__eyebrow,
+.review-card__meta {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.review-card h2 {
+  margin-bottom: 0.25rem;
+}
+
+.review-card h3 {
+  max-width: 30ch;
+  margin-top: 0;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+}
+
+.review-card__action {
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid currentColor;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.review-card__action:hover,
+.review-card__action:focus-visible {
+  border-bottom-style: dashed;
 }
 
 .smallcaps {
