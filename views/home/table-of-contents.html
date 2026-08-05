@@ -1,0 +1,33 @@
+<script type="module" data-module="@csbhi/home/table-of-contents">
+    import { flush } from 'data-wrapper';
+
+    export let sections = [];
+
+    const readSections = () => {
+        sections = [...document.querySelectorAll('[data-home-section]')]
+            .map(element => ({
+                href: `#${element.dataset.sectionId || element.id}`,
+                label: element.dataset.sectionTitle,
+            }))
+            .filter(section => section.href !== '#' && section.label);
+        flush();
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', readSections, { once: true });
+    } else {
+        queueMicrotask(readSections);
+    }
+</script>
+
+<nav aria-labelledby="toc-title">
+    <h2>Table of Contents</h2>
+    <details open>
+        <summary id="toc-title">Contents</summary>
+        <ol>
+            <template *list="sections">
+                <li><a $href="./href" $text="./label"></a></li>
+            </template>
+        </ol>
+    </details>
+</nav>

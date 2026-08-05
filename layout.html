@@ -1,5 +1,6 @@
 <script type="module" data-module="@csbhi/layout">
     import { action, flush } from 'data-wrapper';
+    import { publicationLinks as catalogPublicationLinks } from 'project/project-catalog.js';
 
     /* The navigation is intentionally data-driven. Adjust these lists to add,
        remove, or reorder destinations across every page that uses the layout. */
@@ -9,15 +10,7 @@
         path: 'index.html#publications',
     });
 
-    const PUBLICATION_LINKS = Object.freeze([
-        { id: 'gd1', name: 'GD I', path: 'gd1.html' },
-        {
-            id: 'ri1',
-            name: 'RI I',
-            path: 'note.html?src=field_equations_of_the_reciprocal_interior',
-        },
-        { id: 'ri2', name: 'RI II', path: 'junctions.html' },
-    ]);
+    const PUBLICATION_LINKS = Object.freeze(catalogPublicationLinks);
 
     const PROJECT_RESOURCE_LINKS = Object.freeze([
         {
@@ -138,10 +131,8 @@
             menuOpen = false;
         });
 
-        const dynamicPage = document.querySelector(
-            'data-wrapper[src="note-view.html"]',
-        );
-        if (dynamicPage) {
+        const dynamicContent = document.querySelector('main');
+        if (dynamicContent) {
             const observer = new MutationObserver(() => {
                 const next = readPageLinks();
                 const signature = JSON.stringify(next);
@@ -150,7 +141,7 @@
                 pageLinksSignature = signature;
                 flush();
             });
-            observer.observe(dynamicPage, { childList: true, subtree: true });
+            observer.observe(dynamicContent, { childList: true, subtree: true });
             cleanup(() => observer.disconnect());
         }
 

@@ -1,0 +1,28 @@
+<script type="module" data-module="@csbhi/home/math-typesetter">
+    export default ({ cleanup }) => {
+        const mounts = [...document.querySelectorAll('[data-home-section]')];
+        const main = document.querySelector('main');
+        let observer;
+
+        const typeset = () => {
+            observer?.disconnect();
+            if (window.MathJax?.typesetPromise) {
+                window.MathJax.typesetPromise([main]);
+            } else if (window.MathJax?.Hub?.Queue) {
+                window.MathJax.Hub.Queue(['Typeset', window.MathJax.Hub, main]);
+            }
+        };
+
+        const ready = () => mounts.every(mount => mount.childElementCount > 0);
+        const check = () => {
+            if (ready()) queueMicrotask(typeset);
+        };
+
+        observer = new MutationObserver(check);
+        observer.observe(main, { childList: true, subtree: true });
+        check();
+        cleanup(() => observer.disconnect());
+
+        return {};
+    };
+</script>

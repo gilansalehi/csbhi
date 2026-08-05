@@ -133,6 +133,17 @@ For every objection:
 
 Do not insulate the theory from criticism. Also do not manufacture a contradiction by changing the model, silently adding standard assumptions, or demanding that a correspondence derive itself.
 
+## Token discipline
+
+Use the shared context for reasoning, calculation, and implementation. Keep routine inspection proportional to the risk of the change:
+
+- inspect only the relevant source ranges instead of repeatedly printing whole papers, notes, diffs, or rendered pages;
+- run concise mechanical checks for syntax, links, and calculations, but leave ordinary visual acceptance to the human collaborator unless automated inspection is requested or a visual uncertainty blocks the work;
+- avoid duplicating a browser review the human collaborator can perform faster and with better aesthetic judgment; and
+- summarize the current state before beginning any investigation likely to consume a large fraction of the remaining context.
+
+Verification matters. Exhaustive self-surveillance does not. Preserve the token budget for the parts of CSBHI that require mathematical judgment and conceptual continuity.
+
 ## Extension protocol
 
 When developing a new calculation:

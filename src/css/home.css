@@ -2,6 +2,10 @@
   padding: 1.5rem 0 0.5rem;
 }
 
+data-wrapper[data-home-section] {
+  display: block;
+}
+
 #hero h1 {
   max-width: 767px;
   margin: 15vh 0 2rem;
