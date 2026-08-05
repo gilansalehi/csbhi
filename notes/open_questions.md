@@ -50,23 +50,23 @@ These results are conditional on the specified interior and do not yet constitut
 
 **Known:** The vacuum-dominated child interior has the standard 5D de Sitter embedding and an exact Painlevé–Gullstrand flow in areal-radius coordinates. The spherical sector reduces exactly to a two-dimensional dilaton gravity, with the areal radius as dilaton — an economical language for the throat — and Campbell–Magaard guarantees local 5D Ricci-flat embeddings of the exterior and interior separately.
 
-**Missing:** A single metric that joins both branches: extending the asymptotic result through the matter and radiation eras, producing the parent-side geometry, and supplying the transverse stress \(\Pi=-D\) that Q3 requires.
+**Missing:** A single metric that joins both branches: extending the asymptotic result through the matter and radiation eras, producing the parent-side geometry, and supplying the transverse stress \(\Pi=-\tfrac12 D\) that Q3 requires.
 
 **Closure test:** Exhibit a higher-dimensional metric and its relevant four-dimensional slices or projections; calculate their induced geometries; and show that they recover Bob's exterior, Alice's reciprocal interior, the correct de Sitter limit, and the required transverse stress.
 
 ### Q3. What supports the parent–child transition?
 
-**Known:** The local timelike dust–\(\Lambda\) junction closes cleanly. The simplest direct stationary null soldering matches intrinsically but leaves transverse curvature — a jump equal to the child-side work density projected from volume to area. The spherical Weyl scalar is fixed by the density contrast, \(\Psi_2=-\tfrac{4\pi G}{3}(\bar\rho-\rho)\), so the Weyl-to-Ricci conversion is density homogenization and can proceed continuously; no shell is compulsory, and the zero-width null surrogate carries Barrabès–Israel stress only in the thin limit. But a geodesic, exactly shear-free four-dimensional perfect fluid cannot carry that relaxation: it requires an effective transverse stress \(\Pi=p_r-p_t=-D\), the density contrast.
+**Known:** The local timelike dust–\(\Lambda\) junction closes cleanly. The simplest direct stationary null soldering matches intrinsically but leaves transverse curvature — a jump equal to the child-side work density projected from volume to area. The spherical Weyl scalar is fixed by the density contrast, \(\Psi_2=-\tfrac{4\pi G}{3}(\bar\rho-\rho)\), so the Weyl-to-Ricci conversion is density homogenization and can proceed continuously; no shell is compulsory, and the zero-width null surrogate carries Barrabès–Israel stress only in the thin limit. But a geodesic, exactly shear-free four-dimensional perfect fluid cannot carry that relaxation: it requires an effective transverse stress \(\Pi=p_r-p_t=-\tfrac12 D\), half the density contrast — the shear-free identity \(8\pi G\,\Pi=3\Psi_2\), whose Weyl field dilutes at the conformal weight \(a^{-2}\). *(This revises an earlier \(\Pi=-D\), \(a^{-3}\) reading that omitted the anisotropic term in the conservation identity; see the shear-free Weyl–stress note. Cross-check with Codex in progress.)*
 
-**Missing:** A 5D or conformal source that supplies \(\Pi=-D\) without attaching it to an otherwise discontinuous metric, with integrated pressure matching the transverse junction work.
+**Missing:** A 5D or conformal source that supplies \(\Pi=-\tfrac12 D\) without attaching it to an otherwise discontinuous metric, with integrated pressure matching the transverse junction work.
 
-**Closure test:** Compute the completed throat's Einstein tensor and junction data; identify the matter or geometric source of \(\Pi=-D\); test conservation, energy conditions, perturbative stability, and the thin-throat limit.
+**Closure test:** Compute the completed throat's Einstein tensor and junction data; identify the matter or geometric source of \(\Pi=-\tfrac12 D\); test conservation, energy conditions, perturbative stability, and the thin-throat limit.
 
 ### Q4. What is the horizon and clock map?
 
 **Known:** GD1 assigns time evolution to Alice's proper time \(\tau\), Bob's trajectory label \(r(\tau)\), and the reciprocal scale \(a(\tau)=1/r(\tau)\); Alice's probe positions are independently labeled by \((R,\theta,\phi)\). In the 2D dilaton reduction the horizon map takes a compact form — the two-branch relation \(x_A x_B=1\) between Bob's exterior dilaton \(x_B=r\) and Alice's interior scale \(x_A=a\), the reciprocal read as a correspondence between two reduced theories rather than a symmetry of one field.
 
-**Missing:** The global characteristic maps and the synchronization between Bob's exterior time and Alice's proper time, from one parent geometry — and, concretely, whether the two-branch correspondence maps the reduced field equations, the Misner–Sharp mass, and the matter terms between branches with a residual equal to the transverse stress \(\Pi=-D\) of Q3.
+**Missing:** The global characteristic maps and the synchronization between Bob's exterior time and Alice's proper time, from one parent geometry — and, concretely, whether the two-branch correspondence maps the reduced field equations, the Misner–Sharp mass, and the matter terms between branches with a residual equal to the transverse stress \(\Pi=-\tfrac12 D\) of Q3.
 
 **Closure test:** Produce both characteristic maps from the throat metric, preserve null incidence and causal ordering, derive the child slicing and radial normalization, and recover the reconstructed event-horizon history without feeding the observed \(H_A(a)\) back in. Closing the two-branch map would unify the scale-field, Weyl-relaxation, and dilaton results into one construction.
 
@@ -212,7 +212,7 @@ Q7+Q8+Q9+Q10
 
 Questions 11–14 test the construction's generality and reach; Q16 sits under Q10 as the galaxy-sector distinguishing-observable question. They matter, but they cannot repair a missing throat geometry. With Q1 closed, the immediate mathematical frontier is narrow: derive the exchange symmetry (Q15) and the throat junction (Q2, Q3) from one 5D parent–child construction.
 
-The current sharp target within Q2–Q4 is the **two-branch horizon map**: whether the reciprocal \(x_A x_B=1\) maps the reduced field equations and supplies the transverse stress \(\Pi=-D\) (Q3), together with the 5D source of that stress (Q2). On the observational side, Q16's coefficient-independent ratio prediction is pre-registered and awaits high-\(z\) data.
+The current sharp target within Q2–Q4 is the **two-branch horizon map**: whether the reciprocal \(x_A x_B=1\) maps the reduced field equations and supplies the transverse stress \(\Pi=-\tfrac12 D\) (Q3), together with the 5D source of that stress (Q2). On the observational side, Q16's coefficient-independent ratio prediction is pre-registered and awaits high-\(z\) data.
 
 ---
 

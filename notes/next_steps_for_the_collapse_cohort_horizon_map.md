@@ -298,24 +298,27 @@ Resume the calculation in this order:
 
 1. **Audit prior work — completed.** See [Horizon-Map Equation and Notation Audit](note.html?src=horizon_map_equation_and_notation_audit). It separates the two child null branches, derives \(\Phi'=J_H/(2V')\), and shows that shell homogeneity alone does not fix \(\Omega_\Sigma\).
 2. **Select the benchmark — completed.** Use a broad compensated \(\Lambda\)LTB overdensity inside a flat dust–\(\Lambda\) FLRW parent, with \(v_H=t_P\). See [Selecting the Parent Collapse Benchmark](note.html?src=collapse_benchmark_selection).
-3. **Write the two null embeddings.** Parameterize the parent event horizon and child particle-horizon history without joining their surrounding metrics.
-4. **Derive Equation (8).** Pull back their angular metrics and use the crossing dynamics to determine \(\Omega_\Sigma\).
-5. **Derive \(\Phi'\).** Use normalized horizon evolution and verify the result independently through optical frequency transfer.
+3. **Write and close the two null embeddings — completed.** See [The Collapse-to-Child Boundary System](note.html?src=collapse_to_child_boundary_system). The two embeddings reduce the apparent freedom to one cohort lapse; the same-clock identification gives \(\Phi(t_P)=\eta_C(t_P-t_{\rm form})\), optics supplies the same normalization, and \(\Omega_\Sigma=a\Phi/R_{\rm BH}\).
+4. **Test the shell-clock constraint — first benchmark constructed; full-history verdict open.** See [The Shell Clock in a Compensated \(\Lambda\)LTB Collapse](note.html?src=shell_clock_benchmark_compensated_ltb). The published profile, core mass, trapping history, and \(\Lambda_P\)-selected bound shell have been reconstructed. Regular formation gives the required cubic power, while the marginal de Sitter shell conditionally gives \(H_{\Lambda,C}=\sqrt3H_{\Lambda,P}\). The source supplies a trapping horizon rather than the global event horizon, so the intermediate event-horizon history remains the numerical residual; substituting the trapping horizon would test the wrong surface.
+5. **Compute the optical transfer.** Solve the parent null-coordinate integrating factor and verify the mapped frequencies across the full formation history.
 6. **Check the asymptotes.** Test formation, stationary-horizon, and child de Sitter limits separately.
 7. **Extend to the cohort neighborhood.** Only then calculate shell ordering, Weyl relaxation, effective stress, and dimensional sufficiency.
 8. **Write the result as a calculation note.** Separate exact results, CSBHI identifications, and unresolved inputs. Do not promote a calibrated correspondence into a derivation.
 
-The first concrete question for the next step is:
+The first concrete question for the next step is now:
 
 \[
 \boxed{
-\text{What equations constrain }\Phi(t_P),\ J_H(t_P),
-\text{ and }\Omega_\Sigma(t_P)\text{ on the two null embeddings?}
+\text{Does one regular compensated }\Lambda\text{LTB collapse satisfy}
+\quad
+\frac{m_H(t_P)}{M_f}
+=
+\left[\frac{\eta_C(t_P-t_{\rm form})}{\eta_\infty}\right]^3?
 }
 \tag{14}
 \]
 
-The selected \(\Lambda\)LTB geometry supplies the parent clock and horizon generator. Step three must write its embedding beside the child particle-horizon embedding without prematurely imposing an isometric junction.
+The selected \(\Lambda\)LTB geometry supplies the parent clock, horizon generator, and swept mass history. Step four tests that history against the child clock fixed in Step three without fitting either side to present observations.
 
 ---
 
