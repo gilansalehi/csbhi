@@ -120,14 +120,6 @@ data-wrapper[data-home-section] {
   text-transform: uppercase;
 }
 
-.review-packet__guide {
-  margin-top: 1.5rem;
-}
-
-.review-packet__guide li + li {
-  margin-top: 0.45rem;
-}
-
 .review-card {
   position: relative;
   margin-block: clamp(3rem, 8vw, 6rem);

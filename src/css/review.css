@@ -13,8 +13,7 @@
   }
 
   .review-packet__eyebrow,
-  .review-packet__status,
-  .review-packet__path-time {
+  .review-packet__status {
     color: var(--muted);
     font-family: var(--mono);
     font-size: 0.76rem;
@@ -34,70 +33,5 @@
 
   .review-packet__status {
     margin-top: 1.5rem;
-  }
-
-  .review-packet__prediction {
-    margin-block: 2rem;
-    padding: clamp(1rem, 4vw, 1.75rem);
-  }
-
-  .review-packet__equation {
-    font-size: clamp(1.05rem, 3.5vw, 1.45rem);
-    text-align: center;
-  }
-
-  .review-packet__table-wrap {
-    overflow-x: auto;
-  }
-
-  .review-packet table {
-    min-width: 46rem;
-  }
-
-  .review-packet tbody th {
-    width: 9rem;
-    font-family: var(--mono);
-    font-size: 0.78rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  .review-packet__paths {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1px;
-    margin-block: 1.5rem;
-    border: var(--border);
-    background: color-mix(in srgb, var(--text) 18%, transparent);
-  }
-
-  .review-packet__paths > section {
-    padding: clamp(1rem, 3vw, 1.5rem);
-    background: var(--bg);
-  }
-
-  .review-packet__paths h3 {
-    margin-top: 0.35rem;
-  }
-
-  .review-packet__break {
-    margin-block: clamp(3rem, 8vw, 6rem);
-    padding: clamp(1.25rem, 5vw, 2.5rem);
-    border: 2px solid currentColor;
-  }
-
-  .review-packet__break h2 {
-    margin-top: 0.2rem;
-    font-size: clamp(2rem, 7vw, 4rem);
-  }
-
-  .review-packet__break li + li {
-    margin-top: 0.65rem;
-  }
-
-  @media (max-width: 44rem) {
-    .review-packet__paths {
-      grid-template-columns: 1fr;
-    }
   }
 }

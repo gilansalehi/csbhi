@@ -57,9 +57,9 @@ const DOCUMENTS = {
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
     note: 'evolving_g_dagger_derivation',
     prerequisite: 'involution',
-    meta: { review: 'falsifiable prediction · pre-registered' },
+    meta: { review: 'observational prediction · stated in advance' },
     summaries: {
-      review: 'Symmetry fixes the square-root mixing law; identifying its global scale with the contemporaneous cosmological horizon gives \\(g_\\dagger(z)/g_\\dagger(0)=H(z)/H_0\\). MOND predicts a flat ratio; this predicts a rising one, with no free parameters. First intermediate-redshift data point the predicted way.',
+      review: 'Symmetry fixes the square-root mixing law; identifying its global scale with the contemporaneous cosmological horizon gives \\(g_\\dagger(z)/g_\\dagger(0)=H(z)/H_0\\). A fixed scale predicts a flat ratio; this correspondence predicts a rising one. Current intermediate-redshift evidence is compatible with that rise.',
     },
   },
   note1: {
@@ -161,8 +161,8 @@ export const COLLECTIONS = {
   review: {
     headingId: 'review-packet-title',
     title: 'Documents in the Packet',
-    summary: 'Five documents, ordered from the foundational proposal to the falsifiable prediction.',
-    documentIds: ['gd1', 'ri1', 'involution', 'weylRelaxation', 'evolvingGDagger'],
+    summary: 'Four documents, ordered from the foundational proposal to the observational prediction.',
+    documentIds: ['gd1', 'ri1', 'involution', 'evolvingGDagger'],
   },
   publications: {
     headingId: 'publications-title',
