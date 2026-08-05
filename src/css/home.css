@@ -121,13 +121,9 @@ data-wrapper[data-home-section] {
 }
 
 .review-card {
-  position: relative;
-  margin-block: clamp(3rem, 8vw, 6rem);
-  padding: clamp(1.25rem, 5vw, 2.5rem);
-  border: 2px solid currentColor;
+  margin-block: clamp(2rem, 5vw, 3.5rem);
 }
 
-.review-card__eyebrow,
 .review-card__meta {
   color: var(--muted);
   font-family: var(--mono);
@@ -137,27 +133,9 @@ data-wrapper[data-home-section] {
   text-transform: uppercase;
 }
 
-.review-card h2 {
-  margin-bottom: 0.25rem;
-}
-
-.review-card h3 {
-  max-width: 30ch;
-  margin-top: 0;
-  font-size: clamp(1.3rem, 4vw, 2rem);
-}
-
 .review-card__action {
   display: inline-block;
-  padding-bottom: 0.2rem;
-  border-bottom: 2px solid currentColor;
   font-weight: 700;
-  text-decoration: none;
-}
-
-.review-card__action:hover,
-.review-card__action:focus-visible {
-  border-bottom-style: dashed;
 }
 
 .smallcaps {
