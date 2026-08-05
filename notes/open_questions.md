@@ -31,7 +31,8 @@ The present project supplies:
 - the local timelike FLRW–Kottler matching conditions;
 - the intrinsic and transverse data of the simplest stationary null match;
 - the conversion of the transverse jump into an apparent-horizon work term; and
-- the exact event-horizon kinematics that a parent-side boundary history must reproduce.
+- the exact event-horizon kinematics that a parent-side boundary history must reproduce; and
+- the spherical Weyl–density-contrast identity, and the effective transverse stress a smooth shear-free throat requires.
 
 These results are conditional on the specified interior and do not yet constitute a complete parent–child spacetime.
 
@@ -47,27 +48,27 @@ These results are conditional on the specified interior and do not yet constitut
 
 ### Q2. What is the full 5D throat geometry?
 
-**Known:** The vacuum-dominated child interior has the standard 5D de Sitter embedding and an exact Painlevé–Gullstrand flow in areal-radius coordinates.
+**Known:** The vacuum-dominated child interior has the standard 5D de Sitter embedding and an exact Painlevé–Gullstrand flow in areal-radius coordinates. The spherical sector reduces exactly to a two-dimensional dilaton gravity, with the areal radius as dilaton — an economical language for the throat — and Campbell–Magaard guarantees local 5D Ricci-flat embeddings of the exterior and interior separately.
 
-**Missing:** A metric extending that asymptotic result through the matter and radiation eras while also producing the parent-side geometry.
+**Missing:** A single metric that joins both branches: extending the asymptotic result through the matter and radiation eras, producing the parent-side geometry, and supplying the transverse stress \(\Pi=-D\) that Q3 requires.
 
-**Closure test:** Exhibit a higher-dimensional metric and its relevant four-dimensional slices or projections; calculate their induced geometries; and show that they recover Bob's exterior, Alice's reciprocal interior, and the correct de Sitter limit.
+**Closure test:** Exhibit a higher-dimensional metric and its relevant four-dimensional slices or projections; calculate their induced geometries; and show that they recover Bob's exterior, Alice's reciprocal interior, the correct de Sitter limit, and the required transverse stress.
 
 ### Q3. What supports the parent–child transition?
 
-**Known:** The local timelike dust–\(\Lambda\) junction closes cleanly. The simplest direct stationary null soldering matches intrinsically but leaves transverse curvature. That jump equals the child-side work density projected from volume to area.
+**Known:** The local timelike dust–\(\Lambda\) junction closes cleanly. The simplest direct stationary null soldering matches intrinsically but leaves transverse curvature — a jump equal to the child-side work density projected from volume to area. The spherical Weyl scalar is fixed by the density contrast, \(\Psi_2=-\tfrac{4\pi G}{3}(\bar\rho-\rho)\), so the Weyl-to-Ricci conversion is density homogenization and can proceed continuously; no shell is compulsory, and the zero-width null surrogate carries Barrabès–Israel stress only in the thin limit. But a geodesic, exactly shear-free four-dimensional perfect fluid cannot carry that relaxation: it requires an effective transverse stress \(\Pi=p_r-p_t=-D\), the density contrast.
 
-**Missing:** The finite geometry, stress-energy, or higher-dimensional curvature that carries this work without attaching it to an otherwise discontinuous metric.
+**Missing:** A 5D or conformal source that supplies \(\Pi=-D\) without attaching it to an otherwise discontinuous metric, with integrated pressure matching the transverse junction work.
 
-**Closure test:** Compute the completed throat's Einstein tensor and junction data; identify its matter or geometric source; test conservation, energy conditions, perturbative stability, and the thin-throat limit.
+**Closure test:** Compute the completed throat's Einstein tensor and junction data; identify the matter or geometric source of \(\Pi=-D\); test conservation, energy conditions, perturbative stability, and the thin-throat limit.
 
 ### Q4. What is the horizon and clock map?
 
-**Known:** GD1 assigns time evolution to Alice's proper time \(\tau\), Bob's trajectory label \(r(\tau)\), and the reciprocal scale \(a(\tau)=1/r(\tau)\). Alice's probe positions are independently labeled by \((R,\theta,\phi)\). No conversion from horizon-crossing time into comoving radius is required.
+**Known:** GD1 assigns time evolution to Alice's proper time \(\tau\), Bob's trajectory label \(r(\tau)\), and the reciprocal scale \(a(\tau)=1/r(\tau)\); Alice's probe positions are independently labeled by \((R,\theta,\phi)\). In the 2D dilaton reduction the horizon map takes a compact form — the two-branch relation \(x_A x_B=1\) between Bob's exterior dilaton \(x_B=r\) and Alice's interior scale \(x_A=a\), the reciprocal read as a correspondence between two reduced theories rather than a symmetry of one field.
 
-**Missing:** A derivation of \(B(\tau)\), the global maps \(v_A(v_H)\) and \(u_A(v_H)\), and the synchronization between Bob's exterior time and Alice's proper time from one parent geometry.
+**Missing:** The global characteristic maps and the synchronization between Bob's exterior time and Alice's proper time, from one parent geometry — and, concretely, whether the two-branch correspondence maps the reduced field equations, the Misner–Sharp mass, and the matter terms between branches with a residual equal to the transverse stress \(\Pi=-D\) of Q3.
 
-**Closure test:** Produce both characteristic maps from the throat metric, preserve null incidence and causal ordering, derive the child slicing and radial normalization, and recover the reconstructed event-horizon history without feeding the observed \(H_A(a)\) back into the construction.
+**Closure test:** Produce both characteristic maps from the throat metric, preserve null incidence and causal ordering, derive the child slicing and radial normalization, and recover the reconstructed event-horizon history without feeding the observed \(H_A(a)\) back in. Closing the two-branch map would unify the scale-field, Weyl-relaxation, and dilaton results into one construction.
 
 ---
 
@@ -143,23 +144,23 @@ These results are conditional on the specified interior and do not yet constitut
 
 ### Q13. Can the galaxy-scale law be derived dynamically?
 
-**Known:** Scale-free self-dual mixing selects the conditional relation
+**Known:** The square-root *form* is a conditional theorem — self-duality, homogeneity, and exact flat-curve scaling force
 
 \[
-g_{\rm mix}\sim\sqrt{g_NcH},
+g_{\rm mix}=\kappa\sqrt{g_N\,A}
 \]
 
-which has the form needed for MOND-like phenomenology and the baryonic Tully–Fisher relation.
+given an unspecified global acceleration scale \(A\), the form needed for MOND-like phenomenology and the baryonic Tully–Fisher relation. Identifying \(A=cH\) is a *correspondence* — the galactic analogue of \(a=1/r\) — not a derivation.
 
-**Missing:** A covariant field equation or throat-response law producing that scaling, including lensing, clusters, and relativistic systems. (A newly surfaced sub-question — whether the selected scale is the instantaneous \(cH_A(z)\) or the fixed \(c\sqrt{\Lambda/3}\) — is recorded as Q16.)
+**Missing:** A covariant field equation or throat-response law producing that scaling, including lensing, clusters, and relativistic systems; and a derivation of the horizon argument of \(A\) — whether the instantaneous \(cH_A(z)\) or the fixed \(c\sqrt{\Lambda/3}\), recorded as Q16.
 
 **Closure test:** Derive the weak-field equations from the completed geometry and fit rotation curves, lensing, cluster dynamics, and cosmological structure without adding an unconstrained interpolation law.
 
 ### Q14. What becomes of horizon entropy and information?
 
-**Known:** The transverse work term has an exact horizon-thermodynamic representation, and parent horizon area laws offer a candidate dynamical input.
+**Known:** The transverse work term has an exact horizon-thermodynamic representation, and parent horizon area laws offer a candidate dynamical input. In the idealized matching a local↔global horizon-entropy identity holds: the parent black-hole horizon entropy equals the child de Sitter horizon entropy, \(S_{\rm BH}=S_{\rm dS}=\pi R_S^2/G\) at \(\Lambda=3/R_S^2\), with the reciprocal exchanging the two ends as a self-duality — entropy invariant, temperature not (their ratio is two).
 
-**Missing:** The microscopic interpretation of throat entropy, the mapping of parent information into child degrees of freedom, and compatibility with unitary black-hole evolution.
+**Missing:** The microscopic interpretation of throat entropy, the mapping of parent information into child degrees of freedom, and compatibility with unitary black-hole evolution. A modular/Cardy reading of the entropy identity remains conjectural.
 
 **Closure test:** Derive the entropy and information map from the same degrees of freedom that support the throat, rather than adding thermodynamics as an analogy after the geometry is chosen.
 
@@ -177,11 +178,19 @@ which has the form needed for MOND-like phenomenology and the baryonic Tully–F
 
 ### Q16. Does the galaxy acceleration scale evolve?
 
-**Known:** If GD's galaxy law is \(g_{\rm mix}\sim\sqrt{g_N\,g_\dagger}\) with \(g_\dagger\) the horizon acceleration, then \(g_\dagger=cH_A\). Whether this is the **instantaneous** \(cH_A(z)\) — so \(g_\dagger\) evolves (the baryonic Tully–Fisher zero-point sliding as \(-\log E(z)\), the radial-acceleration-relation knee at \(cH_A(z)\), distinct from both MOND and \(\Lambda\)CDM) — or the **fixed** \(c\sqrt{\Lambda/3}\) — so \(g_\dagger\) is constant and GD reduces to standard MOND on galaxy scales — is unresolved. The instantaneous reading is more natural (a galaxy should couple to its own contemporaneous horizon) but is not forced. Development and falsification spec: [*The Evolving Galactic Acceleration Scale and its High-Redshift Test*](note.html?src=evolving_acceleration_scale_high_z_test).
+**Known:** The galaxy law is \(g_{\rm mix}=\sqrt{g_N\,g_\dagger}\) with \(g_\dagger\) a global acceleration scale. Its evolution is the coefficient-independent ratio
 
-**Missing:** A derivation of which horizon the galaxy-scale coupling references, from the GD III mixing law rather than by assertion. This decides whether the galaxy sector distinguishes GD from MOND at all, and it gates the distinguishing-observable half of Q10.
+\[
+\frac{g_\dagger(z)}{g_\dagger(0)}=E(z),
+\]
+
+which separates CSBHI (rising) from MOND (flat) independently of the undetermined normalization. First data support the rising reading: MUSE-DARK III measures \(g_\dagger(z\!\sim\!1)=2.38\times10^{-10}\,\mathrm{m/s^2}\), rising from \(1.2\) locally — favoring evolution over constant-\(g_\dagger\) MOND at \(\sim2\sigma\) and matching the parameter-free \(E(1)=1.76\). ΛCDM with feedback can also produce a rise, so evolution alone does not single out CSBHI. The prediction is pre-registered as the packet's observational wager. Development and falsification spec: [*The Evolving Galactic Acceleration-Scale Correspondence*](note.html?src=evolving_g_dagger_derivation).
+
+**Missing:** Whether the completed throat equations *select* the contemporaneous apparent horizon — giving evolution — over the fixed de Sitter horizon, which would leave \(g_\dagger\) constant and indistinguishable from MOND; and whether they fix the normalization. This is a modeling choice the data currently adjudicates, and it gates the distinguishing-observable half of Q10.
 
 **Closure test:** Derive the horizon argument of \(g_\dagger\) from the throat-response law; independently, measure the high-\(z\) baryonic Tully–Fisher zero-point at fixed redshift to the \(<0.15\) dex precision the prediction requires (current data fall ~3× short).
+
+**Update (2026-08).** Sharpened, one over-reach retracted. An argument that the evolving reading is *forced* was found circular and withdrawn. The honest structure: the square-root form is a theorem; the scale identification is a correspondence, not a derivation. The robust output is the **coefficient-independent ratio** \(g_\dagger(z)/g_\dagger(0)=E(z)\) (\(\kappa\) cancels), separating CSBHI (rising) from MOND (flat). First tentative data — MUSE-DARK III measures \(g_\dagger(z\!\sim\!1)=2.38\times10^{-10}\), rising from \(1.2\) locally — favor the rising reading over constant MOND at ~2σ and match the parameter-free \(E(1)=1.76\); ΛCDM-with-feedback can also produce a rise, so evolution alone does not select CSBHI. The prediction is now **pre-registered** (packet Prediction I). Still open: whether the completed throat equations *select* the apparent horizon (evolving) over the de Sitter horizon (fixed) and fix \(\kappa\). See [*The Evolving Galactic Acceleration-Scale Correspondence*](note.html?src=evolving_g_dagger_derivation).
 
 ---
 
@@ -202,6 +211,8 @@ Q7+Q8+Q9+Q10
 \]
 
 Questions 11–14 test the construction's generality and reach; Q16 sits under Q10 as the galaxy-sector distinguishing-observable question. They matter, but they cannot repair a missing throat geometry. With Q1 closed, the immediate mathematical frontier is narrow: derive the exchange symmetry (Q15) and the throat junction (Q2, Q3) from one 5D parent–child construction.
+
+The current sharp target within Q2–Q4 is the **two-branch horizon map**: whether the reciprocal \(x_A x_B=1\) maps the reduced field equations and supplies the transverse stress \(\Pi=-D\) (Q3), together with the 5D source of that stress (Q2). On the observational side, Q16's coefficient-independent ratio prediction is pre-registered and awaits high-\(z\) data.
 
 ---
 
