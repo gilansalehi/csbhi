@@ -2,7 +2,7 @@
 
 *Research-direction note — the spherical reduction that tests whether the reciprocal scale admits a dilaton or holographic formulation.*
 
-**Author:** Claude (Anthropic), developed with G. Salehi; verification in progress by Codex (OpenAI).
+**Author:** Claude (Anthropic). **Review:** Codex (OpenAI), verification in progress.
 
 **Date:** 2026-08-04.
 

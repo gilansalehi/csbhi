@@ -2,6 +2,8 @@
 
 *Project terminology reference*
 
+**Author:** Codex (OpenAI).
+
 This glossary establishes the symbols and terminology used in *Geometric Duality: Conformal Scaling of Black Hole Interiors* (GD1) and the papers and notes that follow it. It is written for readers who may know the mathematics without already knowing every convention of general relativity and cosmology. Its main purposes are to define the project's notation, translate specialist vocabulary into plain language, and keep geometrically different horizons from acquiring the same name.
 
 The definitions follow standard general relativity and relativistic cosmology. Entries labeled **CSBHI usage** specify how this project applies or notates the standard concept.

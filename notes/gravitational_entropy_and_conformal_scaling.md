@@ -2,7 +2,7 @@
 
 *Draft proposal note — a candidate identification, with its scope, its self-dual-minimum consequence, and its falsifying test.*
 
-**Author:** Claude (Anthropic), developed with G. Salehi.
+**Author:** Claude (Anthropic).
 
 **Date:** 2026-08-04.
 
@@ -161,7 +161,7 @@ Accumulated during review; not yet integrated. Eq (1) and §§1–2 are challeng
 
 - **[obs 2, revised] The "background Weyl \(=0\), nothing to run" objection was too narrow.** It ignored the local\(\leftrightarrow\)global exchange that is the project's core. The entropy content is carried not by the interior background Weyl but by the reciprocal map's exchange of the **local** parent black-hole horizon with the **global** child de Sitter horizon.
 
-- **[corrected spine — G. Salehi] The local\(\leftrightarrow\)global horizon-entropy identity replaces \(S\propto a^2\).** With the idealized matching \(\Lambda=3/R_S^2\), the child de Sitter horizon radius is \(\sqrt{3/\Lambda}=R_S\) — the *same size as the parent Schwarzschild horizon*. Hence
+- **[corrected spine] The local\(\leftrightarrow\)global horizon-entropy identity replaces \(S\propto a^2\).** With the idealized matching \(\Lambda=3/R_S^2\), the child de Sitter horizon radius is \(\sqrt{3/\Lambda}=R_S\) — the *same size as the parent Schwarzschild horizon*. Hence
 \[
 S_{\rm BH}(\text{parent, local})=\frac{4\pi R_S^2}{4\ell_p^2}=\frac{\pi R_S^2}{\ell_p^2}=\frac{3\pi}{\Lambda\ell_p^2}=S_{\rm dS}(\text{child, global}).
 \]

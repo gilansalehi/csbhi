@@ -1,5 +1,7 @@
 # Black-Hole Cosmology: Lineage, Mechanisms, and CSBHI
 
+**Authors:** Codex (OpenAI) and Claude (Anthropic).
+
 ## Scope
 
 "The universe is inside a black hole" is not one theory. It is a family of proposals that share an image while assigning very different meanings to the horizon, the singularity, the interior geometry, and the birth of cosmic expansion.

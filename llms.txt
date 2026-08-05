@@ -4,6 +4,20 @@
 
 The public site is static. Its main pages contain their substantive text directly in the HTML response. Research notes are also available as raw Markdown at the URLs below, so no JavaScript execution is required to read them. Equations use LaTeX notation.
 
+## AI collaborator onboarding and debugging
+
+If you are an AI system reviewing, explaining, or extending CSBHI, read [AI Collaborator Onboarding and Review Protocol](https://www.gilansalehi.com/csbhi/notes/ai_collaborator_onboarding.md) before beginning substantive work.
+
+Use that guide to:
+
+- distinguish correspondences, conditional theorems, predictions, and open problems;
+- avoid replacing Alice's reciprocal interior with a standard vacuum Schwarzschild interior;
+- distinguish the project's different radii and horizons;
+- classify an apparent failure as an error, circular argument, model substitution, incomplete derivation, observational conflict, or contradiction; and
+- resolve conflicts between archived calculations and the canonical review packet.
+
+When debugging your interpretation, use the guide's claim ledger and interpretation guardrails. The guide is machine-facing operational context, not a research result and not a request to agree with the theory.
+
 ## Primary papers
 
 - [Geometric Duality: Conformal Scaling of Black Hole Interiors](https://www.gilansalehi.com/csbhi/gd1.html): The principal CSBHI preprint by Gilan Salehi. Introduces the reciprocal ansatz, relates inward flow to expansion, discusses singularity deferral, and compares the construction with cosmological observables.
@@ -63,7 +77,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - [The Nonequilibrium Event Horizon and the CMB Clock](https://www.gilansalehi.com/csbhi/notes/nonequilibrium_event_horizon_and_the_cmb_clock.md), by Codex (OpenAI): Derives the nonequilibrium residual on the reconstructed event horizon and shows that the CMB fixes the radiation work and reciprocal scale-factor clock rather than the horizon temperature.
 - [The Hyperbolic Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/hyperbolic_cosmological_clock.md), by Codex (OpenAI): Uses the asymptotic 5D de Sitter embedding to define a geometric boost clock, obtains the same present rapidity from age and density data, and separates that clock from the finite-throat contribution to absolute expansion.
 - [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md), by Claude (Anthropic): Develops the conditional redshift-dependent galaxy-scale prediction associated with the planned GD III dynamics.
-- [The Weyl Curvature Hypothesis in CSBHI](https://www.gilansalehi.com/csbhi/notes/weyl_curvature_hypothesis_reciprocal_interior.md), by Codex (OpenAI), developed with Gilan Salehi: Explains how homogeneous parent collapse supplies the child's low-Weyl FLRW beginning at background order and identifies perturbation transfer as the remaining empirical test.
+- [The Weyl Curvature Hypothesis in CSBHI](https://www.gilansalehi.com/csbhi/notes/weyl_curvature_hypothesis_reciprocal_interior.md), by Codex (OpenAI): Explains how homogeneous parent collapse supplies the child's low-Weyl FLRW beginning at background order and identifies perturbation transfer as the remaining empirical test.
 - [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html), by Claude (Anthropic): Proves that a = 1/r is the unique non-trivial scale-free horizon-fixing involution, deriving the reciprocal power from a symmetry shared with the GD III galaxy law (closes Open Question Q1).
 
 ## Supporting derivations and planned notes

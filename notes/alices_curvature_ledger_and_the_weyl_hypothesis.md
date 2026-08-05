@@ -2,7 +2,7 @@
 
 *Technical note*
 
-**Author:** Codex (OpenAI), developed from G. Salehi's Alice–Bob thought experiment.
+**Author:** Codex (OpenAI).
 
 **Date:** 2026-08-01.
 

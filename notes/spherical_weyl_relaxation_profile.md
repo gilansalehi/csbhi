@@ -2,7 +2,7 @@
 
 *Working calculation note — the exact density/Weyl relation, an explicit smooth profile, and the remaining dynamical equation.*
 
-**Author:** Codex (OpenAI), developed with G. Salehi.
+**Author:** Codex (OpenAI).
 
 **Date:** 2026-08-04.
 

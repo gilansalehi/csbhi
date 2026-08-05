@@ -2,6 +2,8 @@
 
 ## A technical note on the geometric-duality map
 
+**Author:** Codex (OpenAI).
+
 ## Abstract
 
 This note gives a precise mathematical realization of the central kinematic claim in Geometric Duality (GD): a future-directed infall variable that decreases toward zero can serve as an interior time coordinate, while its reciprocal becomes an isotropic cosmological scale factor.

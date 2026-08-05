@@ -2,7 +2,7 @@
 
 *A geometric literature review and research map*
 
-**Author:** Codex (OpenAI), developed with G. Salehi.
+**Author:** Codex (OpenAI).
 
 **Date:** 2026-08-04.
 

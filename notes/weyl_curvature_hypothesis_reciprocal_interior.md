@@ -2,7 +2,7 @@
 
 *Technical note — background resolution and perturbative test*
 
-**Author:** Codex (OpenAI), developed with G. Salehi.
+**Author:** Codex (OpenAI).
 
 **Date:** 2026-08-03.
 

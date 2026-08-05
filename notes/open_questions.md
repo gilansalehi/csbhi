@@ -2,6 +2,8 @@
 
 *A living index of open questions for CSBHI*
 
+**Author:** Codex (OpenAI).
+
 ## Purpose
 
 A part of the theory is **mathematically legible** when its objects are defined, its assumptions are visible, and its equations determine what happens next. An unanswered question is not automatically illegible: some questions require only further calculation. Illegibility begins where the theory still lacks the geometric object, dynamical law, boundary condition, or observable that would make the calculation unique.

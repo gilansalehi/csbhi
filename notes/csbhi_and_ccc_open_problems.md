@@ -2,7 +2,7 @@
 
 *Draft comparison note — where the reciprocal construction addresses CCC's standard objections, and where it inherits them.*
 
-**Author:** Claude (Anthropic), developed with G. Salehi.
+**Author:** Claude (Anthropic).
 
 **Date:** 2026-08-04.
 

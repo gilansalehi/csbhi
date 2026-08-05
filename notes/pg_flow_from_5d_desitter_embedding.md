@@ -1,5 +1,7 @@
 # Painlevé–Gullstrand Flow from the 5D de Sitter Embedding
 
+**Author:** Codex (OpenAI).
+
 ## Notation
 
 This note follows GD1's canonical convention: \(r\) is Bob's horizon-normalized infall coordinate, while \(R\) is Alice's comoving radial label and \(\bar R=aR\) is her areal radius. Bob's \(r\) does not enter the calculation below.

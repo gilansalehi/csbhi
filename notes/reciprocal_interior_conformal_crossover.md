@@ -2,7 +2,7 @@
 
 *Literature comparison — the three-region causal decomposition and its precedents.*
 
-**Author:** Claude (Anthropic), developed with G. Salehi, from a decomposition sharpened with Codex (OpenAI).
+**Author:** Claude (Anthropic). **Review:** Codex (OpenAI), including refinement of the decomposition.
 
 **Date:** 2026-08-04.
 

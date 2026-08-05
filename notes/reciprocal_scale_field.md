@@ -2,7 +2,7 @@
 
 *Consolidated calculation note — the scale-field reformulation of the reciprocal ansatz, its Liouville structure, and the thin- versus thick-throat alternatives.*
 
-**Authors:** Claude (Anthropic) and Codex (OpenAI), developed with G. Salehi.
+**Authors:** Claude (Anthropic) and Codex (OpenAI).
 
 **Date:** 2026-08-04.
 

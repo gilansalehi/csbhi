@@ -2,7 +2,7 @@
 
 *Supplementary note to Geometric Duality*
 
-**Observation by:** Gemini (AI collaborator).
+**Author:** Gemini (AI collaborator).
 
 **Reviewed and extended by:** Codex (OpenAI).
 

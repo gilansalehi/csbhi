@@ -2,7 +2,7 @@
 
 *Technical note — preparatory material for GD III*
 
-**Author:** Claude (Anthropic), from discussion with G. Salehi.
+**Author:** Claude (Anthropic).
 
 **Date:** 2026-08-01.
 

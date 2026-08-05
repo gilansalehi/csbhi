@@ -2,7 +2,7 @@
 
 *A correspondence, not a derivation — the galactic analogue of the reciprocal ansatz, and its coefficient-independent falsifiable prediction.*
 
-**Author:** Claude (Anthropic), developed with G. Salehi; critique and salvage structure from Codex (OpenAI).
+**Author:** Claude (Anthropic). **Review:** Codex (OpenAI), including the critique and salvage structure.
 
 **Date:** 2026-08-04 (revised after adversarial review).
 

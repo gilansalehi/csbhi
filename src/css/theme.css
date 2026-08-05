@@ -12,7 +12,7 @@
   --md: 1rem;
 
   --border: 1px solid currentColor;
-  --mono: "Courier New", Courier, monospace;
+  --mono: "Menlo", "Roboto Mono", "Consolas", monospace;
 
   --control-bg: var(--surface);
   --control-hover: color-mix(in srgb, var(--surface) 95%, currentColor);

@@ -1,12 +1,8 @@
 # GD Self-Dual Homogeneous Derivation of the Square-Root Law
 
-## Attribution
+**Author:** Codex (OpenAI).
 
-This note records a theorem-style derivation developed by the assistant from the user's recursive-throat self-duality intuition.
-
-The user supplied the central conceptual input: that a recursive black-hole cosmology should treat local and global sectors as two levels of the same throat structure.
-
-The assistant's contribution in this note is the mathematical derivation that turns that intuition into a functional-equation proof of the square-root law.
+This note turns the project's recursive-throat self-duality premise into a functional-equation proof of the square-root law.
 
 ---
 
@@ -289,4 +285,3 @@ The downstream open problem is now narrower:
 This result suggests that the square-root law is not an arbitrary MOND-like fit grafted onto GD. It is the natural mixed law selected by recursive throat self-duality once the local and global sectors are treated as two levels of one geometry.
 
 That may be the cleanest bridge yet between the strong metaphysical reading of GD and its galactic phenomenology.
-

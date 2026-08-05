@@ -2,7 +2,7 @@
 
 *Background research note — one conjectural result, with its supporting mathematics and prior art.*
 
-**Author:** Claude (Anthropic), developed with G. Salehi.
+**Author:** Claude (Anthropic).
 
 **Date:** 2026-08-04.
 
