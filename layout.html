@@ -10,14 +10,15 @@
         path: 'index.html#publications',
     });
 
+    const REVIEW_PACKET_LINK = Object.freeze({
+        id: 'review-packet',
+        name: 'Review Packet',
+        path: 'review.html',
+    });
+
     const PUBLICATION_LINKS = Object.freeze(catalogPublicationLinks);
 
     const PROJECT_RESOURCE_LINKS = Object.freeze([
-        {
-            id: 'review-packet',
-            name: 'Review Packet',
-            path: 'review.html',
-        },
         {
             id: 'open-problems',
             name: 'Progress & Open Problems',
@@ -123,6 +124,7 @@
         const originLink = decorateLinks([
             { id: 'origin', name: 'Origin', path: 'index.html' },
         ])[0];
+        const reviewPacketLink = decorateLinks([REVIEW_PACKET_LINK])[0];
         const publicationsLink = decorateLinks([PUBLICATIONS_LINK])[0];
         const publicationLinks = decorateLinks(PUBLICATION_LINKS);
         const projectResourceLinks = decorateLinks(PROJECT_RESOURCE_LINKS);
@@ -148,6 +150,9 @@
         return {
             originClass: originLink.class,
             originAriaCurrent: originLink.ariaCurrent,
+            reviewPacketClass: reviewPacketLink.class,
+            reviewPacketHref: reviewPacketLink.path,
+            reviewPacketAriaCurrent: reviewPacketLink.ariaCurrent,
             publicationsClass: publicationsLink.class,
             publicationsHref: publicationsLink.path,
             publicationsAriaCurrent: publicationsLink.ariaCurrent,
@@ -220,6 +225,14 @@
                     $class="originClass"
                     $aria-current="originAriaCurrent"
                     @click="closeMenu">Origin</a>
+            </li>
+
+            <li>
+                <a class="project-nav__link"
+                    $class="reviewPacketClass"
+                    $href="reviewPacketHref"
+                    $aria-current="reviewPacketAriaCurrent"
+                    @click="closeMenu">Review Packet</a>
             </li>
 
             <li>
