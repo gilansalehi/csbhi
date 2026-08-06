@@ -8,7 +8,7 @@
 
 **Prerequisites:** [The Collapse-to-Child Boundary System](note.html?src=collapse_to_child_boundary_system); [The Shell Clock in a Compensated ΛLTB Collapse](note.html?src=shell_clock_benchmark_compensated_ltb); [Optical Transfer Through a Matter-Filled Parent Collapse](note.html?src=optical_transfer_through_compensated_ltb_collapse).
 
-**Status:** Exact endpoint analysis conditional on the collapse-cohort correspondence. Formation regularity and the child reconstruction from a general parent mass-tail exponent are analytic. The numerical value of that exponent remains the global event-horizon calculation. Tiered **[E]** established asymptotics, **[C]** CSBHI correspondence, **[O]** parent null integration.
+**Status:** Exact endpoint analysis conditional on the collapse-cohort correspondence. Formation regularity and the child reconstruction from a general parent mass-tail exponent are analytic. The late stationary limit fixes that exponent conditionally; the intermediate event-horizon history remains numerical. Tiered **[E]** established asymptotics, **[N]** marginal-shell quadrature, **[C]** CSBHI correspondence, **[O]** parent null integration.
 
 **Notation:** [Glossary](note.html?src=cosmological_glossary). Set \(c=1\), retain \(G\), and define
 
@@ -216,19 +216,19 @@ The marginal parent shell has local instability rate
 \tag{18}
 \]
 
-Because its turning displacement scales as the square root of its distance from the marginal shell, its collapse-time inversion gives
+Because its turning displacement scales as the square root of its distance from the marginal shell, the one-way turning time contains \(-\ln(x_b-x)/(2\omega)\). The full collapse retraces the dwell and therefore gives
 
 \[
 x_b-x
 \propto
-e^{-2\sqrt3H_{\Lambda,P}t_P}.
+e^{-\sqrt3H_{\Lambda,P}t_P}.
 \tag{19}
 \]
 
 If the global event horizon crosses each near-marginal shell at a time differing from its collapse time only by a bounded amount, then
 
 \[
-\lambda=2\sqrt3H_{\Lambda,P}.
+\lambda=\sqrt3H_{\Lambda,P}.
 \tag{20}
 \]
 
@@ -236,16 +236,16 @@ Equations (17) and (20) would imply
 
 \[
 \boxed{
-H_{\Lambda,C}=2\sqrt3H_{\Lambda,P}
+H_{\Lambda,C}=\sqrt3H_{\Lambda,P}
 },
 \qquad
 \boxed{
-\Lambda_C=12\Lambda_P
+\Lambda_C=3\Lambda_P
 }.
 \tag{21}
 \]
 
-Only Equation (17) is structurally fixed by the shell clock. Equation (21) remains conditional until the global null generator supplies \(\lambda\).
+Only Equation (17) is structurally fixed by the shell clock. Direct quadrature verifies the complete-collapse coefficient in Equation (19). Equation (21) remains conditional on the event horizon approaching the final stationary radius with a bounded crossing-to-focusing interval; see [The Late Event-Horizon Tail](note.html?src=late_event_horizon_tail_compensated_ltblambda).
 
 ---
 
@@ -383,7 +383,7 @@ The endpoint structure is therefore consistent. The one decisive number is now i
 \tag{32}
 \]
 
-Computing Equation (32) from the global ΛLTB event horizon decides the conditional \(\Lambda_C/\Lambda_P\) coefficient and supplies the late boundary condition for the full-history shell-clock test.
+The late stationary limit now supplies Equation (32) conditionally as \(\lambda=\sqrt3H_{\Lambda,P}\). Integrating the global ΛLTB event horizon through the intermediate collapse remains necessary to test the complete shell-clock history rather than its endpoint alone.
 
 ---
 

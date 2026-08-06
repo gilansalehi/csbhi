@@ -294,12 +294,13 @@ The nearly marginal shell spends a logarithmically long time near \(Y_s\). Its t
 \]
 
 The local escape rate from the unstable static radius is
-\(\omega=\sqrt3\,H_{\Lambda,P}\). Consequently its collapse time has the leading form
+\(\omega=\sqrt3\,H_{\Lambda,P}\). The one-way expansion to the turning point contributes
+\(-\ln(x_b-x)/(2\omega)\). Complete collapse contains that dwell twice—on approach to the turning point and again on departure—so its leading form is
 
 \[
 t_{\rm col}(x)
 =
--\frac{1}{2\sqrt3\,H_{\Lambda,P}}
+-\frac{1}{\sqrt3\,H_{\Lambda,P}}
 \ln(x_b-x)+O(1).
 \tag{23}
 \]
@@ -309,7 +310,7 @@ The event-horizon crossing occurs after the same near-static dwell. If the expli
 \[
 x_b-x_H(t_P)
 \propto
-e^{-2\sqrt3 H_{\Lambda,P}t_P}.
+e^{-\sqrt3 H_{\Lambda,P}t_P}.
 \tag{24}
 \]
 
@@ -318,7 +319,7 @@ Because \(m'(x_b)\) is finite,
 \[
 1-\mu_H(t_P)
 \propto
-e^{-2\sqrt3 H_{\Lambda,P}t_P}.
+e^{-\sqrt3 H_{\Lambda,P}t_P}.
 \tag{25}
 \]
 
@@ -337,18 +338,18 @@ Expanding Equation (1) near \(\mu_H=1\) and using the same clock \(\tau=t_P-t_{\
 \boxed{
 H_{\Lambda,C}
 =
-2\sqrt3\,H_{\Lambda,P}
+\sqrt3\,H_{\Lambda,P}
 }
 \qquad
 \Longleftrightarrow
 \qquad
 \boxed{
-\Lambda_C=12\Lambda_P
+\Lambda_C=3\Lambda_P
 }.
 \tag{27}
 \]
 
-Equation (27) is not inserted into the benchmark and is not yet a completed recursive law. It is the conditional late-time prediction of four stated ingredients: the \(\Lambda\)LTB marginal-shell exponent, an event-horizon crossing time with the same leading divergence, the same cohort clock, and the cubic homogeneous shell map. The first is fixed analytically; the second requires the full event-horizon integration. If the null generator approaches the marginal shell with a different exponent, Equation (27) changes with it.
+Equation (27) is not inserted into the benchmark and is not yet a completed recursive law. It is the conditional late-time prediction of four stated ingredients: the \(\Lambda\)LTB marginal-shell exponent, a bounded interval between event-horizon crossing and shell focusing in the stationary limit, the same cohort clock, and the cubic homogeneous shell map. The first is verified by direct quadrature in [The Late Event-Horizon Tail](note.html?src=late_event_horizon_tail_compensated_ltblambda); the second follows if the generator approaches the final stationary black-hole horizon. The full intermediate event-horizon history remains numerical.
 
 ---
 
@@ -403,7 +404,7 @@ The benchmark does not yet establish that the published collapse satisfies Equat
 1. **The published compensated profile is reproduced numerically.** Its core radius, mass scale, and extended trapping history agree with the source.
 2. **The apparent horizon cannot substitute for the event horizon.** The source supplies the former, while the shell clock requires the latter.
 3. **The complete shell family has a natural \(\Lambda_P\)-controlled endpoint.** The marginally bound shell fixes \(M_f\), rather than an arbitrary finite accretion cutoff.
-4. **The shell endpoint power is sharp; the child coefficient remains conditional.** Regular formation supplies the cubic law, while the de Sitter binding threshold gives the shell rate \(2\sqrt3H_{\Lambda,P}\). The inference \(H_{\Lambda,C}=2\sqrt3H_{\Lambda,P}\) additionally requires the event horizon to inherit that rate, which the global null integration must test.
+4. **The shell endpoint power is sharp; the child coefficient remains conditional.** Regular formation supplies the cubic law, while the complete near-marginal collapse gives the shell rate \(\sqrt3H_{\Lambda,P}\). If the event horizon approaches the final stationary radius, its finite crossing-to-focusing interval preserves that rate and the shell clock gives \(H_{\Lambda,C}=\sqrt3H_{\Lambda,P}\).
 
 The remaining numerical object is now unambiguous: integrate the global outgoing event-horizon generator through the full \(\Lambda\)LTB future, evaluate \(\mu_H(t_P)\), reconstruct \(a_{\rm req}\) from Equation (29), and compare Equation (30) over the intermediate history.
 
