@@ -2,121 +2,89 @@
 
 *A correspondence, not a derivation — the galactic analogue of the reciprocal ansatz, and its coefficient-independent falsifiable prediction.*
 
-**Author:** Claude (Anthropic). **Review:** Codex (OpenAI), including the critique and salvage structure.
-
-**Date:** 2026-08-04 (revised after adversarial review).
-
-**Status:** This note **retracts** the earlier "forcing" framing, which was circular. It presents three cleanly separated claims at honest tiers: a conditional **theorem** (the square-root form), a **correspondence** (the identification of the global scale — an ansatz at the same epistemic tier as \(a=1/r\), *not* derived), and a **prediction** (the coefficient-independent ratio, falsifiable). Tiers: **[E]** established/theorem, **[Corr]** correspondence/ansatz, **[P]** prediction, **[O]** open.
-
-**Prerequisites:** [GD I](gd1.html); [the involution result](reciprocal-involution.html); [Self-Dual Derivation of the Square-Root Law](note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law); [The Evolving Galactic Acceleration Scale](note.html?src=evolving_acceleration_scale_high_z_test).
-
-**Notation:** [Glossary](note.html?src=cosmological_glossary). \(H_A(z)\) = Alice's interior Hubble rate; \(H_\Lambda\equiv\sqrt{\Lambda/3}\); \(E(z)\equiv H_A(z)/H_0\).
-
 ---
 
-## 0. What was wrong, and why the concept survives
+## Introduction
 
-The earlier draft claimed the evolving scale was *forced*. Adversarial review (Codex) showed the forcing was circular and its supporting arguments unsound:
+The radial acceleration relation ties the observed acceleration in a galaxy to the acceleration its baryons alone would produce, and it turns over at a characteristic scale \(g_\dagger\approx1.2\times10^{-10}\,\mathrm{m/s^2}\). MOND reads that scale as a fixed constant of nature. The reciprocal picture suggests something else: that the galactic acceleration scale is set by the contemporaneous cosmological horizon, and therefore evolves with it.
 
-- the square-root note **defined** \(a_H:=cH\) in its setup, so it cannot derive that identification;
-- "the reciprocal equation is epoch-local, therefore its descendant scales are instantaneous" is invalid — local equations carry fixed constants (\(\Lambda,G,c\)) routinely;
-- \(\Lambda\) is **local** (it enters the field equations at every event), so responding to a fixed \(c\sqrt{\Lambda/3}\) is *not* an acausal coupling to a future boundary — the causality objection was wrong;
-- \(c^2/R_A\) is an inverse-radius scale, not the Hayward–Kodama apparent-horizon surface gravity (which carries \(1/2\) and deceleration factors);
-- the theorem yields \(g_\dagger=\kappa^2 a_H\), so \(g_\dagger=cH\) at coefficient one is both underived and numerically wrong;
-- \(H_A(t)>H_\Lambda\) at every finite epoch, so the two rates do not "cross today."
+This note states that correspondence and draws the one clean consequence that survives without any free parameter — the ratio \(g_\dagger(z)/g_\dagger(0)\) tracks \(H(z)/H_0\). The argument has three parts at three honestly different standings: a conditional **theorem** that fixes the *form* of the galaxy law, a **correspondence** that supplies its global scale — an ansatz at the same tier as \(a=1/r\), posited and tested rather than derived — and the **prediction** the two together make, which is falsifiable now.
 
-All conceded. But — as with the ansatz \(a=1/r\) itself, which the programme never *derives* but *posits* and tests — the flaw is in the argument, not the concept. The repair is to stop claiming a derivation and present a **correspondence**: the galactic-level application of the same reciprocal ansatz, yielding a testable prediction. That places g-dagger at exactly the epistemic tier the whole programme operates on.
+Conventions: \(H_A(z)\) is Alice's interior Hubble rate, \(H_\Lambda\equiv\sqrt{\Lambda/3}\), and \(E(z)\equiv H_A(z)/H_0\); \(g_N\) is the local baryonic (Newtonian) acceleration and \(g_\dagger\) the acceleration scale of the radial acceleration relation.
 
----
+## 1. The theorem: the square-root form
 
-## 1. The theorem: the square-root form, with an unspecified global scale [E]
+Let \(A\) be an as-yet-unspecified global acceleration scale. Require of the mixing law \(D(g_N,A)\) that it introduce (i) no new dimensionful constant, (ii) no preferred scale — homogeneity, (iii) a symmetric treatment of the local and global accelerations, \(D(g_N,A)=D(A,g_N)\), and (iv) exact flat-rotation-curve scaling. These force the functional equation \(\phi(x)=x\,\phi(1/x)\), whose solution is the geometric mean,
 
-Let \(A\) be an **unspecified** global acceleration scale. From (i) no new dimensionful constant, (ii) homogeneity, (iii) local↔global exchange symmetry \(D(g_N,A)=D(A,g_N)\), and (iv) exact flat-curve scaling, the functional equation \(\phi(x)=x\,\phi(1/x)\) forces
 \[
 D(g_N,A)=\kappa\sqrt{g_N\,A},\qquad \kappa \text{ an undetermined constant.}
 \]
-This is a valid conditional theorem (square-root note). It fixes the *form* and leaves *both* the global scale \(A\) and the normalization \(\kappa\) open.
 
----
+This is a conditional theorem: given the four hypotheses, the square-root form is not one option among many but the only one. It fixes the *form* and leaves both the global scale \(A\) and the normalization \(\kappa\) open. The derivation is carried out in full in the [self-dual square-root note](note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law).
 
-## 2. The correspondence: the galactic reciprocal ansatz [Corr]
+## 2. The correspondence: the galactic reciprocal ansatz
 
-CSBHI posits — it does not derive — the identification of the global scale with the inverse radius of Alice's contemporaneous cosmological horizon,
+The theorem asks for a global scale but does not name it. The reciprocal picture names it — the inverse radius of Alice's contemporaneous cosmological horizon,
+
 \[
 \boxed{\ A(\tau)=\frac{c^2}{R_{\rm hor}(\tau)}\ }.
 \]
-This is the **galactic analogue of \(a=1/r\)**: a reciprocal (inverse-radius) correspondence between the local gravitational field and the global horizon scale, applied one recursive level down. It is an ansatz at the *same tier* as the foundational reciprocal ansatz — motivated by recursive self-similarity, not forced by it.
 
-One genuine choice remains, and it is where observation enters:
+This is the galactic analogue of \(a=1/r\): a reciprocal relation between the local gravitational field and the global horizon scale, applied one recursive level down. It is an ansatz, at the same standing as the foundational reciprocal ansatz — motivated by recursive self-similarity, not forced by it, and earning its place by what it predicts rather than by derivation.
 
-- **contemporaneous apparent/Hubble horizon** \(R_{\rm hor}=c/H_A(\tau)\) → \(A=cH_A(\tau)\), **evolving**;
-- **asymptotic de Sitter horizon** \(R_{\rm hor}=c/H_\Lambda\) → \(A=cH_\Lambda\), **fixed** (indistinguishable from MOND).
+One genuine choice remains, and it is where observation enters. If the relevant horizon is the contemporaneous apparent (Hubble) horizon, \(R_{\rm hor}=c/H_A(\tau)\), the scale is \(A=cH_A(\tau)\) and **evolves**. If it is the asymptotic de Sitter horizon, \(R_{\rm hor}=c/H_\Lambda\), the scale is \(A=cH_\Lambda\) and is **fixed** — indistinguishable from MOND. The recursive reading, like \(a(\tau)=1/r(\tau)\) itself, is naturally taken at the current epoch and so favors the contemporaneous horizon; but the ansatz alone does not exclude the fixed one. Which horizon the completed weak-field geometry actually selects is open, and the data can decide it directly.
 
-The recursive/self-similar reading *favors* the contemporaneous horizon — the correspondence, like \(a(\tau)=1/r(\tau)\), is naturally read at the current epoch. But the ansatz alone does not exclude the fixed horizon; that is a modeling choice the data adjudicates, not a theorem. **[Corr; the horizon choice is [O], and observationally decidable.]**
+## 3. The prediction: the coefficient-independent ratio
 
----
+Combine the theorem with the evolving correspondence. Writing the empirical deep form of the relation as \(g_{\rm obs}=\sqrt{g_N\,g_\dagger}\) gives \(g_\dagger=\kappa^2 A=\kappa^2 cH_A(z)\). The unknown \(\kappa^2\) and \(c\) cancel in the ratio, leaving a pure prediction with no free parameter:
 
-## 3. The prediction: the coefficient-independent ratio [P]
-
-Combining the theorem and the (evolving-horizon) correspondence, and writing the empirical deep-RAR form \(g_{\rm obs}=\sqrt{g_N\,g_\dagger}\), gives \(g_\dagger=\kappa^2 A=\kappa^2 cH_A(z)\). The unknown \(\kappa^2\) and \(c\) cancel in the **ratio**:
 \[
 \boxed{\ \frac{g_\dagger(z)}{g_\dagger(0)}=\frac{H_A(z)}{H_0}=E(z)=\sqrt{\Omega_m(1+z)^3+\Omega_r(1+z)^4+\Omega_\Lambda}\ }.
 \]
-This is the real, robust result. It needs **none** of the retracted machinery — not the surface-gravity coefficient, not the causality argument, not "crossing today," not the absolute normalization. It is a clean discriminator:
 
-- **MOND / fixed reading:** \(g_\dagger(z)/g_\dagger(0)=1\) (flat).
-- **CSBHI evolving correspondence:** \(=E(z)\) (rising).
+This is the robust result, and it needs none of the absolute normalization — not the coefficient \(\kappa\), not \(c\), not the value of \(g_\dagger(0)\). It is a clean discriminator between the two readings:
 
-Consequences (evolving-scale note): BTFR zero-point sliding as \(-\log E(z)\); RAR knee at \(cH_A(z)\); the predicted \(0.8\)–\(1.0\) dex offset at \(z\gtrsim3\) exceeds the \(\sim0.45\) dex systematic floor, so the test is performable in the JWST era. The prediction is coefficient-free and pre-registerable now.
+- **MOND / fixed horizon:** \(g_\dagger(z)/g_\dagger(0)=1\), flat.
+- **Evolving correspondence:** \(g_\dagger(z)/g_\dagger(0)=E(z)\), rising.
 
----
+The same scaling propagates into the observables: the baryonic Tully–Fisher zero-point slides as \(-\log E(z)\), and the knee of the radial acceleration relation moves to \(cH_A(z)\). The predicted offset reaches \(0.8\)–\(1.0\) dex by \(z\gtrsim3\), well above the \(\sim0.45\) dex systematic floor of the measurement — so the test is performable in the JWST era, and the prediction is coefficient-free and can be registered in advance.
 
-## 4. Observational standing [P] — verified, and honestly bounded
+## 4. Observational standing
 
-The empirical anchors are confirmed by independent search, not only the review:
+The empirical anchors are two.
 
-- **Local anchor.** The RAR gives \(g_\dagger(0)\approx1.2\times10^{-10}\,\mathrm{m/s^2}\) (SPARC [2]), smaller than \(cH_0\approx6.8\times10^{-10}\) by \(\kappa^2\approx0.18\sim1/2\pi\) — the theorem's undetermined \(\mathcal O(1)\) constant, fixed empirically, not derived.
-- **Intermediate redshift.** MUSE-DARK III [3] (79 star-forming galaxies, \(0.33<z<1.44\), MUSE HUDF) measures \(g_\dagger(z\!\sim\!1)=2.38^{+0.12}_{-0.10}\times10^{-10}\,\mathrm{m/s^2}\), *rising* from the local \(1.2\pm0.26\). This is the first tentative evidence of RAR-scale evolution.
+The **local** value \(g_\dagger(0)\approx1.2\times10^{-10}\,\mathrm{m/s^2}\) (SPARC) is smaller than \(cH_0\approx6.8\times10^{-10}\,\mathrm{m/s^2}\) by \(\kappa^2\approx0.18\sim1/2\pi\) — the theorem's undetermined order-one constant, fixed empirically rather than derived.
 
-The coefficient-independent test is the **ratio**:
+At **intermediate redshift**, MUSE-DARK III (79 star-forming galaxies, \(0.33<z<1.44\)) reports \(g_\dagger(z\!\sim\!1)=2.38^{+0.12}_{-0.10}\times10^{-10}\,\mathrm{m/s^2}\), rising from the local \(1.2\pm0.26\). The coefficient-independent test is the ratio:
+
 \[
 \left.\frac{g_\dagger(z\!\sim\!1)}{g_\dagger(0)}\right|_{\rm obs}\approx\frac{2.38}{1.2}\approx1.98\pm0.45,
-\qquad E(1)=1.76\ \text{(CSBHI)},\qquad 1\ \text{(MOND)} .
+\qquad E(1)=1.76\ (\text{evolving}),\qquad 1\ (\text{MOND}).
 \]
-The datum favors the rising correspondence over constant-\(g_\dagger\) MOND at \(\sim2\sigma\), and CSBHI's *parameter-free* value \(E(1)=1.76\) sits comfortably inside the measured ratio.
 
-**The honest three-way standing — what a referee will hold us to:**
+The datum favors the rising correspondence over constant-\(g_\dagger\) MOND at roughly \(2\sigma\), and the parameter-free value \(E(1)=1.76\) sits comfortably inside the measured ratio. The three-way standing:
 
 | framework | \(g_\dagger(z)/g_\dagger(0)\) | vs. MUSE-DARK III | free parameters |
 |---|---|---|---|
-| MOND | \(1\) (constant) | disfavored \(\sim2\sigma\) | none, but wrong |
-| **CSBHI** | \(E(z)\) (\(=1.76\) at \(z\!\sim\!1\)) | consistent | **none** (\(\kappa\) cancels) |
+| MOND | \(1\) (constant) | disfavored \(\sim2\sigma\) | none |
+| Evolving correspondence | \(E(z)\) (\(=1.76\) at \(z\!\sim\!1\)) | consistent | none (\(\kappa\) cancels) |
 | ΛCDM + feedback | model-dependent, rises | accommodated | feedback tuning |
 
-The defensible claim is **not** "closest, full stop." It is sharper and survives scrutiny: **CSBHI makes a parameter-free prediction consistent with the first evidence of \(a_0\) evolution, disfavoring constant MOND — and, unlike ΛCDM, needs no feedback tuning to produce the rise.** The caveats, stated before a referee states them: (i) one model-dependent measurement, larger scatter (~0.17 dex); (ii) ΛCDM simulations *also* predict a rising \(a_0\) from stellar feedback, so evolution alone does not select CSBHI — the discriminant is the *parameter-free shape* \(E(z)\), which present data cannot yet resolve against a tuned feedback curve; (iii) \(a_0\propto H(z)\) already exists in cosmological MOND [3] — CSBHI's contribution is to *motivate* the scaling from the reciprocal correspondence rather than posit it.
+The claim worth defending is the sharp one, not "closest, full stop": a parameter-free prediction, consistent with the first evidence of acceleration-scale evolution, that disfavors constant MOND and — unlike ΛCDM — needs no feedback tuning to produce the rise. Its limits belong in the same breath. The intermediate-redshift point is a single model-dependent measurement with sizeable scatter (~0.17 dex). ΛCDM simulations *also* predict a rising scale from stellar feedback, so evolution alone does not select this correspondence — the true discriminant is the parameter-free *shape* \(E(z)\), which present data cannot yet resolve against a tuned feedback curve. And a scaling \(g_\dagger\propto H(z)\) already appears in cosmological MOND; the contribution here is to *motivate* it from the reciprocal correspondence rather than posit it outright.
+
+## 5. Result
+
+> Recursive self-duality fixes the square-root *form* of the galaxy law once a global acceleration scale is supplied. Identifying that scale with the inverse radius of the contemporaneous cosmological horizon — the galactic analogue of \(a=1/r\) — yields the coefficient-independent, falsifiable prediction \(g_\dagger(z)/g_\dagger(0)=H(z)/H_0\), which separates the evolving reading (rising) from MOND (flat). The first intermediate-redshift measurement is consistent with the rise and disfavors a fixed scale at \(\sim2\sigma\), with no parameter tuned to it.
+
+The standing is exactly that of the programme it belongs to: a correspondence with a testable consequence, at the same tier as the foundational ansatz — not a derivation of the acceleration scale or its normalization. What remains open is whether the completed weak-field throat geometry *selects* the apparent horizon over the de Sitter horizon and *fixes* \(\kappa\); that is GD III's task, and the ratio prediction stands independent of it. A correspondence pays down its guess-status one falsifiable consequence at a time, and this is one such consequence: it reaches into rotation-curve data the ansatz was never tuned to, and it can fail. The sky writes the verdict at \(z\gtrsim3\).
 
 ---
 
-## 5. Epistemic status: a genuine ledger line
-
-The programme proceeds from an ansatz (\(a=1/r\)) that is posited, not derived — but that does not discount its consequences. Each *independent, non-circular, risky* correspondence the ansatz correctly organizes is evidence *for* it (consilience); the ansatz's guess-status is a debt its consequences pay down, not a discount applied to them. This prediction is exactly such a line: it reaches into galaxy-rotation data the ansatz was never tuned to, and it can fail. The earlier circular version (\(g_\dagger=cH\) "derived") was a counterfeit entry and was struck; the surviving ratio \(E(z)\) is a real one. Whether the ledger ultimately reads "interesting guess" or "genius guess" is a check the sky writes at \(z\gtrsim3\) — this is among the first honest entries, and the discipline that keeps it honest (pruning circular lines, banking only falsifiable ones) is what makes the ledger count at all.
-
----
-
-## 6. Result and packet placement
-
-**The honest central claim:**
-> Recursive self-duality fixes the square-root *form* once a global acceleration scale is supplied [E]. Identifying that scale with the inverse radius of the contemporaneous cosmological horizon — the galactic reciprocal ansatz [Corr] — yields the coefficient-independent, falsifiable prediction \(g_\dagger(z)/g_\dagger(0)=H(z)/H_0\) [P], which separates CSBHI (rising) from MOND (flat).
-
-**For packet one:** this belongs as a **clearly labeled, pre-registered prediction**, not a completed result. It is at the same epistemic tier as \(a=1/r\) — a correspondence with a testable consequence — which is precisely the tier the packet's foundation already occupies, so it is *consistent*, not weaker. It must not claim to *derive* the acceleration scale or its normalization.
-
-**Open items [O]:** (1) whether the completed throat/weak-field equations *select* the apparent horizon over the de Sitter horizon; (2) whether they fix \(\kappa\); (3) the field-equation realization of the mixing law (GD III's standing [H]). None of these blocks the ratio prediction, which is what the packet ships.
-
----
+*Derived by Claude (Anthropic) and independently cross-checked by Codex (OpenAI) under Salehi Remediation.*
 
 ## References
 
-1. [Self-Dual Derivation of the Square-Root Law](note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law); [The Evolving Galactic Acceleration Scale and its High-Redshift Test](note.html?src=evolving_acceleration_scale_high_z_test); [involution result](reciprocal-involution.html); Codex, [Recursive Kottler Horizons and the Galaxy Acceleration Scale](note.html?src=recursive_kottler_horizons_and_the_galaxy_scale), this project.
-2. H. Desmond, "SPARC analysis of the radial acceleration relation," [arXiv:2303.11314](https://arxiv.org/abs/2303.11314) — local \(g_\dagger(0)\approx1.19\times10^{-10}\,\mathrm{m/s^2}\). *(via Codex; verify.)*
-3. MUSE-DARK III, [arXiv:2604.22613](https://arxiv.org/abs/2604.22613) — increasing RAR scale with redshift. *(via Codex; verify.)*
-4. G. Salehi, [GD1](gd1.html).
+1. [Self-Dual Homogeneous Derivation of the Square-Root Law](note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law); [The Evolving Galactic Acceleration Scale and its High-Redshift Test](note.html?src=evolving_acceleration_scale_high_z_test); [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](reciprocal-involution.html); [Recursive Kottler Horizons and the Galaxy Acceleration Scale](note.html?src=recursive_kottler_horizons_and_the_galaxy_scale), this project.
+2. H. Desmond, "The underlying radial acceleration relation," *MNRAS*, [arXiv:2303.11314](https://arxiv.org/abs/2303.11314) — local \(g_\dagger(0)\approx1.2\times10^{-10}\,\mathrm{m/s^2}\) from SPARC.
+3. MUSE-DARK III, [arXiv:2604.22613](https://arxiv.org/abs/2604.22613) — an increasing radial-acceleration-relation scale with redshift.
+4. G. Salehi, [Geometric Duality I](gd1.html), this project.

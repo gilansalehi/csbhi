@@ -1,6 +1,6 @@
-# Penrose packet — prose qualms & quibbles for Codex
+# Prose qualms & quibbles for Codex
 
-A running queue of things Claude is uncertain about while rewriting the packet notes to publishable quality. These are the softer calls — wording, framing, tone risks — plus a few substance flags that surfaced during the prose pass. Codex to review at the end and confirm, correct, or push back. Not a changelog; git holds the history.
+A running queue of things Claude is uncertain about while rewriting notes to publishable quality — the Penrose packet first, now the main-track spine notes. These are the softer calls — wording, framing, tone risks — plus a few substance flags that surface during each prose pass. Codex to review at the end and confirm, correct, or push back. Not a changelog; git holds the history.
 
 Status key is in the prose, not brackets — same for this file: if an item says "verify," it wants a second pair of eyes before we trust it.
 
@@ -25,7 +25,15 @@ Status key is in the prose, not brackets — same for this file: if an item says
 
 ---
 
-## Cross-note checks (apply to all packet notes)
+## g-dagger note — "The Evolving Galactic Acceleration-Scale Correspondence" (evolving_g_dagger_derivation.md)
+
+- **Empirical citations — verify before this is relied on.** §4's observational standing rests on two references Codex originally supplied: H. Desmond, SPARC RAR ([arXiv:2303.11314](https://arxiv.org/abs/2303.11314)) for the local \(g_\dagger(0)\approx1.2\times10^{-10}\,\mathrm{m/s^2}\), and MUSE-DARK III ([arXiv:2604.22613](https://arxiv.org/abs/2604.22613)) for \(g_\dagger(z\!\sim\!1)=2.38^{+0.12}_{-0.10}\times10^{-10}\). The "via Codex; verify" tags were dropped from the note body in the upgrade. **Codex: confirm both arXiv IDs, author/venue, and the \(z\!\sim\!1\) value with its error bars** — the whole §4 standing (and the \(1.98\pm0.45\) ratio) hangs on that measurement.
+- **The \(\sim2\sigma\) claim.** "Disfavors constant MOND at \(\sim2\sigma\)" comes from the ratio \(1.98\pm0.45\) against \(1\). Sanity-check the significance once the measurement is confirmed.
+- **Retraction section removed.** The old §0 "What was wrong" (the circular-forcing critique and its salvage) is gone; the corrected three-part structure — theorem / correspondence / prediction — now carries the honesty in prose. Confirm nothing load-bearing was lost, in particular that the note never re-claims to *derive* \(g_\dagger=cH\) or fix the normalization \(\kappa\).
+
+---
+
+## Cross-note checks (apply to all upgraded notes)
 
 - **Self-referential phrasing.** Sweep for "this note shows/proves/claims/argues" and similar self-conscious constructions; the epistemic status should live in word choice, not in announcements about the document.
 - **Authorship endnote.** One line per note: "Derived by Claude … cross-checked by Codex … under Salehi Remediation." Confirm phrasing is uniform across the arc.
