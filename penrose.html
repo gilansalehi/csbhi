@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" id="project-root">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="A note for Sir Roger Penrose: Conformal Cyclic Cosmology realized through black-hole interiors.">
+  <meta name="dcterms.modified" content="2026-08-06">
+  <meta name="project" content="Conformal Scaling of Black Hole Interiors">
+  <meta name="programme" content="Geometric Duality">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>The Successor Aeon as a Black-Hole Interior — a note for Sir Roger Penrose</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/review.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <style>
+    .penrose-letter p { max-width: 42rem; }
+    .penrose-letter .salutation { margin-bottom: 1.1rem; }
+    .penrose-letter .signoff { margin-top: 1.6rem; }
+
+    .penrose-compare { margin-block: 2.75rem; }
+    .penrose-compare table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      margin-block: 1rem 1.75rem;
+    }
+    .penrose-compare caption {
+      text-align: left;
+      font-weight: 650;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+    .penrose-compare th,
+    .penrose-compare td {
+      padding: 0.8rem 0.9rem;
+      border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+      text-align: left;
+      vertical-align: top;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      overflow-wrap: break-word;
+    }
+    .penrose-compare th {
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      opacity: 0.66;
+    }
+    .penrose-compare td:first-child { font-weight: 600; }
+
+    .penrose-compare .status {
+      --status-color: currentColor;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 1.5rem;
+      height: 1.5rem;
+      margin-bottom: 0.5rem;
+      padding: 0 0.4rem;
+      border: 1px solid color-mix(in srgb, var(--status-color) 55%, currentColor);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--status-color) 13%, transparent);
+      color: var(--status-color);
+      font-size: 0.85rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .penrose-compare .status[data-status="addressed"] { --status-color: var(--status-addressed); }
+    .penrose-compare .status[data-status="target"]    { --status-color: var(--status-target); }
+    .penrose-compare .note { display: block; }
+
+    .penrose-legend {
+      font-size: 0.85rem;
+      opacity: 0.82;
+      margin-top: 0.4rem;
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 760px) {
+      .penrose-compare table,
+      .penrose-compare thead,
+      .penrose-compare tbody,
+      .penrose-compare tr,
+      .penrose-compare th,
+      .penrose-compare td { display: block; width: auto; }
+      .penrose-compare thead { display: none; }
+      .penrose-compare tr {
+        padding-block: 1.1rem;
+        border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+      }
+      .penrose-compare td { padding: 0; border: 0; }
+      .penrose-compare td + td { margin-top: 0.7rem; }
+      .penrose-compare td[data-label]::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 0.22rem;
+        font-size: 0.66rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#letter-title">Skip to the note</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article id="penrose-page" class="review-packet" aria-labelledby="letter-title">
+      <header class="review-packet__header">
+        <p class="review-packet__eyebrow">A note for Sir Roger Penrose</p>
+        <h1 id="letter-title">The Successor Aeon as a Black-Hole Interior</h1>
+        <p class="review-packet__lede">
+          Conformal Cyclic Cosmology as the interior geometry of black holes.
+        </p>
+        <p class="review-packet__status">August 2026</p>
+      </header>
+
+      <section id="letter" class="penrose-letter" aria-labelledby="letter-title">
+        <p class="salutation">Dear Sir Roger,</p>
+        <p>
+          Conformal Cyclic Cosmology has, I believe, a realization inside black-hole physics that removes the
+          commitments it must otherwise carry at the crossover. The identification is one line:
+          <strong>the successor aeon is the interior of a black hole in the present one.</strong>
+        </p>
+        <p>
+          For an observer crossing the horizon, the interior spatial scale and the exterior areal radius are
+          reciprocal, \(a=1/r\). The parent's descent to \(r\to0\) is the child's expansion to \(a\to\infty\): what is
+          a singularity in the exterior description is the smooth conformal future in the interior one. Your conformal
+          reciprocation \(\Omega\to1/\Omega\) is this map, carried at a horizon rather than imposed at the boundary.
+        </p>
+        <p>
+          The low-Weyl beginning then follows from collapse, not from selection. Homogeneous collapse —
+          Oppenheimer–Snyder — has a Friedmann interior whose Weyl tensor vanishes identically even as its density
+          diverges. A universe born from such a collapse inherits a smooth start, and the previous aeon whose future
+          seeds it is, concretely, the parent black hole. Because a smooth universe is what forms the smooth
+          overdensities that collapse into smooth children, low initial Weyl is a fixed point of the succession rather
+          than an improbable choice. That is the Weyl Curvature Hypothesis, obtained as a property of the formation
+          process rather than a condition placed upon it.
+        </p>
+        <p>
+          Three commitments Conformal Cyclic Cosmology carries at the crossover then become unnecessary. Matter need
+          not become massless, because it crosses by falling through a horizon rather than by reaching a null infinity
+          as radiation. Black holes need not have evaporated, because they are the aeons; the boundary continues
+          through them. And the information need not be destroyed: where you are content to let the phase space
+          contract at the singularity, one may instead let it re-open as the child's.
+        </p>
+        <p>
+          What secures the last point is a single calculation. On the reciprocal interior the residual Weyl dilutes as
+          \(a^{-2}\), which is its conformal weight; under the compactification the <em>rescaled</em> Weyl is therefore
+          finite at the boundary while the <em>physical</em> Weyl vanishes. That is exactly the condition that lets a
+          black hole sit on the crossover without the divergence that would otherwise require it gone — the property
+          you secure by evaporation, secured instead by the geometry.
+        </p>
+        <p>
+          One conjecture remains: that the geometry of the succession forces Weyl smoothness on every aeon by
+          self-consistency, rather than fixing it as a fine-tuned parameter. This is the claim I am now working to
+          prove, in a small geometric program inspired by yours — the Conformal Scaling of Black Hole Interiors
+          (<a href="index.html">gilansalehi.com/csbhi</a>). More than anything, I hope you find it worth your time.
+        </p>
+        <p class="signoff">
+          Best,<br>
+          Gilan Salehi
+        </p>
+      </section>
+
+      <section id="reading" class="publication-list" aria-labelledby="reading-title">
+        <h2 id="reading-title">The argument in full</h2>
+        <p>The claims in the note are worked out in four short documents.</p>
+        <details open>
+          <summary>The three technical notes and the primary paper.</summary>
+          <ol>
+            <li>
+              <div>Note</div>
+              <div>
+                <h3>
+                  <a href="note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis">The Weyl Curvature Hypothesis
+                    as a Fixed Point of Recursive Black-Hole Cosmology</a>
+                </h3>
+                <p>The low-Weyl beginning, the succession, and the fixed-point conjecture.</p>
+                <p>Technical note</p>
+              </div>
+            </li>
+            <li>
+              <div>Note</div>
+              <div>
+                <h3>
+                  <a href="note.html?src=shear_free_interior_weyl_stress_identity">The Shear-Free Weyl–Stress Identity
+                    and the Conformal Weight of the Crossover</a>
+                </h3>
+                <p>The \(a^{-2}\) conformal weight and the finite rescaled seed, with the numerical checks.</p>
+                <p>Technical note</p>
+              </div>
+            </li>
+            <li>
+              <div>Note</div>
+              <div>
+                <h3>
+                  <a href="note.html?src=gravitational_entropy_and_conformal_scaling">Gravitational Entropy and
+                    Conformal Scaling</a>
+                </h3>
+                <p>The \(S_{\rm BH}=S_{\rm dS}\) identity and the entropy reading of the arrow.</p>
+                <p>Technical note</p>
+              </div>
+            </li>
+            <li>
+              <div>GD1</div>
+              <div>
+                <h3><a href="gd1.html">Geometric Duality I</a></h3>
+                <p>The reciprocal ansatz and the infall construction beneath it.</p>
+                <p>Primary paper</p>
+              </div>
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <section id="comparison" class="penrose-compare" aria-labelledby="comparison-title">
+        <h2 id="comparison-title">The three pictures, side by side</h2>
+        <p>
+          The columns are complementary rather than competing: Conformal Cyclic Cosmology names what must hold at the
+          crossover, and the reciprocal interior supplies a geometry in which it holds.
+        </p>
+
+        <p>
+          The first two rows below are the substance of the Weyl-hypothesis note: homogeneous collapse hands its child
+          a Weyl-free interior, so a smooth overdensity begets a smooth beginning, and — because a smooth universe is
+          what forms smooth overdensities — low initial Weyl becomes a fixed point of the succession rather than a
+          chosen number. This is the conclusion Conformal Cyclic Cosmology already reaches, with the prior aeon named
+          as the parent black hole. The arrow-of-time row draws on the entropy note, where the parent hole's entropy
+          reappears as the child's available phase space, so the arrow follows from a universe born far below that
+          ceiling.
+        </p>
+
+        <table>
+          <caption>The low-entropy past — the Weyl Curvature Hypothesis</caption>
+          <thead>
+            <tr>
+              <th scope="col">Question</th>
+              <th scope="col">ΛCDM</th>
+              <th scope="col">CCC</th>
+              <th scope="col">CSBHI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Question">Low-Weyl Big Bang</td>
+              <td data-label="ΛCDM">An unexplained initial condition.</td>
+              <td data-label="CCC">
+                <span class="status" data-status="target">✓</span>
+                <span class="note">Inherited from the prior aeon's smooth future.</span>
+              </td>
+              <td data-label="CSBHI">
+                <span class="status" data-status="addressed">✓</span>
+                <span class="note">The prior aeon is a parent black hole; homogeneous collapse gives a Weyl-free
+                  interior.</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Question">The \(10^{10^{123}}\) selection</td>
+              <td data-label="ΛCDM">Not addressed.</td>
+              <td data-label="CCC">
+                <span class="status" data-status="target">✓</span>
+                <span class="note">Carried by the prior aeon.</span>
+              </td>
+              <td data-label="CSBHI">
+                <span class="status" data-status="addressed">✓</span>
+                <span class="note">A fixed point of the succession: smooth births beget smooth births.</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Question">Arrow of time</td>
+              <td data-label="ΛCDM">A low-entropy start is assumed.</td>
+              <td data-label="CCC">
+                <span class="status" data-status="target">✓</span>
+                <span class="note">Weyl grows from zero; entropy resets at the crossover.</span>
+              </td>
+              <td data-label="CSBHI">
+                <span class="status" data-status="addressed">✓</span>
+                <span class="note">Weyl grows from the collapse's low value; the parent's entropy passes to the
+                  child.</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          The crossover rows rest on two calculations and one reading. That a black hole can lie on the boundary
+          without a divergent Weyl field — the regularity row — is the result of the shear-free note: the interior
+          Weyl dilutes at the conformal weight \(a^{-2}\), so the rescaled field is finite there. That \(a=1/r\) is the
+          map, and the only scale-free one that fixes the horizon, is the involution theorem beneath Geometric Duality
+          I. The remaining rows — evaporation, information, and rest mass — are consequences of reading the interior as
+          the succeeding aeon, and ask for no separate calculation.
+        </p>
+
+        <table>
+          <caption>The crossover</caption>
+          <thead>
+            <tr>
+              <th scope="col">At the aeon boundary</th>
+              <th scope="col">CCC</th>
+              <th scope="col">CSBHI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="At the aeon boundary">Conformal factor</td>
+              <td data-label="CCC">
+                <span class="status" data-status="target">✓</span>
+                <span class="note">\(\Omega\to1/\Omega\), imposed at the boundary.</span>
+              </td>
+              <td data-label="CSBHI">
+                <span class="status" data-status="addressed">✓</span>
+                <span class="note">\(a=1/r\), from infall geometry — the unique scale-free horizon-fixing
+                  involution.</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="At the aeon boundary">Black holes</td>
+              <td data-label="CCC">
+                <span class="status" data-status="target">✓</span>
+                <span class="note">Evaporate before the boundary.</span>
+              </td>
+              <td data-label="CSBHI">
+                <span class="status" data-status="addressed">✓</span>
+                <span class="note">Are the succeeding aeons; the boundary passes through them.</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="At the aeon boundary">Regularity with black holes present</td>
+              <td data-label="CCC">
+                <span class="status" data-status="target">✓</span>
+                <span class="note">Follows once they are gone.</span>
+              </td>
+              <td data-label="CSBHI">
+                <span class="status" data-status="addressed">✓</span>
+                <span class="note">Rescaled Weyl finite at weight \(a^{-2}\); physical Weyl \(\to0\).</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="At the aeon boundary">Information at the singularity</td>
+              <td data-label="CCC">
+                <span class="status" data-status="target">✓</span>
+                <span class="note">Removed from the phase space.</span>
+              </td>
+              <td data-label="CSBHI">
+                <span class="status" data-status="addressed">✓</span>
+                <span class="note">Enters the child aeon.</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="At the aeon boundary">Rest mass at the boundary</td>
+              <td data-label="CCC">
+                <span class="status" data-status="target">✓</span>
+                <span class="note">Vanishes for conformal invariance.</span>
+              </td>
+              <td data-label="CSBHI">
+                <span class="status" data-status="addressed">✓</span>
+                <span class="note">Crosses by falling through the horizon.</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="penrose-legend">
+          <span class="status" data-status="target">✓</span> Conformal Cyclic Cosmology addresses the point ·
+          <span class="status" data-status="addressed">✓</span> the reciprocal interior addresses it.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>
