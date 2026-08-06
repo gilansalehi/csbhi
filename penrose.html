@@ -59,12 +59,12 @@
     }
     .penrose-compare th,
     .penrose-compare td {
-      padding: 0.8rem 0.9rem;
+      padding: 0.85rem 0.95rem;
       border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
       text-align: left;
       vertical-align: top;
-      font-size: 0.95rem;
-      line-height: 1.5;
+      font-size: 1rem;
+      line-height: 1.55;
       overflow-wrap: break-word;
     }
     .penrose-compare th {
@@ -80,27 +80,35 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 1.5rem;
-      height: 1.5rem;
-      margin-bottom: 0.5rem;
-      padding: 0 0.4rem;
+      min-width: 1.4rem;
+      height: 1.4rem;
+      margin-right: 0.5rem;
+      padding: 0 0.35rem;
       border: 1px solid color-mix(in srgb, var(--status-color) 55%, currentColor);
       border-radius: 999px;
       background: color-mix(in srgb, var(--status-color) 13%, transparent);
       color: var(--status-color);
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 700;
       line-height: 1;
+      vertical-align: 0.05em;
     }
     .penrose-compare .status[data-status="addressed"] { --status-color: var(--status-addressed); }
     .penrose-compare .status[data-status="target"]    { --status-color: var(--status-target); }
-    .penrose-compare .note { display: block; }
+    .penrose-compare .status[data-status="planned"]   { --status-color: var(--status-planned); }
+    .penrose-compare .cell-note {
+      display: inline;
+      font-size: 1rem;
+      line-height: 1.55;
+      color: inherit;
+      opacity: 1;
+    }
 
-    .penrose-legend {
-      font-size: 0.85rem;
-      opacity: 0.82;
-      margin-top: 0.4rem;
-      line-height: 1.6;
+    @media screen and (min-width: 1160px) {
+      .penrose-compare table {
+        width: calc(100% + 20rem);
+        margin-inline: -10rem;
+      }
     }
 
     @media screen and (max-width: 760px) {
@@ -248,8 +256,8 @@
       <section id="comparison" class="penrose-compare" aria-labelledby="comparison-title">
         <h2 id="comparison-title">The three pictures, side by side</h2>
         <p>
-          The columns are complementary rather than competing: Conformal Cyclic Cosmology names what must hold at the
-          crossover, and the reciprocal interior supplies a geometry in which it holds.
+          Conformal Cyclic Cosmology names what must hold at the crossover; the reciprocal interior supplies a
+          geometry in which it holds.
         </p>
 
         <p>
@@ -275,39 +283,48 @@
           <tbody>
             <tr>
               <td data-label="Question">Low-Weyl Big Bang</td>
-              <td data-label="ΛCDM">An unexplained initial condition.</td>
+              <td data-label="ΛCDM">
+                <span class="status" data-status="planned">?</span>
+                <span class="cell-note">An unexplained initial condition.</span>
+              </td>
               <td data-label="CCC">
                 <span class="status" data-status="target">✓</span>
-                <span class="note">Inherited from the prior aeon's smooth future.</span>
+                <span class="cell-note">Inherited from the prior aeon's smooth future.</span>
               </td>
               <td data-label="CSBHI">
                 <span class="status" data-status="addressed">✓</span>
-                <span class="note">The prior aeon is a parent black hole; homogeneous collapse gives a Weyl-free
+                <span class="cell-note">The prior aeon is a parent black hole; homogeneous collapse gives a Weyl-free
                   interior.</span>
               </td>
             </tr>
             <tr>
               <td data-label="Question">The \(10^{10^{123}}\) selection</td>
-              <td data-label="ΛCDM">Not addressed.</td>
+              <td data-label="ΛCDM">
+                <span class="status" data-status="planned">?</span>
+                <span class="cell-note">Not addressed.</span>
+              </td>
               <td data-label="CCC">
                 <span class="status" data-status="target">✓</span>
-                <span class="note">Carried by the prior aeon.</span>
+                <span class="cell-note">Carried by the prior aeon.</span>
               </td>
               <td data-label="CSBHI">
                 <span class="status" data-status="addressed">✓</span>
-                <span class="note">A fixed point of the succession: smooth births beget smooth births.</span>
+                <span class="cell-note">A fixed point of the succession: smooth births beget smooth births.</span>
               </td>
             </tr>
             <tr>
               <td data-label="Question">Arrow of time</td>
-              <td data-label="ΛCDM">A low-entropy start is assumed.</td>
+              <td data-label="ΛCDM">
+                <span class="status" data-status="planned">?</span>
+                <span class="cell-note">A low-entropy start is assumed.</span>
+              </td>
               <td data-label="CCC">
                 <span class="status" data-status="target">✓</span>
-                <span class="note">Weyl grows from zero; entropy resets at the crossover.</span>
+                <span class="cell-note">Weyl grows from zero; entropy resets at the crossover.</span>
               </td>
               <td data-label="CSBHI">
                 <span class="status" data-status="addressed">✓</span>
-                <span class="note">Weyl grows from the collapse's low value; the parent's entropy passes to the
+                <span class="cell-note">Weyl grows from the collapse's low value; the parent's entropy passes to the
                   child.</span>
               </td>
             </tr>
@@ -337,11 +354,11 @@
               <td data-label="At the aeon boundary">Conformal factor</td>
               <td data-label="CCC">
                 <span class="status" data-status="target">✓</span>
-                <span class="note">\(\Omega\to1/\Omega\), imposed at the boundary.</span>
+                <span class="cell-note">\(\Omega\to1/\Omega\), imposed at the boundary.</span>
               </td>
               <td data-label="CSBHI">
                 <span class="status" data-status="addressed">✓</span>
-                <span class="note">\(a=1/r\), from infall geometry — the unique scale-free horizon-fixing
+                <span class="cell-note">\(a=1/r\), from infall geometry — the unique scale-free horizon-fixing
                   involution.</span>
               </td>
             </tr>
@@ -349,53 +366,49 @@
               <td data-label="At the aeon boundary">Black holes</td>
               <td data-label="CCC">
                 <span class="status" data-status="target">✓</span>
-                <span class="note">Evaporate before the boundary.</span>
+                <span class="cell-note">Evaporate before the boundary.</span>
               </td>
               <td data-label="CSBHI">
                 <span class="status" data-status="addressed">✓</span>
-                <span class="note">Are the succeeding aeons; the boundary passes through them.</span>
+                <span class="cell-note">Are the succeeding aeons; the boundary passes through them.</span>
               </td>
             </tr>
             <tr>
               <td data-label="At the aeon boundary">Regularity with black holes present</td>
               <td data-label="CCC">
                 <span class="status" data-status="target">✓</span>
-                <span class="note">Follows once they are gone.</span>
+                <span class="cell-note">Follows once they are gone.</span>
               </td>
               <td data-label="CSBHI">
                 <span class="status" data-status="addressed">✓</span>
-                <span class="note">Rescaled Weyl finite at weight \(a^{-2}\); physical Weyl \(\to0\).</span>
+                <span class="cell-note">Rescaled Weyl finite at weight \(a^{-2}\); physical Weyl \(\to0\).</span>
               </td>
             </tr>
             <tr>
               <td data-label="At the aeon boundary">Information at the singularity</td>
               <td data-label="CCC">
                 <span class="status" data-status="target">✓</span>
-                <span class="note">Removed from the phase space.</span>
+                <span class="cell-note">Removed from the phase space.</span>
               </td>
               <td data-label="CSBHI">
                 <span class="status" data-status="addressed">✓</span>
-                <span class="note">Enters the child aeon.</span>
+                <span class="cell-note">Enters the child aeon.</span>
               </td>
             </tr>
             <tr>
               <td data-label="At the aeon boundary">Rest mass at the boundary</td>
               <td data-label="CCC">
                 <span class="status" data-status="target">✓</span>
-                <span class="note">Vanishes for conformal invariance.</span>
+                <span class="cell-note">Vanishes for conformal invariance.</span>
               </td>
               <td data-label="CSBHI">
                 <span class="status" data-status="addressed">✓</span>
-                <span class="note">Crosses by falling through the horizon.</span>
+                <span class="cell-note">Crosses by falling through the horizon.</span>
               </td>
             </tr>
           </tbody>
         </table>
 
-        <p class="penrose-legend">
-          <span class="status" data-status="target">✓</span> Conformal Cyclic Cosmology addresses the point ·
-          <span class="status" data-status="addressed">✓</span> the reciprocal interior addresses it.
-        </p>
       </section>
     </article>
 
