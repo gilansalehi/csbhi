@@ -119,5 +119,5 @@ Perturbations, rotation, and the galaxy law follow only after this background ma
 3. [Collapse Day and Present Day](note.html?src=collapse_day_present_day_cohort_worldsheet).
 4. [From Collapse Shells to a Child FLRW Patch](note.html?src=homogeneous_collapse_shell_map).
 5. [The Remaining Horizon Clock](note.html?src=remaining_horizon_clock_map).
-6. [A Spherical Weyl-Relaxation Profile](note.html?src=spherical_weyl_relaxation_profile).
+6. [A Black Hole on the Aeon Boundary](note.html?src=shear_free_interior_weyl_stress_identity).
 7. [The Reciprocal Scale Field](note.html?src=reciprocal_scale_field).

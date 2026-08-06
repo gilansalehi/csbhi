@@ -42,16 +42,6 @@ const DOCUMENTS = {
       review: 'Proves that \\(a=1/r\\) is the unique nontrivial power-law map that is scale-free, involutive, and horizon-fixing.',
     },
   },
-  weylRelaxation: {
-    label: 'Result II',
-    title: 'A Spherical Weyl-Relaxation Profile for the Reciprocal Throat',
-    note: 'spherical_weyl_relaxation_profile',
-    prerequisite: 'ri1',
-    meta: { review: 'working result · independent verification in progress' },
-    summaries: {
-      review: 'Shows spherical Weyl curvature relaxing continuously through density homogenization, and derives the transverse stress a shear-free interior requires.',
-    },
-  },
   evolvingGDagger: {
     label: 'Prediction I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',

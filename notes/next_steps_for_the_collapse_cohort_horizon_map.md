@@ -327,6 +327,6 @@ The selected \(\Lambda\)LTB geometry now supplies the parent clock, horizon gene
 4. [From Collapse Shells to a Child FLRW Patch](note.html?src=homogeneous_collapse_shell_map).
 5. [The Remaining Horizon Clock](note.html?src=remaining_horizon_clock_map).
 6. [Null Optics of the Reciprocal Interior](note.html?src=null_optics_of_the_reciprocal_interior).
-7. [A Spherical Weyl-Relaxation Profile](note.html?src=spherical_weyl_relaxation_profile).
+7. [A Black Hole on the Aeon Boundary](note.html?src=shear_free_interior_weyl_stress_identity).
 8. [The Reciprocal Scale Field](note.html?src=reciprocal_scale_field).
 9. [Geometric Duality II: Collapse Cohorts and the Horizon Map](note.html?src=gd2_collapse_cohort_horizon_map_outline).

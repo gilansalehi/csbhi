@@ -6,7 +6,7 @@
 
 **Date:** 2026-08-05.
 
-**Status:** Framework and baseline, not a computed amplitude. The separation of background from perturbation and the homogeneous baseline are clean; the transfer function itself is set up but not evaluated (it needs the benchmark's substructure). This note also corrects the [amplitude note](note.html?src=primordial_amplitude_as_aeon_horizon_ratio): the horizon ratio is a background quantity, not \(\zeta\). Tiered **[E]** established, **[C]** correspondence, **[O]** open.
+**Status:** Framework and baseline, not a computed amplitude. The separation of background from perturbation and the homogeneous baseline are clean; the transfer function itself is set up but not evaluated (it needs the benchmark's substructure). The horizon ratio is a background quantity, not \(\zeta\). Tiered **[E]** established, **[C]** correspondence, **[O]** open.
 
 **Prerequisites:** [The Weyl Curvature Hypothesis as a Fixed Point of Recursive Black-Hole Cosmology](note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis); [From Collapse Shells to a Child FLRW Patch](note.html?src=homogeneous_collapse_shell_map); [Selecting the Parent Collapse Benchmark](note.html?src=collapse_benchmark_selection).
 
@@ -16,7 +16,7 @@
 
 ## 1. What this note fixes
 
-The [WCH note](note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis) and the [amplitude note](note.html?src=primordial_amplitude_as_aeon_horizon_ratio) both reduce to one calculation: how the structure of a collapsing parent overdensity becomes the child universe's primordial perturbation \(\zeta\). Review (Codex) showed the amplitude note skipped that calculation and mislabeled a local Weyl strength as \(\zeta\). This note sets the calculation up correctly. Its main content is a distinction the earlier work blurred.
+The [WCH note](note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis) reduces to one calculation: how the structure of a collapsing parent overdensity becomes the child universe's primordial perturbation \(\zeta\). This note sets that calculation up, and draws the distinction it turns on: the horizon ratio is a background quantity, not \(\zeta\) itself.
 
 ---
 
@@ -106,5 +106,5 @@ Only when both are in hand does \(\zeta(k)=T(k)\,\delta_\Sigma(k)\) become an am
 1. J. R. Oppenheimer and H. Snyder, "On Continued Gravitational Contraction," *Physical Review* **56**, 455 (1939), [doi:10.1103/PhysRev.56.455](https://doi.org/10.1103/PhysRev.56.455).
 2. W. Israel, "Singular hypersurfaces and thin shells in general relativity," *Nuovo Cimento B* **44**, 1 (1966).
 3. D. Baumann, "TASI Lectures on Inflation," [arXiv:0907.5424](https://arxiv.org/abs/0907.5424) — for the definition of \(\zeta\) and the transfer it requires.
-4. [The Weyl Curvature Hypothesis as a Fixed Point of Recursive Black-Hole Cosmology](note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis); [The Primordial Amplitude as a Ratio of Aeon Horizons](note.html?src=primordial_amplitude_as_aeon_horizon_ratio); [From Collapse Shells to a Child FLRW Patch](note.html?src=homogeneous_collapse_shell_map); [Selecting the Parent Collapse Benchmark](note.html?src=collapse_benchmark_selection), this project.
+4. [The Weyl Curvature Hypothesis as a Fixed Point](note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis); [From Collapse Shells to a Child FLRW Patch](note.html?src=homogeneous_collapse_shell_map); [Selecting the Parent Collapse Benchmark](note.html?src=collapse_benchmark_selection), this project.
 5. G. Salehi, [GD I](gd1.html), this project.

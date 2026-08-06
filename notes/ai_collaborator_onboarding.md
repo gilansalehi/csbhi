@@ -31,7 +31,7 @@ Read these documents in order:
 3. [CSBHI Cosmological Glossary](note.html?src=cosmological_glossary)
 4. [RI I — *Field Equations of the Reciprocal Interior*](note.html?src=field_equations_of_the_reciprocal_interior)
 5. [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](reciprocal-involution.html)
-6. [A Spherical Weyl-Relaxation Profile for the Reciprocal Throat](note.html?src=spherical_weyl_relaxation_profile)
+6. [A Black Hole on the Aeon Boundary](note.html?src=shear_free_interior_weyl_stress_identity)
 7. [The Evolving Galactic Acceleration-Scale Correspondence](note.html?src=evolving_g_dagger_derivation)
 8. [What Remains Mathematically Illegible](note.html?src=open_questions)
 

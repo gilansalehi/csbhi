@@ -206,5 +206,5 @@ The remaining tasks are to derive \(\Sigma_*\), calculate realistic Weyl relaxat
 1. J. R. Oppenheimer and H. Snyder, “On Continued Gravitational Contraction,” *Physical Review* **56**, 455–459 (1939), [doi:10.1103/PhysRev.56.455](https://doi.org/10.1103/PhysRev.56.455).
 2. C. W. Misner and D. H. Sharp, “Relativistic Equations for Adiabatic, Spherically Symmetric Gravitational Collapse,” *Physical Review* **136**, B571–B576 (1964), [doi:10.1103/PhysRev.136.B571](https://doi.org/10.1103/PhysRev.136.B571).
 3. L. Mayer and S. Bonoli, “The Route to Massive Black Hole Formation via Merger-Driven Direct Collapse,” *Reports on Progress in Physics* **82**, 016901 (2019), [arXiv:1803.06391](https://arxiv.org/abs/1803.06391).
-4. Codex (OpenAI), [“A Spherical Weyl-Relaxation Profile”](note.html?src=spherical_weyl_relaxation_profile), this project.
+4. [“A Black Hole on the Aeon Boundary”](note.html?src=shear_free_interior_weyl_stress_identity), this project.
 5. Codex (OpenAI), [“Field Equations of the Reciprocal Interior”](note.html?src=field_equations_of_the_reciprocal_interior), this project.
