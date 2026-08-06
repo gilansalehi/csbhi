@@ -244,7 +244,7 @@ e^{-H_\Lambda \tau}.
 \tag{11}
 \]
 
-A stationary parent horizon written in a physically normalized external time commonly approaches its null asymptote with an exponential governed by surface gravity \(\kappa_{\rm BH}\). This motivates the test
+A stationary parent horizon relates its affine parameter to a stationary Killing normalization through the surface gravity \(\kappa_{\rm BH}\). If the cohort parameter \(v_H\) were shown to carry that normalization, this would motivate the test
 
 \[
 \eta_\infty-\Phi(v_H)
@@ -262,7 +262,7 @@ H_\Lambda\frac{d\tau_H}{dv_H}
 \tag{13}
 \]
 
-Equation (13) is a clue about the clock normalization, not an area identification between the parent event horizon and the child particle horizon. Under the idealized radius identity \(R_S=R_\Lambda\), Schwarzschild and de Sitter surface gravities differ by a factor of two. The same factor appears in their horizon-temperature comparison and in the exact relation between \(\Phi'\) and the optical derivative \(V'\). The completed clock calculation should determine whether these factors share one geometric origin.
+Equation (13) is a conditional clue, not an endpoint requirement or an area identification. The benchmark fixes \(v_H=t_P\), the parent dust proper time, which is neither an affine horizon parameter nor automatically the stationary Killing time. The shell clock instead gives \(H_{\Lambda,C}=-\lim d\ln(1-\mu_H)/dt_P\). The completed geometry may relate that exponent to \(\kappa_{\rm BH}\), but the two must not be identified before their clock conversion is derived. See [Asymptotic Consistency of the Collapse-Cohort Map](note.html?src=asymptotic_consistency_of_the_collapse_cohort_map).
 
 ---
 
@@ -299,9 +299,9 @@ Resume the calculation in this order:
 1. **Audit prior work — completed.** See [Horizon-Map Equation and Notation Audit](note.html?src=horizon_map_equation_and_notation_audit). It separates the two child null branches, derives \(\Phi'=J_H/(2V')\), and shows that shell homogeneity alone does not fix \(\Omega_\Sigma\).
 2. **Select the benchmark — completed.** Use a broad compensated \(\Lambda\)LTB overdensity inside a flat dust–\(\Lambda\) FLRW parent, with \(v_H=t_P\). See [Selecting the Parent Collapse Benchmark](note.html?src=collapse_benchmark_selection).
 3. **Write and close the two null embeddings — completed.** See [The Collapse-to-Child Boundary System](note.html?src=collapse_to_child_boundary_system). The two embeddings reduce the apparent freedom to one cohort lapse; the same-clock identification gives \(\Phi(t_P)=\eta_C(t_P-t_{\rm form})\), optics supplies the same normalization, and \(\Omega_\Sigma=a\Phi/R_{\rm BH}\).
-4. **Test the shell-clock constraint — first benchmark constructed; full-history verdict open.** See [The Shell Clock in a Compensated \(\Lambda\)LTB Collapse](note.html?src=shell_clock_benchmark_compensated_ltb). The published profile, core mass, trapping history, and \(\Lambda_P\)-selected bound shell have been reconstructed. Regular formation gives the required cubic power, while the marginal de Sitter shell conditionally gives \(H_{\Lambda,C}=\sqrt3H_{\Lambda,P}\). The source supplies a trapping horizon rather than the global event horizon, so the intermediate event-horizon history remains the numerical residual; substituting the trapping horizon would test the wrong surface.
-5. **Compute the optical transfer.** Solve the parent null-coordinate integrating factor and verify the mapped frequencies across the full formation history.
-6. **Check the asymptotes.** Test formation, stationary-horizon, and child de Sitter limits separately.
+4. **Test the shell-clock constraint — first benchmark constructed; full-history verdict open.** See [The Shell Clock in a Compensated \(\Lambda\)LTB Collapse](note.html?src=shell_clock_benchmark_compensated_ltb). The published profile, core mass, trapping history, and \(\Lambda_P\)-selected bound shell have been reconstructed. Regular formation gives the required cubic power, while the marginal shell has escape rate \(\sqrt3H_{\Lambda,P}\) and collapse-time exponent \(2\sqrt3H_{\Lambda,P}\). If the event horizon inherits that exponent, the shell clock conditionally gives \(H_{\Lambda,C}=2\sqrt3H_{\Lambda,P}\); the null integration must decide it. The source supplies a trapping horizon rather than the global event horizon, so the intermediate event-horizon history remains the numerical residual; substituting the trapping horizon would test the wrong surface.
+5. **Compute the optical transfer — exact reduction completed; numerical history shares the event-horizon residual.** See [Optical Transfer Through a Matter-Filled Parent Collapse](note.html?src=optical_transfer_through_compensated_ltb_collapse). The integrating factor obeys \(d\ln\beta/dt_P=-\dot Y'/Y'\) along ingoing rays, giving \(J_H=2\beta_H\) and \(V'=a_C\beta_H\) under the same-clock map. Frequency continuity returns \(N_H=1\), so optics checks rather than replaces the cohort clock. Evaluating the transfer through formation requires the same two-dimensional parent solution and global event horizon left open by Step 4.
+6. **Check the asymptotes — completed analytically; one parent exponent remains numerical.** See [Asymptotic Consistency of the Collapse-Cohort Map](note.html?src=asymptotic_consistency_of_the_collapse_cohort_map). Formation is regular with \(\mu_H\propto\Delta t^3\), \(\Omega_\Sigma\to1\), and finite optical transfer. A general late tail \(1-\mu_H\propto e^{-\lambda t_P}\) reconstructs \(a_C\propto e^{\lambda\tau}\), so \(H_{\Lambda,C}=\lambda\). A finite parent horizon remains compatible because \(\Omega_\Sigma\) carries the local-to-global growth. The global event-horizon integration must determine \(\lambda\); surface gravity uses a different parent clock unless a conversion is derived.
 7. **Extend to the cohort neighborhood.** Only then calculate shell ordering, Weyl relaxation, effective stress, and dimensional sufficiency.
 8. **Write the result as a calculation note.** Separate exact results, CSBHI identifications, and unresolved inputs. Do not promote a calibrated correspondence into a derivation.
 
