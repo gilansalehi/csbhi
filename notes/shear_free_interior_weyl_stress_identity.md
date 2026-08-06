@@ -34,10 +34,12 @@ which shows \(D\propto a^{-3}\iff\Pi=0\) and \(\Pi=-D\iff D\propto a^{-1}\). The
 The correct closure, computed directly from the metric, is
 
 \[
-\boxed{\,\Pi=-\tfrac12 D\,}\qquad\Longleftrightarrow\qquad 8\pi G\,\Pi=3\Psi_2,
+\boxed{\,\Pi=-\tfrac12 D\,}\qquad\Longleftrightarrow\qquad 8\pi G\,\Pi=6\,\Psi_2\ \ (\text{NP}),
 \]
 
 with the interior Weyl field diluting as \(D\propto\mathcal R^{-2}\) (power **2**, not 3).
+
+**Convention (from review).** The physical result \(\Pi=-\tfrac12 D\) is convention-free. The Weyl relations are stated in the standard Newman–Penrose convention, \(\Psi_2\); the earlier direct computation used the radial electric-Weyl (tidal) eigenvalue \(C_{\hat0\hat r\hat0\hat r}=2\Psi_2\), so \(8\pi G\,\Pi=3\,C_{\hat0\hat r\hat0\hat r}=6\Psi_2\). Once anisotropic pressure is present the density identity generalizes to \(\Psi_2=-\tfrac{4\pi G}{3}(D+\Pi)\); with \(\Pi=-\tfrac12 D\) this gives \(\Psi_2=-\tfrac{2\pi G}{3}D\) and \(8\pi G\,\Pi=6\Psi_2\) consistently. The perfect-fluid form \(\Psi_2=-\tfrac{4\pi G}{3}D\) holds only in the isotropic sector.
 
 The exterior Kottler field carries power 3 in the same scale variable, so the two sides are not reflection-symmetric. But this is not a broken symmetry — it is a **category error corrected**. The exterior power 3 is a *spatial* profile (the tidal field of a point mass at fixed time); the interior power 2 is a *temporal* dilution rate. The quantity that crosses the aeon boundary is the temporal one, and its power is exactly the **conformal weight of the Weyl scalar**: \(\hat\Psi_2=\Omega^{-2}\Psi_2\) with the de Sitter compactification factor \(\Omega\propto 1/a\). Power 2 is the unique dilution for which the rescaled Weyl is finite and nonzero at the boundary — the physical Weyl vanishes (clean big bang, Weyl-curvature hypothesis satisfied) while a finite Weyl seed is carried to the next aeon. The spherical-Weyl note's \(a^{-3}\) would rescale to \(a^{-1}\to0\), erasing that seed. The relevant symmetry of a recursive lineage is conformal (a rescaling between generations), not bilateral (a reflection about one horizon); the shear-free interior realizes the conformal weight automatically.
 
@@ -115,10 +117,10 @@ The Misner–Sharp mass \(Gm=\tfrac{\mathcal R}{2}(1-(\nabla\mathcal R)^2)\) wit
 Hence, exactly,
 
 \[
-8\pi G\,\Pi=3\Psi_2=-4\pi G\,D\qquad\Longrightarrow\qquad \Pi=-\tfrac12 D.
+8\pi G\,\Pi=3\,C_{\hat0\hat r\hat0\hat r}=6\Psi_2=-4\pi G\,D\qquad\Longrightarrow\qquad \Pi=-\tfrac12 D,
 \]
 
-**Numerical verification.** A full finite-difference Riemann → Weyl → Einstein computation confirms \(\Pi/D=-\tfrac12\) to 8 significant figures on three unrelated metrics: the separable case above, a non-separable shear-free interior \(\phi(\tau,l)\) with \(s(l)\neq\mathrm{const}\), and a third with nonzero energy flux \(G_{\hat 0\hat l}\neq0\). Computing \(\Psi_2\) directly from the Weyl tensor (radial tidal component \(C_{\hat0\hat l\hat0\hat l}\)) rather than from the mass identity reproduces \(8\pi G\,\Pi=3\,C_{\hat0\hat l\hat0\hat l}\), so the result does not rely on the spherical-Weyl note's convention. Introducing shear (\(H_\parallel\neq H_\perp\)) breaks the ratio away from \(-\tfrac12\): the identity is specifically the **shear-free** closure.
+**Numerical verification.** The committed [benchmark script](../scripts/shear_free_Pi_equals_minus_half_D.py) confirms \(\Pi/D=-\tfrac12\) to 8 significant figures for the separable metric by a full finite-difference Riemann → Weyl → Einstein computation, and reproduces \(8\pi G\,\Pi=3\,C_{\hat0\hat r\hat0\hat r}\) with \(\Psi_2\) taken directly from the Weyl tensor (radial tidal component) — so the ratio does not rely on the spherical-Weyl note's mass identity. During development the same ratio was verified on a non-separable interior and one with nonzero energy flux \(G_{\hat0\hat r}\neq0\); those additional cases are not in the committed script and should be re-committed before the "multiple metrics" claim is relied on. Introducing shear (\(H_\parallel\neq H_\perp\)) breaks the ratio away from \(-\tfrac12\): the identity is specifically the **shear-free** closure.
 
 The revised pair is now internally consistent: \(\Pi=-\tfrac12 D\) fed into the §1 identity gives \(D_\tau D=-2HD\), i.e. \(D\propto\mathcal R^{-2}\).
 
@@ -161,7 +163,7 @@ Both are legitimate continuations. The honest status is that the *simplest* shea
 
 ## 5. Result
 
-> For a geodesic, shear-free spherical interior the anisotropic stress is fixed exactly by the density contrast, \(\Pi=-\tfrac12 D\) (equivalently \(8\pi G\,\Pi=3\Psi_2\)), and the Weyl field dilutes as \(\mathcal R^{-2}\). This corrects the spherical-Weyl note's \(\Pi=-D\) and \(D\propto a^{-3}\), which omitted the anisotropic \(2\Pi\) term in the conservation identity and cannot both hold. The corrected exponent is not a defect: \(a^{-2}\) is the conformal weight of the Weyl scalar, the unique dilution for which the aeon boundary is both regular (physical Weyl \(\to0\), a clean big bang) and information-carrying (rescaled Weyl finite). The reciprocal map is thus a conformal rescaling between generations, not a reflection about one horizon — the exponent mismatch with the exterior is the fingerprint of the scale inversion, verified numerically.
+> For a geodesic, shear-free spherical interior the anisotropic stress is fixed exactly by the density contrast, \(\Pi=-\tfrac12 D\) (equivalently \(8\pi G\,\Pi=6\Psi_2\) in NP normalization, \(=3\,C_{\hat0\hat r\hat0\hat r}\) for the radial tidal eigenvalue), and the Weyl field dilutes as \(\mathcal R^{-2}\). This corrects the spherical-Weyl note's \(\Pi=-D\) and \(D\propto a^{-3}\), which omitted the anisotropic \(2\Pi\) term in the conservation identity and cannot both hold. The corrected exponent is not a defect: \(a^{-2}\) is the conformal weight of the Weyl scalar, the unique dilution for which the aeon boundary is both regular (physical Weyl \(\to0\), a clean big bang) and information-carrying (rescaled Weyl finite). The reciprocal map is thus a conformal rescaling between generations, not a reflection about one horizon — the exponent mismatch with the exterior is the fingerprint of the scale inversion, verified numerically.
 
 **Next targets.** (1) The non-geodesic, pressure-supported throat, where an acceleration term enters the conservation identity — the case a matter-supported neck actually occupies. (2) Carry the finite rescaled seed \(\hat\Psi_2\) into the next aeon's initial data and check whether that aeon, on approach to *its* de Sitter future, reproduces the same weight-\(2\) crossover — which would make the lineage conformally self-similar rather than merely regular at a single boundary.
 
@@ -171,5 +173,5 @@ Both are legitimate continuations. The honest status is that the *simplest* shea
 
 1. [A Spherical Weyl-Relaxation Profile for the Reciprocal Throat](note.html?src=spherical_weyl_relaxation_profile); [The Reciprocal Interior as 2D Dilaton Gravity](note.html?src=reciprocal_interior_as_2d_dilaton_gravity), this project.
 2. C. W. Misner and D. H. Sharp, *Phys. Rev.* **136**, B571 (1964), [doi:10.1103/PhysRev.136.B571](https://doi.org/10.1103/PhysRev.136.B571).
-3. L. Herrera, A. Di Prisco, J. Ospino, "Structure scalars in anisotropic spheres," *Phys. Rev. D* **79**, 064025 (2009), [arXiv:0903.4192](https://arxiv.org/abs/0903.4192).
+3. L. Herrera, J. Ospino, A. Di Prisco, E. Fuenmayor, O. Troconis, "Structure and evolution of self-gravitating objects and the orthogonal splitting of the Riemann tensor," *Phys. Rev. D* **79**, 064025 (2009), [arXiv:0903.3532](https://arxiv.org/abs/0903.3532).
 4. G. Salehi, [GD1](gd1.html), this project.

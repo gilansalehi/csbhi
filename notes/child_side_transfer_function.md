@@ -20,7 +20,9 @@ The [transfer note](note.html?src=weyl_to_zeta_transfer_across_collapse) split t
 
 ---
 
-## 2. The leading result: \(T=1\) [E]
+## 2. The conditional baseline: \(T=1\) [C]
+
+**Conditions (from review).** The result below is the standard adiabatic baseline, and it holds only *given*: an adiabatic, super-horizon mode; a specified matching hypersurface; no surface layer; and a shared gauge-invariant perturbation variable across the transition. This note establishes the baseline, not that CSBHI's birth map satisfies those conditions — that is the open work of §4–5.
 
 The comoving curvature perturbation on uniform-density slices is
 
@@ -42,15 +44,13 @@ This is the Wands–Malik–Lyth–Liddle result. Its content here is decisive: 
 \zeta_{\rm child}=\zeta_{\rm parent}\qquad\Longrightarrow\qquad T=1 .
 \]
 
-The junction picture says the same thing microscopically. Darmois matching (continuity of induced 3-metric and extrinsic curvature, no surface layer) makes \(\psi\) and \(\delta\rho\) continuous across \(\Sigma_*\), so \(\zeta\) is continuous. A local Weyl scalar plays no role — confirming, from the correct calculation, that \(\zeta\) is not a dimensionally-rescaled \(\Psi_2\).
+The strength of this route is that it is *insensitive* to the local junction details: for a super-horizon adiabatic mode, \(\zeta\) is conserved by the long-wavelength evolution regardless of how the transition proceeds. The junction conditions do **not** make \(\psi\) and \(\delta\rho\) separately continuous — Darmois constrains specific combinations of the induced metric and extrinsic curvature, not each perturbation variable — so the microscopic matching is where the corrections of §4 live. What survives cleanly is only that a local Weyl scalar plays no role, confirming that \(\zeta\) is not a dimensionally-rescaled \(\Psi_2\).
 
 ---
 
-## 3. Every observable mode is super-horizon at birth [E→C]
+## 3. Which observable modes are super-horizon at birth [C, conditional]
 
-The child is born with horizon scale \(R_S\). A mode is super-horizon at birth when \(k^{-1}\gtrsim R_S\). Because the child expands by an enormous factor after birth, every comoving scale we observe today — the entire CMB and large-scale-structure range — was far outside \(R_S\) at birth (this is the same statement that makes those modes "primordial" in standard cosmology: they were super-horizon in the early universe and re-entered later).
-
-Therefore \(T(k)=1\) across the whole observable band: **the child inherits the parent's curvature-perturbation spectrum — amplitude *and* tilt — unchanged.** This is the rigorous form of "the amplitude is inherited": not a slogan, but the super-horizon conservation theorem applied to the birth. It fixes the sense in which low-Weyl birth and small \(\zeta\) are one fixed point, and it means the observable spectrum is set entirely by the parent's \(\delta_\Sigma(k)\), with the child-side passing it through.
+The child is born with horizon scale \(R_S\). A mode is super-horizon at birth when \(k^{-1}\gtrsim R_S\), and only those modes are protected by the conservation theorem. Whether the entire observable CMB/LSS band was super-horizon at birth is **not** automatic — it depends on the absolute child scale \(R_S\) and on the comoving-mode map between parent and child, neither of which is fixed here. Under the standard assumption that the child undergoes a long post-birth expansion (so observable scales were far outside \(R_S\) at birth, as in ordinary cosmology), \(T(k)=1\) across the observable band and the child inherits the parent's spectrum — amplitude and tilt — unchanged. That is the sense in which low-Weyl birth and small \(\zeta\) are one fixed point; it is conditional on the scale map, not established.
 
 Consistency with the baseline: a homogeneous collapse has \(\delta_\Sigma=0\), so \(\zeta=T\cdot0=0\) — the Oppenheimer–Snyder anchor, recovered.
 
@@ -64,13 +64,13 @@ Consistency with the baseline: a homogeneous collapse has \(\delta_\Sigma=0\), s
 
 **(b) A non-adiabatic kick from the reciprocal matter map: \(\Delta\zeta=-\int\frac{H}{\rho+p}\delta p_{\rm nad}\,dt\). [C — the interesting one]** The map \(a=1/r\) changes the matter content across the birth surface. If the child's matter is not a smooth continuation of the parent's — if the map excites a *relative* perturbation between components — then \(\delta p_{\rm nad}\neq0\) at the transition and \(\zeta\) receives a kick. This is the one channel that can shift the inherited amplitude or tilt, and it is CSBHI-specific: it is the reciprocal map's fingerprint on the primordial spectrum. Computing \(\delta p_{\rm nad}\) from the matter map is the sharpest next step, because a *non-zero* result would be a prediction that departs from pure inheritance.
 
-**(c) A surface-layer kick from the throat: \(\Delta\zeta\sim\) perturbed shell stress. [C→S]** If the birth surface carries a thin shell rather than a smooth Darmois match, the extrinsic curvature jumps, \([K_{ab}]=-8\pi G(S_{ab}-\tfrac12 S h_{ab})\), and a *perturbed* shell sources a jump in \(\zeta\). The shell's anisotropic stress is exactly the throat tension of the [shear-free note](note.html?src=shear_free_interior_weyl_stress_identity) (\(\Pi=-\tfrac12 D\) in the thin limit). So a shell-supported throat would imprint its tension on the primordial spectrum. For a smooth (thick) throat, \(S_{ab}\to0\) and this vanishes; it is a genuine but limit-dependent channel.
+**(c) A surface-layer kick from the throat: \(\Delta\zeta\sim\) perturbed shell stress. [C→S]** If the birth surface carries a thin shell, a *perturbed* shell sources a jump in \(\zeta\). Two cautions from review: (i) the collapse-cohort construction makes the birth surface **null**, so the relevant junction is the Barrabès–Israel *null-shell* formalism, not the spacelike \([K_{ab}]=-8\pi G(S_{ab}-\tfrac12 Sh_{ab})\) quoted for a timelike/spacelike layer; (ii) the bulk anisotropic stress \(\Pi\) of the [shear-free note](note.html?src=shear_free_interior_weyl_stress_identity) cannot be identified directly with a surface stress \(S_{ab}\) — one must integrate through a finite layer or take a controlled thin-layer limit. With those caveats, a shell-supported throat would imprint its tension on the spectrum, and a smooth (thick) throat gives no such kick.
 
 ---
 
 ## 5. What this settles, and what it hands back
 
-**Settled [E]:** the child-side transfer is \(T(k)=1\) on all observable (super-horizon-at-birth) scales; the child inherits the parent's \(\zeta\) spectrum, amplitude and tilt, unchanged; the homogeneous baseline \(\zeta=0\) is recovered.
+**Baseline [C, conditional]:** *given* an adiabatic super-horizon mode with a shared gauge-invariant variable and no surface layer, the child-side transfer is \(T(k)=1\) — the child inherits the parent's \(\zeta\) spectrum unchanged, and the homogeneous baseline \(\zeta=0\) is recovered. What is **not** yet established for the CSBHI birth map: that the transition is adiabatic across the \(a=1/r\) matter change, that the (null) birth surface carries no relevant surface layer, and that the observable band is super-horizon at birth under the true scale map.
 
 **Handed to the parent side [C→O]:** because \(T=1\), the observable amplitude and \(n_s\) are *entirely* the parent's \(\delta_\Sigma(k)\). The value of \(10^{-5}\) and the tilt \(0.965\) are now unambiguously the benchmark's job — the child-side does not generate them and cannot hide them. This is the cleanest possible division: if Codex's ΛLTB substructure comes out near-scale-invariant at \(10^{-5}\), the arc closes; if not, the child-side offers no rescue at these scales.
 
