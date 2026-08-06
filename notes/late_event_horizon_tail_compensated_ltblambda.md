@@ -8,7 +8,7 @@
 
 **Prerequisites:** [The Shell Clock in a Compensated ΛLTB Collapse](note.html?src=shell_clock_benchmark_compensated_ltb); [Asymptotic Consistency of the Collapse-Cohort Map](note.html?src=asymptotic_consistency_of_the_collapse_cohort_map).
 
-**Status:** Endpoint result. The marginal-shell exponent is established analytically and reproduced numerically. Its transfer to the event-horizon swept-mass tail is conditional on the standard stationary-future boundary condition. The intermediate event-horizon history remains open. Tiered **[E]** established ΛLTB dynamics, **[N]** numerical quadrature, **[C]** CSBHI shell-clock consequence, **[O]** open full-history integration.
+**Status:** Endpoint result. The marginal-shell exponent is established analytically and reproduced numerically. Its transfer to the event-horizon swept-mass tail is conditional on the standard stationary-future boundary condition. The subsequent full-history test is linked in Section 7. Tiered **[E]** established ΛLTB dynamics, **[N]** numerical quadrature, **[C]** CSBHI shell-clock consequence.
 
 ---
 
@@ -197,7 +197,7 @@ If the event horizon approaches the final stationary black-hole horizon, its cro
 \Delta_{\rm trap}
 \longrightarrow
 \frac{4GM_f}{3}
-=3.38\ {m s}.
+=3.38\ \mathrm{s}.
 \tag{14}
 \]
 
@@ -253,18 +253,18 @@ It does close the late endpoint more tightly than before: the remaining global n
 
 ---
 
-## 7. What remains open
+## 7. Subsequent full-history result
 
-The full event-horizon generator \(x_H(t_P)\) is still required to test Equation (1) between formation and the de Sitter tail. That calculation is numerically multiscale: the compensated profile spans kiloparsecs, while the final seed horizon is only \(1.52\times10^6\) km. Near the stationary tail, the event horizon and trapping horizon can differ by roughly machine precision when expressed in the comoving shell coordinate.
+The full event-horizon generator \(x_H(t_P)\) is numerically multiscale: the compensated profile spans kiloparsecs, while the final seed horizon is only \(1.52\times10^6\) km. Near the stationary tail, the event horizon and trapping horizon can differ by roughly machine precision when expressed in the comoving shell coordinate.
 
-The next solver should therefore use horizon-adapted or arbitrary-precision variables and must report convergence against the global future boundary. The endpoint calculation already supplies its late boundary condition:
+The [full-history calculation](note.html?src=full_history_test_of_the_collapse_cohort_shell_clock) uses the horizon-adapted logarithmic offset demanded by this scale separation. Its late boundary condition remains
 
 \[
 \lambda=\sqrt3H_{\Lambda,P}.
 \tag{19}
 \]
 
-The middle of the map, rather than its final exponent, is now the numerical unknown.
+The endpoint result survives. The intermediate history rejects the unit-lapse shell clock for this benchmark and isolates an evolving cohort lapse as the next target.
 
 ---
 

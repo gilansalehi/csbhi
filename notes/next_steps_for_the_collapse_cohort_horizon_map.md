@@ -299,26 +299,23 @@ Resume the calculation in this order:
 1. **Audit prior work — completed.** See [Horizon-Map Equation and Notation Audit](note.html?src=horizon_map_equation_and_notation_audit). It separates the two child null branches, derives \(\Phi'=J_H/(2V')\), and shows that shell homogeneity alone does not fix \(\Omega_\Sigma\).
 2. **Select the benchmark — completed.** Use a broad compensated \(\Lambda\)LTB overdensity inside a flat dust–\(\Lambda\) FLRW parent, with \(v_H=t_P\). See [Selecting the Parent Collapse Benchmark](note.html?src=collapse_benchmark_selection).
 3. **Write and close the two null embeddings — completed.** See [The Collapse-to-Child Boundary System](note.html?src=collapse_to_child_boundary_system). The two embeddings reduce the apparent freedom to one cohort lapse; the same-clock identification gives \(\Phi(t_P)=\eta_C(t_P-t_{\rm form})\), optics supplies the same normalization, and \(\Omega_\Sigma=a\Phi/R_{\rm BH}\).
-4. **Test the shell-clock constraint — benchmark and late tail constructed; full-history verdict open.** See [The Shell Clock in a Compensated \(\Lambda\)LTB Collapse](note.html?src=shell_clock_benchmark_compensated_ltb) and [The Late Event-Horizon Tail](note.html?src=late_event_horizon_tail_compensated_ltblambda). The published profile, core mass, trapping history, and \(\Lambda_P\)-selected bound shell have been reconstructed. Regular formation gives the required cubic power. Direct quadrature shows that complete near-marginal collapse has exponent \(\sqrt3H_{\Lambda,P}\): the shell encounters the logarithmic dwell on both the expanding and recollapsing legs. If the event horizon approaches the final stationary radius, its finite crossing-to-focusing interval preserves this exponent, and the shell clock conditionally gives \(H_{\Lambda,C}=\sqrt3H_{\Lambda,P}\), or \(\Lambda_C=3\Lambda_P\). The intermediate event-horizon history remains the numerical residual; substituting the trapping horizon would test the wrong surface.
-5. **Compute the optical transfer — exact reduction completed; numerical history shares the event-horizon residual.** See [Optical Transfer Through a Matter-Filled Parent Collapse](note.html?src=optical_transfer_through_compensated_ltb_collapse). The integrating factor obeys \(d\ln\beta/dt_P=-\dot Y'/Y'\) along ingoing rays, giving \(J_H=2\beta_H\) and \(V'=a_C\beta_H\) under the same-clock map. Frequency continuity returns \(N_H=1\), so optics checks rather than replaces the cohort clock. Evaluating the transfer through formation requires the same two-dimensional parent solution and global event horizon left open by Step 4.
+4. **Test the shell-clock constraint — completed for the selected benchmark; unit lapse rejected.** See [The Full-History Test](note.html?src=full_history_test_of_the_collapse_cohort_shell_clock). A horizon-adapted generator preserves the event/trapping distinction across the multiscale collapse. The formation and de Sitter endpoint powers agree, but the reconstructed intermediate equation of state violates the nonnegative dust–radiation–vacuum bound. This rejects the unit-lapse shell clock for this compensated profile, not the reciprocal ansatz.
+5. **Compute the optical transfer — exact reduction completed; normalization requires revision.** See [Optical Transfer Through a Matter-Filled Parent Collapse](note.html?src=optical_transfer_through_compensated_ltb_collapse). The integrating factor obeys \(d\ln\beta/dt_P=-\dot Y'/Y'\) along ingoing rays, giving \(J_H=2\beta_H\). The earlier frequency-continuity argument selected \(N_H=1\); the full-history failure shows that this identification, its optical normalization, or the direct shell correspondence cannot all remain unchanged.
 6. **Check the asymptotes — completed analytically; late coefficient fixed conditionally.** See [Asymptotic Consistency of the Collapse-Cohort Map](note.html?src=asymptotic_consistency_of_the_collapse_cohort_map). Formation is regular with \(\mu_H\propto\Delta t^3\), \(\Omega_\Sigma\to1\), and finite optical transfer. A general late tail \(1-\mu_H\propto e^{-\lambda t_P}\) reconstructs \(a_C\propto e^{\lambda\tau}\), so \(H_{\Lambda,C}=\lambda\). The stationary bounded-gap condition and verified shell dwell give \(\lambda=\sqrt3H_{\Lambda,P}\). A finite parent horizon remains compatible because \(\Omega_\Sigma\) carries the local-to-global growth. Surface gravity uses a different parent clock unless a conversion is derived.
-7. **Extend to the cohort neighborhood.** Only then calculate shell ordering, Weyl relaxation, effective stress, and dimensional sufficiency.
-8. **Write the result as a calculation note.** Separate exact results, CSBHI identifications, and unresolved inputs. Do not promote a calibrated correspondence into a derivation.
+7. **Solve for the missing cohort lapse.** Preserve the event-horizon history and homogeneous shell ordering, then determine whether the null geometry fixes an evolving \(N_H=d\tau/dt_P\) that restores a nonnegative child Friedmann history.
+8. **Extend to the cohort neighborhood.** Only then calculate Weyl relaxation, effective stress, and dimensional sufficiency.
 
 The first concrete question for the next step is now:
 
 \[
 \boxed{
-\text{Does one regular compensated }\Lambda\text{LTB collapse satisfy}
-\quad
-\frac{m_H(t_P)}{M_f}
-=
-\left[\frac{\eta_C(t_P-t_{\rm form})}{\eta_\infty}\right]^3?
+\text{Does the null boundary determine a nontrivial }N_H(t_P)
+\text{ that restores a nonnegative child Friedmann history?}
 }
 \tag{14}
 \]
 
-The selected \(\Lambda\)LTB geometry supplies the parent clock, horizon generator, and swept mass history. Step four tests that history against the child clock fixed in Step three without fitting either side to present observations.
+The selected \(\Lambda\)LTB geometry now supplies the parent clock, horizon generator, and swept mass history. The remaining task is no longer to guess the event horizon; it is to identify the clock conversion demanded by the geometry.
 
 ---
 

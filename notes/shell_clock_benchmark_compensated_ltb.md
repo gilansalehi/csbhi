@@ -349,7 +349,7 @@ H_{\Lambda,C}
 \tag{27}
 \]
 
-Equation (27) is not inserted into the benchmark and is not yet a completed recursive law. It is the conditional late-time prediction of four stated ingredients: the \(\Lambda\)LTB marginal-shell exponent, a bounded interval between event-horizon crossing and shell focusing in the stationary limit, the same cohort clock, and the cubic homogeneous shell map. The first is verified by direct quadrature in [The Late Event-Horizon Tail](note.html?src=late_event_horizon_tail_compensated_ltblambda); the second follows if the generator approaches the final stationary black-hole horizon. The full intermediate event-horizon history remains numerical.
+Equation (27) is not inserted into the benchmark and is not yet a completed recursive law. It is the conditional late-time prediction of four stated ingredients: the \(\Lambda\)LTB marginal-shell exponent, a bounded interval between event-horizon crossing and shell focusing in the stationary limit, the same cohort clock, and the cubic homogeneous shell map. The first is verified by direct quadrature in [The Late Event-Horizon Tail](note.html?src=late_event_horizon_tail_compensated_ltblambda); the second follows if the generator approaches the final stationary black-hole horizon. The subsequent [full-history test](note.html?src=full_history_test_of_the_collapse_cohort_shell_clock) preserves this endpoint while rejecting the unit-lapse intermediate history for the selected benchmark.
 
 ---
 
@@ -406,9 +406,9 @@ The benchmark does not yet establish that the published collapse satisfies Equat
 3. **The complete shell family has a natural \(\Lambda_P\)-controlled endpoint.** The marginally bound shell fixes \(M_f\), rather than an arbitrary finite accretion cutoff.
 4. **The shell endpoint power is sharp; the child coefficient remains conditional.** Regular formation supplies the cubic law, while the complete near-marginal collapse gives the shell rate \(\sqrt3H_{\Lambda,P}\). If the event horizon approaches the final stationary radius, its finite crossing-to-focusing interval preserves that rate and the shell clock gives \(H_{\Lambda,C}=\sqrt3H_{\Lambda,P}\).
 
-The remaining numerical object is now unambiguous: integrate the global outgoing event-horizon generator through the full \(\Lambda\)LTB future, evaluate \(\mu_H(t_P)\), reconstruct \(a_{\rm req}\) from Equation (29), and compare Equation (30) over the intermediate history.
+The subsequent [full-history test](note.html?src=full_history_test_of_the_collapse_cohort_shell_clock) performs this reconstruction in a horizon-adapted variable. The endpoint powers survive, but the intermediate \(a_{\rm req}\) violates the nonnegative dust–radiation–vacuum bound. For this benchmark, the unit-lapse shell clock is therefore not the completed horizon map.
 
-That calculation can confirm the shell clock, falsify the same-clock identification, or isolate the required correction. None of those outcomes changes the reciprocal infall–expansion correspondence itself.
+The failure isolates the required correction in the synchronization or shell correspondence. It does not alter the reciprocal infall–expansion correspondence itself.
 
 ---
 

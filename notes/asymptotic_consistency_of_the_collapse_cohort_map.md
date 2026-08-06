@@ -8,7 +8,7 @@
 
 **Prerequisites:** [The Collapse-to-Child Boundary System](note.html?src=collapse_to_child_boundary_system); [The Shell Clock in a Compensated ΛLTB Collapse](note.html?src=shell_clock_benchmark_compensated_ltb); [Optical Transfer Through a Matter-Filled Parent Collapse](note.html?src=optical_transfer_through_compensated_ltb_collapse).
 
-**Status:** Exact endpoint analysis conditional on the collapse-cohort correspondence. Formation regularity and the child reconstruction from a general parent mass-tail exponent are analytic. The late stationary limit fixes that exponent conditionally; the intermediate event-horizon history remains numerical. Tiered **[E]** established asymptotics, **[N]** marginal-shell quadrature, **[C]** CSBHI correspondence, **[O]** parent null integration.
+**Status:** Exact endpoint analysis conditional on the collapse-cohort correspondence. Formation regularity and the child reconstruction from a general parent mass-tail exponent are analytic. The late stationary limit fixes that exponent conditionally; the subsequent full-history test is linked below. Tiered **[E]** established asymptotics, **[N]** marginal-shell quadrature, **[C]** CSBHI correspondence.
 
 **Notation:** [Glossary](note.html?src=cosmological_glossary). Set \(c=1\), retain \(G\), and define
 
@@ -383,7 +383,7 @@ The endpoint structure is therefore consistent. The one decisive number is now i
 \tag{32}
 \]
 
-The late stationary limit now supplies Equation (32) conditionally as \(\lambda=\sqrt3H_{\Lambda,P}\). Integrating the global ΛLTB event horizon through the intermediate collapse remains necessary to test the complete shell-clock history rather than its endpoint alone.
+The late stationary limit supplies Equation (32) conditionally as \(\lambda=\sqrt3H_{\Lambda,P}\). The subsequent [full-history test](note.html?src=full_history_test_of_the_collapse_cohort_shell_clock) preserves this endpoint but rejects the unit-lapse shell clock in the intermediate history for the selected benchmark.
 
 ---
 

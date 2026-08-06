@@ -401,9 +401,12 @@ What remains open is no longer an unspecified clock function. Step 4 must:
 
 If Equation (26) holds for a recursion-consistent profile, the collapse and child histories share one physical clock and one homogeneous shell ordering. If it fails, the failure localizes the missing physics: pressure, radiation, rotation, a nontrivial cohort lapse, or a modification of the shell correspondence. It does not erase the reciprocal infall–expansion relation.
 
+### Subsequent benchmark result
+
+The [full-history shell-clock test](note.html?src=full_history_test_of_the_collapse_cohort_shell_clock) finds the second outcome for the selected compensated ΛLTB profile. The endpoint powers agree, but \(N_H=1\) reconstructs an intermediate equation of state outside the nonnegative dust–radiation–vacuum domain. The boundary reduction to one lapse remains valid; the unit-lapse selection does not.
+
 ---
 
 ## Result
 
 > A matter-filled parent collapse and the reciprocal child do not require three independent map functions. Their two null embeddings reduce the freedom to one cohort lapse (N_H=d\tau/dt_P). Identifying each freely falling parent cohort with the same clock carried into the child sets (N_H=1), so the map is simply (Phi(t_P)=\eta_C(t_P-t_{\rm form})); optical frequency continuity gives the same normalization. The angular factor is then computed as (Omega_\Sigma=a\Phi/R_{\rm BH}), beginning at unity at the regular formation anchor and evolving thereafter. Homogeneous shell ordering supplies the decisive test: the parent mass fraction swept by the event horizon must equal the cube of the child's conformal-progress fraction. The next numerical calculation can now test that relation without fitting the child age or horizons.
-

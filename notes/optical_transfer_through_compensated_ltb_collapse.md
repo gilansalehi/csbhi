@@ -8,7 +8,7 @@
 
 **Prerequisites:** [Horizon-Map Equation and Notation Audit](note.html?src=horizon_map_equation_and_notation_audit); [The Collapse-to-Child Boundary System](note.html?src=collapse_to_child_boundary_system); [The Shell Clock in a Compensated ΛLTB Collapse](note.html?src=shell_clock_benchmark_compensated_ltb).
 
-**Status:** Exact optical reduction, with numerical evaluation still open. The integrating-factor transport and frequency identities follow from the parent ΛLTB metric and child FLRW metric. Evaluating them through formation requires the global event-horizon history and the two-dimensional parent solution already isolated as the Step 4 residual. Tiered **[E]** established geometry, **[C]** CSBHI phase correspondence, **[O]** numerical evaluation.
+**Status:** Exact optical reduction, with numerical optical evaluation still open. The integrating-factor transport and frequency identities follow from the parent ΛLTB metric and child FLRW metric. The subsequent full-history mass test is linked below and changes the interpretation of the unit-lapse result. Tiered **[E]** established geometry, **[C]** CSBHI phase correspondence, **[O]** numerical optical transfer.
 
 **Notation:** [Glossary](note.html?src=cosmological_glossary). We use \(c=1\), retain \(G\), and write parent cosmic time as \(t_P\). The parent areal radius is \(Y(t_P,x)\),
 
@@ -273,6 +273,10 @@ The published trapping-time table supplies none of these three objects by itself
 > The optical transfer through a matter-filled spherical collapse is fixed by one characteristic integral of the parent radial expansion, \(\beta_H=\beta_o\exp[-\int_{t_o}^{t_H} H_\parallel dt_P]\). It determines the observable frequency shift from the parent FLRW exterior to each black-hole event-horizon crossing and fixes the parent clock Jacobian \(J_H=2\beta_H\). On the child side, phase continuity gives \(V'=a_C\beta_H/N_H\); equality of the locally measured frequencies selects \(N_H=1\), exactly the lapse already selected by the freely falling cohort clocks. Optics therefore confirms the same clock but does not generate a second horizon-map function. Its numerical history requires the same global event horizon and two-dimensional ΛLTB solution left open by the shell-clock benchmark.
 
 The next calculation should not fit an optical curve independently. It should construct the global event horizon, evaluate Equation (9) on it, and then check formation and late-time asymptotes of the shell, optical, and child clocks together.
+
+### Subsequent benchmark result
+
+The [full-history shell-clock test](note.html?src=full_history_test_of_the_collapse_cohort_shell_clock) preserves the endpoint relations but rejects the unit-lapse shell clock during the intermediate collapse for the selected compensated profile. The optical transport law remains exact. What must be revisited is the step that turns phase/frequency continuity into \(N_H=1\), or the direct mass-volume correspondence with which that normalization was combined.
 
 ---
 
