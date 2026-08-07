@@ -71,6 +71,7 @@ data-wrapper[data-home-section] {
   grid-template-columns: 5.4rem 1fr;
   gap: 1rem;
   padding: 1rem;
+  align-items: baseline;
 }
 
 .publication-list h3 {

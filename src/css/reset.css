@@ -63,6 +63,7 @@ a:hover {
   text-decoration: underline;
 }
 
+a[href$=".html"],
 a[href^="http"],
 a[href^="note"] {
   font-weight: 600;
