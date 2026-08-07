@@ -26,10 +26,12 @@ const DOCUMENTS = {
     meta: {
       review: 'technical paper · independently checked',
       technical: 'technical paper · Codex (OpenAI)',
+      publications: 'technical paper',
     },
     summaries: {
       review: 'Derives the matter–radiation–Λ dynamics from the reciprocal metric, Einstein\'s equations, and stress-energy conservation.',
       technical: 'Derives the matter–radiation–Λ Friedmann dynamics from Alice\'s reciprocal metric, Einstein\'s field equations, and stress-energy conservation before translating the result into Bob\'s infall function.',
+      publications: 'Applies Einstein\'s equations to the reciprocal interior and recovers a real matter–radiation–Λ expansion history — the interior is a cosmology, not a formal device.',
     },
   },
   involution: {
@@ -37,9 +39,10 @@ const DOCUMENTS = {
     title: 'The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution',
     page: 'reciprocal-involution',
     prerequisite: 'gd1',
-    meta: { review: 'supporting result · checked proof' },
+    meta: { review: 'supporting result · checked proof', publications: 'supporting result · proven' },
     summaries: {
       review: 'Proves that \\(a=1/r\\) is the unique nontrivial power-law map that is scale-free, involutive, and horizon-fixing.',
+      publications: 'Proves \\(a=1/r\\) is the unique nontrivial scale-free, horizon-fixing involution — the reciprocal map is forced, not chosen.',
     },
   },
   evolvingGDagger: {
@@ -47,29 +50,30 @@ const DOCUMENTS = {
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
     note: 'evolving_g_dagger_derivation',
     prerequisite: 'involution',
-    meta: { review: 'observational prediction · stated in advance' },
+    meta: { review: 'observational prediction · stated in advance', publications: 'observational prediction' },
     summaries: {
       review: 'Symmetry fixes the square-root mixing law; identifying its global scale with the contemporaneous cosmological horizon gives \\(g_\\dagger(z)/g_\\dagger(0)=H(z)/H_0\\). A fixed scale predicts a flat ratio; this correspondence predicts a rising one. Current intermediate-redshift evidence is compatible with that rise.',
+      publications: 'The reciprocal ansatz applied to galaxies: the acceleration scale tracks the contemporaneous horizon, giving the coefficient-free prediction \\(g_\\dagger(z)/g_\\dagger(0)=H(z)/H_0\\) — rising, where MOND is flat. The first intermediate-redshift data favor the rise.',
     },
   },
-  note1: {
-    label: 'Note I',
-    title: 'Painlevé–Gullstrand Flow from the 5D de Sitter Embedding',
-    note: 'pg_flow_from_5d_desitter_embedding',
+  wchFixedPoint: {
+    label: 'Result II',
+    title: 'The Weyl Curvature Hypothesis as a Fixed Point',
+    note: 'recursive_bhc_and_the_weyl_curvature_hypothesis',
     prerequisite: 'gd1',
-    meta: { publications: 'draft note' },
+    meta: { publications: 'cosmological result' },
     summaries: {
-      publications: 'Shows how the Painlevé–Gullstrand flow \\(F_{\\rm dS}=H_\\Lambda\\bar R\\) arises from the 5D embedding of 4D de Sitter spacetime, and clarifies the relation between FLRW slicing, PG coordinates, and the de Sitter curvature scale \\(L=\\sqrt{3/\\Lambda}\\).',
+      publications: 'The low-Weyl beginning as a consequence of formation: smooth collapse gives a Weyl-free child, so Penrose\'s condition is a fixed point of the succession rather than a fine-tuning — and the entropy arrow follows without information loss.',
     },
   },
   gd2: {
     label: 'GD II',
-    title: 'Geometric Duality II: The 5D de Sitter Throat',
-    note: 'gd2_5d_de_sitter_throat_outline',
-    prerequisite: 'note1',
+    title: 'Geometric Duality II: Cosmological Succession and the Horizon Map',
+    note: 'gd2_collapse_cohort_horizon_map_outline',
+    prerequisite: 'wchFixedPoint',
     meta: { publications: 'working outline' },
     summaries: {
-      publications: 'Constructs the proposed higher-dimensional throat behind the reciprocal interior and derives the relationships among its distinct curvature, causal, and junction structures.',
+      publications: 'The forthcoming primary-author construction of the parent-to-child geometry: the collapse-cohort horizon map that carries a black-hole interior into the successor aeon, grounding the low-Weyl beginning and the regular crossover.',
     },
   },
   note3: {
@@ -86,7 +90,7 @@ const DOCUMENTS = {
     label: 'GD III',
     title: 'Geometric Duality III: Throat Curvature and the Galaxy Acceleration Law',
     note: 'gd3_throat_curvature_and_galaxy_law_outline',
-    prerequisite: 'gd2',
+    prerequisite: 'evolvingGDagger',
     meta: { publications: 'working outline' },
     summaries: {
       publications: 'Develops the galaxy-scale consequence of GD: local baryonic gravity and the global horizon scale mix through the throat geometry, producing a MOND/BTFR-like relation \\(g\\sim\\sqrt{g_NcH}\\) and \\(v^4\\sim GMcH\\).',
@@ -157,9 +161,10 @@ export const COLLECTIONS = {
   publications: {
     headingId: 'publications-title',
     title: 'Publications',
-    summary: 'Current and forthcoming papers in the series.',
-    documentIds: ['gd1', 'note1', 'gd2', 'note3', 'gd3', 'thermodynamics'],
+    summary: 'The argument in sequence — from the founding ansatz through its two payoffs to the forthcoming papers. Begin at GD I.',
+    documentIds: ['gd1', 'ri1', 'involution', 'evolvingGDagger', 'wchFixedPoint', 'gd2', 'gd3', 'thermodynamics'],
   },
+
   technical: {
     headingId: 'ai-notes-title',
     title: 'Reciprocal Interior Technical Series',

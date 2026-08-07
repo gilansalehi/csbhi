@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.gilansalehi.com/csbhi/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-07</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/gd1.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/faqs.html</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-07</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/leap-of-faith.html</loc>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-07</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/gd2_5d_de_sitter_throat_outline.md</loc>
@@ -127,5 +127,25 @@
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/weyl_curvature_hypothesis_reciprocal_interior.md</loc>
     <lastmod>2026-08-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gilansalehi.com/csbhi/notes/recursive_bhc_and_the_weyl_curvature_hypothesis.md</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gilansalehi.com/csbhi/notes/gd2_collapse_cohort_horizon_map_outline.md</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gilansalehi.com/csbhi/notes/ai_collaborator_onboarding.md</loc>
+    <lastmod>2026-08-05</lastmod>
   </url>
 </urlset>

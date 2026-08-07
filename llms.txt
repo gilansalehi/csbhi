@@ -27,32 +27,32 @@ When debugging your interpretation, use the guide's claim ledger and interpretat
 - [RI I — Field Equations of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the reciprocal-interior dynamics from the metric ansatz, Einstein's equations, and stress-energy conservation.
 - [RI II — Junction Conditions for the Reciprocal Interior](https://www.gilansalehi.com/csbhi/junctions.html), by Codex (OpenAI): Early synthesis draft testing timelike, null, thermodynamic, and dynamical junction conditions and isolating the requirements for a complete throat geometry.
 
+## Main results and predictions
+
+- [The Evolving Galactic Acceleration-Scale Correspondence](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md), by Claude (Anthropic): The reciprocal ansatz applied to galaxies. A symmetry theorem fixes the square-root mixing law; identifying the global scale with the contemporaneous cosmological horizon gives the coefficient-free, falsifiable prediction g†(z)/g†(0)=H(z)/H0 — rising where MOND is flat, and favored by the first intermediate-redshift data. The programme's one live empirical prediction.
+- [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html), by Claude (Anthropic): Proves a=1/r is the unique nontrivial scale-free, horizon-fixing involution — the reciprocal map is forced, not chosen.
+- [The Weyl Curvature Hypothesis as a Fixed Point](https://www.gilansalehi.com/csbhi/notes/recursive_bhc_and_the_weyl_curvature_hypothesis.md), by Claude (Anthropic): The low-Weyl beginning as a consequence of formation — smooth collapse gives a Weyl-free child, so Penrose's condition is a fixed point of the succession rather than a fine-tuning, and the entropy arrow follows without information loss.
+- [A Black Hole on the Aeon Boundary](https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md), by Claude (Anthropic): The interior Weyl field dilutes at the conformal weight a^-2, so a black hole can sit on the aeon boundary as a regular, seed-carrying crossover without needing to evaporate.
+
 ## Prerequisite graph
 
 Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 
 - GD1: start here.
-- Note I, Painleve-Gullstrand Flow from the 5D de Sitter Embedding: GD1.
-- GD II outline, The 5D de Sitter Throat: Note I.
-- Note III, Self-Dual Homogeneous Derivation of the Square-Root Law: GD II.
-- GD III outline: GD II and Note III.
-- Horizon Thermodynamics outline: GD III.
 - RI I, Field Equations of the Reciprocal Interior: GD1.
-- AI XVII, The Weyl Curvature Hypothesis in CSBHI: GD1.
+- Result I, The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution: GD1.
+- Prediction I, The Evolving Galactic Acceleration-Scale Correspondence: Result I.
+- Result II, The Weyl Curvature Hypothesis as a Fixed Point: GD1.
+- A Black Hole on the Aeon Boundary (the regular crossover): GD1.
+- GD II outline, Cosmological Succession and the Horizon Map: Result II.
+- GD III outline, Throat Curvature and the Galaxy Acceleration Law: Prediction I.
+- Horizon Thermodynamics outline: GD III.
 - RI II, Junction Conditions for the Reciprocal Interior: RI I.
-- Independent Verification: RI I.
-- AI III, Horizon Flow and Density Identity: RI I.
-- AI IV, Exact Shell Identity and Kottler Mass Condition: RI I.
-- AI V, Vacuum-Energy Cancellation at an FLRW-Kottler Junction: RI I.
-- AI VI, Null Optics of the Reciprocal Interior: RI I.
-- AI VIII, Null-Horizon Matching of the Reciprocal Interior: AI III.
-- AI IX, Recursive Kottler Horizons and the Galaxy Acceleration Scale: AI VIII.
-- AI X, Dynamic Throat Kinematics and the Cosmological Clock: AI VIII.
-- AI XI, Thermodynamic Accounting of the Transverse Junction: AI VIII.
-- AI XII, The Nonequilibrium Event Horizon and the CMB Clock: AI X and AI XI.
-- AI XIII, The Hyperbolic Cosmological Clock: AI X.
-- The Evolving Galactic Acceleration Scale and its High-Redshift Test: Note III and the GD III outline.
-- The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution: GD1 and Note III.
+- AI XVII, The Weyl Curvature Hypothesis in CSBHI (background-order companion to Result II): GD1.
+- Note III, Self-Dual Homogeneous Derivation of the Square-Root Law (supports Prediction I): GD1.
+- The Evolving Galactic Acceleration Scale and its High-Redshift Test (GD III preparation): Prediction I.
+- Supporting calculations — independent verification, horizon-flow and shell identities, junction and optical results, and the cosmological clocks: RI I.
+- The 5D de Sitter throat and its Painlevé–Gullstrand flow: GD1, retained only as the late-time vacuum-dominated limit.
 
 ## Project pages
 
@@ -84,7 +84,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 ## Supporting derivations and planned notes
 
 - [The Inverse-Radius Interior and Alice's Probe Congruence](https://www.gilansalehi.com/csbhi/notes/gd_inverse_radius_probe_congruence.md): Develops the probe-cloud interpretation of inverse-radius spatial scaling.
-- [Painleve-Gullstrand Flow from the 5D de Sitter Embedding](https://www.gilansalehi.com/csbhi/notes/pg_flow_from_5d_desitter_embedding.md): Explores the relation between de Sitter embedding geometry and Painleve-Gullstrand flow.
+- [Painleve-Gullstrand Flow from the 5D de Sitter Embedding](https://www.gilansalehi.com/csbhi/notes/pg_flow_from_5d_desitter_embedding.md): The 5D de Sitter embedding and its PG flow, exact in the late-time vacuum-dominated limit only — a curio describing the child's asymptotic future, not the full throat geometry (which is GD II's horizon map).
 
 ## Context and research programme
 
@@ -94,10 +94,10 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 
 ## Planning outlines
 
-- [Geometric Duality II: The 5D de Sitter Throat](https://www.gilansalehi.com/csbhi/notes/gd2_5d_de_sitter_throat_outline.md): Working outline for the primary-author geometric construction paper.
+- [Geometric Duality II: Cosmological Succession and the Horizon Map](https://www.gilansalehi.com/csbhi/notes/gd2_collapse_cohort_horizon_map_outline.md): Working outline for the primary-author construction paper — the collapse-cohort horizon map carrying a black-hole interior into the successor aeon. (An earlier "5D de Sitter throat" outline is retained as a curio describing only the late-time limit.)
 - [Geometric Duality III: Throat Curvature and the Galaxy Acceleration Law](https://www.gilansalehi.com/csbhi/notes/gd3_throat_curvature_and_galaxy_law_outline.md): Working outline, not a completed result.
 - [Horizon Thermodynamics and the GD Interpretation](https://www.gilansalehi.com/csbhi/notes/gd_thermodynamic_reconciliation_outline.md): Working outline for thermodynamic consistency questions.
 
 ## Reading guidance
 
-Begin with GD1. The independent technical path then runs from RI I, the field-equations paper, to RI II, the junction-conditions paper. The remaining AI documents are supporting calculations and audits that will be consolidated over time. GD II remains a planned primary-author paper about the 5D de Sitter throat. Treat documents explicitly labeled as hypotheses, constraints, roadmaps, outlines, or early drafts as work under active review rather than established conclusions.
+Begin with GD1, then follow the main path: RI I (the interior is a real matter–radiation–Λ cosmology), Result I (the reciprocal map is the unique scale-free horizon-fixing involution), Prediction I (the evolving g† galaxy-acceleration prediction), and Result II (the Weyl Curvature Hypothesis as a fixed point, with the regular crossover on the aeon boundary). The forthcoming primary-author papers are GD II (cosmological succession and the horizon map) and GD III (the galaxy acceleration law). The remaining notes are supporting calculations, audits, and active-frontier working drafts that will be consolidated over time. The 5D de Sitter throat is retained only as the late-time vacuum-dominated limit, not the full cosmology. Treat documents labeled as hypotheses, outlines, or drafts as work under active review rather than established conclusions.

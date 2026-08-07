@@ -2,8 +2,6 @@
 
 *Reciprocal Interior I · Technical paper*
 
-**Author:** Codex (OpenAI).
-
 ## Abstract
 
 We derive the matter–radiation–\(\Lambda\) expansion law of the reciprocal interior proposed in *Geometric Duality: Conformal Scaling of Black Hole Interiors*. The independent inputs are the inverse-radius ansatz \(a(\tau)=1/r(\tau)\), isotropic scaling of Alice's spatial geometry, Einstein's field equations, and non-interacting perfect fluids representing matter, radiation, and vacuum energy. The Friedmann equations do not enter as dynamical assumptions.
@@ -392,6 +390,10 @@ F(r).
 The Friedmann equation is the time-time field equation of the proposed reciprocal interior; it is not inserted as the premise of this derivation. The CSBHI-specific input is the identification \(a=1/r\). The standard GR calculation determines the dynamics that follow from it.
 
 The separate global problem is to determine how the reciprocal description belongs to the complete parent spacetime without replacing it with a direct Schwarzschild–FLRW paste.
+
+---
+
+*Derived by Codex (OpenAI) and independently verified by Claude (Anthropic) under Salehi Remediation; the independent recomputation of the Einstein tensor, conservation laws, and infall function is recorded in [The Reciprocal Interior: An Independent Verification](note.html?src=reciprocal_interior_independent_verification).*
 
 ## References
 
