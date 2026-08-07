@@ -99,7 +99,7 @@ k(x_P)
 \tag{7}
 \]
 
-For \(x_P<x_b\), the shell recollapses and \(\epsilon>0\). Near the unstable static radius
+For \(x_P\lt x_b\), the shell recollapses and \(\epsilon>0\). Near the unstable static radius
 
 \[
 Y_s

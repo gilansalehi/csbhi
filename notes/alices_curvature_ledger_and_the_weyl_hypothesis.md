@@ -170,7 +170,7 @@ Equations (9) and (12) belong to opposite sides of the proposed correspondence. 
 
 ### 3.4 The reciprocal interior
 
-For \(0<r\le1\), the reciprocal scale is
+For \(0\lt r\le1\), the reciprocal scale is
 
 \[
 a(r)=\frac1r.

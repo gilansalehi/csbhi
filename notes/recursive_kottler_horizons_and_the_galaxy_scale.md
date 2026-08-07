@@ -155,7 +155,7 @@ On the black-hole branch, Equations (10) and (13) require
 
 \[
 \boxed{
-\frac{2}{3}M_{\Lambda,C}<M\leq M_{\Lambda,C}
+\frac{2}{3}M_{\Lambda,C}\lt M\leq M_{\Lambda,C}
 }.
 \tag{14}
 \]
@@ -292,7 +292,7 @@ Because \(0.1724083<1/3\), the shared root is on Bob's black-hole branch. The ma
 
 \[
 7.44406\times10^{52}\;\mathrm{kg}
-<M\leq
+\lt M\leq
 1.11661\times10^{53}\;\mathrm{kg},
 \tag{27}
 \]

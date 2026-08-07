@@ -157,7 +157,7 @@ ds_A^2
 
 This displays the GD interpretation directly:
 
-- the finite coordinate interval \(0<r\le1\) labels Alice's post-horizon future;
+- the finite coordinate interval \(0\lt r\le1\) labels Alice's post-horizon future;
 - the Alice-frame spatial length scale is \(1/r\);
 - the metric conformal factor is \(1/r^2\);
 - decreasing \(r\) and increasing \(a\) are the same future-directed evolution.
@@ -359,7 +359,7 @@ r=0
 }
 \]
 
-The inverse-scale coordinate compresses an infinite amount of Alice proper time into the finite coordinate interval \(0<r\le1\).
+The inverse-scale coordinate compresses an infinite amount of Alice proper time into the finite coordinate interval \(0\lt r\le1\).
 
 ---
 
@@ -598,11 +598,7 @@ The pure-de-Sitter embedding makes the third route exact in the asymptotic secto
 
 The result may be summarized as follows:
 
-> Let \(r(\tau)\) be the horizon-normalized exterior radius Bob assigns along Alice's worldline, and let GD identify Alice's interior scale factor as \(a=1/r\). Then the flat FLRW metric becomes
-> \[
-> ds_A^2=r^{-2}\left[-dr^2/H_A(r)^2+dR^2+R^2d\Omega^2\right].
-> \]
-> Comoving probes separate isotropically as \(\ell_\alpha\propto1/r\), with expansion scalar \(3H_A\). For dust + \(\Lambda\), the limit \(r\to0\) lies at infinite proper time and finite curvature, approaching the standard de Sitter conformal boundary. This realizes the intended GD interior exactly, but it defines a distinct conformally flat geometry rather than a coordinate or ordinary conformal rewriting of vacuum Schwarzschild. The unresolved problem is the horizon map connecting the two geometries.
+> Let \(r(\tau)\) be the horizon-normalized exterior radius Bob assigns along Alice's worldline, and let GD identify Alice's interior scale factor as \(a=1/r\). Then the flat FLRW metric becomes \(ds_A^2=r^{-2}\left[-dr^2/H_A(r)^2+dR^2+R^2\,d\Omega^2\right]\). Comoving probes separate isotropically as \(\ell_\alpha\propto1/r\), with expansion scalar \(3H_A\). For dust + \(\Lambda\), the limit \(r\to0\) lies at infinite proper time and finite curvature, approaching the standard de Sitter conformal boundary. This realizes the intended GD interior exactly, but it defines a distinct conformally flat geometry rather than a coordinate or ordinary conformal rewriting of vacuum Schwarzschild. The unresolved problem is the horizon map connecting the two geometries.
 
 ---
 

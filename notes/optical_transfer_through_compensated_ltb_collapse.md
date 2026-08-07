@@ -76,7 +76,7 @@ Along that ray, Equation (4) reduces to
 \tag{6}
 \]
 
-Here \(H_\parallel=\dot Y'/Y'\) is the parent radial expansion rate; the time-independent LTB curvature factor cancels. Let an ingoing ray be emitted in the homogeneous parent FLRW region at \((t_o,x_o)\) and reach the event horizon at the later event \((t_H,x_H)\), with \(t_o<t_H\). Integration gives
+Here \(H_\parallel=\dot Y'/Y'\) is the parent radial expansion rate; the time-independent LTB curvature factor cancels. Let an ingoing ray be emitted in the homogeneous parent FLRW region at \((t_o,x_o)\) and reach the event horizon at the later event \((t_H,x_H)\), with \(t_o\lt t_H\). Integration gives
 
 \[
 \boxed{

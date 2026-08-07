@@ -46,7 +46,7 @@ const DOCUMENTS = {
     },
   },
   evolvingGDagger: {
-    label: 'Prediction I',
+    label: 'Test I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
     note: 'evolving_g_dagger_derivation',
     prerequisite: 'involution',
@@ -54,6 +54,16 @@ const DOCUMENTS = {
     summaries: {
       review: 'Symmetry fixes the square-root mixing law; identifying its global scale with the contemporaneous cosmological horizon gives \\(g_\\dagger(z)/g_\\dagger(0)=H(z)/H_0\\). A fixed scale predicts a flat ratio; this correspondence predicts a rising one. Current intermediate-redshift evidence is compatible with that rise.',
       publications: 'The reciprocal ansatz applied to galaxies: the acceleration scale tracks the contemporaneous horizon, giving the coefficient-free prediction \\(g_\\dagger(z)/g_\\dagger(0)=H(z)/H_0\\) — rising, where MOND is flat. The first intermediate-redshift data favor the rise.',
+    },
+  },
+  highZTest: {
+    label: 'Test II',
+    title: 'The Evolving Galactic Acceleration Scale and its High-Redshift Test',
+    note: 'evolving_acceleration_scale_high_z_test',
+    prerequisite: 'evolvingGDagger',
+    meta: { publications: 'observational test' },
+    summaries: {
+      publications: 'The observational discriminator: the predicted \\(0.8\\)–\\(1.0\\) dex offset by \\(z\\gtrsim3\\) clears the systematic floor, so the rising-versus-flat acceleration scale is testable in the JWST era.',
     },
   },
   wchFixedPoint: {
@@ -64,6 +74,26 @@ const DOCUMENTS = {
     meta: { publications: 'cosmological result' },
     summaries: {
       publications: 'The low-Weyl beginning as a consequence of formation: smooth collapse gives a Weyl-free child, so Penrose\'s condition is a fixed point of the succession rather than a fine-tuning — and the entropy arrow follows without information loss.',
+    },
+  },
+  crossover: {
+    label: 'Result III',
+    title: 'A Black Hole on the Aeon Boundary',
+    note: 'shear_free_interior_weyl_stress_identity',
+    prerequisite: 'wchFixedPoint',
+    meta: { publications: 'result · verified numerically' },
+    summaries: {
+      publications: 'The interior Weyl field dilutes at the conformal weight \\(a^{-2}\\), so a black hole can sit on the aeon boundary as a regular, seed-carrying crossover — the regularity CCC secures by evaporation, secured instead by the geometry.',
+    },
+  },
+  entropy: {
+    label: 'Result IV',
+    title: 'Gravitational Entropy as the Thermodynamic Face of Conformal Scaling',
+    note: 'gravitational_entropy_and_conformal_scaling',
+    prerequisite: 'wchFixedPoint',
+    meta: { publications: 'proposal · conditional result' },
+    summaries: {
+      publications: 'Gravitational entropy is a conformal-curvature quantity; the reciprocal map exchanges the parent black hole\'s horizon entropy with the child\'s de Sitter horizon entropy, \\(S_{\\rm BH}=S_{\\rm dS}\\) — so the arrow and CCC\'s reset need no information destruction.',
     },
   },
   gd2: {
@@ -81,16 +111,17 @@ const DOCUMENTS = {
     title: 'Self-Dual Homogeneous Derivation of the Square-Root Law',
     note: 'gd_self_dual_homogeneous_derivation_of_the_square_root_law',
     prerequisite: 'gd2',
-    meta: { publications: 'draft note' },
+    meta: { publications: 'draft note', technical: 'draft note' },
     summaries: {
       publications: 'A theorem-style bridge to the galaxy problem. Shows that a scale-free, self-dual mixing law between local Newtonian acceleration \\(g_N\\) and the global throat scale \\(cH\\) naturally selects \\(g_{\\rm mix}\\sim\\sqrt{g_NcH}\\).',
+      technical: 'A theorem-style bridge to the galaxy problem: a scale-free, self-dual mixing law between local Newtonian acceleration \\(g_N\\) and the global throat scale \\(cH\\) selects \\(g_{\\rm mix}\\sim\\sqrt{g_NcH}\\).',
     },
   },
   gd3: {
     label: 'GD III',
     title: 'Geometric Duality III: Throat Curvature and the Galaxy Acceleration Law',
     note: 'gd3_throat_curvature_and_galaxy_law_outline',
-    prerequisite: 'evolvingGDagger',
+    prerequisite: 'gd2',
     meta: { publications: 'working outline' },
     summaries: {
       publications: 'Develops the galaxy-scale consequence of GD: local baryonic gravity and the global horizon scale mix through the throat geometry, producing a MOND/BTFR-like relation \\(g\\sim\\sqrt{g_NcH}\\) and \\(v^4\\sim GMcH\\).',
@@ -158,18 +189,26 @@ export const COLLECTIONS = {
     summary: 'Four documents, ordered from the foundational proposal to the observational prediction.',
     documentIds: ['gd1', 'ri1', 'involution', 'evolvingGDagger'],
   },
-  publications: {
+  theory: {
     headingId: 'publications-title',
     title: 'Publications',
-    summary: 'Current and forthcoming papers in the series.',
-    documentIds: ['gd1', 'ri1', 'involution', 'evolvingGDagger', 'wchFixedPoint', 'gd2', 'gd3', 'thermodynamics'],
+    summary: 'The theory, in reading order.',
+    summaryKey: 'publications',
+    documentIds: ['gd1', 'ri1', 'involution', 'wchFixedPoint', 'crossover', 'entropy', 'gd2', 'gd3', 'thermodynamics'],
   },
-
-  technical: {
-    headingId: 'ai-notes-title',
-    title: 'Reciprocal Interior Technical Series',
-    summary: 'The principal field-equation, junction, optical, dynamical, and thermodynamic results.',
-    documentIds: ['ri1', 'weylHypothesis', 'ri2', 'nullOptics', 'throatClock'],
+  empirical: {
+    headingId: 'predictions-title',
+    title: 'Predictions',
+    summary: 'Observable predictions of the theory.',
+    summaryKey: 'publications',
+    documentIds: ['evolvingGDagger', 'highZTest'],
+  },
+  theorySupporting: {
+    headingId: 'supporting-title',
+    title: 'Supporting calculations',
+    summary: 'The reciprocal-interior machinery.',
+    summaryKey: 'technical',
+    documentIds: ['note3', 'ri2', 'nullOptics', 'throatClock', 'weylHypothesis'],
   },
 };
 
@@ -187,6 +226,7 @@ export const getCollection = name => {
   const collection = COLLECTIONS[name];
   if (!collection) throw new Error(`Unknown publication collection: ${name}`);
 
+  const summaryKey = collection.summaryKey || name;
   return {
     ...collection,
     hasIntro: Boolean(collection.introHtml),
@@ -197,8 +237,8 @@ export const getCollection = name => {
         label: document.label,
         title: document.title,
         href: route(document),
-        summary: document.summaries[name],
-        meta: document.meta[name],
+        summary: document.summaries[summaryKey],
+        meta: document.meta[summaryKey],
         startHere: Boolean(document.startHere),
         prerequisite: resolvePrerequisite(document),
       };

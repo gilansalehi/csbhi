@@ -43,7 +43,7 @@ The payoff is that the notorious horizon-matching problem is relocated: the hori
 The decomposition above is worth stating precisely, because its value is exactly in the distinctions it refuses to collapse.
 
 - **Region 1 — the horizon, \(r_B=1\).** The involution result fixes this as the self-dual point of \(a=1/r\); it is where Alice's infall parametrization crosses from exterior to interior. It is a null surface, crossed smoothly by an infaller.
-- **Region 2 — the reciprocal interior patch, \(0<r_B<1\).** A dynamical region in which Bob's radial label has become the evolution parameter. Under \(a=1/r\), Alice's scale \(a_A=1/r_B\) grows without bound as \(r_B\to0\), and GD1 finds \(r_B\to0\) is reached only as \(\tau\to\infty\), with *finite* limiting curvature (\(\mathcal R\to4\Lambda\)). This endpoint is therefore a **conformal future boundary**, not a point on Alice's worldline.
+- **Region 2 — the reciprocal interior patch, \(0\lt r_B\lt 1\).** A dynamical region in which Bob's radial label has become the evolution parameter. Under \(a=1/r\), Alice's scale \(a_A=1/r_B\) grows without bound as \(r_B\to0\), and GD1 finds \(r_B\to0\) is reached only as \(\tau\to\infty\), with *finite* limiting curvature (\(\mathcal R\to4\Lambda\)). This endpoint is therefore a **conformal future boundary**, not a point on Alice's worldline.
 - **Region 3 — the child universe.** An FLRW cosmology whose initial (Big Bang) boundary is *identified*, after conformal rescaling, with region 2's future boundary. Its scale \(a_C\to0\) at that boundary; its history runs forward from there.
 
 Two cautions inherited from the review thread, kept explicit so the note does not overclaim:

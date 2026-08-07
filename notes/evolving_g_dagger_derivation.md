@@ -55,7 +55,7 @@ The empirical anchors are two.
 
 The **local** value \(g_\dagger(0)\approx1.2\times10^{-10}\,\mathrm{m/s^2}\) (SPARC) is smaller than \(cH_0\approx6.8\times10^{-10}\,\mathrm{m/s^2}\) by \(\kappa^2\approx0.18\sim1/2\pi\) — the theorem's undetermined order-one constant, fixed empirically rather than derived.
 
-At **intermediate redshift**, MUSE-DARK III (79 star-forming galaxies, \(0.33<z<1.44\)) reports \(g_\dagger(z\!\sim\!1)=2.38^{+0.12}_{-0.10}\times10^{-10}\,\mathrm{m/s^2}\), rising from the local \(1.2\pm0.26\). The coefficient-independent test is the ratio:
+At **intermediate redshift**, MUSE-DARK III (79 star-forming galaxies, \(0.33\lt z\lt 1.44\)) reports \(g_\dagger(z\!\sim\!1)=2.38^{+0.12}_{-0.10}\times10^{-10}\,\mathrm{m/s^2}\), rising from the local \(1.2\pm0.26\). The coefficient-independent test is the ratio:
 
 \[
 \left.\frac{g_\dagger(z\!\sim\!1)}{g_\dagger(0)}\right|_{\rm obs}\approx\frac{2.38}{1.2}\approx1.98\pm0.45,

@@ -79,7 +79,7 @@ Consider a freely propagating mode with constant comoving frequency \(q\). A com
 \tag{6}
 \]
 
-If the radiation enters the interior at \(r=r_e\) and is observed at \(r=r_o<r_e\), then
+If the radiation enters the interior at \(r=r_e\) and is observed at \(r=r_o\lt r_e\), then
 
 \[
 \boxed{
