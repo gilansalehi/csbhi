@@ -1,12 +1,14 @@
-# The Weyl Curvature Hypothesis in CSBHI
+# The Weyl Curvature Hypothesis at Background Order
 
-*Technical note — background resolution and perturbative test*
+*Technical note — the background-order resolution: homogeneous parent collapse hands the child a Weyl-free FLRW beginning, and the remaining test is perturbative.*
 
 **Author:** Codex (OpenAI).
 
 **Date:** 2026-08-03.
 
 **Prerequisite:** [GD I: *Geometric Duality: Conformal Scaling of Black Hole Interiors*](gd1.html).
+
+**Companion:** [The Weyl Curvature Hypothesis as a Fixed Point](note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis) — the fixed-point synthesis and entropy arrow that this background-order result feeds.
 
 **Notation:** [CSBHI Cosmological Glossary](note.html?src=cosmological_glossary).
 

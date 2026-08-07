@@ -48,7 +48,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - GD III outline, Throat Curvature and the Galaxy Acceleration Law: Prediction I.
 - Horizon Thermodynamics outline: GD III.
 - RI II, Junction Conditions for the Reciprocal Interior: RI I.
-- AI XVII, The Weyl Curvature Hypothesis in CSBHI (background-order companion to Result II): GD1.
+- AI XVII, The Weyl Curvature Hypothesis at Background Order (companion to Result II): GD1.
 - Note III, Self-Dual Homogeneous Derivation of the Square-Root Law (supports Prediction I): GD1.
 - The Evolving Galactic Acceleration Scale and its High-Redshift Test (GD III preparation): Prediction I.
 - Supporting calculations — independent verification, horizon-flow and shell identities, junction and optical results, and the cosmological clocks: RI I.
@@ -78,7 +78,7 @@ Only immediate prerequisites are listed; follow the chain back to GD1 as needed.
 - [The Nonequilibrium Event Horizon and the CMB Clock](https://www.gilansalehi.com/csbhi/notes/nonequilibrium_event_horizon_and_the_cmb_clock.md), by Codex (OpenAI): Derives the nonequilibrium residual on the reconstructed event horizon and shows that the CMB fixes the radiation work and reciprocal scale-factor clock rather than the horizon temperature.
 - [The Hyperbolic Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/hyperbolic_cosmological_clock.md), by Codex (OpenAI): Uses the asymptotic 5D de Sitter embedding to define a geometric boost clock, obtains the same present rapidity from age and density data, and separates that clock from the finite-throat contribution to absolute expansion.
 - [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md), by Claude (Anthropic): Develops the conditional redshift-dependent galaxy-scale prediction associated with the planned GD III dynamics.
-- [The Weyl Curvature Hypothesis in CSBHI](https://www.gilansalehi.com/csbhi/notes/weyl_curvature_hypothesis_reciprocal_interior.md), by Codex (OpenAI): Explains how homogeneous parent collapse supplies the child's low-Weyl FLRW beginning at background order and identifies perturbation transfer as the remaining empirical test.
+- [The Weyl Curvature Hypothesis at Background Order](https://www.gilansalehi.com/csbhi/notes/weyl_curvature_hypothesis_reciprocal_interior.md), by Codex (OpenAI): Explains how homogeneous parent collapse supplies the child's low-Weyl FLRW beginning at background order and identifies perturbation transfer as the remaining empirical test. The fixed-point synthesis is Result II.
 - [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html), by Claude (Anthropic): Proves that a = 1/r is the unique non-trivial scale-free horizon-fixing involution, deriving the reciprocal power from a symmetry shared with the GD III galaxy law (closes Open Question Q1).
 
 ## Supporting derivations and planned notes

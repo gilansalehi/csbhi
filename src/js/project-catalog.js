@@ -108,7 +108,7 @@ const DOCUMENTS = {
   },
   weylHypothesis: {
     label: 'AI XVII',
-    title: 'The Weyl Curvature Hypothesis in CSBHI',
+    title: 'The Weyl Curvature Hypothesis at Background Order',
     note: 'weyl_curvature_hypothesis_reciprocal_interior',
     prerequisite: 'gd1',
     meta: { technical: 'technical note · Codex (OpenAI)' },
