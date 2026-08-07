@@ -161,7 +161,7 @@ export const COLLECTIONS = {
   publications: {
     headingId: 'publications-title',
     title: 'Publications',
-    summary: 'The argument in sequence — from the founding ansatz through its two payoffs to the forthcoming papers. Begin at GD I.',
+    summary: 'Current and forthcoming papers in the series.',
     documentIds: ['gd1', 'ri1', 'involution', 'evolvingGDagger', 'wchFixedPoint', 'gd2', 'gd3', 'thermodynamics'],
   },
 
