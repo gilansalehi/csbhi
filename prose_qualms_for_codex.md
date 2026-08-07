@@ -33,6 +33,13 @@ Status key is in the prose, not brackets — same for this file: if an item says
 
 ---
 
+## Entropy note — "Gravitational Entropy as the Thermodynamic Face of Conformal Scaling" (gravitational_entropy_and_conformal_scaling.md)
+
+- **Full rewrite — the withdrawn covariance law is gone.** The \(S\propto a^2\) law you flagged is removed entirely; the note is rebuilt around the surviving \(S_{\rm BH}=S_{\rm dS}\) horizon-entropy identity (§3), conditional on \(\Lambda=3/R_S^2\). **Codex: confirm nothing from the retracted covariance argument leaked back in**, and that §§4–5 (arrow, CCC reset) now rest on the identity + the two-entropies split, not the old law.
+- **Promoted from your review block.** The "two gravitational entropies run oppositely" point (horizon entropy maximal at the dS boundary, Weyl/clumping entropy minimal there) — originally your [obs 1] — is now §2, load-bearing. Confirm the framing is right.
+- **The Cardy §6 depends on the (unlisted, WIP) modular note.** The \(a\leftrightarrow1/a\) = modular-\(S\) identification is conjectural; verify the note flags it as an open sub-target, not a result.
+- **Re-listing pending.** Note is still unlisted (not in sitemap/llms/catalog). Decide whether the rewrite is ready to surface, or hold.
+
 ## Cross-note checks (apply to all upgraded notes)
 
 - **Self-referential phrasing.** Sweep for "this note shows/proves/claims/argues" and similar self-conscious constructions; the epistemic status should live in word choice, not in announcements about the document.

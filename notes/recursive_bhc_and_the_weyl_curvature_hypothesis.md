@@ -36,7 +36,7 @@ S_{\rm dS}(\text{child}) = \frac{3\pi}{\Lambda\,\ell_p^2} = \frac{\pi R_S^2}{\el
 
 The parent's horizon entropy is not erased; it becomes the child's available phase space. Each newborn universe therefore sits far below its own ceiling — low occupied entropy, high available entropy — which is itself a thermodynamic arrow, while globally no entropy is destroyed and no information is lost. The reset Penrose reaches by discarding information is reached here by handing it forward.
 
-Two caveats travel with this. The horizon identity holds at the idealized matching \(\Lambda=3/R_S^2\); the junction of transverse curvature across the crossover is not yet settled. And "the parent's horizon entropy becomes the child's phase space" is a reading of the two coincident areas, not a derived transport of microstates — the interpretation that has to be justified, not a theorem already in hand.
+Two caveats travel with this. The horizon identity holds at the idealized matching \(\Lambda=3/R_S^2\); the junction of transverse curvature across the crossover is not yet settled. And "the parent's horizon entropy becomes the child's phase space" is a reading of the two coincident areas, not a derived transport of microstates — the interpretation that has to be justified, not a theorem already in hand. The fuller reading — gravitational entropy as a conformal-curvature quantity that the reciprocal map exchanges local↔global — is developed in [Gravitational Entropy as the Thermodynamic Face of Conformal Scaling](note.html?src=gravitational_entropy_and_conformal_scaling).
 
 ## 4. What this removes from Penrose's construction
 
