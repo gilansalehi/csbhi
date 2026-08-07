@@ -10,7 +10,9 @@
         <p $unsafeHTML="introHtml"></p>
     </template>
     <details open>
-        <summary $text="summary"></summary>
+        <summary>
+            <span $text="summary"></span>
+        </summary>
         <ol>
             <template *list="documents">
                 <li>
