@@ -42,7 +42,7 @@ const DOCUMENTS = {
     meta: { review: 'supporting result · checked proof', publications: 'supporting result · proven' },
     summaries: {
       review: 'Proves that \\(a=1/r\\) is the unique nontrivial power-law map that is scale-free, involutive, and horizon-fixing.',
-      publications: 'Proves \\(a=1/r\\) is the unique nontrivial scale-free, horizon-fixing involution — the reciprocal map is forced, not chosen.',
+      publications: 'Proves \\(a=1/r\\) is the unique nontrivial scale-free, horizon-fixing involution — so once scale-invariance and horizon-fixing are assumed, the reciprocal power is fixed. Adopting those symmetries, and the physical identification, remains the ansatz.',
     },
   },
   evolvingGDagger: {
@@ -180,6 +180,16 @@ const DOCUMENTS = {
       technical: 'Converts a moving null-boundary history into Alice\'s expansion and acceleration, reconstructs the boundary required by the observed cosmological epochs, and defines present-day targets for a parent horizon-growth calculation.',
     },
   },
+  fullHistoryTest: {
+    label: 'Negative result',
+    title: 'Full-History Test of the Collapse-Cohort Shell Clock',
+    note: 'full_history_test_of_the_collapse_cohort_shell_clock',
+    prerequisite: 'gd2',
+    meta: { technical: 'collapse-cohort test · Codex (OpenAI)' },
+    summaries: {
+      technical: 'The simplest unit-clock parent→child synchronization, tested against the full compensated collapse history: both endpoints reproduce, but the intermediate regime demands unphysical pressure, so the clock is rejected — the framework declining to fit the desired cosmology rather than tuning to it.',
+    },
+  },
 };
 
 export const COLLECTIONS = {
@@ -208,7 +218,7 @@ export const COLLECTIONS = {
     title: 'Supporting calculations',
     summary: 'The reciprocal-interior machinery.',
     summaryKey: 'technical',
-    documentIds: ['note3', 'ri2', 'nullOptics', 'throatClock', 'weylHypothesis'],
+    documentIds: ['note3', 'ri2', 'nullOptics', 'throatClock', 'weylHypothesis', 'fullHistoryTest'],
   },
 };
 

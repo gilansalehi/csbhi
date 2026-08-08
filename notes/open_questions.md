@@ -42,7 +42,7 @@ These results are conditional on the specified interior and do not yet constitut
 
 ### Q1. What selects the reciprocal ansatz? — **CLOSED**
 
-**Answered.** The reciprocal *power* is derived from a symmetry: \(a=1/r\) is the unique non-trivial scale-free horizon-fixing involution, and the same scale-free self-duality underlies GD III's galaxy law. Proof: [*The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution*](reciprocal-involution.html).
+**Answered for the power, not the physical ansatz.** Given scale-invariance and horizon-fixing, \(a=1/r\) is the unique non-trivial involution — so the reciprocal *power* is fixed by symmetry (and the same self-duality underlies GD III's galaxy law). Adopting those symmetries, and identifying the interior scale with the reciprocal radius, remains posited. Proof: [*The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution*](reciprocal-involution.html).
 
 **Residual → Q15.** The proof assumes the parent/child exchange *is* a scale-free horizon-fixing involution; deriving that symmetry from the throat geometry is a deeper, still-open question.
 
