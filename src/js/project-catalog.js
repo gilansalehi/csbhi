@@ -261,12 +261,3 @@ export const getDocumentLink = id => {
     href: route(document),
   };
 };
-
-export const publicationLinks = ['gd1', 'ri1', 'involution'].map(id => {
-  const document = DOCUMENTS[id];
-  return {
-    id,
-    name: document.label,
-    path: route(document),
-  };
-});

@@ -1,32 +1,14 @@
 <script type="module" data-module="@csbhi/layout">
     import { action, flush } from 'data-wrapper';
-    import { publicationLinks as catalogPublicationLinks } from 'project/project-catalog.js';
 
-    /* The navigation is intentionally data-driven. Adjust these lists to add,
-       remove, or reorder destinations across every page that uses the layout. */
-    const PUBLICATIONS_LINK = Object.freeze({
-        id: 'publications',
-        name: 'Publications',
-        path: 'index.html#publications',
-    });
-
-    const REVIEW_PACKET_LINK = Object.freeze({
-        id: 'review-packet',
-        name: 'Review Packet I',
-        path: 'review.html',
-    });
-
-    const PUBLICATION_LINKS = Object.freeze(catalogPublicationLinks);
-
-    const PROJECT_RESOURCE_LINKS = Object.freeze([
-        {
-            id: 'open-problems',
-            name: 'Progress & Open Problems',
-            path: 'index.html#open-problems',
-        },
+    const PROJECT_LINKS = Object.freeze([
+        { id: 'origin', name: 'Origin', path: 'index.html' },
+        { id: 'publications', name: 'Publications', path: 'index.html#publications' },
+        { id: 'predictions', name: 'Predictions', path: 'index.html#predictions' },
+        { id: 'review-packet', name: 'Packet I', path: 'review.html' },
+        { id: 'pwch', name: 'PWCH', path: 'penrose.html' },
+        { id: 'open-problems', name: 'Open Problems', path: 'index.html#open-problems' },
         { id: 'resources', name: 'Resources', path: 'index.html#resources' },
-        { id: 'prior-art', name: 'Further Reading', path: 'index.html#prior-art' },
-        { id: 'contact', name: 'Contact Me', path: 'index.html#contact' },
     ]);
 
     const root = document.documentElement;
@@ -120,13 +102,7 @@
                 ariaCurrent: current ? 'page' : 'false',
             };
         });
-        const originLink = decorateLinks([
-            { id: 'origin', name: 'Origin', path: 'index.html' },
-        ])[0];
-        const reviewPacketLink = decorateLinks([REVIEW_PACKET_LINK])[0];
-        const publicationsLink = decorateLinks([PUBLICATIONS_LINK])[0];
-        const publicationLinks = decorateLinks(PUBLICATION_LINKS);
-        const projectResourceLinks = decorateLinks(PROJECT_RESOURCE_LINKS);
+        const projectLinks = decorateLinks(PROJECT_LINKS);
 
         const closeMenu = action(() => {
             menuOpen = false;
@@ -147,16 +123,7 @@
         }
 
         return {
-            originClass: originLink.class,
-            originAriaCurrent: originLink.ariaCurrent,
-            reviewPacketClass: reviewPacketLink.class,
-            reviewPacketHref: reviewPacketLink.path,
-            reviewPacketAriaCurrent: reviewPacketLink.ariaCurrent,
-            publicationsClass: publicationsLink.class,
-            publicationsHref: publicationsLink.path,
-            publicationsAriaCurrent: publicationsLink.ariaCurrent,
-            publicationLinks,
-            projectResourceLinks,
+            projectLinks,
             get pageLinks() { return pageLinks; },
             showThemeControl: wrapper.dataset.themeControl !== 'false',
             modified: formatDate(rawModified),
@@ -218,43 +185,7 @@
 
         <p class="project-nav__heading">Project</p>
         <ul class="project-nav__list" role="list">
-            <li>
-                <a class="project-nav__link"
-                    href="index.html"
-                    $class="originClass"
-                    $aria-current="originAriaCurrent"
-                    @click="closeMenu">Origin</a>
-            </li>
-
-            <li>
-                <a class="project-nav__link"
-                    $class="reviewPacketClass"
-                    $href="reviewPacketHref"
-                    $aria-current="reviewPacketAriaCurrent"
-                    @click="closeMenu">Review Packet I</a>
-            </li>
-
-            <li>
-                <a class="project-nav__link"
-                    $class="publicationsClass"
-                    $href="publicationsHref"
-                    $aria-current="publicationsAriaCurrent"
-                    @click="closeMenu">Publications</a>
-                <ul class="project-nav__list project-nav__list--publications" role="list">
-                    <template *list="publicationLinks">
-                        <li>
-                            <a class="project-nav__link project-nav__link--publication"
-                                $class="./class"
-                                $href="./path"
-                                $text="./name"
-                                $aria-current="./ariaCurrent"
-                                @click="closeMenu"></a>
-                        </li>
-                    </template>
-                </ul>
-            </li>
-
-            <template *list="projectResourceLinks">
+            <template *list="projectLinks">
                 <li>
                     <a class="project-nav__link"
                         $class="./class"
