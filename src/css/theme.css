@@ -19,10 +19,18 @@
   --control-border: color-mix(in srgb, currentColor 36%, var(--surface));
   --control-active: color-mix(in srgb, var(--surface) 50%, currentColor);
 
-  --status-addressed: #237a3b;
-  --status-target: #1f6feb;
-  --status-planned: #8a5a00;
-  --status-future: #7a4db3;
+  --status-model-result: #237a3b;
+  --status-geometric-result: #0f766e;
+  --status-prediction: #1f6feb;
+  --status-candidate: #8a5a00;
+  --status-open: #7a4db3;
+
+  /* Backward-compatible aliases used by the Penrose comparison table. */
+  --status-addressed: var(--status-model-result);
+  --status-target: var(--status-prediction);
+  --status-grounded: var(--status-geometric-result);
+  --status-planned: var(--status-candidate);
+  --status-future: var(--status-open);
   --danger: #cf222e;
 }
 
@@ -38,10 +46,11 @@
   --control-border: currentColor;
   --control-active: color-mix(in srgb, var(--surface) 92%, currentColor);
 
-  --status-addressed: #7ee787;
-  --status-target: #79c0ff;
-  --status-planned: #e3b341;
-  --status-future: #d2a8ff;
+  --status-model-result: #7ee787;
+  --status-geometric-result: #5bd1c0;
+  --status-prediction: #79c0ff;
+  --status-candidate: #e3b341;
+  --status-open: #d2a8ff;
   --danger: #ff7b72;
 }
 

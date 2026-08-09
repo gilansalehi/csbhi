@@ -1,114 +1,133 @@
-#open-problems table {
-  width: 100%;
+#open-problems .gd-ledger {
   margin-block: 2rem;
-  border-collapse: collapse;
-  font-size: 0.92rem;
+  counter-reset: gd-problem;
 }
 
-#open-problems th,
-#open-problems td {
-  padding: 1rem;
-  border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
-  text-align: left;
-  vertical-align: top;
+#open-problems .gd-ledger-note {
+  max-width: 46rem;
+  margin: 1.25rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  opacity: 0.66;
 }
 
-#open-problems th {
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
+#open-problems .gd-problem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.75rem;
+  row-gap: 0.4rem;
+  padding-block: 1.75rem;
+  border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+}
+
+#open-problems .gd-problem:last-child {
+  border-bottom: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+}
+
+#open-problems .gd-problem h3 {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin: 0 0 0.7rem;
+  font-size: 1.04rem;
+  line-height: 1.3;
+}
+
+#open-problems .gd-problem h3::before {
+  counter-increment: gd-problem;
+  content: counter(gd-problem, decimal-leading-zero);
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  opacity: 0.38;
+}
+
+#open-problems .gd-side {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  opacity: 0.68;
+  opacity: 0.5;
 }
 
-#open-problems .status {
+#open-problems .gd-lcdm p,
+#open-problems .gd-gd p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.62;
+}
+
+#open-problems .gd-lcdm {
+  border-left: 3px solid color-mix(in srgb, currentColor 20%, transparent);
+  padding-left: 1.15rem;
+}
+
+#open-problems .gd-lcdm p {
+  opacity: 0.66;
+}
+
+#open-problems .gd-gd {
   --status-color: currentColor;
 
-  display: inline-block;
-  margin-bottom: 0.65rem;
-  padding: 0.22rem 0.58rem;
-  border: 1px solid color-mix(in srgb, var(--status-color) 60%, currentColor);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--status-color) 14%, transparent);
-  color: var(--status-color);
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.055em;
-  line-height: 1.2;
-  text-transform: uppercase;
+  border-left: 3px solid var(--status-color);
+  padding-left: 1.15rem;
 }
 
-#open-problems .status[data-status="addressed"] {
-  --status-color: var(--status-addressed);
+#open-problems .gd-gd[data-status="model-result"] {
+  --status-color: var(--status-model-result);
 }
 
-#open-problems .status[data-status="target"] {
-  --status-color: var(--status-target);
+#open-problems .gd-gd[data-status="geometric-result"] {
+  --status-color: var(--status-geometric-result);
 }
 
-#open-problems .status[data-status="planned"] {
-  --status-color: var(--status-planned);
+#open-problems .gd-gd[data-status="empirical-prediction"] {
+  --status-color: var(--status-prediction);
 }
 
-#open-problems .status[data-status="future"] {
-  --status-color: var(--status-future);
+#open-problems .gd-gd[data-status="candidate-mechanism"] {
+  --status-color: var(--status-candidate);
 }
 
-#open-problems td:last-child a,
-#open-problems td:last-child span:not(.status) {
+#open-problems .gd-gd[data-status="open-problem"] {
+  --status-color: var(--status-open);
+}
+
+#open-problems .gd-status {
   display: block;
-  margin-top: 0.32rem;
-  font-size: 0.84rem;
+  margin-top: 0.95rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--status-color);
 }
 
-@media screen and (max-width: 900px) {
-  #open-problems table,
-  #open-problems thead,
-  #open-problems tbody,
-  #open-problems tr,
-  #open-problems th,
-  #open-problems td {
-    display: block;
-  }
+#open-problems .gd-refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+  margin-top: 0.45rem;
+}
 
-  #open-problems thead {
-    display: none;
-  }
+#open-problems .gd-refs a {
+  font-size: 0.82rem;
+}
 
-  #open-problems tr {
-    padding-block: 1.35rem;
-    border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+@media screen and (min-width: 1160px) {
+  #open-problems .gd-ledger {
+    width: calc(100% + 20rem);
+    margin-inline: -10rem;
   }
+}
 
-  #open-problems td {
-    padding: 0;
-    border: 0;
-  }
-
-  #open-problems td + td {
-    margin-top: 0.7rem;
-  }
-
-  #open-problems td:nth-child(2)::before {
-    content: "ΛCDM framing";
-  }
-
-  #open-problems td:nth-child(3)::before {
-    content: "GD framing";
-  }
-
-  #open-problems td:last-child::before {
-    content: "Status";
-  }
-
-  #open-problems td:nth-child(2)::before,
-  #open-problems td:nth-child(3)::before,
-  #open-problems td:last-child::before {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    opacity: 0.48;
+@media screen and (max-width: 760px) {
+  #open-problems .gd-problem {
+    grid-template-columns: 1fr;
+    row-gap: 1.15rem;
   }
 }
