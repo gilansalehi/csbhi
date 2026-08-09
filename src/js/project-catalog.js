@@ -46,10 +46,10 @@ const DOCUMENTS = {
     },
   },
   evolvingGDagger: {
-    label: 'Test I',
+    label: 'Prediction I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
     note: 'evolving_g_dagger_derivation',
-    prerequisite: 'involution',
+    prerequisite: 'note3',
     meta: { review: 'observational prediction · stated in advance', publications: 'observational prediction' },
     summaries: {
       review: 'Symmetry fixes the square-root mixing law; identifying its global scale with the contemporaneous cosmological horizon gives \\(g_\\dagger(z)/g_\\dagger(0)=H(z)/H_0\\). A fixed scale predicts a flat ratio; this correspondence predicts a rising one. Current intermediate-redshift evidence is compatible with that rise.',
@@ -57,7 +57,7 @@ const DOCUMENTS = {
     },
   },
   highZTest: {
-    label: 'Test II',
+    label: 'Test I',
     title: 'The Evolving Galactic Acceleration Scale and its High-Redshift Test',
     note: 'evolving_acceleration_scale_high_z_test',
     prerequisite: 'evolvingGDagger',
@@ -67,27 +67,27 @@ const DOCUMENTS = {
     },
   },
   wchFixedPoint: {
-    label: 'Result II',
+    label: 'WCH I',
     title: 'The Weyl Curvature Hypothesis as a Fixed Point',
     note: 'recursive_bhc_and_the_weyl_curvature_hypothesis',
     prerequisite: 'gd1',
-    meta: { publications: 'cosmological result' },
+    meta: { publications: 'research hypothesis' },
     summaries: {
-      publications: 'The low-Weyl beginning as a consequence of formation: smooth collapse gives a Weyl-free child, so Penrose\'s condition is a fixed point of the succession rather than a fine-tuning — and the entropy arrow follows without information loss.',
+      publications: 'Proposes that smooth parent collapse supplies a low-Weyl child and that this condition reproduces itself through cosmological succession, turning Penrose\'s boundary condition into a candidate fixed point.',
     },
   },
   crossover: {
-    label: 'Result III',
+    label: 'WCH III',
     title: 'A Black Hole on the Aeon Boundary',
     note: 'shear_free_interior_weyl_stress_identity',
     prerequisite: 'wchFixedPoint',
-    meta: { publications: 'result · verified numerically' },
+    meta: { publications: 'conditional curvature result' },
     summaries: {
       publications: 'The interior Weyl field dilutes at the conformal weight \\(a^{-2}\\), so a black hole can sit on the aeon boundary as a regular, seed-carrying crossover — the regularity CCC secures by evaporation, secured instead by the geometry.',
     },
   },
   entropy: {
-    label: 'Result IV',
+    label: 'WCH IV',
     title: 'Gravitational Entropy as the Thermodynamic Face of Conformal Scaling',
     note: 'gravitational_entropy_and_conformal_scaling',
     prerequisite: 'wchFixedPoint',
@@ -100,18 +100,18 @@ const DOCUMENTS = {
     label: 'GD II',
     title: 'Geometric Duality II: Cosmological Succession and the Horizon Map',
     note: 'gd2_collapse_cohort_horizon_map_outline',
-    prerequisite: 'wchFixedPoint',
+    prerequisite: 'gd1',
     meta: { publications: 'working outline' },
     summaries: {
       publications: 'The forthcoming primary-author construction of the parent-to-child geometry: the collapse-cohort horizon map that carries a black-hole interior into the successor aeon, grounding the low-Weyl beginning and the regular crossover.',
     },
   },
   note3: {
-    label: 'Note III',
+    label: 'Derivation',
     title: 'Self-Dual Homogeneous Derivation of the Square-Root Law',
     note: 'gd_self_dual_homogeneous_derivation_of_the_square_root_law',
-    prerequisite: 'gd2',
-    meta: { publications: 'draft note', technical: 'draft note' },
+    prerequisite: 'involution',
+    meta: { publications: 'conditional theorem', technical: 'conditional theorem' },
     summaries: {
       publications: 'A theorem-style bridge to the galaxy problem. Shows that a scale-free, self-dual mixing law between local Newtonian acceleration \\(g_N\\) and the global throat scale \\(cH\\) naturally selects \\(g_{\\rm mix}\\sim\\sqrt{g_NcH}\\).',
       technical: 'A theorem-style bridge to the galaxy problem: a scale-free, self-dual mixing law between local Newtonian acceleration \\(g_N\\) and the global throat scale \\(cH\\) selects \\(g_{\\rm mix}\\sim\\sqrt{g_NcH}\\).',
@@ -138,12 +138,16 @@ const DOCUMENTS = {
     },
   },
   weylHypothesis: {
-    label: 'AI XVII',
+    label: 'WCH II',
     title: 'The Weyl Curvature Hypothesis at Background Order',
     note: 'weyl_curvature_hypothesis_reciprocal_interior',
     prerequisite: 'gd1',
-    meta: { technical: 'technical note · Codex (OpenAI)' },
+    meta: {
+      publications: 'technical background note · Codex (OpenAI)',
+      technical: 'technical note · Codex (OpenAI)',
+    },
     summaries: {
+      publications: 'Separates Weyl from Ricci curvature along Alice\'s descent, shows why homogeneous collapse supplies a zero-Weyl background, and isolates perturbation transfer as the remaining empirical calculation.',
       technical: 'Shows how identifying homogeneous parent collapse with the child FLRW beginning supplies Penrose\'s low-Weyl boundary condition at background order, and isolates perturbation transfer as the remaining observational test.',
     },
   },
@@ -199,26 +203,19 @@ export const COLLECTIONS = {
     summary: 'Four documents, ordered from the foundational proposal to the observational prediction.',
     documentIds: ['gd1', 'ri1', 'involution', 'evolvingGDagger'],
   },
-  theory: {
+  core: {
     headingId: 'publications-title',
     title: 'Publications',
-    summary: 'The theory, in reading order.',
+    summary: 'The main theory spine — published work followed by papers in development.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'wchFixedPoint', 'crossover', 'entropy', 'gd2', 'gd3', 'thermodynamics'],
+    documentIds: ['gd1', 'ri1', 'involution', 'gd2', 'gd3', 'thermodynamics'],
   },
-  empirical: {
+  predictionTrack: {
     headingId: 'predictions-title',
-    title: 'Predictions',
-    summary: 'Observable predictions of the theory.',
+    title: 'From Symmetry to Observation',
+    summary: 'A derivation, a prediction, and the observation that can decide it.',
     summaryKey: 'publications',
-    documentIds: ['evolvingGDagger', 'highZTest'],
-  },
-  theorySupporting: {
-    headingId: 'supporting-title',
-    title: 'Supporting calculations',
-    summary: 'The reciprocal-interior machinery.',
-    summaryKey: 'technical',
-    documentIds: ['note3', 'ri2', 'nullOptics', 'throatClock', 'weylHypothesis', 'fullHistoryTest'],
+    documentIds: ['note3', 'evolvingGDagger', 'highZTest'],
   },
 };
 
@@ -256,7 +253,16 @@ export const getCollection = name => {
   };
 };
 
-export const publicationLinks = ['gd1', 'ri1', 'ri2'].map(id => {
+export const getDocumentLink = id => {
+  const document = DOCUMENTS[id];
+  if (!document) throw new Error(`Unknown publication document: ${id}`);
+  return {
+    title: document.title,
+    href: route(document),
+  };
+};
+
+export const publicationLinks = ['gd1', 'ri1', 'involution'].map(id => {
   const document = DOCUMENTS[id];
   return {
     id,

@@ -121,6 +121,30 @@ data-wrapper[data-home-section] {
   text-transform: uppercase;
 }
 
+.research-archive__groups {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.research-archive__group {
+  padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+}
+
+.research-archive__group h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+}
+
+.research-archive__group ul {
+  margin: 0;
+}
+
+.research-archive__group li + li {
+  margin-top: 0.3rem;
+}
+
 .review-card {
   margin-block: clamp(2rem, 5vw, 3.5rem);
 }
