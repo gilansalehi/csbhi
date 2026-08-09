@@ -3,14 +3,6 @@
   counter-reset: gd-problem;
 }
 
-#open-problems .gd-ledger-note {
-  max-width: 46rem;
-  margin: 1.25rem 0 0;
-  font-size: 0.82rem;
-  line-height: 1.55;
-  opacity: 0.66;
-}
-
 #open-problems .gd-problem {
   display: grid;
   grid-template-columns: 1fr 1fr;

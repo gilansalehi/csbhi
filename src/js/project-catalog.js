@@ -42,7 +42,7 @@ const DOCUMENTS = {
     meta: { review: 'supporting result · checked proof', publications: 'supporting result · proven' },
     summaries: {
       review: 'Proves that \\(a=1/r\\) is the unique nontrivial power-law map that is scale-free, involutive, and horizon-fixing.',
-      publications: 'Proves \\(a=1/r\\) is the unique nontrivial scale-free, horizon-fixing involution — so once scale-invariance and horizon-fixing are assumed, the reciprocal power is fixed. Adopting those symmetries, and the physical identification, remains the ansatz.',
+      publications: 'Within the scale-free, horizon-fixing class, involution fixes the unique nontrivial map: \\(a=1/r\\).',
     },
   },
   evolvingGDagger: {
@@ -103,7 +103,7 @@ const DOCUMENTS = {
     prerequisite: 'gd1',
     meta: { publications: 'working outline' },
     summaries: {
-      publications: 'The forthcoming primary-author construction of the parent-to-child geometry: the collapse-cohort horizon map that carries a black-hole interior into the successor aeon, grounding the low-Weyl beginning and the regular crossover.',
+      publications: 'Repeats Alice\'s infall experiment across the parent collapse history to construct the cohort map from black-hole formation to the child cosmology.',
     },
   },
   note3: {
@@ -113,7 +113,7 @@ const DOCUMENTS = {
     prerequisite: 'involution',
     meta: { publications: 'conditional theorem', technical: 'conditional theorem' },
     summaries: {
-      publications: 'A theorem-style bridge to the galaxy problem. Shows that a scale-free, self-dual mixing law between local Newtonian acceleration \\(g_N\\) and the global throat scale \\(cH\\) naturally selects \\(g_{\\rm mix}\\sim\\sqrt{g_NcH}\\).',
+      publications: 'A scale-free, self-dual mixing law between local Newtonian acceleration \\(g_N\\) and the global horizon scale \\(cH\\) selects \\(g_{\\rm mix}\\sim\\sqrt{g_NcH}\\).',
       technical: 'A theorem-style bridge to the galaxy problem: a scale-free, self-dual mixing law between local Newtonian acceleration \\(g_N\\) and the global throat scale \\(cH\\) selects \\(g_{\\rm mix}\\sim\\sqrt{g_NcH}\\).',
     },
   },
@@ -134,7 +134,7 @@ const DOCUMENTS = {
     prerequisite: 'gd3',
     meta: { publications: 'planned outline' },
     summaries: {
-      publications: 'A later synthesis paper connecting GD to horizon thermodynamics, emergent-gravity arguments, and the work of Verlinde, Padmanabhan, Milgrom, and McGaugh. The goal is to show how these approaches may be partial views of the same throat-centered geometry.',
+      publications: 'Connects the reciprocal geometry to horizon thermodynamics, emergent gravity, and the acceleration-scale results of Milgrom and McGaugh.',
     },
   },
   weylHypothesis: {
@@ -208,7 +208,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory, in reading order.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'gd2', 'gd3', 'thermodynamics'],
+    documentIds: ['gd1', 'ri1', 'involution', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',
