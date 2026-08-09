@@ -18,5 +18,5 @@ What secures the last point is a single calculation. On the reciprocal interior 
 
 One conjecture remains: that the geometry of the succession forces Weyl smoothness on every aeon by self-consistency, rather than fixing it as a fine-tuned parameter. This is the claim I am now working to prove, in a small geometric program inspired by yours — the Conformal Scaling of Black Hole Interiors (www.gilansalehi.com/csbhi). More than anything, I hope you find it worth your time.
 
-Best,
+Sincerely,
 Gilan Salehi

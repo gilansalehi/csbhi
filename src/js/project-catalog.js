@@ -206,7 +206,7 @@ export const COLLECTIONS = {
   core: {
     headingId: 'publications-title',
     title: 'Publications',
-    summary: 'The theory, in reading order.',
+    summary: 'The theory and core publications.',
     summaryKey: 'publications',
     documentIds: ['gd1', 'ri1', 'involution', 'gd2', 'gd3'],
   },
