@@ -30,6 +30,17 @@
     break-inside: avoid;
   }
 
+  article > section {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  article h2,
+  article h3 {
+    page-break-after: avoid;
+    break-after: avoid-page;
+  }
+
   .theme-figure__image--light {
     display: block;
   }
