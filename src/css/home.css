@@ -121,6 +121,27 @@ data-wrapper[data-home-section] {
   text-transform: uppercase;
 }
 
+.project-resources__links {
+  display: grid;
+  gap: 0.9rem;
+  margin-block: 1.25rem 1.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.project-resources__links li {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.project-resources__links a {
+  font-weight: 700;
+}
+
+.project-resources__links span {
+  color: var(--muted);
+}
+
 .research-archive__groups {
   display: grid;
   gap: 1.5rem;

@@ -206,14 +206,14 @@ export const COLLECTIONS = {
   core: {
     headingId: 'publications-title',
     title: 'Publications',
-    summary: 'The main theory spine — published work followed by papers in development.',
+    summary: 'The theory, in reading order.',
     summaryKey: 'publications',
     documentIds: ['gd1', 'ri1', 'involution', 'gd2', 'gd3', 'thermodynamics'],
   },
   predictionTrack: {
     headingId: 'predictions-title',
-    title: 'From Symmetry to Observation',
-    summary: 'A derivation, a prediction, and the observation that can decide it.',
+    title: 'Predictions',
+    summary: 'Observable predictions of the theory.',
     summaryKey: 'publications',
     documentIds: ['note3', 'evolvingGDagger', 'highZTest'],
   },
