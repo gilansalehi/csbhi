@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" id="project-root">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="A note for Professor Nikodem Popławski: the universe as a black-hole interior, reached in standard general relativity by a reciprocal map rather than a torsion bounce.">
+  <meta name="dcterms.modified" content="2026-08-09">
+  <meta name="project" content="Conformal Scaling of Black Hole Interiors">
+  <meta name="programme" content="Geometric Duality">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>A Reciprocal Route to the Universe in a Black Hole — a note for Professor Nikodem Popławski</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/review.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <style>
+    .review-letter p { max-width: 42rem; }
+    .review-letter .salutation { margin-bottom: 1.1rem; }
+    .review-letter .signoff { margin-top: 1.6rem; }
+
+    .review-compare { margin-block: 2.75rem; }
+    .review-compare table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      margin-block: 1rem 1.75rem;
+    }
+    .review-compare caption {
+      text-align: left;
+      font-weight: 650;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+    .review-compare th,
+    .review-compare td {
+      padding: 0.85rem 0.95rem;
+      border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+      text-align: left;
+      vertical-align: top;
+      font-size: 1rem;
+      line-height: 1.55;
+      overflow-wrap: break-word;
+    }
+    .review-compare th {
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      opacity: 0.66;
+    }
+    .review-compare td:first-child {
+      width: 20%;
+      font-weight: 600;
+    }
+
+    @media screen and (min-width: 1160px) {
+      .review-compare table {
+        width: calc(100% + 16rem);
+        margin-inline: -8rem;
+      }
+    }
+
+    @media screen and (max-width: 760px) {
+      .review-compare table,
+      .review-compare thead,
+      .review-compare tbody,
+      .review-compare tr,
+      .review-compare th,
+      .review-compare td { display: block; width: auto; }
+      .review-compare thead { display: none; }
+      .review-compare tr {
+        padding-block: 1.1rem;
+        border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+      }
+      .review-compare td { padding: 0; border: 0; }
+      .review-compare td:first-child { width: auto; }
+      .review-compare td + td { margin-top: 0.7rem; }
+      .review-compare td[data-label]::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 0.22rem;
+        font-size: 0.66rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#letter-title">Skip to the note</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article id="poplawski-page" class="review-packet" aria-labelledby="letter-title">
+      <header class="review-packet__header">
+        <p class="review-packet__eyebrow">A note for Professor Nikodem Popławski</p>
+        <h1 id="letter-title">A Reciprocal Route to the Universe in a Black Hole</h1>
+        <p class="review-packet__lede">
+          Every collapse a cosmogenesis — reached, in ordinary general relativity, by a reciprocal map rather than a
+          torsion bounce.
+        </p>
+        <p class="review-packet__status">August 2026</p>
+      </header>
+
+      <section id="letter" class="review-letter" aria-labelledby="letter-title">
+        <p class="salutation">Dear Professor Popławski,</p>
+        <p>
+          Of everyone working today, you have taken most seriously the idea this project is built on: that our universe
+          is the interior of a black hole, and that every gravitational collapse is the birth of a new one. I have come
+          to the same picture from a different direction, and I would value your judgment on it — most of all where it
+          departs from yours.
+        </p>
+        <p>
+          The construction begins from one identification. For an observer crossing the horizon, the interior spatial
+          scale and the exterior areal radius are reciprocal, \(a=1/r\). The parent's descent to \(r\to0\) is the
+          child's expansion to \(a\to\infty\): what reads as the approach to a singularity in the exterior description
+          is the smooth cosmological future in the interior one. The universe on the far side is the reciprocal
+          interior, and it is a black hole in the present one — the picture you have argued for, obtained as a change of
+          description rather than as a new field.
+        </p>
+        <p>
+          That last clause is where we differ, and it is what I would most like your eye on. You remove the singularity
+          <em>dynamically</em>: spin–torsion coupling in Einstein–Cartan gravity supplies a repulsion that bounces the
+          collapsing matter at finite density. The reciprocal interior removes it <em>geometrically</em>, in standard
+          general relativity with no torsion added. Along the interior congruence, \(r\to0\) is reached only at infinite
+          proper time and every curvature invariant approaches a finite de Sitter value; the endpoint \(r=0\) is not a
+          curvature singularity at all but the future conformal boundary of an asymptotically de Sitter spacetime. I am
+          careful about what this does and does not establish: it is singularity <em>deferral</em> within the
+          constructed interior, not yet a proof that this interior is the unique smooth continuation of the exterior
+          collapse.
+        </p>
+        <p>
+          So the question I bring you is whether these are two accounts of one process or two different processes. Does
+          your Einstein–Cartan interior, seen from within, also carry a reciprocal relation between its scale and the
+          parent's areal radius? I suspect \(a=1/r\) may be the effective kinematics of what torsion does dynamically —
+          that the bounce and the deferral are the same crossing described in two languages — but I cannot yet show it,
+          and you are the person best placed to tell me whether that hope is sound or already excluded.
+        </p>
+        <p>
+          Two things follow that may interest you for their own sake. The first is the arrow of time. Homogeneous
+          (Oppenheimer–Snyder) collapse hands its child a Weyl-free interior, so a smooth universe forms the smooth
+          overdensities that collapse into smooth children, and a low-entropy beginning becomes a fixed point of the
+          succession rather than a chosen initial condition — the inherited arrow you also draw from the parent
+          collapse, obtained here as a property of the formation process. The second is that the same reciprocal
+          instinct, applied one level down to galaxies, yields a parameter-free and falsifiable prediction — that the
+          galactic acceleration scale evolves as \(g_\dagger(z)/g_\dagger(0)=H(z)/H_0\). The program tries to pay rent.
+        </p>
+        <p>
+          One honest difference I would not want to hide: your baby universes are slightly closed, a finite collapse
+          begetting a closed cosmology, whereas the reciprocal interior's clean case is spatially flat, with curvature
+          entering only as an integration constant. Whether the finiteness of the parent collapse should force a
+          slightly closed child is exactly the kind of question I would rather hear from you than guess at. The work is
+          a small geometric program — the Conformal Scaling of Black Hole Interiors
+          (<a href="index.html">gilansalehi.com/csbhi</a>) — and more than anything I hope you find it worth your time.
+        </p>
+        <p class="signoff">
+          Sincerely,<br>
+          Gilan Salehi
+        </p>
+      </section>
+
+      <section id="reading" class="publication-list" aria-labelledby="reading-title">
+        <h2 id="reading-title">The argument in full</h2>
+        <p>Four documents carry the claims above: the foundation, why the map is forced, that the interior is
+          non-singular, and the arrow it inherits.</p>
+        <details open>
+          <summary>The primary paper and three technical notes.</summary>
+          <ol>
+            <li>
+              <div>GD1</div>
+              <div>
+                <h3><a href="gd1.html">Geometric Duality I</a></h3>
+                <p>The reciprocal ansatz \(a=1/r\) and the infall construction beneath it.</p>
+                <p>Primary paper</p>
+              </div>
+            </li>
+            <li>
+              <div>Note</div>
+              <div>
+                <h3><a href="reciprocal-involution.html">The Reciprocal Ansatz as the Unique Scale-Free
+                    Horizon-Fixing Involution</a></h3>
+                <p>Why \(a=1/r\) is not one choice among many: it is the unique nontrivial map that is scale-free and
+                  fixes the horizon.</p>
+                <p>Technical note</p>
+              </div>
+            </li>
+            <li>
+              <div>Note</div>
+              <div>
+                <h3><a href="note.html?src=gd_inverse_radius_probe_congruence">The Inverse-Radius Interior and Alice's
+                    Probe Congruence</a></h3>
+                <p>The interior is non-singular: \(r=0\) is reached at infinite proper time with finite de Sitter
+                  curvature, a future conformal boundary rather than a singularity.</p>
+                <p>Technical note</p>
+              </div>
+            </li>
+            <li>
+              <div>Note</div>
+              <div>
+                <h3>
+                  <a href="note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis">The Weyl Curvature Hypothesis
+                    as a Fixed Point</a>
+                </h3>
+                <p>Smooth collapse gives a Weyl-free child, so the low-entropy beginning is a fixed point of the
+                  succession — and the arrow follows without destroying information.</p>
+                <p>Technical note</p>
+              </div>
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <section id="comparison" class="review-compare" aria-labelledby="comparison-title">
+        <h2 id="comparison-title">Two routes to the same destination</h2>
+        <p>
+          We agree on the conclusion — the interior of a black hole is a new universe, and ours is one such interior.
+          The routes differ, and the differences are where the physics is. The columns below set them side by side, not
+          to rank them but to locate the questions worth asking.
+        </p>
+
+        <table>
+          <caption>The torsion bounce and the reciprocal interior</caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Einstein–Cartan torsion</th>
+              <th scope="col">Reciprocal interior (CSBHI)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="">Framework</td>
+              <td data-label="Einstein–Cartan torsion">Einstein–Cartan gravity; torsion sourced by fermion spin.</td>
+              <td data-label="Reciprocal interior (CSBHI)">Standard general relativity, with the single geometric input
+                \(a=1/r\).</td>
+            </tr>
+            <tr>
+              <td data-label="">Fate of the singularity</td>
+              <td data-label="Einstein–Cartan torsion">Avoided dynamically: spin–torsion repulsion bounces matter at
+                finite density.</td>
+              <td data-label="Reciprocal interior (CSBHI)">Deferred geometrically: \(r\to0\) at infinite proper time;
+                \(r=0\) is a future de Sitter conformal boundary, curvature invariants finite.</td>
+            </tr>
+            <tr>
+              <td data-label="">The new universe</td>
+              <td data-label="Einstein–Cartan torsion">A closed universe expanding beyond an Einstein–Rosen
+                bridge.</td>
+              <td data-label="Reciprocal interior (CSBHI)">The interior FLRW cosmology; \(a\to\infty\) as the parent's
+                \(r\to0\).</td>
+            </tr>
+            <tr>
+              <td data-label="">Arrow of time</td>
+              <td data-label="Einstein–Cartan torsion">Inherited from the parent collapse; torsion also drives an early
+                fast expansion.</td>
+              <td data-label="Reciprocal interior (CSBHI)">Inherited: homogeneous collapse gives a Weyl-free start; low
+                initial Weyl is a fixed point of the succession.</td>
+            </tr>
+            <tr>
+              <td data-label="">Spatial curvature</td>
+              <td data-label="Einstein–Cartan torsion">Slightly closed — a finite collapse begets a closed
+                cosmology.</td>
+              <td data-label="Reciprocal interior (CSBHI)">Flat in the clean case; curvature enters only as an
+                integration constant.</td>
+            </tr>
+            <tr>
+              <td data-label="">A near-term test</td>
+              <td data-label="Einstein–Cartan torsion">Torsion cosmology connects to inflation-free expansion and baryon
+                asymmetry.</td>
+              <td data-label="Reciprocal interior (CSBHI)">The galactic scale evolves, \(g_\dagger(z)/g_\dagger(0)=H(z)/H_0\)
+                — falsifiable in the JWST era.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="questions" class="review-packet__questions" aria-labelledby="questions-title">
+        <h2 id="questions-title">The questions I would put to you</h2>
+        <ul>
+          <li>Seen from within, does the Einstein–Cartan interior carry a reciprocal relation between its scale factor
+            and the parent's areal radius — is \(a=1/r\) the effective kinematics of the torsion bounce?</li>
+          <li>Does the finiteness of the parent collapse force a slightly closed child, or can a spatially flat interior
+            be consistent with black-hole cosmogenesis?</li>
+          <li>Is geometric singularity deferral in standard GR a genuine alternative to the torsion bounce, or does a
+            complete continuation of the exterior collapse still require new gravitational physics?</li>
+        </ul>
+        <p>
+          A correction at any of these would materially improve the program, and a connection to an existing result in
+          torsion cosmology would be as welcome as an objection.
+        </p>
+      </section>
+
+      <section id="sources" aria-labelledby="sources-title">
+        <h2 id="sources-title">Points of comparison</h2>
+        <ol>
+          <li>N. J. Popławski, "Radial motion into an Einstein–Rosen bridge," <em>Phys. Lett. B</em> <strong>687</strong>
+            (2010) 110, <a href="https://arxiv.org/abs/0902.1994">arXiv:0902.1994</a>.</li>
+          <li>N. J. Popławski, "Nonsingular, big-bounce cosmology from spinor–torsion coupling," <em>Phys. Rev. D</em>
+            <strong>85</strong> (2012) 107502, <a href="https://arxiv.org/abs/1111.4595">arXiv:1111.4595</a>.</li>
+          <li>N. J. Popławski, "Universe in a black hole in Einstein–Cartan gravity," <em>Astrophys. J.</em>
+            <strong>832</strong> (2016) 96, <a href="https://arxiv.org/abs/1410.3881">arXiv:1410.3881</a>.</li>
+        </ol>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>

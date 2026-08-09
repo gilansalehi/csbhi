@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" id="project-root">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="A technical review packet for Professor Philip Mannheim on the cosmological origin and possible evolution of the galactic acceleration scale.">
+  <meta name="dcterms.modified" content="2026-08-09">
+  <meta name="project" content="Conformal Scaling of Black Hole Interiors">
+  <meta name="programme" content="Geometric Duality">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>The Cosmological Horizon and the Galactic Acceleration Scale — a packet for Philip Mannheim</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/review.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <style>
+    .mannheim-intro p { max-width: 44rem; }
+    .mannheim-result {
+      margin-block: 2rem;
+      padding: 1rem 1.2rem;
+      border-left: 3px solid currentColor;
+    }
+    .mannheim-result p { margin: 0; }
+    .mannheim-compare { margin-block: 2.75rem; }
+    .mannheim-compare table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      margin-block: 1rem 1.75rem;
+    }
+    .mannheim-compare th,
+    .mannheim-compare td {
+      padding: 0.85rem 0.95rem;
+      border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+      text-align: left;
+      vertical-align: top;
+      font-size: 1rem;
+      line-height: 1.55;
+      overflow-wrap: break-word;
+    }
+    .mannheim-compare th {
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      opacity: 0.66;
+    }
+    .mannheim-compare td:first-child {
+      width: 18%;
+      font-weight: 600;
+    }
+
+    @media screen and (min-width: 1160px) {
+      .mannheim-compare table {
+        width: calc(100% + 16rem);
+        margin-inline: -8rem;
+      }
+    }
+
+    @media screen and (max-width: 760px) {
+      .mannheim-compare table,
+      .mannheim-compare thead,
+      .mannheim-compare tbody,
+      .mannheim-compare tr,
+      .mannheim-compare th,
+      .mannheim-compare td { display: block; width: auto; }
+      .mannheim-compare thead { display: none; }
+      .mannheim-compare tr {
+        padding-block: 1.1rem;
+        border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+      }
+      .mannheim-compare td { padding: 0; border: 0; }
+      .mannheim-compare td + td { margin-top: 0.7rem; }
+      .mannheim-compare td[data-label]::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 0.22rem;
+        font-size: 0.66rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#packet-title">Skip to the packet</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article id="mannheim-page" class="review-packet" aria-labelledby="packet-title">
+      <header class="review-packet__header">
+        <p class="review-packet__eyebrow">Packet III · prepared for Professor Philip Mannheim</p>
+        <h1 id="packet-title">The Cosmological Horizon and the Galactic Acceleration Scale</h1>
+        <p class="review-packet__lede">
+          A reciprocal route from the cosmological horizon to local galactic dynamics.
+        </p>
+        <p class="review-packet__status">Prepared for technical review · August 2026</p>
+      </header>
+
+      <nav id="table-of-contents" aria-labelledby="toc-title">
+        <h2>Contents</h2>
+        <details open>
+          <summary id="toc-title">Review packet</summary>
+          <ol>
+            <li><a href="#point-of-contact">The point of contact</a></li>
+            <li><a href="#comparison">Two routes from cosmology to galaxies</a></li>
+            <li><a href="#reading">Recommended reading</a></li>
+            <li><a href="#questions">Questions raised</a></li>
+          </ol>
+        </details>
+      </nav>
+
+      <section id="point-of-contact" class="mannheim-intro" aria-labelledby="point-of-contact-title">
+        <h2 id="point-of-contact-title">The point of contact</h2>
+        <p>
+          Professor Mannheim, your recent conversation with Curt Jaimungal returned repeatedly to an idea that also
+          sits at the center of this project: galactic dynamics cannot be separated from the global universe. Your
+          conformal-gravity programme makes that statement dynamical. The Robertson–Walker background and its
+          inhomogeneities appear in the rest frame of a galaxy as universal linear and quadratic contributions to its
+          rotation curve.
+        </p>
+        <p>
+          Conformal Scaling of Black Hole Interiors reaches the same local–global interface through a different
+          geometric proposal. Its starting point is the reciprocal relation \(a=1/r\), connecting black-hole infall
+          to interior cosmological expansion. Applied recursively at galactic scale, the proposal identifies a
+          galaxy's global acceleration scale with the inverse radius of its cosmological horizon,
+          \(A=c^2/R_{\rm hor}\). A separate symmetry argument then selects the deep-regime square-root form
+          \(g_{\rm mix}=\kappa\sqrt{g_NA}\).
+        </p>
+        <div class="mannheim-result">
+          <p>
+            If the relevant boundary is the contemporaneous apparent horizon, \(R_{\rm hor}=c/H(z)\), the unknown
+            coefficient cancels from the redshift ratio:
+
+            \[
+              \boxed{\frac{g_\dagger(z)}{g_\dagger(0)}=\frac{H(z)}{H_0}}.
+            \]
+          </p>
+        </div>
+        <p>
+          The first intermediate-redshift measurement already tests the direction and magnitude of this result.
+          MUSE-DARK III reports \(g_\dagger(z\sim1)/g_\dagger(0)\approx1.98\pm0.45\); the parameter-free
+          correspondence gives \(H(1)/H_0=1.76\), while a fixed scale gives \(1\). The measurement is consistent with
+          the correspondence and lies roughly \(2\sigma\) above the fixed value, although one model-dependent data
+          point does not decide the question.
+        </p>
+        <p>
+          This is a correspondence with a falsifiable consequence, not yet a weak-field derivation. It makes the
+          relation to conformal gravity especially useful: your theory already contains a complete field-equation
+          route by which global cosmology acts inside galaxies. The question is whether the reciprocal result is
+          compatible with that structure, ruled out by it, or already present in another form.
+        </p>
+        <p>
+          Your recent RAR analysis predicts a different quantity—a low-\(g_{\rm obs}\) acceleration floor fixed by
+          cosmology—through conformal gravity's linear and quadratic potentials. Does that floor remain fixed at
+          earlier epochs, or does the full conformal cosmology make it evolve with \(H(z)\)? The answer would either
+          expose a shared prediction reached by independent routes or provide a clean observational distinction
+          between them.
+        </p>
+      </section>
+
+      <section id="comparison" class="mannheim-compare" aria-labelledby="comparison-title">
+        <h2 id="comparison-title">Two routes from cosmology to galaxies</h2>
+        <p>
+          The overlap is physical, but the quantities should not be conflated. In particular, the low-acceleration
+          floor recently emphasized in conformal gravity is not automatically the same observable as the RAR
+          transition scale \(g_\dagger\). Conformal gravity obtains its rotation curves from local and cosmological
+          linear potentials plus a global quadratic term; CSBHI proposes a separate square-root mixing law. The
+          packet asks how those genuinely different mechanisms compare rather than recasting conformal gravity as
+          MOND.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Question</th>
+              <th scope="col">Conformal gravity</th>
+              <th scope="col">Reciprocal correspondence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Question">Starting point</td>
+              <td data-label="Conformal gravity">A locally conformal, fourth-order metric theory with a dimensionless gravitational coupling.</td>
+              <td data-label="Reciprocal correspondence">The geometric ansatz \(a=1/r\), followed by Einstein–Friedmann dynamics in the reciprocal interior.</td>
+            </tr>
+            <tr>
+              <td data-label="Question">Local–global link</td>
+              <td data-label="Conformal gravity">Local luminous matter and the exterior universe contribute distinct terms to one galactic potential.</td>
+              <td data-label="Reciprocal correspondence">A scale-free exchange mixes local baryonic acceleration with a global horizon acceleration.</td>
+            </tr>
+            <tr>
+              <td data-label="Question">Galaxy law</td>
+              <td data-label="Conformal gravity">
+                \(v^2=v_{\rm LOC}^2+\gamma_0c^2R/2-\kappa_{\rm CG}c^2R^2\), with universal cosmological terms.
+              </td>
+              <td data-label="Reciprocal correspondence">
+                \(g_{\rm mix}=\kappa_{\rm GD}\sqrt{g_NcH}\), conditional on the stated symmetry and horizon correspondence.
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Question">Current empirical claim</td>
+              <td data-label="Conformal gravity">A cosmologically fixed floor in \(g_{\rm obs}\) near \(10^{-10.86}\,\mathrm{m/s^2}\).</td>
+              <td data-label="Reciprocal correspondence">An RAR transition scale whose ratio rises as \(H(z)/H_0\) if the apparent horizon is selected.</td>
+            </tr>
+            <tr>
+              <td data-label="Question">Open issue</td>
+              <td data-label="Conformal gravity">What redshift dependence do the universal galactic terms acquire in the full cosmology?</td>
+              <td data-label="Reciprocal correspondence">Which horizon the completed weak-field geometry selects, and what fixes the absolute coefficient?</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="reading" class="publication-list" aria-labelledby="reading-title">
+        <h2 id="reading-title">Recommended reading</h2>
+        <p>The first document contains the result. The remaining three supply its mathematical and geometric foundation.</p>
+        <details open>
+          <summary>One prediction, one derivation, and two foundations.</summary>
+          <ol>
+            <li>
+              <div>Prediction I</div>
+              <div>
+                <h3><a href="note.html?src=evolving_g_dagger_derivation">The Evolving Galactic Acceleration-Scale Correspondence</a></h3>
+                <p>States the horizon correspondence, derives the coefficient-independent redshift ratio, and compares it with the first intermediate-redshift evidence.</p>
+                <p>Observational prediction</p>
+              </div>
+            </li>
+            <li>
+              <div>Derivation</div>
+              <div>
+                <h3><a href="note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law">Self-Dual Homogeneous Derivation of the Square-Root Law</a></h3>
+                <p>Shows that scale freedom, homogeneity, local–global exchange symmetry, and exact flat-curve scaling select the geometric mean.</p>
+                <p>Conditional theorem</p>
+              </div>
+            </li>
+            <li>
+              <div>GD I</div>
+              <div>
+                <h3><a href="gd1.html">Geometric Duality: Conformal Scaling of Black Hole Interiors</a></h3>
+                <p>Introduces the reciprocal ansatz and the interior expansion–infall correspondence from which the galactic proposal takes its geometry.</p>
+                <p>Primary proposal</p>
+              </div>
+            </li>
+            <li>
+              <div>Result I</div>
+              <div>
+                <h3><a href="reciprocal-involution.html">The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution</a></h3>
+                <p>Identifies \(1/r\) as the unique nontrivial map in the stated scale-free, horizon-fixing power-law class.</p>
+                <p>Supporting result</p>
+              </div>
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <section id="questions" class="review-packet__questions" aria-labelledby="questions-title">
+        <h2 id="questions-title">Questions raised</h2>
+        <p>I am especially interested in the relation between the two constructions:</p>
+        <ul>
+          <li>Does conformal gravity predict a redshift dependence for its universal linear term or its low-acceleration floor?</li>
+          <li>Are that floor and the RAR transition scale physically distinct, as this packet assumes?</li>
+          <li>Can the reciprocal local–global mixing law arise from the conformal-gravity field equations, or does their structure exclude it?</li>
+          <li>Does conformal gravity identify which cosmological boundary—a contemporaneous apparent horizon, an event horizon, or spatial curvature—sets the galactic scale?</li>
+        </ul>
+        <p>
+          A correction at any of these points would materially improve the programme. A connection to an existing
+          result in conformal gravity would be equally valuable.
+        </p>
+      </section>
+
+      <section id="sources" aria-labelledby="sources-title">
+        <h2 id="sources-title">Points of comparison</h2>
+        <ol>
+          <li>P. D. Mannheim, “Cosmology and galactic rotation curves,” <a href="https://arxiv.org/abs/astro-ph/9511045">arXiv:astro-ph/9511045</a> (1995).</li>
+          <li>P. D. Mannheim and J. G. O’Brien, “Galactic rotation curves in conformal gravity,” <a href="https://arxiv.org/abs/1211.0188">arXiv:1211.0188</a> (2012).</li>
+          <li>P. D. Mannheim, “Conformal Gravity and the Low Acceleration Limit of the Radial Acceleration Relation,” <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6539438">SSRN 6539438</a> (2025; posted 2026).</li>
+          <li>P. D. Mannheim, “The Story of Conformal Gravity,” conversation with Curt Jaimungal, <a href="https://curtjaimungal.substack.com/p/the-story-of-conformal-gravity">Theories of Everything</a> (2026).</li>
+          <li>B. I. Ciocan et al., “MUSE-DARK III: The evolution of the radial acceleration relation at intermediate redshifts,” <a href="https://arxiv.org/abs/2604.22613">arXiv:2604.22613</a>, <em>A&amp;A</em> 709, L16 (2026).</li>
+        </ol>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>
