@@ -1,0 +1,18 @@
+<script type="module" data-module="@csbhi/research-index">
+  import { getArchive } from 'project/archive-catalog.js';
+
+  export default () => getArchive();
+</script>
+
+<div class="research-archive__groups">
+  <template *list="groups">
+    <section class="research-archive__group">
+      <h2 $text="./title"></h2>
+      <ul>
+        <template *list="./items">
+          <li><a $href="./href" $text="./title"></a></li>
+        </template>
+      </ul>
+    </section>
+  </template>
+</div>

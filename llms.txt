@@ -47,6 +47,7 @@ When debugging your interpretation, use the guide's claim ledger and interpretat
 - [Frequently Asked Questions](https://www.gilansalehi.com/csbhi/faqs.html): Short answers to recurring conceptual and mathematical objections.
 - [CSBHI Cosmological Glossary](https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md): Shared symbol legend and plain-language reference for the physics, cosmology, horizons, distances, expansion, and junction geometry used across the project.
 - [What Remains Mathematically Illegible](https://www.gilansalehi.com/csbhi/notes/open_questions.md): Living index of the unresolved geometric, cosmological, empirical, and extension questions, ordered by dependency.
+- [Research Index](https://www.gilansalehi.com/csbhi/research.html): Complete catalog of publications, working notes, supporting calculations, negative results, and superseded approaches.
 - [Alice's Descent](https://www.gilansalehi.com/csbhi/leap-of-faith.html): Interactive geometric illustration accompanying the primary paper.
 - [Source repository](https://github.com/gilansalehi/csbhi): HTML source, research notes, figures, and revision history.
 

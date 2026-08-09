@@ -1,11 +1,5 @@
-<script type="module" data-module="@csbhi/home/resources">
-  import { getArchive } from 'project/archive-catalog.js';
-
-  export default () => getArchive();
-</script>
-
 <section class="project-resources" aria-labelledby="project-resources-title">
-  <h2 id="project-resources-title">Resources &amp; Research Archive</h2>
+  <h2 id="project-resources-title">Resources</h2>
 
   <ul class="project-resources__links">
     <li>
@@ -16,23 +10,17 @@
       <a href="note.html?src=cosmological_glossary">Cosmological Glossary</a>
       <span>Shared symbols and precise distinctions among the horizons, distances, expansion rates, and junction terms used across the project.</span>
     </li>
+    <li>
+      <a href="note.html?src=open_questions">Open Questions</a>
+      <span>The unresolved calculations, ordered by dependency.</span>
+    </li>
+    <li>
+      <a href="note.html?src=gd_research_roadmap">Research Roadmap</a>
+      <span>The publication path, canonical notation, and standard of evidence for the programme.</span>
+    </li>
+    <li>
+      <a href="research.html">Research Index</a>
+      <span>The complete record of papers, working notes, supporting calculations, negative results, and superseded approaches.</span>
+    </li>
   </ul>
-
-  <details class="research-archive">
-    <summary>
-      The complete research record.
-    </summary>
-    <div class="research-archive__groups">
-      <template *list="groups">
-        <section class="research-archive__group">
-          <h3 $text="./title"></h3>
-          <ul>
-            <template *list="./items">
-              <li><a $href="./href" $text="./title"></a></li>
-            </template>
-          </ul>
-        </section>
-      </template>
-    </div>
-  </details>
 </section>
