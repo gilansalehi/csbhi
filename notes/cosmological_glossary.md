@@ -108,6 +108,34 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(\Omega_\Sigma(v_H)\) | Conformal factor relating the parent and child angular metrics on the candidate null correspondence. |
 | \(r_h\) | A local symbol for a generic fixed horizon radius in a calculation. It should not replace the canonical symbols above in a final cross-note statement. |
 
+### GD1 auxiliary symbols
+
+These symbols appear in *Geometric Duality* but need not remain local to that paper.
+
+| Symbol | Meaning in GD1 |
+|---|---|
+| \(d\) | Differential operator; for example, \(dt\) and \(dr\) are infinitesimal coordinate changes. |
+| \(x,y,z\) | Cartesian spatial coordinates when used in a metric. The symbol \(z\) denotes cosmological redshift when stated in that context. |
+| \(C\) | Integration constant in GD1 Appendix A, related to spatial curvature by \(C=-k\). It is distinct from the Weyl tensor \(C_{\alpha\beta\gamma\delta}\). |
+| \(X_0,\ldots,X_4\) | Coordinates of the 5D Minkowski embedding space used in GD1 Appendix D. |
+| \(G_{\mu\nu}\) | Einstein tensor. |
+| \(T_{\mu\nu}\) | Stress-energy tensor. |
+| \(M_H\) | Total critical mass-energy inside the present Hubble sphere. |
+| \(M_\odot\) | One solar mass. |
+| \(a_0,\bar a\) | Present value of \(a\) and the observationally normalized scale factor \(\bar a=a/a_0\), for which \(\bar a_0=1\). |
+| \(\dot a,\ddot a,\dot H\) | Overdots denote differentiation with respect to the time used in context. |
+| \(\rho_c\) | Present critical density, \(\rho_c=3H_0^2/(8\pi G)\). |
+| \(\rho_i,\rho_{i0},p_i,w_i\) | Density, reference density, pressure, and equation-of-state parameter of component \(i\), with \(p_i=w_i\rho_i\) when \(c=1\). |
+| \(\rho_k,p_k\) | Effective density and pressure used to represent spatial curvature, with \(p_k=-\rho_k/3\). |
+| \(\ell_P\) | Planck length. |
+| \(r_P,a_P\) | Planck-to-de Sitter radius ratio \(r_P=\ell_P/R_\Lambda\) and its reciprocal \(a_P=1/r_P\). |
+| \(\tau_{\rm vac}\) | Alice's elapsed proper time from the parent black-hole event horizon to the singularity in the pure-vacuum Schwarzschild model. |
+| \(\tau_{\rm int}\) | Alice's elapsed proper time from the parent black-hole event horizon toward \(r=0\) in the reciprocal interior. |
+| \(\tau_H\) | Alice's proper time at the parent black-hole event horizon, where GD1 normalizes \(r=a=1\). |
+| \(F_{\rm dS}\) | Radial Painleve-Gullstrand flow of Alice's asymptotic de Sitter geometry, \(F_{\rm dS}=H_\Lambda\bar R\). |
+| \(F'(r)\) | Derivative of the infall function with respect to \(r\). |
+| \(\ell_\alpha,\ell_H\) | Alice-probe separation and its value at the parent black-hole event horizon. |
+
 ## 3. Core physics and geometry terms
 
 ### Ansatz
