@@ -22,7 +22,7 @@ a(\tau)=\frac{1}{r(\tau)},
 
 where \(r\) is the horizon-normalized radius Bob assigns to Alice's infall and \(a\) is the spatial scale of Alice's proposed interior geometry.
 
-The aim of this note is not only comparison. Several of the names below did the hard work — sometimes in a single page, sometimes across a career — of showing that a black-hole interior could be read as a cosmology at all. CSBHI enters the line of inquiry shaped by that work, and the least it owes them is an accurate account of what each of them actually did.
+The aim of this note is not only comparison. Several of the names below did the hard work — sometimes in a single page, sometimes across a career — of showing that a black-hole interior could be read as a cosmology at all. CSBHI enters the line of inquiry shaped by that work, and owes a great debt to what they discovered.
 
 ---
 
