@@ -255,17 +255,29 @@ The resemblance is real but limited: both theories use a reciprocal conformal qu
 
 ---
 
-## 12. Popławski: torsion and the big bounce
+## 12. Popławski: the Einstein–Rosen bridge and Einstein–Cartan cosmogenesis
 
-Nikodem Popławski develops black-hole cosmology in Einstein–Cartan gravity. Fermion spin sources spacetime torsion. At extreme density, the spin-torsion contribution becomes gravitationally repulsive, prevents a singularity, and produces a nonsingular bounce into a closed expanding universe. Particle production can drive an inflationary phase and increase the child universe's mass and entropy. [21, 22]
+Nikodem Popławski reaches black-hole cosmology by two connected but mathematically distinct routes. The first remains within ordinary general relativity and reinterprets the Einstein–Rosen bridge. The second uses Einstein–Cartan gravity to replace the singularity dynamically with a spin–torsion bounce. Together they make his programme one of the closest direct antecedents to CSBHI.
 
-**Central claim:** every black hole containing fermionic matter can generate a nonsingular child universe beyond its event horizon.
+### Complete infall through an Einstein–Rosen bridge
 
-**Mechanism:** Einstein–Cartan torsion, spin-fluid repulsion, a minimum scale factor, and a bounce.
+In *Radial Motion into an Einstein–Rosen Bridge* (2010), Popławski studied massive radial geodesics in isotropic coordinates. The infalling particle enters a regular interior physically equivalent to the asymptotically flat exterior of a white hole, while its proper time extends to infinity. He attributed geodesic completeness to the discontinuity of the congruence expansion scalar at the horizon and to Rindler's elliptic identification of the two antipodal future horizons in the Kruskal diagram. He then proposed that astrophysical black holes may be Einstein–Rosen bridges, each containing a new universe formed with the black hole. [21]
 
-**Difference from CSBHI:** Popławski modifies the connection (adding torsion to standard GR) and reverses contraction at a finite minimum size. CSBHI uses the standard matter–radiation–\(\Lambda\) background on Alice's side, introduces no torsion, and defers the endpoint asymptotically rather than bouncing through it.
+This result is especially close to CSBHI's starting point. Both constructions replace finite-proper-time termination with complete infall and permit the exterior black hole to contain an interior universe. Their asymptotic geometries differ: Popławski's bridge opens toward an asymptotically flat white-hole exterior, whereas CSBHI's reciprocal interior approaches an expanding de Sitter future. CSBHI also seeks a smooth reciprocal congruence rather than the horizon discontinuity used in the bridge construction.
 
-The two programmes agree that an external black-hole description and an internal cosmological description can coexist. They differ on the physics that prevents the classical singularity: torsion here, a curvature bound in Section 6, quantum geometry in Section 13, and an infinite proper-time deferral under \(\Lambda\) in CSBHI.
+### The Einstein–Cartan bounce
+
+Popławski's second route promotes the antisymmetric part of the affine connection—the torsion tensor—to a gravitational variable sourced by fermion spin. At extreme density, the induced spin–spin interaction becomes repulsive. The universe reaches a finite minimum scale instead of a singularity and expands after a nonsingular bounce. His 2010 cosmological treatment argued that this dynamics can address the horizon and flatness problems, while the pre-bounce contraction may describe matter collapsing inside a parent black hole. [22, 23]
+
+The later black-hole construction makes the cosmogenesis mechanism explicit. Matter collapses inside the parent, bounces at finite density, and expands into a nonsingular closed universe beyond the event horizon. Curvature-driven particle production near the bounce can generate matter and entropy, produce a finite inflationary phase without an inflaton, and permit several bounces before the child grows large enough for cosmological-constant domination. [24] Popławski's anisotropic Kantowski–Sachs treatment further shows that torsion prevents the singularity only when particle production overcomes shear; the successful branch subsequently inflates and isotropizes. [25]
+
+**Central claim:** a black hole containing fermionic matter can generate a geodesically complete or nonsingular child universe, with Einstein–Cartan spin–torsion dynamics supplying an explicit bounce mechanism.
+
+**Mechanism:** an Einstein–Rosen completion in ordinary GR, and separately an Einstein–Cartan spin fluid whose high-density repulsion produces a finite-radius bounce, particle production, inflation, and isotropization.
+
+**Difference from CSBHI:** the Einstein–Cartan model reverses contraction dynamically at finite density. CSBHI introduces no torsion and maps decreasing exterior radius to increasing interior scale through \(a=1/r\), sending the endpoint to an asymptotic de Sitter future at infinite proper time rather than passing through a bounce.
+
+The comparison leaves a concrete bridge between the programmes: if the reciprocal relation emerges as the effective kinematics of an Einstein–Cartan child after its final bounce, torsion could supply the formation mechanism while conformal scaling supplies the long interior history. Establishing or excluding that relation is a sharp question for both approaches.
 
 ---
 
@@ -273,9 +285,9 @@ The two programmes agree that an external black-hole description and an internal
 
 These papers approach the singularity through quantum-gravity effects rather than a classical fluid or a postulated limiting-curvature layer. Their constructions are related to loop quantum gravity, but they do not use one identical mechanism.
 
-**Haggard and Rovelli (2014)** constructed a classical metric satisfying Einstein's equations outside a finite spacetime region in which collapsing matter is taken to undergo a quantum transition from a black hole to a white hole. They argued that quantum effects can accumulate over a long exterior time and affect a small region outside the horizon without violating causality or the semiclassical approximation. The transition is short in the interior time and long in the exterior time. [23]
+**Haggard and Rovelli (2014)** constructed a classical metric satisfying Einstein's equations outside a finite spacetime region in which collapsing matter is taken to undergo a quantum transition from a black hole to a white hole. They argued that quantum effects can accumulate over a long exterior time and affect a small region outside the horizon without violating causality or the semiclassical approximation. The transition is short in the interior time and long in the exterior time. [26]
 
-**Ashtekar, Olmedo, and Singh (2018)** constructed an effective description of macroscopic Kruskal black holes that incorporates quantum-geometry corrections motivated by loop quantum gravity. It covers both interior and asymptotic exterior regions. In the effective spacetime, the classical singularity is replaced by a transition surface joining trapped and anti-trapped regions. [24, 25]
+**Ashtekar, Olmedo, and Singh (2018)** constructed an effective description of macroscopic Kruskal black holes that incorporates quantum-geometry corrections motivated by loop quantum gravity. It covers both interior and asymptotic exterior regions. In the effective spacetime, the classical singularity is replaced by a transition surface joining trapped and anti-trapped regions. [27, 28]
 
 **Central claim:** quantum-geometry effects can replace the classical Schwarzschild singularity with a black-hole-to-white-hole transition.
 
@@ -291,9 +303,9 @@ These models are useful comparisons for GD2 because they make their transition g
 
 Enrique Gaztañaga's Black Hole Universe programme is a recent direct comparison. It combines a finite FLRW cloud, a Schwarzschild exterior, and a nonsingular bounce.
 
-The 2022 paper, "How the Big Bang Ends Up Inside a Black Hole" (published in *Universe*), treats a finite FLRW cloud surrounded by vacuum and develops a collapse-and-bounce cosmology inside its Schwarzschild radius. The proposal identifies the black-hole event horizon with the source of apparent cosmic acceleration rather than introducing independent dark energy. [26]
+The 2022 paper, "How the Big Bang Ends Up Inside a Black Hole" (published in *Universe*), treats a finite FLRW cloud surrounded by vacuum and develops a collapse-and-bounce cosmology inside its Schwarzschild radius. The proposal identifies the black-hole event horizon with the source of apparent cosmic acceleration rather than introducing independent dark energy. [29]
 
-The 2025 paper, "Gravitational Bounce from the Quantum Exclusion Principle," models the collapsing cloud as a perfect fluid whose equation of state evolves from dust toward a uniform ground state with \(P=-\rho\), motivated by quantum exclusion. Within general relativity, that effective equation of state produces a finite-radius bounce and an exponential expansion phase. The authors identify the enclosing Schwarzschild radius with an effective interior cosmological-constant scale, linking the same construction to late-time dark energy. [27]
+The 2025 paper, "Gravitational Bounce from the Quantum Exclusion Principle," models the collapsing cloud as a perfect fluid whose equation of state evolves from dust toward a uniform ground state with \(P=-\rho\), motivated by quantum exclusion. Within general relativity, that effective equation of state produces a finite-radius bounce and an exponential expansion phase. The authors identify the enclosing Schwarzschild radius with an effective interior cosmological-constant scale, linking the same construction to late-time dark energy. [30]
 
 **Central claim:** the observed universe may be a finite FLRW region formed by collapse and bounce inside its Schwarzschild radius; the bounce supplies an inflationary phase while the horizon supplies an effective dark-energy scale.
 
@@ -321,7 +333,7 @@ The overlap is substantial: parent collapse, horizon-scale \(\Lambda\)-like beha
 | 't Hooft / Susskind–Thorlacius–Uglum (1993, 2009) | Complementarity and exact conformal symmetry | Infalling and exterior descriptions are complementary; information scales with area | Quantum-gravity symmetry and information content, not cosmological background dynamics |
 | Gott–Li (1998) | Closed timelike curve, self-consistent inflationary loop | The universe's origin may be its own later effect | Requires chronology violation; addresses first-cause, not infall |
 | Penrose CCC (2006–2010) | Reciprocal conformal factors across aeons | One aeon's future infinity is the next aeon's Big Bang | Spacelike aeon crossover, not a black-hole interior |
-| Popławski (2010–2016) | Spin-torsion repulsion and bounce | Every black hole may form a nonsingular child universe | Modified connection and finite-radius bounce |
+| Popławski (2010–2021) | Einstein–Rosen completion; spin-torsion repulsion, particle production, and bounce | Complete infall and a nonsingular child universe can replace finite-time termination | Asymptotically flat bridge or finite-radius torsion bounce rather than reciprocal de Sitter deferral |
 | Haggard–Rovelli / Ashtekar–Olmedo–Singh (2014–2018) | Quantum transition region or loop-quantum-gravity effective metric | Quantum geometry replaces the singularity with a black-to-white-hole transition | No FLRW interior or reciprocal scale |
 | Gaztañaga et al. (2022–2025) | Finite FLRW cloud joined to Schwarzschild, exclusion-motivated equation of state and bounce | A finite FLRW region forms inside its Schwarzschild radius via collapse and bounce | No reciprocal radius-scale ansatz; supplies a formation history CSBHI does not yet have |
 | CSBHI | Reciprocal scale \(a=1/r\) and a proposed horizon map | Infall and isotropic expansion are dual descriptions of one history | Horizon map, formation history, and stress-energy completion remain to be derived |
@@ -337,7 +349,8 @@ The historical parallels place CSBHI alongside several durable ideas:
 - from Stuckey, that Schwarzschild radial coordinates can be introduced in a dust-filled Friedmann model and used in a piecewise black-hole cosmology;
 - from the baby-universe literature, that junction conditions and causal structure cannot be skipped, and that some tempting constructions are classically obstructed;
 - from Markov and Frolov–Markov–Mukhanov, that de Sitter geometry is a natural regular-interior candidate, and that a fundamental curvature bound is one of the oldest and most literal ways to propose one;
-- from Smolin and Popławski, that parent and child cosmologies may form a causal genealogy, by two structurally different mechanisms;
+- from Smolin, that parent and child cosmologies may form a reproductive genealogy across many generations;
+- from Popławski, that infall can remain geodesically complete and that fermion spin, torsion, particle production, and anisotropic evolution can together supply an explicit black-hole cosmogenesis mechanism;
 - from 't Hooft and Susskind, that infalling and exterior observers can require complementary descriptions;
 - from Gott and Li, that closing a causal loop back on the universe's own origin is a live (if exotic) alternative to positing an external first cause;
 - from Penrose, that reciprocal conformal quantities can relate opposite cosmic limits;
@@ -378,10 +391,13 @@ The historical comparison also sharpens what CSBHI has not yet done. Several dev
 18. G. 't Hooft, "Quantum Gravity without Space-time Singularities or Horizons" (2009). [arXiv:0909.3426](https://arxiv.org/abs/0909.3426)
 19. J. R. Gott III and L.-X. Li, "Can the Universe Create Itself?" *Physical Review D* **58**, 023501 (1998). [arXiv:astro-ph/9712344](https://arxiv.org/abs/astro-ph/9712344)
 20. R. Penrose, "Before the Big Bang: An Outrageous New Perspective and Its Implications for Particle Physics," *Proceedings of EPAC 2006*, 2759–2762 (2006). [PDF](https://proceedings.jacow.org/e06/PAPERS/THESPA01.pdf)
-21. N. J. Popławski, "Cosmology with Torsion: An Alternative to Cosmic Inflation," *Physics Letters B* **694**, 181–185 (2010). [arXiv:1007.0587](https://arxiv.org/abs/1007.0587)
-22. N. J. Popławski, "Universe in a Black Hole in Einstein–Cartan Gravity," *The Astrophysical Journal* **832**, 96 (2016). [arXiv:1410.3881](https://arxiv.org/abs/1410.3881)
-23. H. M. Haggard and C. Rovelli, "Black Hole Fireworks: Quantum-Gravity Effects Outside the Horizon Spark Black to White Hole Tunneling," *Physical Review D* **92**, 104020 (2015). [arXiv:1407.0989](https://arxiv.org/abs/1407.0989)
-24. A. Ashtekar, J. Olmedo, and P. Singh, "Quantum Transfiguration of Kruskal Black Holes," *Physical Review Letters* **121**, 241301 (2018). [arXiv:1806.00648](https://arxiv.org/abs/1806.00648)
-25. A. Ashtekar, J. Olmedo, and P. Singh, "Quantum Extension of the Kruskal Spacetime," *Physical Review D* **98**, 126003 (2018). [arXiv:1806.02406](https://arxiv.org/abs/1806.02406)
-26. E. Gaztañaga, "How the Big Bang Ends Up Inside a Black Hole," *Universe* **8**(5), 257 (2022). [arXiv:2204.11608](https://arxiv.org/abs/2204.11608)
-27. E. Gaztañaga, K. Sravan Kumar, S. Pradhan, and M. Gabler, "Gravitational Bounce from the Quantum Exclusion Principle," *Physical Review D* **111**, 103537 (2025). [arXiv:2505.23877](https://arxiv.org/abs/2505.23877)
+21. N. J. Popławski, "Radial Motion into an Einstein–Rosen Bridge," *Physics Letters B* **687**, 110–113 (2010). [doi:10.1016/j.physletb.2010.03.029](https://doi.org/10.1016/j.physletb.2010.03.029); [arXiv:0902.1994](https://arxiv.org/abs/0902.1994)
+22. N. J. Popławski, "Cosmology with Torsion: An Alternative to Cosmic Inflation," *Physics Letters B* **694**, 181–185 (2010). [doi:10.1016/j.physletb.2010.09.056](https://doi.org/10.1016/j.physletb.2010.09.056); [arXiv:1007.0587](https://arxiv.org/abs/1007.0587)
+23. N. J. Popławski, "Nonsingular, Big-Bounce Cosmology from Spinor–Torsion Coupling," *Physical Review D* **85**, 107502 (2012). [doi:10.1103/PhysRevD.85.107502](https://doi.org/10.1103/PhysRevD.85.107502); [arXiv:1111.4595](https://arxiv.org/abs/1111.4595)
+24. N. J. Popławski, "Universe in a Black Hole in Einstein–Cartan Gravity," *The Astrophysical Journal* **832**, 96 (2016). [doi:10.3847/0004-637X/832/2/96](https://doi.org/10.3847/0004-637X/832/2/96); [arXiv:1410.3881](https://arxiv.org/abs/1410.3881)
+25. N. J. Popławski, "A Nonsingular, Anisotropic Universe in a Black Hole with Torsion and Particle Production," *General Relativity and Gravitation* **53**, 18 (2021). [doi:10.1007/s10714-021-02790-7](https://doi.org/10.1007/s10714-021-02790-7); [arXiv:2007.11556](https://arxiv.org/abs/2007.11556)
+26. H. M. Haggard and C. Rovelli, "Black Hole Fireworks: Quantum-Gravity Effects Outside the Horizon Spark Black to White Hole Tunneling," *Physical Review D* **92**, 104020 (2015). [arXiv:1407.0989](https://arxiv.org/abs/1407.0989)
+27. A. Ashtekar, J. Olmedo, and P. Singh, "Quantum Transfiguration of Kruskal Black Holes," *Physical Review Letters* **121**, 241301 (2018). [arXiv:1806.00648](https://arxiv.org/abs/1806.00648)
+28. A. Ashtekar, J. Olmedo, and P. Singh, "Quantum Extension of the Kruskal Spacetime," *Physical Review D* **98**, 126003 (2018). [arXiv:1806.02406](https://arxiv.org/abs/1806.02406)
+29. E. Gaztañaga, "How the Big Bang Ends Up Inside a Black Hole," *Universe* **8**(5), 257 (2022). [arXiv:2204.11608](https://arxiv.org/abs/2204.11608)
+30. E. Gaztañaga, K. Sravan Kumar, S. Pradhan, and M. Gabler, "Gravitational Bounce from the Quantum Exclusion Principle," *Physical Review D* **111**, 103537 (2025). [arXiv:2505.23877](https://arxiv.org/abs/2505.23877)
