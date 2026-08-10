@@ -103,6 +103,8 @@ The live empirical correspondence identifies (A) with the contemporaneous horizo
 
 [*The Evolving Galactic Acceleration-Scale Correspondence*](note.html?src=evolving_g_dagger_derivation) records that wager, while [the high-redshift test](note.html?src=evolving_acceleration_scale_high_z_test) states the observational discriminator. The correspondence is testable now; its dynamical derivation remains GD III's work.
 
+The H-linked law has prior MOND precedent, including Milgrom's explicit study of \(a_0(t)\propto cH(t)\). GD III's target is therefore not priority for the formula, but a geometric derivation of the weak-field response, selection of the relevant horizon, and recovery of the absolute normalization, lensing, and relativistic dynamics.
+
 ---
 
 ## Weyl curvature and conformal succession

@@ -53,7 +53,7 @@ const DOCUMENTS = {
     meta: { review: 'observational prediction · stated in advance', publications: 'observational prediction' },
     summaries: {
       review: 'Symmetry fixes the square-root mixing law; identifying its global scale with the contemporaneous cosmological horizon gives \\(g_\\dagger(z)/g_\\dagger(0)=H(z)/H_0\\). A fixed scale predicts a flat ratio; this correspondence predicts a rising one. Current intermediate-redshift evidence is compatible with that rise.',
-      publications: 'The reciprocal ansatz applied to galaxies: the acceleration scale tracks the contemporaneous horizon, giving the coefficient-free prediction \\(g_\\dagger(z)/g_\\dagger(0)=H(z)/H_0\\) — rising, where MOND is flat. The first intermediate-redshift data favor the rise.',
+      publications: 'The reciprocal ansatz applied to galaxies: the acceleration scale tracks the contemporaneous horizon, giving the coefficient-free prediction \\(g_\\dagger(z)/g_\\dagger(0)=H(z)/H_0\\). The H-linked law has MOND precedent; CSBHI supplies an independent geometric route, and recent intermediate-redshift evidence favors a rise over a constant scale.',
     },
   },
   highZTest: {

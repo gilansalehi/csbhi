@@ -33,6 +33,8 @@ Its job is to connect the GD throat structure to galaxy-scale acceleration laws:
 
 GD3 should not simply claim that MOND is correct. It should show why the MOND-like square-root law is the natural weak-field consequence of local/global throat coupling.
 
+The historical boundary is already clear. [Limbach, Psaltis, and Özel](https://arxiv.org/abs/0809.2790) compared Hubble-linked and vacuum-linked evolution of the MOND scale in 2008; [Bekenstein and Sagi](https://arxiv.org/abs/0802.1526) derived slower epoch dependence in TeVeS; and [Milgrom](https://arxiv.org/abs/1412.4344) explicitly studied \(a_0(t)\propto cH(t)\). GD3 must therefore add the missing geometry: derive the weak-field operator, select the relevant horizon, fix the normalization, and recover lensing and relativistic dynamics. Its target is not priority for the formula.
+
 ---
 
 ## 2. Core Target

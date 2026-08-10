@@ -89,7 +89,7 @@ If GD2 constructs that map, the thermodynamic and geometric languages may become
 
 ## 6. Relation to Milgrom and McGaugh
 
-Milgrom's key clue is the acceleration scale:
+Milgrom's key clue is the acceleration scale, including his explicit study of the time-dependent hypothesis \(a_0(t)\propto cH(t)\) ([arXiv:1412.4344](https://arxiv.org/abs/1412.4344)):
 
 \[
 a_0\sim cH.

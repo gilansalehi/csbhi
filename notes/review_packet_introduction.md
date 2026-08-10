@@ -24,6 +24,8 @@ The principal observational wager is [the evolving galactic acceleration scale](
 
 The absolute normalization remains open and is calibrated locally; the redshift dependence does not. A fixed acceleration scale predicts a flat ratio. The CSBHI correspondence predicts that it rises with \(H(z)\). Intermediate-redshift measurements presently point in the predicted direction, but they do not yet decide the question. The purpose of stating the relation now is to make the proposal answerable to data before the surrounding theory is complete.
 
+The H-linked law has prior MOND precedent: Milgrom explicitly studied \(a_0(t)\propto cH(t)\), and earlier work compared its Tully–Fisher consequences with a vacuum-linked alternative. CSBHI reaches the same functional law independently from the reciprocal horizon correspondence. The question for this packet is whether that geometry gives the relation physical content beyond the earlier phenomenological hypothesis.
+
 ## What the packet asks you to review
 
 The most useful review would address four questions:

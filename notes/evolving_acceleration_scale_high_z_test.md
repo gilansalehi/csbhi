@@ -8,7 +8,7 @@
 
 ## Purpose
 
-This note tabulates what Geometric Duality does and does not predict for the galaxy acceleration law once the horizon scale is allowed to evolve, and specifies the observational test that separates GD from standard MOND and from ΛCDM. It is written to be cited from GD III. Every claim is tagged by tier:
+This note tabulates what Geometric Duality does and does not predict for the galaxy acceleration law once the horizon scale is allowed to evolve, and specifies the observational test that separates an H-linked scale from a constant scale and from model-dependent ΛCDM evolution. It is written to be cited from GD III. Every claim is tagged by tier:
 
 - **[G]** exact geometry / kinematics (GD1-level);
 - **[A]** consequence of the GD ansatz once a specific law is assumed;
@@ -31,7 +31,7 @@ g_\dagger\sim cH_A .
 \tag{[H]}
 \]
 
-Milgrom's scale is thereby identified with the horizon acceleration \(cH_A\). Because Alice's Hubble rate \(H_A\) evolves (GD1), the acceleration scale evolves:
+The RAR scale is thereby identified with the horizon acceleration \(cH_A\). Because Alice's Hubble rate \(H_A\) evolves (GD1), the acceleration scale evolves:
 
 \[
 \boxed{
@@ -42,17 +42,20 @@ E(z)\equiv\frac{H_A(z)}{H_0}=\sqrt{\Omega_m(1+z)^3+\Omega_r(1+z)^4+\Omega_\Lambd
 \tag{[A],[R]}
 \]
 
-The **[R]** tag is essential: whether \(g_\dagger\) tracks the *instantaneous* \(cH_A(z)\) (evolving) or the *asymptotic* \(c\sqrt{\Lambda/3}=cH_\Lambda\) (constant) is not yet forced. The instantaneous reading is more natural — a galaxy should couple to its own contemporaneous horizon at \(c/H_A\), not to the final de Sitter horizon it has not reached — but "more natural" is not "derived." If the constant reading is correct, GD reduces to standard MOND on this point and makes no distinctive galaxy prediction.
+The **[R]** tag is essential: whether \(g_\dagger\) tracks the *instantaneous* \(cH_A(z)\) (evolving) or the *asymptotic* \(c\sqrt{\Lambda/3}=cH_\Lambda\) (constant) is not yet forced. The instantaneous reading is more natural — a galaxy should couple to its own contemporaneous horizon at \(c/H_A\), not to the final de Sitter horizon it has not reached — but "more natural" is not "derived." If the constant reading is correct, GD reduces to the standard constant-\(a_0\) reading on this point and makes no distinctive redshift prediction.
 
-## 2. Comparison of the three frameworks
+This possibility is not historically unique to CSBHI. Limbach, Psaltis, and Özel compared Hubble-linked and vacuum-linked evolution of the MOND scale in 2008; Bekenstein and Sagi derived much slower epoch dependence in TeVeS; and Milgrom explicitly studied the hypothesis \(a_0(t)\propto cH(t)\). CSBHI's contribution is the reciprocal-horizon motivation for that H-linked branch and its formulation as an exact normalized RAR test.
+
+## 2. Comparison of the principal readings
 
 | | Acceleration scale | BTFR slope (fixed \(z\)) | Zero-point evolution |
 |---|---|---|---|
 | **ΛCDM** | none (dark halos) | emergent, ~3–4, feedback-tuned | model-dependent, same sign as GD |
-| **Standard MOND** | \(a_0=\)const | 4 (forced) | none |
-| **GD** | \(g_\dagger=cH_A(z)\) | 4 (forced, fixed \(z\)) | \(-\log E(z)\) |
+| **Standard constant-\(a_0\) MOND** | \(a_0=\)const | 4 (forced) | none |
+| **H-linked MOND hypothesis** | \(a_0\propto H(z)\) | 4 (forced, fixed \(z\)) | \(-\log E(z)\) |
+| **CSBHI correspondence** | \(g_\dagger\propto cH_A(z)\) | 4 (forced, fixed \(z\)) | \(-\log E(z)\) |
 
-GD's distinctive content is the **evolution**, not the slope. At any single epoch GD and MOND are identical.
+Relative to constant-\(a_0\) MOND, the discriminant is the **evolution**, not the slope. The functional evolution is shared with the earlier H-linked MOND hypothesis; CSBHI differs in the proposed geometric origin of the scale.
 
 ## 3. Why slope 4 is forced at fixed redshift, and why GD shares it
 
@@ -69,16 +72,16 @@ A **flat** rotation curve (\(v\) independent of \(r\)) forces \(\alpha=1/2\), wh
 
 ## 4. Epistemic standing relative to MOND
 
-MOND *postulates* the deep-regime dynamics (\(\mu(x)\to x\)) chosen to reproduce flat curves; flatness is reverse-engineered, not explained. GD instead *motivates* the geometric-mean form as a mixing of local and horizon curvature, and derives a **transition radius** from horizon geometry,
+MOND postulates its deep-regime dynamics through \(\mu(x)\to x\). GD instead motivates the same geometric-mean form as a mixing of local and horizon curvature, and identifies a **transition radius** from horizon geometry,
 
 \[
 r_t\sim\sqrt{\frac{GM}{g_\dagger}}=\sqrt{\frac{GM}{cH_A}} ,
 \tag{[H]}
 \]
 
-the radius at which \(g_N(r_t)\sim g_\dagger\) and the curve departs from Newtonian. MOND has the same transition at \(g\sim a_0\), but \(a_0\) is a fitted constant. GD's advantage is that one geometric scale supplies both the mixing form and the transition. The honesty caveat: GD III's mixing law is still a heuristic **[H]**, not a field-equation derivation, so this is a *better-motivated ansatz*, not a proof.
+the radius at which \(g_N(r_t)\sim g_\dagger\) and the curve departs from Newtonian. MOND has the same transition at \(g\sim a_0\). In its standard formulation \(a_0\) is fixed empirically; in Milgrom's H-linked hypothesis it evolves by assumption. CSBHI proposes that one reciprocal geometric scale supplies both the mixing form and the transition. GD III's mixing law remains a heuristic **[H]**, not a field-equation derivation.
 
-## 5. Three observables that evolve in GD and are fixed in MOND
+## 5. Three observables that distinguish an evolving scale from a constant one
 
 All three track the single quantity \(g_\dagger(z)=cH_A(z)\):
 
@@ -96,7 +99,7 @@ BTFR zero-point offset at fixed \(v_{\rm flat}\), relative to local (\(\Omega_m=
 |---|---|---|---|---|---|---|---|
 | \(E(z)\) | 1.31 | 1.76 | 2.32 | 2.97 | 4.46 | 6.18 | 8.09 |
 | **GD** \(\Delta\log M_b\) | −0.12 | −0.25 | −0.37 | −0.47 | −0.65 | −0.79 | −0.91 |
-| **MOND** | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Constant scale** | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 Velocity form (at fixed \(M_b\), \(v\propto E(z)^{1/4}\)): +15% at \(z=1\), +31% at \(z=2\), +63% at \(z=4.5\).
 
@@ -104,12 +107,12 @@ Velocity form (at fixed \(M_b\), \(v\propto E(z)^{1/4}\)): +15% at \(z=1\), +31%
 
 **Kill conditions:**
 - Robust BTFR slope \(<3.7\) in a **single narrow \(z\)-bin** of well-controlled discs → breaks the \(v^4\) law → kills GD *and* MOND together.
-- Zero-point flat to \(z\sim3\) (at \(<0.15\) dex) → kills GD's evolving reading, favors constant-\(g_\dagger\) MOND.
+- Zero-point flat to \(z\sim3\) (at \(<0.15\) dex) → kills GD's evolving reading and favors a constant scale.
 - Zero-point evolving but not as \(-\log E(z)\) (wrong magnitude/shape) → kills \(g_\dagger\propto H_A\), leaves a weaker coupling open.
 
 **Critical methodological point:** the slope test must be done **at fixed \(z\)** (redshift-binned). A pooled multi-\(z\) sample with evolving \(g_\dagger\) produces an *apparent* slope \(<4\) purely from the sliding zero-point (high-\(v\) galaxies preferentially high-\(z\), pulled down) — degenerate with beam smearing, which also flattens. Pooled-sample slopes (e.g. the observed 3.2) therefore carry almost no discriminating power.
 
-**Data-quality gate (why the test is not yet performable):**
+**Data-quality gate (why the decisive high-redshift test is not yet performable):**
 - Required zero-point systematic \(<0.15\) dex; current ~0.4–0.5 dex. **Fails by ~3×.**
 - Required slope precision ±0.15; current ±0.3.
 - Required sample: *normal* rotating discs (not extreme SMGs) at \(z=2\)–4, flat \(v\), pressure-support and beam-smearing corrections cross-validated across methods.
@@ -133,15 +136,16 @@ Trustworthy precision is **~one significant figure** (a factor of ~2–3) on the
 | Übler et al. 2017 (KMOS³D) | \(z\sim0.9\)–2.3 | bTFR zero-point *positive* evolution | opposite direction |
 | Sharma et al. 2024 (A&A) | \(0.6\le z\le2.5\) | ~−0.45 dex, slope \(3.21\pm0.28\) | right direction & magnitude; pooled-slope caveat |
 | Fraternali et al. 2021 (ALMA) | \(z\sim4.5\) | ~−1.2 to −1.4 dex below local | GD direction, overshoots; extreme SMGs / proto-ETGs, not a fair test |
+| MUSE-DARK III 2026 | \(0.33<z<1.44\) | \(g_\dagger(z\sim1)/g_\dagger(0)\approx1.98\pm0.45\) | consistent with \(E(1)=1.76\); fixed scale disfavored at roughly \(2\sigma\) |
 
 ## 9. Status for GD III
 
-- The evolving scale is a **genuine, specific, falsifiable** prediction, distinct from MOND (constant) and ΛCDM (no scale). **[A],[R]**
-- It is **not currently supported or refuted** — the data quality is a factor of ~3 short of the required precision. **[D]**
-- GD III should present the evolution as the distinctive claim, present slope-4 (fixed \(z\)) as an inherited success, and state the \(-\log E(z)\) prediction with the **[R]** caveat that the constant-\(g_\dagger\) reading is not yet excluded.
+- The evolving scale is a **genuine, specific, falsifiable** CSBHI prediction, distinct from constant-scale models and from model-dependent ΛCDM evolution. Its functional form is shared with the earlier H-linked MOND hypothesis. **[A],[R]**
+- Recent intermediate-redshift data provide preliminary support for a rising scale over a constant one, but do not yet distinguish the exact \(E(z)\) curve from model-dependent galaxy evolution or establish the correspondence. **[D]**
+- GD III should present the evolution as its central empirical commitment, present slope 4 (fixed \(z\)) as an inherited success, and state the \(-\log E(z)\) prediction with the **[R]** caveat that the apparent-horizon selection remains unproved.
 - The load-bearing open item remains GD III's own: turn the curvature-mixing heuristic **[H]** into a weak-field field equation. Until then the whole galaxy-law edifice, including this evolution, is conditional on that heuristic.
 
-The honest headline: GD makes a distinct prediction the field will be able to test within a few years, and pre-registering it now — slope-4 at fixed \(z\), zero-point sliding as \(-\log E(z)\), knee at \(cH_A(z)\) — is the right posture, so the test is not fit after the fact.
+The headline: CSBHI commits in advance to slope 4 at fixed \(z\), a zero-point sliding as \(-\log E(z)\), and a knee tracking \(cH_A(z)\). Those observations test the H-linked branch against a constant scale and against the model-dependent curves produced by galaxy-formation simulations.
 
 ---
 
@@ -156,3 +160,8 @@ The honest headline: GD makes a distinct prediction the field will be able to te
 7. Sharma, G., et al. "Tully–Fisher relation of late-type galaxies at 0.6 ≤ z ≤ 2.5." *A&A* (2024). [arXiv:2406.08934](https://arxiv.org/abs/2406.08934).
 8. Fraternali, F., et al. "Fast rotating and low-turbulence discs at z≃4.5." *A&A* 647 (2021): A194. [arXiv:2011.13500](https://arxiv.org/abs/2011.13500).
 9. McGaugh, S. S., Lelli, F., Schombert, J. M. "Radial Acceleration Relation in Rotationally Supported Galaxies." *PRL* 117 (2016): 201101. [arXiv:1609.05917](https://arxiv.org/abs/1609.05917).
+10. Limbach, C., Psaltis, D., Özel, F. "The Redshift Evolution of the Tully–Fisher Relation as a Test of Modified Gravity." [arXiv:0809.2790](https://arxiv.org/abs/0809.2790) (2008).
+11. Bekenstein, J. D., Sagi, E. "Do Newton's \(G\) and Milgrom's \(a_0\) vary with cosmological epoch?" [arXiv:0802.1526](https://arxiv.org/abs/0802.1526) (2008).
+12. Milgrom, M. "Cosmological variation of the MOND constant: secular effects on galactic systems." [arXiv:1412.4344](https://arxiv.org/abs/1412.4344) (2015).
+13. Keller, B. W., Wadsley, J. W. "ΛCDM is Consistent with SPARC Radial Acceleration Relation." [arXiv:1610.06183](https://arxiv.org/abs/1610.06183) (2017).
+14. Ciocan, B. I., et al. "MUSE-DARK III: The evolution of the radial acceleration relation at intermediate redshifts." [arXiv:2604.22613](https://arxiv.org/abs/2604.22613) (2026).

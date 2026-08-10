@@ -132,7 +132,7 @@ Identifying (A) with the contemporaneous horizon acceleration gives the coeffici
 \frac{g_\dagger(z)}{g_\dagger(0)}=\frac{H(z)}{H_0},
 \]
 
-which rises with redshift where fixed-scale MOND remains flat. Existing intermediate-redshift evidence is compatible with the rise but does not decide it.
+which rises with redshift where a fixed scale remains flat. The same H-linked functional law has prior MOND precedent; CSBHI supplies an independent reciprocal-horizon motivation. Existing intermediate-redshift evidence is compatible with the rise but does not decide it.
 
 **Missing:** A dynamical reason galaxies couple to the apparent-horizon scale rather than the asymptotic de Sitter scale, plus the normalization and relativistic completion.
 
