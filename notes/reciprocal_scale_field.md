@@ -10,7 +10,7 @@
 
 **Prerequisites:** [GD I](gd1.html); [RI I — Field Equations of the Reciprocal Interior](note.html?src=field_equations_of_the_reciprocal_interior); [the involution note](reciprocal-involution.html).
 
-**Notation:** [Glossary](note.html?src=cosmological_glossary). \(c=1\), signature \((-+++)\), \(\Box\equiv\nabla^\mu\nabla_\mu\); \(r\) = Bob's horizon-normalized areal radius; \(\sigma\equiv\ln a=-\ln r\).
+**Notation:** [Glossary](note.html?src=cosmological_glossary). \(c=1\), signature \((-,+,+,+)\), \(\Box\equiv\nabla^\mu\nabla_\mu\); \(r\) = Bob's horizon-normalized areal radius; \(\sigma\equiv\ln a=-\ln r\).
 
 ---
 

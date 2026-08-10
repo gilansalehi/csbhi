@@ -14,7 +14,7 @@ The result is conditional but exact: Einstein's equations force Friedmann evolut
 
 ## 1. Independent inputs
 
-We work in units where \(c=1\), retain \(G\), and use metric signature \((-+++)\). Let
+We work in units where \(c=1\), retain \(G\), and use metric signature \((-,+,+,+)\). Let
 
 \[
 r(\tau)>0

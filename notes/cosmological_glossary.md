@@ -35,7 +35,7 @@ c=G=1,
 2M=1,
 \]
 
-so lengths and times are measured in units of the parent Schwarzschild radius and the parent black-hole event horizon is at \(r=1\). Most Reciprocal Interior technical papers set \(c=1\), retain \(G\), and use metric signature \((-+++)\). A paper restores \(c\), SI lengths, seconds, kilograms, or solar masses when comparing with observations. The convention stated in the document being read takes precedence.
+so lengths and times are measured in units of the parent Schwarzschild radius and the parent black-hole event horizon is at \(r=1\). Most Reciprocal Interior technical papers set \(c=1\), retain \(G\), and use metric signature \((-,+,+,+)\). A paper restores \(c\), SI lengths, seconds, kilograms, or solar masses when comparing with observations. The convention stated in the document being read takes precedence.
 
 ### Core geometry and dynamics
 
