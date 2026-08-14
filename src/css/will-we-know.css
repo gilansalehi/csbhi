@@ -1,0 +1,504 @@
+.recognition-article {
+  --essay-line: color-mix(in srgb, currentColor 16%, transparent);
+  --essay-soft: color-mix(in srgb, var(--surface) 72%, transparent);
+  --grade-a: var(--status-model-result);
+  --grade-b: var(--status-geometric-result);
+  --grade-c: var(--status-candidate);
+  --grade-d: var(--danger);
+
+  max-width: 48rem;
+  margin-inline: auto;
+  padding-bottom: 5rem;
+}
+
+.recognition-article > h1 {
+  max-width: none;
+}
+
+.recognition-article :is(h1, h2, h3, h4, h5, h6) {
+  text-align: left;
+}
+
+.recognition-hero {
+  margin-block: clamp(4rem, 12vw, 8rem) clamp(4rem, 10vw, 7rem);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--essay-line);
+}
+
+.recognition-hero h1 {
+  max-width: 14ch;
+  margin: 0;
+  font-size: clamp(3rem, 9vw, 5.75rem);
+  font-weight: 500;
+  line-height: 0.97;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.recognition-hero__eyebrow,
+.recognition-hero__meta,
+.recognition-section__label,
+.history-card__time,
+.question-card__number,
+.grade-legend {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.recognition-hero__eyebrow,
+.recognition-hero__meta,
+.recognition-section__label {
+  color: var(--muted);
+}
+
+.recognition-hero__lede {
+  max-width: 42rem;
+  margin: 2rem 0 0;
+  font-size: clamp(1.18rem, 3vw, 1.5rem);
+  line-height: 1.5;
+}
+
+.recognition-hero__meta {
+  margin-top: 1.5rem;
+}
+
+.recognition-section {
+  margin-top: clamp(4.5rem, 11vw, 8rem);
+  scroll-margin-top: 2rem;
+}
+
+.recognition-section > h2 {
+  max-width: 18ch;
+  margin: 0.35rem 0 1.75rem;
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.recognition-section > p,
+.history-card p,
+.question-card p,
+.candidate-notes p {
+  font-size: 1.04rem;
+  line-height: 1.72;
+}
+
+.question-grid,
+.candidate-notes {
+  display: grid;
+  gap: 1rem;
+}
+
+.history-sequence {
+  display: grid;
+  gap: 2.75rem;
+  margin-top: 2rem;
+}
+
+.history-card,
+.question-card,
+.candidate-notes article {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--essay-line);
+  background: var(--essay-soft);
+}
+
+.history-sequence .history-card {
+  padding: 0 0 2.75rem;
+  border: 0;
+  border-bottom: 1px solid var(--essay-line);
+  background: transparent;
+}
+
+.history-sequence .history-card:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.history-card p:last-child,
+.question-card p:last-child,
+.candidate-notes p:last-child {
+  margin-bottom: 0;
+}
+
+.history-card__time {
+  display: flex;
+  margin-top: 0;
+  justify-content: space-between;
+  color: var(--muted);
+}
+
+.history-card__time strong {
+  color: var(--text);
+}
+
+.recognition-callout {
+  margin-block: 2.5rem;
+  padding: 1.35rem 0 1.35rem 1.5rem;
+  border-left: 4px solid var(--status-geometric-result);
+  font-size: 1.2rem !important;
+  line-height: 1.55 !important;
+}
+
+.question-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2.25rem;
+}
+
+.question-card {
+  position: relative;
+}
+
+.question-card__number {
+  color: var(--status-geometric-result);
+}
+
+.question-card h3,
+.candidate-notes h3 {
+  margin: 0.65rem 0 0;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.criteria-list {
+  margin: 2rem 0;
+  padding: 0;
+  border-top: 1px solid var(--essay-line);
+  list-style: none;
+  counter-reset: criterion;
+}
+
+.criteria-list li {
+  display: grid;
+  grid-template-columns: 2rem 9rem 1fr;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--essay-line);
+  align-items: baseline;
+  counter-increment: criterion;
+}
+
+.criteria-list li > strong {
+  font-size: 1.02rem;
+}
+
+.criteria-list li::before {
+  color: var(--muted);
+  content: counter(criterion, decimal-leading-zero);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+}
+
+.criteria-list li > div > p {
+  margin: 0;
+}
+
+.criteria-list__precedent {
+  margin-top: 0.45rem !important;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.criteria-list__precedent b {
+  color: var(--text);
+}
+
+.correspondence-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin-block: 2rem;
+  padding: 0;
+  border-top: 1px solid var(--essay-line);
+  list-style: none;
+}
+
+.correspondence-list li {
+  display: grid;
+  gap: 0.3rem;
+  padding: 1rem;
+  border-right: 1px solid var(--essay-line);
+  border-bottom: 1px solid var(--essay-line);
+}
+
+.correspondence-list li:nth-child(even) {
+  border-right: 0;
+}
+
+.correspondence-list span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.evidence-key {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: min(42rem, calc(100vw - 2rem));
+  margin: 2rem 50%;
+  border: 1px solid var(--essay-line);
+  transform: translateX(-50%);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
+.evidence-key span {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.75rem;
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--essay-line);
+  align-items: baseline;
+}
+
+.evidence-key span:last-child {
+  border-bottom: 0;
+}
+
+.evidence-key b {
+  color: var(--status-prediction);
+  font-size: 1rem;
+}
+
+.recognition-section--wide > p,
+.recognition-section--wide > .recognition-section__label,
+.recognition-section--wide > .grade-legend,
+.recognition-section--wide > .candidate-notes {
+  margin-inline: auto;
+}
+
+.grade-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  align-items: center;
+  color: var(--muted);
+}
+
+.toe-grade {
+  display: inline-grid;
+  min-width: 2rem;
+  min-height: 2rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  place-items: center;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.toe-grade--a {
+  color: var(--grade-a);
+  background: color-mix(in srgb, var(--grade-a) 11%, transparent);
+}
+
+.toe-grade--b {
+  color: var(--grade-b);
+  background: color-mix(in srgb, var(--grade-b) 11%, transparent);
+}
+
+.toe-grade--c {
+  color: var(--grade-c);
+  background: color-mix(in srgb, var(--grade-c) 11%, transparent);
+}
+
+.toe-grade--d {
+  color: var(--grade-d);
+  background: color-mix(in srgb, var(--grade-d) 9%, transparent);
+}
+
+.toe-grade--overall {
+  min-width: 2.4rem;
+  border-radius: 0.35rem;
+}
+
+.empirical-rating {
+  display: block;
+  color: var(--status-prediction);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.toe-scorecard__evidence {
+  min-width: 10.5rem;
+}
+
+.toe-scorecard__evidence small {
+  display: block;
+  max-width: 11rem;
+  margin: 0.3rem auto 0;
+  color: var(--muted);
+  font-size: 0.62rem;
+  line-height: 1.35;
+}
+
+.score-table-wrap {
+  width: min(76rem, calc(100vw - 2rem));
+  margin: 2rem 50%;
+  overflow-x: auto;
+  border: 1px solid var(--essay-line);
+  transform: translateX(-50%);
+}
+
+.score-table-wrap:focus-visible {
+  outline: 2px solid var(--status-prediction);
+  outline-offset: 3px;
+}
+
+.toe-scorecard {
+  width: 100%;
+  min-width: 62rem;
+  font-family: var(--mono);
+  font-size: 0.76rem;
+}
+
+.toe-scorecard th,
+.toe-scorecard td {
+  padding: 0.8rem 0.6rem;
+  border-right: 1px solid var(--essay-line);
+  border-bottom: 1px solid var(--essay-line);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.toe-scorecard thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.toe-scorecard th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  min-width: 10.5rem;
+  background: var(--bg);
+  text-align: left;
+}
+
+.toe-scorecard thead th:first-child {
+  z-index: 3;
+  background: var(--surface);
+}
+
+.toe-scorecard th small {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.candidate-notes {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.candidate-notes article {
+  border-top: 3px solid var(--status-geometric-result);
+}
+
+.candidate-notes p {
+  margin-bottom: 0;
+  font-size: 0.94rem;
+}
+
+.candidate-notes__proponents {
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--essay-line);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.7rem !important;
+  line-height: 1.6 !important;
+}
+
+.candidate-notes__proponents span {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.recognition-conclusion {
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border: 1px solid var(--essay-line);
+  background: var(--surface);
+}
+
+.recognition-conclusion__last {
+  margin-bottom: 0;
+  font-size: clamp(1.35rem, 4vw, 2rem) !important;
+  font-weight: 700;
+  line-height: 1.25 !important;
+}
+
+.recognition-references {
+  padding-top: 2rem;
+  border-top: 1px solid var(--essay-line);
+}
+
+.recognition-references > h2 {
+  font-size: 1.5rem;
+}
+
+.recognition-references ol {
+  padding-left: 1.25rem;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.recognition-references li + li {
+  margin-top: 0.55rem;
+}
+
+@media screen and (max-width: 700px) {
+  .question-grid,
+  .candidate-notes,
+  .correspondence-list {
+    grid-template-columns: 1fr;
+  }
+
+  .correspondence-list li {
+    border-right: 0;
+  }
+
+  .criteria-list li {
+    grid-template-columns: 2rem 1fr;
+  }
+
+  .criteria-list li > div {
+    grid-column: 2;
+  }
+}
+
+@media print {
+  .score-table-wrap {
+    width: 100%;
+    margin-inline: 0;
+    transform: none;
+  }
+
+  .score-table-wrap {
+    overflow: visible;
+  }
+
+  .toe-scorecard {
+    min-width: 0;
+    font-size: 7pt;
+  }
+}
