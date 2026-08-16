@@ -4,9 +4,35 @@
 
 **Architecture.** CSBHI is a branching direct-collapse cosmology. A child universe is the interior of a forming black hole: it comes into being at gravitational collapse. The reciprocal relation a=1/r maps the parent's decreasing interior radius to the child's increasing spatial scale, so the parent's r→0 endpoint coincides with that same child's a→∞ de Sitter future. Black holes that later form inside a child seed further children, so the whole structure is a tree that branches at every collapse.
 
-**Reading path.** GD1 (start here) → RI I (the interior is a real matter–radiation–Λ cosmology) → Result I (a=1/r is the unique scale-free horizon-fixing involution) → Prediction I (the evolving g† galaxy-acceleration prediction) → Result II (the low-Weyl beginning as a candidate recursive fixed point). The forthcoming primary-author papers are GD II (cosmological succession and the horizon map) and GD III (the galaxy acceleration law).
+**Reading path.** GD I (start here) → RI I (conditional interior dynamics) → Result I (the reciprocal involution theorem) → Prediction I (the evolving g† correspondence) → WCH I (the low-Weyl beginning as a candidate recursive fixed point). The forthcoming primary-author papers are GD II (cosmological succession and the horizon map) and GD III (the galaxy acceleration law).
 
-**Status vocabulary.** Claims are graded and the grade is carried in the prose: an *exact consequence* of the ansatz, a falsifiable *conditional prediction*, a *candidate mechanism*, a geometric *reframing*, or an *open construction*. Documents labelled hypotheses, outlines, or drafts are under active review, not established conclusions.
+## Claim hierarchy
+
+- **Foundational ansatz:** CSBHI posits a(tau)=1/r(tau). The completed parent–child geometry has not yet derived this identification.
+- **Exact conditional consequence:** Once the reciprocal FLRW metric, matter content, Einstein equations, and conservation law are supplied, RI I derives the Friedmann dynamics and reciprocal infall function.
+- **Theorem within a stated class:** Scale-freedom, horizon-fixing, self-inversion, and the power-law class select 1/r as the unique nontrivial map. The theorem fixes the reciprocal power after those premises are adopted; it does not establish the physical identification.
+- **Proposed correspondence:** CSBHI identifies the global acceleration entering the galaxy-scale mixing law with cH_A at the contemporaneous FLRW apparent horizon.
+- **Conditional prediction:** If that correspondence is correct and its dimensionless normalization is epoch-independent, then g†(z)/g†(0)=H_A(z)/H_0.
+- **Research hypothesis:** Smooth parent collapse supplies a low-Weyl child beginning that may reproduce itself as a fixed point across generations.
+- **Open construction:** The collapse/horizon map, complete throat geometry, weak-field tensorial galaxy law, perturbation transfer, and full thermal history remain unfinished.
+
+Documents labelled hypotheses, outlines, or drafts are under active review, not established conclusions.
+
+## Canonical equations and notation
+
+The following plaintext forms accompany the LaTeX used in the papers:
+
+```text
+a(tau) = 1 / r(tau)                         [foundational ansatz]
+F(r) = -dr/dtau                             [definition of positive inward flow]
+H_A = (1/a)(da/dtau) = F(r)/r               [exact kinematic consequence]
+bar_R(tau) = a(tau) R                       [Alice's FLRW areal radius]
+R_A(tau) = c / H_A(tau)                     [flat-FLRW apparent horizon]
+Lambda = 3 H_Lambda^2 / c^2                 [de Sitter identity]
+g_dagger(z)/g_dagger(0) = H_A(z)/H_0        [conditional prediction]
+```
+
+Do not identify `r` with `R` or `bar_R`. Here `r(tau)` is Bob's horizon-normalized areal coordinate assigned along Alice's trajectory; `R` is Alice's comoving radial label; and `bar_R=aR` is Alice's corresponding areal radius. The FLRW relation is `bar_R=aR`, not `r=aR`.
 
 The public site is statically hosted. Core papers contain their substantive text directly in HTML; the project overview and review packet compose some sections from static data-wrapper views. Research notes are also available as raw Markdown at the URLs below, so no JavaScript execution is required to read them. Equations use LaTeX notation.
 
@@ -24,26 +50,20 @@ Use that guide to:
 
 When debugging your interpretation, use the guide's claim ledger and interpretation guardrails. The guide is machine-facing operational context — a tool for representing the proposal accurately before agreeing with it, criticizing it, or attempting new calculations.
 
-## Primary papers
+## Canonical publications
 
 - [Geometric Duality: Conformal Scaling of Black Hole Interiors](https://www.gilansalehi.com/csbhi/gd1.html): The principal CSBHI preprint by Gilan Salehi. Introduces the reciprocal ansatz, relates inward flow to expansion, discusses singularity deferral, and compares the construction with cosmological observables.
-
-## Reciprocal Interior technical papers
-
 - [RI I — Field Equations of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the reciprocal-interior dynamics from the metric ansatz, Einstein's equations, and stress-energy conservation.
-- [RI II — Junction Conditions for the Reciprocal Interior](https://www.gilansalehi.com/csbhi/junctions.html), by Codex (OpenAI): Early synthesis draft testing timelike, null, thermodynamic, and dynamical junction conditions and isolating the requirements for a complete throat geometry.
-
-## Main results and predictions
-
-- [The Evolving Galactic Acceleration-Scale Correspondence](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md), by Claude (Anthropic): The reciprocal ansatz applied to galaxies. A symmetry theorem fixes the square-root mixing law; identifying the global scale with the contemporaneous cosmological horizon gives the coefficient-free, falsifiable prediction g†(z)/g†(0)=H(z)/H0. The H-linked law has prior MOND precedent; CSBHI supplies an independent reciprocal-horizon motivation. Recent intermediate-redshift data favor a rise over a constant scale. The programme's one live empirical prediction.
 - [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html), by Claude (Anthropic): Proves a=1/r is the unique nontrivial scale-free, horizon-fixing involution — so once scale-invariance and horizon-fixing are assumed, the reciprocal power is fixed. Adopting those symmetries, and the physical identification, remains the ansatz.
-- [The Weyl Curvature Hypothesis as a Fixed Point](https://www.gilansalehi.com/csbhi/notes/recursive_bhc_and_the_weyl_curvature_hypothesis.md), by Claude (Anthropic): The low-Weyl beginning as a consequence of formation — smooth collapse gives a Weyl-free child, so Penrose's condition is a fixed point of the succession rather than a fine-tuning, and the entropy arrow follows without information loss.
-- [A Black Hole on the Aeon Boundary](https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md), by Claude (Anthropic): The interior Weyl field dilutes at the conformal weight a^-2, so an already-born child's late-time de Sitter geometry stays conformally regular even with its own black holes present — a generation-to-generation consistency result.
+- [The Evolving Galactic Acceleration-Scale Correspondence](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md), by Claude (Anthropic): A symmetry theorem fixes the square-root mixing law after a global acceleration is supplied. CSBHI identifies that acceleration with the contemporaneous apparent-horizon scale cH_A, giving the conditional prediction g†(z)/g†(0)=H_A(z)/H_0. The H-linked law has MOND precedent; CSBHI supplies an independent reciprocal-horizon motivation. Current intermediate-redshift evidence is compatible with a rise but does not decide the prediction.
+- [The Weyl Curvature Hypothesis as a Fixed Point](https://www.gilansalehi.com/csbhi/notes/recursive_bhc_and_the_weyl_curvature_hypothesis.md), by Claude (Anthropic): Proposes that smooth parent collapse supplies a low-Weyl child and that this condition reproduces itself across generations. The fixed-point interpretation and its entropy consequences remain a research hypothesis.
+- [A Black Hole on the Aeon Boundary](https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md), by Claude (Anthropic): Derives an a^-2 Weyl-dilution law under its stated assumptions and applies it to the conformal regularity of an already-born child's late-time de Sitter boundary. The generation-to-generation interpretation is conditional on the proposed succession geometry.
 
 ## Project pages
 
 - [CSBHI project overview](https://www.gilansalehi.com/csbhi/): Publication map, progress, open problems, and further reading.
 - [Review Packet I](https://www.gilansalehi.com/csbhi/review.html): Guided professional-review packet separating the foundational ansatz, conditional results, theorem, correspondence, prediction, and open construction problems.
+- [Review Packet II](https://www.gilansalehi.com/csbhi/penrose.html): The recursive low-Weyl hypothesis and the relation between CSBHI and Penrose's Weyl Curvature Hypothesis.
 - [Frequently Asked Questions](https://www.gilansalehi.com/csbhi/faqs.html): Short answers to recurring conceptual and mathematical objections.
 - [CSBHI Cosmological Glossary](https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md): Shared symbol legend and plain-language reference for the physics, cosmology, horizons, distances, expansion, and junction geometry used across the project.
 - [What Remains Mathematically Illegible](https://www.gilansalehi.com/csbhi/notes/open_questions.md): Living index of the unresolved geometric, cosmological, empirical, and extension questions, ordered by dependency.
@@ -51,38 +71,12 @@ When debugging your interpretation, use the guide's claim ledger and interpretat
 - [Alice's Descent](https://www.gilansalehi.com/csbhi/leap-of-faith.html): Interactive geometric illustration accompanying the primary paper.
 - [Source repository](https://github.com/gilansalehi/csbhi): HTML source, research notes, figures, and revision history.
 
-## Independently authored supporting calculations
+## Research archive and context
 
-- [The Reciprocal Interior: An Independent Verification](https://www.gilansalehi.com/csbhi/notes/reciprocal_interior_independent_verification.md), by Claude (Anthropic): Independently calculates and audits the reciprocal-interior field equations.
-- [The Horizon Flow and Density Identity](https://www.gilansalehi.com/csbhi/notes/horizon_flow_density_identity.md), observed by Gemini and reviewed by Codex: Examines the horizon density identity and the geodesic boundary condition on which it depends.
-- [The Exact Shell Identity and the Kottler Mass Condition for Alice's Interior](https://www.gilansalehi.com/csbhi/notes/horizon_map_shell_identity_and_mass_growth.md), by Claude (Anthropic): Derives areal-radius continuity, the Kottler mass condition, and the radiation-pressure residual for a comoving timelike boundary.
-- [Vacuum-Energy Cancellation at an FLRW-Kottler Junction](https://www.gilansalehi.com/csbhi/notes/vacuum_energy_cancellation_at_a_kottler_junction.md), by Codex (OpenAI): Independently derives the corresponding timelike junction conditions and vacuum-energy cancellation.
-- [Null Optics of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/null_optics_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the interior optical transfer laws, isolates the missing radial event map, and tests the first null-junction condition.
-- [Null-Horizon Matching of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/null_horizon_matching_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the Schwarzschild-radius/apparent-horizon-radius identity from the first null junction condition and computes the transverse-curvature mismatch for direct Schwarzschild–de Sitter solderings.
-- [Recursive Kottler Horizons and the Galaxy Acceleration Scale](https://www.gilansalehi.com/csbhi/notes/recursive_kottler_horizons_and_the_galaxy_scale.md), by Codex (OpenAI): Derives a conditional parent–child cosmological-constant relation in the minimal recursive Kottler model and compares its horizon surface gravity with the empirical galaxy acceleration scale.
-- [Dynamic Throat Kinematics and the Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/dynamic_throat_kinematics_and_the_cosmological_clock.md), by Codex (OpenAI): Derives the moving-null-boundary expansion identities, reconstructs the boundary history required by the observed cosmological epochs, and identifies present-day targets for a parent horizon-growth calculation.
-- [Thermodynamic Accounting of the Transverse Junction](https://www.gilansalehi.com/csbhi/notes/thermodynamic_accounting_of_the_transverse_junction.md), by Codex (OpenAI): Shows that the same-orientation stationary null-shell tension is the interior work density projected from volume to area, tracks how causal orientation redistributes the shell data, and derives the corresponding apparent-horizon target through the radiation, matter, and vacuum epochs.
-- [The Nonequilibrium Event Horizon and the CMB Clock](https://www.gilansalehi.com/csbhi/notes/nonequilibrium_event_horizon_and_the_cmb_clock.md), by Codex (OpenAI): Derives the nonequilibrium residual on the reconstructed event horizon and shows that the CMB fixes the radiation work and reciprocal scale-factor clock rather than the horizon temperature.
-- [The Hyperbolic Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/hyperbolic_cosmological_clock.md), by Codex (OpenAI): Uses the asymptotic 5D de Sitter embedding to define a geometric boost clock, obtains the same present rapidity from age and density data, and separates that clock from the finite-throat contribution to absolute expansion.
-- [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md), by Claude (Anthropic): Develops the conditional redshift-dependent galaxy-scale prediction associated with the planned GD III dynamics.
-- [The Weyl Curvature Hypothesis at Background Order](https://www.gilansalehi.com/csbhi/notes/weyl_curvature_hypothesis_reciprocal_interior.md), by Codex (OpenAI): Explains how homogeneous parent collapse supplies the child's low-Weyl FLRW beginning at background order and identifies perturbation transfer as the remaining empirical test. The fixed-point synthesis is Result II.
-
-## Supporting derivations
-
-- [The Inverse-Radius Interior and Alice's Probe Congruence](https://www.gilansalehi.com/csbhi/notes/gd_inverse_radius_probe_congruence.md): Develops the probe-cloud interpretation of inverse-radius spatial scaling.
-- [Painleve-Gullstrand Flow from the 5D de Sitter Embedding](https://www.gilansalehi.com/csbhi/notes/pg_flow_from_5d_desitter_embedding.md): The 5D de Sitter embedding and its PG flow, exact in the late-time vacuum-dominated limit; a curio describing the child's asymptotic future. The full parent→child construction is GD II's horizon map.
-
-## Context and research programme
+The [Research Index](https://www.gilansalehi.com/csbhi/research.html) contains independent verifications, supporting calculations, negative results, superseded approaches, and planning outlines. Archive documents do not override the canonical publications or current claim hierarchy above.
 
 - [Black-Hole Cosmology: Lineage, Mechanisms, and CSBHI](https://www.gilansalehi.com/csbhi/notes/black_hole_cosmology_lineage.md): Historical comparison with earlier black-hole cosmology proposals.
-- [Geometric Duality Research Roadmap](https://www.gilansalehi.com/csbhi/notes/gd_research_roadmap.md): Current sequence of questions, notation, and planned investigations. The roadmap is provisional.
-- [GD Self-Dual Homogeneous Derivation of the Square-Root Law](https://www.gilansalehi.com/csbhi/notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md): Conditional functional-equation derivation relevant to a proposed galaxy-scale law.
-
-## Planning outlines
-
-- [Geometric Duality II: Cosmological Succession and the Horizon Map](https://www.gilansalehi.com/csbhi/notes/gd2_collapse_cohort_horizon_map_outline.md): Working outline for the primary-author construction paper — the collapse-cohort horizon map carrying a black-hole interior into the child universe it seeds.
-- [Geometric Duality III: Throat Curvature and the Galaxy Acceleration Law](https://www.gilansalehi.com/csbhi/notes/gd3_throat_curvature_and_galaxy_law_outline.md): Working outline.
-- [Horizon Thermodynamics and the GD Interpretation](https://www.gilansalehi.com/csbhi/notes/gd_thermodynamic_reconciliation_outline.md): Working outline for thermodynamic consistency questions.
+- [Geometric Duality Research Roadmap](https://www.gilansalehi.com/csbhi/notes/gd_research_roadmap.md): Provisional sequence of future papers and unresolved calculations.
 
 ## What CSBHI does not claim
 

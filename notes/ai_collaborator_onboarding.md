@@ -26,14 +26,14 @@ Your first task is not to agree or disagree with CSBHI. Your first task is to re
 
 Read these documents in order:
 
-1. [A Note to Reviewers](note.html?src=review_packet_introduction)
-2. [GD I — *Geometric Duality: Conformal Scaling of Black Hole Interiors*](gd1.html)
-3. [CSBHI Cosmological Glossary](note.html?src=cosmological_glossary)
-4. [RI I — *Field Equations of the Reciprocal Interior*](note.html?src=field_equations_of_the_reciprocal_interior)
-5. [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](reciprocal-involution.html)
-6. [A Black Hole on the Aeon Boundary](note.html?src=shear_free_interior_weyl_stress_identity)
-7. [The Evolving Galactic Acceleration-Scale Correspondence](note.html?src=evolving_g_dagger_derivation)
-8. [What Remains Mathematically Illegible](note.html?src=open_questions)
+1. [A Note to Reviewers](https://www.gilansalehi.com/csbhi/notes/review_packet_introduction.md)
+2. [GD I — *Geometric Duality: Conformal Scaling of Black Hole Interiors*](https://www.gilansalehi.com/csbhi/gd1.html)
+3. [CSBHI Cosmological Glossary](https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md)
+4. [RI I — *Field Equations of the Reciprocal Interior*](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md)
+5. [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html)
+6. [A Black Hole on the Aeon Boundary](https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md)
+7. [The Evolving Galactic Acceleration-Scale Correspondence](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md)
+8. [What Remains Mathematically Illegible](https://www.gilansalehi.com/csbhi/notes/open_questions.md)
 
 Treat the research archive as historical working material. It contains useful calculations, negative results, abandoned models, and superseded interpretations. Do not use an archived note to override the review packet.
 
