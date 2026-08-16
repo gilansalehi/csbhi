@@ -78,35 +78,6 @@
     }
     .penrose-compare td:first-child { font-weight: 600; }
 
-    .penrose-compare .status {
-      --status-color: currentColor;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 1.4rem;
-      height: 1.4rem;
-      margin-right: 0.5rem;
-      padding: 0 0.35rem;
-      border: 1px solid color-mix(in srgb, var(--status-color) 55%, currentColor);
-      border-radius: 999px;
-      background: color-mix(in srgb, var(--status-color) 13%, transparent);
-      color: var(--status-color);
-      font-size: 0.8rem;
-      font-weight: 700;
-      line-height: 1;
-      vertical-align: 0.05em;
-    }
-    .penrose-compare .status[data-status="addressed"] { --status-color: var(--status-addressed); }
-    .penrose-compare .status[data-status="target"]    { --status-color: var(--status-target); }
-    .penrose-compare .status[data-status="planned"]   { --status-color: var(--status-planned); }
-    .penrose-compare .cell-note {
-      display: inline;
-      font-size: 1rem;
-      line-height: 1.55;
-      color: inherit;
-      opacity: 1;
-    }
-
     @media screen and (min-width: 1160px) {
       .penrose-compare table {
         width: calc(100% + 20rem);
@@ -160,47 +131,49 @@
       <section id="letter" class="penrose-letter" aria-labelledby="letter-title">
         <p class="salutation">Dear Sir Roger,</p>
         <p>
-          Conformal Cyclic Cosmology has, I believe, a realization inside black-hole physics that removes the
-          commitments it must otherwise carry at the crossover. The identification is one line:
-          <strong>black-hole collapse in one cosmological generation gives birth to a child universe in the
-            next.</strong>
+          I believe the conformal succession you envisioned has a natural realization inside black-hole physics.
+          Conformal Cyclic Cosmology and recursive black-hole cosmology may describe the same geometry at different
+          scales: the universe approaches a smooth conformal future, while gravitational collapse within it opens
+          branching child cosmologies. The Conformal Scaling of Black Hole Interiors supplies a reciprocal relation
+          between the two descriptions.
         </p>
         <p>
-          Collapse supplies the birth; reciprocal geometry supplies the evolution that follows. For an observer
-          crossing the horizon, the interior spatial scale and the parent-side areal radius obey \(a=1/r\). The
-          parent-side limit \(r\to0\) maps to the already-born child's expansion toward \(a\to\infty\): the exterior
-          singular endpoint becomes a smooth conformal future in the interior description. Your conformal
-          reciprocation \(\Omega\to1/\Omega\) therefore appears here as a horizon-anchored map within the child's
-          history, not as its birth at future infinity.
+          The relation is \(a=1/r\). For an observer crossing a black-hole horizon, the interior spatial scale \(a\)
+          is reciprocal to the parent-side areal radius \(r\). Collapse at finite parent time gives birth to the child;
+          the reciprocal geometry carries the child's subsequent evolution. As the parent-side description approaches
+          \(r\to0\), the child expands toward \(a\to\infty\). The exterior singular endpoint becomes the child's
+          smooth conformal future, with the horizon fixing the reciprocal scale at \(a=r=1\).
         </p>
         <p>
-          The low-Weyl beginning then follows from collapse, not from selection. Homogeneous collapse —
-          Oppenheimer–Snyder — has a Friedmann interior whose Weyl tensor vanishes identically even as its density
-          diverges. A universe born from such a collapse inherits a smooth start from a black hole in the parent
-          cosmological generation. Because a smooth universe is what forms the smooth
-          overdensities that collapse into smooth children, low initial Weyl is a fixed point of the succession rather
-          than an improbable choice. That is the Weyl Curvature Hypothesis, obtained as a property of the formation
-          process rather than a condition placed upon it.
+          The Weyl geometry agrees at both ends. Homogeneous Oppenheimer–Snyder collapse has a Friedmann interior whose
+          Weyl tensor vanishes identically even as its density diverges, giving the child the low-Weyl beginning
+          required by the Weyl Curvature Hypothesis. At the other end, a direct calculation for a geodesic, shear-free
+          spherical interior fixes \(\Pi=p_r-p_t=-D/2\), with \(D=\bar\rho-\rho\), and forces the residual Weyl field
+          to dilute as \(a^{-2}\). Under de Sitter compactification, the physical Weyl curvature vanishes while the
+          rescaled Weyl curvature remains finite. The same interior therefore begins at low Weyl and reaches a regular,
+          seed-carrying conformal future.
         </p>
         <p>
-          Three commitments Conformal Cyclic Cosmology carries at the crossover then become unnecessary. Matter need
-          not become massless, because the generational passage occurs through collapse rather than through null
-          infinity. Black holes need not have evaporated, because they are branching birth sites rather than debris
-          awaiting a universal crossover. And the information need not be destroyed: where you are content to let the
-          phase space contract at the singularity, one may instead let it re-open as the child's.
+          Recursion then offers a mechanism for the smooth succession itself. Smooth universes form smooth
+          overdensities; smooth overdensities collapse into smooth children; those children approach smooth conformal
+          futures of their own. Low initial Weyl becomes a fixed point of the lineage rather than a condition selected
+          anew at every beginning. Establishing that fixed point requires the parent-to-child Weyl transfer map, but
+          the collapse and conformal-future calculations already determine the two ends it must join.
         </p>
         <p>
-          The other end of the child's history supplies a second result. On the reciprocal interior the residual Weyl
-          dilutes as \(a^{-2}\), which is its conformal weight; under compactification the <em>rescaled</em> Weyl is
-          finite at the child's future boundary while the <em>physical</em> Weyl vanishes. The same construction
-          therefore gives collapse a low-Weyl birth and gives the resulting universe a regular conformal future. The
-          property you secure by evaporation is secured instead by the interior geometry.
+          The same picture may also supply the physical route through the crossover. Massive matter passes into a
+          child through collapse rather than surviving unchanged to conformal infinity. Black holes become the sites
+          of succession rather than objects that must all disappear before it. Information enters the child's phase
+          space instead of ending at the parent-side singular description. Under the idealized matching
+          \(\Lambda=3/R_S^2\), the parent black-hole horizon and the child's de Sitter horizon have the same area, so
+          their Bekenstein–Hawking and Gibbons–Hawking entropies coincide. The parent's horizon entropy can then become
+          the child's available phase space rather than being destroyed. The corresponding transfer of microstates is
+          the thermodynamic calculation still to be completed.
         </p>
         <p>
-          One conjecture remains: that the geometry of the succession forces Weyl smoothness on every aeon by
-          self-consistency, rather than fixing it as a fine-tuned parameter. This is the claim I am now working to
-          prove, in a small geometric program inspired by yours — the Conformal Scaling of Black Hole Interiors
-          (<a href="index.html">gilansalehi.com/csbhi</a>). More than anything, I hope you find it worth your time.
+          I would especially value your judgment on whether this black-hole realization preserves the conformal
+          succession you intended, and whether the \(a^{-2}\) Weyl result supplies the right regularity condition at
+          the child's conformal future. The derivations and the reciprocal construction are collected below.
         </p>
         <p class="signoff">
           Sincerely,<br>
@@ -210,24 +183,12 @@
 
       <section id="reading" class="publication-list" aria-labelledby="reading-title">
         <h2 id="reading-title">The argument in full</h2>
-        <p>The claims in the note are worked out in three short documents.</p>
+        <p>Three short documents present the Weyl result, its recursive interpretation, and the geometry beneath it.</p>
         <details open>
           <summary>
-            Two technical notes and the primary paper.
+            Recommended reading order
           </summary>
           <ol>
-            <li>
-              <div>Note</div>
-              <div>
-                <h3>
-                  <a href="note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis">The Weyl Curvature Hypothesis
-                    as a Fixed Point</a>
-                </h3>
-                <p>Smooth collapse gives a Weyl-free child, so the low-Weyl beginning is generic rather than tuned —
-                  and the entropy arrow follows without destroying information.</p>
-                <p>Technical note</p>
-              </div>
-            </li>
             <li>
               <div>Note</div>
               <div>
@@ -235,8 +196,20 @@
                   <a href="note.html?src=shear_free_interior_weyl_stress_identity">A Black Hole on the Aeon
                     Boundary</a>
                 </h3>
-                <p>The interior Weyl field dilutes at the conformal weight \(a^{-2}\) — the crossover is regular
-                  without evaporation, and still carries a seed across.</p>
+                <p>Derives \(\Pi=-D/2\) and the Weyl dilution law \(\Psi_2\propto a^{-2}\), giving the reciprocal
+                  interior a regular conformal future with finite rescaled Weyl data.</p>
+                <p>Technical note</p>
+              </div>
+            </li>
+            <li>
+              <div>Note</div>
+              <div>
+                <h3>
+                  <a href="note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis">The Weyl Curvature Hypothesis
+                    as a Fixed Point</a>
+                </h3>
+                <p>Connects the conformally flat interior of smooth collapse to a branching, low-Weyl succession and
+                  identifies the parent-to-child transfer map still to be derived.</p>
                 <p>Technical note</p>
               </div>
             </li>
@@ -244,7 +217,8 @@
               <div>GD1</div>
               <div>
                 <h3><a href="gd1.html">Geometric Duality I</a></h3>
-                <p>The reciprocal ansatz and the infall construction beneath it.</p>
+                <p>Develops the reciprocal ansatz \(a=1/r\) and its exact correspondence with the spatially flat
+                  matter–radiation–Λ Friedmann background.</p>
                 <p>Primary paper</p>
               </div>
             </li>
@@ -253,162 +227,135 @@
       </section>
 
       <section id="comparison" class="penrose-compare" aria-labelledby="comparison-title">
-        <h2 id="comparison-title">The three pictures, side by side</h2>
+        <h2 id="comparison-title">Where the geometries meet</h2>
         <p>
-          Conformal Cyclic Cosmology names what must hold at the crossover; the reciprocal interior supplies a
-          geometry in which it holds.
-        </p>
-
-        <p>
-          The first two rows below are the substance of the first note: homogeneous collapse hands its child
-          a Weyl-free interior, so a smooth overdensity begets a smooth beginning, and — because a smooth universe is
-          what forms smooth overdensities — low initial Weyl becomes a fixed point of the succession rather than a
-          chosen number. This is the conclusion Conformal Cyclic Cosmology already reaches, with the prior cosmological
-          generation connected to the next through one of its collapsing black holes. The arrow-of-time row draws on
-          the same note's closing argument, where the parent hole's entropy
-          reappears as the child's available phase space, so the arrow follows from a universe born far below that
-          ceiling.
+          Conformal Cyclic Cosmology and CSBHI share the Weyl Curvature Hypothesis and a reciprocal conformal
+          structure. CCC applies that structure to a global succession of aeons. CSBHI asks whether the same structure
+          also appears locally and repeatedly through black-hole collapse.
         </p>
 
         <table>
-          <caption>The low-entropy past — the Weyl Curvature Hypothesis</caption>
+          <caption>The Weyl Curvature Hypothesis</caption>
           <thead>
             <tr>
-              <th scope="col">Question</th>
-              <th scope="col">ΛCDM</th>
+              <th scope="col">Requirement</th>
               <th scope="col">CCC</th>
               <th scope="col">CSBHI</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td data-label="Question">Low-Weyl Big Bang</td>
-              <td data-label="ΛCDM">
-                <span class="status" data-status="planned">?</span>
-                <span class="cell-note">An unexplained initial condition.</span>
-              </td>
+              <td data-label="Requirement">Low-Weyl beginning</td>
               <td data-label="CCC">
-                <span class="status" data-status="target">✓</span>
-                <span class="cell-note">Inherited from the prior aeon's smooth future.</span>
+                The new aeon inherits the conformal smoothness of its predecessor's remote future.
               </td>
               <td data-label="CSBHI">
-                <span class="status" data-status="addressed">✓</span>
-                <span class="cell-note">A black hole in the parent generation collapses; homogeneous collapse gives
-                  its child a Weyl-free interior.</span>
+                A child inherits the conformally flat interior of sufficiently smooth collapse.
               </td>
             </tr>
             <tr>
-              <td data-label="Question">The \(10^{10^{123}}\) selection</td>
-              <td data-label="ΛCDM">
-                <span class="status" data-status="planned">?</span>
-                <span class="cell-note">Not addressed.</span>
-              </td>
+              <td data-label="Requirement">Smooth succession</td>
               <td data-label="CCC">
-                <span class="status" data-status="target">✓</span>
-                <span class="cell-note">Carried by the prior aeon.</span>
+                A smooth conformal future becomes the next Big Bang through conformal rescaling.
               </td>
               <td data-label="CSBHI">
-                <span class="status" data-status="addressed">✓</span>
-                <span class="cell-note">A fixed point of the succession: smooth births beget smooth births.</span>
+                Smooth cosmologies form smooth collapsing regions, suggesting a recursive low-Weyl fixed point. Its
+                convergence depends on the parent-to-child transfer map.
               </td>
             </tr>
             <tr>
-              <td data-label="Question">Arrow of time</td>
-              <td data-label="ΛCDM">
-                <span class="status" data-status="planned">?</span>
-                <span class="cell-note">A low-entropy start is assumed.</span>
-              </td>
+              <td data-label="Requirement">Gravitational arrow of time</td>
               <td data-label="CCC">
-                <span class="status" data-status="target">✓</span>
-                <span class="cell-note">Weyl grows from zero; entropy resets at the crossover.</span>
+                Weyl begins near zero and grows as structure and black holes form.
               </td>
               <td data-label="CSBHI">
-                <span class="status" data-status="addressed">✓</span>
-                <span class="cell-note">Weyl grows from the collapse's low value; the parent's entropy passes to the
-                  child.</span>
+                The same arrow begins at the low-Weyl collapse interior; horizon matching supplies a candidate entropy
+                ledger between parent and child.
               </td>
             </tr>
           </tbody>
         </table>
 
         <p>
-          The generational rows rest on two calculations and one reading. The first calculation concerns birth:
-          homogeneous collapse gives a conformally flat child interior. The second concerns the future of that
-          already-born child: its Weyl field dilutes at the conformal weight \(a^{-2}\), leaving the rescaled field
-          finite at conformal infinity. That \(a=1/r\) is the map, and the only scale-free one that fixes the horizon,
-          is the involution theorem beneath Geometric Duality I. The evaporation, information, and rest-mass rows are
-          consequences of identifying black-hole collapse as the branching passage between generations.
+          The new calculation concerns the far end of the child's history. The shear-free reciprocal interior dilutes
+          its Weyl field as \(a^{-2}\), leaving the physical field zero and the rescaled field finite at conformal
+          infinity. Smooth collapse and conformal regularity therefore bracket the child's history. The transfer map
+          between them is the remaining construction.
         </p>
 
         <table>
-          <caption>The generational passage</caption>
+          <caption>Two scales of conformal succession</caption>
           <thead>
             <tr>
-              <th scope="col">Question</th>
+              <th scope="col">Feature</th>
               <th scope="col">CCC</th>
               <th scope="col">CSBHI</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td data-label="Question">Conformal factor</td>
+              <td data-label="Feature">Structure</td>
               <td data-label="CCC">
-                <span class="status" data-status="target">✓</span>
-                <span class="cell-note">\(\Omega\to1/\Omega\), imposed at the boundary.</span>
+                A global succession of aeons across conformal infinity.
               </td>
               <td data-label="CSBHI">
-                <span class="status" data-status="addressed">✓</span>
-                <span class="cell-note">\(a=1/r\), from infall geometry — the unique scale-free horizon-fixing
-                  involution.</span>
+                A branching succession of children born at black-hole collapse.
               </td>
             </tr>
             <tr>
-              <td data-label="Question">Black holes</td>
+              <td data-label="Feature">Reciprocity</td>
               <td data-label="CCC">
-                <span class="status" data-status="target">✓</span>
-                <span class="cell-note">Evaporate before the boundary.</span>
+                \(\Omega\leftrightarrow1/\Omega\) joins the conformal boundary of successive aeons.
               </td>
               <td data-label="CSBHI">
-                <span class="status" data-status="addressed">✓</span>
-                <span class="cell-note">Are branching birth sites for child universes.</span>
+                The horizon-normalized ansatz \(a=1/r\) joins parent-side infall to child-side expansion.
               </td>
             </tr>
             <tr>
-              <td data-label="Question">Regular conformal future</td>
+              <td data-label="Feature">Birth</td>
               <td data-label="CCC">
-                <span class="status" data-status="target">✓</span>
-                <span class="cell-note">Follows once they are gone.</span>
+                The next Big Bang is conformally identified with the preceding aeon's remote future.
               </td>
               <td data-label="CSBHI">
-                <span class="status" data-status="addressed">✓</span>
-                <span class="cell-note">In the already-born child, rescaled Weyl is finite at weight \(a^{-2}\) while
-                  physical Weyl \(\to0\).</span>
+                A child is born at a finite collapse event in its parent cosmology.
               </td>
             </tr>
             <tr>
-              <td data-label="Question">Information at the singularity</td>
+              <td data-label="Feature">Conformal future</td>
               <td data-label="CCC">
-                <span class="status" data-status="target">✓</span>
-                <span class="cell-note">Removed from the phase space.</span>
+                The remote future supplies the next aeon's conformal beginning.
               </td>
               <td data-label="CSBHI">
-                <span class="status" data-status="addressed">✓</span>
-                <span class="cell-note">Enters the child aeon.</span>
+                Every child has its own regular conformal future; that future is not its birth event.
               </td>
             </tr>
             <tr>
-              <td data-label="Question">Rest mass between generations</td>
+              <td data-label="Feature">Black holes and matter</td>
               <td data-label="CCC">
-                <span class="status" data-status="target">✓</span>
-                <span class="cell-note">Vanishes for conformal invariance.</span>
+                Black holes evaporate and rest mass loses dynamical meaning before the crossover.
               </td>
               <td data-label="CSBHI">
-                <span class="status" data-status="addressed">✓</span>
-                <span class="cell-note">Crosses by falling through the horizon.</span>
+                Black holes are birth sites; matter entering a child crosses its collapse horizon.
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Feature">Entropy and information</td>
+              <td data-label="CCC">
+                The crossover follows the removal of black-hole degrees of freedom from the preceding aeon.
+              </td>
+              <td data-label="CSBHI">
+                Equal parent and child horizon areas suggest a transfer of available phase space; the microstate map
+                remains to be derived.
               </td>
             </tr>
           </tbody>
         </table>
+
+        <p>
+          On this reading, CCC supplies the global conformal logic and CSBHI supplies a candidate branching mechanism.
+          The immediate calculations are the Weyl transfer across collapse and the entropy transfer behind the matching
+          horizon areas.
+        </p>
 
       </section>
     </article>
