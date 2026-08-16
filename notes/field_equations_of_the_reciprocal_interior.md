@@ -393,7 +393,7 @@ The separate global problem is to determine how the reciprocal description belon
 
 ---
 
-*Derived by Codex (OpenAI) and independently verified by Claude (Anthropic) under Salehi Remediation; the independent recomputation of the Einstein tensor, conservation laws, and infall function is recorded in [The Reciprocal Interior: An Independent Verification](note.html?src=reciprocal_interior_independent_verification).*
+*Derived by Codex (OpenAI) and independently verified by Claude (Anthropic) under Salehi Remediation; the independent recomputation of the Einstein tensor, conservation laws, and infall function is recorded in [The Reciprocal Interior: An Independent Verification](https://www.gilansalehi.com/csbhi/notes/reciprocal_interior_independent_verification.md).*
 
 ## References
 

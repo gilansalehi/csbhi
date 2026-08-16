@@ -4,13 +4,14 @@
 
 **Architecture.** CSBHI is a branching direct-collapse cosmology. A child universe is the interior of a forming black hole: it comes into being at gravitational collapse. The reciprocal relation a=1/r maps the parent's decreasing interior radius to the child's increasing spatial scale, so the parent's r→0 endpoint coincides with that same child's a→∞ de Sitter future. Black holes that later form inside a child seed further children, so the whole structure is a tree that branches at every collapse.
 
-**Reading path.** GD I (start here) → RI I (conditional interior dynamics) → Result I (the reciprocal involution theorem) → Prediction I (the evolving g† correspondence) → WCH I (the low-Weyl beginning as a candidate recursive fixed point). The forthcoming primary-author papers are GD II (cosmological succession and the horizon map) and GD III (the galaxy acceleration law).
+**Reading path.** The shared foundation is GD I → the Cosmological Glossary → RI I → Result I. The galaxy branch is the square-root-law derivation → Prediction I → its high-redshift test. The Weyl branch is WCH I → A Black Hole on the Aeon Boundary. Finish either branch with the open-questions index. The forthcoming primary-author papers are GD II (cosmological succession and the horizon map) and GD III (the galaxy acceleration law).
 
 ## Claim hierarchy
 
 - **Foundational ansatz:** CSBHI posits a(tau)=1/r(tau). The completed parent–child geometry has not yet derived this identification.
 - **Exact conditional consequence:** Once the reciprocal FLRW metric, matter content, Einstein equations, and conservation law are supplied, RI I derives the Friedmann dynamics and reciprocal infall function.
 - **Theorem within a stated class:** Scale-freedom, horizon-fixing, self-inversion, and the power-law class select 1/r as the unique nontrivial map. The theorem fixes the reciprocal power after those premises are adopted; it does not establish the physical identification.
+- **Conditional mixing theorem:** Homogeneity, local–global exchange symmetry, and exact flat-curve scaling select g_mix=kappa sqrt(g_N A) after an unspecified global acceleration A is supplied.
 - **Proposed correspondence:** CSBHI identifies the global acceleration entering the galaxy-scale mixing law with cH_A at the contemporaneous FLRW apparent horizon.
 - **Conditional prediction:** If that correspondence is correct and its dimensionless normalization is epoch-independent, then g†(z)/g†(0)=H_A(z)/H_0.
 - **Research hypothesis:** Smooth parent collapse supplies a low-Weyl child beginning that may reproduce itself as a fixed point across generations.
@@ -29,6 +30,7 @@ H_A = (1/a)(da/dtau) = F(r)/r               [exact kinematic consequence]
 bar_R(tau) = a(tau) R                       [Alice's FLRW areal radius]
 R_A(tau) = c / H_A(tau)                     [flat-FLRW apparent horizon]
 Lambda = 3 H_Lambda^2 / c^2                 [de Sitter identity]
+g_mix = kappa sqrt(g_N A)                   [conditional mixing theorem]
 g_dagger(z)/g_dagger(0) = H_A(z)/H_0        [conditional prediction]
 ```
 
@@ -55,7 +57,9 @@ When debugging your interpretation, use the guide's claim ledger and interpretat
 - [Geometric Duality: Conformal Scaling of Black Hole Interiors](https://www.gilansalehi.com/csbhi/gd1.html): The principal CSBHI preprint by Gilan Salehi. Introduces the reciprocal ansatz, relates inward flow to expansion, discusses singularity deferral, and compares the construction with cosmological observables.
 - [RI I — Field Equations of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the reciprocal-interior dynamics from the metric ansatz, Einstein's equations, and stress-energy conservation.
 - [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html), by Claude (Anthropic): Proves a=1/r is the unique nontrivial scale-free, horizon-fixing involution — so once scale-invariance and horizon-fixing are assumed, the reciprocal power is fixed. Adopting those symmetries, and the physical identification, remains the ansatz.
+- [Self-Dual Homogeneous Derivation of the Square-Root Law](https://www.gilansalehi.com/csbhi/notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md), by Codex (OpenAI): Derives g_mix=kappa sqrt(g_N A) from homogeneity, local–global exchange symmetry, and exact flat-curve scaling after an unspecified global acceleration A is supplied. It does not identify A with cH_A or provide a weak-field tensor equation.
 - [The Evolving Galactic Acceleration-Scale Correspondence](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md), by Claude (Anthropic): A symmetry theorem fixes the square-root mixing law after a global acceleration is supplied. CSBHI identifies that acceleration with the contemporaneous apparent-horizon scale cH_A, giving the conditional prediction g†(z)/g†(0)=H_A(z)/H_0. The H-linked law has MOND precedent; CSBHI supplies an independent reciprocal-horizon motivation. Current intermediate-redshift evidence is compatible with a rise but does not decide the prediction.
+- [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md), by Claude (Anthropic): Specifies the redshift-dependent BTFR and RAR tests that distinguish the H-linked correspondence from a constant acceleration scale, while retaining the correspondence and weak-field mechanism as explicit assumptions.
 - [The Weyl Curvature Hypothesis as a Fixed Point](https://www.gilansalehi.com/csbhi/notes/recursive_bhc_and_the_weyl_curvature_hypothesis.md), by Claude (Anthropic): Proposes that smooth parent collapse supplies a low-Weyl child and that this condition reproduces itself across generations. The fixed-point interpretation and its entropy consequences remain a research hypothesis.
 - [A Black Hole on the Aeon Boundary](https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md), by Claude (Anthropic): Derives an a^-2 Weyl-dilution law under its stated assumptions and applies it to the conformal regularity of an already-born child's late-time de Sitter boundary. The generation-to-generation interpretation is conditional on the proposed succession geometry.
 

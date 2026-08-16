@@ -128,4 +128,4 @@ The natural next step is to carry the finite rescaled seed \(\hat\Psi_2\) into t
 1. R. Penrose, *Cycles of Time* (Bodley Head, 2010); R. Penrose, "Singularities and Time-Asymmetry," in *General Relativity: An Einstein Centenary Survey*, eds. Hawking & Israel (Cambridge, 1979).
 2. C. W. Misner and D. H. Sharp, *Phys. Rev.* **136**, B571 (1964), [doi:10.1103/PhysRev.136.B571](https://doi.org/10.1103/PhysRev.136.B571).
 3. L. Herrera, J. Ospino, A. Di Prisco, E. Fuenmayor, O. Troconis, "Structure and evolution of self-gravitating objects and the orthogonal splitting of the Riemann tensor," *Phys. Rev. D* **79**, 064025 (2009), [arXiv:0903.3532](https://arxiv.org/abs/0903.3532).
-4. G. Salehi, [Geometric Duality I](gd1.html), this project.
+4. G. Salehi, [Geometric Duality I](https://www.gilansalehi.com/csbhi/gd1.html), this project.

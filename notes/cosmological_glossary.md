@@ -22,6 +22,7 @@ Use this document as the shared legend for the series. Individual papers need on
 6. **Use expansion, acceleration, and inflation precisely.** Expansion means \(\dot a>0\). Accelerated expansion means \(\ddot a>0\). Inflation is a sustained early accelerated phase sufficient for the cosmological work assigned to it; ordinary expansion is not automatically inflation.
 7. **Say spatially flat when that is what is meant.** A spatially flat FLRW universe can have nonzero four-dimensional spacetime curvature.
 8. **Keep the horizon map separate from the reciprocal ansatz.** The relation \(a=1/r\) defines the proposed scale correspondence. It does not by itself construct a junction between Bob's and Alice's four-geometries.
+9. **Keep the galaxy theorem separate from the horizon correspondence.** The square-root theorem selects \(g_{\rm mix}=\kappa\sqrt{g_NA}\) after a global acceleration \(A\) is supplied. The additional identification \(A=cH_A\) is a proposed CSBHI correspondence, not a consequence of the theorem.
 
 ## 2. Canonical symbol reference
 
@@ -85,6 +86,12 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(H_0\) | Present measured Hubble parameter. |
 | \(H_\Lambda\) | Constant expansion rate of the asymptotic de Sitter limit. |
 | \(z\) | Cosmological redshift, with \(1+z=a_{\rm obs}/a_{\rm em}\). |
+| \(E(z)\) | Dimensionless expansion history, \(E(z)=H_A(z)/H_0\). |
+| \(g_N\) | Local Newtonian acceleration sourced by the baryonic mass distribution. |
+| \(A\) | Unspecified global acceleration supplied to the conditional square-root mixing theorem. |
+| \(g_{\rm mix}\) | Mixed local–global acceleration selected by the theorem, \(g_{\rm mix}=\kappa\sqrt{g_NA}\). |
+| \(\kappa\) | Dimensionless normalization of the square-root mixing law. Its first-principles value remains open. |
+| \(g_\dagger(z)\) | Effective galactic acceleration scale at redshift \(z\). CSBHI proposes \(g_\dagger(z)\propto cH_A(z)\); the normalized prediction is \(g_\dagger(z)/g_\dagger(0)=E(z)\). |
 
 ### Horizon and throat symbols
 

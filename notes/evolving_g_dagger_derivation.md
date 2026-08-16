@@ -20,7 +20,7 @@ Let \(A\) be an as-yet-unspecified global acceleration scale. Require of the mix
 D(g_N,A)=\kappa\sqrt{g_N\,A},\qquad \kappa \text{ an undetermined constant.}
 \]
 
-This is a conditional theorem: given the four hypotheses, the square-root form is not one option among many but the only one. It fixes the *form* and leaves both the global scale \(A\) and the normalization \(\kappa\) open. The derivation is carried out in full in the [self-dual square-root note](note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law).
+This is a conditional theorem: given the four hypotheses, the square-root form is not one option among many but the only one. It fixes the *form* and leaves both the global scale \(A\) and the normalization \(\kappa\) open. The derivation is carried out in full in the [self-dual square-root note](https://www.gilansalehi.com/csbhi/notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md).
 
 ## 2. The correspondence: the galactic reciprocal ansatz
 
@@ -87,10 +87,10 @@ The standing is exactly that of the programme it belongs to: a correspondence wi
 
 ## References
 
-1. [Self-Dual Homogeneous Derivation of the Square-Root Law](note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law); [The Evolving Galactic Acceleration Scale and its High-Redshift Test](note.html?src=evolving_acceleration_scale_high_z_test); [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](reciprocal-involution.html); [Recursive Kottler Horizons and the Galaxy Acceleration Scale](note.html?src=recursive_kottler_horizons_and_the_galaxy_scale), this project.
+1. [Self-Dual Homogeneous Derivation of the Square-Root Law](https://www.gilansalehi.com/csbhi/notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md); [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md); [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html); [Recursive Kottler Horizons and the Galaxy Acceleration Scale](https://www.gilansalehi.com/csbhi/notes/recursive_kottler_horizons_and_the_galaxy_scale.md), this project.
 2. H. Desmond, "The underlying radial acceleration relation," *MNRAS*, [arXiv:2303.11314](https://arxiv.org/abs/2303.11314) — local \(g_\dagger(0)\approx1.2\times10^{-10}\,\mathrm{m/s^2}\) from SPARC.
 3. MUSE-DARK III, [arXiv:2604.22613](https://arxiv.org/abs/2604.22613) — an increasing radial-acceleration-relation scale with redshift.
-4. G. Salehi, [Geometric Duality I](gd1.html), this project.
+4. G. Salehi, [Geometric Duality I](https://www.gilansalehi.com/csbhi/gd1.html), this project.
 5. C. Limbach, D. Psaltis, and F. Özel, "The Redshift Evolution of the Tully–Fisher Relation as a Test of Modified Gravity," [arXiv:0809.2790](https://arxiv.org/abs/0809.2790) (2008) — compares Hubble-linked and vacuum-density-linked evolution of the MOND scale.
 6. J. D. Bekenstein and E. Sagi, "Do Newton's \(G\) and Milgrom's \(a_0\) vary with cosmological epoch?", [arXiv:0802.1526](https://arxiv.org/abs/0802.1526) (2008) — derives slow epoch dependence of \(a_0\) in TeVeS.
 7. M. Milgrom, "Cosmological variation of the MOND constant: secular effects on galactic systems," [arXiv:1412.4344](https://arxiv.org/abs/1412.4344) (2015) — explicitly studies the hypothesis \(a_0(t)\propto cH(t)\).

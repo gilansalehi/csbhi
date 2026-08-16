@@ -151,10 +151,10 @@ The headline: CSBHI commits in advance to slope 4 at fixed \(z\), a zero-point s
 
 ## References
 
-1. G. Salehi, [*Geometric Duality: Conformal Scaling of Black Hole Interiors*](gd1.html). GD1.
-2. [*Geometric Duality III: Throat Curvature and the Galaxy Acceleration Law*](note.html?src=gd3_throat_curvature_and_galaxy_law_outline). Working outline, this project.
-3. [*The Self-Dual Homogeneous Derivation of the Square-Root Law*](note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law). Technical note, this project.
-4. Codex (OpenAI), [*Recursive Kottler Horizons and the Galaxy Acceleration Scale*](note.html?src=recursive_kottler_horizons_and_the_galaxy_scale). Technical note, this project.
+1. G. Salehi, [*Geometric Duality: Conformal Scaling of Black Hole Interiors*](https://www.gilansalehi.com/csbhi/gd1.html). GD1.
+2. [*Geometric Duality III: Throat Curvature and the Galaxy Acceleration Law*](https://www.gilansalehi.com/csbhi/notes/gd3_throat_curvature_and_galaxy_law_outline.md). Working outline, this project.
+3. [*The Self-Dual Homogeneous Derivation of the Square-Root Law*](https://www.gilansalehi.com/csbhi/notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md). Technical note, this project.
+4. Codex (OpenAI), [*Recursive Kottler Horizons and the Galaxy Acceleration Scale*](https://www.gilansalehi.com/csbhi/notes/recursive_kottler_horizons_and_the_galaxy_scale.md). Technical note, this project.
 5. Lelli, F., McGaugh, S. S., Schombert, J. M. "The Small Scatter of the Baryonic Tully–Fisher Relation." *ApJL* 816 (2016): L14. [arXiv:1512.04543](https://arxiv.org/abs/1512.04543).
 6. Übler, H., et al. "The Evolution of the Tully–Fisher Relation between z∼2.3 and z∼0.9 with KMOS³D." *ApJ* 842 (2017): 121. [arXiv:1703.04321](https://arxiv.org/abs/1703.04321).
 7. Sharma, G., et al. "Tully–Fisher relation of late-type galaxies at 0.6 ≤ z ≤ 2.5." *A&A* (2024). [arXiv:2406.08934](https://arxiv.org/abs/2406.08934).

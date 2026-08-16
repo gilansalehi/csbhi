@@ -4,7 +4,7 @@
 
 **Author:** Codex (OpenAI).
 
-**Date:** 2026-08-05.
+**Date:** 2026-08-16.
 
 **Status:** Project guidance. This is not a research result.
 
@@ -24,22 +24,26 @@ Your first task is not to agree or disagree with CSBHI. Your first task is to re
 
 ## Canonical reading path
 
-Read these documents in order:
+Read the shared foundation in order:
 
 1. [A Note to Reviewers](https://www.gilansalehi.com/csbhi/notes/review_packet_introduction.md)
 2. [GD I — *Geometric Duality: Conformal Scaling of Black Hole Interiors*](https://www.gilansalehi.com/csbhi/gd1.html)
 3. [CSBHI Cosmological Glossary](https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md)
 4. [RI I — *Field Equations of the Reciprocal Interior*](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md)
 5. [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html)
-6. [A Black Hole on the Aeon Boundary](https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md)
-7. [The Evolving Galactic Acceleration-Scale Correspondence](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md)
-8. [What Remains Mathematically Illegible](https://www.gilansalehi.com/csbhi/notes/open_questions.md)
 
-Treat the research archive as historical working material. It contains useful calculations, negative results, abandoned models, and superseded interpretations. Do not use an archived note to override the review packet.
+Then follow the branch relevant to the review:
+
+- **Galaxy prediction:** [Self-Dual Homogeneous Derivation of the Square-Root Law](https://www.gilansalehi.com/csbhi/notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md) → [The Evolving Galactic Acceleration-Scale Correspondence](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md) → [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md).
+- **Weyl curvature:** [The Weyl Curvature Hypothesis as a Fixed Point](https://www.gilansalehi.com/csbhi/notes/recursive_bhc_and_the_weyl_curvature_hypothesis.md) → [A Black Hole on the Aeon Boundary](https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md).
+
+Finish with [What Remains Mathematically Illegible](https://www.gilansalehi.com/csbhi/notes/open_questions.md).
+
+Treat the research archive as historical working material. It contains useful calculations, negative results, abandoned models, and superseded interpretations. Do not use an archived note to override the canonical publications, the current claim ledger, or either review packet.
 
 ## Claim ledger
 
-### Foundational correspondence
+### Foundational ansatz and correspondence
 
 **[Corr]** CSBHI posits
 
@@ -57,9 +61,9 @@ It does not derive this relation from a completed parent–child spacetime. The 
 
 **[E, within the stated class]** The involution result proves that \(1/r\) is the unique nontrivial power-law map that is scale-free, horizon-fixing, and self-inverse. It does not prove that nature must implement a power-law involution.
 
-### Spherical throat constraint
+### Shear-free Weyl closure
 
-**[E/C, conditional]** The spherical Weyl-relaxation calculation relates Weyl curvature to density inhomogeneity, constructs smooth relaxation profiles, and derives the effective anisotropic or projected stress required to preserve an exactly shear-free reciprocal interior. It supplies a target for a completion, not the completed throat.
+**[E, conditional]** For a geodesic, shear-free spherical interior, [A Black Hole on the Aeon Boundary](https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md) derives the closure \(\Pi=-D/2\) and the corresponding Weyl dilution \(D\propto a^{-2}\). Acceleration, finite shear, and the complete throat geometry remain open. Applying the dilution law across generations is conditional on the proposed succession geometry.
 
 ### Galactic law and prediction
 
@@ -87,6 +91,10 @@ This identification is proposed, not derived.
 
 The ratio is the falsifiable prediction. The absolute normalization remains open.
 
+### Recursive low-Weyl hypothesis
+
+**[H]** Homogeneous collapse has a conformally flat FLRW interior, but CSBHI's stronger claim is conjectural: that realistic smooth parent collapse supplies a low-Weyl child beginning and that the parent-to-child transfer drives successive generations toward a stable low-Weyl fixed point. The perturbation-transfer calculation has not yet established that fixed point.
+
 ### Open construction
 
 **[O]** The project still lacks a completed collapse map, parent–child junction or throat metric, weak-field derivation of the galactic mixing law, first-principles normalization of \(\kappa\), perturbation theory, and full thermal history.
@@ -99,17 +107,19 @@ The ratio is the falsifiable prediction. The absolute normalization remains open
 
 3. **Do not call the horizon role exchange literal time reversal.** Alice and Bob remain future-directed. Sign changes arise from inward \(r(\tau)\) and the reciprocal derivative.
 
-4. **Keep the radii separate.** Bob's horizon-normalized \(r\), Alice's comoving labels, Alice's areal radii, and cosmological horizon radii are not aliases. Use the project glossary.
+4. **Separate birth from asymptotic future.** A child forms at its parent's finite collapse epoch. The reciprocal limit \(r\to0\leftrightarrow a\to\infty\) describes the conformal future of that already-born child; it is not the birth event and does not make CSBHI a linear sequence of CCC aeons.
 
-5. **Keep the horizons separate.** The black-hole event horizon, Hubble/apparent horizon, cosmological event horizon, de Sitter horizon, particle horizon, and CMB last-scattering surface answer different geometric questions.
+5. **Keep the radii separate.** Bob's horizon-normalized \(r\), Alice's comoving labels, Alice's areal radii, and cosmological horizon radii are not aliases. Use the project glossary.
 
-6. **Treat direct junction calculations as diagnostics.** A zero-width Schwarzschild–FLRW soldering is a surrogate used to expose required boundary data. Its shell stress or derivative mismatch is not automatically a property of the finite CSBHI throat.
+6. **Keep the horizons separate.** The black-hole event horizon, Hubble/apparent horizon, cosmological event horizon, de Sitter horizon, particle horizon, and CMB last-scattering surface answer different geometric questions.
 
-7. **Do not infer a premise from a result that assumed it.** RI I does not derive \(a=1/r\). The square-root theorem does not derive \(A=cH\). Appendix A records a correspondence; it does not derive cosmology from Schwarzschild geometry.
+7. **Treat direct junction calculations as diagnostics.** A zero-width Schwarzschild–FLRW soldering is a surrogate used to expose required boundary data. Its shell stress or derivative mismatch is not automatically a property of the finite CSBHI throat.
 
-8. **Do not equate “not derived” with “disproved.”** A missing map identifies an open construction. A contradiction requires mutually incompatible consequences within the same stated model.
+8. **Do not infer a premise from a result that assumed it.** RI I does not derive \(a=1/r\). The square-root theorem does not derive \(A=cH\). Appendix A records a correspondence; it does not derive cosmology from Schwarzschild geometry.
 
-9. **Do not use the archive as canonical context.** Check the review packet and current open-questions index before reviving an older notation, model, or conclusion.
+9. **Do not equate “not derived” with “disproved.”** A missing map identifies an open construction. A contradiction requires mutually incompatible consequences within the same stated model.
+
+10. **Do not use the archive as canonical context.** Check the applicable review packet, canonical publications, and current open-questions index before reviving an older notation, model, or conclusion.
 
 ## Review protocol
 

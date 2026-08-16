@@ -176,8 +176,8 @@ The galaxy prediction in Q9 can be tested in parallel. A failed prediction would
 
 ## Current reading path
 
-1. [GD I: *Geometric Duality: Conformal Scaling of Black Hole Interiors*](gd1.html)
-2. [RI I: *Field Equations of the Reciprocal Interior*](note.html?src=field_equations_of_the_reciprocal_interior)
-3. [*The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution*](reciprocal-involution.html)
-4. [GD II outline: *Collapse Cohorts and the Horizon Map*](note.html?src=gd2_collapse_cohort_horizon_map_outline)
-5. [Prediction I: *The Evolving Galactic Acceleration-Scale Correspondence*](note.html?src=evolving_g_dagger_derivation)
+1. [GD I: *Geometric Duality: Conformal Scaling of Black Hole Interiors*](https://www.gilansalehi.com/csbhi/gd1.html)
+2. [RI I: *Field Equations of the Reciprocal Interior*](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md)
+3. [*The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution*](https://www.gilansalehi.com/csbhi/reciprocal-involution.html)
+4. [GD II outline: *Collapse Cohorts and the Horizon Map*](https://www.gilansalehi.com/csbhi/notes/gd2_collapse_cohort_horizon_map_outline.md)
+5. [Prediction I: *The Evolving Galactic Acceleration-Scale Correspondence*](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md)
