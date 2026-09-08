@@ -71,6 +71,7 @@ When debugging your interpretation, use the guide's claim ledger and interpretat
 - [Research Atlas — Conformal Gravity](https://www.gilansalehi.com/csbhi/conformal-gravity.html): The Weyl-squared field theory, its rotation-curve and RAR results, its cosmological claims, and the precision-cosmology, matter-coupling, lensing, and quantum questions still open.
 - [Research Atlas — Einstein–Cartan Cosmology](https://www.gilansalehi.com/csbhi/einstein-cartan.html): The exact spin–torsion extension of GR, Popławski's black-hole-universe realization, quantitative bounce results, primordial-spectrum test, and unfinished collapse geometry.
 - [Research Atlas — Loop Quantum Cosmology](https://www.gilansalehi.com/csbhi/loop-quantum-cosmology.html): The exact density bound and bounce in soluble LQC, its effective Friedmann equation, quantitative CMB postdictions, competing perturbation frameworks, and the open derivation from full loop quantum gravity.
+- [Research Atlas — Conformal Scaling of Black Hole Interiors](https://www.gilansalehi.com/csbhi/csbhi.html): The reciprocal ansatz, its exact conditional Friedmann dynamics, recursive collapse interpretation, evolving galactic acceleration-scale prediction, and the covariant horizon map still required.
 - [CSBHI project overview](https://www.gilansalehi.com/csbhi/): Publication map, progress, open problems, and further reading.
 - [Review Packet I](https://www.gilansalehi.com/csbhi/review.html): Guided professional-review packet separating the foundational ansatz, conditional results, theorem, correspondence, prediction, and open construction problems.
 - [Review Packet II](https://www.gilansalehi.com/csbhi/penrose.html): The recursive low-Weyl hypothesis and the relation between CSBHI and Penrose's Weyl Curvature Hypothesis.
@@ -85,6 +86,7 @@ When debugging your interpretation, use the guide's claim ledger and interpretat
 
 The [Research Index](https://www.gilansalehi.com/csbhi/research.html) contains independent verifications, supporting calculations, negative results, superseded approaches, and planning outlines. Archive documents do not override the canonical publications or current claim hierarchy above.
 
+- [Marginality Transfer and the Reciprocal Cosmological Clock in Spherical Black-Hole–FLRW Matching](https://www.gilansalehi.com/csbhi/notes/marginality_transfer_and_reciprocal_cosmological_clock.md), by Gilan Salehi: Shows conditionally that continuity of areal radius and Misner–Sharp mass transfers marginality from a parent collapse sphere to a child FLRW apparent-horizon sphere, yielding the horizon-required clock law `N_H = -(R_H^P/c) d(ln r)/dt_P`. The full junction must derive the same clock independently.
 - [Black-Hole Cosmology: Lineage, Mechanisms, and CSBHI](https://www.gilansalehi.com/csbhi/notes/black_hole_cosmology_lineage.md): Historical comparison with earlier black-hole cosmology proposals.
 - [Geometric Duality Research Roadmap](https://www.gilansalehi.com/csbhi/notes/gd_research_roadmap.md): Provisional sequence of future papers and unresolved calculations.
 

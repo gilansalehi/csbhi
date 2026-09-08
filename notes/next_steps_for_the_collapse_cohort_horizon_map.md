@@ -4,11 +4,11 @@
 
 **Author:** Codex (OpenAI).
 
-**Date:** 2026-08-05.
+**Date:** 2026-09-08.
 
 **Prerequisites:** [GD I](gd1.html); [Collapse Day and Present Day](note.html?src=collapse_day_present_day_cohort_worldsheet); [From Collapse Shells to a Child FLRW Patch](note.html?src=homogeneous_collapse_shell_map); [The Remaining Horizon Clock](note.html?src=remaining_horizon_clock_map).
 
-**Status:** Research plan. The causal form and homogeneous shell map are already established conditionally; the clock law and its extension to a completed spacetime remain open. Tiered **[E]** established, **[C]** candidate CSBHI correspondence, **[O]** open.
+**Status:** Research plan. The causal form and homogeneous shell map are established conditionally. Marginality transfer now fixes the clock required by matched spherical cross-sections; its independent recovery from the junction and its extension to a completed spacetime remain open. Tiered **[E]** established, **[C]** candidate CSBHI correspondence, **[O]** open.
 
 ---
 
@@ -302,20 +302,21 @@ Resume the calculation in this order:
 4. **Test the shell-clock constraint — completed for the selected benchmark; unit lapse rejected.** See [The Full-History Test](note.html?src=full_history_test_of_the_collapse_cohort_shell_clock). A horizon-adapted generator preserves the event/trapping distinction across the multiscale collapse. The formation and de Sitter endpoint powers agree, but the reconstructed intermediate equation of state violates the nonnegative dust–radiation–vacuum bound. This rejects the unit-lapse shell clock for this compensated profile, not the reciprocal ansatz.
 5. **Compute the optical transfer — exact reduction completed; normalization requires revision.** See [Optical Transfer Through a Matter-Filled Parent Collapse](note.html?src=optical_transfer_through_compensated_ltb_collapse). The integrating factor obeys \(d\ln\beta/dt_P=-\dot Y'/Y'\) along ingoing rays, giving \(J_H=2\beta_H\). The earlier frequency-continuity argument selected \(N_H=1\); the full-history failure shows that this identification, its optical normalization, or the direct shell correspondence cannot all remain unchanged.
 6. **Check the asymptotes — completed analytically; late coefficient fixed conditionally.** See [Asymptotic Consistency of the Collapse-Cohort Map](note.html?src=asymptotic_consistency_of_the_collapse_cohort_map). Formation is regular with \(\mu_H\propto\Delta t^3\), \(\Omega_\Sigma\to1\), and finite optical transfer. A general late tail \(1-\mu_H\propto e^{-\lambda t_P}\) reconstructs \(a_C\propto e^{\lambda\tau}\), so \(H_{\Lambda,C}=\lambda\). The stationary bounded-gap condition and verified shell dwell give \(\lambda=\sqrt3H_{\Lambda,P}\). A finite parent horizon remains compatible because \(\Omega_\Sigma\) carries the local-to-global growth. Surface gravity uses a different parent clock unless a conversion is derived.
-7. **Solve for the missing cohort lapse.** Preserve the event-horizon history and homogeneous shell ordering, then determine whether the null geometry fixes an evolving \(N_H=d\tau/dt_P\) that restores a nonnegative child Friedmann history.
+7. **Test the horizon-required cohort lapse.** [Marginality Transfer and the Reciprocal Cosmological Clock](note.html?src=marginality_transfer_and_reciprocal_cosmological_clock) gives \(N_H^{(\mathrm{horizon})}=-(R_H^P/c)d\ln r/dt_P\) when matched cross-sections preserve areal radius and Misner–Sharp mass. Derive \(N_H^{(\mathrm{junction})}\) independently from the null geometry and compare the two functions across the full collapse history.
 8. **Extend to the cohort neighborhood.** Only then calculate Weyl relaxation, effective stress, and dimensional sufficiency.
 
 The first concrete question for the next step is now:
 
 \[
 \boxed{
-\text{Does the null boundary determine a nontrivial }N_H(t_P)
-\text{ that restores a nonnegative child Friedmann history?}
+N_H^{(\mathrm{junction})}(t_P)
+\stackrel{?}{=}
+N_H^{(\mathrm{horizon})}(t_P)
 }
 \tag{14}
 \]
 
-The selected \(\Lambda\)LTB geometry now supplies the parent clock, horizon generator, and swept mass history. The remaining task is no longer to guess the event horizon; it is to identify the clock conversion demanded by the geometry.
+The selected \(\Lambda\)LTB geometry now supplies the parent clock, horizon generator, and swept mass history. Marginality fixes the conversion required at corresponding spherical cross-sections. The remaining task is to learn whether the full null junction demands the same conversion.
 
 ---
 

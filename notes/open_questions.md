@@ -4,7 +4,7 @@
 
 **Author:** Codex (OpenAI).
 
-**Updated:** 2026-08-09.
+**Updated:** 2026-09-08.
 
 ## Purpose
 
@@ -31,7 +31,8 @@ The present project supplies:
 - the reciprocal power as the unique nontrivial horizon-fixing involution within the stated scale-free power-law class;
 - a collapse-cohort description separating the causal map, shell map, and post-crossing evolution;
 - an exact boundary system reducing the cohort synchronization to one lapse;
-- a compensated (\Lambda\)LTB benchmark whose endpoint limits work but whose simplest unit-lapse clock fails through the intermediate collapse; and
+- a compensated (\Lambda\)LTB benchmark whose endpoint limits work but whose simplest unit-lapse clock fails through the intermediate collapse;
+- a horizon-required lapse obtained by transferring marginality between matched parent and child spherical cross-sections; and
 - a coefficient-independent galaxy prediction, conditional on identifying the galactic scale with the contemporaneous horizon.
 
 These results do not yet constitute a complete parent–child spacetime.
@@ -56,11 +57,17 @@ These results do not yet constitute a complete parent–child spacetime.
 2. an enclosed-mass shell map that preserves homogeneous spherical ordering; and
 3. the reciprocal evolution of every cohort after crossing.
 
-The exact boundary reduction leaves one synchronization lapse between parent collapse time and child proper time. A compensated (\Lambda\)LTB benchmark reproduces the formation and de Sitter endpoint powers but rejects the simplest unit-lapse clock in the intermediate era.
+The exact boundary reduction leaves one synchronization lapse between parent collapse time and child proper time. A compensated (\Lambda\)LTB benchmark reproduces the formation and de Sitter endpoint powers but rejects the simplest unit-lapse clock in the intermediate era. [Marginality transfer](note.html?src=marginality_transfer_and_reciprocal_cosmological_clock) now fixes the lapse required if corresponding parent and child cross-sections preserve areal radius and Misner–Sharp mass:
 
-**Missing:** The nontrivial lapse selected by the matter-filled collapse, together with the conformal normalization of the mapped angular geometry.
+\[
+N_H^{(\mathrm{horizon})}
+=
+-\frac{R_H^P}{c}\frac{d\ln r}{dt_P}.
+\]
 
-**Closure test:** Integrate the parent event horizon and optical transfer through a realistic collapse, derive the lapse without fitting the child expansion history, and recover one monotone causal map across the full formation history.
+**Missing:** An independent derivation of the same lapse from the full junction geometry, together with the event map and conformal normalization of the mapped angular geometry. Marginal cross-sections can correspond even when the parent and child horizon worldtubes have different causal signatures.
+
+**Closure test:** Integrate the parent event horizon and optical transfer through a realistic collapse and test \(N_H^{(\mathrm{junction})}=N_H^{(\mathrm{horizon})}\) across the full formation history without fitting the child expansion.
 
 ### Q3. Does the map extend to a regular global spacetime?
 

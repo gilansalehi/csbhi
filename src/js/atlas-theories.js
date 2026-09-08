@@ -48,11 +48,10 @@ export const ATLAS_THEORIES = {
   csbhi: theory({
     id: 'csbhi',
     title: 'Conformal Scaling of Black Hole Interiors',
-    href: 'index.html',
-    profileLabel: 'Explore CSBHI →',
+    href: 'csbhi.html',
     case: 'CSBHI adopts the geometric ansatz a = 1/r. Inward motion on the exterior radial diagram then becomes expansion in the reciprocal interior; matter dilutes as a⁻³, radiation as a⁻⁴, and vacuum energy remains constant. Because the universe contains black holes, the construction branches recursively.',
-    standing: 'The background correspondences are analytic, and the same scale logic proposes an evolving galactic acceleration scale that can be tested at high redshift. The reciprocal ansatz is not yet derived from a covariant parent–child geometry, and the perturbation map remains unfinished.',
-    test: 'A covariant horizon map and the predicted redshift evolution of g† are the two calculations capable of turning the correspondence into a physical theory.',
+    standing: 'The background correspondences are analytic, and the same scale logic proposes an evolving galactic acceleration scale that can be tested at high redshift. Marginality transfer now fixes the clock required at matched spherical cross-sections; the full junction and perturbation map remain unfinished.',
+    test: 'The next geometric test is whether the null junction independently returns the clock required by marginality transfer; the empirical test is the predicted redshift evolution of g†.',
   }),
 };
 

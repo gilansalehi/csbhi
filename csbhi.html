@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-measure="lg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dcterms.modified" content="2026-09-08">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="A Research Atlas profile of Conformal Scaling of Black Hole Interiors: its reciprocal ansatz, exact conditional results, empirical prediction, and unfinished parent-child geometry.">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/csbhi.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Conformal Scaling of Black Hole Interiors — Research Atlas</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/research-atlas.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#profile-title">Skip to the profile</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article class="atlas-article" aria-labelledby="profile-title">
+      <header class="atlas-hero">
+        <p class="atlas-hero__eyebrow"><a href="research-atlas.html">Research Atlas</a> · Profile</p>
+        <h1 id="profile-title">Conformal Scaling of Black Hole Interiors</h1>
+        <p class="atlas-hero__lede">
+          One reciprocal relation makes black-hole infall read as cosmological expansion. The mathematics is exact
+          inside the proposed interior; the spacetime joining that interior to a collapsing parent remains unfinished.
+        </p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 8, 2026 · Draft profile · Corrections invited</p>
+      </header>
+
+      <section id="at-a-glance" class="atlas-section">
+        <p class="atlas-section__label">The case for CSBHI</p>
+        <h2>Replace the singular endpoint with reciprocal scale</h2>
+        <p>
+          A falling observer crosses a black-hole horizon without encountering a local boundary, yet the ordinary
+          exterior description still drives every future-directed trajectory toward a singular endpoint. CSBHI changes
+          the geometric interpretation of that endpoint. The radius assigned from the exterior and the spatial scale
+          measured in the interior are taken to be reciprocal:
+        </p>
+        <div class="atlas-equation">
+          \[
+            \boxed{a(\tau)=\frac{1}{r(\tau)}}.
+          \]
+        </div>
+        <p>
+          Here \(r=1\) is the parent black-hole horizon, \(r\) decreases along infall, and \(a\) is the scale factor of
+          an isotropic interior. As \(r\to0\), the interior does not shrink to a point: \(a\to\infty\). Infall becomes
+          expansion, the putative singularity becomes the interior's remote future, and a universe containing black
+          holes produces a branching succession of child cosmologies.<sup class="atlas-citation">[<a href="#csbhi-ref-1">1</a>]</sup>
+        </p>
+        <p>
+          The reciprocal relation is an ansatz, not the output of a completed field theory. Its force comes from the
+          number of independent consequences that survive once it is adopted: standard matter, radiation, and vacuum
+          dilution; a regular de Sitter endpoint; a low-Weyl cosmological beginning; and a redshift-dependent galactic
+          acceleration scale. The programme succeeds only if one parent–child geometry can support those
+          correspondences without contradicting the observations already described by ΛCDM.
+        </p>
+        <dl class="atlas-facts">
+          <div>
+            <dt>Central move</dt>
+            <dd>Identify the interior scale factor with the inverse horizon-normalized infall radius, \(a=1/r\).</dd>
+          </div>
+          <div>
+            <dt>Exact conditional result</dt>
+            <dd>The reciprocal FLRW metric obeys the standard matter–radiation–Λ Friedmann equations.</dd>
+          </div>
+          <div>
+            <dt>Empirical prediction</dt>
+            <dd>If the galactic scale follows the contemporaneous horizon, \(g_\dagger(z)/g_\dagger(0)=H(z)/H_0\).</dd>
+          </div>
+          <div>
+            <dt>Principal gap</dt>
+            <dd>Cross-sectional marginality fixes a required clock, but no covariant collapse geometry yet derives the complete horizon map.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="construction" class="atlas-section">
+        <p class="atlas-section__label">The construction</p>
+        <h2>The reciprocal interior becomes an FLRW cosmology</h2>
+        <p>
+          Let \(\tau\) be the infalling observer's proper time and let \(R\) label neighboring comoving probes. Applying
+          the reciprocal scale equally in all three spatial directions gives
+        </p>
+        <div class="atlas-equation">
+          \[
+            ds_A^2=-d\tau^2+a(\tau)^2\left(dR^2+R^2d\Omega^2\right),
+            \qquad a(\tau)=\frac{1}{r(\tau)}.
+          \]
+        </div>
+        <p>
+          This is a proposed interior metric, not a coordinate rewriting of vacuum Schwarzschild spacetime. Its
+          Einstein tensor produces the Friedmann constraint; stress-energy conservation fixes the familiar dilution
+          powers:
+        </p>
+        <div class="atlas-equation">
+          \[
+            H_A^2=\frac{8\pi G}{3}
+            \left(\rho_{m0}a^{-3}+\rho_{r0}a^{-4}+\rho_\Lambda\right),
+            \qquad H_A=\frac{\dot a}{a}=\frac{F(r)}{r},
+          \]
+        </div>
+        <p>
+          where \(F(r)=-dr/d\tau\). Matter therefore dilutes with volume, radiation acquires the additional wavelength
+          factor, and vacuum density remains constant. The derivation is exact once the reciprocal metric, Einstein's
+          equations, and the stated matter content are supplied; it does not derive the metric from the parent
+          collapse.<sup class="atlas-citation">[<a href="#csbhi-ref-2">2</a>]</sup>
+        </p>
+        <p>
+          A separate result reduces the freedom in the ansatz. Among nontrivial power-law maps, \(1/r\) is the unique
+          map that is scale-free, its own inverse, and fixed at the horizon. The theorem selects the reciprocal power
+          from the assumed symmetry; it does not prove that nature must obey that symmetry.<sup class="atlas-citation">[<a href="#csbhi-ref-3">3</a>]</sup>
+        </p>
+      </section>
+
+      <section id="recursion" class="atlas-section">
+        <p class="atlas-section__label">The cosmological picture</p>
+        <h2>Collapse becomes a branching beginning</h2>
+        <p>
+          If the universe is a black-hole interior and also contains black holes, the construction repeats. Each
+          collapse can seed a child region while remaining a compact object in its parent universe. The resulting
+          history resembles a family tree, not a single cyclic sequence: children form throughout a parent's lifetime,
+          and causal communication remains one-way across each parent horizon.
+        </p>
+        <p>
+          Homogeneous spherical collapse supplies an important control case. Its matter-filled interior is FLRW and
+          therefore has vanishing Weyl curvature even at high density. Identifying that collapse with a child's
+          beginning provides the smooth, low-Weyl background demanded by Penrose's Weyl Curvature Hypothesis without
+          selecting an unrelated special initial geometry. Realistic collapse must still transmit small parent
+          inhomogeneities into the child's observed primordial perturbations.<sup class="atlas-citation">[<a href="#csbhi-ref-4">4</a>, <a href="#csbhi-ref-5">5</a>]</sup>
+        </p>
+      </section>
+
+      <section id="gains" class="atlas-section">
+        <p class="atlas-section__label">Explanatory gains</p>
+        <h2>What the reciprocal picture adds to ΛCDM</h2>
+        <div class="atlas-gains">
+          <article class="atlas-gain">
+            <h3>Black-hole infall and cosmic expansion share one rate</h3>
+            <p>The identity \(H_A=F/r\) turns inward radial motion into positive interior expansion without reversing proper time.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>The cosmological dilution laws become reciprocal geometry</h3>
+            <p>Matter, radiation, curvature, and vacuum energy acquire their standard powers after \(a=1/r\) is inserted into the derived field equations.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>The singular endpoint moves to the infinite future</h3>
+            <p>For the positive-vacuum late-time solution, \(r\to0\) occurs only as \(\tau\to\infty\) and approaches finite de Sitter curvature.<sup class="atlas-citation">[<a href="#csbhi-ref-1">1</a>, <a href="#csbhi-ref-6">6</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>The smooth beginning acquires a formation history</h3>
+            <p>A homogeneous parent collapse is already Weyl-free inside its matter, providing a geometric source for a low-Weyl child background.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Galaxy dynamics gains a cosmological clock</h3>
+            <p>Self-dual mixing selects a square-root law between local baryonic acceleration and a global horizon scale; choosing the contemporaneous horizon makes that scale evolve with \(H(z)\).<sup class="atlas-citation">[<a href="#csbhi-ref-7">7</a>, <a href="#csbhi-ref-8">8</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Several fitted scales become one geometric problem</h3>
+            <p>The vacuum scale, black-hole horizon, galactic acceleration scale, and cosmological horizons are treated as related geometric data whose coefficients must be fixed by the completed map.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence" class="atlas-section">
+        <p class="atlas-section__label">Empirical contact</p>
+        <h2>The first test lies in high-redshift galaxies</h2>
+        <p>
+          Most current CSBHI results establish internal correspondence rather than new empirical success. The clearest
+          exception is the proposed evolution of the radial-acceleration scale. A scale-free, homogeneous, self-dual
+          mixing law has the form \(g_{\rm mix}=\kappa\sqrt{g_N A}\). Identifying \(A\) with the contemporaneous horizon
+          acceleration \(cH(z)\) removes the unknown normalization from the redshift ratio:
+        </p>
+        <div class="atlas-equation">
+          \[
+            \boxed{\frac{g_\dagger(z)}{g_\dagger(0)}=\frac{H(z)}{H_0}}.
+          \]
+        </div>
+        <p>
+          The horizon identification is a second correspondence, not a consequence of the square-root theorem.
+          Hubble-linked MOND proposals also precede CSBHI.<sup class="atlas-citation">[<a href="#csbhi-ref-11">11</a>]</sup>
+          What matters empirically is the fixed curve. MUSE-DARK III reports an intermediate-redshift ratio of about
+          \(1.98\pm0.45\); the H-linked value at \(z\sim1\) is \(1.76\), while a constant acceleration scale gives
+          \(1\). The result is compatible with the rising relation but is not yet precise or model-independent enough
+          to select it.<sup class="atlas-citation">[<a href="#csbhi-ref-8">8</a>, <a href="#csbhi-ref-10">10</a>]</sup>
+        </p>
+      </section>
+
+      <section id="blockers" class="atlas-section">
+        <p class="atlas-section__label">Open problems</p>
+        <h2>What remains unresolved</h2>
+        <div class="atlas-blockers">
+          <article class="atlas-blocker">
+            <h3>1. The parent–child spacetime has not been completed</h3>
+            <p>Continuity of areal radius and Misner–Sharp mass transfers marginality and fixes the clock required at corresponding spherical cross-sections. No covariant metric yet derives that clock independently while satisfying the full horizon junction conditions.<sup class="atlas-citation">[<a href="#csbhi-ref-12">12</a>, <a href="#csbhi-ref-13">13</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>2. The primordial perturbation map is missing</h3>
+            <p>Homogeneous collapse gives the correct smooth background. A transfer law must carry realistic parent density, Weyl, vector, and tensor perturbations into the observed child spectrum.</p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>3. The galaxy law lacks a covariant weak-field derivation</h3>
+            <p>Symmetry selects the square-root form, but the complete geometry must choose the relevant horizon, fix (kappa), and reproduce lensing, clusters, and structure as well as rotation curves.</p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>4. The vacuum scale is interpreted rather than calculated</h3>
+            <p>Λ becomes a de Sitter curvature and horizon scale. The present theory does not yet explain why quantum vacuum contributions fail to renormalize that scale.</p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>5. Recursive stability is not established</h3>
+            <p>The low-Weyl fixed-point picture requires successive collapse geometries to reproduce compatible child backgrounds rather than amplifying shear or inhomogeneity.</p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>6. The programme is classical</h3>
+            <p>CSBHI reorganizes relativistic geometry and cosmology; it does not quantize gravity or replace quantum field theory.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence-ledger" class="atlas-section">
+        <p class="atlas-section__label">Evidence and tests</p>
+        <h2>Where the programme can be checked</h2>
+        <div class="atlas-ledger">
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Exact conditional result</p>
+            <h3>One metric · four standard background terms</h3>
+            <p>Einstein's equations and conservation reproduce matter, radiation, curvature, and vacuum scaling from the reciprocal FLRW metric.<sup class="atlas-citation">[<a href="#csbhi-ref-2">2</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Structural theorem</p>
+            <h3>The reciprocal power is unique within its class</h3>
+            <p>Scale freedom, involution, and horizon fixing select \(a=1/r\) from nontrivial power-law maps.<sup class="atlas-citation">[<a href="#csbhi-ref-3">3</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Current observational clue</p>
+            <h3>\(1.98\pm0.45\) observed · \(1.76\) predicted at \(z\sim1\)</h3>
+            <p>The first intermediate-redshift estimate is consistent with the evolving scale, although one broad measurement cannot establish the law.<sup class="atlas-citation">[<a href="#csbhi-ref-10">10</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">Decisive empirical test</p>
+            <h3>Measure the RAR and BTFR through \(z\gtrsim3\)</h3>
+            <p>The H-linked correspondence predicts a \(0.8\)–\(1.0\) dex displacement by high redshift, large enough to separate a rising scale from a fixed one if observational systematics are controlled.<sup class="atlas-citation">[<a href="#csbhi-ref-9">9</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__miss">
+            <p class="atlas-score__label">Decisive geometric test</p>
+            <h3>Make the two clock calculations agree</h3>
+            <p>The lapse required by marginality transfer must equal the lapse independently obtained from the null junction throughout a nontrivial collapse history.<sup class="atlas-citation">[<a href="#csbhi-ref-13">13</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__miss">
+            <p class="atlas-score__label">Missing cosmological test</p>
+            <h3>Derive the primordial spectrum</h3>
+            <p>The parent collapse profile must produce the observed scalar amplitude, tilt, tensor bound, and statistical isotropy before those quantities are used as inputs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-questions" class="atlas-section">
+        <p class="atlas-section__label">The questions</p>
+        <h2>What CSBHI answers—and leaves open</h2>
+        <table class="atlas-scorecard">
+          <tbody>
+            <tr>
+              <th scope="row">Gravity</th>
+              <td><p>The construction remains within classical relativistic geometry. It neither quantizes gravity nor claims that the reciprocal map is a quantum completion.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Singularities</th>
+              <td><p>The reciprocal interior replaces \(r\to0\) with an infinite-future, finite-curvature de Sitter limit. Proving global regularity requires the completed collapse geometry.<sup class="atlas-citation">[<a href="#csbhi-ref-1">1</a>, <a href="#csbhi-ref-6">6</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Expansion</th>
+              <td><p>Infall and expansion share the exact relation \(H_A=F/r\), while Einstein's equations recover the observed matter–radiation–vacuum history. The absolute vacuum scale is not yet derived.<sup class="atlas-citation">[<a href="#csbhi-ref-2">2</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Beginning</th>
+              <td><p>Parent collapse supplies a formation event and a low-Weyl FLRW background. The perturbation spectrum and its recursive stability remain open.<sup class="atlas-citation">[<a href="#csbhi-ref-4">4</a>, <a href="#csbhi-ref-5">5</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Matter</th>
+              <td><p>The galactic mass discrepancy is attributed to mixing between local baryonic gravity and the cosmological horizon. The proposal predicts an evolving acceleration scale but does not yet replace dark matter across every cosmological observable.<sup class="atlas-citation">[<a href="#csbhi-ref-7">7</a>–<a href="#csbhi-ref-10">10</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Constants</th>
+              <td><p>The reciprocal power is selected by symmetry, and Λ and \(g_\dagger\) are recast as horizon scales. Their normalizations, \(G\), and the dimensionless constants of particle physics are not yet derived.</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="assessment" class="atlas-section">
+        <p class="atlas-section__label">What comes next</p>
+        <h2>Two routes to a verdict</h2>
+        <p>
+          CSBHI now faces a geometric test and an observational test. The geometric test is the harder one: derive a
+          regular collapse spacetime whose interior inherits \(a=1/r\), whose null boundary carries the correct causal
+          map, and whose perturbations become the initial data of the child cosmology. Failure there would end the
+          claim that the reciprocal correspondences describe one physical spacetime.
+        </p>
+        <p>
+          The observational test can arrive sooner. The evolving galactic scale traces a fixed redshift curve and
+          separates from a constant scale rapidly beyond \(z\sim1\). A precise high-redshift RAR or baryonic
+          Tully–Fisher history can reject that extension even before the parent–child metric is complete.
+        </p>
+        <p>
+          The programme therefore occupies an unusual position. One ansatz already organizes five of the six questions
+          used in this Atlas, but most of those answers remain correspondences awaiting a common geometry. Quantum
+          gravity is the exception: CSBHI presently makes no attempt to supply it. The immediate standard is narrower
+          and more concrete—complete the classical construction, derive its initial perturbations, and let the galaxy
+          prediction meet better data.
+        </p>
+      </section>
+
+      <section id="reading" class="atlas-section">
+        <p class="atlas-section__label">Primary reading</p>
+        <h2>Sources</h2>
+        <ol class="atlas-reading-list">
+          <li id="csbhi-ref-1">G. Salehi, <a href="gd1.html"><em>Geometric Duality: Conformal Scaling of Black Hole Interiors</em></a>, GD I (2026), <a href="https://doi.org/10.5281/zenodo.21864669">doi:10.5281/zenodo.21864669</a>.</li>
+          <li id="csbhi-ref-2">Codex (OpenAI), <a href="note.html?src=field_equations_of_the_reciprocal_interior"><em>Field Equations of the Reciprocal Interior</em></a>, RI I (2026).</li>
+          <li id="csbhi-ref-3">Claude (Anthropic), <a href="reciprocal-involution.html"><em>The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution</em></a> (2026).</li>
+          <li id="csbhi-ref-4">Codex (OpenAI), <a href="note.html?src=weyl_curvature_hypothesis_reciprocal_interior"><em>The Weyl Curvature Hypothesis at Background Order</em></a> (2026).</li>
+          <li id="csbhi-ref-5">Claude (Anthropic), <a href="note.html?src=recursive_bhc_and_the_weyl_curvature_hypothesis"><em>The Weyl Curvature Hypothesis as a Fixed Point</em></a> (2026).</li>
+          <li id="csbhi-ref-6">Codex (OpenAI), <a href="note.html?src=gd_inverse_radius_probe_congruence"><em>The Inverse-Radius Probe Congruence</em></a> (2026).</li>
+          <li id="csbhi-ref-7">Codex (OpenAI), <a href="note.html?src=gd_self_dual_homogeneous_derivation_of_the_square_root_law"><em>Self-Dual Homogeneous Derivation of the Square-Root Law</em></a> (2026).</li>
+          <li id="csbhi-ref-8">Claude (Anthropic), <a href="note.html?src=evolving_g_dagger_derivation"><em>The Evolving Galactic Acceleration-Scale Correspondence</em></a> (2026).</li>
+          <li id="csbhi-ref-9">Codex (OpenAI), <a href="note.html?src=evolving_acceleration_scale_high_z_test"><em>The Evolving Galactic Acceleration Scale and its High-Redshift Test</em></a> (2026).</li>
+          <li id="csbhi-ref-10">B. I. Ciocan et al., <a href="https://arxiv.org/abs/2604.22613">“MUSE-DARK III: The Evolution of the Radial Acceleration Relation at Intermediate Redshifts”</a>, <em>Astronomy &amp; Astrophysics</em> 709, L16 (2026).</li>
+          <li id="csbhi-ref-11">M. Milgrom, <a href="https://arxiv.org/abs/1412.4344">“Cosmological Variation of the MOND Constant: Secular Effects on Galactic Systems”</a> (2015).</li>
+          <li id="csbhi-ref-12">G. Salehi, <a href="note.html?src=gd2_collapse_cohort_horizon_map_outline"><em>Geometric Duality II: Cosmological Succession and the Horizon Map</em></a>, working outline (2026).</li>
+          <li id="csbhi-ref-13">G. Salehi, <a href="note.html?src=marginality_transfer_and_reciprocal_cosmological_clock"><em>Marginality Transfer and the Reciprocal Cosmological Clock in Spherical Black-Hole–FLRW Matching</em></a>, draft v0.1 (2026).</li>
+        </ol>
+      </section>
+
+      <section id="corrections" class="atlas-section atlas-invitation">
+        <p class="atlas-section__label">Invitation</p>
+        <h2>Corrections are welcome</h2>
+        <p>
+          This profile separates the reciprocal ansatz, its exact conditional consequences, and the programme's open
+          physical claims. Corrections from researchers working on relativistic collapse, black-hole cosmology,
+          cosmological perturbations, galactic dynamics, and horizon geometry will be incorporated with attribution.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>

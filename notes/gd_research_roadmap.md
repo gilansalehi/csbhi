@@ -2,7 +2,7 @@
 
 *The current publication path and the standard of evidence for the CSBHI programme.*
 
-**Updated:** 2026-08-09.
+**Updated:** 2026-09-08.
 
 ## The programme
 
@@ -77,7 +77,15 @@ The collapse-to-child boundary equations reduce the remaining synchronization to
 - the stationary de Sitter endpoint supplies the correct exponential form; and
 - the simplest unit-lapse synchronization fails across the intermediate collapse.
 
-That negative result sharpens GD II. The next calculation must derive the nontrivial lapse from the parent event horizon and optical transfer, then extend the map to neighboring worldlines and perturbations. A fifth or scale dimension enters only if a residual remains after the four-dimensional matter-filled construction is explicit.
+That negative result sharpens GD II. [Marginality Transfer and the Reciprocal Cosmological Clock](note.html?src=marginality_transfer_and_reciprocal_cosmological_clock) supplies the next constraint. If matched spherical cross-sections preserve areal radius and Misner–Sharp mass, their marginality agrees and the flat-FLRW child requires
+
+\[
+N_H^{(\mathrm{horizon})}
+=
+-\frac{R_H^P}{c}\frac{d\ln r}{dt_P}.
+\]
+
+The remaining calculation must derive the lapse independently from the parent event horizon and optical transfer, compare the two functions across the collapse, then extend the map to neighboring worldlines and perturbations. A fifth or scale dimension enters only if a residual remains after the four-dimensional matter-filled construction is explicit.
 
 GD II succeeds when one collapse geometry produces the causal map, shell correspondence, reciprocal evolution, physical clock normalization, and a regular global causal diagram.
 
