@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" data-measure="lg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dcterms.modified" content="2026-09-08">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="A quantitative Research Atlas profile of general relativity and Lambda-CDM: precision successes, confirmed predictions, observational tensions, and explanatory limits.">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/lambda-cdm.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>General Relativity + ΛCDM — Research Atlas</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/research-atlas.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#profile-title">Skip to the profile</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article class="atlas-article" aria-labelledby="profile-title">
+      <header class="atlas-hero">
+        <p class="atlas-hero__eyebrow">
+          <a href="research-atlas.html">Research Atlas</a> · Benchmark ·
+          <span class="atlas-start-here">Start here</span>
+        </p>
+        <h1 id="profile-title">General Relativity + ΛCDM</h1>
+        <p class="atlas-hero__lede">
+          Six cosmological parameters connect the primordial plasma to the galaxies around us. No rival presently
+          matches that empirical reach.
+        </p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 8, 2026 · Draft profile · Corrections invited</p>
+      </header>
+
+      <section id="at-a-glance" class="atlas-section">
+        <p class="atlas-section__label">The case for ΛCDM</p>
+        <h2>The universe becomes calculable</h2>
+        <p>
+          General relativity tells matter and spacetime how to evolve, but it does not specify the contents or initial
+          state of the universe. ΛCDM turns the theory into a working cosmology by supplying a hot primordial plasma,
+          cold dark matter, a cosmological constant, and a simple spectrum of initial fluctuations. Six fitted
+          parameters then connect the early fireball to the galaxies around us.<sup class="atlas-citation">[<a href="#lcdm-ref-1">1</a>–<a href="#lcdm-ref-3">3</a>]</sup>
+        </p>
+        <p>
+          Those six values must account for the CMB acoustic peaks, primordial element abundances, baryon acoustic
+          oscillations, gravitational lensing, and the growth of large-scale structure. They largely do. Observations
+          made with different instruments, at different epochs, and through different physical processes converge on
+          the same cosmic history.
+        </p>
+        <p>
+          The same achievement defines the model's limit. ΛCDM measures the dark components and reconstructs the
+          primordial spectrum without identifying their underlying physics. It tells us what the universe requires,
+          not why those ingredients exist. The alternatives in this Atlas begin with that unfinished explanation, but
+          none can succeed by discarding the observations ΛCDM already joins together.
+        </p>
+        <dl class="atlas-facts">
+          <div>
+            <dt>Central move</dt>
+            <dd>Evolve a statistically homogeneous universe with Einstein gravity, cold dark matter, and constant vacuum energy.</dd>
+          </div>
+          <div>
+            <dt>Six base parameters</dt>
+            <dd>Baryon and CDM densities, acoustic angular scale, optical depth, and the amplitude and tilt of primordial fluctuations.</dd>
+          </div>
+          <div>
+            <dt>Empirical strength</dt>
+            <dd>One parameter set links the CMB, BAO, nucleosynthesis, lensing, expansion, and large-scale structure.</dd>
+          </div>
+          <div>
+            <dt>Explanatory limit</dt>
+            <dd>The model measures its dark components and initial spectrum without identifying their underlying physics.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="construction" class="atlas-section">
+        <p class="atlas-section__label">The construction</p>
+        <h2>Einstein gravity becomes cosmology</h2>
+        <p>
+          Einstein's field equation relates spacetime curvature to stress-energy. Applied to an FLRW geometry, its
+          temporal constraint becomes the Friedmann equation:
+        </p>
+        <div class="atlas-equation">
+          \[
+            H^2(a)=H_0^2\left(\Omega_r a^{-4}+\Omega_m a^{-3}
+            +\Omega_k a^{-2}+\Omega_\Lambda\right).
+          \]
+        </div>
+        <p>
+          The background equation fixes how each component dilutes. Linear perturbation theory then follows the photon,
+          baryon, neutrino, and dark-matter fluctuations through recombination. A Boltzmann code converts six fitted
+          parameters into the temperature, polarization, lensing, and matter spectra tested across cosmic
+          history.<sup class="atlas-citation">[<a href="#lcdm-ref-2">2</a>, <a href="#lcdm-ref-3">3</a>]</sup>
+        </p>
+      </section>
+
+      <section id="gains" class="atlas-section">
+        <p class="atlas-section__label">Explanatory gains</p>
+        <h2>What the standard model gets right</h2>
+        <div class="atlas-gains">
+          <article class="atlas-gain">
+            <h3>One expansion history spans 14 billion years</h3>
+            <p>The same equations connect a hot radiation plasma, matter domination, recombination, structure formation, and late acceleration.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>The CMB becomes a precision calculation</h3>
+            <p>Planck constrains 18 temperature and polarization peaks. Five of the six base parameters are measured to better than 1%, and the acoustic angle to 0.03%. Optical depth \(\tau\) is the exception, with a relative uncertainty of about 13%.<sup class="atlas-citation">[<a href="#lcdm-ref-2">2</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Light elements test the early expansion</h3>
+            <p>Primordial deuterium is measured as \(({\rm D/H})_P=(2.527\pm0.030)\times10^{-5}\). The baryon density inferred from nucleosynthesis agrees with the CMB result within 2σ; lithium remains the notable exception.<sup class="atlas-citation">[<a href="#lcdm-ref-4">4</a>, <a href="#lcdm-ref-13">13</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>The primordial sound horizon reappears in galaxies</h3>
+            <p>The acoustic scale imprinted before recombination returns as the BAO standard ruler in late-time clustering, linking independent epochs and instruments.<sup class="atlas-citation">[<a href="#lcdm-ref-5">5</a>, <a href="#lcdm-ref-8">8</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Cold dark matter grows the observed cosmic web</h3>
+            <p>A pressureless nonbaryonic component begins clustering before recombination and supplies the gravitational wells needed to connect the CMB spectrum to later structure.<sup class="atlas-citation">[<a href="#lcdm-ref-2">2</a>, <a href="#lcdm-ref-10">10</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Acceleration becomes measurable</h3>
+            <p>Supernova distances established late acceleration; Λ provides the minimal constant term that fits the result within Einstein gravity.<sup class="atlas-citation">[<a href="#lcdm-ref-14">14</a>, <a href="#lcdm-ref-15">15</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence" class="atlas-section">
+        <p class="atlas-section__label">Empirical contact</p>
+        <h2>Why ΛCDM is the benchmark</h2>
+        <p>
+          Planck fits the six parameters to the CMB temperature, polarization, and lensing spectra. The resulting
+          baryon density, matter density, primordial tilt, fluctuation amplitude, and expansion rate can then be tested
+          against observations made at other redshifts using different physics. Most of those checks agree.<sup class="atlas-citation">[<a href="#lcdm-ref-2">2</a>–<a href="#lcdm-ref-5">5</a>]</sup>
+        </p>
+        <p>
+          Agreement across independent observations is ΛCDM's strongest evidence. The agreement does not identify the
+          dark-matter particle, calculate Λ from quantum theory, or derive the primordial spectrum from a theory of the
+          beginning. Big Bang cosmology reconstructs the early universe from what survives; a deeper theory must
+          explain why the reconstruction has the form we observe.
+        </p>
+      </section>
+
+      <section id="blockers" class="atlas-section">
+        <p class="atlas-section__label">Open problems</p>
+        <h2>Where ΛCDM stops explaining</h2>
+        <div class="atlas-blockers">
+          <article class="atlas-blocker">
+            <h3>1. Dark matter is measured gravitationally, not identified</h3>
+            <p>Cosmology tightly measures a cold, nonbaryonic component. Laboratory searches have not established the particle or field that carries it.<sup class="atlas-citation">[<a href="#lcdm-ref-10">10</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>2. Λ is fitted while quantum vacuum contributions remain unexplained</h3>
+            <p>ΛCDM measures a small nonzero vacuum density. Natural Planck-scale field estimates exceed it by roughly \(10^{120}\), requiring an unknown cancellation before the measured remainder is inserted into the cosmology.<sup class="atlas-citation">[<a href="#lcdm-ref-9">9</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>3. The expansion rate depends on how it is measured</h3>
+            <p>Planck + ΛCDM gives \(H_0=67.4\pm0.5\) km s\(^{-1}\) Mpc\(^{-1}\); the SH0ES Cepheid ladder gives \(73.04\pm1.04\), a reported 5σ difference. A JWST multi-method calibration gives \(69.96\pm1.05_{\rm stat}\pm1.12_{\rm sys}\), showing that the late-time side remains method-dependent.<sup class="atlas-citation">[<a href="#lcdm-ref-3">3</a>, <a href="#lcdm-ref-6">6</a>, <a href="#lcdm-ref-7">7</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>4. Constant dark energy now faces a quantitative challenge</h3>
+            <p>DESI DR2 BAO combined with the CMB and supernova samples prefers evolving dark energy over ΛCDM at 2.8–4.2σ, depending on the supernova compilation. The result is not a discovery, but \(w=-1\) has become a live test rather than a settled input.<sup class="atlas-citation">[<a href="#lcdm-ref-8">8</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>5. Initial conditions still carry the beginning</h3>
+            <p>The model begins with an exceptionally smooth, nearly flat universe and a particular perturbation spectrum. Inflation supplies candidate mechanisms, but no uniquely selected model derives the complete initial state.<sup class="atlas-citation">[<a href="#lcdm-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>6. General relativity remains classical</h3>
+            <p>Singularity theorems establish the incompleteness of broad classes of classical cosmologies and collapse solutions. ΛCDM supplies no quantum completion at those boundaries.<sup class="atlas-citation">[<a href="#lcdm-ref-11">11</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>7. Primordial lithium misses by a factor of 3.1</h3>
+            <p>Standard BBN predicts \({}^7{\rm Li/H}=(4.72\pm0.7)\times10^{-10}\), 3.1 times the abundance inferred from old metal-poor stars—a reported 4.4σ discrepancy. Stellar depletion may still carry part of the error.<sup class="atlas-citation">[<a href="#lcdm-ref-13">13</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence-ledger" class="atlas-section">
+        <p class="atlas-section__label">Evidence and tensions</p>
+        <h2>Where the numbers agree—and where they do not</h2>
+
+        <aside class="atlas-red-flag" aria-labelledby="dark-matter-red-flag">
+          <p class="atlas-score__label">A question about explanatory reach</p>
+          <h3 id="dark-matter-red-flag">Is there anything dark matter <em>doesn't</em> explain?</h3>
+          <p>
+            Dark matter connects the CMB, structure formation, clusters, lensing, and galactic motion through one
+            cosmological component. That unity is a real success. It also creates a dangerous asymmetry: almost any
+            unexplained gravitational excess can be classified as further evidence for the same invisible sector.
+          </p>
+          <p>
+            The issue becomes decidable once dark matter is specified independently. Fix the particle, interactions,
+            and primordial abundance; derive the resulting halo population and structure; then let new observations
+            test the result. Until a microscopic carrier is identified, dark matter remains both ΛCDM's most
+            productive inference and its most flexible explanatory reserve.<sup class="atlas-citation">[<a href="#lcdm-ref-10">10</a>]</sup>
+          </p>
+        </aside>
+
+        <div class="atlas-ledger">
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Best quantitative result</p>
+            <h3>Six parameters · one billion pixels · 18 acoustic peaks</h3>
+            <p>Planck measures five base parameters below 1% uncertainty and the acoustic angular scale to 0.03%.<sup class="atlas-citation">[<a href="#lcdm-ref-2">2</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__miss">
+            <p class="atlas-score__label">Hubble tension</p>
+            <h3>67.4 ± 0.5 versus 73.04 ± 1.04</h3>
+            <p>The early- and late-universe routes disagree at a reported 5σ. The middle JWST calibration prevents a clean verdict on whether the model or the distance ladder is responsible.<sup class="atlas-citation">[<a href="#lcdm-ref-3">3</a>, <a href="#lcdm-ref-6">6</a>, <a href="#lcdm-ref-7">7</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__miss">
+            <p class="atlas-score__label">Vacuum-energy problem</p>
+            <h3>Natural vacuum estimate: roughly 120 orders too large</h3>
+            <p>This is not a failed ΛCDM likelihood prediction. It is the largest numerical mismatch produced when ordinary quantum-field estimates are coupled to Einstein gravity.<sup class="atlas-citation">[<a href="#lcdm-ref-9">9</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__miss">
+            <p class="atlas-score__label">Lithium problem</p>
+            <h3>Lithium: factor 3.1 · 4.4σ</h3>
+            <p>Deuterium and helium support standard BBN, while predicted primordial lithium remains substantially above the stellar inference.<sup class="atlas-citation">[<a href="#lcdm-ref-13">13</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__miss">
+            <p class="atlas-score__label">Dark-energy tension</p>
+            <h3>Evolving dark energy preferred at 2.8–4.2σ</h3>
+            <p>The significance depends on which supernova compilation accompanies DESI BAO and the CMB. Independent confirmation could turn a tension into a failure of constant Λ.<sup class="atlas-citation">[<a href="#lcdm-ref-8">8</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">Next empirical test</p>
+            <h3>Close the sound-horizon triangle</h3>
+            <p>The CMB fixes the early sound horizon; BAO carries that ruler forward; local distances measure the present expansion directly. All three must converge without adding new early- or late-time physics.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-questions" class="atlas-section">
+        <p class="atlas-section__label">The questions</p>
+        <h2>What ΛCDM leaves for a successor</h2>
+        <table class="atlas-scorecard">
+          <tbody>
+            <tr>
+              <th scope="row">Gravity</th>
+              <td><p>General relativity passes local, solar-system, binary-pulsar, and strong-field tests, but remains unquantized.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Singularities</th>
+              <td><p>The theory diagnoses its own geodesic incompleteness without supplying the continuation.<sup class="atlas-citation">[<a href="#lcdm-ref-11">11</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Expansion</th>
+              <td><p>The expansion history is fit precisely; the magnitude and identity of Λ remain unexplained.<sup class="atlas-citation">[<a href="#lcdm-ref-3">3</a>, <a href="#lcdm-ref-9">9</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Beginning</th>
+              <td><p>Inflationary perturbations accommodate the observed spectrum, but no unique model derives the initial state.<sup class="atlas-citation">[<a href="#lcdm-ref-12">12</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Matter</th>
+              <td><p>The dark component is measured precisely through gravity while its microscopic identity remains unknown.<sup class="atlas-citation">[<a href="#lcdm-ref-10">10</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Constants</th>
+              <td><p>The six cosmological parameters and Standard Model constants are inferred from data rather than derived.</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="assessment" class="atlas-section">
+        <p class="atlas-section__label">What comes next</p>
+        <h2>The standard a successor must meet</h2>
+        <p>
+          Independent distance ladders must decide whether the Hubble measurements converge. New BAO, supernova, and
+          weak-lensing data must decide whether \(w=-1\) survives. Those observations may revise ΛCDM, but they will not
+          by themselves explain the ingredients already fitted by the model.
+        </p>
+        <p>
+          A deeper theory faces the harder task: reproduce the successful six-parameter phenomenology while deriving
+          at least one quantity that ΛCDM currently fits—the dark-matter law, vacuum scale, primordial spectrum, or
+          initial boundary. Explanation counts only if the existing agreement survives.
+        </p>
+        <p>
+          That distinction already guides mainstream research. Particle searches ask what dark matter is;
+          cosmological surveys test whether dark energy is truly constant; inflation and quantum gravity pursue the
+          missing account of the beginning. ΛCDM remains the theory to beat because it measures the unknowns so well.
+          A successor must explain them.
+        </p>
+      </section>
+
+      <section id="reading" class="atlas-section">
+        <p class="atlas-section__label">Primary reading</p>
+        <h2>Sources</h2>
+        <ol class="atlas-reading-list">
+          <li id="lcdm-ref-1">A. Einstein, <a href="https://doi.org/10.1002/andp.19163540702">“The Foundation of the General Theory of Relativity”</a> (1916).</li>
+          <li id="lcdm-ref-2">Planck Collaboration, <a href="https://arxiv.org/abs/1807.06205">“Planck 2018 Results. I. Overview and the Cosmological Legacy of Planck”</a> (2020).</li>
+          <li id="lcdm-ref-3">Planck Collaboration, <a href="https://arxiv.org/abs/1807.06209">“Planck 2018 Results. VI. Cosmological Parameters”</a> (2020).</li>
+          <li id="lcdm-ref-4">R. J. Cooke, M. Pettini and C. C. Steidel, <a href="https://arxiv.org/abs/1710.11129">“One Percent Determination of the Primordial Deuterium Abundance”</a> (2018).</li>
+          <li id="lcdm-ref-5">D. J. Eisenstein et al., <a href="https://arxiv.org/abs/astro-ph/0501171">“Detection of the Baryon Acoustic Peak in the Large-Scale Correlation Function of SDSS Luminous Red Galaxies”</a> (2005).</li>
+          <li id="lcdm-ref-6">A. G. Riess et al., <a href="https://arxiv.org/abs/2112.04510">“A Comprehensive Measurement of the Local Value of the Hubble Constant”</a> (2022).</li>
+          <li id="lcdm-ref-7">W. L. Freedman et al., <a href="https://arxiv.org/abs/2408.06153">“Status Report on the Chicago–Carnegie Hubble Program”</a> (2024).</li>
+          <li id="lcdm-ref-8">DESI Collaboration, <a href="https://arxiv.org/abs/2503.14738">“DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints”</a> (2025).</li>
+          <li id="lcdm-ref-9">S. Weinberg, <a href="https://arxiv.org/abs/astro-ph/0005265">“The Cosmological Constant Problems”</a> (2000).</li>
+          <li id="lcdm-ref-10">Particle Data Group, <a href="https://pdg.lbl.gov/2024/reviews/rpp2024-rev-dark-matter.pdf">“Dark Matter”</a>, <em>Review of Particle Physics</em> (2024).</li>
+          <li id="lcdm-ref-11">S. W. Hawking and R. Penrose, <a href="https://doi.org/10.1098/rspa.1970.0021">“The Singularities of Gravitational Collapse and Cosmology”</a> (1970).</li>
+          <li id="lcdm-ref-12">Planck Collaboration, <a href="https://arxiv.org/abs/1807.06211">“Planck 2018 Results. X. Constraints on Inflation”</a> (2020).</li>
+          <li id="lcdm-ref-13">Particle Data Group, <a href="https://pdg.lbl.gov/2022/reviews/rpp2022-rev-bbang-nucleosynthesis.pdf">“Big-Bang Nucleosynthesis”</a> (2022).</li>
+          <li id="lcdm-ref-14">A. G. Riess et al., <a href="https://arxiv.org/abs/astro-ph/9805201">“Observational Evidence from Supernovae for an Accelerating Universe and a Cosmological Constant”</a> (1998).</li>
+          <li id="lcdm-ref-15">S. Perlmutter et al., <a href="https://arxiv.org/abs/astro-ph/9812133">“Measurements of Ω and Λ from 42 High-Redshift Supernovae”</a> (1999).</li>
+        </ol>
+      </section>
+
+      <section id="corrections" class="atlas-section atlas-invitation">
+        <p class="atlas-section__label">Invitation</p>
+        <h2>Corrections are welcome</h2>
+        <p>
+          This profile separates the empirical success of ΛCDM from the physics it leaves unexplained. Cosmologists,
+          observers, and particle physicists are invited to challenge its sources, assessment, and choice of litmus test.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" data-measure="lg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dcterms.modified" content="2026-09-08">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="A quantitative Research Atlas profile of Loop Quantum Cosmology: the density bound, quantum bounce, CMB signatures, quantization choices, and decisive tests.">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/loop-quantum-cosmology.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Loop Quantum Cosmology — Research Atlas</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/research-atlas.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#profile-title">Skip to the profile</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article class="atlas-article" aria-labelledby="profile-title">
+      <header class="atlas-hero">
+        <p class="atlas-hero__eyebrow"><a href="research-atlas.html">Research Atlas</a> · Profile</p>
+        <h1 id="profile-title">Loop Quantum Cosmology</h1>
+        <p class="atlas-hero__lede">
+          Quantum geometry places an upper bound on density. In its best-controlled cosmological model, the Big Bang
+          becomes a deterministic bounce.
+        </p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 8, 2026 · Draft profile · Corrections invited</p>
+      </header>
+
+      <section id="at-a-glance" class="atlas-section">
+        <p class="atlas-section__label">The case for LQC</p>
+        <h2>The Big Bang becomes a passage</h2>
+        <p>
+          General relativity predicts its own failure. Follow an expanding universe backward and density diverges,
+          curvature becomes infinite, and the equations terminate at the Big Bang. Loop quantum cosmology asks whether
+          the failure belongs to nature—or to the assumption that geometry remains continuous at every scale.<sup class="atlas-citation">[<a href="#lqc-ref-1">1</a>–<a href="#lqc-ref-3">3</a>]</sup>
+        </p>
+        <p>
+          Quantize geometry using the loop prescription and the singularity disappears. In LQC's best-controlled
+          model, density has an absolute upper bound, contraction becomes expansion, quantum evolution remains
+          deterministic, and ordinary general relativity returns automatically at low density. One modification
+          converts the Big Bang from the beginning of physics into a passage governed by physics.<sup class="atlas-citation">[<a href="#lqc-ref-4">4</a>–<a href="#lqc-ref-6">6</a>]</sup>
+        </p>
+        <p>
+          The same construction may reach the sky. Perturbations carried through the bounce can alter the largest CMB
+          scales while preserving inflation's successful predictions elsewhere. If one of those signatures survives
+          the remaining theoretical choices and appears in independent observations, LQC would connect discrete
+          Planck-scale geometry directly to the structure of the observable universe.<sup class="atlas-citation">[<a href="#lqc-ref-8">8</a>–<a href="#lqc-ref-12">12</a>]</sup>
+        </p>
+        <dl class="atlas-facts">
+          <div>
+            <dt>Central move</dt>
+            <dd>Quantize the connection through finite holonomies rather than promote curvature directly to an operator.</dd>
+          </div>
+          <div>
+            <dt>Exact reduced-model result</dt>
+            <dd>Matter density has an absolute upper bound and quantum evolution continues through the classical singularity.</dd>
+          </div>
+          <div>
+            <dt>Effective result</dt>
+            <dd>The standard Friedmann equation acquires a factor \(1-\rho/\rho_c\), producing a bounce at \(\rho=\rho_c\).</dd>
+          </div>
+          <div>
+            <dt>Empirical status</dt>
+            <dd>Quantitative CMB templates exist, but no specifically loop-quantum signal has been confirmed.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="construction" class="atlas-section">
+        <p class="atlas-section__label">The construction</p>
+        <h2>A difference equation replaces the singular evolution</h2>
+        <p>
+          LQC applies loop quantization after reducing gravity to highly symmetric cosmological degrees of freedom.
+          The resulting theory is not yet full LQG solved on a cosmological state. Its strongest theorem belongs to
+          the standard spatially flat, isotropic model with a massless scalar field.<sup class="atlas-citation">[<a href="#lqc-ref-4">4</a>, <a href="#lqc-ref-5">5</a>, <a href="#lqc-ref-12">12</a>]</sup>
+        </p>
+        <p>
+          In classical flat FLRW cosmology, the Friedmann constraint lets density diverge as the scale factor shrinks:
+        </p>
+        <div class="atlas-equation">
+          \[
+            H^2=\frac{8\pi G}{3}\rho.
+          \]
+        </div>
+        <p>
+          Standard improved-dynamics LQC represents the connection by holonomies around loops whose physical area is
+          tied to the area gap \(\Delta\). The Hamiltonian constraint becomes a finite-difference equation in volume.
+          For semiclassical states, its effective trajectory is captured in natural units, where <em>c</em> = ℏ = 1,
+          by<sup class="atlas-citation">[<a href="#lqc-ref-4">4</a>–<a href="#lqc-ref-6">6</a>]</sup>
+        </p>
+        <div class="atlas-equation">
+          \[
+            H^2=\frac{8\pi G}{3}\rho
+            \left(1-\frac{\rho}{\rho_c}\right),
+            \qquad
+            \rho_c=\frac{3}{8\pi G\gamma^2\lambda^2}
+            \approx0.41\,\rho_{\rm Pl}.
+          \]
+        </div>
+        <p>
+          Here \(\gamma\) is the Barbero–Immirzi parameter and \(\lambda^2=\Delta\). At low density the correction
+          vanishes and classical GR returns. At \(\rho=\rho_c\), \(H=0\): contraction stops at finite volume and
+          expansion begins. In the exactly soluble massless-scalar model, the density operator has the same absolute
+          upper bound and the bounce is generic across the physical state space.<sup class="atlas-citation">[<a href="#lqc-ref-5">5</a>]</sup>
+        </p>
+        <p>
+          The equation is therefore more than a phenomenological bounce formula, but less than a universal field
+          equation for arbitrary quantum spacetime. Its domain is the standard improved-dynamics, homogeneous sector.
+        </p>
+      </section>
+
+      <section id="perturbations" class="atlas-section">
+        <p class="atlas-section__label">From bounce to sky</p>
+        <h2>The observable question begins after singularity resolution</h2>
+        <p>
+          A homogeneous bounce leaves no image by itself. Observations require perturbations to propagate across the
+          Planck regime and through inflation. LQC has developed several frameworks for that calculation, including
+          dressed-metric, hybrid, and deformed-algebra approaches. Each preserves the well-tested inflationary
+          spectrum when observable modes remain far below the quantum-curvature scale; each can modify the largest
+          scales when those modes feel the bounce.<sup class="atlas-citation">[<a href="#lqc-ref-8">8</a>, <a href="#lqc-ref-12">12</a>]</sup>
+        </p>
+        <p>
+          One dressed-metric realization selects a background state and a perturbation state using additional
+          principles. It predicts power suppression below \(k_0\approx3.6\times10^{-4}\,\mathrm{Mpc}^{-1}\), while
+          preserving the standard spectrum at smaller angular scales. Applied to Planck data, the model reduces the
+          large-angle \(S_{1/2}\) statistic from \(42{,}496.5\) to \(14{,}308.05\), compared with the observed
+          \(1{,}209.18\), and moves \(A_L=1\) inside the reported \(1\sigma\) contour.<sup class="atlas-citation">[<a href="#lqc-ref-10">10</a>]</sup>
+        </p>
+        <p>
+          That is a quantitative postdiction, not a confirmed prediction. The paper itself describes the state-selection
+          principles as tentative, the \(S_{1/2}\) covariance analysis as incomplete, and the individual anomalies as
+          only \(2\)–\(3\sigma\). Other LQC realizations can produce different infrared spectra or use
+          non-Gaussian correlations instead of direct power suppression.<sup class="atlas-citation">[<a href="#lqc-ref-10">10</a>–<a href="#lqc-ref-12">12</a>]</sup>
+        </p>
+      </section>
+
+      <section id="gains" class="atlas-section">
+        <p class="atlas-section__label">Explanatory gains</p>
+        <h2>What LQC adds to the early universe</h2>
+        <div class="atlas-gains">
+          <article class="atlas-gain">
+            <h3>The singularity is replaced by evolution</h3>
+            <p>The solvable model carries a physical state deterministically from contraction through the Planck regime into expansion.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>The bounce density is bounded</h3>
+            <p>The improved quantization removes the earlier possibility of low-density bounces and ties quantum-gravity effects to a Planck-scale density.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>GR returns without tuning</h3>
+            <p>The correction is negligible when \(\rho/\rho_c\ll1\), preserving classical cosmology over its tested domain.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Initial conditions gain a natural surface</h3>
+            <p>The bounce supplies a finite surface on which measures and quantum states can be posed. For a quadratic potential and the chosen measure, sufficient slow-roll inflation has probability close to one.<sup class="atlas-citation">[<a href="#lqc-ref-7">7</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Quantum gravity reaches calculable observables</h3>
+            <p>The programme produces scalar, tensor, polarization, and non-Gaussian templates rather than stopping at singularity avoidance.<sup class="atlas-citation">[<a href="#lqc-ref-8">8</a>–<a href="#lqc-ref-12">12</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="blockers" class="atlas-section">
+        <p class="atlas-section__label">Open problems</p>
+        <h2>Where the result stops being unique</h2>
+        <div class="atlas-blockers">
+          <article class="atlas-blocker">
+            <h3>1. Reduction comes before quantization</h3>
+            <p>Standard LQC first restricts GR to homogeneous degrees of freedom and then quantizes. Deriving the same sector, corrections, and physical inner product from full LQG remains unfinished.<sup class="atlas-citation">[<a href="#lqc-ref-3">3</a>, <a href="#lqc-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>2. Perturbation dynamics is not unique</h3>
+            <p>Dressed-metric, hybrid, and deformed-algebra programmes implement quantum geometry differently. Agreement in the infrared does not guarantee the same Planck-era propagation or primordial spectrum.<sup class="atlas-citation">[<a href="#lqc-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>3. State selection controls visibility</h3>
+            <p>The bounce can be observationally invisible or can alter the lowest CMB multipoles. The result depends on the background quantum state, perturbation vacuum, inflationary potential, and number of pre-inflationary e-folds.<sup class="atlas-citation">[<a href="#lqc-ref-8">8</a>, <a href="#lqc-ref-10">10</a>, <a href="#lqc-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>4. Trans-Planckian modes test the approximation</h3>
+            <p>Some modes traced through the bounce have physical wavelengths below the curvature or discreteness scale. Their treatment can exceed the regime in which perturbative quantum fields on an effective background are controlled.<sup class="atlas-citation">[<a href="#lqc-ref-8">8</a>, <a href="#lqc-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>5. The anomaly target is statistically weak</h3>
+            <p>Large-angle CMB anomalies are affected by cosmic variance, masking, a posteriori statistic choices, and covariance. Improving their fit is interesting; it cannot establish quantum geometry without an independent forecast.<sup class="atlas-citation">[<a href="#lqc-ref-10">10</a>, <a href="#lqc-ref-11">11</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>6. The matter sector remains imported</h3>
+            <p>Most phenomenology assumes an inflaton and a selected potential. LQC changes the geometry near the bounce but does not yet derive the Standard Model, dark matter, dark energy, or the inflationary sector.<sup class="atlas-citation">[<a href="#lqc-ref-7">7</a>, <a href="#lqc-ref-10">10</a>, <a href="#lqc-ref-12">12</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence-ledger" class="atlas-section">
+        <p class="atlas-section__label">Evidence and tests</p>
+        <h2>The bounce-to-CMB test</h2>
+
+        <div class="atlas-ledger">
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Exact reduced-model result</p>
+            <h3>\(\rho\leq\rho_c\approx0.41\,\rho_{\rm Pl}\)</h3>
+            <p>In soluble flat FLRW LQC with a massless scalar clock, the density operator has an absolute upper bound and generic physical states bounce.<sup class="atlas-citation">[<a href="#lqc-ref-5">5</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Quantitative postdiction</p>
+            <h3>\(S_{1/2}: 42{,}496.5\rightarrow14{,}308.05\)</h3>
+            <p>One dressed-metric realization moves the predicted large-angle statistic toward Planck's \(1{,}209.18\), while preserving the high-\(\ell\) spectrum. Its full covariance significance was not calculated.<sup class="atlas-citation">[<a href="#lqc-ref-10">10</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Cross-sector consistency</p>
+            <h3>\(1.26&lt;\Delta/\ell_{\rm Pl}^2&lt;6.47\)</h3>
+            <p>The same CMB analysis finds the black-hole-entropy value \(\Delta=5.17\,\ell_{\rm Pl}^2\) inside its 68% interval. The best-fit value is \(2.18\,\ell_{\rm Pl}^2\); this is a fitted consistency check, not an independent confirmation.<sup class="atlas-citation">[<a href="#lqc-ref-10">10</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">Decisive test</p>
+            <h3>Freeze the quantum state before the next sky map</h3>
+            <p>Select one perturbation framework and initial-state principle without using the target anomalies. Forecast the correlated low-\(\ell\) TT, TE, EE, BB, lensing, and bispectrum signatures; then test the fixed template on independent polarization and large-scale-structure data.</p>
+          </article>
+          <article class="atlas-ledger__gap">
+            <p class="atlas-score__label">Missing calculation</p>
+            <h3>Derive cosmology from full LQG</h3>
+            <p>Recover the reduced Hilbert space, area gap, effective constraint, perturbation algebra, and semiclassical states from the full theory strongly enough that the observable template is no longer one member of a family.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-questions" class="atlas-section">
+        <p class="atlas-section__label">The questions</p>
+        <h2>What LQC answers—and leaves open</h2>
+        <table class="atlas-scorecard">
+          <tbody>
+            <tr>
+              <th scope="row">Gravity</th>
+              <td><p>Loop methods provide a background-independent quantization programme and discrete kinematical geometry. The cosmological reduction is not yet uniquely derived from the full dynamics.<sup class="atlas-citation">[<a href="#lqc-ref-1">1</a>–<a href="#lqc-ref-3">3</a>, <a href="#lqc-ref-12">12</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Singularities</th>
+              <td><p>The Big Bang singularity is resolved cleanly in important symmetric models. That achievement has not become a general theorem for inhomogeneous quantum gravity.<sup class="atlas-citation">[<a href="#lqc-ref-4">4</a>–<a href="#lqc-ref-6">6</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Expansion</th>
+              <td><p>The bounce supplies super-inflation and can prepare slow roll, but the observed inflationary and late-accelerating phases still depend on imported potentials and Λ.<sup class="atlas-citation">[<a href="#lqc-ref-7">7</a>, <a href="#lqc-ref-10">10</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Beginning</th>
+              <td><p>The hot Big Bang gains a contracting predecessor and finite-density transition. The state of that predecessor and the survival of its information remain model-dependent.<sup class="atlas-citation">[<a href="#lqc-ref-5">5</a>, <a href="#lqc-ref-8">8</a>, <a href="#lqc-ref-12">12</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Matter</th>
+              <td><p>LQC quantizes cosmological geometry; realistic matter content, the inflaton potential, dark matter, and baryogenesis remain separate inputs.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Constants</th>
+              <td><p>The area gap fixes a new Planck-scale density once \(\gamma\) is specified. The Standard Model parameters, Λ, and cosmological initial data are not derived.<sup class="atlas-citation">[<a href="#lqc-ref-4">4</a>, <a href="#lqc-ref-10">10</a>]</sup></p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="assessment" class="atlas-section">
+        <p class="atlas-section__label">What comes next</p>
+        <h2>Make the observable template unavoidable</h2>
+        <p>
+          LQC’s clearest achievement is more specific than “singularity resolution.” In its best-controlled model, the
+          density bound is exact, the bounce is generic, quantum evolution is deterministic, and the low-density limit
+          recovers GR.
+        </p>
+        <p>
+          LQC can also generate primordial signatures and has produced intriguing fits to large-angle CMB anomalies,
+          but different perturbation frameworks and state choices can move, reshape, or erase them. The next advance
+          must connect full loop quantum gravity to a single cosmological forecast made before the data are examined.
+        </p>
+      </section>
+
+      <section id="reading" class="atlas-section">
+        <p class="atlas-section__label">Primary reading</p>
+        <h2>Sources</h2>
+        <ol class="atlas-reading-list">
+          <li id="lqc-ref-1">C. Rovelli and L. Smolin, <a href="https://arxiv.org/abs/gr-qc/9411005">“Discreteness of Area and Volume in Quantum Gravity”</a> (1995).</li>
+          <li id="lqc-ref-2">A. Ashtekar and J. Lewandowski, <a href="https://arxiv.org/abs/gr-qc/0404018">“Background Independent Quantum Gravity: A Status Report”</a> (2004).</li>
+          <li id="lqc-ref-3">M. Bojowald, <a href="https://arxiv.org/abs/gr-qc/0601085">“Loop Quantum Cosmology”</a> (2008).</li>
+          <li id="lqc-ref-4">A. Ashtekar, T. Pawlowski and P. Singh, <a href="https://arxiv.org/abs/gr-qc/0607039">“Quantum Nature of the Big Bang: Improved Dynamics”</a> (2006).</li>
+          <li id="lqc-ref-5">A. Ashtekar, A. Corichi and P. Singh, <a href="https://arxiv.org/abs/0710.3565">“Robustness of Key Features of Loop Quantum Cosmology”</a> (2008).</li>
+          <li id="lqc-ref-6">A. Ashtekar, <a href="https://arxiv.org/abs/0812.4703">“Singularity Resolution in Loop Quantum Cosmology: A Brief Overview”</a> (2009).</li>
+          <li id="lqc-ref-7">A. Ashtekar and D. Sloan, <a href="https://arxiv.org/abs/1103.2475">“Probability of Inflation in Loop Quantum Cosmology”</a> (2011).</li>
+          <li id="lqc-ref-8">I. Agullo, A. Ashtekar and W. Nelson, <a href="https://arxiv.org/abs/1211.1354">“An Extension of the Quantum Theory of Cosmological Perturbations to the Planck Era”</a> (2013).</li>
+          <li id="lqc-ref-9">A. Ashtekar and A. Barrau, <a href="https://arxiv.org/abs/1504.07559">“Loop Quantum Cosmology: From Pre-inflationary Dynamics to Observations”</a> (2015).</li>
+          <li id="lqc-ref-10">A. Ashtekar, B. Gupt and V. Sreenath, <a href="https://arxiv.org/abs/2103.14568">“Cosmic Tango Between the Very Small and the Very Large”</a> (2021).</li>
+          <li id="lqc-ref-11">I. Agullo, D. Kranas and V. Sreenath, <a href="https://arxiv.org/abs/2105.12993">“Anomalies in the Cosmic Microwave Background and Their Non-Gaussian Origin in Loop Quantum Cosmology”</a> (2021).</li>
+          <li id="lqc-ref-12">I. Agullo, A. Wang and E. Wilson-Ewing, <a href="https://arxiv.org/abs/2301.10215">“Loop Quantum Cosmology: Relation Between Theory and Observations”</a> (2023).</li>
+          <li id="lqc-ref-13">M. Bojowald, G. Calcagni and S. Tsujikawa, <a href="https://arxiv.org/abs/1101.5391">“Observational Constraints on Loop Quantum Cosmology”</a> (2011).</li>
+        </ol>
+      </section>
+
+      <section id="corrections" class="atlas-section atlas-invitation">
+        <p class="atlas-section__label">Invitation</p>
+        <h2>Corrections are welcome</h2>
+        <p>
+          This profile distinguishes theorem-level results in soluble LQC, effective background dynamics, and
+          framework-dependent perturbation phenomenology. Comments from Abhay Ashtekar, Martin Bojowald, Parampreet
+          Singh, Ivan Agullo, Edward Wilson-Ewing, and other LQC researchers will be incorporated with attribution.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>

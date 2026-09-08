@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-measure="lg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dcterms.modified" content="2026-09-08">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="A comparative atlas of modern cosmological and quantum-gravity programs: the defects that motivate them, the explanations they offer, their empirical contact, and their remaining costs.">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/research-atlas.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Research Atlas — Fundamental Cosmology</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/research-atlas.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#atlas-title">Skip to the atlas</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article class="atlas-article" aria-labelledby="atlas-title">
+      <header class="atlas-hero">
+        <p class="atlas-hero__eyebrow">Research Atlas</p>
+        <h1 id="atlas-title">The State of Fundamental Cosmology</h1>
+        <p class="atlas-hero__lede">
+          The leading alternatives to ΛCDM, presented through the problems they were built to solve.
+        </p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 8, 2026</p>
+      </header>
+
+      <div id="introduction" class="atlas-section atlas-introduction">
+        <p>
+          Modern cosmology is in the odd position of having a remarkably successful standard model whose dominant
+          ingredients remain unidentified. ΛCDM describes the expansion of the universe, the cosmic microwave
+          background, the abundances of the light elements, gravitational lensing, and the growth of cosmic structure
+          with impressive precision. It is the theory to beat.
+        </p>
+        <p>
+          Its success has made the remaining questions harder to ignore. We infer dark matter from its gravitational
+          effects but do not know what it is. We observe accelerated expansion but cannot explain why empty space has
+          the required energy density. Inflation shows how a smooth universe could acquire its first fluctuations, yet
+          no experiment has selected the field or potential that caused it. At the Big Bang and inside black holes,
+          general relativity reaches a singularity and falls silent.
+        </p>
+        <p>
+          The theories collected here begin at those loose ends. Conformal gravity changes the gravitational law.
+          Einstein–Cartan theory gives intrinsic spin a geometric role. Loop quantum cosmology replaces the singular
+          beginning with a quantum bounce. Conformal cyclic cosmology supplies the Big Bang with a prehistory. CSBHI
+          treats collapse and expansion as reciprocal views of one geometry. None has displaced ΛCDM. Each makes a
+          different wager about which part of the standard picture is provisional—and each must preserve the
+          observations that made the standard picture successful.
+        </p>
+      </div>
+
+      <section id="open-questions" class="atlas-section">
+        <h2>Six open questions</h2>
+        <p>
+          Every theory that follows changes some part of the standard account. The comparison turns on six questions
+          that general relativity and ΛCDM leave open.
+        </p>
+        <data-wrapper src="views/atlas/open-questions.html"></data-wrapper>
+        <p class="atlas-follow-link">
+          <a href="lambda-cdm.html">Begin with the ΛCDM profile →</a>
+        </p>
+      </section>
+
+      <section id="profiles" class="atlas-section">
+        <h2>Theories</h2>
+        <data-wrapper src="views/atlas/theory-cards.html"></data-wrapper>
+      </section>
+
+      <section id="corrections" class="atlas-section atlas-invitation">
+        <h2>Corrections and responses</h2>
+        <p>
+          Each profile is open to correction by researchers who know the programme firsthand. Substantive revisions
+          will be incorporated with attribution.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>

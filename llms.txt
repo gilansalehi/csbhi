@@ -65,6 +65,12 @@ When debugging your interpretation, use the guide's claim ledger and interpretat
 
 ## Project pages
 
+- [Research Atlas](https://www.gilansalehi.com/csbhi/research-atlas.html): Comparative guide to the defects that motivate leading cosmological and quantum-gravity programs, the changes they propose, their explanatory gains, empirical contact, costs, and decisive tests. The theories are not numerically ranked.
+- [Research Atlas — General Relativity + ΛCDM](https://www.gilansalehi.com/csbhi/lambda-cdm.html) — Start here: Defines the observational benchmark and the six open questions used to orient the alternative-theory profiles.
+- [Research Atlas — Conformal Cyclic Cosmology](https://www.gilansalehi.com/csbhi/conformal-cyclic-cosmology.html): CCC's central construction, its explanatory gains over ΛCDM, its empirical claims, and the crossover problems that remain open.
+- [Research Atlas — Conformal Gravity](https://www.gilansalehi.com/csbhi/conformal-gravity.html): The Weyl-squared field theory, its rotation-curve and RAR results, its cosmological claims, and the precision-cosmology, matter-coupling, lensing, and quantum questions still open.
+- [Research Atlas — Einstein–Cartan Cosmology](https://www.gilansalehi.com/csbhi/einstein-cartan.html): The exact spin–torsion extension of GR, Popławski's black-hole-universe realization, quantitative bounce results, primordial-spectrum test, and unfinished collapse geometry.
+- [Research Atlas — Loop Quantum Cosmology](https://www.gilansalehi.com/csbhi/loop-quantum-cosmology.html): The exact density bound and bounce in soluble LQC, its effective Friedmann equation, quantitative CMB postdictions, competing perturbation frameworks, and the open derivation from full loop quantum gravity.
 - [CSBHI project overview](https://www.gilansalehi.com/csbhi/): Publication map, progress, open problems, and further reading.
 - [Review Packet I](https://www.gilansalehi.com/csbhi/review.html): Guided professional-review packet separating the foundational ansatz, conditional results, theorem, correspondence, prediction, and open construction problems.
 - [Review Packet II](https://www.gilansalehi.com/csbhi/penrose.html): The recursive low-Weyl hypothesis and the relation between CSBHI and Penrose's Weyl Curvature Hypothesis.

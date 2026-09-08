@@ -1,0 +1,34 @@
+<script type="module" data-module="@csbhi/atlas/theory-cards">
+  import { getAtlasTheories } from 'project/atlas-theories.js';
+
+  export default () => ({ theories: getAtlasTheories() });
+</script>
+
+<div class="atlas-grid">
+  <template *list="theories">
+    <article class="atlas-theory-card">
+      <header class="atlas-theory-card__header">
+        <h3><a $href="./href" $text="./title"></a></h3>
+        <template *if="./startHere">
+          <span class="atlas-start-here">Start here</span>
+        </template>
+      </header>
+
+      <div class="atlas-theory-card__body">
+        <p $text="./case"></p>
+        <p $text="./standing"></p>
+        <p class="atlas-theory-card__next" $text="./test"></p>
+      </div>
+
+      <a class="atlas-status" $href="./href" $text="./profileLabel"></a>
+    </article>
+  </template>
+  <article class="atlas-theory-card atlas-theory-card--planned">
+    <h3>The wider field</h3>
+    <p>
+      Future profiles will cover asymptotic safety, string/M-theory, causal dynamical triangulations, holography, and
+      causal sets.
+    </p>
+    <span class="atlas-status">In preparation</span>
+  </article>
+</div>

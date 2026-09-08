@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" data-measure="lg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dcterms.modified" content="2026-09-08">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="A quantitative Research Atlas profile of Einstein–Cartan cosmology and Popławski's black-hole-universe realization: torsion, spin-fluid bounces, predictions, and open calculations.">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/einstein-cartan.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Einstein–Cartan Cosmology — Research Atlas</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/research-atlas.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#profile-title">Skip to the profile</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article class="atlas-article" aria-labelledby="profile-title">
+      <header class="atlas-hero">
+        <p class="atlas-hero__eyebrow"><a href="research-atlas.html">Research Atlas</a> · Profile</p>
+        <h1 id="profile-title">Einstein–Cartan Cosmology</h1>
+        <p class="atlas-hero__lede">
+          Matter carries intrinsic spin as well as energy. Einstein–Cartan gravity gives that spin a geometric
+          response, turning fermion density into resistance against singular collapse.
+        </p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 8, 2026 · Draft profile · Corrections invited</p>
+      </header>
+
+      <section id="at-a-glance" class="atlas-section">
+        <p class="atlas-section__label">The case for Einstein–Cartan</p>
+        <h2>Matter tells spacetime how to twist</h2>
+        <p>
+          General relativity teaches spacetime to respond to energy and momentum, but matter carries intrinsic angular
+          momentum as well. Einstein–Cartan gravity completes the geometry: energy curves spacetime, while spin
+          produces torsion. No new long-range field is required, and ordinary vacuum gravity remains exactly
+          Einsteinian.<sup class="atlas-citation">[<a href="#ec-ref-1">1</a>, <a href="#ec-ref-2">2</a>]</sup>
+        </p>
+        <p>
+          Torsion hides at ordinary density and becomes dominant precisely where classical gravity predicts a
+          singularity. Compress fermions far enough and their spin generates a repulsive contact interaction that
+          grows faster than radiation or dust. Collapse can stop at finite density, pass through a bounce, and enter
+          an expanding phase without an exotic scalar field.<sup class="atlas-citation">[<a href="#ec-ref-3">3</a>, <a href="#ec-ref-4">4</a>]</sup>
+        </p>
+        <p>
+          Nikodem Popławski follows that mechanism inside a black hole. The collapsing interior becomes a closed child
+          universe; particle production supplies matter and entropy, and the bounce can open into inflation. If the
+          construction closes, the spin already carried by ordinary fermions removes the singularity and turns black
+          holes into engines of cosmogenesis.<sup class="atlas-citation">[<a href="#ec-ref-5">5</a>–<a href="#ec-ref-7">7</a>]</sup>
+        </p>
+        <dl class="atlas-facts">
+          <div>
+            <dt>Central move</dt>
+            <dd>Make the affine connection independent and let intrinsic spin source its antisymmetric part.</dd>
+          </div>
+          <div>
+            <dt>Exact result</dt>
+            <dd>Torsion is algebraically fixed by spin and produces a gravitational four-fermion interaction.</dd>
+          </div>
+          <div>
+            <dt>Cosmological result</dt>
+            <dd>In an unpolarized spin fluid, the negative spin correction scales as \(a^{-6}\) and can create a finite-density bounce.</dd>
+          </div>
+          <div>
+            <dt>Empirical status</dt>
+            <dd>Quantitative background and fluctuation models exist; no distinctive torsion signal has been confirmed.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="construction" class="atlas-section">
+        <p class="atlas-section__label">The construction</p>
+        <h2>One extra field equation, no propagating torsion</h2>
+        <p>
+          Varying the Einstein–Hilbert action with respect to the metric gives the curvature equation. Varying it with
+          respect to the independent connection gives the Cartan equation. In the minimal theory, the second equation
+          is algebraic:
+        </p>
+        <div class="atlas-equation">
+          \[
+            \text{torsion}=\kappa\times\text{spin density},
+            \qquad \kappa=\frac{8\pi G}{c^4}.
+          \]
+        </div>
+        <p>
+          Torsion therefore has no vacuum wave of its own. Substitution back into the metric equation adds terms
+          quadratic in spin. For a randomly oriented Weyssenhoff fluid, the derivative terms average away and the
+          effective density and pressure become<sup class="atlas-citation">[<a href="#ec-ref-2">2</a>, <a href="#ec-ref-3">3</a>]</sup>
+        </p>
+        <div class="atlas-equation">
+          \[
+            \epsilon_{\rm eff}=\epsilon-\frac{\kappa s^2}{4},
+            \qquad
+            p_{\rm eff}=p-\frac{\kappa s^2}{4}.
+          \]
+        </div>
+        <p>
+          Fermion number density dilutes as \(n\propto a^{-3}\), while \(s^2\propto n^2\). The torsion contribution is
+          consequently negative and grows faster during contraction than radiation or dust:
+        </p>
+        <div class="atlas-equation">
+          \[
+            \epsilon_S=-\frac{\kappa s^2}{4}\propto-a^{-6}.
+          \]
+        </div>
+        <p>
+          At ordinary density the correction disappears. During extreme contraction it can cancel the positive matter
+          density at a nonzero scale factor, forcing \(H=0\) before a singularity forms. The bounce follows from the
+          chosen spin-fluid closure; it is not a theorem for every possible source in every Einstein–Cartan spacetime.
+        </p>
+      </section>
+
+      <section id="black-hole-universe" class="atlas-section">
+        <p class="atlas-section__label">Black-hole cosmogenesis</p>
+        <h2>Popławski's strongest realization</h2>
+        <p>
+          Popławski identifies the contracting branch with matter collapsing inside a parent black hole. Spin–torsion
+          repulsion replaces the singular endpoint with a bounce; the expanding branch becomes a new, causally hidden
+          region. Particle production near the bounce supplies matter and entropy and can generate a finite
+          inflationary phase without an inflaton.<sup class="atlas-citation">[<a href="#ec-ref-3">3</a>–<a href="#ec-ref-5">5</a>]</sup>
+        </p>
+        <p>
+          The homogeneous model is analytically clean. The black-hole interior is not. A Schwarzschild interior is
+          anisotropic, and its shear can grow faster than the \(a^{-6}\) spin term. Popławski's Kantowski–Sachs
+          calculation finds that a bounce then requires particle production to increase the fermion density rapidly
+          enough for torsion to overtake shear. Inflation subsequently drives isotropization.<sup class="atlas-citation">[<a href="#ec-ref-7">7</a>]</sup>
+        </p>
+        <p>
+          The paper marks its own approximation: a successful nonsingular interior never reaches exact vacuum
+          Kantowski–Sachs geometry. A more general collapsing solution must evolve toward a closed FLRW child. That
+          spacetime-level construction remains the central geometric calculation.
+        </p>
+      </section>
+
+      <section id="gains" class="atlas-section">
+        <p class="atlas-section__label">Explanatory gains</p>
+        <h2>What Einstein–Cartan adds to GR</h2>
+        <div class="atlas-gains">
+          <article class="atlas-gain">
+            <h3>Spin becomes a gravitational source</h3>
+            <p>General relativity couples geometry to stress-energy. Einstein–Cartan completes the parallel between translation and rotation by coupling torsion to intrinsic angular momentum.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>The GR limit is automatic</h3>
+            <p>Minimal torsion is algebraic and vanishes with spin density. The theory preserves every vacuum solution of GR without introducing a second long-range gravitational field.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Singularity avoidance has a material cause</h3>
+            <p>Repulsion does not come from an inserted exotic scalar potential. The same fermions already present in matter source the high-density correction.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Collapse can acquire a cosmological continuation</h3>
+            <p>The contracting and expanding branches give black-hole cosmology a concrete dynamical mechanism: collapse, finite-density bounce, child expansion.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Several early-universe problems share one sector</h3>
+            <p>Torsion and particle production have been used to address the singularity, flatness, horizon, entropy, inflation, and matter–antimatter problems within one research program.<sup class="atlas-citation">[<a href="#ec-ref-3">3</a>, <a href="#ec-ref-5">5</a>, <a href="#ec-ref-6">6</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="blockers" class="atlas-section">
+        <p class="atlas-section__label">Open problems</p>
+        <h2>What remains unresolved</h2>
+        <div class="atlas-blockers">
+          <article class="atlas-blocker">
+            <h3>1. The bounce is matter-model dependent</h3>
+            <p>The \(a^{-6}\) correction follows from an unpolarized spin-fluid average with conserved fermion number. Different spin tensors, polarization assumptions, particle production laws, and microscopic fermion states change the effective source. Einstein–Cartan supplies the coupling; the cosmological closure still has to be earned.<sup class="atlas-citation">[<a href="#ec-ref-2">2</a>, <a href="#ec-ref-3">3</a>, <a href="#ec-ref-8">8</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>2. Shear can beat torsion</h3>
+            <p>In the anisotropic black-hole model, shear grows faster during contraction than the conserved spin density. Torsion alone then fails to guarantee a bounce. The successful branch needs sufficiently strong particle production.<sup class="atlas-citation">[<a href="#ec-ref-7">7</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>3. The particle-production coefficient is not derived</h3>
+            <p>A phenomenological coefficient \(\beta\) controls whether the universe remains singular, bounces and inflates, cycles, or enters eternal inflation. For Standard Model degrees of freedom the model finds \(\beta_{\rm cr}\approx1/929\), but no completed quantum calculation fixes the realized \(\beta\).<sup class="atlas-citation">[<a href="#ec-ref-5">5</a>, <a href="#ec-ref-7">7</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>4. The black-hole-to-FLRW geometry remains approximate</h3>
+            <p>The homogeneous bounce and the anisotropic interior are controlled models, not one finished collapse spacetime. Rotating collapse, trapped surfaces, topology change, junction geometry, and the approach to a closed FLRW region must be solved together.<sup class="atlas-citation">[<a href="#ec-ref-5">5</a>, <a href="#ec-ref-7">7</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>5. The primordial spectrum is not yet a blind forecast</h3>
+            <p>The scale-factor uncertainty calculation obtains the order of the CMB temperature fluctuation as a function of \(\beta\); the observed \(\delta T/T\sim2\times10^{-5}\) then determines that parameter. Separate work finds a compatible inflationary regime. A fixed microphysical \(\beta\) and a full scalar–tensor transfer calculation are still needed for a genuine out-of-sample prediction.<sup class="atlas-citation">[<a href="#ec-ref-6">6</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>6. The clean GR limit hides the new physics</h3>
+            <p>Minimal torsion vanishes in vacuum and becomes important only far above nuclear density. That correspondence is theoretically attractive, but it leaves no established low-energy anomaly that requires Einstein–Cartan rather than GR.<sup class="atlas-citation">[<a href="#ec-ref-2">2</a>, <a href="#ec-ref-3">3</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence-ledger" class="atlas-section">
+        <p class="atlas-section__label">Evidence and tests</p>
+        <h2>The primordial-spectrum test</h2>
+
+        <div class="atlas-ledger">
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Quantitative result</p>
+            <h3>\(\Omega_S=-8.6\times10^{-70}\)</h3>
+            <p>Using the relic-neutrino density, the 2010 model obtains a present torsion density parameter with no new gravitational coupling and a finite minimum radius \(a_{\min}\approx9\,\mu\mathrm m\). The numerical radius inherits that paper's closed-universe normalization and cosmological inputs.<sup class="atlas-citation">[<a href="#ec-ref-3">3</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Quantitative threshold</p>
+            <h3>\(\beta_{\rm cr}\approx1/929\)</h3>
+            <p>For the assumed Standard Model degrees of freedom, this separates finite inflation from the eternal-inflation branch. The actual production coefficient remains a phenomenological input.<sup class="atlas-citation">[<a href="#ec-ref-5">5</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">Decisive test</p>
+            <h3>Predict the CMB before fitting \(\beta\)</h3>
+            <p>Derive the particle-production law microscopically, freeze \(\beta\), and calculate \(A_s\), \(n_s\), its running, non-Gaussianity, and \(r\) through the bounce. The targets include \(n_s=0.9649\pm0.0042\) and \(r_{0.05}&lt;0.036\).<sup class="atlas-citation">[<a href="#ec-ref-9">9</a>, <a href="#ec-ref-10">10</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__gap">
+            <p class="atlas-score__label">Missing calculation</p>
+            <h3>Complete rotating collapse</h3>
+            <p>A Kerr-like parent must evolve through spin-bearing, particle-producing matter into the expanding child without borrowing homogeneity or isotropy at the stage where both are under test.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-questions" class="atlas-section">
+        <p class="atlas-section__label">The questions</p>
+        <h2>What Einstein–Cartan answers—and leaves open</h2>
+        <table class="atlas-scorecard">
+          <tbody>
+            <tr>
+              <th scope="row">Gravity</th>
+              <td><p>Intrinsic spin receives a geometric source equation and GR is recovered in vacuum. The theory remains classical and does not quantize gravity.<sup class="atlas-citation">[<a href="#ec-ref-1">1</a>, <a href="#ec-ref-2">2</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Singularities</th>
+              <td><p>Specified spin-fluid models replace singularity formation with a bounce. Anisotropic collapse shows why the result is substantial but not universal.<sup class="atlas-citation">[<a href="#ec-ref-4">4</a>, <a href="#ec-ref-7">7</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Expansion</th>
+              <td><p>Torsion can drive an early accelerated phase, but the observed late acceleration still requires Λ or another sector.<sup class="atlas-citation">[<a href="#ec-ref-5">5</a>, <a href="#ec-ref-8">8</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Beginning</th>
+              <td><p>The hot beginning gains a contracting past and a finite-density bounce; its black-hole origin and perturbation transfer remain incomplete.<sup class="atlas-citation">[<a href="#ec-ref-3">3</a>–<a href="#ec-ref-7">7</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Matter</th>
+              <td><p>Fermion spin, particle creation, entropy, and possible matter asymmetry enter one mechanism. The required production law is not yet derived from the Standard Model in the collapsing geometry.<sup class="atlas-citation">[<a href="#ec-ref-5">5</a>–<a href="#ec-ref-7">7</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Constants</th>
+              <td><p>The minimal torsion coupling is fixed by \(G\), but the cosmological model retains Λ, particle parameters, and the production coefficient rather than deriving them.<sup class="atlas-citation">[<a href="#ec-ref-3">3</a>, <a href="#ec-ref-5">5</a>]</sup></p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="assessment" class="atlas-section">
+        <p class="atlas-section__label">What comes next</p>
+        <h2>From a bounce to predictions</h2>
+        <p>
+          Einstein–Cartan theory earns attention before cosmology enters the story. Energy has intrinsic angular
+          momentum, and the geometry has a natural place to put it. The extension introduces no propagating vacuum
+          field, leaves tested GR intact, and becomes consequential precisely where classical gravity fails most
+          violently.
+        </p>
+        <p>
+          Popławski's programme shows how much that single change might buy: a bounce, a child universe, inflation,
+          entropy, and a route to primordial fluctuations. The programme has advanced beyond a verbal singularity
+          cure, but its strongest observable still depends on the particle-production parameter that the observation
+          is used to fix. Deriving that rate and completing the collapse geometry would convert an elegant mechanism
+          into a cosmological prediction.
+        </p>
+        <p>
+          The central calculation therefore joins the two unfinished halves: solve a rotating, spin-bearing collapse
+          with quantum particle production, then propagate gauge-invariant scalar and tensor perturbations from the
+          parent through the bounce into the child. A microphysical production rate would remove the fitted \(\beta\),
+          decide whether torsion beats shear, and turn the CMB amplitude and polarization into blind predictions.
+        </p>
+      </section>
+
+      <section id="reading" class="atlas-section">
+        <p class="atlas-section__label">Primary reading</p>
+        <h2>Sources</h2>
+        <ol class="atlas-reading-list">
+          <li id="ec-ref-1">A. Trautman, <a href="https://arxiv.org/abs/gr-qc/0606062">“Einstein–Cartan Theory”</a> (2006).</li>
+          <li id="ec-ref-2">F. W. Hehl, P. von der Heyde, G. D. Kerlick and J. M. Nester, <a href="https://doi.org/10.1103/RevModPhys.48.393">“General Relativity with Spin and Torsion: Foundations and Prospects”</a> (1976).</li>
+          <li id="ec-ref-3">N. J. Popławski, <a href="https://arxiv.org/abs/1007.0587">“Cosmology with Torsion: An Alternative to Cosmic Inflation”</a> (2010).</li>
+          <li id="ec-ref-4">N. J. Popławski, <a href="https://arxiv.org/abs/1111.4595">“Nonsingular, Big-Bounce Cosmology from Spinor–Torsion Coupling”</a> (2012).</li>
+          <li id="ec-ref-5">N. J. Popławski, <a href="https://arxiv.org/abs/1410.3881">“Universe in a Black Hole in Einstein–Cartan Gravity”</a> (2016; revised 2026).</li>
+          <li id="ec-ref-6">N. J. Popławski, <a href="https://arxiv.org/abs/1612.06292">“Primordial Fluctuations of Scale Factor in Closed Universe in Einstein–Cartan Gravity”</a> (2018).</li>
+          <li id="ec-ref-7">N. J. Popławski, <a href="https://arxiv.org/abs/2007.11556">“A Nonsingular, Anisotropic Universe in a Black Hole with Torsion and Particle Production”</a> (2021; revised 2026).</li>
+          <li id="ec-ref-8">P. Luz and J. P. S. Lemos, <a href="https://arxiv.org/abs/2303.03104">“Relativistic Cosmology and Intrinsic Spin of Matter: Results and Theorems in Einstein–Cartan Theory”</a> (2023).</li>
+          <li id="ec-ref-9">Planck Collaboration, <a href="https://arxiv.org/abs/1807.06211">“Planck 2018 Results. X. Constraints on Inflation”</a> (2020).</li>
+          <li id="ec-ref-10">BICEP/Keck Collaboration, <a href="https://arxiv.org/abs/2110.00483">“Improved Constraints on Primordial Gravitational Waves”</a> (2021).</li>
+        </ol>
+      </section>
+
+      <section id="corrections" class="atlas-section atlas-invitation">
+        <p class="atlas-section__label">Invitation</p>
+        <h2>Corrections are welcome</h2>
+        <p>
+          This profile separates minimal Einstein–Cartan theory from the cosmological matter models built within it.
+          Comments from Nikodem Popławski and other researchers working on torsion, spin fluids, collapse, and bounce
+          cosmology will be incorporated with attribution.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>

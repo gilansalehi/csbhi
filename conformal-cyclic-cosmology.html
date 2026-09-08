@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-measure="lg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dcterms.modified" content="2026-09-08">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="A research-atlas profile of Conformal Cyclic Cosmology: its central construction, improvements over ΛCDM, empirical claims, and remaining blockers.">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/conformal-cyclic-cosmology.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Conformal Cyclic Cosmology — Research Atlas</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/research-atlas.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#profile-title">Skip to the profile</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article class="atlas-article" aria-labelledby="profile-title">
+      <header class="atlas-hero">
+        <p class="atlas-hero__eyebrow"><a href="research-atlas.html">Research Atlas</a> · Profile</p>
+        <h1 id="profile-title">Conformal Cyclic Cosmology</h1>
+        <p class="atlas-hero__lede">
+          The infinite future of one universe loses its scale. Conformal geometry reads the same boundary as the Big
+          Bang of the next.
+        </p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 8, 2026 · Draft profile · Corrections invited</p>
+      </header>
+
+      <section id="at-a-glance" class="atlas-section">
+        <p class="atlas-section__label">The case for CCC</p>
+        <h2>The end of one universe becomes the beginning of the next</h2>
+        <p>
+          The Big Bang and the remote future appear to be opposite extremes: one is hot and dense, the other cold and
+          empty. Conformal geometry sees a deeper resemblance. When every relevant particle is effectively massless,
+          neither boundary contains a physical ruler. Remove absolute scale and the infinite future of one universe
+          can carry the same geometry as the beginning of another.<sup class="atlas-citation">[<a href="#ccc-ref-1">1</a>–<a href="#ccc-ref-4">4</a>]</sup>
+        </p>
+        <p>
+          Conformal Cyclic Cosmology turns that resemblance into cosmic history. Every aeon expands from a Big Bang,
+          forms stars and black holes, and approaches a smooth de Sitter future. The conformal boundary passes its
+          geometry into the next aeon, replacing a unique creation event with an endless succession and giving
+          Penrose's low-Weyl beginning a cause rather than the status of an initial condition.<sup class="atlas-citation">[<a href="#ccc-ref-2">2</a>, <a href="#ccc-ref-5">5</a>]</sup>
+        </p>
+        <p>
+          If CCC is right, the arrow of time, the special geometry of the Big Bang, and the universe's apparent
+          beginning are parts of one answer. The sky may even retain traces of the previous aeon in its largest-scale
+          structure. A successful crossover would make cosmology continuous where the standard account simply starts.
+        </p>
+        <dl class="atlas-facts">
+          <div>
+            <dt>Central move</dt>
+            <dd>Identify future conformal infinity with a new Big Bang across a spacelike crossover surface.</dd>
+          </div>
+          <div>
+            <dt>Retains</dt>
+            <dd>General relativity, positive Λ, and the standard radiation-, matter-, and vacuum-dominated epochs within each aeon.</dd>
+          </div>
+          <div>
+            <dt>Replaces</dt>
+            <dd>A unique beginning, an inflationary opening phase, and an unexplained low-Weyl initial boundary.</dd>
+          </div>
+          <div>
+            <dt>Empirical status</dt>
+            <dd>Distinctive CMB signatures have been proposed; no independent detection is established.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="construction" class="atlas-section">
+        <p class="atlas-section__label">The construction</p>
+        <h2>How one aeon becomes the next</h2>
+        <p>
+          Conformal geometry preserves angles and null cones while discarding absolute lengths. CCC uses that freedom
+          where the two ends of cosmological history become scale-poor: the exponentially expanded future contains no
+          useful local rods or clocks once massive structure has disappeared, while the extreme temperature of a Big
+          Bang makes rest masses dynamically negligible. A smooth conformal metric spans the crossover even though the
+          physical metric on either side assigns opposite scales to it.<sup class="atlas-citation">[<a href="#ccc-ref-1">1</a>–<a href="#ccc-ref-3">3</a>]</sup>
+        </p>
+        <p>
+          The proposal is reciprocal. The conformal factor that shrinks the old aeon's infinite future becomes the
+          factor that expands the new aeon's beginning. In an exactly homogeneous radiation model, the reciprocal map
+          produces another FLRW solution with the same cosmological constant. The full universe is harder: black holes,
+          gravitational radiation, matter, and perturbations must all cross the same construction.<sup class="atlas-citation">[<a href="#ccc-ref-3">3</a>]</sup>
+        </p>
+        <p>
+          Penrose's Weyl Curvature Hypothesis supplies the arrow of time. Matter was hot and nearly thermal at the Big
+          Bang, yet gravity began in an exceptionally ordered state: Weyl curvature was suppressed. CCC interprets the
+          smooth conformal boundary of the previous aeon as the origin of that special beginning.<sup class="atlas-citation">[<a href="#ccc-ref-2">2</a>, <a href="#ccc-ref-5">5</a>]</sup>
+        </p>
+      </section>
+
+      <section id="gains" class="atlas-section">
+        <p class="atlas-section__label">Explanatory gains</p>
+        <h2>What CCC adds to ΛCDM</h2>
+        <div class="atlas-gains">
+          <article class="atlas-gain">
+            <h3>The Big Bang gains a past</h3>
+            <p>ΛCDM evolves an early state forward. CCC makes that state the conformal continuation of an earlier cosmic history, replacing an absolute beginning with a geometric junction.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Low gravitational entropy gains a setting</h3>
+            <p>Penrose's Weyl condition turns the smoothness of the early universe from background data into the defining boundary condition between aeons. The arrow of time begins in geometry rather than in thermal disequilibrium alone.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Positive Λ does constructive work</h3>
+            <p>The cosmological constant does more than fit late acceleration. Exponential expansion creates a finite conformal boundary, compressing an infinite proper-time future into a surface that can join another aeon.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Inflation becomes replaceable</h3>
+            <p>CCC transfers large-scale causal structure through the previous aeon's de Sitter future and therefore rejects an inflationary opening phase. Success here requires CCC to recover the observed flatness and primordial spectrum by its own crossover physics.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Black holes become cosmological messengers</h3>
+            <p>Final black-hole evaporation in the previous aeon may leave localized Hawking points in the next aeon's CMB. The proposal converts otherwise inaccessible pre-Big-Bang history into an observational target.<sup class="atlas-citation">[<a href="#ccc-ref-4">4</a>, <a href="#ccc-ref-6">6</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="blockers" class="atlas-section">
+        <p class="atlas-section__label">Open problems</p>
+        <h2>What remains unresolved</h2>
+        <div class="atlas-blockers">
+          <article class="atlas-blocker">
+            <h3>1. The crossover map is not unique</h3>
+            <p>The conformal class does not by itself select the physical metric of the next aeon. A rule must fix the crossover factor from the old geometry. Penrose, Tod, and related work offer conditions, but no general algorithm yet determines a unique successor spacetime.<sup class="atlas-citation">[<a href="#ccc-ref-3">3</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>2. Late-time scale must disappear physically</h3>
+            <p>Massive particles provide clocks and break conformal symmetry. CCC therefore needs the remote future to become effectively massless: matter must decay, fall into black holes, or otherwise cease to define scale. The 2025 gravitational-wave epoch gives the late aeon a new dynamical picture, while the fate of every massive sector remains part of the hypothesis.<sup class="atlas-citation">[<a href="#ccc-ref-2">2</a>–<a href="#ccc-ref-4">4</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>3. Matter and perturbations must survive the crossing</h3>
+            <p>A conformal metric can be smooth while its physical contents remain undetermined. CCC still needs a complete transfer law that produces the next aeon's radiation, matter, scalar perturbations, amplitudes, and correlations. Without that map, the proposal does not yet reproduce the CMB and structure formation at ΛCDM precision.<sup class="atlas-citation">[<a href="#ccc-ref-3">3</a>, <a href="#ccc-ref-4">4</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>4. The Weyl condition needs dynamics</h3>
+            <p>Low initial Weyl curvature explains the gravitational arrow once imposed. A complete cyclic theory must show why generic late-time data cross into that condition rather than into an anisotropic or singular beginning. The proposed gravitational-wave epoch makes the question sharper because large local Weyl fluctuations must cross a conformally smooth background.<sup class="atlas-citation">[<a href="#ccc-ref-4">4</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>5. Black-hole evaporation carries the information problem</h3>
+            <p>CCC uses the disappearance of black holes to remove the dominant gravitational entropy of the old aeon. If evaporation is unitary, the information must remain encoded somewhere; if information is destroyed, CCC adopts a departure from ordinary quantum evolution. Either route needs a crossover account of the surviving degrees of freedom.<sup class="atlas-citation">[<a href="#ccc-ref-4">4</a>, <a href="#ccc-ref-9">9</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>6. The proposed signal is not yet detected</h3>
+            <p>Hawking points are a serious attempt at falsifiability. The original analysis reported a strong CMB excess, while an independent reanalysis found only 87% confidence after accounting for the search over angular scales—little more than 1σ.<sup class="atlas-citation">[<a href="#ccc-ref-6">6</a>, <a href="#ccc-ref-7">7</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence-ledger" class="atlas-section">
+        <p class="atlas-section__label">Evidence and tests</p>
+        <h2>The Hawking-point test</h2>
+
+        <div class="atlas-ledger">
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Claimed hit</p>
+            <h3>Hot spots with radii 0.03–0.04 radians</h3>
+            <p>An et al. reported 3–4°-diameter CMB spots at 99.98% confidence in Planck and coincident locations in WMAP.<sup class="atlas-citation">[<a href="#ccc-ref-6">6</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__miss">
+            <p class="atlas-score__label">Independent result</p>
+            <h3>87% confidence · p = 0.13 · little more than 1σ</h3>
+            <p>Jow and Scott marginalized over the searched ring sizes and found no statistically significant evidence.<sup class="atlas-citation">[<a href="#ccc-ref-7">7</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">Decisive test</p>
+            <h3>Freeze the full sky template before opening the data</h3>
+            <p>CCC needs a pre-registered prediction for spot profile, angular scale, frequency dependence, abundance, sky distribution, and polarization, followed by a blind test on new CMB maps.</p>
+          </article>
+          <article class="atlas-ledger__gap">
+            <p class="atlas-score__label">Missing calculation</p>
+            <h3>Derive the primordial spectrum</h3>
+            <p>The crossover must independently produce the observed scalar tilt \(n_s=0.9649\pm0.0042\), amplitude \(A_s\approx2.1\times10^{-9}\), and their correlations.<sup class="atlas-citation">[<a href="#ccc-ref-8">8</a>]</sup> No completed CCC calculation yet supplies that target.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-questions" class="atlas-section">
+        <p class="atlas-section__label">The questions</p>
+        <h2>What CCC answers—and leaves open</h2>
+        <table class="atlas-scorecard">
+          <tbody>
+            <tr>
+              <th scope="row">Gravity</th>
+              <td><p>CCC uses Einstein gravity within each aeon; it does not supply a quantum theory of gravity.<sup class="atlas-citation">[<a href="#ccc-ref-3">3</a>, <a href="#ccc-ref-4">4</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Singularities</th>
+              <td><p>The Big Bang becomes a conformal crossover, but the physical transfer through that boundary is incomplete.<sup class="atlas-citation">[<a href="#ccc-ref-3">3</a>, <a href="#ccc-ref-4">4</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Expansion</th>
+              <td><p>Positive Λ drives the crossover and standard Friedmann evolution governs each aeon; the observed value of Λ is retained rather than derived.<sup class="atlas-citation">[<a href="#ccc-ref-4">4</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Beginning</th>
+              <td><p>The low-Weyl beginning and pre-Big-Bang causal history receive a geometric explanation. The perturbation-transfer calculation remains unfinished.<sup class="atlas-citation">[<a href="#ccc-ref-2">2</a>–<a href="#ccc-ref-4">4</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Matter</th>
+              <td><p>The removal of old matter and production of the new aeon's matter content lack a complete mechanism.<sup class="atlas-citation">[<a href="#ccc-ref-3">3</a>, <a href="#ccc-ref-4">4</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Constants</th>
+              <td><p>CCC carries Λ and the particle-physics parameters across the construction without deriving their values.<sup class="atlas-citation">[<a href="#ccc-ref-3">3</a>, <a href="#ccc-ref-4">4</a>]</sup></p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="next-result" class="atlas-section">
+        <p class="atlas-section__label">What comes next</p>
+        <h2>Make the crossover physical</h2>
+        <p>
+          The highest-value result would be a unique crossover map that starts with generic late-aeon data and returns
+          the observed next-aeon background and perturbation spectrum. The map would fix the conformal factor, track
+          matter and gravitational degrees of freedom, and predict the CMB without choosing its scales after inspection.
+          A pre-registered Hawking-point temperature and polarization template could then provide the empirical test.
+        </p>
+      </section>
+
+      <section id="assessment" class="atlas-section">
+        <p class="atlas-section__label">The present position</p>
+        <h2>A cosmology built around the beginning</h2>
+        <p>
+          CCC is not a rival six-parameter fit to the late universe. Its contribution lies deeper: the standard model
+          begins with a smooth, low-entropy state and does not explain why; CCC builds an entire cosmology around that
+          omission. Conformal geometry turns the beginning into a continuation, gives positive Λ a global purpose, and
+          exposes pre-Big-Bang history to observation.
+        </p>
+        <p>
+          The same ambition sets the standard for success. The crossover must become a physical evolution law, not
+          only a conformal identification. Until that law produces matter, perturbations, and a confirmed signal, CCC
+          remains a powerful theory of cosmological succession rather than a complete replacement for ΛCDM.
+        </p>
+      </section>
+
+      <section id="reading" class="atlas-section">
+        <p class="atlas-section__label">Primary reading</p>
+        <h2>Sources</h2>
+        <ol class="atlas-reading-list">
+          <li id="ccc-ref-1">R. Penrose, <a href="https://proceedings.jacow.org/e06/PAPERS/THESPA01.pdf">“Before the Big Bang: An Outrageous New Perspective and Its Implications for Particle Physics”</a> (2006).</li>
+          <li id="ccc-ref-2">R. Penrose, <em>Cycles of Time: An Extraordinary New View of the Universe</em> (2010).</li>
+          <li id="ccc-ref-3">P. Tod, <a href="https://arxiv.org/abs/2202.10864">“Some Questions about Conformal Cyclic Cosmology”</a> (2022).</li>
+          <li id="ccc-ref-4">K. A. Meissner and R. Penrose, <a href="https://arxiv.org/abs/2503.24263">“The Physics of Conformal Cyclic Cosmology”</a> (2025).</li>
+          <li id="ccc-ref-5">R. Penrose, <a href="https://doi.org/10.1007/s10701-018-0162-3">“The Big Bang and its Dark-Matter Content: Whence, Whither, and Wherefore”</a> (2018).</li>
+          <li id="ccc-ref-6">D. An, K. A. Meissner, P. Nurowski and R. Penrose, <a href="https://arxiv.org/abs/1808.01740">“Apparent Evidence for Hawking Points in the CMB Sky”</a> (2020).</li>
+          <li id="ccc-ref-7">D. L. Jow and D. Scott, <a href="https://arxiv.org/abs/1909.09672">“Re-evaluating Evidence for Hawking Points in the CMB”</a> (2020).</li>
+          <li id="ccc-ref-8">Planck Collaboration, <a href="https://arxiv.org/abs/1807.06211">“Planck 2018 Results. X. Constraints on Inflation”</a> (2020).</li>
+          <li id="ccc-ref-9">S. W. Hawking, <a href="https://doi.org/10.1103/PhysRevD.14.2460">“Breakdown of Predictability in Gravitational Collapse”</a> (1976).</li>
+        </ol>
+      </section>
+
+      <section id="corrections" class="atlas-section atlas-invitation">
+        <p class="atlas-section__label">Invitation</p>
+        <h2>Corrections are welcome</h2>
+        <p>
+          This profile aims to describe CCC as its proponents understand it and to state its remaining burdens without
+          caricature. Comments from Roger Penrose, Krzysztof Meissner, Paul Tod, and other researchers working on CCC
+          will be incorporated with attribution.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>

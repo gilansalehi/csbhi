@@ -1,0 +1,14 @@
+<script type="module" data-module="@csbhi/atlas/open-questions">
+  import { getAtlasOpenQuestions } from 'project/atlas-theories.js';
+
+  export default () => ({ questions: getAtlasOpenQuestions() });
+</script>
+
+<ol class="atlas-question-list">
+  <template *list="questions">
+    <li>
+      <h3 $text="./title"></h3>
+      <p $text="./question"></p>
+    </li>
+  </template>
+</ol>

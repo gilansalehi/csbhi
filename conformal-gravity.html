@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" data-measure="lg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dcterms.modified" content="2026-09-08">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="A research-atlas profile of conformal gravity: its field equations, galactic results, cosmological claims, empirical standing, and remaining blockers.">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/conformal-gravity.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Conformal Gravity — Research Atlas</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/research-atlas.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#profile-title">Skip to the profile</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article class="atlas-article" aria-labelledby="profile-title">
+      <header class="atlas-hero">
+        <p class="atlas-hero__eyebrow"><a href="research-atlas.html">Research Atlas</a> · Profile</p>
+        <h1 id="profile-title">Conformal Gravity</h1>
+        <p class="atlas-hero__lede">
+          Conformal gravity asks whether local scale symmetry belongs in gravity as well as particle physics. The
+          answer changes galactic dynamics, vacuum energy, and quantum gravity at once.
+        </p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 8, 2026 · Draft profile · Corrections invited</p>
+      </header>
+
+      <section id="at-a-glance" class="atlas-section">
+        <p class="atlas-section__label">The case for conformal gravity</p>
+        <h2>Make scale symmetry fundamental</h2>
+        <p>
+          The Standard Model becomes more symmetric as masses disappear. Gravity moves the other way: Newton's
+          constant fixes an absolute scale and ordinary quantization loses control. Conformal gravity asks whether
+          local scale invariance should govern spacetime too. In four dimensions, that demand selects the
+          Weyl-squared action and replaces a dimensionful gravitational coupling with a dimensionless one.<sup class="atlas-citation">[<a href="#cg-ref-1">1</a>–<a href="#cg-ref-3">3</a>]</sup>
+        </p>
+        <p>
+          The change reaches directly into galaxies. The fourth-order field equation contains the familiar Newtonian
+          potential, a linear contribution from visible matter and the cosmic background, and a quadratic term from
+          large-scale inhomogeneity. Rotation curves can then be fitted without surrounding every galaxy with an
+          independently shaped dark halo. Local motion becomes a measurement of the universe beyond the galaxy.<sup class="atlas-citation">[<a href="#cg-ref-4">4</a>–<a href="#cg-ref-7">7</a>]</sup>
+        </p>
+        <p>
+          One symmetry therefore attacks three foundational problems at once: the quantum behavior of gravity, the
+          missing-mass inference in galaxies, and the gravitational meaning of vacuum energy. If the programme
+          survives precision lensing and cosmology, dark matter and the cosmological-constant problem may prove to be
+          symptoms of using the wrong field equation.
+        </p>
+        <dl class="atlas-facts">
+          <div>
+            <dt>Central move</dt>
+            <dd>Require local conformal invariance and use the Weyl-squared action instead of the Einstein–Hilbert action.</dd>
+          </div>
+          <div>
+            <dt>Retains</dt>
+            <dd>General covariance, the equivalence principle, Schwarzschild phenomenology in the local limit, and standard quantum field methods.</dd>
+          </div>
+          <div>
+            <dt>Replaces</dt>
+            <dd>Fundamental dimensionful gravitational parameters, galactic dark halos, and the standard response of cosmic expansion to vacuum energy.</dd>
+          </div>
+          <div>
+            <dt>Empirical status</dt>
+            <dd>Direct rotation-curve and radial-acceleration fits; no competitive joint fit to precision cosmology.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="construction" class="atlas-section">
+        <p class="atlas-section__label">The construction</p>
+        <h2>The Weyl tensor becomes the action</h2>
+        <p>
+          Einstein gravity begins with the Ricci scalar and Newton's constant. Conformal gravity begins with the part
+          of curvature unchanged by local changes of scale:
+        </p>
+        <div class="atlas-equation">
+          \[
+            I_W=-\alpha_g\int d^4x\,\sqrt{-g}\,
+            C_{\lambda\mu\nu\kappa}C^{\lambda\mu\nu\kappa}.
+          \]
+        </div>
+        <p>
+          The dimensionless coupling \(\alpha_g\) and four derivatives improve the high-energy behavior of the
+          propagator. Varying the action produces the Bach tensor rather than the Einstein tensor. The resulting field
+          equation is fourth order, so its vacuum solution contains more radial structure than Schwarzschild alone.<sup class="atlas-citation">[<a href="#cg-ref-2">2</a>, <a href="#cg-ref-3">3</a>]</sup>
+        </p>
+        <p>
+          For galactic motion, the extra freedom is the point. Luminous matter generates the familiar local
+          \(1/R\) potential and a local linear potential. The surrounding cosmology supplies an additional universal
+          linear term, while cosmic inhomogeneities supply a universal quadratic cutoff:
+        </p>
+        <div class="atlas-equation">
+          \[
+            v^2(R)=v_{\rm LOC}^2(R)+\frac{\gamma_0c^2R}{2}-\kappa c^2R^2.
+          \]
+        </div>
+        <p>
+          The formula breaks the usual isolation of a galaxy. Local motion depends on local baryons and on the global
+          universe. Mannheim and O'Brien applied that structure to 141 rotation curves with one adjustable quantity per
+          galaxy—the luminous mass-to-light ratio—and no galactic dark halo.<sup class="atlas-citation">[<a href="#cg-ref-4">4</a>–<a href="#cg-ref-6">6</a>]</sup>
+        </p>
+      </section>
+
+      <section id="gains" class="atlas-section">
+        <p class="atlas-section__label">Explanatory gains</p>
+        <h2>What conformal gravity adds to ΛCDM</h2>
+        <div class="atlas-gains">
+          <article class="atlas-gain">
+            <h3>Scale becomes a symmetry</h3>
+            <p>Einstein gravity imports a dimensionful coupling. Conformal gravity starts scale-free and requires masses and effective gravitational scales to emerge through symmetry breaking.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Quantum gravity stays four-dimensional</h3>
+            <p>The fourth-order propagator is power-counting renormalizable. Mannheim and collaborators argue that its non-Hermitian but PT-symmetric quantum formulation is unitary, offering a quantum-gravity route without new dimensions or fundamental strings.<sup class="atlas-citation">[<a href="#cg-ref-3">3</a>, <a href="#cg-ref-7">7</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Galaxies stop being isolated systems</h3>
+            <p>The universal linear and quadratic terms connect galactic dynamics directly to cosmology. What ΛCDM assigns to a separate halo can instead arise from the response of one gravitational field to local and global matter.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Rotation curves need no halo profile</h3>
+            <p>The published 141-galaxy analysis spans high- and low-surface-brightness spirals, dwarfs, and tidal dwarfs. Its universal coefficients remain fixed across the sample; the fitted mass-to-light ratio belongs to the visible galaxy.<sup class="atlas-citation">[<a href="#cg-ref-4">4</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>The RAR and Tully–Fisher relation gain a field-theory route</h3>
+            <p>The same potential reproduces the observed coupling between baryonic and total acceleration and yields a Tully–Fisher-like relation without treating the MOND interpolation function as fundamental.<sup class="atlas-citation">[<a href="#cg-ref-5">5</a>, <a href="#cg-ref-6">6</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Vacuum energy can be large without gravitating normally</h3>
+            <p>Mannheim's cosmology attacks the cosmological-constant problem by changing the effective cosmological response rather than forcing the vacuum energy itself to be tiny. Cosmic acceleration becomes part of that response.<sup class="atlas-citation">[<a href="#cg-ref-8">8</a>, <a href="#cg-ref-9">9</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence" class="atlas-section">
+        <p class="atlas-section__label">Empirical contact</p>
+        <h2>The case begins with galaxies</h2>
+        <p>
+          Conformal gravity has gone beyond qualitative modified-gravity arguments. It provides an explicit relativistic
+          action, derives a galactic potential, fixes universal coefficients across a large sample, and confronts
+          resolved rotation curves. Stellar mass-to-light ratios remain fitted, and the result is not yet a joint
+          cosmological fit, but the theory's distinctive gravitational law has reached observable data.
+        </p>
+        <p>
+          The radial acceleration relation provides a second representation of the same success. Conformal gravity
+          reproduces the baryon–acceleration correlation from its potential rather than imposing the usual square-root
+          MOND law. A recent Mannheim analysis further identifies a cosmologically fixed low-acceleration floor. Its
+          evolution with redshift remains an especially clean opportunity for the theory to make a new prediction.<sup class="atlas-citation">[<a href="#cg-ref-5">5</a>, <a href="#cg-ref-10">10</a>]</sup>
+        </p>
+      </section>
+
+      <section id="blockers" class="atlas-section">
+        <p class="atlas-section__label">Open problems</p>
+        <h2>What remains unresolved</h2>
+        <div class="atlas-blockers">
+          <article class="atlas-blocker">
+            <h3>1. Precision cosmology has not been reproduced</h3>
+            <p>A dark-matter alternative must recover the CMB acoustic peaks, baryon acoustic oscillations, primordial nucleosynthesis, lensing, cluster dynamics, and the matter power spectrum with one consistent parameter set. Conformal perturbation equations exist, but no conformal-gravity equivalent of the ΛCDM joint likelihood has yet cleared that standard.<sup class="atlas-citation">[<a href="#cg-ref-11">11</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>2. The massive-particle sector affects the galaxy calculation</h3>
+            <p>Local conformal symmetry forbids fixed particle masses; a scalar sector must generate them. Hobson and Lasenby argue that treating this scalar consistently changes the physical geodesics and removes the flat region attributed to the Mannheim–Kazanas metric. The rotation-curve mechanism therefore carries a live dispute about conformal frame, matter coupling, and which metric massive bodies actually follow.<sup class="atlas-citation">[<a href="#cg-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>3. Lensing and clusters remain independent tests</h3>
+            <p>Rotation curves probe nonrelativistic motion. Light deflection probes the metric differently. A 2023 analysis of Abell 370 and Abell 2390 found that the Mannheim–Kazanas lensing prediction could not explain those clusters without dark matter. A successful completion must fit motion and lensing with the same fields and boundary conditions.<sup class="atlas-citation">[<a href="#cg-ref-13">13</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>4. Quantum unitarity remains contested</h3>
+            <p>Mannheim's PT-symmetric quantization removes the negative-norm ghost found by the usual Hermitian treatment.<sup class="atlas-citation">[<a href="#cg-ref-7">7</a>]</sup> An independent BRST analysis instead finds an indefinite spin-2 sector and nonunitary scattering.<sup class="atlas-citation">[<a href="#cg-ref-14">14</a>]</sup> Renormalizability is a major gain; quantum consistency still depends on which construction survives a shared calculation.</p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>5. Fourth-order dynamics need a complete physical prescription</h3>
+            <p>Extra derivatives bring extra solutions, boundary data, and modes. The theory must specify which states are physical, how stable initial-value evolution works through nonlinear and strong-field regimes, and why unwanted branches do not appear in nature.<sup class="atlas-citation">[<a href="#cg-ref-14">14</a>, <a href="#cg-ref-16">16</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>6. The universal galactic terms need an epoch law</h3>
+            <p>The fitted coefficients have cosmological dimensions and are interpreted as global contributions, but their redshift dependence has not been derived into a direct observational curve. High-redshift rotation curves and the evolving RAR can test whether the global terms are truly cosmological or merely successful present-day constants.<sup class="atlas-citation">[<a href="#cg-ref-4">4</a>, <a href="#cg-ref-10">10</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence-ledger" class="atlas-section">
+        <p class="atlas-section__label">Evidence and tests</p>
+        <h2>Can the galactic law survive lensing?</h2>
+
+        <div class="atlas-ledger">
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Best quantitative result</p>
+            <h3>141 rotation curves · three universal coefficients</h3>
+            <p>The analysis used \(\gamma^*=5.42\times10^{-41}\,{\rm cm}^{-1}\), \(\gamma_0=3.06\times10^{-30}\,{\rm cm}^{-1}\), and \(\kappa=9.54\times10^{-54}\,{\rm cm}^{-2}\), fitting one luminous mass-to-light ratio per galaxy and no galactic halo.<sup class="atlas-citation">[<a href="#cg-ref-4">4</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__miss">
+            <p class="atlas-score__label">Strongest adverse result</p>
+            <h3>0 of 2 rich-cluster lensing tests passed</h3>
+            <p>An independent analysis found that the Mannheim–Kazanas prediction could not explain Abell 370 or Abell 2390 without dark matter.<sup class="atlas-citation">[<a href="#cg-ref-13">13</a>]</sup> The sample is small, and the status of the complete matter/scalar sector remains disputed.</p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">Decisive test</p>
+            <h3>One field configuration must bend light and move matter</h3>
+            <p>Fix the theory from baryons and cosmological boundary data, then predict both resolved dynamics and relativistic lensing before either dataset is fitted. Passing the same test across galaxies and clusters would distinguish a gravitational law from a rotation-curve prescription.</p>
+          </article>
+          <article class="atlas-ledger__gap">
+            <p class="atlas-score__label">Missing calculation</p>
+            <h3>Produce the joint cosmological likelihood</h3>
+            <p>No published conformal-gravity calculation yet matches the CMB acoustic spectrum, BAO, supernovae, lensing, and structure growth with one parameter set. Absence of that calculation limits reach; it is not itself a failed prediction.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-questions" class="atlas-section">
+        <p class="atlas-section__label">The questions</p>
+        <h2>What conformal gravity answers—and leaves open</h2>
+        <table class="atlas-scorecard">
+          <tbody>
+            <tr>
+              <th scope="row">Gravity</th>
+              <td><p>A renormalizable four-dimensional field theory exists; its quantum unitarity and complete matter coupling remain contested.<sup class="atlas-citation">[<a href="#cg-ref-7">7</a>, <a href="#cg-ref-12">12</a>, <a href="#cg-ref-14">14</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Singularities</th>
+              <td><p>Conformal gravity permits new strong-field solutions but has not established a generic replacement for collapse or Big-Bang singularities.<sup class="atlas-citation">[<a href="#cg-ref-2">2</a>, <a href="#cg-ref-3">3</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Expansion</th>
+              <td><p>The framework gives cosmic acceleration and a proposed vacuum-energy mechanism; a precision expansion and perturbation fit remains outstanding.<sup class="atlas-citation">[<a href="#cg-ref-8">8</a>, <a href="#cg-ref-9">9</a>, <a href="#cg-ref-11">11</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Beginning</th>
+              <td><p>No complete early-universe mechanism derives the observed initial state and primordial spectrum.<sup class="atlas-citation">[<a href="#cg-ref-11">11</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Matter</th>
+              <td><p>Galactic dark matter is replaced by geometry, while the full cluster, CMB, lensing, and structure evidence remains unresolved.<sup class="atlas-citation">[<a href="#cg-ref-4">4</a>, <a href="#cg-ref-11">11</a>, <a href="#cg-ref-13">13</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Constants</th>
+              <td><p>Local scale symmetry constrains the form of the action and reframes mass generation, but observed scales and universal galactic coefficients are not yet derived from first principles.<sup class="atlas-citation">[<a href="#cg-ref-1">1</a>, <a href="#cg-ref-4">4</a>, <a href="#cg-ref-12">12</a>]</sup></p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="assessment" class="atlas-section">
+        <p class="atlas-section__label">What comes next</p>
+        <h2>From galaxy fits to cosmology</h2>
+        <p>
+          One symmetry changes the gravitational action, improves
+          its ultraviolet behavior, removes fundamental mass scales, alters the cosmological response to vacuum energy,
+          and places the universe inside the potential of every galaxy. The rotation-curve program shows that the idea
+          can calculate rather than merely redescribe.
+        </p>
+        <p>
+          The next step is a single relativistic cosmological solution—matter sector included—that fits supernovae,
+          BAO, the CMB, lensing, and structure growth while retaining the successful galactic potential. The solution
+          should also predict how \(\gamma_0\), \(\kappa\), and the low-acceleration floor evolve with redshift.
+        </p>
+        <p>
+          ΛCDM already connects those observations in one precision framework. Reproducing them without dark matter
+          would extend conformal gravity's serious result in galaxies into a new cosmology—and directly test its claim
+          that global cosmology governs local galactic dynamics.
+        </p>
+      </section>
+
+      <section id="reading" class="atlas-section">
+        <p class="atlas-section__label">Primary reading</p>
+        <h2>Sources</h2>
+        <ol class="atlas-reading-list">
+          <li id="cg-ref-1">P. D. Mannheim and D. Kazanas, <a href="https://doi.org/10.1086/167623">“Exact Vacuum Solution to Conformal Weyl Gravity and Galactic Rotation Curves,”</a> <em>Astrophysical Journal</em> 342, 635 (1989).</li>
+          <li id="cg-ref-2">P. D. Mannheim, <a href="https://arxiv.org/abs/astro-ph/0505266">“Alternatives to Dark Matter and Dark Energy”</a> (2006).</li>
+          <li id="cg-ref-3">P. D. Mannheim, <a href="https://arxiv.org/abs/1101.2186">“Making the Case for Conformal Gravity”</a> (2012).</li>
+          <li id="cg-ref-4">P. D. Mannheim and J. G. O'Brien, <a href="https://arxiv.org/abs/1211.0188">“Galactic Rotation Curves in Conformal Gravity”</a> (2013).</li>
+          <li id="cg-ref-5">J. G. O'Brien et al., <a href="https://arxiv.org/abs/1812.03152">“Radial Acceleration and Tully–Fisher Relations in Conformal Gravity”</a> (2019).</li>
+          <li id="cg-ref-6">J. G. O'Brien et al., <a href="https://arxiv.org/abs/1901.01228">“Conformal Gravity and the Radial Acceleration Relation”</a> (2019).</li>
+          <li id="cg-ref-7">P. D. Mannheim, <a href="https://arxiv.org/abs/2109.12743">“Solution to the Ghost Problem in Higher-Derivative Gravity”</a> (2022).</li>
+          <li id="cg-ref-8">P. D. Mannheim, <a href="https://arxiv.org/abs/astro-ph/9910093">“Cosmic Acceleration as the Solution to the Cosmological Constant Problem”</a> (2000).</li>
+          <li id="cg-ref-9">P. D. Mannheim, <a href="https://arxiv.org/abs/0909.0212">“Comprehensive Solution to the Cosmological Constant, Zero-Point Energy, and Quantum Gravity Problems”</a> (2011).</li>
+          <li id="cg-ref-10">P. D. Mannheim, “Conformal Gravity and the Low Acceleration Limit of the Radial Acceleration Relation,” <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6539438">SSRN 6539438</a> (2025; posted 2026).</li>
+          <li id="cg-ref-11">P. D. Mannheim, <a href="https://arxiv.org/abs/1109.4119">“Cosmological Perturbations in Conformal Gravity”</a> (2012).</li>
+          <li id="cg-ref-12">M. P. Hobson and A. N. Lasenby, <a href="https://arxiv.org/abs/2103.13451">“Conformal Gravity Does Not Predict Flat Galaxy Rotation Curves”</a> (2021).</li>
+          <li id="cg-ref-13">S. Ghosh et al., <a href="https://arxiv.org/abs/2306.01345">“Test of Conformal Theory of Gravity as an Alternative Paradigm to Dark Matter Hypothesis from Gravitational Lensing Studies”</a> (2023).</li>
+          <li id="cg-ref-14">J. Kubo and J. Kuntz, <a href="https://arxiv.org/abs/2202.08298">“Analysis of Unitarity in Conformal Quantum Gravity”</a> (2022).</li>
+          <li id="cg-ref-15">J. G. O'Brien and P. D. Mannheim, <a href="https://arxiv.org/abs/1107.5229">“Fitting Dwarf Galaxy Rotation Curves with Conformal Gravity”</a> (2012).</li>
+          <li id="cg-ref-16">R. P. Woodard, <a href="https://arxiv.org/abs/1506.02210">“The Theorem of Ostrogradsky”</a> (2015).</li>
+        </ol>
+      </section>
+
+      <section id="corrections" class="atlas-section atlas-invitation">
+        <p class="atlas-section__label">Invitation</p>
+        <h2>Corrections are welcome</h2>
+        <p>
+          This profile aims to present conformal gravity as its proponents understand it and to distinguish incomplete
+          work from genuine contradiction. Comments from Philip Mannheim, James O'Brien, and other researchers working
+          on conformal gravity will be incorporated with attribution.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>
