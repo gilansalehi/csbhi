@@ -7,7 +7,7 @@ Working note — September 2026
 
 **Status:** Conditional branch-selection result. Exact within the flat-FLRW, ingoing-Vaidya, thermal spin-fluid benchmark stated below. The calculation does not establish the proposed horizon correspondences or complete the parent–child junction.
 
-**Prerequisites:** [GD I: *Geometric Duality*](gd1.html); [*Marginality Transfer and the Reciprocal Cosmological Clock*](note.html?src=marginality_transfer_and_reciprocal_cosmological_clock).
+**Prerequisites:** [GD I: *Geometric Duality*](gd1.html); [*Marginality Transfer and the Reciprocal Cosmological Clock*](note.html?src=marginality_transfer_and_reciprocal_cosmological_clock); [*The Trapping-Horizon Enthalpy Identity*](note.html?src=trapping_horizon_enthalpy_identity).
 
 **Notation:** [CSBHI Cosmological Glossary](note.html?src=cosmological_glossary).
 
@@ -148,6 +148,8 @@ $$
 }
 \tag{12}
 $$
+
+This is the Vaidya specialization of the general horizon-flow scalar \(\Xi_H\) derived in [*The Trapping-Horizon Enthalpy Identity*](note.html?src=trapping_horizon_enthalpy_identity).
 
 Using Equation (10),
 
