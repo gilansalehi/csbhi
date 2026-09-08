@@ -32,7 +32,11 @@ The present project supplies:
 - a collapse-cohort description separating the causal map, shell map, and post-crossing evolution;
 - an exact boundary system reducing the cohort synchronization to one lapse;
 - a compensated (\Lambda\)LTB benchmark whose endpoint limits work but whose simplest unit-lapse clock fails through the intermediate collapse;
-- a horizon-required lapse obtained by transferring marginality between matched parent and child spherical cross-sections; and
+- a horizon-required lapse obtained by transferring marginality between matched parent and child spherical cross-sections;
+- an exact FLRW enthalpy identity mapping normalized apparent-horizon growth to \(\tfrac34(1+w_{\rm eff})\), conditionally transferred to the parent trapping horizon;
+- a dual-horizon Vaidya realization of the radiation–matter–vacuum horizon history once one matter-abundance constant is supplied;
+- an exact separation of the thermal Einstein–Cartan roots: a macroscopic growing horizon selects \(\sigma/\epsilon\sim\ell_{\rm Pl}/R_T\), while the near-bounce root lies on the shrinking-horizon branch;
+- a self-consistent benchmark at \(R_{T,b}\simeq1.52\times10^9\,\mathrm m\), giving \(T_b\simeq0.54\)–\(0.61\,\mathrm{MeV}\), \(\tau_b\simeq2.5\,\mathrm s\), and negligible spin torsion; and
 - a coefficient-independent galaxy prediction, conditional on identifying the galactic scale with the contemporaneous horizon.
 
 These results do not yet constitute a complete parent–child spacetime.
@@ -65,9 +69,21 @@ N_H^{(\mathrm{horizon})}
 -\frac{R_H^P}{c}\frac{d\ln r}{dt_P}.
 \]
 
-**Missing:** An independent derivation of the same lapse from the full junction geometry, together with the event map and conformal normalization of the mapped angular geometry. Marginal cross-sections can correspond even when the parent and child horizon worldtubes have different causal signatures.
+[The trapping-horizon enthalpy identity](note.html?src=trapping_horizon_enthalpy_identity) shows that the same sequence of marginal cross-sections must satisfy
 
-**Closure test:** Integrate the parent event horizon and optical transfer through a realistic collapse and test \(N_H^{(\mathrm{junction})}=N_H^{(\mathrm{horizon})}\) across the full formation history without fitting the child expansion.
+\[
+\Xi_H
+=
+\frac{1}{2cN_H}\frac{dR_T}{dt_P}
+=
+\frac34\frac{\epsilon_C+p_C}{\epsilon_C}.
+\]
+
+Under the additional dual-horizon Vaidya correspondence, the null equations fix a cohort lapse \(N_v=R_T/(2R_E)\). The resulting system integrates to the full flat radiation–matter–vacuum background once the relative matter abundance is supplied. This is a consistent Vaidya realization of the proposed horizon map; it does not select the event-horizon correspondence from a complete junction.
+
+**Missing:** An invariant reason that the parent event horizon maps to the child cosmological event horizon; reconciliation of the cohort lapse \(d\tau_C/dv\) with the reciprocal lapse along an individual infalling trajectory; and the conformal normalization of the mapped angular geometry. Marginal cross-sections can correspond even when the parent and child horizon worldtubes have different causal signatures.
+
+**Closure test:** Derive both horizon identifications and the clock from a realistic timelike collapse, then test \(N_H^{(\mathrm{junction})}=N_H^{(\mathrm{horizon})}\) across the full formation history without fitting the child expansion.
 
 ### Q3. Does the map extend to a regular global spacetime?
 
@@ -91,7 +107,7 @@ N_H^{(\mathrm{horizon})}
 
 ### Q5. What fixes the absolute reciprocal normalization?
 
-**Known:** Standard cosmology measures scale-factor ratios. CSBHI makes (r=a=1) at horizon crossing a physical candidate anchor.
+**Known:** Standard cosmology measures scale-factor ratios. CSBHI makes (r=a=1) at horizon crossing a physical candidate anchor. The matter-completed calculation avoids confusing that anchor with the conventional present normalization by using \(z=\epsilon_m/\epsilon_r=a/a_{\rm eq}\).
 
 **Missing:** The relation between that crossing, the hot beginning, and today's normalization.
 
@@ -99,11 +115,11 @@ N_H^{(\mathrm{horizon})}
 
 ### Q6. Where do the child fluids and thermal history come from?
 
-**Known:** Once matter, radiation, and vacuum components are specified, their equations of state and dilution laws follow from conservation.
+**Known:** Once matter, radiation, and vacuum components are specified, their equations of state and dilution laws follow from conservation. The dual-horizon system now integrates the complete background in terms of one additional constant \(\eta=\epsilon_\Lambda/\epsilon_{\rm eq}\). The reconstructed birth radius gives a self-consistent electron–positron–photon–neutrino state near \(0.55\,\mathrm{MeV}\), with negligible Einstein–Cartan torsion.
 
-**Missing:** Their production, initial abundances, entropy, baryon asymmetry, and near-thermal radiation state.
+**Missing:** A parent-to-child matter ledger fixing \(\eta\), the baryon and dark-matter abundances, entropy, neutrino distributions, and the neutron/proton ratio. If the physical child begins at the MeV surface, its conventional pre-MeV thermal history is absent and these data must be produced or inherited at the throat. A conformal map does not by itself turn a massive parent baryon current into child radiation or erase baryon number.
 
-**Closure test:** Recover inflation or an alternative causal mechanism, reheating, nucleosynthesis, neutrino decoupling, recombination, and the acoustic scale with one consistent parameter set.
+**Closure test:** Derive the energy, baryon, lepton, entropy, and spin-current transfer laws; predict \(\eta\) without child calibration; then recover nucleosynthesis, neutrino decoupling, recombination, and the acoustic scale from the inherited state.
 
 ### Q7. Does geometry determine the observed vacuum scale?
 
@@ -165,17 +181,14 @@ which rises with redshift where a fixed scale remains flat. The same H-linked fu
 
 ## Dependency order
 
-The immediate frontier is narrow:
+The immediate frontier now has two coupled tracks:
 
 \[
 \boxed{
-Q1+Q2
-\longrightarrow
-Q3+Q4
-\longrightarrow
-Q5+Q6+Q7
-\longrightarrow
-Q8+Q10+Q11
+\begin{aligned}
+Q1+Q2&\longrightarrow Q3+Q4\longrightarrow Q8+Q10+Q11,\\
+Q2&\longrightarrow Q5+Q6\longrightarrow Q7.
+\end{aligned}
 }
 \]
 
@@ -186,5 +199,9 @@ The galaxy prediction in Q9 can be tested in parallel. A failed prediction would
 1. [GD I: *Geometric Duality: Conformal Scaling of Black Hole Interiors*](https://www.gilansalehi.com/csbhi/gd1.html)
 2. [RI I: *Field Equations of the Reciprocal Interior*](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md)
 3. [*The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution*](https://www.gilansalehi.com/csbhi/reciprocal-involution.html)
-4. [GD II outline: *Collapse Cohorts and the Horizon Map*](https://www.gilansalehi.com/csbhi/notes/gd2_collapse_cohort_horizon_map_outline.md)
-5. [Prediction I: *The Evolving Galactic Acceleration-Scale Correspondence*](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md)
+4. [*Marginality Transfer and the Reciprocal Cosmological Clock*](https://www.gilansalehi.com/csbhi/notes/marginality_transfer_and_reciprocal_cosmological_clock.md)
+5. [*The Trapping-Horizon Enthalpy Identity*](https://www.gilansalehi.com/csbhi/notes/trapping_horizon_enthalpy_identity.md)
+6. [*Macroscopic Horizon Birth Selects the Low-Torsion Einstein–Cartan Branch*](https://www.gilansalehi.com/csbhi/notes/macroscopic_horizon_birth_low_torsion_branch.md)
+7. [*Matter Completion and the Self-Consistent MeV Birth Benchmark*](https://www.gilansalehi.com/csbhi/notes/matter_completion_and_mev_birth_benchmark.md)
+8. [GD II outline: *Collapse Cohorts and the Horizon Map*](https://www.gilansalehi.com/csbhi/notes/gd2_collapse_cohort_horizon_map_outline.md)
+9. [Prediction I: *The Evolving Galactic Acceleration-Scale Correspondence*](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md)

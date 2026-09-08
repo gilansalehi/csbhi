@@ -38,6 +38,14 @@ R=\text{comoving radial label},
 
 The intrinsic FLRW identity (\bar R=aR) and the reciprocal ansatz (a=1/r) relate different quantities. They must not be collapsed into one equation. The project glossary defines the horizon and distance terms used throughout the series.
 
+The reciprocal normalization \(a=1\) at child birth is not the conventional choice \(a_0=1\) today. Present-normalized cosmological formulas use the ratio
+
+\[
+A\equiv\frac{a}{a_0},
+\]
+
+while the matter-completed horizon calculation uses \(z=a/a_{\rm eq}=\epsilon_m/\epsilon_r\). Only scale-factor ratios enter the standard Friedmann history.
+
 ---
 
 ## GD I: the reciprocal interior
@@ -85,9 +93,23 @@ N_H^{(\mathrm{horizon})}
 -\frac{R_H^P}{c}\frac{d\ln r}{dt_P}.
 \]
 
-The remaining calculation must derive the lapse independently from the parent event horizon and optical transfer, compare the two functions across the collapse, then extend the map to neighboring worldlines and perturbations. A fifth or scale dimension enters only if a residual remains after the four-dimensional matter-filled construction is explicit.
+[The Trapping-Horizon Enthalpy Identity](note.html?src=trapping_horizon_enthalpy_identity) then converts the already-derived child Friedmann history into parent horizon growth:
 
-GD II succeeds when one collapse geometry produces the causal map, shell correspondence, reciprocal evolution, physical clock normalization, and a regular global causal diagram.
+\[
+\Xi_H
+=
+\frac{1}{2cN_H}\frac{dR_T}{dt_P}
+=
+\frac34\frac{\epsilon_C+p_C}{\epsilon_C}.
+\]
+
+The radiation, matter, and vacuum eras appear as \(\Xi_H:1\to3/4\to0\). In the ingoing-Vaidya specialization, the dual-horizon null equations give \(N_v=R_T/(2R_E)\). [The low-torsion branch calculation](note.html?src=macroscopic_horizon_birth_low_torsion_branch) then shows that a macroscopic growing horizon selects \(\sigma/\epsilon\sim\ell_{\rm Pl}/R_T\), while the near-bounce Einstein–Cartan root lies on the shrinking-horizon branch.
+
+[Matter Completion and the Self-Consistent MeV Birth Benchmark](note.html?src=matter_completion_and_mev_birth_benchmark) integrates the conditional Vaidya background with radiation, matter, and vacuum. Once \(\eta=\epsilon_\Lambda/\epsilon_{\rm eq}\) is supplied, the complete trapping- and event-horizon histories follow. The independently reconstructed birth radius gives \(T_b\simeq0.54\)–\(0.61\,\mathrm{MeV}\) and \(\tau_b\simeq2.5\,\mathrm s\).
+
+The remaining background work now divides cleanly. The geometry track must derive the event-horizon correspondence and reconcile the cohort and reciprocal clocks in realistic timelike collapse. The matter track must derive \(\eta\), the baryon asymmetry, entropy, neutrino state, and surviving nonrelativistic content from parent data. A fifth or scale dimension enters only if a residual remains after the four-dimensional matter-filled construction is explicit.
+
+GD II succeeds when one collapse geometry produces the causal map, shell correspondence, reciprocal evolution, physical clock normalization, matter ledger, and a regular global causal diagram.
 
 ---
 
