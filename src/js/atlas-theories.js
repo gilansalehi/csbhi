@@ -21,6 +21,14 @@ export const ATLAS_THEORIES = {
     standing: 'The framework supplies many viable four-dimensional worlds but no accepted principle that selects ours. Particular compactifications are testable; no confirmed observation uniquely requires a string origin.',
     test: 'Fix a compactification and its statistical prior before opening the data, then make correlated predictions across particle physics, inflation, relics, and vacuum energy.',
   }),
+  fRGravity: theory({
+    id: 'f-r-gravity',
+    title: 'f(R) Gravity',
+    href: 'f-r-gravity.html',
+    case: 'The Einstein–Hilbert action is linear in the Ricci scalar; f(R) gravity asks what nonlinear curvature can do. Its R² limit produced Starobinsky inflation, while low-curvature models can imitate dark energy and predict scale-dependent structure growth.',
+    standing: 'Starobinsky inflation remains one of the best-fitting primordial models. Late-time f(R) searches have found no scalar force, and viable models are increasingly constrained toward the GR limit while usually retaining cold dark matter.',
+    test: 'Use one fixed function and screening prescription to predict expansion, matter growth, lensing, cluster abundance, and environmental fifth-force effects together.',
+  }),
   conformalGravity: theory({
     id: 'conformal-gravity',
     title: 'Conformal Gravity',
@@ -93,6 +101,7 @@ export const ATLAS_OPEN_QUESTIONS = [
 export const ATLAS_ORDER = [
   'lcdm',
   'stringTheory',
+  'fRGravity',
   'conformalGravity',
   'einsteinCartan',
   'loopQuantumCosmology',

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" data-measure="lg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dcterms.modified" content="2026-09-09">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="A Research Atlas profile of metric f(R) gravity: Starobinsky inflation, geometric acceleration, scalar–tensor equivalence, screening, structure-growth tests, and open problems.">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/f-r-gravity.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>f(R) Gravity — Research Atlas</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/research-atlas.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#profile-title">Skip to the profile</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article class="atlas-article" aria-labelledby="profile-title">
+      <header class="atlas-hero">
+        <p class="atlas-hero__eyebrow"><a href="research-atlas.html">Research Atlas</a> · Profile</p>
+        <h1 id="profile-title"><i>f</i>(<i>R</i>) Gravity</h1>
+        <p class="atlas-hero__lede">
+          Einstein made the gravitational action linear in curvature. Let curvature respond nonlinearly and geometry
+          itself can drive inflation, alter structure growth, and imitate dark energy.
+        </p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 9, 2026 · Draft profile · Corrections invited</p>
+      </header>
+
+      <section id="at-a-glance" class="atlas-section">
+        <p class="atlas-section__label">The case for <i>f</i>(<i>R</i>) gravity</p>
+        <h2>The simplest gravitational action need not be the final one</h2>
+        <p>
+          General relativity builds its action from the Ricci scalar \(R\), the simplest scalar measure of spacetime
+          curvature. Nothing in covariance requires that dependence to remain linear at every scale. Quantum field
+          theory in curved spacetime generates higher-curvature terms, and the first correction one can write is
+          \(R^2\). In 1980, Alexei Starobinsky showed that such a term drives an early phase of accelerated expansion
+          and exits naturally into the hot universe.<sup class="atlas-citation">[<a href="#fr-ref-1">1</a>, <a href="#fr-ref-2">2</a>]</sup>
+        </p>
+        <p>
+          That economical change produced one of inflation's most successful quantitative models. For roughly fifty
+          to sixty e-folds, \(R+R^2\) inflation predicts a scalar tilt near \(0.96\)–\(0.967\) and a tensor fraction of
+          only a few parts in a thousand, directly in the region favored by CMB observations. The accelerated phase
+          comes from gravity itself rather than a separately postulated inflaton potential.<sup class="atlas-citation">[<a href="#fr-ref-2">2</a>, <a href="#fr-ref-8">8</a>, <a href="#fr-ref-9">9</a>]</sup>
+        </p>
+        <p>
+          Replace \(R\) by a more general function \(f(R)\) and the same idea reaches late-time cosmology. Curvature
+          acquires one additional scalar mode whose effective energy can accelerate expansion while a chameleon
+          mechanism suppresses the fifth force in dense environments. A viable function could therefore connect
+          inflation, cosmic acceleration, and measurable departures from GR without introducing an independent dark
+          energy fluid.<sup class="atlas-citation">[<a href="#fr-ref-3">3</a>–<a href="#fr-ref-7">7</a>]</sup>
+        </p>
+        <dl class="atlas-facts">
+          <div>
+            <dt>Central move</dt>
+            <dd>Replace the Einstein–Hilbert term \(R\) with a nonlinear function \(f(R)\).</dd>
+          </div>
+          <div>
+            <dt>Extra degree of freedom</dt>
+            <dd>Metric \(f(R)\) gravity is dynamically equivalent to a scalar–tensor theory with one scalar mode.</dd>
+          </div>
+          <div>
+            <dt>Strongest cosmological result</dt>
+            <dd>The \(R+R^2\) model gives a parameter-economical inflationary spectrum consistent with current CMB limits.</dd>
+          </div>
+          <div>
+            <dt>Empirical status</dt>
+            <dd>No departure from GR has been established; viable late-time models are increasingly constrained toward the GR limit.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="construction" class="atlas-section">
+        <p class="atlas-section__label">The construction</p>
+        <h2>Curvature becomes dynamical in a new way</h2>
+        <p>
+          This profile concerns metric \(f(R)\) gravity, in which the metric is the fundamental gravitational variable.
+          Palatini and metric-affine theories use a different variational principle and have different dynamics. The
+          metric action is
+        </p>
+        <div class="atlas-equation">
+          \[
+            S=\frac{c^3}{16\pi G}\int d^4x\sqrt{-g}\,f(R)+S_m[g_{\mu\nu},\psi].
+          \]
+        </div>
+        <p>
+          Writing \(F\equiv df/dR\), variation with respect to the metric gives<sup class="atlas-citation">[<a href="#fr-ref-3">3</a>, <a href="#fr-ref-4">4</a>]</sup>
+        </p>
+        <div class="atlas-equation">
+          \[
+            F R_{\mu\nu}-\frac12 f g_{\mu\nu}
+            -\nabla_\mu\nabla_\nu F+g_{\mu\nu}\Box F
+            =\frac{8\pi G}{c^4}T_{\mu\nu}.
+          \]
+        </div>
+        <p>
+          The trace equation,
+        </p>
+        <div class="atlas-equation">
+          \[
+            3\Box F+FR-2f=\frac{8\pi G}{c^4}T,
+          \]
+        </div>
+        <p>
+          shows that \(F\) propagates. The theory can be rewritten as a scalar–tensor model with scalar \(\phi=F\)
+          and potential \(V(\phi)=R(\phi)\phi-f[R(\phi)]\). What looked like higher-derivative gravity is therefore GR
+          plus one specially coupled scalar degree of freedom. Stability and a healthy high-curvature limit require,
+          over the relevant regime, conditions including \(F&gt;0\) and \(f_{RR}&gt;0\).<sup class="atlas-citation">[<a href="#fr-ref-3">3</a>–<a href="#fr-ref-5">5</a>]</sup>
+        </p>
+      </section>
+
+      <section id="two-programmes" class="atlas-section">
+        <p class="atlas-section__label">Two curvature regimes</p>
+        <h2>Inflationary success and late-time gravity are separate tests</h2>
+        <p>
+          Starobinsky inflation uses
+        </p>
+        <div class="atlas-equation">
+          \[
+            f(R)=R+\frac{R^2}{6M^2}.
+          \]
+        </div>
+        <p>
+          At large curvature, the \(R^2\) term drives quasi-de Sitter expansion. In the scalar representation, the
+          extra mode—the scalaron—rolls down a fixed plateau potential and later oscillates, reheating the universe.
+          For \(N\) e-folds before inflation ends, the leading predictions are
+        </p>
+        <div class="atlas-equation">
+          \[
+            n_s\simeq1-\frac{2}{N},
+            \qquad
+            r\simeq\frac{12}{N^2}.
+          \]
+        </div>
+        <p>
+          Late-time models perform a different job at extremely low curvature. Hu–Sawicki and related functions are
+          designed to approximate GR at high density, generate an accelerating background at cosmic density, and
+          alter the growth of structure through a finite-range scalar force.<sup class="atlas-citation">[<a href="#fr-ref-6">6</a>]</sup>
+        </p>
+        <div class="atlas-equation">
+          \[
+            f(R)=R-m^2\frac{c_1(R/m^2)^n}{c_2(R/m^2)^n+1}.
+          \]
+        </div>
+        <p>
+          The chameleon effect makes the scalar heavy in deep gravitational potentials and light on cosmological
+          scales. Solar-System agreement and cosmological deviations can then coexist, but only within a narrowing
+          parameter region.<sup class="atlas-citation">[<a href="#fr-ref-6">6</a>, <a href="#fr-ref-7">7</a>]</sup>
+        </p>
+      </section>
+
+      <section id="gains" class="atlas-section">
+        <p class="atlas-section__label">Explanatory gains</p>
+        <h2>What nonlinear curvature can accomplish</h2>
+        <div class="atlas-gains">
+          <article class="atlas-gain">
+            <h3>Inflation becomes gravitational dynamics</h3>
+            <p>The scalaron and its potential are fixed by the \(R^2\) term. A separate elementary inflaton need not be introduced.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>The primordial spectrum is sharply constrained</h3>
+            <p>Once the number of e-folds is specified, the leading scalar tilt and tensor fraction occupy a narrow region rather than an arbitrary potential landscape.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Acceleration can move into geometry</h3>
+            <p>Late expansion can arise from the nonlinear curvature response instead of an independently conserved dark-energy component.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Background and growth can separate</h3>
+            <p>Two models can share nearly the same expansion history while producing different lensing, clustering, and halo abundances. The theory therefore makes tests beyond the supernova Hubble diagram.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>GR is a controlled limit</h3>
+            <p>When \(f(R)\rightarrow R-2\Lambda\) and the scalar becomes heavy, Einstein gravity is recovered over its tested domain.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="blockers" class="atlas-section">
+        <p class="atlas-section__label">Open problems</p>
+        <h2>Where the freedom in \(f\) becomes a liability</h2>
+        <div class="atlas-blockers">
+          <article class="atlas-blocker">
+            <h3>1. A function is not a prediction</h3>
+            <p>Covariance permits infinitely many choices of \(f(R)\). Stability, local tests, and cosmology eliminate large families, but no accepted principle selects the surviving function or relates its high- and low-curvature scales.<sup class="atlas-citation">[<a href="#fr-ref-3">3</a>, <a href="#fr-ref-4">4</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>2. Screening carries astrophysical dependence</h3>
+            <p>The same scalar force that changes structure growth must disappear in the Solar System and screened galaxies. Predictions then depend on environmental potentials, nonlinear halo physics, and baryonic modelling.<sup class="atlas-citation">[<a href="#fr-ref-6">6</a>, <a href="#fr-ref-7">7</a>, <a href="#fr-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>3. Late-time viability approaches ΛCDM</h3>
+            <p>Current structure and cluster measurements find no significant departure from GR. The parameter space with the largest observable effects is being excluded, leaving models whose expansion and growth increasingly resemble ΛCDM.<sup class="atlas-citation">[<a href="#fr-ref-10">10</a>–<a href="#fr-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>4. Dark matter usually remains</h3>
+            <p>Cosmological \(f(R)\) models generally retain cold dark matter to reproduce the CMB, lensing, clusters, and structure. They offer an alternative to dark energy more readily than an alternative to the entire dark sector.</p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>5. One scalar does not quantize gravity</h3>
+            <p>Higher-curvature terms are expected in an effective action, but an arbitrarily chosen \(f(R)\) does not provide a UV-complete quantum theory or determine the full tower of curvature corrections.</p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>6. The two accelerations are not yet one theory</h3>
+            <p>The coefficient required for primordial \(R^2\) inflation and the scale required for late acceleration are enormously different. A single technically natural function connecting both regimes has not been selected by established microphysics.<sup class="atlas-citation">[<a href="#fr-ref-3">3</a>, <a href="#fr-ref-4">4</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence-ledger" class="atlas-section">
+        <p class="atlas-section__label">Evidence and tests</p>
+        <h2>Inflation succeeds; late-time deviations remain absent</h2>
+        <div class="atlas-ledger">
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Successful prediction</p>
+            <h3>\(n_s\simeq0.964\), \(r\simeq0.004\) for \(N=55\)</h3>
+            <p>The leading Starobinsky predictions lie inside current CMB constraints, including Planck's \(n_s=0.9649\pm0.0042\) and the BICEP/Keck upper bound \(r_{0.05}&lt;0.036\). The scalar amplitude fixes the mass scale \(M\); the tilt and small tensor signal then follow.<sup class="atlas-citation">[<a href="#fr-ref-8">8</a>, <a href="#fr-ref-9">9</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__miss">
+            <p class="atlas-score__label">Current late-time result</p>
+            <h3>\(\log_{10}|f_{R0}|&lt;-4.12\) at 95%</h3>
+            <p>The first eROSITA all-sky cluster sample, with weak-lensing calibration and varying neutrino mass, found no deviation from GR in the Hu–Sawicki model. The bound is model- and dataset-specific rather than universal.<sup class="atlas-citation">[<a href="#fr-ref-10">10</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__miss">
+            <p class="atlas-score__label">Model-independent growth test</p>
+            <h3>\(\mu_0=0.05\pm0.22\), \(\Sigma_0=0.008\pm0.045\)</h3>
+            <p>DESI full-shape clustering combined with CMB, DES weak lensing, and supernovae found the effective gravitational strength and lensing response consistent with GR. These parameters cover more theories than \(f(R)\) and therefore do not translate into one unique \(f_{R0}\) bound.<sup class="atlas-citation">[<a href="#fr-ref-11">11</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">Near-term test</p>
+            <h3>Cross-check growth, lensing, and screening</h3>
+            <p>Euclid, Rubin, CMB-S4, and deeper cluster surveys can compare the motion of matter with the lensing potential across redshift and environment. A viable model must fit those correlated signals with the same \(f_{R0}\), neutrino sector, and screening prescription.<sup class="atlas-citation">[<a href="#fr-ref-13">13</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__gap">
+            <p class="atlas-score__label">Missing calculation</p>
+            <h3>Derive the function</h3>
+            <p>The programme needs a microscopic principle that selects \(f(R)\), fixes its curvature scales, and controls the other higher-curvature operators expected at the same order.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-questions" class="atlas-section">
+        <p class="atlas-section__label">The questions</p>
+        <h2>What \(f(R)\) gravity answers—and leaves open</h2>
+        <table class="atlas-scorecard">
+          <tbody>
+            <tr>
+              <th scope="row">Gravity</th>
+              <td><p>The classical gravitational response gains one scalar degree of freedom and a testable scale dependence. The construction is an effective modification, not a completed quantum gravity.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Singularities</th>
+              <td><p>The \(R^2\) term controls a finite-curvature inflationary regime, but successful inflation does not by itself prove geodesic completeness. Generic black-hole and cosmological singularities are not removed by every viable \(f(R)\).</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Expansion</th>
+              <td><p>High-curvature nonlinearities give a successful inflationary model; low-curvature nonlinearities can drive late acceleration. No accepted principle unifies the two scales or selects the late-time function.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Beginning</th>
+              <td><p>Starobinsky inflation explains flatness and generates primordial fluctuations, while its own initial state and the pre-inflationary boundary remain outside the model.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Matter</th>
+              <td><p>The theory changes gravity rather than the particle inventory. Standard baryons, radiation, neutrinos, and usually cold dark matter are imported.<sup class="atlas-citation">[<a href="#fr-ref-3">3</a>, <a href="#fr-ref-4">4</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Constants</th>
+              <td><p>The inflationary mass \(M\), late-time curvature scale, and functional parameters are fitted or chosen. Their hierarchy is not derived from the classical action.</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="assessment" class="atlas-section">
+        <p class="atlas-section__label">What comes next</p>
+        <h2>Preserve the inflationary triumph and expose the late-time scalar</h2>
+        <p>
+          The fairest verdict divides the programme in two. \(R+R^2\) inflation is a landmark: a simple curvature
+          correction made quantitative predictions decades before precision CMB cosmology and remains one of the
+          best-fitting inflationary models. That success establishes the physical power of nonlinear curvature.
+        </p>
+        <p>
+          Late-time \(f(R)\) gravity faces a different record. Viable functions can reproduce the expansion history
+          and evade local tests, but observations have not found their additional scalar force. As screening and
+          structure constraints tighten, the remaining models approach GR plus Λ in the regimes we can measure.
+        </p>
+        <p>
+          A breakthrough would connect the two regimes instead of choosing them independently: one derived effective
+          action, one stable cosmic history, and one scalar whose predicted effects appear consistently in inflation,
+          lensing, clustering, and screened systems. Without that connection, \(f(R)\) remains a productive language
+          containing an exceptional inflationary model and many increasingly constrained theories of late acceleration.
+        </p>
+      </section>
+
+      <section id="reading" class="atlas-section">
+        <p class="atlas-section__label">Primary reading</p>
+        <h2>Sources</h2>
+        <ol class="atlas-reading-list">
+          <li id="fr-ref-1">H. A. Buchdahl, <a href="https://doi.org/10.1093/mnras/150.1.1">“Non-Linear Lagrangians and Cosmological Theory”</a> (1970).</li>
+          <li id="fr-ref-2">A. A. Starobinsky, <a href="https://doi.org/10.1016/0370-2693(80)90670-X">“A New Type of Isotropic Cosmological Models Without Singularity”</a> (1980).</li>
+          <li id="fr-ref-3">T. P. Sotiriou and V. Faraoni, <a href="https://arxiv.org/abs/0805.1726">“f(R) Theories of Gravity”</a> (2010).</li>
+          <li id="fr-ref-4">A. De Felice and S. Tsujikawa, <a href="https://arxiv.org/abs/1002.4928">“f(R) Theories”</a> (2010).</li>
+          <li id="fr-ref-5">I. Sawicki and W. Hu, <a href="https://arxiv.org/abs/astro-ph/0702278">“Stability of Cosmological Solutions in f(R) Models of Gravity”</a> (2007).</li>
+          <li id="fr-ref-6">W. Hu and I. Sawicki, <a href="https://arxiv.org/abs/0705.1158">“Models of f(R) Cosmic Acceleration That Evade Solar-System Tests”</a> (2007).</li>
+          <li id="fr-ref-7">J. Khoury and A. Weltman, <a href="https://arxiv.org/abs/astro-ph/0309300">“Chameleon Fields: Awaiting Surprises for Tests of Gravity in Space”</a> (2004).</li>
+          <li id="fr-ref-8">Planck Collaboration, <a href="https://arxiv.org/abs/1807.06211">“Planck 2018 Results. X. Constraints on Inflation”</a> (2020).</li>
+          <li id="fr-ref-9">BICEP/Keck Collaboration, <a href="https://arxiv.org/abs/2110.00483">“Improved Constraints on Primordial Gravitational Waves”</a> (2021).</li>
+          <li id="fr-ref-10">E. Artis <i>et al.</i>, <a href="https://arxiv.org/abs/2402.08459">“The SRG-eROSITA All-Sky Survey: Constraints on f(R) Gravity from Cluster Abundance”</a> (2024).</li>
+          <li id="fr-ref-11">M. Ishak <i>et al.</i>, <a href="https://arxiv.org/abs/2411.12026">“Modified Gravity Constraints from the Full Shape Modeling of Clustering Measurements from DESI 2024”</a> (2025).</li>
+          <li id="fr-ref-12">H. Desmond and P. G. Ferreira, <a href="https://arxiv.org/abs/2009.08743">“Galaxy Morphology Rules Out Astrophysically Relevant Hu–Sawicki f(R) Gravity”</a> (2020).</li>
+          <li id="fr-ref-13">S. Casas <i>et al.</i>, <a href="https://doi.org/10.1051/0004-6361/202348713">“Euclid: Constraints on f(R) Cosmologies from the Spectroscopic and Photometric Primary Probes”</a> (2026).</li>
+        </ol>
+      </section>
+
+      <section id="corrections" class="atlas-section atlas-invitation">
+        <p class="atlas-section__label">Invitation</p>
+        <h2>Corrections are welcome</h2>
+        <p>
+          This profile distinguishes metric \(f(R)\) gravity from Palatini formulations and separates Starobinsky
+          inflation from late-time modified-gravity models. Comments from Alexei Starobinsky, Wayne Hu, Ignacy Sawicki,
+          Shinji Tsujikawa, Antonio De Felice, Thomas Sotiriou, Valerio Faraoni, and other researchers working on
+          higher-curvature cosmology will be incorporated with attribution.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>
