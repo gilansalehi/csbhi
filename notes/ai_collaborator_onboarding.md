@@ -34,7 +34,7 @@ Read the shared foundation in order:
 
 Then follow the branch relevant to the review:
 
-- **Collapse and child cosmology:** [Marginality Transfer and the Reciprocal Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/marginality_transfer_and_reciprocal_cosmological_clock.md) → [The Trapping-Horizon Enthalpy Identity](https://www.gilansalehi.com/csbhi/notes/trapping_horizon_enthalpy_identity.md) → [Macroscopic Horizon Birth Selects the Low-Torsion Einstein–Cartan Branch](https://www.gilansalehi.com/csbhi/notes/macroscopic_horizon_birth_low_torsion_branch.md) → [Matter Completion and the Self-Consistent MeV Birth Benchmark](https://www.gilansalehi.com/csbhi/notes/matter_completion_and_mev_birth_benchmark.md).
+- **Collapse and child cosmology:** [GD II — *Collapse Cohorts and the Horizon Map*](https://www.gilansalehi.com/csbhi/notes/gd2_collapse_cohort_horizon_map_outline.md) → [Horizon-Map Equation and Notation Audit](https://www.gilansalehi.com/csbhi/notes/horizon_map_equation_and_notation_audit.md) → [The Collapse-to-Child Boundary System](https://www.gilansalehi.com/csbhi/notes/collapse_to_child_boundary_system.md) → [The Full-History Test](https://www.gilansalehi.com/csbhi/notes/full_history_test_of_the_collapse_cohort_shell_clock.md).
 - **Galaxy prediction:** [Self-Dual Homogeneous Derivation of the Square-Root Law](https://www.gilansalehi.com/csbhi/notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md) → [The Evolving Galactic Acceleration-Scale Correspondence](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md) → [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md).
 - **Weyl curvature:** [The Weyl Curvature Hypothesis as a Fixed Point](https://www.gilansalehi.com/csbhi/notes/recursive_bhc_and_the_weyl_curvature_hypothesis.md) → [A Black Hole on the Aeon Boundary](https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md).
 
@@ -65,16 +65,6 @@ It does not derive this relation from a completed parent–child spacetime. The 
 ### Shear-free Weyl closure
 
 **[E, conditional]** For a geodesic, shear-free spherical interior, [A Black Hole on the Aeon Boundary](https://www.gilansalehi.com/csbhi/notes/shear_free_interior_weyl_stress_identity.md) derives the closure \(\Pi=-D/2\) and the corresponding Weyl dilution \(D\propto a^{-2}\). Acceleration, finite shear, and the complete throat geometry remain open. Applying the dilution law across generations is conditional on the proposed succession geometry.
-
-### Marginal surfaces, horizon flow, and matter completion
-
-**[E, conditional]** Preserving areal radius and Misner–Sharp mass between corresponding spherical cross-sections preserves marginality. A parent marginal sphere therefore maps to a child FLRW apparent-horizon sphere under the stated matching data.
-
-**[E plus Corr]** In flat FLRW, normalized apparent-horizon growth is exactly \(3(1+w_{\rm eff})/4\). CSBHI conditionally transfers this identity to parent trapping-horizon growth through the marginal-surface map and an event-map clock.
-
-**[E, within benchmark]** Additionally identifying the parent event horizon with the child cosmological event horizon fixes the ingoing-Vaidya cohort lapse \(d\tau_C/dv=R_T/(2R_E)\). Given one matter-abundance parameter, the system analytically reconstructs the radiation–matter–vacuum background and both horizon histories. The second horizon identification remains a hypothesis.
-
-**[E, within benchmark]** Thermal Einstein–Cartan microphysics gives two roots. A macroscopic growing horizon selects \(\sigma/\epsilon\sim\ell_{\rm Pl}/R_T\); the near-bounce root lies on the shrinking-horizon branch. The reconstructed birth radius gives \(T_b\simeq0.54\)–\(0.61\,\mathrm{MeV}\) and \(\sigma/\epsilon\simeq3.3\times10^{-46}\) under the stated thermal assumptions.
 
 ### Galactic law and prediction
 
@@ -108,7 +98,7 @@ The ratio is the falsifiable prediction. The absolute normalization remains open
 
 ### Open construction
 
-**[O]** The project still lacks a completed collapse map, invariant selection of the dual event horizons, reconciliation of the cohort and individual reciprocal clocks, parent–child matter/current ledger, junction or throat metric, weak-field derivation of the galactic mixing law, first-principles normalization of \(\kappa\), perturbation theory, and the pre-MeV thermal state.
+**[O]** The project still lacks a completed collapse map, the nontrivial cohort clock, parent–child matter/current transfer, a junction or throat metric, a weak-field derivation of the galactic mixing law, first-principles normalization of \(\kappa\), perturbation theory, and the full thermal history.
 
 ## Interpretation guardrails
 
@@ -132,9 +122,9 @@ The ratio is the falsifiable prediction. The absolute normalization remains open
 
 10. **Do not use the archive as canonical context.** Check the applicable review packet, canonical publications, and current open-questions index before reviving an older notation, model, or conclusion.
 
-11. **Keep the clocks separate.** The Vaidya cohort lapse \(d\tau_C/dv\), the collapse-foliation lapse \(d\tau_C/dt_P\), and the reciprocal lapse along an individual infalling trajectory become comparable only after the radial event map supplies the necessary Jacobians.
+11. **Keep the clocks separate.** The parent event-horizon parameter, collapse-foliation time, individual infaller's proper time, and child cosmic time become comparable only after the event map supplies the necessary Jacobians.
 
-12. **Keep scale normalizations explicit.** CSBHI sets \(a=1\) at child birth. Conventional cosmology often sets \(a_0=1\) today. Use \(A=a/a_0\) or \(z=a/a_{\rm eq}\) when importing present-normalized Friedmann parameters.
+12. **Keep scale normalizations explicit.** CSBHI sets \(a=1\) at the reference crossing. Conventional cosmology often sets \(a_0=1\) today. Use \(A=a/a_0\) when importing present-normalized Friedmann parameters.
 
 13. **Do not turn matter into radiation by coordinates alone.** Conformal rescaling preserves causal type and does not change particle spin or internal charges. A radiation-dominated child born from parent matter requires an explicit stress-energy, entropy, and particle-current transfer law.
 

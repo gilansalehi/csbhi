@@ -154,6 +154,63 @@ Consequences:
 3. In a de Sitter future, \(B\to R_\Lambda\) while \(\bar R_p=a\eta\to\infty\). Equal-area matching to a stationary parent horizon is therefore not the direct cohort proposal.
 4. The finite quantity common to the two descriptions is the remaining conformal interval \(\eta_\infty-\eta\), not the particle-horizon areal radius.
 
+### Recovery guardrails
+
+A September 2026 branch temporarily introduced two different pairings,
+
+\[
+S_T^P\longleftrightarrow S_A^C,
+\qquad
+\mathcal H_{\rm BH}^P\longleftrightarrow\mathcal H_e^C,
+\]
+
+and then used them to construct a clock, horizon-flow law, Einstein–Cartan branch selection, and MeV birth benchmark. That branch has been withdrawn. Similar evolution equations, compatible asymptotes, or attractive radius orderings do not establish a causal horizon correspondence.
+
+The canonical horizon names are:
+
+\[
+\boxed{
+\mathcal H_{\rm BH}^P,\quad
+\mathcal H_{\rm cos}^P,\quad
+\mathcal H_p^C,\quad
+\mathcal H_A^C,\quad
+\mathcal H_e^C
+}
+\]
+
+for the parent black-hole event horizon, parent cosmological horizon, child particle horizon, child apparent horizon, and child future cosmological event horizon. A generic symbol such as \(\mathcal H_E\) is too ambiguous for the collapse map.
+
+The reciprocal relation supplies an orientation check independent of horizon nomenclature. With \(a=1/r\), \(d\eta=d\tau/a\), and \(H=-\dot r/r\),
+
+\[
+d\eta=-\frac{dr}{H(r)},
+\]
+
+so the child particle- and event-horizon comoving radii are
+
+\[
+\boxed{
+\chi_p(r)=c\int_r^1\frac{dr'}{H(r')},
+\qquad
+\chi_e(r)=c\int_0^r\frac{dr'}{H(r')}.
+}
+\]
+
+The opposite integration limits encode the past/future distinction directly.
+
+Marginality supplies another guardrail. Under \(\tilde g_{\mu\nu}=\Omega^2g_{\mu\nu}\), the areal radius becomes \(\tilde R=\Omega R\), and
+
+\[
+\tilde h^{ab}\nabla_a\tilde R\nabla_b\tilde R
+=
+\Omega^{-2}h^{ab}
+\nabla_a(\Omega R)\nabla_b(\Omega R).
+\]
+
+Terms involving \(\nabla_a\Omega\) prevent this expression from being a simple rescaling of \(h^{ab}\nabla_aR\nabla_bR\). Marginal spheres are therefore not generally preserved by a conformal transformation.
+
+> Before proposing any horizon correspondence, locate Alice's crossing on both causal histories. Differential similarity and endpoint agreement are checks only after the surfaces have been identified.
+
 ---
 
 ## 4. The angular conformal relation

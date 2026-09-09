@@ -45,36 +45,6 @@ const DOCUMENTS = {
       publications: 'Within the scale-free, horizon-fixing class, involution fixes the unique nontrivial map: \\(a=1/r\\).',
     },
   },
-  marginalityClock: {
-    label: 'Result II',
-    title: 'Marginality Transfer and the Reciprocal Cosmological Clock',
-    note: 'marginality_transfer_and_reciprocal_cosmological_clock',
-    prerequisite: 'gd1',
-    meta: { publications: 'conditional geometric result' },
-    summaries: {
-      publications: 'Matching areal radius and Misner–Sharp mass transfers marginality from a parent collapse sphere to a child FLRW apparent-horizon sphere, fixing the reciprocal clock that the full junction must recover independently.',
-    },
-  },
-  trappingEnthalpy: {
-    label: 'Result III',
-    title: 'The Trapping-Horizon Enthalpy Identity',
-    note: 'trapping_horizon_enthalpy_identity',
-    prerequisite: 'marginalityClock',
-    meta: { publications: 'conditional horizon identity' },
-    summaries: {
-      publications: 'Translates the child Friedmann history into parent trapping-horizon dynamics: normalized horizon growth is the child enthalpy fraction, tracing the geometric sequence \\(1\\to3/4\\to0\\) through radiation, matter, and vacuum domination.',
-    },
-  },
-  lowTorsionBranch: {
-    label: 'Result IV',
-    title: 'Macroscopic Horizon Birth Selects the Low-Torsion Einstein–Cartan Branch',
-    note: 'macroscopic_horizon_birth_low_torsion_branch',
-    prerequisite: 'trappingEnthalpy',
-    meta: { publications: 'conditional branch-selection result' },
-    summaries: {
-      publications: 'In the dual-horizon Vaidya benchmark, thermal Einstein–Cartan microphysics gives two roots: a growing macroscopic trapping horizon selects \\(\\sigma/\\epsilon\\sim\\ell_{\\rm Pl}/R_T\\), while the near-bounce root requires a shrinking horizon.',
-    },
-  },
   evolvingGDagger: {
     label: 'Prediction I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
@@ -238,7 +208,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'marginalityClock', 'trappingEnthalpy', 'lowTorsionBranch', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',

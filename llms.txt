@@ -4,7 +4,7 @@
 
 **Architecture.** CSBHI is a branching direct-collapse cosmology. A child universe is the interior of a forming black hole: it comes into being at gravitational collapse. The reciprocal relation a=1/r maps the parent's decreasing interior radius to the child's increasing spatial scale, so the parent's r→0 endpoint coincides with that same child's a→∞ de Sitter future. Black holes that later form inside a child seed further children, so the whole structure is a tree that branches at every collapse.
 
-**Reading path.** The shared foundation is GD I → the Cosmological Glossary → RI I → Result I. The collapse branch is Marginality Transfer → the Trapping-Horizon Enthalpy Identity → the Low-Torsion Branch → Matter Completion and the MeV Birth Benchmark → the GD II outline. The galaxy branch is the square-root-law derivation → Prediction I → its high-redshift test. The Weyl branch is WCH I → A Black Hole on the Aeon Boundary. Finish any branch with the open-questions index.
+**Reading path.** The shared foundation is GD I → the Cosmological Glossary → RI I → Result I. The collapse branch is the GD II outline → Horizon-Map Equation and Notation Audit → the Collapse-to-Child Boundary System → the Full-History Test. The galaxy branch is the square-root-law derivation → Prediction I → its high-redshift test. The Weyl branch is WCH I → A Black Hole on the Aeon Boundary. Finish any branch with the open-questions index.
 
 ## Claim hierarchy
 
@@ -15,12 +15,9 @@
 - **Proposed correspondence:** CSBHI identifies the global acceleration entering the galaxy-scale mixing law with cH_A at the contemporaneous FLRW apparent horizon.
 - **Conditional prediction:** If that correspondence is correct and its dimensionless normalization is epoch-independent, then g†(z)/g†(0)=H_A(z)/H_0.
 - **Research hypothesis:** Smooth parent collapse supplies a low-Weyl child beginning that may reproduce itself as a fixed point across generations.
-- **Conditional marginality result:** Preserving areal radius and Misner–Sharp mass between corresponding spherical cross-sections preserves marginality and identifies the child cross-section as its FLRW apparent horizon.
-- **Standard identity with conditional transfer:** Flat-FLRW apparent-horizon growth equals the child enthalpy fraction. Under the marginal-surface map, normalized parent trapping-horizon growth satisfies Xi_H=3(1+w_eff)/4.
-- **Dual-horizon benchmark:** Additionally identifying the parent event horizon with the child cosmological event horizon fixes the Vaidya cohort lapse N_v=R_T/(2R_E) and yields an analytic radiation–matter–vacuum horizon history after one matter-abundance constant is supplied. The event-horizon identification is not yet derived from a complete junction.
-- **Conditional Einstein–Cartan result:** Thermal spin-fluid microphysics in that benchmark has two roots. A macroscopic growing trapping horizon selects sigma/epsilon proportional to l_Pl/R_T; the near-bounce root lies on the shrinking-horizon branch.
-- **Numerical working result:** The reconstructed birth radius gives T_b approximately 0.54–0.61 MeV, tau_b approximately 2.5 s, and sigma/epsilon approximately 3.3e-46 under the stated thermal assumptions.
-- **Open construction:** The event-horizon selection, reconciliation of cohort and reciprocal clocks, complete throat geometry, parent-to-child matter/current ledger, weak-field tensorial galaxy law, perturbation transfer, and pre-MeV state remain unfinished.
+- **Candidate collapse map:** The current GD II track maps the parent black-hole event-horizon generator to a child particle-horizon history. The child apparent horizon and future cosmological event horizon are different surfaces and are not substitutes for that causal map.
+- **Negative benchmark result:** A compensated ΛLTB collapse reproduces the required endpoint behavior, but the simplest unit-lapse shell clock fails through the intermediate history. The remaining clock must be derived rather than fitted.
+- **Open construction:** The collapse-cohort clock, complete throat geometry, parent-to-child matter/current transfer, weak-field tensorial galaxy law, perturbation transfer, and full thermal history remain unfinished.
 
 Documents labelled hypotheses, outlines, or drafts are under active review, not established conclusions.
 
@@ -34,17 +31,13 @@ F(r) = -dr/dtau                             [definition of positive inward flow]
 H_A = (1/a)(da/dtau) = F(r)/r               [exact kinematic consequence]
 bar_R(tau) = a(tau) R                       [Alice's FLRW areal radius]
 R_A(tau) = c / H_A(tau)                     [flat-FLRW apparent horizon]
-Xi_H = (1/(2cN_H)) dR_T/dt_P                [normalized trapping-horizon flow]
-Xi_H = 3(epsilon+p)/(4epsilon)               [conditional enthalpy identity]
-Xi_H = Omega_r + 3 Omega_m/4                 [radiation–matter–vacuum background]
-N_v = d tau_C/dv = R_T/(2R_E)               [dual-horizon Vaidya cohort lapse]
-z = epsilon_m/epsilon_r = a/a_eq             [matter-completed scale ratio]
+R = eta = Phi(v_H)                          [candidate child particle-horizon history]
 Lambda = 3 H_Lambda^2 / c^2                 [de Sitter identity]
 g_mix = kappa sqrt(g_N A)                   [conditional mixing theorem]
 g_dagger(z)/g_dagger(0) = H_A(z)/H_0        [conditional prediction]
 ```
 
-Do not identify `r` with `R`, `bar_R`, or `R_T`. Here `r(tau)` is Bob's horizon-normalized coordinate assigned along Alice's individual trajectory; `R` is Alice's comoving label; `bar_R=aR` is Alice's areal radius; and `R_T` labels successive parent trapping-horizon cross-sections. The reciprocal normalization `a=1` at birth is not the conventional present normalization. Use `A=a/a_0` for present-normalized cosmology or `z=a/a_eq` for the matter-completed horizon history.
+Do not identify `r` with `R` or `bar_R`. Here `r(tau)` is Bob's horizon-normalized coordinate assigned along Alice's individual trajectory; `R` is Alice's comoving label; and `bar_R=aR` is Alice's areal radius. Keep the parent black-hole event horizon, parent cosmological horizon, child particle horizon, child apparent horizon, and child future cosmological event horizon distinct. The current GD II causal proposal maps the parent black-hole event horizon to the child particle-horizon history. The reciprocal normalization `a=1` at crossing is not the conventional present normalization; use `A=a/a_0` when importing present-normalized cosmology.
 
 The public site is statically hosted. Core papers contain their substantive text directly in HTML; the project overview and review packet compose some sections from static data-wrapper views. Research notes are also available as raw Markdown at the URLs below, so no JavaScript execution is required to read them. Equations use LaTeX notation.
 
@@ -67,10 +60,6 @@ When debugging your interpretation, use the guide's claim ledger and interpretat
 - [Geometric Duality: Conformal Scaling of Black Hole Interiors](https://www.gilansalehi.com/csbhi/gd1.html): The principal CSBHI preprint by Gilan Salehi. Introduces the reciprocal ansatz, relates inward flow to expansion, discusses singularity deferral, and compares the construction with cosmological observables.
 - [RI I — Field Equations of the Reciprocal Interior](https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md), by Codex (OpenAI): Derives the reciprocal-interior dynamics from the metric ansatz, Einstein's equations, and stress-energy conservation.
 - [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](https://www.gilansalehi.com/csbhi/reciprocal-involution.html), by Claude (Anthropic): Proves a=1/r is the unique nontrivial scale-free, horizon-fixing involution — so once scale-invariance and horizon-fixing are assumed, the reciprocal power is fixed. Adopting those symmetries, and the physical identification, remains the ansatz.
-- [Marginality Transfer and the Reciprocal Cosmological Clock](https://www.gilansalehi.com/csbhi/notes/marginality_transfer_and_reciprocal_cosmological_clock.md), by Gilan Salehi: Shows conditionally that continuity of areal radius and Misner–Sharp mass transfers marginality between parent and child cross-sections and fixes the reciprocal clock that the full junction must recover independently.
-- [The Trapping-Horizon Enthalpy Identity](https://www.gilansalehi.com/csbhi/notes/trapping_horizon_enthalpy_identity.md), by Gilan Salehi: Shows that normalized apparent-horizon growth is the child enthalpy fraction and conditionally transfers the radiation–matter–vacuum sequence 1→3/4→0 to parent trapping-horizon growth.
-- [Macroscopic Horizon Birth Selects the Low-Torsion Einstein–Cartan Branch](https://www.gilansalehi.com/csbhi/notes/macroscopic_horizon_birth_low_torsion_branch.md), by Gilan Salehi: Within the dual-horizon Vaidya benchmark, proves that the growing-horizon thermal root has sigma/epsilon proportional to l_Pl/R_T while the near-bounce root lies on the shrinking-horizon branch.
-- [Matter Completion and the Self-Consistent MeV Birth Benchmark](https://www.gilansalehi.com/csbhi/notes/matter_completion_and_mev_birth_benchmark.md), by Gilan Salehi: Integrates the conditional radiation–matter–vacuum horizon history after one abundance parameter is supplied and reconstructs a 0.54–0.61 MeV birth state. The matter ledger and pre-MeV state remain open.
 - [Self-Dual Homogeneous Derivation of the Square-Root Law](https://www.gilansalehi.com/csbhi/notes/gd_self_dual_homogeneous_derivation_of_the_square_root_law.md), by Codex (OpenAI): Derives g_mix=kappa sqrt(g_N A) from homogeneity, local–global exchange symmetry, and exact flat-curve scaling after an unspecified global acceleration A is supplied. It does not identify A with cH_A or provide a weak-field tensor equation.
 - [The Evolving Galactic Acceleration-Scale Correspondence](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md), by Claude (Anthropic): A symmetry theorem fixes the square-root mixing law after a global acceleration is supplied. CSBHI identifies that acceleration with the contemporaneous apparent-horizon scale cH_A, giving the conditional prediction g†(z)/g†(0)=H_A(z)/H_0. The H-linked law has MOND precedent; CSBHI supplies an independent reciprocal-horizon motivation. Current intermediate-redshift evidence is compatible with a rise but does not decide the prediction.
 - [The Evolving Galactic Acceleration Scale and its High-Redshift Test](https://www.gilansalehi.com/csbhi/notes/evolving_acceleration_scale_high_z_test.md), by Claude (Anthropic): Specifies the redshift-dependent BTFR and RAR tests that distinguish the H-linked correspondence from a constant acceleration scale, while retaining the correspondence and weak-field mechanism as explicit assumptions.
