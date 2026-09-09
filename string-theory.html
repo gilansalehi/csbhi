@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" data-measure="lg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dcterms.modified" content="2026-09-09">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="A Research Atlas profile of string theory and string cosmology: quantum gravity, compactification, black-hole microstates, inflation, the landscape, axion tests, and the vacuum-selection problem.">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/string-theory.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>String Theory and String Cosmology — Research Atlas</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/research-atlas.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#profile-title">Skip to the profile</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article class="atlas-article" aria-labelledby="profile-title">
+      <header class="atlas-hero">
+        <p class="atlas-hero__eyebrow"><a href="research-atlas.html">Research Atlas</a> · Profile</p>
+        <h1 id="profile-title">String Theory and String Cosmology</h1>
+        <p class="atlas-hero__lede">
+          Replace point particles with quantum strings and gravity enters the spectrum. The same framework can produce
+          gauge forces, matter, black-hole entropy, inflation, and dark-matter candidates—but not yet one selected
+          universe.
+        </p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 9, 2026 · Draft profile · Corrections invited</p>
+      </header>
+
+      <section id="at-a-glance" class="atlas-section">
+        <p class="atlas-section__label">The case for string theory</p>
+        <h2>Quantum gravity arrives before cosmology is chosen</h2>
+        <p>
+          String theory does not begin by quantizing Einstein's field equations. It changes the object being
+          quantized. A one-dimensional string has infinitely many modes of vibration, and the closed-string spectrum
+          necessarily contains a massless spin-two state with the low-energy interactions of a graviton. Gravity is
+          no longer an extra force appended to quantum physics; it is one of the unavoidable excitations of the same
+          object that can generate gauge fields and matter.<sup class="atlas-citation">[<a href="#string-ref-1">1</a>–<a href="#string-ref-3">3</a>]</sup>
+        </p>
+        <p>
+          The theory's apparent excesses became sources of unity. Five consistent ten-dimensional superstring
+          theories are linked by dualities and appear as limits of a deeper eleven-dimensional structure. Branes led
+          to gauge/gravity duality, the first concrete nonperturbative description of quantum gravity in important
+          spacetimes. The same machinery counts the microscopic states of certain black holes and recovers the
+          Bekenstein–Hawking entropy.<sup class="atlas-citation">[<a href="#string-ref-4">4</a>–<a href="#string-ref-6">6</a>]</sup>
+        </p>
+        <p>
+          Compactification then turns hidden geometry into visible physics. The shape, size, fluxes, and branes of the
+          extra dimensions determine the four-dimensional fields and couplings; their dynamics can support inflation,
+          axions, dark sectors, cosmic strings, and late-time acceleration. A complete compactification would amount
+          to a quantum theory of gravity and a cosmological model in one construction. The difficulty is no longer a
+          shortage of possible universes. It is finding the principle that selects ours.<sup class="atlas-citation">[<a href="#string-ref-7">7</a>–<a href="#string-ref-10">10</a>]</sup>
+        </p>
+        <dl class="atlas-facts">
+          <div>
+            <dt>Central move</dt>
+            <dd>Replace fundamental point particles with strings and branes whose quantum spectra include gravity and gauge sectors.</dd>
+          </div>
+          <div>
+            <dt>Strongest theoretical results</dt>
+            <dd>Ultraviolet-soft perturbative amplitudes, dualities, holographic quantum gravity in anti-de Sitter backgrounds, and microscopic entropy for specified black holes.</dd>
+          </div>
+          <div>
+            <dt>Cosmological programme</dt>
+            <dd>Choose and stabilize a compactification, then derive its inflation, reheating, relics, dark sector, and vacuum energy.</dd>
+          </div>
+          <div>
+            <dt>Empirical status</dt>
+            <dd>Many compactifications make testable conditional predictions; no observation has uniquely selected string theory.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="construction" class="atlas-section">
+        <p class="atlas-section__label">The construction</p>
+        <h2>One worldsheet, many four-dimensional worlds</h2>
+        <p>
+          A string traces a two-dimensional worldsheet through spacetime. In its simplest bosonic form, the action is
+        </p>
+        <div class="atlas-equation">
+          \[
+            S_{\rm P}=-\frac{1}{4\pi\alpha'}
+            \int d^2\sigma\sqrt{-h}\,h^{ab}
+            G_{\mu\nu}(X)\,\partial_aX^\mu\partial_bX^\nu,
+          \]
+        </div>
+        <p>
+          where \(\alpha'=\ell_s^2\) sets the string scale. Requiring the two-dimensional quantum theory to remain
+          conformally consistent constrains the spacetime fields. At low energy, those consistency conditions become
+          gravitational field equations; the leading effective action contains the Einstein term together with the
+          dilaton and antisymmetric tensor fields:<sup class="atlas-citation">[<a href="#string-ref-2">2</a>, <a href="#string-ref-3">3</a>]</sup>
+        </p>
+        <div class="atlas-equation">
+          \[
+            S_{\rm eff}\propto
+            \int d^{10}x\sqrt{-G}\,e^{-2\phi}
+            \left[R+4(\nabla\phi)^2-\frac{1}{12}H_3^2+O(\alpha')\right].
+          \]
+        </div>
+        <p>
+          Six spatial dimensions must then be compactified or otherwise hidden. Their geometry supplies moduli—scalar
+          fields describing volumes, shapes, brane positions, and background fluxes. A realistic model must stabilize
+          those moduli, break supersymmetry, produce the Standard Model spectrum, and leave a controlled
+          four-dimensional vacuum. Every cosmological prediction depends on that choice.<sup class="atlas-citation">[<a href="#string-ref-7">7</a>–<a href="#string-ref-9">9</a>]</sup>
+        </p>
+      </section>
+
+      <section id="cosmology" class="atlas-section">
+        <p class="atlas-section__label">From compactification to sky</p>
+        <h2>String theory supplies ingredients, not one cosmic history</h2>
+        <p>
+          String cosmology is a family of models built inside the wider framework. Brane motion, axions, and geometric
+          moduli can act as inflatons. Other branches replace inflation with a pre-Big-Bang phase, string-gas
+          cosmology, an ekpyrotic contraction, or a holographic beginning. Compactifications also generate axion-like
+          particles, moduli, hidden gauge sectors, cosmic superstrings, and other relics that can contribute to dark
+          matter or dark radiation.<sup class="atlas-citation">[<a href="#string-ref-7">7</a>, <a href="#string-ref-10">10</a>–<a href="#string-ref-12">12</a>]</sup>
+        </p>
+        <p>
+          The breadth is physical, not merely decorative. Different compactifications really do have different
+          particle spectra, couplings, potentials, and cosmological histories. An observation can therefore exclude
+          regions of the construction space even when it does not falsify every string vacuum. The price is that a
+          successful fit establishes the chosen model only if its assumptions were fixed before the data were used.
+        </p>
+        <p>
+          Four-dimensional de Sitter space is the sharpest present test of control. KKLT and related constructions
+          propose metastable positive-energy vacua after moduli stabilization and an uplift, while swampland arguments
+          question whether controlled de Sitter vacua belong to quantum gravity at all. The dispute reaches directly
+          into cosmology: our universe is accelerating, so a final theory must either produce that background or
+          explain why the effective description looks like it does.<sup class="atlas-citation">[<a href="#string-ref-8">8</a>, <a href="#string-ref-9">9</a>, <a href="#string-ref-13">13</a>]</sup>
+        </p>
+      </section>
+
+      <section id="gains" class="atlas-section">
+        <p class="atlas-section__label">Explanatory gains</p>
+        <h2>What the string framework adds</h2>
+        <div class="atlas-gains">
+          <article class="atlas-gain">
+            <h3>Gravity is compulsory</h3>
+            <p>The massless closed-string spectrum contains a spin-two state. Its low-energy consistency conditions produce Einstein gravity rather than assuming a separate classical force.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Black-hole entropy becomes countable</h3>
+            <p>For specified supersymmetric extremal black holes, microscopic string and brane states reproduce \(S_{\rm BH}=A/(4G\hbar)\). The area law acquires statistical meaning.<sup class="atlas-citation">[<a href="#string-ref-5">5</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Geometry can determine particle physics</h3>
+            <p>Gauge groups, matter representations, Yukawa structures, and axion sectors descend from compactification data. Parameters become properties of hidden geometry rather than arbitrary four-dimensional entries.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Duality changes what spacetime means</h3>
+            <p>Strong coupling can equal weak coupling, large radii can equal small radii, and a gravitational bulk can equal a nongravitational boundary theory. Apparently different descriptions can encode one physics.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Quantum gravity reaches observable sectors</h3>
+            <p>Inflationary spectra, axions, cosmic superstrings, moduli histories, dark radiation, and gravitational waves provide routes from compactification geometry to measurement.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="blockers" class="atlas-section">
+        <p class="atlas-section__label">Open problems</p>
+        <h2>Why the framework has not selected our universe</h2>
+        <div class="atlas-blockers">
+          <article class="atlas-blocker">
+            <h3>1. Vacuum selection remains open</h3>
+            <p>Fluxes, branes, topology, and moduli admit an enormous set of four-dimensional effective theories. No accepted dynamical principle selects the vacuum, low-energy spectrum, or cosmological history realized in nature.<sup class="atlas-citation">[<a href="#string-ref-7">7</a>, <a href="#string-ref-14">14</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>2. Low-energy predictions are not unique</h3>
+            <p>Supersymmetry, extra dimensions, axions, cosmic strings, and moduli can occur over wide ranges or disappear from accessible energies. Their absence excludes models, but usually leaves other compactifications intact.<sup class="atlas-citation">[<a href="#string-ref-7">7</a>, <a href="#string-ref-11">11</a>, <a href="#string-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>3. Cosmology multiplies the choices</h3>
+            <p>Compactification, stabilization, supersymmetry breaking, initial conditions, inflation, and reheating must all be specified before a primordial spectrum is obtained. Different controlled choices can agree with the same CMB data.<sup class="atlas-citation">[<a href="#string-ref-7">7</a>, <a href="#string-ref-10">10</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>4. De Sitter control is disputed</h3>
+            <p>Positive vacuum energy is central to our observed universe, yet explicit constructions rely on layered approximations whose mutual control remains contested. Swampland conjectures sharpen the issue without settling it.<sup class="atlas-citation">[<a href="#string-ref-8">8</a>, <a href="#string-ref-9">9</a>, <a href="#string-ref-13">13</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>5. Holography is best understood in the wrong asymptotics</h3>
+            <p>AdS/CFT gives extraordinary nonperturbative control for anti-de Sitter boundaries. Cosmology is approximately de Sitter and time-dependent, where no equally complete formulation is established.<sup class="atlas-citation">[<a href="#string-ref-4">4</a>, <a href="#string-ref-7">7</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>6. No distinctive signal has been confirmed</h3>
+            <p>Current observations constrain string-motivated models, but none requires a string origin. The framework has produced many possible signatures without yet producing one empirically unavoidable signature.<sup class="atlas-citation">[<a href="#string-ref-7">7</a>, <a href="#string-ref-15">15</a>, <a href="#string-ref-16">16</a>]</sup></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence-ledger" class="atlas-section">
+        <p class="atlas-section__label">Evidence and tests</p>
+        <h2>What “finally testable” means</h2>
+        <div class="atlas-ledger">
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Quantum-gravity result</p>
+            <h3>\(S_{\rm micro}=S_{\rm BH}=A/(4G\hbar)\)</h3>
+            <p>Strominger and Vafa counted the microstates of a class of five-dimensional extremal black holes and recovered the semiclassical area law. Later work extended the result widely, though not to every astrophysical black hole.<sup class="atlas-citation">[<a href="#string-ref-5">5</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Nonperturbative structure</p>
+            <h3>Gravity equals a boundary quantum field theory</h3>
+            <p>AdS/CFT supplies a precise dictionary between string theory in specified anti-de Sitter backgrounds and conformal field theories without gravity. Thousands of quantitative checks support the correspondence; direct experimental evidence for the duality as a description of our universe is absent.<sup class="atlas-citation">[<a href="#string-ref-4">4</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">New experimental bridge</p>
+            <h3>A detected axion could eliminate compactifications</h3>
+            <p>Jain and collaborators built Bayesian priors over Calabi–Yau moduli spaces and showed how a future axion measurement could update the allowed geometry and topology. Their forward model is a blueprint for testing ensembles of string compactifications; it is not a present detection or a universal test of string theory.<sup class="atlas-citation">[<a href="#string-ref-15">15</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">Observable searches</p>
+            <h3>Axions, cosmic superstrings, and primordial relics</h3>
+            <p>Axion haloscopes, CMB surveys, pulsar timing, and gravitational-wave observatories now probe regions of string-motivated parameter space. A discovery would still need correlations or coupling relations that distinguish a compactification from a non-string effective model.<sup class="atlas-citation">[<a href="#string-ref-11">11</a>, <a href="#string-ref-12">12</a>, <a href="#string-ref-16">16</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__gap">
+            <p class="atlas-score__label">Missing calculation</p>
+            <h3>From the framework to one prior over universes</h3>
+            <p>A decisive programme must define the admissible ensemble, its measure, cosmological initial conditions, and observer-independent selection rule before measurements are applied. Without that prior, surviving models can always inherit probability from choices made after the fact.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-questions" class="atlas-section">
+        <p class="atlas-section__label">The questions</p>
+        <h2>What string theory answers—and leaves open</h2>
+        <table class="atlas-scorecard">
+          <tbody>
+            <tr>
+              <th scope="row">Gravity</th>
+              <td><p>A consistent perturbative quantum gravity is built into the closed-string spectrum, and holography supplies nonperturbative definitions in important backgrounds. A complete formulation for realistic de Sitter cosmology remains open.<sup class="atlas-citation">[<a href="#string-ref-2">2</a>–<a href="#string-ref-4">4</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Singularities</th>
+              <td><p>Strings resolve or reinterpret many orbifold, conifold, and black-hole singularities, and several string cosmologies replace the Big Bang. No general theorem removes every cosmological or black-hole singularity.<sup class="atlas-citation">[<a href="#string-ref-7">7</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Expansion</th>
+              <td><p>Explicit sectors can drive inflation and late acceleration. The choice of inflaton, potential, vacuum, and positive-energy construction is not uniquely selected by the framework.<sup class="atlas-citation">[<a href="#string-ref-8">8</a>–<a href="#string-ref-10">10</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Beginning</th>
+              <td><p>Pre-Big-Bang, brane, ekpyrotic, string-gas, and holographic histories offer alternatives to a singular beginning. Their initial state and observational realization remain model-dependent.<sup class="atlas-citation">[<a href="#string-ref-7">7</a>]</sup></p></td>
+            </tr>
+            <tr>
+              <th scope="row">Matter</th>
+              <td><p>Compactifications can produce chiral gauge sectors, axions, hidden particles, and dark matter candidates. No compactification has been empirically selected as the unique origin of the Standard Model and cosmic dark matter.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Constants</th>
+              <td><p>Couplings and masses can become functions of geometry, flux, and stabilized moduli. The landscape turns that possibility into a prediction only after a vacuum-selection rule or defensible statistical measure is supplied.<sup class="atlas-citation">[<a href="#string-ref-14">14</a>, <a href="#string-ref-15">15</a>]</sup></p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="assessment" class="atlas-section">
+        <p class="atlas-section__label">What comes next</p>
+        <h2>Turn conditional tests into a cumulative verdict</h2>
+        <p>
+          String theory has accomplished things no rival has matched in one framework. It contains quantum gravity,
+          unifies apparently different theories through duality, gives black-hole entropy a microscopic origin, and
+          supplies nonperturbative control through holography. Those are results about quantum gravity even if the
+          final cosmology is still missing.
+        </p>
+        <p>
+          The empirical problem is selection. A particular compactification can predict an axion, a cosmic-string
+          tension, an inflationary spectrum, or a supersymmetric particle; another compactification can omit it. The
+          new Bayesian work begins to turn that multiplicity into a statistical object that observations can update.
+          Its success will depend on whether the ensemble and its prior arise from the theory rather than from the
+          tractable subset available to computation.
+        </p>
+        <p>
+          The next decisive advance is therefore not another isolated signature. It is a compactification programme
+          that fixes enough of the low-energy world to make several correlated forecasts at once—particle content,
+          axion couplings, inflation, relic abundances, and vacuum energy—then survives all of them. A framework that
+          can lose probability faster than its model space expands will finally be testable in the ordinary scientific
+          sense.
+        </p>
+      </section>
+
+      <section id="reading" class="atlas-section">
+        <p class="atlas-section__label">Primary reading</p>
+        <h2>Sources</h2>
+        <ol class="atlas-reading-list">
+          <li id="string-ref-1">J. Scherk and J. H. Schwarz, <a href="https://doi.org/10.1016/0550-3213(74)90010-8">“Dual Models for Non-Hadrons”</a> (1974).</li>
+          <li id="string-ref-2">M. B. Green and J. H. Schwarz, <a href="https://doi.org/10.1016/0370-2693(84)91565-X">“Anomaly Cancellations in Supersymmetric D=10 Gauge Theory and Superstring Theory”</a> (1984).</li>
+          <li id="string-ref-3">C. G. Callan, D. Friedan, E. J. Martinec and M. J. Perry, <a href="https://doi.org/10.1016/0550-3213(85)90506-1">“Strings in Background Fields”</a> (1985).</li>
+          <li id="string-ref-4">J. Maldacena, <a href="https://arxiv.org/abs/hep-th/9711200">“The Large N Limit of Superconformal Field Theories and Supergravity”</a> (1997).</li>
+          <li id="string-ref-5">A. Strominger and C. Vafa, <a href="https://arxiv.org/abs/hep-th/9601029">“Microscopic Origin of the Bekenstein–Hawking Entropy”</a> (1996).</li>
+          <li id="string-ref-6">E. Witten, <a href="https://arxiv.org/abs/hep-th/9503124">“String Theory Dynamics in Various Dimensions”</a> (1995).</li>
+          <li id="string-ref-7">M. Cicoli, J. P. Conlon, A. Maharana, S. Parameswaran, F. Quevedo and I. Zavala, <a href="https://arxiv.org/abs/2303.04819">“String Cosmology: From the Early Universe to Today”</a> (2024).</li>
+          <li id="string-ref-8">S. Kachru, R. Kallosh, A. Linde and S. P. Trivedi, <a href="https://arxiv.org/abs/hep-th/0301240">“De Sitter Vacua in String Theory”</a> (2003).</li>
+          <li id="string-ref-9">V. Balasubramanian, P. Berglund, J. P. Conlon and F. Quevedo, <a href="https://arxiv.org/abs/hep-th/0502058">“Systematics of Moduli Stabilisation in Calabi–Yau Flux Compactifications”</a> (2005).</li>
+          <li id="string-ref-10">S. Kachru, R. Kallosh, A. Linde, J. Maldacena, L. McAllister and S. P. Trivedi, <a href="https://arxiv.org/abs/hep-th/0308055">“Towards Inflation in String Theory”</a> (2003).</li>
+          <li id="string-ref-11">A. Arvanitaki, S. Dimopoulos, S. Dubovsky, N. Kaloper and J. March-Russell, <a href="https://arxiv.org/abs/0905.4720">“String Axiverse”</a> (2010).</li>
+          <li id="string-ref-12">E. J. Copeland, R. C. Myers and J. Polchinski, <a href="https://arxiv.org/abs/hep-th/0312067">“Cosmic F- and D-Strings”</a> (2004).</li>
+          <li id="string-ref-13">G. Obied, H. Ooguri, L. Spodyneiko and C. Vafa, <a href="https://arxiv.org/abs/1806.08362">“De Sitter Space and the Swampland”</a> (2018).</li>
+          <li id="string-ref-14">R. Bousso and J. Polchinski, <a href="https://arxiv.org/abs/hep-th/0004134">“Quantization of Four-Form Fluxes and Dynamical Neutralization of the Cosmological Constant”</a> (2000).</li>
+          <li id="string-ref-15">M. Jain, E. Sheridan, D. J. E. Marsh, E. Heyes, K. K. Rogers and A. Schachner, <a href="https://arxiv.org/abs/2512.00144">“Bayesian Inference on Calabi–Yau Moduli Spaces and the Axiverse: Experimental Data Meets String Theory”</a> (2026).</li>
+          <li id="string-ref-16">J. J. Blanco-Pillado <i>et al.</i>, <a href="https://arxiv.org/abs/2306.17147">“Cosmic Superstrings Revisited in Light of NANOGrav 15-Year Data”</a> (2024).</li>
+        </ol>
+      </section>
+
+      <section id="corrections" class="atlas-section atlas-invitation">
+        <p class="atlas-section__label">Invitation</p>
+        <h2>Corrections are welcome</h2>
+        <p>
+          This profile separates established results of the string framework from the model-dependent claims of
+          string cosmology. Comments from Edward Witten, Cumrun Vafa, Juan Maldacena, Fernando Quevedo, Michele Cicoli,
+          David Marsh, Mudit Jain, and other researchers working on compactification, holography, and string
+          phenomenology will be incorporated with attribution.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>

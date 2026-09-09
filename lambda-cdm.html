@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="dcterms.modified" content="2026-09-08">
+  <meta name="dcterms.modified" content="2026-09-09">
   <meta name="author" content="Codex (OpenAI)">
   <meta name="description"
-    content="A quantitative Research Atlas profile of general relativity and Lambda-CDM: precision successes, confirmed predictions, observational tensions, and explanatory limits.">
+    content="A Research Atlas profile of the standard cosmological model: general relativity, inflation, the hot Big Bang, and Lambda-CDM.">
   <link rel="canonical" href="https://www.gilansalehi.com/csbhi/lambda-cdm.html">
   <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
   <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
     title="LLM-readable CSBHI project index">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <title>General Relativity + ΛCDM — Research Atlas</title>
+  <title>General Relativity + Inflation + ΛCDM — Research Atlas</title>
 
   <script>
     (() => {
@@ -53,22 +53,23 @@
           <a href="research-atlas.html">Research Atlas</a> · Benchmark ·
           <span class="atlas-start-here">Start here</span>
         </p>
-        <h1 id="profile-title">General Relativity + ΛCDM</h1>
+        <h1 id="profile-title">General Relativity + Inflation + ΛCDM</h1>
         <p class="atlas-hero__lede">
-          Six cosmological parameters connect the primordial plasma to the galaxies around us. No rival presently
-          matches that empirical reach.
+          Inflation supplies the primordial state that six-parameter ΛCDM evolves into the galaxies around us; no
+          rival presently matches the complete empirical reach.
         </p>
-        <p class="atlas-hero__meta">Codex (OpenAI) · September 8, 2026 · Draft profile · Corrections invited</p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 9, 2026 · Draft profile · Corrections invited</p>
       </header>
 
       <section id="at-a-glance" class="atlas-section">
-        <p class="atlas-section__label">The case for ΛCDM</p>
+        <p class="atlas-section__label">The case for standard cosmology</p>
         <h2>The universe becomes calculable</h2>
         <p>
           General relativity tells matter and spacetime how to evolve, but it does not specify the contents or initial
-          state of the universe. ΛCDM turns the theory into a working cosmology by supplying a hot primordial plasma,
-          cold dark matter, a cosmological constant, and a simple spectrum of initial fluctuations. Six fitted
-          parameters then connect the early fireball to the galaxies around us.<sup class="atlas-citation">[<a href="#lcdm-ref-1">1</a>–<a href="#lcdm-ref-3">3</a>]</sup>
+          state of the universe. The standard cosmological account supplies both. Inflation stretches an early patch,
+          drives its geometry toward flatness, and generates primordial fluctuations. Reheating prepares the hot
+          plasma; ΛCDM then evolves radiation, baryons, cold dark matter, and vacuum energy into the universe observed
+          today.<sup class="atlas-citation">[<a href="#lcdm-ref-1">1</a>–<a href="#lcdm-ref-3">3</a>, <a href="#lcdm-ref-12">12</a>]</sup>
         </p>
         <p>
           Those six values must account for the CMB acoustic peaks, primordial element abundances, baryon acoustic
@@ -77,19 +78,19 @@
           the same cosmic history.
         </p>
         <p>
-          The same achievement defines the model's limit. ΛCDM measures the dark components and reconstructs the
-          primordial spectrum without identifying their underlying physics. It tells us what the universe requires,
-          not why those ingredients exist. The alternatives in this Atlas begin with that unfinished explanation, but
-          none can succeed by discarding the observations ΛCDM already joins together.
+          The same achievement defines the model's limit. The combined framework reconstructs an extraordinary cosmic
+          history without identifying the inflaton, dark matter, or dark energy, and without explaining the initial
+          boundary from which inflation proceeds. The alternatives in this Atlas begin with that unfinished
+          explanation, but none can succeed by discarding the observations standard cosmology already joins together.
         </p>
         <dl class="atlas-facts">
           <div>
             <dt>Central move</dt>
-            <dd>Evolve a statistically homogeneous universe with Einstein gravity, cold dark matter, and constant vacuum energy.</dd>
+            <dd>Join an inflationary primordial state to the hot Big Bang and evolve it with Einstein gravity, cold dark matter, and constant vacuum energy.</dd>
           </div>
           <div>
-            <dt>Six base parameters</dt>
-            <dd>Baryon and CDM densities, acoustic angular scale, optical depth, and the amplitude and tilt of primordial fluctuations.</dd>
+            <dt>Six base ΛCDM parameters</dt>
+            <dd>Baryon and CDM densities, acoustic angular scale, optical depth, and the amplitude and tilt inherited from the primordial spectrum.</dd>
           </div>
           <div>
             <dt>Empirical strength</dt>
@@ -97,17 +98,29 @@
           </div>
           <div>
             <dt>Explanatory limit</dt>
-            <dd>The model measures its dark components and initial spectrum without identifying their underlying physics.</dd>
+            <dd>The framework does not identify the inflaton, dark components, or physical origin of its initial state.</dd>
           </div>
         </dl>
       </section>
 
       <section id="construction" class="atlas-section">
         <p class="atlas-section__label">The construction</p>
-        <h2>Einstein gravity becomes cosmology</h2>
+        <h2>From inflation to the late universe</h2>
         <p>
-          Einstein's field equation relates spacetime curvature to stress-energy. Applied to an FLRW geometry, its
-          temporal constraint becomes the Friedmann equation:
+          During inflation, accelerated expansion drives the Hubble slow-roll parameter below unity and stretches
+          quantum fluctuations into a nearly scale-invariant curvature spectrum:
+        </p>
+        <div class="atlas-equation">
+          \[
+            \epsilon_H\equiv-\frac{\dot H}{H^2}<1,
+            \qquad
+            \mathcal P_{\mathcal R}(k)=A_s
+            \left(\frac{k}{k_*}\right)^{n_s-1}.
+          \]
+        </div>
+        <p>
+          Reheating converts the inflationary energy into the hot particles of Big Bang cosmology. Einstein's field
+          equation then relates their stress-energy to the FLRW geometry, whose temporal constraint is
         </p>
         <div class="atlas-equation">
           \[
@@ -116,10 +129,9 @@
           \]
         </div>
         <p>
-          The background equation fixes how each component dilutes. Linear perturbation theory then follows the photon,
-          baryon, neutrino, and dark-matter fluctuations through recombination. A Boltzmann code converts six fitted
-          parameters into the temperature, polarization, lensing, and matter spectra tested across cosmic
-          history.<sup class="atlas-citation">[<a href="#lcdm-ref-2">2</a>, <a href="#lcdm-ref-3">3</a>]</sup>
+          The background equation fixes how each component dilutes. Linear perturbation theory follows the inflationary
+          spectrum through photons, baryons, neutrinos, and dark matter. A Boltzmann code converts the six base
+          parameters into the temperature, polarization, lensing, and matter spectra tested across cosmic history.<sup class="atlas-citation">[<a href="#lcdm-ref-2">2</a>, <a href="#lcdm-ref-3">3</a>, <a href="#lcdm-ref-12">12</a>]</sup>
         </p>
       </section>
 
@@ -128,8 +140,12 @@
         <h2>What the standard model gets right</h2>
         <div class="atlas-gains">
           <article class="atlas-gain">
+            <h3>Inflation connects the primordial sky</h3>
+            <p>Accelerated expansion supplies a causal mechanism for large-scale uniformity and a quantum origin for the nearly scale-invariant, adiabatic primordial spectrum. Planck measures \(n_s=0.9649\pm0.0042\), excluding exact scale invariance.<sup class="atlas-citation">[<a href="#lcdm-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
             <h3>One expansion history spans 14 billion years</h3>
-            <p>The same equations connect a hot radiation plasma, matter domination, recombination, structure formation, and late acceleration.</p>
+            <p>After reheating, the same equations connect a hot radiation plasma, matter domination, recombination, structure formation, and late acceleration.</p>
           </article>
           <article class="atlas-gain">
             <h3>The CMB becomes a precision calculation</h3>
@@ -156,23 +172,23 @@
 
       <section id="evidence" class="atlas-section">
         <p class="atlas-section__label">Empirical contact</p>
-        <h2>Why ΛCDM is the benchmark</h2>
+        <h2>Why the standard model is the benchmark</h2>
         <p>
-          Planck fits the six parameters to the CMB temperature, polarization, and lensing spectra. The resulting
-          baryon density, matter density, primordial tilt, fluctuation amplitude, and expansion rate can then be tested
-          against observations made at other redshifts using different physics. Most of those checks agree.<sup class="atlas-citation">[<a href="#lcdm-ref-2">2</a>–<a href="#lcdm-ref-5">5</a>]</sup>
+          Planck finds the nearly scale-invariant, adiabatic primordial spectrum expected from broad inflationary
+          models, then fits the six base ΛCDM parameters to the CMB temperature, polarization, and lensing spectra. The
+          resulting baryon density, matter density, primordial tilt, fluctuation amplitude, and expansion rate can be
+          tested at other redshifts using different physics. Most of those checks agree.<sup class="atlas-citation">[<a href="#lcdm-ref-2">2</a>–<a href="#lcdm-ref-5">5</a>, <a href="#lcdm-ref-12">12</a>]</sup>
         </p>
         <p>
-          Agreement across independent observations is ΛCDM's strongest evidence. The agreement does not identify the
-          dark-matter particle, calculate Λ from quantum theory, or derive the primordial spectrum from a theory of the
-          beginning. Big Bang cosmology reconstructs the early universe from what survives; a deeper theory must
-          explain why the reconstruction has the form we observe.
+          Agreement across independent observations is the framework's strongest evidence. The agreement does not
+          identify the inflaton or dark-matter particle, calculate Λ from quantum theory, or explain why inflation
+          began. A deeper theory must preserve the reconstruction while explaining why cosmic history has this form.
         </p>
       </section>
 
       <section id="blockers" class="atlas-section">
         <p class="atlas-section__label">Open problems</p>
-        <h2>Where ΛCDM stops explaining</h2>
+        <h2>Where standard cosmology stops explaining</h2>
         <div class="atlas-blockers">
           <article class="atlas-blocker">
             <h3>1. Dark matter is measured gravitationally, not identified</h3>
@@ -191,8 +207,8 @@
             <p>DESI DR2 BAO combined with the CMB and supernova samples prefers evolving dark energy over ΛCDM at 2.8–4.2σ, depending on the supernova compilation. The result is not a discovery, but \(w=-1\) has become a live test rather than a settled input.<sup class="atlas-citation">[<a href="#lcdm-ref-8">8</a>]</sup></p>
           </article>
           <article class="atlas-blocker">
-            <h3>5. Initial conditions still carry the beginning</h3>
-            <p>The model begins with an exceptionally smooth, nearly flat universe and a particular perturbation spectrum. Inflation supplies candidate mechanisms, but no uniquely selected model derives the complete initial state.<sup class="atlas-citation">[<a href="#lcdm-ref-12">12</a>]</sup></p>
+            <h3>5. Inflation works without identifying the inflaton</h3>
+            <p>Inflation explains how flatness and primordial fluctuations can arise, but observations have not selected a unique field, potential, initial condition, or reheating history.<sup class="atlas-citation">[<a href="#lcdm-ref-12">12</a>]</sup></p>
           </article>
           <article class="atlas-blocker">
             <h3>6. General relativity remains classical</h3>
@@ -261,7 +277,7 @@
 
       <section id="open-questions" class="atlas-section">
         <p class="atlas-section__label">The questions</p>
-        <h2>What ΛCDM leaves for a successor</h2>
+        <h2>What the standard model leaves for a successor</h2>
         <table class="atlas-scorecard">
           <tbody>
             <tr>
@@ -278,7 +294,7 @@
             </tr>
             <tr>
               <th scope="row">Beginning</th>
-              <td><p>Inflationary perturbations accommodate the observed spectrum, but no unique model derives the initial state.<sup class="atlas-citation">[<a href="#lcdm-ref-12">12</a>]</sup></p></td>
+              <td><p>Inflation supplies the accepted mechanism for flatness and primordial fluctuations, but no unique model explains why inflation began or fixes the complete initial state.<sup class="atlas-citation">[<a href="#lcdm-ref-12">12</a>]</sup></p></td>
             </tr>
             <tr>
               <th scope="row">Matter</th>
@@ -301,15 +317,16 @@
           by themselves explain the ingredients already fitted by the model.
         </p>
         <p>
-          A deeper theory faces the harder task: reproduce the successful six-parameter phenomenology while deriving
-          at least one quantity that ΛCDM currently fits—the dark-matter law, vacuum scale, primordial spectrum, or
-          initial boundary. Explanation counts only if the existing agreement survives.
+          A deeper theory faces the harder task: reproduce inflation's primordial successes and ΛCDM's six-parameter
+          phenomenology while deriving at least one quantity the standard framework currently supplies—the dark-matter
+          law, vacuum scale, inflationary dynamics, primordial spectrum, or initial boundary. Explanation counts only
+          if the existing agreement survives.
         </p>
         <p>
           That distinction already guides mainstream research. Particle searches ask what dark matter is;
-          cosmological surveys test whether dark energy is truly constant; inflation and quantum gravity pursue the
-          missing account of the beginning. ΛCDM remains the theory to beat because it measures the unknowns so well.
-          A successor must explain them.
+          cosmological surveys test whether dark energy is truly constant; early-universe experiments constrain the
+          inflaton and primordial spectrum; quantum gravity seeks the missing boundary physics. The standard model
+          remains the theory to beat because it measures the unknowns so well. A successor must explain them.
         </p>
       </section>
 
@@ -339,8 +356,9 @@
         <p class="atlas-section__label">Invitation</p>
         <h2>Corrections are welcome</h2>
         <p>
-          This profile separates the empirical success of ΛCDM from the physics it leaves unexplained. Cosmologists,
-          observers, and particle physicists are invited to challenge its sources, assessment, and choice of litmus test.
+          This profile separates the empirical success of inflationary ΛCDM from the physics it leaves unexplained.
+          Cosmologists, observers, and particle physicists are invited to challenge its sources, assessment, and choice
+          of litmus test.
         </p>
       </section>
     </article>

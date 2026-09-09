@@ -7,11 +7,19 @@ export const ATLAS_THEORIES = {
   lcdm: theory({
     id: 'lcdm',
     startHere: true,
-    title: 'General Relativity + ΛCDM',
+    title: 'General Relativity + Inflation + ΛCDM',
     href: 'lambda-cdm.html',
-    case: 'Einstein’s equations do not choose what fills the universe. ΛCDM adds cold dark matter, ordinary matter, radiation, a cosmological constant, and a primordial spectrum. Six base parameters then connect the hot plasma of the early universe to the galaxies around us.',
-    standing: 'No rival matches its combined account of the CMB, nucleosynthesis, BAO, supernovae, lensing, and structure. The precision comes with an explanatory debt: the dark components remain unidentified, Λ remains unnaturally small, and the initial state is supplied rather than derived.',
-    test: 'Any successor must identify those missing ingredients, or remove the need for them, without losing the cross-epoch fit.',
+    case: 'Inflation drives the early universe toward flatness and generates primordial fluctuations. Reheating prepares the hot plasma, and six-parameter ΛCDM evolves radiation, baryons, cold dark matter, and vacuum energy into the galaxies around us.',
+    standing: 'No rival matches its combined account of the primordial spectrum, CMB, nucleosynthesis, BAO, supernovae, lensing, and structure. The inflaton and dark components remain unidentified, Λ remains unnaturally small, and the initial boundary is still supplied rather than derived.',
+    test: 'Any successor must explain those missing ingredients, or remove the need for them, without losing the full cross-epoch fit.',
+  }),
+  stringTheory: theory({
+    id: 'string-theory',
+    title: 'String Theory and String Cosmology',
+    href: 'string-theory.html',
+    case: 'Quantized closed strings necessarily contain gravity, while compactification can generate gauge forces, matter, inflation, axions, and dark sectors. Duality, holography, and black-hole microstate counting give the framework a quantum-gravity reach unmatched by any single cosmological model.',
+    standing: 'The framework supplies many viable four-dimensional worlds but no accepted principle that selects ours. Particular compactifications are testable; no confirmed observation uniquely requires a string origin.',
+    test: 'Fix a compactification and its statistical prior before opening the data, then make correlated predictions across particle physics, inflation, relics, and vacuum energy.',
   }),
   conformalGravity: theory({
     id: 'conformal-gravity',
@@ -50,8 +58,8 @@ export const ATLAS_THEORIES = {
     title: 'Conformal Scaling of Black Hole Interiors',
     href: 'csbhi.html',
     case: 'CSBHI adopts the geometric ansatz a = 1/r. Inward motion on the exterior radial diagram then becomes expansion in the reciprocal interior; matter dilutes as a⁻³, radiation as a⁻⁴, and vacuum energy remains constant. Because the universe contains black holes, the construction branches recursively.',
-    standing: 'The background correspondences are analytic, and the same scale logic proposes an evolving galactic acceleration scale that can be tested at high redshift. Marginality transfer now fixes the clock required at matched spherical cross-sections; the full junction and perturbation map remain unfinished.',
-    test: 'The next geometric test is whether the null junction independently returns the clock required by marginality transfer; the empirical test is the predicted redshift evolution of g†.',
+    standing: 'The background correspondences are analytic, and the same scale logic proposes an evolving galactic acceleration scale that can be tested at high redshift. The collapse-cohort equations reduce the horizon map to one clock, but the simplest clock fails and the full junction and perturbation map remain unfinished.',
+    test: 'The next geometric test is to derive a nontrivial clock along the parent-event-horizon to child-particle-horizon map; the empirical test is the predicted redshift evolution of g†.',
   }),
 };
 
@@ -84,6 +92,7 @@ export const ATLAS_OPEN_QUESTIONS = [
 
 export const ATLAS_ORDER = [
   'lcdm',
+  'stringTheory',
   'conformalGravity',
   'einsteinCartan',
   'loopQuantumCosmology',
