@@ -29,6 +29,14 @@ export const ATLAS_THEORIES = {
     standing: 'Starobinsky inflation remains one of the best-fitting primordial models. Late-time f(R) searches have found no scalar force, and viable models are increasingly constrained toward the GR limit while usually retaining cold dark matter.',
     test: 'Use one fixed function and screening prescription to predict expansion, matter growth, lensing, cluster abundance, and environmental fifth-force effects together.',
   }),
+  mond: theory({
+    id: 'mond',
+    title: 'MOND and Relativistic MOND Cosmology',
+    href: 'mond.html',
+    case: 'Below one acceleration scale, galactic motion follows the visible matter with remarkable economy. MOND promotes that regularity to a law: its deep limit fixes flat rotation curves and the baryonic Tully–Fisher relation instead of assigning every galaxy an independent dark halo.',
+    standing: 'The galactic predictions are substantial, while clusters retain a debated residual and the MOND limit does not select one relativistic parent theory. Modern covariant models can reproduce the linear CMB and matter spectra by giving additional gravitational fields part of dark matter’s cosmological role.',
+    test: 'A fixed relativistic action must explain galaxies, clusters, lensing, structure, and the CMB together—and decide whether the acceleration scale is constant or evolves with cosmic history.',
+  }),
   conformalGravity: theory({
     id: 'conformal-gravity',
     title: 'Conformal Gravity',
@@ -102,6 +110,7 @@ export const ATLAS_ORDER = [
   'lcdm',
   'stringTheory',
   'fRGravity',
+  'mond',
   'conformalGravity',
   'einsteinCartan',
   'loopQuantumCosmology',

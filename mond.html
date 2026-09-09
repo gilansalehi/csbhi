@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" data-measure="lg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dcterms.modified" content="2026-09-09">
+  <meta name="author" content="Codex (OpenAI)">
+  <meta name="description"
+    content="A Research Atlas profile of MOND and relativistic MOND cosmology: the acceleration law, galaxy predictions, AQUAL, QUMOND, TeVeS, CMB models, cluster residuals, and the evolving-a0 test.">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/mond.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="https://www.gilansalehi.com/csbhi/llms.txt"
+    title="LLM-readable CSBHI project index">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>MOND and Relativistic MOND Cosmology — Research Atlas</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <link href="src/css/research-atlas.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#profile-title">Skip to the profile</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <article class="atlas-article" aria-labelledby="profile-title">
+      <header class="atlas-hero">
+        <p class="atlas-hero__eyebrow"><a href="research-atlas.html">Research Atlas</a> · Profile</p>
+        <h1 id="profile-title">MOND and Relativistic MOND Cosmology</h1>
+        <p class="atlas-hero__lede">
+          Below one acceleration scale, galactic motion follows the visible matter with startling regularity. MOND
+          treats that regularity as a law of nature rather than the average outcome of invisible halos.
+        </p>
+        <p class="atlas-hero__meta">Codex (OpenAI) · September 9, 2026 · Draft profile · Corrections invited</p>
+      </header>
+
+      <section id="at-a-glance" class="atlas-section">
+        <p class="atlas-section__label">The case for MOND</p>
+        <h2>The anomaly knows the baryons</h2>
+        <p>
+          Galaxy rotation curves are usually presented as evidence for dark matter, but their regularity poses a
+          second question. The inferred halo does not act independently of the visible galaxy. At every measured
+          radius, the total acceleration follows the acceleration predicted from stars and gas; changes in the
+          baryonic distribution reappear as features in the rotation curve. Mordehai Milgrom proposed in 1983 that
+          the relation is fundamental.<sup class="atlas-citation">[<a href="#mond-ref-1">1</a>–<a href="#mond-ref-4">4</a>]</sup>
+        </p>
+        <p>
+          MOND introduces a single acceleration scale, \(a_0\approx1.2\times10^{-10}\,\mathrm{m\,s^{-2}}\). Newtonian
+          dynamics holds far above it. Far below it, the observed acceleration becomes the geometric mean of the
+          Newtonian acceleration and \(a_0\). Flat rotation curves and the baryonic Tully–Fisher relation then follow
+          immediately:
+        </p>
+        <div class="atlas-equation">
+          \[
+            g\simeq\sqrt{g_Na_0},
+            \qquad
+            V_f^4=G M_b a_0.
+          \]
+        </div>
+        <p>
+          Those were not retrospective curve fits. The law predicted how low-surface-brightness galaxies should rotate
+          before their detailed kinematics were known, and later data displayed the acceleration relation across
+          thousands of points in galaxies spanning orders of magnitude in mass and surface density. The remaining
+          question is whether MOND is the low-acceleration limit of a complete theory—or an empirical clue that both
+          dark-matter models and modified-gravity models must explain.<sup class="atlas-citation">[<a href="#mond-ref-5">5</a>–<a href="#mond-ref-7">7</a>]</sup>
+        </p>
+        <dl class="atlas-facts">
+          <div>
+            <dt>Central move</dt>
+            <dd>Replace Newtonian dynamics below a universal acceleration scale \(a_0\).</dd>
+          </div>
+          <div>
+            <dt>Strongest result</dt>
+            <dd>The deep-MOND limit fixes the baryonic Tully–Fisher slope, normalization, and surface-brightness independence.</dd>
+          </div>
+          <div>
+            <dt>Relativistic programme</dt>
+            <dd>Construct tensor–vector–scalar field equations that recover MOND in galaxies and fit lensing, the CMB, and structure growth.</dd>
+          </div>
+          <div>
+            <dt>Empirical status</dt>
+            <dd>Galactic regularities are substantial; clusters and cosmological completion remain unsettled.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="construction" class="atlas-section">
+        <p class="atlas-section__label">The construction</p>
+        <h2>From an acceleration rule to field equations</h2>
+        <p>
+          In spherical symmetry the phenomenological law is often written
+        </p>
+        <div class="atlas-equation">
+          \[
+            \mu\!\left(\frac{g}{a_0}\right)\mathbf g=\mathbf g_N,
+            \qquad
+            \mu(x)\rightarrow
+            \begin{cases}
+              1, & x\gg1,\\
+              x, & x\ll1.
+            \end{cases}
+          \]
+        </div>
+        <p>
+          The interpolation near \(a_0\) is not fixed by the two limits. Nor can this algebraic expression describe
+          every nonspherical system while preserving energy and momentum. Bekenstein and Milgrom therefore derived
+          AQUAL from an action, replacing the linear Poisson equation with<sup class="atlas-citation">[<a href="#mond-ref-2">2</a>]</sup>
+        </p>
+        <div class="atlas-equation">
+          \[
+            \nabla\!\cdot\!\left[
+              \mu\!\left(\frac{|\nabla\Phi|}{a_0}\right)\nabla\Phi
+            \right]=4\pi G\rho.
+          \]
+        </div>
+        <p>
+          QUMOND provides a computationally simpler action-based formulation by solving ordinary Poisson equations
+          with an effective source constructed from the Newtonian field.<sup class="atlas-citation">[<a href="#mond-ref-3">3</a>]</sup>
+          Both theories are nonrelativistic. They calculate galaxy dynamics and the external-field effect, but cannot
+          define cosmological expansion, relativistic lensing, or gravitational waves.
+        </p>
+      </section>
+
+      <section id="relativistic-completion" class="atlas-section">
+        <p class="atlas-section__label">Relativistic completion</p>
+        <h2>MOND is a limit shared by different theories</h2>
+        <p>
+          Bekenstein's TeVeS demonstrated that a covariant theory could reproduce the MOND limit while giving light
+          and matter the lensing response missing from earlier scalar models. Its metric, vector, and scalar fields
+          made cosmology possible and established that MOND need not remain an isolated formula.<sup class="atlas-citation">[<a href="#mond-ref-8">8</a>]</sup>
+        </p>
+        <p>
+          Relativistic completion is not unique. Different actions reproduce nearly the same quasistatic galaxy law
+          while predicting different gravitational waves, lensing, stability, and cosmology. The 2021
+          Skordis–Złośnik theory is an important modern example: its linear cosmology can reproduce the CMB temperature
+          spectrum and matter power spectrum normally attributed to cold dark matter, and its quadratic action avoids
+          ghost instabilities in the regime studied.<sup class="atlas-citation">[<a href="#mond-ref-9">9</a>]</sup>
+        </p>
+        <p>
+          The distinction became observationally consequential after GW170817. The nearly coincident gravitational
+          and electromagnetic signals severely constrained relativistic MOND theories in which the two signals acquire
+          substantially different propagation or Shapiro delays. That result excludes important TeVeS-like
+          constructions without excluding the nonrelativistic MOND law itself.<sup class="atlas-citation">[<a href="#mond-ref-17">17</a>]</sup>
+        </p>
+        <p>
+          That achievement changes rather than eliminates the bookkeeping. Particle dark matter is absent, but the new
+          gravitational fields carry perturbations that perform part of cold dark matter's cosmological work. A final
+          theory must show that the same fixed action accounts for galaxies, clusters, lensing, the CMB, nonlinear
+          structure, and gravitational waves without choosing a different effective MOND law in each regime.
+        </p>
+      </section>
+
+      <section id="gains" class="atlas-section">
+        <p class="atlas-section__label">Explanatory gains</p>
+        <h2>What MOND saw first</h2>
+        <div class="atlas-gains">
+          <article class="atlas-gain">
+            <h3>The Tully–Fisher relation becomes a theorem of the limit</h3>
+            <p>For an isolated finite mass, scale invariance gives \(V_f^4=GM_ba_0\). The fourth-power slope and absence of a radius term are fixed.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Surface brightness predicts the discrepancy</h3>
+            <p>Diffuse galaxies enter the MOND regime at smaller radii and therefore show larger apparent mass discrepancies even when their baryonic masses resemble brighter systems.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>Rotation-curve structure follows visible structure</h3>
+            <p>Gas concentrations, stellar disks, and their local features feed directly into the predicted acceleration instead of being combined with an independently fitted halo profile.</p>
+          </article>
+          <article class="atlas-gain">
+            <h3>The external field becomes observable</h3>
+            <p>A subsystem's internal motion can depend on the ambient acceleration even when tidal gradients are weak. This strong-equivalence-principle violation is a distinctive modified-gravity target.<sup class="atlas-citation">[<a href="#mond-ref-10">10</a>]</sup></p>
+          </article>
+          <article class="atlas-gain">
+            <h3>One scale organizes several galaxy laws</h3>
+            <p>The onset of mass discrepancy, the RAR, the BTFR normalization, characteristic surface densities, and halo-like accelerations all collect around \(a_0\).</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="blockers" class="atlas-section">
+        <p class="atlas-section__label">Open problems</p>
+        <h2>Where the galactic law stops carrying the theory</h2>
+        <div class="atlas-blockers">
+          <article class="atlas-blocker">
+            <h3>1. Galaxy clusters retain missing mass</h3>
+            <p>Standard MOND reduces the cluster discrepancy but does not generally remove it. Strong and weak lensing still indicate an additional central component, supplied in proposed solutions by unseen baryons, massive neutrinos, new fields, or a modified MOND law.<sup class="atlas-citation">[<a href="#mond-ref-11">11</a>]</sup> A 2026 study using an integrated galaxy-wide initial mass function found that baryons and stellar remnants could account for at least (88%) of the MOND dynamical mass in 46 nearby clusters. The result substantially narrows the deficit, although it depends on the adopted stellar-population model and does not yet close the cluster case.<sup class="atlas-citation">[<a href="#mond-ref-16">16</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>2. MOND does not specify its relativistic parent</h3>
+            <p>AQUAL and QUMOND are complete nonrelativistic theories, but many covariant actions share their low-acceleration limit. Galactic success therefore does not select TeVeS, the Skordis–Złośnik theory, or another completion.<sup class="atlas-citation">[<a href="#mond-ref-4">4</a>, <a href="#mond-ref-8">8</a>, <a href="#mond-ref-9">9</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>3. Precision cosmology needs dark-matter-like dynamics</h3>
+            <p>The CMB and early structure require gravitational potentials to grow before baryons decouple. Relativistic MOND models can provide that behavior through additional fields, but the required sector must then reproduce the rest of the cosmological evidence with fewer assumptions than particle dark matter.</p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>4. Merging clusters test matter against curvature</h3>
+            <p>Systems in which hot gas, galaxies, and lensing peaks separate cannot be judged from rotation curves. A relativistic MOND theory must evolve the collision and predict the lensing map using its actual fields and any residual unseen mass.</p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>5. The value of \(a_0\) is unexplained</h3>
+            <p>The approximate relation \(a_0\sim cH_0/(2\pi)\) has suggested a cosmological origin since MOND's beginning, but the nonrelativistic law inserts \(a_0\). No consensus derivation fixes its value or decides whether it is constant.<sup class="atlas-citation">[<a href="#mond-ref-1">1</a>, <a href="#mond-ref-12">12</a>]</sup></p>
+          </article>
+          <article class="atlas-blocker">
+            <h3>6. The interpolation region carries freedom</h3>
+            <p>The Newtonian and deep-MOND limits are sharp; the function joining them is not. Solar-System constraints, the external-field effect, and detailed rotation curves test that freedom, but different formulations need not share one interpolating function.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence-ledger" class="atlas-section">
+        <p class="atlas-section__label">Evidence and tests</p>
+        <h2>The acceleration-scale test</h2>
+        <div class="atlas-ledger">
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Galactic regularity</p>
+            <h3>2,693 radii · 153 galaxies · 0.11 dex scatter</h3>
+            <p>The SPARC RAR relates observed and baryonic acceleration across varied morphologies, masses, sizes, and gas fractions. The reported scatter is largely observational; the fitted scale is \(g_\dagger\approx1.2\times10^{-10}\,\mathrm{m\,s^{-2}}\).<sup class="atlas-citation">[<a href="#mond-ref-5">5</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Prior prediction</p>
+            <h3>\(M_b\propto V_f^4\), independent of galaxy size</h3>
+            <p>Gas-rich galaxies isolate the baryonic mass from stellar mass-to-light uncertainties and return a BTFR consistent with the deep-MOND normalization, corresponding to \(a_0=(1.3\pm0.3)\times10^{-10}\,\mathrm{m\,s^{-2}}\).<sup class="atlas-citation">[<a href="#mond-ref-6">6</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__hit">
+            <p class="atlas-score__label">Claimed distinctive signal</p>
+            <h3>External-field effect detected above \(4\sigma\)</h3>
+            <p>A blind SPARC analysis found rotation-curve behavior correlated with independently estimated galactic environments, as MOND's external-field effect predicts. The inference depends on environmental reconstruction and galaxy modelling and remains an active target for replication.<sup class="atlas-citation">[<a href="#mond-ref-10">10</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">New redshift test</p>
+            <h3>\(a_0(z\!\sim\!1)=2.38^{+0.12}_{-0.10}\times10^{-10}\,\mathrm{m\,s^{-2}}\)</h3>
+            <p>MUSE-DARK III reports a higher characteristic acceleration and approximately 0.17 dex intrinsic scatter in 79 galaxies over \(0.33&lt;z&lt;1.44\). A strict universal constant is disfavored by the reported analysis; an evolving MOND scale and evolving galaxy–halo relation remain competing interpretations.<sup class="atlas-citation">[<a href="#mond-ref-13">13</a>, <a href="#mond-ref-14">14</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__test">
+            <p class="atlas-score__label">Competing explanation</p>
+            <h3>ΛCDM can also generate an RAR</h3>
+            <p>Galaxy–halo models in ΛCDM can produce a tight radial acceleration relation. The discriminating questions are no longer whether a relation exists, but whether its normalization, scatter, residual correlations, external-field behavior, and redshift evolution follow without tuning.<sup class="atlas-citation">[<a href="#mond-ref-15">15</a>]</sup></p>
+          </article>
+          <article class="atlas-ledger__gap">
+            <p class="atlas-score__label">Missing calculation</p>
+            <h3>One action from recombination to galaxies</h3>
+            <p>Choose a relativistic action and its parameters before fitting individual systems, then jointly predict the CMB, lensing, nonlinear structure, clusters, local RAR, external-field effect, and redshift evolution of \(a_0\).</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="open-questions" class="atlas-section">
+        <p class="atlas-section__label">The questions</p>
+        <h2>What MOND answers—and leaves open</h2>
+        <table class="atlas-scorecard">
+          <tbody>
+            <tr>
+              <th scope="row">Gravity</th>
+              <td><p>AQUAL and QUMOND provide conserved nonrelativistic field theories, while covariant completions demonstrate that MOND can coexist with lensing and cosmology. No unique relativistic or quantum theory has been selected.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Singularities</th>
+              <td><p>The low-acceleration modification does not generically resolve the Big Bang or black-hole singularities. That question belongs to the chosen relativistic completion.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Expansion</th>
+              <td><p>Relativistic MOND theories can support viable backgrounds, but late acceleration is usually supplied by Λ or an additional field sector. The numerical link between \(a_0\) and the cosmic expansion scale remains suggestive rather than derived.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Beginning</th>
+              <td><p>Modern covariant models can reproduce linear CMB and matter spectra. They do not yet provide a uniquely selected primordial state, inflationary mechanism, or alternative beginning.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Matter</th>
+              <td><p>MOND removes the need for independently fitted dark halos in many galaxies. Clusters retain a mass deficit, and relativistic cosmology requires additional gravitational degrees of freedom that mimic part of dark matter's early role.</p></td>
+            </tr>
+            <tr>
+              <th scope="row">Constants</th>
+              <td><p>The acceleration \(a_0\) organizes galaxy phenomenology but is inserted by the effective law. Its value, possible redshift evolution, and relation to \(H\) or Λ remain open.</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="assessment" class="atlas-section">
+        <p class="atlas-section__label">What comes next</p>
+        <h2>Promote the galactic law into a cosmological theory</h2>
+        <p>
+          MOND has earned a place in fundamental cosmology through prediction, not merely dissatisfaction with dark
+          matter. It anticipated the behavior of diffuse galaxies, fixes the baryonic Tully–Fisher relation in its
+          deep limit, and organizes resolved galaxy dynamics around one acceleration scale. Any dark-matter theory
+          must explain why that economical law works as well as it does.
+        </p>
+        <p>
+          The law is not yet the theory. Clusters require more gravity or more matter, and covariant completions add
+          fields whose cosmological behavior is not fixed by Milgrom's formula. The Skordis–Złośnik construction shows
+          that a relativistic MOND cosmology can reach the CMB and matter spectrum; the next standard is one action
+          surviving the nonlinear and strong-lensing regimes without changing its rules.
+        </p>
+        <p>
+          Redshift evolution now makes the acceleration scale itself an experimental object. If \(a_0\) is constant,
+          the intermediate-redshift result must yield to systematic correction. If it evolves, its functional relation
+          to the cosmological background becomes part of the theory. Either outcome turns MOND's oldest numerical
+          coincidence into one of its cleanest routes to a verdict.
+        </p>
+      </section>
+
+      <section id="reading" class="atlas-section">
+        <p class="atlas-section__label">Primary reading</p>
+        <h2>Sources</h2>
+        <ol class="atlas-reading-list">
+          <li id="mond-ref-1">M. Milgrom, <a href="https://doi.org/10.1086/161130">“A Modification of the Newtonian Dynamics as a Possible Alternative to the Hidden Mass Hypothesis”</a> (1983).</li>
+          <li id="mond-ref-2">J. Bekenstein and M. Milgrom, <a href="https://doi.org/10.1086/162570">“Does the Missing Mass Problem Signal the Breakdown of Newtonian Gravity?”</a> (1984).</li>
+          <li id="mond-ref-3">M. Milgrom, <a href="https://arxiv.org/abs/0911.5464">“Quasi-Linear Formulation of MOND”</a> (2010).</li>
+          <li id="mond-ref-4">B. Famaey and S. S. McGaugh, <a href="https://arxiv.org/abs/1112.3960">“Modified Newtonian Dynamics: Observational Phenomenology and Relativistic Extensions”</a> (2012).</li>
+          <li id="mond-ref-5">S. S. McGaugh, F. Lelli and J. M. Schombert, <a href="https://arxiv.org/abs/1609.05917">“Radial Acceleration Relation in Rotationally Supported Galaxies”</a> (2016).</li>
+          <li id="mond-ref-6">S. S. McGaugh, <a href="https://arxiv.org/abs/1107.2934">“The Baryonic Tully–Fisher Relation of Gas-Rich Galaxies as a Test of ΛCDM and MOND”</a> (2012).</li>
+          <li id="mond-ref-7">S. S. McGaugh and W. J. G. de Blok, <a href="https://arxiv.org/abs/astro-ph/9801102">“Testing the Hypothesis of Modified Dynamics with Low Surface Brightness Galaxies and Other Evidence”</a> (1998).</li>
+          <li id="mond-ref-8">J. D. Bekenstein, <a href="https://arxiv.org/abs/astro-ph/0403694">“Relativistic Gravitation Theory for the MOND Paradigm”</a> (2004).</li>
+          <li id="mond-ref-9">C. Skordis and T. Złośnik, <a href="https://arxiv.org/abs/2007.00082">“New Relativistic Theory for Modified Newtonian Dynamics”</a> (2021).</li>
+          <li id="mond-ref-10">K.-H. Chae <i>et al.</i>, <a href="https://arxiv.org/abs/2009.11525">“Testing the Strong Equivalence Principle: Detection of the External Field Effect in Rotationally Supported Galaxies”</a> (2020).</li>
+          <li id="mond-ref-11">B. Famaey, L. Pizzuti and I. D. Saltas, <a href="https://arxiv.org/abs/2410.02612">“On the Nature of the Missing Mass of Galaxy Clusters in MOND: The View from Gravitational Lensing”</a> (2024).</li>
+          <li id="mond-ref-12">M. Milgrom, <a href="https://arxiv.org/abs/2001.09729">“The a₀–Cosmology Connection in MOND”</a> (2020).</li>
+          <li id="mond-ref-13">B. I. Ciocan <i>et al.</i>, <a href="https://arxiv.org/abs/2604.22613">“MUSE-DARK III: The Evolution of the Radial Acceleration Relation at Intermediate Redshifts”</a> (2026).</li>
+          <li id="mond-ref-14">G. T. Alcock, <a href="https://doi.org/10.1093/mnras/stag1485">“Is the Acceleration Scale of the Radial Acceleration Relation Tracking the Cosmic Expansion Rate?”</a> (2026).</li>
+          <li id="mond-ref-15">P. Paranjape and R. K. Sheth, <a href="https://arxiv.org/abs/2102.13116">“The Radial Acceleration Relation in a ΛCDM Universe”</a> (2021).</li>
+          <li id="mond-ref-16">D. Zhang <i>et al.</i>, <a href="https://arxiv.org/abs/2602.06082">“Revisiting the Missing Mass Problem in MOND for Nearby Galaxy Clusters”</a> (2026).</li>
+          <li id="mond-ref-17">R. H. Sanders, <a href="https://arxiv.org/abs/1805.06804">“Does GW170817 Falsify MOND?”</a> (2018).</li>
+        </ol>
+      </section>
+
+      <section id="corrections" class="atlas-section atlas-invitation">
+        <p class="atlas-section__label">Invitation</p>
+        <h2>Corrections are welcome</h2>
+        <p>
+          This profile separates MOND phenomenology, nonrelativistic action principles, and relativistic cosmological
+          completions. Comments from Mordehai Milgrom, Stacy McGaugh, Benoit Famaey, Federico Lelli, Constantinos
+          Skordis, Tom Złośnik, Kyu-Hyun Chae, and other researchers working on galactic dynamics and relativistic MOND
+          will be incorporated with attribution.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>
