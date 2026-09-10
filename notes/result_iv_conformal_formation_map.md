@@ -16,7 +16,7 @@ between the normalized inward radial evolution of a freely falling parent observ
 
 The present result extends that construction across the finite process of black-hole formation.
 
-A continuous family of infalling observers or null probes is considered during spherical collapse. Successive crossings of the growing parent black-hole event horizon are associated with successive events along the child particle-horizon history. Oppenheimer–Snyder (OS) collapse provides an exact analytic benchmark.
+A continuous family of infalling observers or null probes is considered during spherical collapse. Successive crossings of the growing parent black-hole event horizon are associated with successive events on an outgoing child birth cone. GD2 proposes that cone as the particle-horizon history of the resulting causal patch. Oppenheimer–Snyder (OS) collapse provides an exact analytic benchmark.
 
 Several calculations then converge.
 
@@ -28,7 +28,7 @@ R_P(t,q)=S(t)F(q),
 
 which OS satisfies exactly.
 
-Second, the standard conformal transformation from the closed-FLRW OS interior to a flat Minkowski patch maps the pointlike past endpoint of the parent event horizon and its subsequent growth directly onto an outgoing light cone from the origin. Geometric Duality identifies that cone with the child particle-horizon history, giving the exact formation-stage event map
+Second, the standard tangent conformal transformation from the closed-FLRW OS interior to a flat Minkowski patch maps the pointlike past endpoint of the parent event horizon and its subsequent growth directly onto an outgoing light cone from the origin. Geometric Duality identifies that cone with the child's birth-cone history and proposes a particle-horizon interpretation. In the canonical tangent coordinates, the representative formation map is
 
 \[
 \frac{\Phi(q)}{\Phi(q_0)}
@@ -36,7 +36,7 @@ Second, the standard conformal transformation from the closed-FLRW OS interior t
 \frac{\tan q}{\tan q_0},
 \]
 
-whose weak-curvature limit agrees with the independently motivated homogeneous mass-shell map
+whose weak-curvature limit agrees with the independently motivated homogeneous mass-shell map. A residual vertex-preserving conformal family changes the parameterization of the cone; the null geometry alone does not select its physical member.
 
 \[
 \Phi/\Phi_f\simeq\mu^{1/3}.
@@ -49,6 +49,8 @@ g_C=\Gamma^2g_P,
 \]
 
 with an explicit formation-era conformal factor \(\Gamma\).
+
+This is not an isometric junction. Corresponding physical lengths satisfy \(d\ell_C=\Gamma\,d\ell_P\) locally; parent and child areal radii and Misner–Sharp masses are not set equal, and marginality is not generally preserved when \(\nabla_a\Gamma\neq0\).
 
 Finally, the Misner–Sharp transformation identity reproduces the child FLRW quasi-local mass. Along the formation horizon,
 
@@ -134,12 +136,22 @@ The working GD2 causal correspondence is
 \boxed{
 \mathcal H_{\rm BH}^{P}
 \longleftrightarrow
-\mathcal H_{\rm particle}^{C}.
+\mathcal N_{\rm birth}^{C}.
 }
 \tag{3}
 \]
 
 This is a correspondence between **histories of crossing events**.
+
+It is not an identification of the induced angular metrics on an ordinary GR junction. In particular, the construction does not impose
+
+\[
+R_P=R_C
+\qquad\text{or}\qquad
+M_P=M_C.
+\]
+
+Instead the Weyl map gives \(R_C=\Gamma R_P\), while the Misner–Sharp mass also acquires conformal-gradient terms. A marginal parent sphere therefore need not map to a marginal child sphere.
 
 It does not imply
 
@@ -149,7 +161,7 @@ R_{\rm BH}^{P}=R_{\rm particle}^{C},
 
 nor does it imply that a late infaller passes through the primordial child boundary.
 
-A parent crossing at a later stage maps to a later event on the child particle-horizon history.
+A parent crossing at a later stage maps to a later event on the outgoing child birth cone. Calling that cone a particle-horizon history additionally assumes that the vertex is the lower causal boundary of the child patch; finite \(A_C\) at the vertex does not establish that interpretation by itself.
 
 The subsequent trajectory leaves that boundary and propagates through the already-established child geometry.
 
@@ -313,6 +325,20 @@ The outgoing event-horizon generator therefore has its central past endpoint at
 }
 \tag{13}
 \]
+
+For the event-horizon vertex to lie after the conventional OS initial slice at maximum expansion, the benchmark must satisfy
+
+\[
+\boxed{q_0<\frac{\pi}{3}.}
+\]
+
+Since \(R_{\rm init}=A_m\sin q_0\) and \(2M=A_m\sin^3q_0\), this is equivalently
+
+\[
+\frac{2M}{R_{\rm init}}=\sin^2q_0<\frac34.
+\]
+
+For \(q_0\ge\pi/3\), the formal vertex lies before the selected initial slice: the tangent map still exists, but the chosen OS interval does not contain the black hole's formation from a horizon-free initial state.
 
 Inside the matter,
 
@@ -539,7 +565,7 @@ while the complete growing parent event horizon maps to
 
 an outgoing flat-space light cone.
 
-Geometric Duality identifies the same cone, after multiplication by the child FLRW scale factor, with the child particle-horizon history. The exact normalized candidate event map is therefore
+Geometric Duality identifies the same cone, after multiplication by the child FLRW scale factor, with the outgoing child birth cone. The canonical \(\beta=0\) normalized candidate event map is therefore
 
 \[
 \boxed{
@@ -551,11 +577,11 @@ Geometric Duality identifies the same cone, after multiplication by the child FL
 \tag{30}
 \]
 
-The first step—the map to a Minkowski null cone—is standard conformal geometry. The second—the physical identification of that cone as the child particle-horizon history—is the GD2 correspondence.
+The first step—the map to a Minkowski null cone—is standard conformal geometry. The second—the physical identification of that cone as the child's birth boundary, and potentially its particle-horizon history—is the GD2 correspondence.
 
 ---
 
-# 8. Recovery of the conceptual shell map
+# 8. Recovery of the conceptual shell map in the canonical completion
 
 Independently, homogeneous shell correspondence suggested
 
@@ -607,7 +633,7 @@ Thus the intuitive statement
 
 is recovered as the leading-order limit of the exact conformal construction.
 
-The shell map is therefore not required as an independent fundamental postulate in the OS weak-curvature limit.
+Within the canonical \(\beta=0\) tangent completion, the shell map is therefore not required as an independent postulate in the OS weak-curvature limit. A different allowed bulk conformal completion can change this normalized correspondence, so the recovery is not yet completion-independent.
 
 ---
 
@@ -805,6 +831,16 @@ gives, in the dimensionless Minkowski conformal coordinate,
 \tag{45}
 \]
 
+Here \(\mathcal H_C=d\ln A_C/dT_M\). If the dimensionful child conformal coordinate is written \(\eta_C=2LT_M=L\tan q\), then
+
+\[
+\frac{d\ln A_C}{d\eta_C}
+=
+\frac1L\cos^2q\cot\left(\frac{3q_0-q}{2}\right).
+\]
+
+The factor of two is therefore a coordinate normalization, not a second expansion law.
+
 For a flat FLRW interpretation,
 
 \[
@@ -843,7 +879,45 @@ In the weak-curvature limit,
 \tag{48}
 \]
 
-The weak-curvature formation correspondence therefore produces accelerated child expansion, although the finite OS horizon sweep itself provides less than one e-fold. More generally, the endpoint value is
+For the displayed \(T_M=\tfrac12\tan q\) completion, the endpoint values are
+
+\[
+w(0)
+=
+-\frac23
+-\frac13\tan^2\!\left(\frac{3q_0}{2}\right),
+\qquad
+w(q_0)
+=
+-\frac23+\tan^2q_0.
+\]
+
+Over \(0\le q\le q_0<\pi/3\), this representative \(w(q)\) increases monotonically while \(A_C\) grows. A positive radiation–matter–vacuum mixture instead evolves toward smaller effective \(w\). The displayed formation metric therefore cannot already be that standard mixture throughout the sweep; it requires a different completion, additional formation stress, or a later transition.
+
+The null cone does not select the displayed completion uniquely. A conformal automorphism preserving its vertex permits
+
+\[
+\eta_C(q)
+=
+\frac{\lambda\tan q}{1+\beta\tan q},
+\]
+
+which changes the inferred effective equation of state to
+
+\[
+w_\beta(q)
+=
+-\frac13
+-\frac1{3\cos^2y}
++\frac43\tan y\,
+\frac{\tan q-\beta}{1+\beta\tan q},
+\qquad
+y=\frac{3q_0-q}{2}.
+\]
+
+Thus \(w\to-2/3\) is the \(\beta=0\) representative, not an invariant prediction of the null map. The parameter is not necessarily a mere coordinate gauge: unless the complete physical metric is transformed with it, different \(\beta\) values define different bulk FLRW completions. A field equation, comoving congruence, or boundary regularity condition must select the admissible value.
+
+The \(\beta=0\), weak-curvature completion therefore produces accelerated child expansion, although the finite OS horizon sweep itself provides less than one e-fold. More generally, its endpoint value is
 
 \[
 w_f=-\frac23+\tan^2q_0,
@@ -945,6 +1019,18 @@ M_\nabla
 
 The conformal-gradient terms therefore reduce the naïvely scaled parent mass in the OS formation patch. The child quasi-local mass can still be parametrically larger than the parent stellar mass through the conformal factor, but the absolute size of that factor has not been derived.
 
+The corresponding compactness relation along the formation horizon is
+
+\[
+\frac{2M_C}{R_C}
+=
+\frac{2M_P}{R_P}
+\cos^2q
+\cos^2\!\left(\frac{3q_0-q}{2}\right).
+\]
+
+At the stellar surface, where the parent event horizon and trapping horizon meet, a marginal parent sphere therefore maps to child compactness \(\cos^4q_0\), not unity. The conformal formation map does not transfer marginality except in the limiting case \(q_0\to0\) or under additional conditions that remove the gradient correction.
+
 This is a statement about **geometric quasi-local mass**. It does not establish that baryonic rest mass transforms according to
 
 \[
@@ -977,7 +1063,7 @@ The earliest elements therefore constitute order-unity fractions of the availabl
 
 Later elements constitute progressively smaller fractions.
 
-Under a conformal map, ratios of lengths are preserved:
+At one event, ratios of co-located infinitesimal lengths are preserved because the same local \(\Gamma\) multiplies both:
 
 \[
 \boxed{
@@ -988,7 +1074,9 @@ Under a conformal map, ratios of lengths are preserved:
 \tag{54}
 \]
 
-Thus microscopic parent structures encountered when the horizon itself is microscopic can correspond to macroscopic fractions of the newborn child geometry.
+This local statement does not automatically compare an extended microscopic object with a global child horizon when \(\Gamma\) varies appreciably across the region. Such a comparison requires integrating the complete conformal geometry.
+
+Where \(\Gamma\) is approximately uniform over both structures, microscopic parent structures encountered when the horizon itself is microscopic can correspond to macroscopic fractions of the newborn child geometry.
 
 As the parent horizon grows, the same microscopic object corresponds to an increasingly local child structure.
 
@@ -1071,7 +1159,7 @@ Within the homogeneous OS benchmark, the following statements are mutually consi
 
 2. The growing parent event horizon maps conformally onto an outgoing Minkowski null cone.
 
-3. Successive horizon-crossing events can therefore map monotonically onto the child particle-horizon history.
+3. Successive horizon-crossing events can therefore map monotonically onto an outgoing child birth cone; interpreting that cone as a particle horizon requires an additional statement about the child's lower causal boundary.
 
 4. If parent synchronous slices map to common child-time slices, multi-cohort reciprocal consistency requires homologous parent collapse.
 
@@ -1083,7 +1171,7 @@ Within the homogeneous OS benchmark, the following statements are mutually consi
    A_C\propto S_P^{-1}.
    \]
 
-7. The exact conformal event map reduces in the weak-curvature limit to the independently motivated homogeneous mass-shell map
+7. In the canonical \(\beta=0\) completion, the conformal event map reduces in the weak-curvature limit to the independently motivated homogeneous mass-shell map
 
    \[
    \Phi/\Phi_f\simeq\mu^{1/3}.
@@ -1091,7 +1179,7 @@ Within the homogeneous OS benchmark, the following statements are mutually consi
 
 8. The formation patch admits an explicit local Weyl factor \(\Gamma\).
 
-9. The conformal Misner–Sharp identity reproduces the FLRW quasi-local mass required by the child metric.
+9. The conformal Misner–Sharp identity supplies a diagnostic mass decomposition and shows explicitly that the map does not generally preserve marginality.
 
 10. In weak-curvature OS formation,
 
@@ -1217,7 +1305,7 @@ The GD2 formation problem appears substantially simpler once the correspondence 
 
 The parent event horizon is not identified with the child's future event horizon, physical horizon radii are not equated, and late infallers are not sent backward through the child's primordial boundary.
 
-Instead, the finite history of black-hole formation is mapped onto the finite development of the child particle-horizon history.
+Instead, the finite history of black-hole formation is mapped onto the finite development of an outgoing child birth cone.
 
 In the exactly soluble OS benchmark, standard conformal geometry does something unexpectedly close to the desired construction automatically:
 
@@ -1239,9 +1327,9 @@ maps onto
 }
 \]
 
-Geometric Duality identifies that cone with the child particle-horizon history. The GD1 reciprocal law then makes the descriptions of successive infalling cohorts mutually consistent under a shell-independent synchronization and converts homogeneous parent contraction into homogeneous child expansion.
+Geometric Duality identifies that cone with the child's birth-cone history and proposes its particle-horizon interpretation. The GD1 reciprocal law then makes the descriptions of successive infalling cohorts mutually consistent under a shell-independent synchronization and converts homogeneous parent contraction into homogeneous child expansion.
 
-The resulting formation-era conformal factor recovers, at leading order, the radial mass-fraction map independently proposed from the conceptual picture. Its Misner–Sharp transformation reproduces the child FLRW quasi-local mass and shows explicitly how the gradient terms correct the naïve conformal scaling.
+In the canonical tangent completion, the resulting formation-era conformal factor recovers, at leading order, the radial mass-fraction map independently proposed from the conceptual picture. Its Misner–Sharp transformation reproduces the child FLRW quasi-local mass and shows explicitly how the gradient terms correct the naïve conformal scaling. Selecting the physical member of the residual conformal family remains part of the formation problem.
 
 The principal unresolved question has therefore shifted.
 

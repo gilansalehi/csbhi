@@ -83,7 +83,7 @@ The current construction separates:
 T_M=R_M=\frac12\tan q.
 \]
 
-Under the proposed GD identification, this gives the normalized child particle-horizon map
+Under the proposed GD identification and the canonical tangent-coordinate completion, this gives the normalized outgoing child birth-cone map
 
 \[
 \frac{\Phi(q)}{\Phi(q_0)}
@@ -91,7 +91,9 @@ Under the proposed GD identification, this gives the normalized child particle-h
 \frac{\tan q}{\tan q_0}.
 \]
 
-Its weak-curvature limit agrees with the homogeneous mass-shell map. The result fixes the relative causal map in the OS benchmark, not its absolute conformal normalization or its extension from the null generator to neighboring timelike cohorts.
+Its weak-curvature limit agrees with the homogeneous mass-shell map. The result supplies a canonical relative causal map in the OS benchmark, but a residual vertex-preserving conformal family remains. The physical member, absolute normalization, and extension from the null generator to neighboring timelike cohorts are not yet fixed.
+
+The map is conformal rather than isometric. Parent and child areal radii and Misner–Sharp masses are not equated, and the conformal-gradient terms prevent generic transfer of marginality from one frame to the other.
 
 [*Perturbing the Conformal Formation Map*](note.html?src=perturbing_the_conformal_formation_map) extends this benchmark to first-order LTB dust. It derives the displacement of the selected outgoing generator and the independent optical delay accumulated by the incoming beam. Generic LTB Weyl curvature prevents a conformal map to exact FLRW, so the child target must be perturbed FLRW. The calculation exposes the next GD datum cleanly: GD1 fixes each cohort's relative evolution but not the absolute formation calibration \(K(q)\). Constant calibration is the minimal closure hypothesis, not yet a derived result.
 

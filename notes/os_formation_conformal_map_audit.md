@@ -18,9 +18,9 @@ The Oppenheimer–Snyder interior is a closed FLRW dust geometry and is therefor
 T_M=R_M=\frac12\tan q.
 \]
 
-This is the strongest part of the proposed formation map: the pointlike event-horizon vertex and its complete null history become the outgoing light cone used in the GD2 cohort construction. Interpreting that cone as the child particle-horizon history still requires the CSBHI parent–child identification and a choice of child FLRW conformal factor.
+This is the strongest part of the proposed formation map: the pointlike event-horizon vertex and its complete null history become the outgoing light cone used in the GD2 cohort construction. Interpreting that cone as the child's birth boundary—and specifically as a particle-horizon history—still requires the CSBHI parent–child identification, a choice of child FLRW conformal factor, and a statement that the vertex is the lower causal boundary of the child patch.
 
-The overlapping-cohort condition gives a short accelerated formation phase. In the weak-compactness limit its effective equation of state approaches \(w=-2/3\), while its scale factor grows by \(9/4\), or \(0.811\) e-fold. This is not enough inflation to account for the large parent–child hierarchy. The absolute calibration remains undetermined.
+For the \(\beta=0\) conformal completion used in the original calculation, the overlapping-cohort condition gives a short accelerated formation phase. In the weak-compactness limit its effective equation of state approaches \(w=-2/3\), while its scale factor grows by \(9/4\), or \(0.811\) e-fold. The null map does not select \(\beta\), so the effective equation of state is completion-dependent. In every case the sweep is too short to account for the large parent–child hierarchy, whose absolute calibration remains undetermined.
 
 The conformal Misner–Sharp transformation can be evaluated exactly on the event horizon. It does reproduce the child FLRW mass, but this agreement is an identity rather than an independent test. More specifically,
 
@@ -75,6 +75,20 @@ The outgoing event-horizon generator reaches the surface at that event and begin
 \eta_0=\eta_f-q_0=\pi-3q_0.
 \tag{4}
 \]
+
+For this vertex to lie after the conventional OS initial slice at maximum expansion, one must have
+
+\[
+\boxed{q_0<\frac{\pi}{3}}.
+\]
+
+Using \(R_{\rm init}=A_m\sin q_0\) and \(2M=A_m\sin^3q_0\), the same condition is
+
+\[
+\frac{2M}{R_{\rm init}}=\sin^2q_0<\frac34.
+\]
+
+For \(q_0\ge\pi/3\), the formal vertex lies before the selected initial slice. The conformal identity remains valid on its domain, but this OS interval no longer describes horizon formation from initially horizon-free data.
 
 With
 
@@ -245,7 +259,7 @@ The associated normalized map is
 \tag{21}
 \]
 
-For \(q_0\ll1\), it shares the leading-order homogeneous shell map
+For \(q_0\ll1\), this canonical tangent-coordinate representative shares the leading-order homogeneous shell map
 
 \[
 \frac{\Phi(q)}{\Phi(q_0)}
@@ -259,8 +273,8 @@ For \(q_0\ll1\), it shares the leading-order homogeneous shell map
 The distinction between result and interpretation is precise:
 
 - **[E]** the OS event horizon maps to an outgoing Minkowski null cone;
-- **[C]** GD identifies that null cone with the child particle-horizon history;
-- **[O]** a dynamical law must show that neighboring timelike parent cohorts become the child comoving congruence.
+- **[C]** GD identifies that null cone with an outgoing child birth cone and proposes its particle-horizon interpretation;
+- **[O]** a dynamical law must select the physical member of the residual conformal family and show that neighboring timelike parent cohorts become the child comoving congruence.
 
 Conformal transformations preserve null curves as unparameterized null geodesics. They do not preserve timelike geodesics in the same way. The null result therefore does not complete the multi-Alice map by itself.
 
@@ -441,9 +455,41 @@ w_f
 \tag{39}
 \]
 
+The initial endpoint is
+
+\[
+w_0
+=
+-\frac23
+-\frac13\tan^2\!\left(\frac{3q_0}{2}\right).
+\]
+
+For the displayed \(\eta_C=L\tan q\) completion, direct differentiation shows \(w'(q)>0\) throughout \(0\le q\le q_0<\pi/3\). This is opposite the evolution of a positive radiation–matter–vacuum mixture as its scale factor grows. The representative formation metric therefore cannot be identified with that standard mixture throughout the sweep.
+
+The effective \(w\) is not fixed by the null cone alone. The vertex-preserving conformal family
+
+\[
+\eta_C(q)
+=
+\frac{\lambda\tan q}{1+\beta\tan q}
+\]
+
+instead gives
+
+\[
+w_\beta(q)
+=
+-\frac13
+-\frac1{3\cos^2y}
++\frac43\tan y\,
+\frac{\tan q-\beta}{1+\beta\tan q}.
+\]
+
+Equation (36) is its \(\beta=0\) member. This residual freedom is better described as an unfixed bulk conformal completion than automatically as gauge: a coordinate transformation of one already-fixed FLRW metric cannot change its physical equation of state. A dynamical or boundary principle must select the child congruence and the allowed \(\beta\).
+
 In particular, the endpoint remains accelerating only for \(q_0<\pi/6\). The statement that the entire formation sweep is accelerated should therefore remain tied to the weak-compactness regime.
 
-This history also creates a new matching question. The formation phase ends near \(w=-2/3\), whereas the mature early Friedmann branch is expected to be radiation dominated. A complete construction must either produce a smooth transition in \(A\), \(H\), and \(\dot H\), or identify the stress layer that changes the effective equation of state.
+This history therefore creates a completion problem rather than a derived birth equation of state. A complete construction must select the conformal frame and either recover the GD1 matter content smoothly or identify the formation stress that separates the two regimes.
 
 ---
 
@@ -565,6 +611,18 @@ The calculation therefore corrects the proposed interpretation. Weyl-gradient te
 
 The split into \(\Gamma M_P\) and \(M_\nabla\) is a transformation-law decomposition, not a division into separately conserved material energies. The negative sign in Equation (48) therefore does not by itself imply a negative local energy density.
 
+The same result rules out an isometric or marginality-preserving reading of the Weyl map. Since \(R_C=\Gamma_HR_P\),
+
+\[
+\boxed{
+\frac{2M_C}{R_C}
+=
+\frac{2M_P}{R_P}\cos^2q\cos^2y
+}.
+\]
+
+At the stellar surface \(q=q_0\), where the parent event and trapping horizons meet, the child compactness is \(\cos^4q_0\) times the parent compactness. The gradient terms that correct \(M_C\neq\Gamma M_P\) also prevent generic marginality transfer. Equal-radius or equal-mass matching belongs to a different, isometric surrogate and cannot be combined with this formation map.
+
 ---
 
 ## 7. What has been established
@@ -575,18 +633,18 @@ The formation calculation now contains three different levels of result.
 
 1. Oppenheimer–Snyder collapse is homologous and conformally flat.
 2. Its growing event horizon maps exactly to an outgoing Minkowski light cone.
-3. The conformal Misner–Sharp transformation is satisfied exactly.
+3. The conformal Misner–Sharp identity is evaluated exactly and demonstrates the failure of generic marginality transfer.
 
 ### Conditional GD2 consequences
 
-1. Identifying the image cone with the child particle-horizon history fixes
+1. Identifying the image cone with the outgoing child birth cone fixes
 
 \[
 \Phi/\Phi_f=\tan q/\tan q_0.
 \]
 
 2. A shell-independent parent-to-child synchronization plus reciprocal evolution gives \(\mathcal A_HS_H=K\).
-3. The weak-compactness formation sweep then has \(w\to-2/3\) and \(N\to\ln(9/4)\).
+3. Under the \(\beta=0\) completion, the weak-compactness formation sweep has \(w\to-2/3\) and \(N\to\ln(9/4)\); only the latter follows from the cohort scale ratio independently of the conformal-time completion.
 
 ### Still open
 

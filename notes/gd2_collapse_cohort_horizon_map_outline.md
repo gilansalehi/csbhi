@@ -10,7 +10,7 @@
 
 GD I follows one freely falling Alice and proposes \(a=1/r\). GD II repeats the experiment throughout the formation history of the parent black hole. Comparing collapse-day Alice with present-day Alice turns the unknown junction into an operational cohort map.
 
-The crossings form a null history. In child conformal coordinates its minimal spherical image is \(R=\eta=\Phi(v_H)\), the particle-horizon history of one FLRW causal patch. Homogeneous collapse supplies an invariant shell label through enclosed mass fraction, and one conformal factor maps the full shell family into child comoving shells. The reciprocal ansatz evolves each cohort after crossing. The radial horizon map is thereby reduced to one clock law, \(\Phi(v_H)\).
+The crossings form a null history. In child conformal coordinates its minimal spherical image is \(\chi_C=\eta_C=\Phi(v_H)\), the candidate particle-horizon history of one FLRW causal patch. Homogeneous collapse supplies an invariant shell label through enclosed mass fraction, and one conformal factor maps the full shell family into child comoving shells. The map is not isometric: it does not equate parent and child areal radii, masses, or marginal surfaces. The reciprocal ansatz evolves each cohort after crossing. The radial horizon map is thereby reduced to one clock law, \(\Phi(v_H)\).
 
 GD II's central calculation is to derive that law from a dynamical parent collapse while preserving GD I's isotropic reciprocal interior. Success would remove the point singularity from the completed spacetime, fix the child causal slicing, and determine whether four dimensions suffice or a scale/throat dimension is required.
 
@@ -29,10 +29,10 @@ Define the cohort family \(\gamma_{v_H}(\tau)\). Treat Precursor Alice as the li
 Draw the radial conformal diagram and derive
 
 \[
-R=\eta=\Phi(v_H).
+\chi_C=\eta_C=\Phi(v_H).
 \]
 
-Identify this child surface as a particle-horizon history. Keep the Hubble radius, apparent horizon, cosmological event horizon, and CMB surface distinct.
+Identify the image first as an outgoing child birth cone. Then test the stronger interpretation as a particle-horizon history by determining whether its vertex is the lower causal boundary of the child patch. Keep the Hubble radius, apparent horizon, cosmological event horizon, and CMB surface distinct.
 
 ## 4. Every collapse shell
 
@@ -45,6 +45,8 @@ R_C(\mu)=R_b\mu^{1/3}.
 \]
 
 Show that one conformal factor maps all shells. Interpret deviations from the common profile as the Weyl/density-contrast data the geometry must relax.
+
+The shared \(\mu^{1/3}\) profile is a normalized shell-label correspondence, not an equality \(R_P=R_C\). In physical units the construction requires \(R_C=\Gamma R_P\), with the transformed Misner–Sharp mass including gradient terms; marginality is not assumed to transfer.
 
 ## 5. Evolution after crossing
 
@@ -93,7 +95,7 @@ The 5D throat then becomes the answer to a demonstrated residual rather than the
 Use the derived \(\Phi\) to calculate:
 
 - child age assigned to a parent crossing epoch;
-- particle-horizon history;
+- outgoing birth-cone history and the status of its proposed particle-horizon interpretation;
 - optical redshift from Bob to Alice;
 - mapping of parent accretion into child epochs;
 - whether \(R_p\), \(R_H\), and \(H_0\) follow consistently.
@@ -102,7 +104,7 @@ Use the derived \(\Phi\) to calculate:
 
 GD II succeeds if one collapse geometry produces:
 
-1. the null cohort map \(R=\eta=\Phi(v_H)\);
+1. the null cohort map \(\chi_C=\eta_C=\Phi(v_H)\);
 2. the homogeneous shell correspondence;
 3. GD I evolution along every cohort;
 4. the physical normalization of \(\Phi\);

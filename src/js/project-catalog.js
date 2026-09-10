@@ -55,7 +55,7 @@ const DOCUMENTS = {
       technical: 'exact OS benchmark · Gilan Salehi',
     },
     summaries: {
-      publications: 'The standard conformal map sends the growing Oppenheimer–Snyder event horizon exactly onto an outgoing flat-space light cone. GD identifies that cone with the child particle-horizon history, fixing the relative formation map while leaving its absolute scale and timelike completion open.',
+      publications: 'The standard conformal map sends the growing Oppenheimer–Snyder event horizon exactly onto an outgoing flat-space birth cone. Its canonical tangent coordinates recover the proposed shell map, while the physical conformal completion, child boundary, absolute scale, and timelike transport remain open.',
       technical: 'Derives the exact OS event-horizon map \\(\\Phi/\\Phi_f=\\tan q/\\tan q_0\\), its weak-curvature agreement with the homogeneous mass-shell map, the formation-era Weyl factor, and the conformal Misner–Sharp mass decomposition.',
     },
   },

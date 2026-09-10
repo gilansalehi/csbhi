@@ -8,12 +8,14 @@
 
 [Result IV](note.html?src=result_iv_conformal_formation_map) maps the event-horizon formation history of homogeneous Oppenheimer–Snyder (OS) collapse exactly onto an outgoing null cone. This note perturbs that benchmark within Lemaître–Tolman–Bondi (LTB) dust.
 
+The perturbation is taken around the conformal formation map \(g_C=\Gamma^2g_P\). It does not impose equality of parent and child areal radii or Misner–Sharp masses, and it does not assume that marginality transfers between the two frames.
+
 To first order, one radial-metric perturbation controls both the displacement of the growing event-horizon generator and the optical delay accumulated by an ingoing beam:
 
 \[
 h
 =
-\varepsilon+	an q\,\partial_q\varepsilon
+\varepsilon+\tan q\,\partial_q\varepsilon
 -\frac12\sec^2q\,\delta\mathcal E.
 \]
 
@@ -85,6 +87,8 @@ R_0=S(\eta)\sin q,
 dt=S\,d\eta.
 \tag{3}
 \]
+
+The formation-from-horizon-free-data benchmark assumes \(q_0<\pi/3\), so the background event-horizon vertex \(\eta_0=\pi-3q_0\) lies after the conventional OS initial slice.
 
 Perturb the areal radius and energy function:
 
@@ -189,13 +193,23 @@ In the background conversion \(dt=S\,d\eta\), the first-order proper-time shift 
 
 Equation (11) determines the shape of a selected outgoing null generator relative to its vertex. Selecting that generator as the event horizon remains a global operation: its vertex or late-time endpoint must be supplied by the exterior causal solution.
 
+It also supplies an immediate surface-anchor test. Once the time gauge is fixed at the vertex,
+
+\[
+\delta\eta_H(q_0)
+=
+\int_0^{q_0}h(s,s)\,ds
+\]
+
+is predicted by the interior. It must equal the perturbation of the event-horizon crossing obtained independently from the stellar surface and exterior solution. A mismatch means the selected interior generator is not the global event horizon or the assumed perturbation data fail the boundary matching.
+
 Using Equation (8),
 
 \[
 h
 =
 -\frac13\left[
-\bar\delta_P+	an q\,\partial_q\bar\delta_P
+\bar\delta_P+\tan q\,\partial_q\bar\delta_P
 \right]
 -\frac12\sec^2q\,\delta\mathcal E,
 \tag{13}
@@ -209,7 +223,7 @@ so
 =
 -\frac13\int_0^q
 \left[
-\bar\delta_H+	an s\,\partial_s\bar\delta_H
+\bar\delta_H+\tan s\,\partial_s\bar\delta_H
 \right]ds
 -\frac12\int_0^q
 \sec^2s\,\delta\mathcal E(s)\,ds.
@@ -303,6 +317,29 @@ If the same null-coordinate calibration is continued perturbatively, Equation (2
 }
 \tag{21}
 \]
+
+Equation (21) uses the \(\beta=0\), unit-normalized member of the vertex-preserving conformal family. More generally,
+
+\[
+\Phi_{\beta,0}(q)
+=
+\frac{\lambda}{2}
+\frac{\tan q}{1+\beta\tan q},
+\]
+
+and the radial perturbation becomes
+
+\[
+\boxed{
+\delta\Phi_{\beta,{\rm null}}(q)
+=
+\frac{\lambda}{4}
+\frac{\sec^2q}{(1+\beta\tan q)^2}
+\Delta v_H^{\rm rel}(q).
+}
+\]
+
+The null kinematics do not select \(\beta\) or \(\lambda\). Their physical determination belongs to the same conformal-completion problem as \(K(q)\).
 
 This is a definite radial-null result once the beam normalization and continuation of \(V(v)\) are specified. It is not yet the complete gauge-invariant child event-map perturbation. A null-coordinate reparameterization changes its numerical form, while the angular geometry and child metric constraints determine how the ordering is represented in perturbed FLRW coordinates.
 
@@ -522,7 +559,7 @@ Within first-order spherical LTB perturbations of the OS benchmark:
 7. Isotropic conformal rescaling cancels from the first-order radial null-speed combination.
 8. GD1 leaves an absolute formation calibration \(K(q)\).
 
-The calculation does not yet supply a globally selected event horizon joined to a specified exterior, the full source-clock transfer, a gauge-invariant child perturbation map, the perturbed Einstein constraints, a covariant law fixing \(K(q)\), or the continuation into the mature GD1 interior.
+The calculation does not yet complete the surface-anchor test against a specified exterior, the full source-clock transfer, a gauge-invariant child perturbation map, the perturbed Einstein constraints, a covariant law fixing \(K(q)\), or the continuation into the mature GD1 interior.
 
 The highest-information next test is therefore
 
