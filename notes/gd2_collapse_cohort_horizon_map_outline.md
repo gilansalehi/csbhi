@@ -62,7 +62,7 @@ Recover the probe expansion, dilution laws, Friedmann history, and de Sitter fut
 
 ## 6. Derive the clock
 
-Show why \(r=1\) along the horizon leaves \(\Phi'(v_H)\) undetermined in general. Use Result IV's exact Oppenheimer–Snyder map as the homogeneous analytic benchmark. [*Pressure Robustness of the Conformal Formation Map*](note.html?src=pressure_robustness_of_the_conformal_formation_map) establishes that homogeneous pressure preserves that architecture and gives the lapse-aware rate law \(H_C=-\theta_P/(3N_C)\). Then use [*Perturbing the Conformal Formation Map*](note.html?src=perturbing_the_conformal_formation_map) to separate the first-order event-horizon shift, beam-path correction, inherited non-conformal perturbation, and unresolved absolute calibration. A dynamical collapse embedded in the parent FLRW background must then compare:
+Show why \(r=1\) along the horizon leaves \(\Phi'(v_H)\) undetermined in general. Use Result IV's exact Oppenheimer–Snyder map as the homogeneous analytic benchmark. [*Pressure Robustness of the Conformal Formation Map*](note.html?src=pressure_robustness_of_the_conformal_formation_map) establishes that homogeneous pressure preserves that architecture and gives the lapse-aware rate law \(H_C=-\theta_P/(3N_C)\). Then use [*Perturbing the Conformal Formation Map*](note.html?src=perturbing_the_conformal_formation_map) to separate the first-order event-horizon shift, beam-path correction, inherited non-conformal perturbation, and unresolved absolute calibration. [*Pressure Gradients and the Regular Birth Vertex*](note.html?src=pressure_gradients_and_the_regular_birth_vertex) proves that realistic pressure gradients necessarily enter through child perturbations while regularity suppresses them at the central vertex. A dynamical collapse embedded in the parent FLRW background must then compare:
 
 - Bob's station proper time;
 - an advanced horizon coordinate;
@@ -126,4 +126,5 @@ Perturbations, rotation, and the galaxy law follow only after this background ma
 8. [Result IV — The Conformal Formation Map](note.html?src=result_iv_conformal_formation_map).
 9. [Pressure Robustness of the Conformal Formation Map](note.html?src=pressure_robustness_of_the_conformal_formation_map).
 10. [Perturbing the Conformal Formation Map](note.html?src=perturbing_the_conformal_formation_map).
-11. [Audit of the Oppenheimer–Snyder Formation Map](note.html?src=os_formation_conformal_map_audit).
+11. [Pressure Gradients and the Regular Birth Vertex](note.html?src=pressure_gradients_and_the_regular_birth_vertex).
+12. [Audit of the Oppenheimer–Snyder Formation Map](note.html?src=os_formation_conformal_map_audit).

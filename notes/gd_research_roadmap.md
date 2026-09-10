@@ -105,6 +105,8 @@ Pressure changes the collapse history and the energy ledger. The OS growth facto
 
 [*Perturbing the Conformal Formation Map*](note.html?src=perturbing_the_conformal_formation_map) extends this benchmark to first-order LTB dust. It derives the displacement of the selected outgoing generator and the independent optical delay accumulated by the incoming beam. Generic LTB Weyl curvature prevents a conformal map to exact FLRW, so the child target must be perturbed FLRW. The calculation exposes the next GD datum cleanly: GD1 fixes each cohort's relative evolution but not the absolute formation calibration \(K(q)\). Constant calibration is the minimal closure hypothesis, not yet a derived result.
 
+[*Pressure Gradients and the Regular Birth Vertex*](note.html?src=pressure_gradients_and_the_regular_birth_vertex) supplies the analytic general-perfect-fluid result. A genuine radial pressure gradient accelerates the material fluid relative to a geodesic Alice. The Alice-frame momentum constraint then proves that, under the minimal shell-independent completion, the congruence cannot remain both shear-free and uniformly expanding across the finite star. Exact FLRW must give way to perturbations. At a regular spherical center, however, pressure and density gradients vanish linearly while anisotropic stress, electric Weyl curvature, and Alice shear begin at \(O(R^2)\). The birth vertex is therefore FLRW-like at leading order, with structure appearing as the horizon grows into the parent's radial profile.
+
 ### GD2 benchmark scoreboard
 
 | Level | Model | What the model tests | Status |
@@ -112,9 +114,11 @@ Pressure changes the collapse history and the energy ledger. The OS growth facto
 | 0 | OS dust | Existence of the homogeneous formation map | **Passed** |
 | 1 | Homogeneous perfect fluid | Whether pressure breaks the reciprocal, null, or conformal background structure | **Passed structurally** |
 | 2 | First-order LTB dust | Density gradients, velocity modes, Weyl inheritance, and the perturbed horizon sweep | **Partially passed; calibration open** |
-| 3 | General spherical perfect fluid | Pressure gradients, accelerated matter, a free-fall Alice congruence, and a physical stellar boundary | **Next** |
+| 3 | General spherical perfect fluid | Pressure gradients, accelerated matter, a free-fall Alice congruence, and a physical stellar boundary | **Passed with required perturbations; amplitude open** |
 | 4 | Dissipative spherical collapse | Heat, neutrino, and radiative flux | **Planned** |
 | 5 | Rotating collapse | Angular momentum and child anisotropy | **Planned** |
+
+The immediate calculation is the Level 3 surface amplitude: evolve a realistic equation of state and determine the perturbations accumulated before the event horizon reaches the stellar boundary.
 
 This is not a direct junction between independently selected vacuum Schwarzschild and FLRW metrics. The parent is locally black-hole-like and globally matter-filled; the child geometry must preserve GD I's reciprocal interior.
 

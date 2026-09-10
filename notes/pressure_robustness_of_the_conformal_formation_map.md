@@ -497,9 +497,9 @@ and must be treated as the next dynamical benchmark.
 | Conserved mass-fraction shell label | Yes | No: pressure changes \(m\) | **Use a Lagrangian/conserved-charge label** |
 | Local Weyl relation \(g_C=\Gamma^2g_P\) | Exact | Exact | **Survives pressure** |
 | \(m_C\simeq\Gamma m_P\) | Weak-curvature result | Rapid-collapse, weak-curvature limit | **Broader but still diagnostic** |
-| Smooth finite-star boundary | Standard OS vacuum match | Impossible with homogeneous \(p\neq0\) and no layer | **Realistic gradient model required** |
+| Smooth finite-star boundary | Standard OS vacuum match | Impossible with homogeneous \(p\neq0\) and no layer | **Pressure gradients require child perturbations** |
 | Absolute calibration \(K\) | Unfixed | Unfixed | **Open** |
-| Physical child stress-energy | Uncomputed | Uncomputed | **Next pass/fail calculation** |
+| Physical child stress-energy | Uncomputed | Uncomputed | **Perturbation amplitude and Einstein tensor remain** |
 
 The score is therefore structural rather than numerical: pressure preserves the background conformal map while retiring two dust conveniences—the universal \(9/4\) growth and conserved Misner–Sharp mass fraction.
 
@@ -507,9 +507,9 @@ The score is therefore structural rather than numerical: pressure preserves the 
 
 ## 10. Next calculation
 
-The next useful model must include a radial pressure profile and a physical exterior or atmosphere. It should test:
+[*Pressure Gradients and the Regular Birth Vertex*](note.html?src=pressure_gradients_and_the_regular_birth_vertex) supplies the analytic answer for a radial pressure profile: the geodesic Alice congruence cannot remain both shear-free and uniformly expanding, but the induced departures vanish to leading order at a regular center. The next useful model must supply a realistic equation of state and physical exterior or atmosphere. It should calculate:
 
-1. whether the accelerated fluid congruence remains close enough to shear-free and homogeneous to seed acceptable child perturbations;
+1. the perturbation amplitude accumulated before the event horizon reaches the stellar surface;
 2. whether the perturbed event-horizon generator passes the surface-anchor test;
 3. which Lagrangian or conserved-current label replaces \(m/M\);
 4. whether the conformal completion and \(K\) follow from the matter boundary conditions;

@@ -87,6 +87,20 @@ const DOCUMENTS = {
       technical: 'Derives the first-order LTB horizon sweep and null-beam timing, then shows why generic collapse produces perturbed FLRW and exposes the unresolved shell calibration \\(K(q)\\).',
     },
   },
+  pressureGradientTheorem: {
+    label: 'GD2 Result',
+    title: 'Pressure Gradients and the Regular Birth Vertex',
+    note: 'pressure_gradients_and_the_regular_birth_vertex',
+    prerequisite: 'pressureRobustness',
+    meta: {
+      publications: 'perfect-fluid perturbation theorem · conditional GD2 result',
+      technical: 'perfect-fluid perturbation theorem · reviewed by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Under the minimal shell-independent completion, proves that a radial pressure gradient prevents a geodesic Alice congruence from remaining both shear-free and uniformly expanding. At the regular birth vertex, radial flux vanishes linearly while Weyl curvature, shear, and the reciprocal scalar-rate correction begin at quadratic order.',
+      technical: 'Separates freely falling Alice from the accelerated fluid, derives the reciprocal rate with Alice shear, proves the pressure-gradient obstruction to the minimal exact-FLRW completion, and shows that the obstruction vanishes to leading order at a regular spherical center.',
+    },
+  },
   evolvingGDagger: {
     label: 'Prediction I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
@@ -250,7 +264,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',
