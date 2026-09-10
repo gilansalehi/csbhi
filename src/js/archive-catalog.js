@@ -53,6 +53,7 @@ const GROUPS = [
     title: 'Collapse cohorts and the horizon map',
     items: [
       document('conformalFormationMap'),
+      document('pressureRobustness'),
       document('perturbedFormationMap'),
       document('gd2'),
       note('Audit of the Oppenheimer–Snyder Formation Map', 'os_formation_conformal_map_audit'),

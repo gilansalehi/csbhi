@@ -10,7 +10,7 @@
 
 GD I follows one freely falling Alice and proposes \(a=1/r\). GD II repeats the experiment throughout the formation history of the parent black hole. Comparing collapse-day Alice with present-day Alice turns the unknown junction into an operational cohort map.
 
-The crossings form a null history. In child conformal coordinates its minimal spherical image is \(\chi_C=\eta_C=\Phi(v_H)\), the candidate particle-horizon history of one FLRW causal patch. Homogeneous collapse supplies an invariant shell label through enclosed mass fraction, and one conformal factor maps the full shell family into child comoving shells. The map is not isometric: it does not equate parent and child areal radii, masses, or marginal surfaces. The reciprocal ansatz evolves each cohort after crossing. The radial horizon map is thereby reduced to one clock law, \(\Phi(v_H)\).
+The crossings form a null history. In child conformal coordinates its minimal spherical image is \(\chi_C=\eta_C=\Phi(v_H)\), an outgoing birth cone whose stronger particle-horizon interpretation remains to be tested. Homogeneous collapse supplies a Lagrangian cohort label, and one conformal factor maps the full shell family into child comoving shells. The map is not isometric: it does not equate parent and child areal radii, masses, or marginal surfaces. The reciprocal ansatz evolves each cohort after crossing. The radial horizon map is thereby reduced to one clock law, \(\Phi(v_H)\).
 
 GD II's central calculation is to derive that law from a dynamical parent collapse while preserving GD I's isotropic reciprocal interior. Success would remove the point singularity from the completed spacetime, fix the child causal slicing, and determine whether four dimensions suffice or a scale/throat dimension is required.
 
@@ -34,9 +34,9 @@ Draw the radial conformal diagram and derive
 
 Identify the image first as an outgoing child birth cone. Then test the stronger interpretation as a particle-horizon history by determining whether its vertex is the lower causal boundary of the child patch. Keep the Hubble radius, apparent horizon, cosmological event horizon, and CMB surface distinct.
 
-## 4. Every collapse shell
+## 4. Every collapse cohort
 
-Label shells by enclosed mass fraction \(\mu\). In homogeneous spherical collapse, derive
+Label cohorts by a Lagrangian coordinate or conserved material charge. For OS dust, enclosed mass fraction \(\mu\) supplies the convenient special case
 
 \[
 R_P(\mu)=B_*\mu^{1/3},
@@ -44,9 +44,9 @@ R_P(\mu)=B_*\mu^{1/3},
 R_C(\mu)=R_b\mu^{1/3}.
 \]
 
-Show that one conformal factor maps all shells. Interpret deviations from the common profile as the Weyl/density-contrast data the geometry must relax.
+Show that one conformal factor maps all cohorts. Interpret deviations from the common profile as the Weyl/density-contrast data the geometry must carry into child perturbations.
 
-The shared \(\mu^{1/3}\) profile is a normalized shell-label correspondence, not an equality \(R_P=R_C\). In physical units the construction requires \(R_C=\Gamma R_P\), with the transformed Misner–Sharp mass including gradient terms; marginality is not assumed to transfer.
+The shared \(\mu^{1/3}\) profile is a dust-specific normalized shell-label correspondence, not an equality \(R_P=R_C\). With pressure, compression work changes the Misner–Sharp mass of a comoving shell, so the general label must be Lagrangian or current-based. In physical units the construction requires \(R_C=\Gamma R_P\), with the transformed Misner–Sharp mass including gradient terms; marginality is not assumed to transfer.
 
 ## 5. Evolution after crossing
 
@@ -62,7 +62,7 @@ Recover the probe expansion, dilution laws, Friedmann history, and de Sitter fut
 
 ## 6. Derive the clock
 
-Show why \(r=1\) along the horizon leaves \(\Phi'(v_H)\) undetermined in general. Use Result IV's exact Oppenheimer–Snyder map as the homogeneous analytic benchmark, then use [*Perturbing the Conformal Formation Map*](note.html?src=perturbing_the_conformal_formation_map) to separate the first-order event-horizon shift, beam-path correction, inherited non-conformal perturbation, and unresolved absolute calibration. A dynamical collapse embedded in the parent FLRW background must then compare:
+Show why \(r=1\) along the horizon leaves \(\Phi'(v_H)\) undetermined in general. Use Result IV's exact Oppenheimer–Snyder map as the homogeneous analytic benchmark. [*Pressure Robustness of the Conformal Formation Map*](note.html?src=pressure_robustness_of_the_conformal_formation_map) establishes that homogeneous pressure preserves that architecture and gives the lapse-aware rate law \(H_C=-\theta_P/(3N_C)\). Then use [*Perturbing the Conformal Formation Map*](note.html?src=perturbing_the_conformal_formation_map) to separate the first-order event-horizon shift, beam-path correction, inherited non-conformal perturbation, and unresolved absolute calibration. A dynamical collapse embedded in the parent FLRW background must then compare:
 
 - Bob's station proper time;
 - an advanced horizon coordinate;
@@ -105,7 +105,7 @@ Use the derived \(\Phi\) to calculate:
 GD II succeeds if one collapse geometry produces:
 
 1. the null cohort map \(\chi_C=\eta_C=\Phi(v_H)\);
-2. the homogeneous shell correspondence;
+2. the homogeneous cohort correspondence, with a physically conserved label;
 3. GD I evolution along every cohort;
 4. the physical normalization of \(\Phi\);
 5. a regular global causal diagram without a point singularity.
@@ -124,5 +124,6 @@ Perturbations, rotation, and the galaxy law follow only after this background ma
 6. [A Black Hole on the Aeon Boundary](note.html?src=shear_free_interior_weyl_stress_identity).
 7. [The Reciprocal Scale Field](note.html?src=reciprocal_scale_field).
 8. [Result IV — The Conformal Formation Map](note.html?src=result_iv_conformal_formation_map).
-9. [Perturbing the Conformal Formation Map](note.html?src=perturbing_the_conformal_formation_map).
-10. [Audit of the Oppenheimer–Snyder Formation Map](note.html?src=os_formation_conformal_map_audit).
+9. [Pressure Robustness of the Conformal Formation Map](note.html?src=pressure_robustness_of_the_conformal_formation_map).
+10. [Perturbing the Conformal Formation Map](note.html?src=perturbing_the_conformal_formation_map).
+11. [Audit of the Oppenheimer–Snyder Formation Map](note.html?src=os_formation_conformal_map_audit).

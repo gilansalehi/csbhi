@@ -59,6 +59,20 @@ const DOCUMENTS = {
       technical: 'Derives the exact OS event-horizon map \\(\\Phi/\\Phi_f=\\tan q/\\tan q_0\\), its weak-curvature agreement with the homogeneous mass-shell map, the formation-era Weyl factor, and the conformal Misner–Sharp mass decomposition.',
     },
   },
+  pressureRobustness: {
+    label: 'GD2 Benchmark',
+    title: 'Pressure Robustness of the Conformal Formation Map',
+    note: 'pressure_robustness_of_the_conformal_formation_map',
+    prerequisite: 'conformalFormationMap',
+    meta: {
+      publications: 'homogeneous perfect-fluid benchmark · conditional GD2 result',
+      technical: 'homogeneous perfect-fluid benchmark · reviewed by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Replaces OS dust with homogeneous perfect-fluid collapse. Pressure preserves the reciprocal cohort law, null birth-cone map, and local Weyl relation while retiring the dust-specific growth factor and conserved mass-fraction label.',
+      technical: 'Shows which parts of Result IV are geometric rather than dust-specific, derives the lapse-aware contraction–expansion law and general quasi-local mass identity, and isolates radial pressure gradients as the next physical test.',
+    },
+  },
   perturbedFormationMap: {
     label: 'GD2 Calculation',
     title: 'Perturbing the Conformal Formation Map',
@@ -236,7 +250,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'perturbedFormationMap', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',

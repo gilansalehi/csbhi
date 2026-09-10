@@ -74,7 +74,7 @@ Its principal results are:
 The current construction separates:
 
 1. the causal history of successive horizon crossings;
-2. the homogeneous shell map supplied by enclosed mass fraction; and
+2. a conserved Lagrangian label for the collapsing cohorts; and
 3. the reciprocal evolution of every cohort after crossing.
 
 [*Result IV — The Conformal Formation Map*](note.html?src=result_iv_conformal_formation_map) now supplies an exact analytic benchmark for the first two parts. In Oppenheimer–Snyder collapse, the standard conformal map from the closed-FLRW interior to a Minkowski patch sends the growing black-hole event horizon to an outgoing null cone,
@@ -95,7 +95,26 @@ Its weak-curvature limit agrees with the homogeneous mass-shell map. The result 
 
 The map is conformal rather than isometric. Parent and child areal radii and Misner–Sharp masses are not equated, and the conformal-gradient terms prevent generic transfer of marginality from one frame to the other.
 
+[*Pressure Robustness of the Conformal Formation Map*](note.html?src=pressure_robustness_of_the_conformal_formation_map) replaces OS dust with a homogeneous perfect fluid. The reciprocal cohort law, canonical null birth cone, and local Weyl relation all survive. The rate statement takes the lapse-aware form
+
+\[
+H_C=-\frac{\theta_P}{3N_C}.
+\]
+
+Pressure changes the collapse history and the energy ledger. The OS growth factor \(9/4\) becomes \(S_H(0)/S_H(q_0)\), while Misner–Sharp mass ceases to be a conserved shell label because compression work changes the enclosed gravitational energy. An exactly homogeneous fluid with nonzero pressure cannot also furnish a smooth finite-star boundary to vacuum, so the calculation passes the background pressure test and identifies radial pressure gradients as the next physical benchmark.
+
 [*Perturbing the Conformal Formation Map*](note.html?src=perturbing_the_conformal_formation_map) extends this benchmark to first-order LTB dust. It derives the displacement of the selected outgoing generator and the independent optical delay accumulated by the incoming beam. Generic LTB Weyl curvature prevents a conformal map to exact FLRW, so the child target must be perturbed FLRW. The calculation exposes the next GD datum cleanly: GD1 fixes each cohort's relative evolution but not the absolute formation calibration \(K(q)\). Constant calibration is the minimal closure hypothesis, not yet a derived result.
+
+### GD2 benchmark scoreboard
+
+| Level | Model | What the model tests | Status |
+|---|---|---|---|
+| 0 | OS dust | Existence of the homogeneous formation map | **Passed** |
+| 1 | Homogeneous perfect fluid | Whether pressure breaks the reciprocal, null, or conformal background structure | **Passed structurally** |
+| 2 | First-order LTB dust | Density gradients, velocity modes, Weyl inheritance, and the perturbed horizon sweep | **Partially passed; calibration open** |
+| 3 | General spherical perfect fluid | Pressure gradients, accelerated matter, a free-fall Alice congruence, and a physical stellar boundary | **Next** |
+| 4 | Dissipative spherical collapse | Heat, neutrino, and radiative flux | **Planned** |
+| 5 | Rotating collapse | Angular momentum and child anisotropy | **Planned** |
 
 This is not a direct junction between independently selected vacuum Schwarzschild and FLRW metrics. The parent is locally black-hole-like and globally matter-filled; the child geometry must preserve GD I's reciprocal interior.
 
