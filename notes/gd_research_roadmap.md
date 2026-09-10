@@ -77,6 +77,22 @@ The current construction separates:
 2. the homogeneous shell map supplied by enclosed mass fraction; and
 3. the reciprocal evolution of every cohort after crossing.
 
+[*Result IV — The Conformal Formation Map*](note.html?src=result_iv_conformal_formation_map) now supplies an exact analytic benchmark for the first two parts. In Oppenheimer–Snyder collapse, the standard conformal map from the closed-FLRW interior to a Minkowski patch sends the growing black-hole event horizon to an outgoing null cone,
+
+\[
+T_M=R_M=\frac12\tan q.
+\]
+
+Under the proposed GD identification, this gives the normalized child particle-horizon map
+
+\[
+\frac{\Phi(q)}{\Phi(q_0)}
+=
+\frac{\tan q}{\tan q_0}.
+\]
+
+Its weak-curvature limit agrees with the homogeneous mass-shell map. The result fixes the relative causal map in the OS benchmark, not its absolute conformal normalization or its extension from the null generator to neighboring timelike cohorts.
+
 This is not a direct junction between independently selected vacuum Schwarzschild and FLRW metrics. The parent is locally black-hole-like and globally matter-filled; the child geometry must preserve GD I's reciprocal interior.
 
 The collapse-to-child boundary equations reduce the remaining synchronization to one lapse. A compensated (\Lambda\)LTB benchmark establishes three useful facts:
@@ -85,7 +101,7 @@ The collapse-to-child boundary equations reduce the remaining synchronization to
 - the stationary de Sitter endpoint supplies the correct exponential form; and
 - the simplest unit-lapse synchronization fails across the intermediate collapse.
 
-That negative result sharpens GD II. The next calculation must retain the proposed causal correspondence between the parent black-hole event-horizon generator and the child particle-horizon history, derive the nontrivial lapse from the parent collapse and optical transfer, and extend the map to neighboring worldlines and perturbations. The parent trapping horizon, child apparent horizon, and child future cosmological event horizon must remain separate unless a later calculation independently relates them. A fifth or scale dimension enters only if a residual remains after the four-dimensional matter-filled construction is explicit.
+That negative result and the OS conformal map sharpen GD II from opposite sides. The next calculation must determine whether a realistic matter-filled collapse reproduces the OS causal map, fix its physical normalization from the parent collapse and optical transfer, and extend it to neighboring worldlines and perturbations. The parent trapping horizon, child apparent horizon, and child future cosmological event horizon must remain separate unless a later calculation independently relates them. A fifth or scale dimension enters only if a residual remains after the four-dimensional matter-filled construction is explicit.
 
 GD II succeeds when one collapse geometry produces the causal map, shell correspondence, reciprocal evolution, physical clock normalization, and a regular global causal diagram.
 

@@ -52,7 +52,9 @@ const GROUPS = [
   {
     title: 'Collapse cohorts and the horizon map',
     items: [
+      document('conformalFormationMap'),
       document('gd2'),
+      note('Audit of the Oppenheimer–Snyder Formation Map', 'os_formation_conformal_map_audit'),
       note('Collapse Day and Present Day: The Infall-Cohort Worldsheet', 'collapse_day_present_day_cohort_worldsheet'),
       note('From Collapse Shells to a Child FLRW Patch', 'homogeneous_collapse_shell_map'),
       note('From Collapse to a Conformal Child Universe', 'collapse_reciprocal_interior_and_conformal_child'),

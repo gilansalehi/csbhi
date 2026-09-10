@@ -45,6 +45,20 @@ const DOCUMENTS = {
       publications: 'Within the scale-free, horizon-fixing class, involution fixes the unique nontrivial map: \\(a=1/r\\).',
     },
   },
+  conformalFormationMap: {
+    label: 'Result IV',
+    title: 'The Conformal Formation Map',
+    note: 'result_iv_conformal_formation_map',
+    prerequisite: 'gd1',
+    meta: {
+      publications: 'exact OS benchmark · conditional GD2 result',
+      technical: 'exact OS benchmark · Gilan Salehi',
+    },
+    summaries: {
+      publications: 'The standard conformal map sends the growing Oppenheimer–Snyder event horizon exactly onto an outgoing flat-space light cone. GD identifies that cone with the child particle-horizon history, fixing the relative formation map while leaving its absolute scale and timelike completion open.',
+      technical: 'Derives the exact OS event-horizon map \\(\\Phi/\\Phi_f=\\tan q/\\tan q_0\\), its weak-curvature agreement with the homogeneous mass-shell map, the formation-era Weyl factor, and the conformal Misner–Sharp mass decomposition.',
+    },
+  },
   evolvingGDagger: {
     label: 'Prediction I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
@@ -208,7 +222,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',
