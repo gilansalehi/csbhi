@@ -107,6 +107,18 @@ Pressure changes the collapse history and the energy ledger. The OS growth facto
 
 [*Pressure Gradients and the Regular Birth Vertex*](note.html?src=pressure_gradients_and_the_regular_birth_vertex) supplies the analytic general-perfect-fluid result. A genuine radial pressure gradient accelerates the material fluid relative to a geodesic Alice. The Alice-frame momentum constraint then proves that, under the minimal shell-independent completion, the congruence cannot remain both shear-free and uniformly expanding across the finite star. Exact FLRW must give way to perturbations. At a regular spherical center, however, pressure and density gradients vanish linearly while anisotropic stress, electric Weyl curvature, and Alice shear begin at \(O(R^2)\). The birth vertex is therefore FLRW-like at leading order, with structure appearing as the horizon grows into the parent's radial profile.
 
+[*The Tolman VII Birth-Vertex Amplitude Benchmark*](note.html?src=tolman_vii_birth_vertex_amplitude_benchmark) measures the first spatial coefficient using an analytic neutron-star profile. Its normalized tidal departure is
+
+\[
+\frac{|\mathcal E|}{K_c}=\frac25\left(\frac{R}{R_*}\right)^2.
+\]
+
+The departure is \(4\times10^{-5}\) at one percent of the stellar radius, \(0.10\) at half radius, and \(0.40\) at the surface. A separate TOV integration at compactness \(\mathcal C=0.20\) gives \(p_c/(\rho_cc^2)=0.18746\) and confirms the \(O(R^2)\) onset of Alice-frame anisotropic stress. The static benchmark passes near the birth vertex while demonstrating that the full pressured star cannot be treated as a linear perturbation of OS.
+
+The [*Level 3 Progress Note*](note.html?src=level_3_general_spherical_perfect_fluid_completion) completes the analytic rung. Once the globally selected event-horizon generator is supplied, its radius and Misner–Sharp mass obey exact outgoing-null transport equations through the pressured fluid. The same calculation derives the nonlinear transport of spherical Weyl curvature and closes the Alice–fluid rapidity equation. Smooth central data force fractional density and pressure variations, Weyl curvature, non-homologous shear, and Alice's scalar density and pressure corrections to begin at \(O(R_E^2)\). Alice's radial tilt and flux begin at \(O(R_E)\), vanish at the center, and affect the scalar sector quadratically. Level 3 therefore passes structurally; simulations are retained as a later amplitude calculation rather than a condition for advancing the analytic ladder.
+
+The [*Level 4 Progress Note*](note.html?src=level_4_dissipative_spherical_collapse) adds genuine fluid-frame energy transport and pressure anisotropy. Regularity requires \(q=O(R_E)\) and \(\Delta=O(R_E^2)\). Heat transport changes the homogeneous central evolution through a finite flux divergence, while the dissipative Misner–Sharp and outgoing-null Weyl equations show that density curvature, energy transport, and anisotropic stress alter only the coefficient of the quadratic Weyl residue. The potentially constant heat-flux source cancels exactly. Level 4 passes for a smooth total stress tensor; nonsmooth structure at the vertex is the explicit failure condition.
+
 ### GD2 benchmark scoreboard
 
 | Level | Model | What the model tests | Status |
@@ -114,11 +126,11 @@ Pressure changes the collapse history and the energy ledger. The OS growth facto
 | 0 | OS dust | Existence of the homogeneous formation map | **Passed** |
 | 1 | Homogeneous perfect fluid | Whether pressure breaks the reciprocal, null, or conformal background structure | **Passed structurally** |
 | 2 | First-order LTB dust | Density gradients, velocity modes, Weyl inheritance, and the perturbed horizon sweep | **Partially passed; calibration open** |
-| 3 | General spherical perfect fluid | Pressure gradients, accelerated matter, a free-fall Alice congruence, and a physical stellar boundary | **Passed with required perturbations; amplitude open** |
-| 4 | Dissipative spherical collapse | Heat, neutrino, and radiative flux | **Planned** |
-| 5 | Rotating collapse | Angular momentum and child anisotropy | **Planned** |
+| 3 | General spherical perfect fluid | Pressure gradients, accelerated matter, a free-fall Alice congruence, and regular event-horizon transport | **Passed structurally; amplitudes deferred** |
+| 4 | Dissipative spherical collapse | Heat, neutrino, radiative flux, and pressure anisotropy | **Passed structurally; regular stress required** |
+| 5 | Rotating collapse | Angular momentum and child anisotropy | **Next** |
 
-The immediate calculation is the Level 3 surface amplitude: evolve a realistic equation of state and determine the perturbations accumulated before the event horizon reaches the stellar boundary.
+The next analytic calculation removes spherical symmetry. A slow-rotation expansion must determine whether parent angular momentum produces a finite decaying child perturbation or a persistent anisotropy incompatible with the cosmological background. A realistic equation of state and numerical event-horizon sweep remain the later amplitude tests of Levels 3 and 4.
 
 This is not a direct junction between independently selected vacuum Schwarzschild and FLRW metrics. The parent is locally black-hole-like and globally matter-filled; the child geometry must preserve GD I's reciprocal interior.
 

@@ -101,6 +101,48 @@ const DOCUMENTS = {
       technical: 'Separates freely falling Alice from the accelerated fluid, derives the reciprocal rate with Alice shear, proves the pressure-gradient obstruction to the minimal exact-FLRW completion, and shows that the obstruction vanishes to leading order at a regular spherical center.',
     },
   },
+  tolmanVIIAmplitude: {
+    label: 'GD2 Benchmark',
+    title: 'The Tolman VII Birth-Vertex Amplitude Benchmark',
+    note: 'tolman_vii_birth_vertex_amplitude_benchmark',
+    prerequisite: 'pressureGradientTheorem',
+    meta: {
+      publications: 'static neutron-star amplitude benchmark · conditional GD2 result',
+      technical: 'Tolman VII amplitude benchmark · numerically checked by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Measures the regular birth-vertex suppression in a Tolman VII neutron-star profile: the normalized tidal departure is exactly \\(2x^2/5\\), remaining tiny near the center but reaching ten percent by half radius. The result passes the near-vertex test and makes a dynamical horizon sweep the next benchmark.',
+      technical: 'Derives the Tolman VII Weyl amplitude, independently integrates the TOV pressure at compactness \\(0.20\\), and quantifies where the homogeneous OS expansion remains controlled and where nonlinear stellar structure takes over.',
+    },
+  },
+  level3Completion: {
+    label: 'GD2 Result',
+    title: 'CSBHI Mini-Program — Level 3 Progress Note',
+    note: 'level_3_general_spherical_perfect_fluid_completion',
+    prerequisite: 'tolmanVIIAmplitude',
+    meta: {
+      publications: 'general perfect-fluid capstone · conditional GD2 result',
+      technical: 'Level 3 analytic completion · reviewed by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Completes the analytic general-perfect-fluid rung: the global event-horizon sweep, nonlinear Weyl transport, and Alice–fluid tilt all preserve an FLRW-like birth vertex, with scalar departures beginning at quadratic order in radius.',
+      technical: 'Derives the outgoing-null transport equation for spherical Weyl curvature and closes the Alice–fluid rapidity analysis. Level 3 passes structurally at the regular birth vertex; full stellar amplitudes remain a numerical follow-up.',
+    },
+  },
+  level4Dissipative: {
+    label: 'GD2 Result',
+    title: 'CSBHI Mini-Program — Level 4 Progress Note',
+    note: 'level_4_dissipative_spherical_collapse',
+    prerequisite: 'level3Completion',
+    meta: {
+      publications: 'dissipative spherical-collapse result · conditional GD2 result',
+      technical: 'Level 4 structural result · independently audited by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Extends the protected birth-vertex result to regular spherical heat flux, radiation transport, and pressure anisotropy. Dissipation changes the background and the initial Weyl coefficient, but the scalar Weyl residue remains quadratic in horizon radius.',
+      technical: 'Derives the dissipative Misner–Sharp mass expansion and exact outgoing-null Weyl transport equation. Regularity cancels the apparent zeroth-order flux source, giving a structural pass subject to a smooth total stress tensor.',
+    },
+  },
   evolvingGDagger: {
     label: 'Prediction I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
@@ -264,7 +306,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',

@@ -599,6 +599,8 @@ The remaining question is quantitative:
 
 ## 10. The next benchmark
 
+[*The Tolman VII Birth-Vertex Amplitude Benchmark*](note.html?src=tolman_vii_birth_vertex_amplitude_benchmark) supplies the first static spatial coefficient and confirms that the tidal departure switches on quadratically but becomes nonlinear toward the stellar surface. The [*Level 3 Progress Note*](note.html?src=level_3_general_spherical_perfect_fluid_completion) adds the exact event-horizon, Weyl, and Alice-tilt transport equations and closes the analytic perfect-fluid rung. Replacing the equilibrium slice with a collapse history remains the later amplitude calculation.
+
 A realistic equation of state and relativistic collapse solution must supply
 
 \[
@@ -615,7 +617,7 @@ Equations (13), (20), (25), and (36) then determine the reciprocal-rate perturba
 
 A successful model must produce a perturbation amplitude and spectrum compatible with the child cosmology without fitting the answer through the unresolved calibration \(K(q)\).
 
-This is the point at which the GD2 programme passes from analytic structure to relativistic hydrodynamics.
+This is the point at which model-dependent amplitudes pass from analytic structure to relativistic hydrodynamics. The collapse ladder can continue analytically to dissipative matter before that numerical work is undertaken.
 
 ---
 
@@ -648,7 +650,7 @@ The departure is not present at leading order at a regular spherical center. The
 
 The pointlike birth vertex therefore inherits an isotropic homogeneous leading term. Structure appears as the growing event horizon reaches the parent's radial density and pressure profile.
 
-The analytic verdict is complete enough to advance the scoreboard. The next pass/fail result is the surface amplitude produced by a realistic pressured collapse.
+The analytic verdict and static near-vertex amplitude are complete enough to advance the scoreboard. The Level 3 capstone supplies the general transport equations; the next structural pass/fail result concerns dissipative spherical collapse.
 
 ---
 
