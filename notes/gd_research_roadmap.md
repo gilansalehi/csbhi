@@ -93,6 +93,8 @@ Under the proposed GD identification, this gives the normalized child particle-h
 
 Its weak-curvature limit agrees with the homogeneous mass-shell map. The result fixes the relative causal map in the OS benchmark, not its absolute conformal normalization or its extension from the null generator to neighboring timelike cohorts.
 
+[*Perturbing the Conformal Formation Map*](note.html?src=perturbing_the_conformal_formation_map) extends this benchmark to first-order LTB dust. It derives the displacement of the selected outgoing generator and the independent optical delay accumulated by the incoming beam. Generic LTB Weyl curvature prevents a conformal map to exact FLRW, so the child target must be perturbed FLRW. The calculation exposes the next GD datum cleanly: GD1 fixes each cohort's relative evolution but not the absolute formation calibration \(K(q)\). Constant calibration is the minimal closure hypothesis, not yet a derived result.
+
 This is not a direct junction between independently selected vacuum Schwarzschild and FLRW metrics. The parent is locally black-hole-like and globally matter-filled; the child geometry must preserve GD I's reciprocal interior.
 
 The collapse-to-child boundary equations reduce the remaining synchronization to one lapse. A compensated (\Lambda\)LTB benchmark establishes three useful facts:
@@ -101,7 +103,7 @@ The collapse-to-child boundary equations reduce the remaining synchronization to
 - the stationary de Sitter endpoint supplies the correct exponential form; and
 - the simplest unit-lapse synchronization fails across the intermediate collapse.
 
-That negative result and the OS conformal map sharpen GD II from opposite sides. The next calculation must determine whether a realistic matter-filled collapse reproduces the OS causal map, fix its physical normalization from the parent collapse and optical transfer, and extend it to neighboring worldlines and perturbations. The parent trapping horizon, child apparent horizon, and child future cosmological event horizon must remain separate unless a later calculation independently relates them. A fifth or scale dimension enters only if a residual remains after the four-dimensional matter-filled construction is explicit.
+That negative result and the OS conformal map sharpen GD II from opposite sides. The first-order LTB calculation now supplies the interior radial-null perturbation, but not the covariant absolute calibration or the complete child metric. The next calculation must determine \(K(q)\) from a birth or junction law, complete the exterior optical normalization, and evaluate the transformed Einstein tensor. The parent trapping horizon, child apparent horizon, and child future cosmological event horizon must remain separate unless a later calculation independently relates them. A fifth or scale dimension enters only if a residual remains after the four-dimensional matter-filled construction is explicit.
 
 GD II succeeds when one collapse geometry produces the causal map, shell correspondence, reciprocal evolution, physical clock normalization, and a regular global causal diagram.
 

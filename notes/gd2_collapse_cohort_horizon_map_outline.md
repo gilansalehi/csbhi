@@ -60,7 +60,7 @@ Recover the probe expansion, dilution laws, Friedmann history, and de Sitter fut
 
 ## 6. Derive the clock
 
-Show why \(r=1\) along the horizon leaves \(\Phi'(v_H)\) undetermined in general. Use Result IV's exact Oppenheimer–Snyder map as the homogeneous analytic benchmark, then use a dynamical collapse embedded in the parent FLRW background to compare:
+Show why \(r=1\) along the horizon leaves \(\Phi'(v_H)\) undetermined in general. Use Result IV's exact Oppenheimer–Snyder map as the homogeneous analytic benchmark, then use [*Perturbing the Conformal Formation Map*](note.html?src=perturbing_the_conformal_formation_map) to separate the first-order event-horizon shift, beam-path correction, inherited non-conformal perturbation, and unresolved absolute calibration. A dynamical collapse embedded in the parent FLRW background must then compare:
 
 - Bob's station proper time;
 - an advanced horizon coordinate;
@@ -122,4 +122,5 @@ Perturbations, rotation, and the galaxy law follow only after this background ma
 6. [A Black Hole on the Aeon Boundary](note.html?src=shear_free_interior_weyl_stress_identity).
 7. [The Reciprocal Scale Field](note.html?src=reciprocal_scale_field).
 8. [Result IV — The Conformal Formation Map](note.html?src=result_iv_conformal_formation_map).
-9. [Audit of the Oppenheimer–Snyder Formation Map](note.html?src=os_formation_conformal_map_audit).
+9. [Perturbing the Conformal Formation Map](note.html?src=perturbing_the_conformal_formation_map).
+10. [Audit of the Oppenheimer–Snyder Formation Map](note.html?src=os_formation_conformal_map_audit).

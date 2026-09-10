@@ -59,6 +59,20 @@ const DOCUMENTS = {
       technical: 'Derives the exact OS event-horizon map \\(\\Phi/\\Phi_f=\\tan q/\\tan q_0\\), its weak-curvature agreement with the homogeneous mass-shell map, the formation-era Weyl factor, and the conformal Misner–Sharp mass decomposition.',
     },
   },
+  perturbedFormationMap: {
+    label: 'GD2 Calculation',
+    title: 'Perturbing the Conformal Formation Map',
+    note: 'perturbing_the_conformal_formation_map',
+    prerequisite: 'conformalFormationMap',
+    meta: {
+      publications: 'first-order LTB calculation · conditional GD2 result',
+      technical: 'first-order LTB calculation · reviewed by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Perturbs the OS formation benchmark with LTB dust, derives the event-horizon and beam-crossing shifts, and isolates the absolute conformal calibration function that GD1 does not fix.',
+      technical: 'Derives the first-order LTB horizon sweep and null-beam timing, then shows why generic collapse produces perturbed FLRW and exposes the unresolved shell calibration \\(K(q)\\).',
+    },
+  },
   evolvingGDagger: {
     label: 'Prediction I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
@@ -222,7 +236,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'perturbedFormationMap', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',
