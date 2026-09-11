@@ -121,6 +121,8 @@ The [*Level 4 Progress Note*](note.html?src=level_4_dissipative_spherical_collap
 
 The [*Level 5 Setup*](note.html?src=level_5_event_horizon_creases_and_rotation_test) identifies the first obstruction created by abandoning spherical symmetry. Generic horizon formation replaces the single spherical vertex with an endpoint set containing spacelike crease surfaces, corners, and caustics. These are structures of the null event horizon, not matter overdensities and not multiple cosmological births. A smooth positive conformal map transports a crease rather than removing it. Level 5 therefore divides into a slow-rotation transfer calculation and a local conformal-completion test for the generic two-sheet crease.
 
+The [*Level 5 Conditional Result and Campaign Summary*](note.html?src=level_5_rotation_and_campaign_summary) carries both calculations to the present theory boundary. Slow rotation produces an axial first-order sector but no first-order scalar correction; a finite electric-Weyl quadrupole is allowed at \(O(\chi^2)\). Near a nondegenerate crease-nucleation perestroika, the transverse opening is \(O(\sqrt{\tau})\) while the intrinsic metric correction on each smooth horizon sheet is \(O(\tau)\). A regular conformal map nevertheless preserves the crease. Expansion-normalized Weyl, shear, and vorticity vanish only if the still-undetermined absolute conformal completion makes \(|\mathcal H_P+D_P\ln\Gamma|\) diverge. Level 5 therefore earns a conditional local pass, not a completed global pass.
+
 ### GD2 benchmark scoreboard
 
 | Level | Model | What the model tests | Status |
@@ -130,9 +132,9 @@ The [*Level 5 Setup*](note.html?src=level_5_event_horizon_creases_and_rotation_t
 | 2 | First-order LTB dust | Density gradients, velocity modes, Weyl inheritance, and the perturbed horizon sweep | **Partially passed; calibration open** |
 | 3 | General spherical perfect fluid | Pressure gradients, accelerated matter, a free-fall Alice congruence, and regular event-horizon transport | **Passed structurally; amplitudes deferred** |
 | 4 | Dissipative spherical collapse | Heat, neutrino, radiative flux, and pressure anisotropy | **Passed structurally; regular stress required** |
-| 5 | Rotating collapse | Angular momentum, horizon creases, and child anisotropy | **In progress; local crease test defined** |
+| 5 | Rotating collapse | Angular momentum, horizon creases, and child anisotropy | **Conditional local pass; birth completion open** |
 
-The next analytic calculation applies the actual GD birth completion to the stable two-sheet \((A_1,A_1)\) crease. In parallel, a slow-rotation expansion must separate first-order frame dragging and magnetic-Weyl transfer from second-order centrifugal and quadrupolar deformation. A realistic equation of state and numerical event-horizon sweep remain the later amplitude tests of Levels 3 and 4.
+The next analytic calculation must derive the absolute birth-limit behavior of \(\Gamma\) and apply that actual GD completion to the stable two-sheet \((A_1,A_1)\) crease. Only then can the transformed curvature, stress, generator multiplicity, and residual spin memory be evaluated. A realistic equation of state and numerical event-horizon sweep remain the later amplitude tests.
 
 This is not a direct junction between independently selected vacuum Schwarzschild and FLRW metrics. The parent is locally black-hole-like and globally matter-filled; the child geometry must preserve GD I's reciprocal interior.
 

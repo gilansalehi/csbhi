@@ -60,6 +60,7 @@ const GROUPS = [
       document('level3Completion'),
       document('level4Dissipative'),
       document('level5CreaseSetup'),
+      document('level5RotationSummary'),
       document('gd2'),
       note('Audit of the Oppenheimer–Snyder Formation Map', 'os_formation_conformal_map_audit'),
       note('Collapse Day and Present Day: The Infall-Cohort Worldsheet', 'collapse_day_present_day_cohort_worldsheet'),

@@ -402,6 +402,8 @@ The next calculation is therefore local and decisive:
 
 That calculation begins Level 5. It does not yet complete it.
 
+The follow-on [*Level 5 Conditional Result and Campaign Summary*](note.html?src=level_5_rotation_and_campaign_summary) carries the slow-rotation and local crease-nucleation calculations to the present theory boundary. It records a conditional local pass while retaining the absolute conformal birth behavior and the full crease image as open tests.
+
 ---
 
 ## References

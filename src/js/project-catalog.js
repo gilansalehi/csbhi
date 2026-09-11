@@ -157,6 +157,20 @@ const DOCUMENTS = {
       technical: 'Uses null optics and Maxwell-set theory to define the generic two-sheet crease test, distinguishes first-order frame dragging from second-order quadrupolar deformation, and states explicit Level-5 pass/fail criteria.',
     },
   },
+  level5RotationSummary: {
+    label: 'GD2 Result',
+    title: 'CSBHI Formation Mini-Program — Level 5 Conditional Result and Campaign Summary',
+    note: 'level_5_rotation_and_campaign_summary',
+    prerequisite: 'level5CreaseSetup',
+    meta: {
+      publications: 'rotation and crease-set result · conditional GD2 result',
+      technical: 'Level 5 conditional result · independently audited by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Completes the analytic formation ladder without overclaiming its final step: regular slow rotation creates no first-order scalar obstruction, while a local crease-nucleation geometry has controlled intrinsic distortion. The absolute conformal birth behavior and the full crease image remain open.',
+      technical: 'Separates first-order axial rotation from second-order quadrupolar Weyl structure, derives the conditional expansion-normalized suppression laws, and shows why an O(sqrt(tau)) crease opening gives only O(tau) intrinsic metric distortion while a smooth conformal map still preserves the crease.',
+    },
+  },
   evolvingGDagger: {
     label: 'Prediction I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
@@ -320,7 +334,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'level5CreaseSetup', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'level5CreaseSetup', 'level5RotationSummary', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',
