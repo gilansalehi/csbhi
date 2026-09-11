@@ -13,6 +13,7 @@ const GROUPS = [
       note('CSBHI Cosmological Glossary', 'cosmological_glossary'),
       note('What Remains Mathematically Illegible', 'open_questions'),
       note('Geometric Duality Research Roadmap', 'gd_research_roadmap'),
+      document('parameterCascade'),
       note('Black-Hole Cosmology: Lineage, Mechanisms, and CSBHI', 'black_hole_cosmology_lineage'),
     ],
   },

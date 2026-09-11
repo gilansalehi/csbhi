@@ -535,6 +535,8 @@ The strongest justified summary is therefore
 
 The mini-program has reached the theory boundary it was designed to locate. The remaining work is no longer another regularity expansion. It is the definition and dynamical validation of the absolute conformal birth map.
 
+The [*CSBHI Geometric Parameter Cascade*](note.html?src=csbhi_geometric_parameter_cascade) carries this boundary into the broader parameter ledger: it records which child observables follow once \(L\), \(\eta_m\), and \(\eta_r\) are supplied, while keeping the parent-to-child lapse and absolute conformal calibration explicitly open.
+
 ---
 
 ## References

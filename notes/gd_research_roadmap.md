@@ -136,6 +136,12 @@ The [*Level 5 Conditional Result and Campaign Summary*](note.html?src=level_5_ro
 
 The next analytic calculation must derive the absolute birth-limit behavior of \(\Gamma\) and apply that actual GD completion to the stable two-sheet \((A_1,A_1)\) crease. Only then can the transformed curvature, stress, generator multiplicity, and residual spin memory be evaluated. A realistic equation of state and numerical event-horizon sweep remain the later amplitude tests.
 
+### Parameter dependency ledger
+
+[*CSBHI Geometric Parameter Cascade*](note.html?src=csbhi_geometric_parameter_cascade) records what the current programme does and does not compress. The child asymptotic de Sitter scale \(L\) fixes the standard vacuum and horizon sector; adding \(\eta_m\) and \(\eta_r\) supplies an equivalent parameter basis for the flat matter–radiation–\(\Lambda\) background. This becomes a physical parameter reduction only if the formation theory derives those inputs.
+
+The revised ledger explicitly rejects the former isometric shortcut \(L=2GM_P/c^2\). A stellar parent can produce a cosmological child scale only through the still-open conformal transfer. The remaining formation data include the parent-to-child cohort lapse \(N_H\), the absolute calibration \(K(q)\) or normalization of \(\Gamma\), and the extension of the null map to a complete child metric. The galaxy sector separately retains two testable horizon choices: a fixed \(cH_\Lambda\) scale or an evolving \(cH(z)\) scale.
+
 This is not a direct junction between independently selected vacuum Schwarzschild and FLRW metrics. The parent is locally black-hole-like and globally matter-filled; the child geometry must preserve GD I's reciprocal interior.
 
 The collapse-to-child boundary equations reduce the remaining synchronization to one lapse. A compensated (\Lambda\)LTB benchmark establishes three useful facts:

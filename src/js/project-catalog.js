@@ -171,6 +171,20 @@ const DOCUMENTS = {
       technical: 'Separates first-order axial rotation from second-order quadrupolar Weyl structure, derives the conditional expansion-normalized suppression laws, and shows why an O(sqrt(tau)) crease opening gives only O(tau) intrinsic metric distortion while a smooth conformal map still preserves the crease.',
     },
   },
+  parameterCascade: {
+    label: 'Program Synthesis',
+    title: 'CSBHI Geometric Parameter Cascade',
+    note: 'csbhi_geometric_parameter_cascade',
+    prerequisite: 'level5RotationSummary',
+    meta: {
+      publications: 'parameter-dependency ledger · revised synthesis',
+      technical: 'background and closure audit · independently reviewed by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Organizes the standard de Sitter and flat-Friedmann consequences of the child scale and inheritance ratios, separates the fixed and evolving galaxy-scale branches, and identifies the parent–child lapse and absolute conformal calibration that remain open. It is a dependency ledger, not a claim of many independent predictions.',
+      technical: 'Audits the parameter cascade from \\(L\\), \\(\\eta_m\\), and \\(\\eta_r\\); distinguishes areal from proper de Sitter volume; rejects the discarded isometric parent-mass closure; and inventories the additional data required before parent collapse predicts the child background.',
+    },
+  },
   evolvingGDagger: {
     label: 'Prediction I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
@@ -334,7 +348,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'level5CreaseSetup', 'level5RotationSummary', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'level5CreaseSetup', 'level5RotationSummary', 'parameterCascade', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',
