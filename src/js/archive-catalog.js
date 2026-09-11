@@ -60,6 +60,7 @@ const GROUPS = [
       document('tolmanVIIAmplitude'),
       document('level3Completion'),
       document('level4Dissipative'),
+      document('trappingHorizonPair'),
       document('level5CreaseSetup'),
       document('level5RotationSummary'),
       document('gd2'),

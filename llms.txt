@@ -16,6 +16,7 @@
 - **Conditional prediction:** If that correspondence is correct and its dimensionless normalization is epoch-independent, then g†(z)/g†(0)=H_A(z)/H_0.
 - **Research hypothesis:** Smooth parent collapse supplies a low-Weyl child beginning that may reproduce itself as a fixed point across generations.
 - **Candidate collapse map:** The current GD II track maps the parent black-hole event-horizon formation history to an outgoing child birth cone. This is the future light cone of the mapped vertex, not automatically the child's global particle horizon. The child particle, apparent, and future event horizons remain distinct.
+- **Parent-side trapping result:** For smooth nondegenerate interior first trapping, the compactness profile creates outward and inward marginal branches with square-root opening. The inward branch is a candidate for GD1's radial evolution, not yet Alice's worldline or a child apparent horizon; no parent–child radius equality follows.
 - **Negative benchmark result:** A compensated ΛLTB collapse reproduces the required endpoint behavior, but the simplest unit-lapse shell clock fails through the intermediate history. The remaining clock must be derived rather than fitted.
 - **Open construction:** The collapse-cohort clock, complete throat geometry, parent-to-child matter/current transfer, weak-field tensorial galaxy law, perturbation transfer, and full thermal history remain unfinished.
 
@@ -99,6 +100,7 @@ The [Research Index](https://www.gilansalehi.com/csbhi/research.html) contains i
 - [Black-Hole Cosmology: Lineage, Mechanisms, and CSBHI](https://www.gilansalehi.com/csbhi/notes/black_hole_cosmology_lineage.md): Historical comparison with earlier black-hole cosmology proposals.
 - [Geometric Duality Research Roadmap](https://www.gilansalehi.com/csbhi/notes/gd_research_roadmap.md): Provisional sequence of future papers and unresolved calculations.
 - [CSBHI Geometric Parameter Cascade](https://www.gilansalehi.com/csbhi/notes/csbhi_geometric_parameter_cascade.md): Dependency ledger separating external constants, standard de Sitter/Friedmann descendants, benchmark inferences, fitted targets, and the parent–child quantities the theory must still derive.
+- [The Trapping-Horizon Pair and the Inward Reciprocal Branch](https://www.gilansalehi.com/csbhi/notes/trapping_horizon_pair_and_inward_reciprocal_branch.md): Derives the parent-side compactness tangency and square-root birth of an outward/inward trapping-horizon pair. The inward branch is a candidate—not yet an identification—for GD1’s reciprocal radial structure; parent–child areal-radius equality is explicitly rejected.
 
 ## What CSBHI does not claim
 

@@ -143,6 +143,20 @@ const DOCUMENTS = {
       technical: 'Derives the dissipative Misner–Sharp mass expansion and exact outgoing-null Weyl transport equation. Regularity cancels the apparent zeroth-order flux source, giving a structural pass subject to a smooth total stress tensor.',
     },
   },
+  trappingHorizonPair: {
+    label: 'GD2 Result',
+    title: 'The Trapping-Horizon Pair and the Inward Reciprocal Branch',
+    note: 'trapping_horizon_pair_and_inward_reciprocal_branch',
+    prerequisite: 'level4Dissipative',
+    meta: {
+      publications: 'finite-throat collapse result · conditional GD2 interpretation',
+      technical: 'trapping-pair fold calculation · independently audited by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Shows that smooth interior first trapping creates outward and inward marginal branches with universal square-root opening. Compactness tangency fixes the parent density relation, while the inward branch supplies a concrete—but unproved—candidate for GD1’s reciprocal radial evolution.',
+      technical: 'Derives the compactness tangency, mean/local density ratio, pressure-dependent opening rate, and nondegenerate fold law. It explicitly rejects parent–child areal-radius equality and reduces the child clock to an independent optical coefficient test.',
+    },
+  },
   level5CreaseSetup: {
     label: 'GD2 Program',
     title: 'CSBHI Mini-Program — Level 5 Setup',
@@ -348,7 +362,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'level5CreaseSetup', 'level5RotationSummary', 'parameterCascade', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'trappingHorizonPair', 'level5CreaseSetup', 'level5RotationSummary', 'parameterCascade', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',

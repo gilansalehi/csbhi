@@ -4,7 +4,7 @@
 
 **Author:** Codex (OpenAI).
 
-**Updated:** 2026-09-08.
+**Updated:** 2026-09-11.
 
 ## Purpose
 
@@ -53,14 +53,16 @@ These results do not yet constitute a complete parent–child spacetime.
 **Known:** Repeating the GD I experiment at successive parent epochs separates the construction into three pieces:
 
 1. a candidate null map from the parent event-horizon history into a child causal history;
-2. an enclosed-mass shell map that preserves homogeneous spherical ordering; and
+2. a conserved Lagrangian cohort map that reduces to enclosed-mass ordering for dust; and
 3. the reciprocal evolution of every cohort after crossing.
 
-The exact boundary reduction leaves one synchronization lapse between parent collapse time and child proper time. A compensated (\Lambda\)LTB benchmark reproduces the formation and de Sitter endpoint powers but rejects the simplest unit-lapse clock in the intermediate era. The causal proposal remains the map from the parent black-hole event-horizon generator to a child particle-horizon history.
+The exact boundary reduction leaves one synchronization lapse between parent collapse time and child proper time. A compensated (\Lambda\)LTB benchmark reproduces the formation and de Sitter endpoint powers but rejects the simplest unit-lapse clock in the intermediate era. The causal proposal remains the map from the parent black-hole event-horizon generator to an outgoing child birth cone; its stronger particle-horizon interpretation remains to be established.
 
-**Missing:** The nontrivial lapse selected by the matter-filled collapse, together with the conformal normalization of the mapped angular geometry. No child apparent- or future-event-horizon relation may be substituted for the particle-horizon map merely because its differential equation or endpoint behavior looks similar.
+A smooth nondegenerate interior first trapping now supplies a second, local structure: outward and inward marginal branches open as \(\sqrt{t-t_b}\). The inward branch begins at \(R_-/R_b=1\) and decreases, making it a concrete candidate for the radial evolution underlying GD1. This does not transfer parent marginality to a child apparent horizon or identify the marginal branch with Alice's timelike worldline.
 
-**Closure test:** Integrate the parent event horizon and optical transfer through a realistic collapse, derive the lapse without fitting the child expansion history, and recover one monotone causal map across the full formation history.
+**Missing:** The nontrivial lapse selected by the matter-filled collapse, together with the conformal normalization of the mapped angular geometry and the proof that the birth cone is part of the child's actual lower causal boundary. No child apparent- or future-event-horizon relation may be substituted for the birth-cone map merely because its differential equation or endpoint behavior looks similar.
+
+**Closure test:** Integrate the event horizon and both trapping branches through one realistic collapse; derive the child clock from event-horizon optics without fitting the child expansion; and test whether the inward-branch reciprocal rate produces an admissible child \(H_C\) and \(\dot H_C\) after the conformal scale transfer is fixed.
 
 ### Q3. Does the map extend to a regular global spacetime?
 
@@ -72,7 +74,7 @@ The exact boundary reduction leaves one synchronization lapse between parent col
 
 ### Q4. How does parent inhomogeneity become the child background?
 
-**Known:** In spherical symmetry the Weyl scalar is controlled by the density contrast between local and enclosed-average density. Homogeneous collapse has zero background Weyl, while departures from the common shell profile carry perturbative information.
+**Known:** In spherical symmetry the Weyl scalar is controlled by the density contrast between local and enclosed-average density. Homogeneous collapse has zero background Weyl, while departures from the common shell profile carry perturbative information. At smooth interior trapping-pair birth, compactness tangency fixes \(8\pi R_b^2\rho_b=1\) and \(\bar\rho_b=3\rho_b\) on the parent side. These relations constrain total local geometry but do not determine child species abundances.
 
 **Missing:** The transfer law taking realistic parent density, velocity, and Weyl perturbations into child scalar, vector, and tensor modes.
 
@@ -108,9 +110,9 @@ The exact boundary reduction leaves one synchronization lapse between parent col
 
 ### Q8. Is the construction stable beyond spherical symmetry?
 
-**Known:** The developed background calculations use spherical symmetry and nonrotating parents.
+**Known:** The analytic formation ladder now includes regular slow rotation and generic local event-horizon crease geometry. First-order rotation is axial rather than scalar, while a finite quadrupolar Weyl residue and dimensionless crease-axis memory may appear at \(O(\chi^2)\). These are conditional local results because the absolute conformal birth completion is still unknown.
 
-**Missing:** Rotation, charge, accretion, mergers, nonspherical collapse, and nonlinear stability.
+**Missing:** The full conformal image and observable amplitude of rotational and crease data, together with charge, accretion, mergers, generic nonspherical collapse, and nonlinear stability.
 
 **Closure test:** Extend the construction to Kerr-like parents and perturb it without restoring a curvature singularity, Cauchy horizon, or mass-inflation instability.
 
@@ -148,7 +150,7 @@ which rises with redshift where a fixed scale remains flat. The same H-linked fu
 
 ### Q11. What becomes of gravitational entropy and information?
 
-**Known:** The idealized parent black-hole and child de Sitter horizons share an area-entropy identity when their radii are identified. The low-Weyl child background supplies the correct direction for Penrose's gravitational arrow.
+**Known:** The low-Weyl child background supplies the direction required by Penrose's gravitational arrow. Parent black-hole and child de Sitter radii are not identified on the current conformal branch, so no cross-frame area or entropy equality is presently established.
 
 **Missing:** The microscopic information map, the entropy carried by perturbations, and compatibility with unitary black-hole evolution.
 
@@ -181,4 +183,5 @@ The galaxy prediction in Q9 can be tested in parallel. A failed prediction would
 3. [*The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution*](https://www.gilansalehi.com/csbhi/reciprocal-involution.html)
 4. [GD II outline: *Collapse Cohorts and the Horizon Map*](https://www.gilansalehi.com/csbhi/notes/gd2_collapse_cohort_horizon_map_outline.md)
 5. [*Horizon-Map Equation and Notation Audit*](https://www.gilansalehi.com/csbhi/notes/horizon_map_equation_and_notation_audit.md)
-6. [Prediction I: *The Evolving Galactic Acceleration-Scale Correspondence*](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md)
+6. [*The Trapping-Horizon Pair and the Inward Reciprocal Branch*](https://www.gilansalehi.com/csbhi/notes/trapping_horizon_pair_and_inward_reciprocal_branch.md)
+7. [Prediction I: *The Evolving Galactic Acceleration-Scale Correspondence*](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md)

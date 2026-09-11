@@ -2,7 +2,7 @@
 
 *The current publication path and the standard of evidence for the CSBHI programme.*
 
-**Updated:** 2026-09-08.
+**Updated:** 2026-09-11.
 
 ## The programme
 
@@ -119,6 +119,8 @@ The [*Level 3 Progress Note*](note.html?src=level_3_general_spherical_perfect_fl
 
 The [*Level 4 Progress Note*](note.html?src=level_4_dissipative_spherical_collapse) adds genuine fluid-frame energy transport and pressure anisotropy. Regularity requires \(q=O(R_E)\) and \(\Delta=O(R_E^2)\). Heat transport changes the homogeneous central evolution through a finite flux divergence, while the dissipative Misner–Sharp and outgoing-null Weyl equations show that density curvature, energy transport, and anisotropic stress alter only the coefficient of the quadratic Weyl residue. The potentially constant heat-flux source cancels exactly. Level 4 passes for a smooth total stress tensor; nonsmooth structure at the vertex is the explicit failure condition.
 
+[*The Trapping-Horizon Pair and the Inward Reciprocal Branch*](note.html?src=trapping_horizon_pair_and_inward_reciprocal_branch) refines the spherical formation geometry without restoring an isometric horizon match. At a smooth nondegenerate interior first trapping, compactness tangency gives \(8\pi R_b^2\rho_b=1\), \(\bar\rho_b=3\rho_b\), and a pair of marginal branches opening as \(\sqrt{t-t_b}\). The inward branch begins at \(R_-/R_b=1\) and decreases, making it the strongest current candidate for the parent radial structure underlying GD1. This is not yet the child map: the event horizon still supplies causal ordering and the optical clock, \(\Gamma\) must supply the non-isometric scale transfer, and a timelike transport rule must connect Alice to the marginal branch.
+
 The [*Level 5 Setup*](note.html?src=level_5_event_horizon_creases_and_rotation_test) identifies the first obstruction created by abandoning spherical symmetry. Generic horizon formation replaces the single spherical vertex with an endpoint set containing spacelike crease surfaces, corners, and caustics. These are structures of the null event horizon, not matter overdensities and not multiple cosmological births. A smooth positive conformal map transports a crease rather than removing it. Level 5 therefore divides into a slow-rotation transfer calculation and a local conformal-completion test for the generic two-sheet crease.
 
 The [*Level 5 Conditional Result and Campaign Summary*](note.html?src=level_5_rotation_and_campaign_summary) carries both calculations to the present theory boundary. Slow rotation produces an axial first-order sector but no first-order scalar correction; a finite electric-Weyl quadrupole is allowed at \(O(\chi^2)\). Near a nondegenerate crease-nucleation perestroika, the transverse opening is \(O(\sqrt{\tau})\) while the intrinsic metric correction on each smooth horizon sheet is \(O(\tau)\). A regular conformal map nevertheless preserves the crease. Expansion-normalized Weyl, shear, and vorticity vanish only if the still-undetermined absolute conformal completion makes \(|\mathcal H_P+D_P\ln\Gamma|\) diverge. Level 5 therefore earns a conditional local pass, not a completed global pass.
@@ -132,9 +134,10 @@ The [*Level 5 Conditional Result and Campaign Summary*](note.html?src=level_5_ro
 | 2 | First-order LTB dust | Density gradients, velocity modes, Weyl inheritance, and the perturbed horizon sweep | **Partially passed; calibration open** |
 | 3 | General spherical perfect fluid | Pressure gradients, accelerated matter, a free-fall Alice congruence, and regular event-horizon transport | **Passed structurally; amplitudes deferred** |
 | 4 | Dissipative spherical collapse | Heat, neutrino, radiative flux, and pressure anisotropy | **Passed structurally; regular stress required** |
+| 4A | Interior trapping-pair birth | Local density/pressure data, finite throat opening, and a candidate inward reciprocal branch | **Parent fold passed; GD identification open** |
 | 5 | Rotating collapse | Angular momentum, horizon creases, and child anisotropy | **Conditional local pass; birth completion open** |
 
-The next analytic calculation must derive the absolute birth-limit behavior of \(\Gamma\) and apply that actual GD completion to the stable two-sheet \((A_1,A_1)\) crease. Only then can the transformed curvature, stress, generator multiplicity, and residual spin memory be evaluated. A realistic equation of state and numerical event-horizon sweep remain the later amplitude tests.
+Two analytic threads now meet at the same theory boundary. The nonspherical thread must derive the absolute birth-limit behavior of \(\Gamma\) and apply that actual GD completion to the stable two-sheet \((A_1,A_1)\) crease. The spherical thread must compare the inward-branch coefficient with a child clock derived independently from event-horizon optics, without setting \(R_b^P=R_A^C\). A realistic equation of state and numerical event-horizon sweep remain later amplitude tests.
 
 ### Parameter dependency ledger
 
