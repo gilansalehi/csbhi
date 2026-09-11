@@ -143,6 +143,20 @@ const DOCUMENTS = {
       technical: 'Derives the dissipative Misner–Sharp mass expansion and exact outgoing-null Weyl transport equation. Regularity cancels the apparent zeroth-order flux source, giving a structural pass subject to a smooth total stress tensor.',
     },
   },
+  level5CreaseSetup: {
+    label: 'GD2 Program',
+    title: 'CSBHI Mini-Program — Level 5 Setup',
+    note: 'level_5_event_horizon_creases_and_rotation_test',
+    prerequisite: 'level4Dissipative',
+    meta: {
+      publications: 'rotation and crease-set program · open GD2 test',
+      technical: 'Level 5 problem definition · reviewed by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Separates matter perturbations from the event horizon’s crease set and defines the rotating-collapse test. A regular conformal map preserves a crease, so the unresolved birth completion must show how one connected parent endpoint set becomes an admissible child birth geometry.',
+      technical: 'Uses null optics and Maxwell-set theory to define the generic two-sheet crease test, distinguishes first-order frame dragging from second-order quadrupolar deformation, and states explicit Level-5 pass/fail criteria.',
+    },
+  },
   evolvingGDagger: {
     label: 'Prediction I',
     title: 'The Evolving Galactic Acceleration-Scale Correspondence',
@@ -306,7 +320,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'level5CreaseSetup', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',

@@ -119,6 +119,8 @@ The [*Level 3 Progress Note*](note.html?src=level_3_general_spherical_perfect_fl
 
 The [*Level 4 Progress Note*](note.html?src=level_4_dissipative_spherical_collapse) adds genuine fluid-frame energy transport and pressure anisotropy. Regularity requires \(q=O(R_E)\) and \(\Delta=O(R_E^2)\). Heat transport changes the homogeneous central evolution through a finite flux divergence, while the dissipative Misner–Sharp and outgoing-null Weyl equations show that density curvature, energy transport, and anisotropic stress alter only the coefficient of the quadratic Weyl residue. The potentially constant heat-flux source cancels exactly. Level 4 passes for a smooth total stress tensor; nonsmooth structure at the vertex is the explicit failure condition.
 
+The [*Level 5 Setup*](note.html?src=level_5_event_horizon_creases_and_rotation_test) identifies the first obstruction created by abandoning spherical symmetry. Generic horizon formation replaces the single spherical vertex with an endpoint set containing spacelike crease surfaces, corners, and caustics. These are structures of the null event horizon, not matter overdensities and not multiple cosmological births. A smooth positive conformal map transports a crease rather than removing it. Level 5 therefore divides into a slow-rotation transfer calculation and a local conformal-completion test for the generic two-sheet crease.
+
 ### GD2 benchmark scoreboard
 
 | Level | Model | What the model tests | Status |
@@ -128,9 +130,9 @@ The [*Level 4 Progress Note*](note.html?src=level_4_dissipative_spherical_collap
 | 2 | First-order LTB dust | Density gradients, velocity modes, Weyl inheritance, and the perturbed horizon sweep | **Partially passed; calibration open** |
 | 3 | General spherical perfect fluid | Pressure gradients, accelerated matter, a free-fall Alice congruence, and regular event-horizon transport | **Passed structurally; amplitudes deferred** |
 | 4 | Dissipative spherical collapse | Heat, neutrino, radiative flux, and pressure anisotropy | **Passed structurally; regular stress required** |
-| 5 | Rotating collapse | Angular momentum and child anisotropy | **Next** |
+| 5 | Rotating collapse | Angular momentum, horizon creases, and child anisotropy | **In progress; local crease test defined** |
 
-The next analytic calculation removes spherical symmetry. A slow-rotation expansion must determine whether parent angular momentum produces a finite decaying child perturbation or a persistent anisotropy incompatible with the cosmological background. A realistic equation of state and numerical event-horizon sweep remain the later amplitude tests of Levels 3 and 4.
+The next analytic calculation applies the actual GD birth completion to the stable two-sheet \((A_1,A_1)\) crease. In parallel, a slow-rotation expansion must separate first-order frame dragging and magnetic-Weyl transfer from second-order centrifugal and quadrupolar deformation. A realistic equation of state and numerical event-horizon sweep remain the later amplitude tests of Levels 3 and 4.
 
 This is not a direct junction between independently selected vacuum Schwarzschild and FLRW metrics. The parent is locally black-hole-like and globally matter-filled; the child geometry must preserve GD I's reciprocal interior.
 

@@ -573,7 +573,7 @@ The next pass/fail question is:
 
 > Does parent angular momentum map into a finite, decaying child anisotropy, or does Kerr-like structure obstruct the emergence of an acceptable cosmological background?
 
-The natural starting point is a slow-rotation expansion, which can determine whether the first rotational correction enters the child as a vector mode, a tensor mode, a homogeneous vorticity, or an unacceptable persistent anisotropy before the full nonlinear Kerr problem is attempted.
+The [*Level 5 Setup*](note.html?src=level_5_event_horizon_creases_and_rotation_test) separates that problem into slow-rotation mode transfer and the conformal image of the generic event-horizon crease. The former distinguishes first-order frame dragging from second-order shape deformation; the latter tests whether the nonsmooth endpoint structure becomes one admissible child birth geometry.
 
 ---
 
