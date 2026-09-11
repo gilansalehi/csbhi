@@ -1,0 +1,169 @@
+<script type="module" data-module="@csbhi/home/constants-and-parameters">
+  import { flush } from 'data-wrapper';
+  import { getConstantsLedger } from 'project/constants-catalog.js';
+
+  export default ({ wrapper }) => {
+    const ledger = getConstantsLedger();
+    const cards = ledger.groups.flatMap(group => group.cards);
+    let activeCard = cards[0];
+
+    const originalEvent = event => event.detail?.originalEvent || event;
+    const dialog = () => wrapper.querySelector('.constant-dialog');
+    const clearDialogMath = () => {
+      const element = dialog();
+      if (!element || !window.MathJax) return;
+      if (window.MathJax.typesetClear) {
+        window.MathJax.typesetClear([element]);
+      } else if (window.MathJax.Hub?.getAllJax) {
+        window.MathJax.Hub.getAllJax(element).forEach(item => item.Remove());
+      }
+    };
+    const typesetDialog = () => {
+      const element = dialog();
+      if (!element || !window.MathJax) return;
+      if (window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([element]);
+      } else if (window.MathJax.Hub?.Queue) {
+        window.MathJax.Hub.Queue(['Typeset', window.MathJax.Hub, element]);
+      }
+    };
+
+    return {
+      ...ledger,
+      handleCardClick(event) {
+        const trigger = originalEvent(event).target.closest('[data-constant-id]');
+        if (!trigger) return;
+        clearDialogMath();
+        activeCard = cards.find(entry => entry.catalogId === trigger.dataset.constantId) || activeCard;
+        flush();
+        queueMicrotask(() => {
+          const element = dialog();
+          if (!element?.open) element?.showModal();
+          typesetDialog();
+        });
+      },
+      closeDetails() {
+        dialog()?.close();
+      },
+      dismissDetails(event) {
+        const source = originalEvent(event);
+        if (source.target === dialog()) dialog()?.close();
+      },
+      get activeSymbol() { return activeCard.symbol; },
+      get activeName() { return activeCard.name; },
+      get activeValue() { return activeCard.value; },
+      get activeRelation() { return activeCard.relation; },
+      get activeStatus() { return activeCard.status; },
+      get activeStatusLabel() { return activeCard.statusLabel; },
+      get activeEpistemicCode() { return activeCard.epistemicCode; },
+      get activeEpistemicLabel() { return activeCard.epistemicLabel; },
+      get activeEpistemicAria() { return activeCard.epistemicAria; },
+      get activeCatalogNumber() { return activeCard.catalogNumber; },
+      get activeCatalogGroup() { return activeCard.catalogGroup; },
+      get activeHasNote() { return activeCard.hasNote; },
+      get activeNote() { return activeCard.note; },
+      get activeHasSource() { return activeCard.hasSource; },
+      get activeSourceHref() { return activeCard.sourceHref; },
+      get activeSourceLabel() { return activeCard.sourceLabel; },
+    };
+  };
+</script>
+
+<section class="constants-ledger" $aria-labelledby="headingId" @click="handleCardClick">
+  <h2 $id="headingId" $text="title"></h2>
+  <details open>
+    <summary $text="summary"></summary>
+
+    <div class="constants-ledger__key" aria-label="Epistemic badge key">
+      <span data-epistemic="E"><b>[E]</b> Established</span>
+      <span data-epistemic="P"><b>[P]</b> Prior-art benchmark</span>
+      <span data-epistemic="C"><b>[C]</b> Conditional</span>
+      <span data-epistemic="O"><b>[O]</b> Open</span>
+    </div>
+
+    <p class="constants-ledger__epistemic-note">
+      Badges use the project’s epistemic notation. They classify the standing of each entry rather than assigning a
+      numerical certainty score. Select any tile to open its definition, relation, caveat, and source.
+    </p>
+
+    <div class="constants-ledger__groups">
+      <template *list="groups">
+        <section class="constant-group">
+          <header class="constant-group__header">
+            <p class="constant-group__eyebrow" $text="./eyebrow"></p>
+            <h3 $text="./title"></h3>
+            <p $text="./summary"></p>
+          </header>
+
+          <div class="constant-grid">
+            <template *list="./cards">
+              <button class="constant-card"
+                  type="button"
+                  $data-status="./status"
+                  $data-epistemic="./epistemicCode"
+                  $data-constant-id="./catalogId"
+                  $aria-label="./openLabel"
+                  aria-haspopup="dialog">
+                <span class="constant-card__number" $text="./catalogNumber"></span>
+                <span class="constant-card__badge" $aria-label="./epistemicAria" $text="./epistemicCode"></span>
+                <span class="constant-card__name" $text="./name"></span>
+                <span class="constant-card__symbol" $text="./symbol"></span>
+                <span class="constant-card__value-label">Current value</span>
+                <span class="constant-card__value" $text="./value"></span>
+                <span class="constant-card__footer">
+                  <span class="constant-card__status" $text="./statusLabel"></span>
+                  <span aria-hidden="true">Open entry ↗</span>
+                </span>
+              </button>
+            </template>
+          </div>
+        </section>
+      </template>
+    </div>
+  </details>
+
+  <dialog class="constant-dialog"
+      aria-labelledby="constant-dialog-title"
+      $data-status="activeStatus"
+      $data-epistemic="activeEpistemicCode"
+      @click="dismissDetails">
+    <article class="constant-dialog__panel">
+      <button class="constant-dialog__close" type="button" aria-label="Close constant details" @click="closeDetails">
+        ×
+      </button>
+      <header class="constant-dialog__header">
+        <span class="constant-dialog__number" $text="activeCatalogNumber"></span>
+        <span class="constant-dialog__badge" $aria-label="activeEpistemicAria" $text="activeEpistemicCode"></span>
+        <div class="constant-dialog__symbol" $text="activeSymbol"></div>
+        <p class="constant-dialog__group" $text="activeCatalogGroup"></p>
+        <h3 id="constant-dialog-title" $text="activeName"></h3>
+      </header>
+      <dl class="constant-dialog__ledger">
+        <div>
+          <dt>Current value</dt>
+          <dd $text="activeValue"></dd>
+        </div>
+        <div>
+          <dt>Definition or relation</dt>
+          <dd $text="activeRelation"></dd>
+        </div>
+        <div>
+          <dt>Epistemic standing</dt>
+          <dd><strong $text="activeEpistemicLabel"></strong> · <span $text="activeStatusLabel"></span></dd>
+        </div>
+        <template *if="activeHasNote">
+          <div>
+            <dt>Research note</dt>
+            <dd $text="activeNote"></dd>
+          </div>
+        </template>
+      </dl>
+      <template *if="activeHasSource">
+        <p class="constant-dialog__source">
+          <span>Source</span>
+          <a $href="activeSourceHref" $text="activeSourceLabel"></a>
+        </p>
+      </template>
+    </article>
+  </dialog>
+</section>

@@ -1,0 +1,409 @@
+const cascadeHref = 'note.html?src=csbhi_geometric_parameter_cascade';
+const codataHref = 'https://physics.nist.gov/cuu/Constants/index.html';
+const planckHref = 'https://doi.org/10.1051/0004-6361/201833910';
+
+const epistemicByStatus = Object.freeze({
+  external: { code: 'E', label: 'established' },
+  derived: { code: 'E', label: 'established identity' },
+  benchmark: { code: 'P', label: 'prior-art benchmark' },
+  target: { code: 'C', label: 'conditional target' },
+  open: { code: 'O', label: 'open' },
+});
+
+const card = ({
+  symbol,
+  name,
+  value,
+  relation,
+  status,
+  statusLabel,
+  note,
+  sourceLabel,
+  sourceHref,
+}) => {
+  const epistemic = epistemicByStatus[status];
+  if (!epistemic) throw new RangeError(`Invalid epistemic status for ${symbol}: ${status}`);
+
+  return {
+    symbol,
+    name,
+    value,
+    relation,
+    status,
+    statusLabel,
+    epistemicCode: `[${epistemic.code}]`,
+    epistemicLabel: epistemic.label,
+    epistemicAria: `Epistemic status: ${epistemic.label}, ${epistemic.code}`,
+    note,
+    sourceLabel,
+    sourceHref,
+    hasNote: Boolean(note),
+    hasSource: Boolean(sourceHref),
+  };
+};
+
+const external = values => card({
+  ...values,
+  status: String.raw`external`,
+  statusLabel: String.raw`external constant`,
+  sourceLabel: String.raw`NIST / CODATA 2022`,
+  sourceHref: codataHref,
+});
+
+const cascade = values => card({
+  ...values,
+  status: values.status || 'derived',
+  statusLabel: values.statusLabel || 'derived identity',
+  sourceLabel: values.sourceLabel || 'Parameter Cascade',
+  sourceHref: values.sourceHref || cascadeHref,
+});
+
+const groups = [
+  {
+    eyebrow: String.raw`Reference layer`,
+    title: String.raw`External physical constants`,
+    summary: String.raw`Inputs used by the calculation, not quantities derived by CSBHI. Exact means exact in the SI; \(G\) remains experimentally measured.`,
+    cards: [
+      external({
+        symbol: String.raw`\(c\)`,
+        name: String.raw`Speed of light in vacuum`,
+        value: String.raw`\(299\,792\,458\;\mathrm{m\,s^{-1}}\)`,
+        relation: String.raw`Sets the conversion between time and length.`,
+        note: String.raw`Exact SI defining constant.`,
+      }),
+      external({
+        symbol: String.raw`\(G\)`,
+        name: String.raw`Newtonian constant of gravitation`,
+        value: String.raw`\(6.674\,30(15)\times10^{-11}\;\mathrm{m^3\,kg^{-1}\,s^{-2}}\)`,
+        relation: String.raw`Sets the coupling between stress-energy and spacetime curvature.`,
+        note: String.raw`Measured constant; the parenthetical digits give the standard uncertainty.`,
+      }),
+      external({
+        symbol: String.raw`\(\hbar\)`,
+        name: String.raw`Reduced Planck constant`,
+        value: String.raw`\(1.054\,571\,817\ldots\times10^{-34}\;\mathrm{J\,s}\)`,
+        relation: String.raw`\(\hbar=h/(2\pi)\).`,
+        note: String.raw`Exact through the exact SI value of \(h\); the displayed decimal is truncated.`,
+      }),
+      external({
+        symbol: String.raw`\(k_B\)`,
+        name: String.raw`Boltzmann constant`,
+        value: String.raw`\(1.380\,649\times10^{-23}\;\mathrm{J\,K^{-1}}\)`,
+        relation: String.raw`Converts thermodynamic temperature to energy.`,
+        note: String.raw`Exact SI defining constant. CODATA often prints \(k\); CSBHI uses the common physics form \(k_B\).`,
+      }),
+    ],
+  },
+  {
+    eyebrow: String.raw`One-scale cascade`,
+    title: String.raw`Child de Sitter geometry`,
+    summary: String.raw`All benchmark values in this group descend algebraically from one child-side input, \(R_{\rm dS}=17.53\,\mathrm{Gly}\). They are dependent quantities, not separate fits or separate predictions.`,
+    cards: [
+      cascade({
+        symbol: String.raw`\(R_{\rm dS}\)`,
+        name: String.raw`Asymptotic de Sitter curvature radius`,
+        value: String.raw`\(17.53\;\mathrm{Gly}\approx1.66\times10^{26}\;\mathrm m\)`,
+        relation: String.raw`\(R_{\rm dS}=c/H_\Lambda=\sqrt{3/\Lambda}\).`,
+        status: String.raw`benchmark`,
+        statusLabel: String.raw`child-side benchmark`,
+        note: String.raw`Canonical cross-project symbol. Earlier drafts used the compatibility alias \(L\). It is not yet derived from \(M_{\rm parent}\).`,
+      }),
+      cascade({
+        symbol: String.raw`\(H_\Lambda\)`,
+        name: String.raw`Asymptotic de Sitter Hubble rate`,
+        value: String.raw`\(55.8\;\mathrm{km\,s^{-1}\,Mpc^{-1}}\)`,
+        relation: String.raw`\(H_\Lambda=c/R_{\rm dS}\).`,
+      }),
+      cascade({
+        symbol: String.raw`\(\Lambda\)`,
+        name: String.raw`Cosmological constant`,
+        value: String.raw`\(1.09\times10^{-52}\;\mathrm{m^{-2}}\)`,
+        relation: String.raw`\(\Lambda=3/R_{\rm dS}^{2}\).`,
+      }),
+      cascade({
+        symbol: String.raw`\(\rho_\Lambda\)`,
+        name: String.raw`Vacuum mass density`,
+        value: String.raw`\(5.85\times10^{-27}\;\mathrm{kg\,m^{-3}}\)`,
+        relation: String.raw`\(\rho_\Lambda=3c^2/(8\pi GR_{\rm dS}^2)\).`,
+        note: String.raw`CSBHI states explicitly when \(\rho\) denotes mass density rather than energy density.`,
+      }),
+      cascade({
+        symbol: String.raw`\(\epsilon_\Lambda\)`,
+        name: String.raw`Vacuum energy density`,
+        value: String.raw`\(\rho_\Lambda c^2\approx5.26\times10^{-10}\;\mathrm{J\,m^{-3}}\)`,
+        relation: String.raw`\(\epsilon_\Lambda=3c^4/(8\pi GR_{\rm dS}^2)\).`,
+      }),
+      cascade({
+        symbol: String.raw`\(p_\Lambda\)`,
+        name: String.raw`Vacuum pressure`,
+        value: String.raw`\(-5.26\times10^{-10}\;\mathrm{Pa}\)`,
+        relation: String.raw`\(p_\Lambda=-\epsilon_\Lambda\).`,
+      }),
+      cascade({
+        symbol: String.raw`\(w_\Lambda\)`,
+        name: String.raw`Vacuum equation-of-state parameter`,
+        value: String.raw`\(-1\)`,
+        relation: String.raw`\(w_\Lambda=p_\Lambda/\epsilon_\Lambda\).`,
+        note: String.raw`Definitional for a true cosmological constant; observationally restrictive only if no additional effective dark-energy term appears.`,
+      }),
+      cascade({
+        symbol: String.raw`\(t_\Lambda\)`,
+        name: String.raw`De Sitter timescale`,
+        value: String.raw`\(17.53\;\mathrm{Gyr}\)`,
+        relation: String.raw`\(t_\Lambda=H_\Lambda^{-1}=R_{\rm dS}/c\).`,
+      }),
+      cascade({
+        symbol: String.raw`\(a_\Lambda\)`,
+        name: String.raw`De Sitter curvature-acceleration scale`,
+        value: String.raw`\(5.42\times10^{-10}\;\mathrm{m\,s^{-2}}\)`,
+        relation: String.raw`\(a_\Lambda=cH_\Lambda=c^2/R_{\rm dS}\).`,
+        note: String.raw`A curvature scale, not the proper acceleration of an inertial observer. The letter \(a\) also denotes the FLRW scale factor; the subscript is mandatory.`,
+      }),
+      cascade({
+        symbol: String.raw`\(A_{\rm dS}\)`,
+        name: String.raw`De Sitter horizon area`,
+        value: String.raw`\(4\pi R_{\rm dS}^{\,2}\)`,
+        relation: String.raw`Area of the asymptotic child horizon.`,
+      }),
+      cascade({
+        symbol: String.raw`\(V_A\)`,
+        name: String.raw`Areal volume`,
+        value: String.raw`\(\frac{4\pi}{3}R_{\rm dS}^{\,3}\)`,
+        relation: String.raw`The spherical volume entering the homogeneous Misner–Sharp mass.`,
+        note: String.raw`Not the proper volume of a static-patch spatial slice.`,
+      }),
+      cascade({
+        symbol: String.raw`\(V_\mathrm{proper}\)`,
+        name: String.raw`Static-slice proper volume`,
+        value: String.raw`\(\pi^2R_{\rm dS}^3\)`,
+        relation: String.raw`Proper volume on a constant-static-time de Sitter slice.`,
+      }),
+      cascade({
+        symbol: String.raw`\(M_\mathrm{dS}\)`,
+        name: String.raw`De Sitter Misner–Sharp mass`,
+        value: String.raw`\(1.12\times10^{53}\;\mathrm{kg}\)`,
+        relation: String.raw`\(M_\mathrm{dS}=c^2R_{\rm dS}/(2G)\).`,
+        note: String.raw`A child quasi-local mass. It is not identified with \(M_{\rm parent}\).`,
+      }),
+      cascade({
+        symbol: String.raw`\(T_\mathrm{dS}\)`,
+        name: String.raw`Gibbons–Hawking temperature`,
+        value: String.raw`\(2.20\times10^{-30}\;\mathrm K\)`,
+        relation: String.raw`\(T_\mathrm{dS}=\hbar c/(2\pi k_BR_{\rm dS})\).`,
+      }),
+      cascade({
+        symbol: String.raw`\(S_\mathrm{dS}/k_B\)`,
+        name: String.raw`Dimensionless horizon entropy`,
+        value: String.raw`\(3.31\times10^{122}\)`,
+        relation: String.raw`\(S_\mathrm{dS}=k_BA_\mathrm{dS}/(4\ell_P^2)\).`,
+      }),
+    ],
+  },
+  {
+    eyebrow: String.raw`Inheritance layer`,
+    title: String.raw`Matter and radiation background`,
+    summary: String.raw`The displayed late-time numbers use the Planck flat-\(\Lambda\)CDM benchmark. CSBHI reproduces these relations once the inheritance ratios are supplied; it does not yet derive those ratios.`,
+    cards: [
+      cascade({
+        symbol: String.raw`\(\eta_m\)`,
+        name: String.raw`Matter-to-vacuum inheritance ratio`,
+        value: String.raw`\(0.460\)`,
+        relation: String.raw`\(\eta_m=\rho_{m0}/\rho_\Lambda=\Omega_m/\Omega_\Lambda\).`,
+        status: String.raw`target`,
+        statusLabel: String.raw`formation target`,
+        note: String.raw`Project-specific symbol. Its benchmark value is inferred from the observed background, not yet predicted.`,
+      }),
+      cascade({
+        symbol: String.raw`\(\eta_r\)`,
+        name: String.raw`Radiation-to-vacuum inheritance ratio`,
+        value: String.raw`Not yet derived`,
+        relation: String.raw`\(\eta_r=\rho_{r0}/\rho_\Lambda\).`,
+        status: String.raw`open`,
+        statusLabel: String.raw`open inheritance datum`,
+        note: String.raw`Project-specific symbol; its species content must be stated when a benchmark is adopted.`,
+      }),
+      cascade({
+        symbol: String.raw`\(H_0\)`,
+        name: String.raw`Hubble constant today`,
+        value: String.raw`\(67.4\;\mathrm{km\,s^{-1}\,Mpc^{-1}}\)`,
+        relation: String.raw`\(H_0=H_\Lambda\sqrt{1+\eta_m+\eta_r}\).`,
+        status: String.raw`benchmark`,
+        statusLabel: String.raw`Planck benchmark`,
+        sourceLabel: String.raw`Planck 2018`,
+        sourceHref: planckHref,
+      }),
+      cascade({
+        symbol: String.raw`\(\Omega_m\)`,
+        name: String.raw`Matter density parameter today`,
+        value: String.raw`\(0.315\)`,
+        relation: String.raw`\(\Omega_m=\eta_m/(1+\eta_m+\eta_r)\).`,
+        status: String.raw`benchmark`,
+        statusLabel: String.raw`Planck benchmark`,
+        sourceLabel: String.raw`Planck 2018`,
+        sourceHref: planckHref,
+      }),
+      cascade({
+        symbol: String.raw`\(\Omega_\Lambda\)`,
+        name: String.raw`Vacuum density parameter today`,
+        value: String.raw`\(0.685\)`,
+        relation: String.raw`\(\Omega_\Lambda=1/(1+\eta_m+\eta_r)\).`,
+        status: String.raw`benchmark`,
+        statusLabel: String.raw`Planck benchmark`,
+        sourceLabel: String.raw`Planck 2018`,
+        sourceHref: planckHref,
+      }),
+      cascade({
+        symbol: String.raw`\(\Omega_r\)`,
+        name: String.raw`Radiation density parameter today`,
+        value: String.raw`Awaiting an adopted \(\eta_r\)`,
+        relation: String.raw`\(\Omega_r=\eta_r/(1+\eta_m+\eta_r)\).`,
+        status: String.raw`open`,
+        statusLabel: String.raw`open inheritance datum`,
+      }),
+      cascade({
+        symbol: String.raw`\(q_0\)`,
+        name: String.raw`Deceleration parameter today`,
+        value: String.raw`\(-0.528\)`,
+        relation: String.raw`\(q_0=\Omega_m/2-\Omega_\Lambda\) for dust plus \(\Lambda\).`,
+        status: String.raw`benchmark`,
+        statusLabel: String.raw`benchmark descendant`,
+        note: String.raw`The symbol \(q\) also labels matter shells in formation notes; \(q_0\) here always means deceleration.`,
+      }),
+      cascade({
+        symbol: String.raw`\(t_0\)`,
+        name: String.raw`Age of the universe`,
+        value: String.raw`\(13.80\;\mathrm{Gyr}\)`,
+        relation: String.raw`\(t_0=2\,\mathrm{asinh}(\eta_m^{-1/2})/(3H_\Lambda)\) in flat dust plus \(\Lambda\).`,
+        status: String.raw`benchmark`,
+        statusLabel: String.raw`benchmark descendant`,
+      }),
+      cascade({
+        symbol: String.raw`\(z_{m\Lambda}\)`,
+        name: String.raw`Matter–vacuum equality redshift`,
+        value: String.raw`\(0.296\)`,
+        relation: String.raw`\(1+z_{m\Lambda}=\eta_m^{-1/3}\).`,
+        status: String.raw`benchmark`,
+        statusLabel: String.raw`benchmark descendant`,
+        note: String.raw`Project-explicit notation; “equality redshift” must name the two components.`,
+      }),
+      cascade({
+        symbol: String.raw`\(z_\mathrm{acc}\)`,
+        name: String.raw`Acceleration-transition redshift`,
+        value: String.raw`\(0.632\)`,
+        relation: String.raw`\(1+z_\mathrm{acc}=(2/\eta_m)^{1/3}\) for dust plus \(\Lambda\).`,
+        status: String.raw`benchmark`,
+        statusLabel: String.raw`benchmark descendant`,
+      }),
+      cascade({
+        symbol: String.raw`\(z_{mr}\)`,
+        name: String.raw`Matter–radiation equality redshift`,
+        value: String.raw`Awaiting an adopted \(\eta_r\)`,
+        relation: String.raw`\(1+z_{mr}=\eta_m/\eta_r\).`,
+        status: String.raw`open`,
+        statusLabel: String.raw`open inheritance datum`,
+      }),
+      cascade({
+        symbol: String.raw`\(z_{r\Lambda}\)`,
+        name: String.raw`Radiation–vacuum equality redshift`,
+        value: String.raw`Awaiting an adopted \(\eta_r\)`,
+        relation: String.raw`\(1+z_{r\Lambda}=\eta_r^{-1/4}\).`,
+        status: String.raw`open`,
+        statusLabel: String.raw`open inheritance datum`,
+      }),
+    ],
+  },
+  {
+    eyebrow: String.raw`Closure layer`,
+    title: String.raw`Galaxy and formation parameters`,
+    summary: String.raw`These are the quantities that would turn the downstream identities into CSBHI predictions. Their cards deliberately distinguish measured targets from theory-derived values.`,
+    cards: [
+      cascade({
+        symbol: String.raw`\(g_\dagger\)`,
+        name: String.raw`Galaxy acceleration scale`,
+        value: String.raw`\(\sim1.2\times10^{-10}\;\mathrm{m\,s^{-2}}\)`,
+        relation: String.raw`\(g_\mathrm{mix}=\sqrt{g_Ng_\dagger}\).`,
+        status: String.raw`benchmark`,
+        statusLabel: String.raw`empirical target`,
+        sourceLabel: String.raw`Galaxy prediction note`,
+        sourceHref: String.raw`note.html?src=evolving_g_dagger_derivation`,
+        note: String.raw`Chosen instead of MOND’s conventional \(a_0\) because \(a\) is already the CSBHI scale factor.`,
+      }),
+      cascade({
+        symbol: String.raw`\(\kappa_g^{(\Lambda)}\)`,
+        name: String.raw`Fixed-horizon galaxy normalization`,
+        value: String.raw`\(0.471\)`,
+        relation: String.raw`\(g_\dagger=\kappa_g^2cH_\Lambda\).`,
+        status: String.raw`target`,
+        statusLabel: String.raw`fitted target`,
+        note: String.raw`Required value if the galaxy law uses the fixed asymptotic de Sitter scale.`,
+      }),
+      cascade({
+        symbol: String.raw`\(\kappa_g^{(0)}\)`,
+        name: String.raw`Evolving-horizon galaxy normalization`,
+        value: String.raw`\(0.428\)`,
+        relation: String.raw`\(g_\dagger(0)=\kappa_g^2cH_0\).`,
+        status: String.raw`target`,
+        statusLabel: String.raw`fitted target`,
+        note: String.raw`Required present value if the galaxy law follows \(H(z)\). The two horizon branches predict different redshift evolution.`,
+      }),
+      cascade({
+        symbol: String.raw`\(N_H\)`,
+        name: String.raw`Parent–child cohort lapse`,
+        value: String.raw`Open function`,
+        relation: String.raw`\(N_H=d\tau_C/dt_P\).`,
+        status: String.raw`open`,
+        statusLabel: String.raw`open GD2 closure`,
+        note: String.raw`Converts the parent collapse clock into child cosmic proper time.`,
+      }),
+      cascade({
+        symbol: String.raw`\(K(q)\)`,
+        name: String.raw`Formation calibration`,
+        value: String.raw`Open function`,
+        relation: String.raw`Sets the absolute child scale assigned to each formation cohort.`,
+        status: String.raw`open`,
+        statusLabel: String.raw`open GD2 closure`,
+        note: String.raw`The minimal hypothesis \(K(q)=K_0\) has not been derived.`,
+      }),
+      cascade({
+        symbol: String.raw`\(\Gamma\)`,
+        name: String.raw`Parent–child conformal factor`,
+        value: String.raw`Absolute normalization open`,
+        relation: String.raw`\(g^C_{ab}=\Gamma^2g^P_{ab}\).`,
+        status: String.raw`open`,
+        statusLabel: String.raw`open GD2 closure`,
+        note: String.raw`Canonical CSBHI conformal symbol. Some Misner–Sharp notes use \(\Gamma=D_\ell R\) locally; those documents must declare the collision.`,
+      }),
+      cascade({
+        symbol: String.raw`\(M_{\rm parent}\)`,
+        name: String.raw`Parent black-hole mass`,
+        value: String.raw`Collapse-dependent input`,
+        relation: String.raw`\(M_{\rm parent}\not\Rightarrow R_{\rm dS}\) in the current theory.`,
+        status: String.raw`open`,
+        statusLabel: String.raw`scale transfer open`,
+        note: String.raw`Avoids the common collision between \(M_P\) as “parent mass” and \(M_P\) or \(M_{\rm Pl}\) as Planck mass.`,
+      }),
+    ],
+  },
+];
+
+let catalogNumber = 0;
+const indexedGroups = groups.map(group => ({
+  ...group,
+  cards: group.cards.map(entry => {
+    catalogNumber += 1;
+    return {
+      ...entry,
+      catalogNumber: String(catalogNumber).padStart(2, '0'),
+      catalogId: `constant-${catalogNumber}`,
+      catalogGroup: group.title,
+      openLabel: `Open details for ${entry.name}`,
+    };
+  }),
+}));
+
+export const getConstantsLedger = () => ({
+  headingId: String.raw`constants-title`,
+  title: String.raw`Constants & Parameters`,
+  summary: String.raw`A live ledger of the quantities entering CSBHI: what is externally measured, what follows algebraically, what is used only as a benchmark, and what the theory must still derive.`,
+  groups: indexedGroups,
+});

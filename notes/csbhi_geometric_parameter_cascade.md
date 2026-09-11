@@ -2,6 +2,8 @@
 
 **Working note — September 2026. Revised after downstream consistency audit. Source: upstream project analysis. Independent review and revisions: Codex (OpenAI).**
 
+> **Notation update.** Earlier drafts used the compact symbol \(L\). The homepage ledger and this revised note use \(R_{\rm dS}\) for the child asymptotic de Sitter curvature radius.
+
 ---
 
 ## Abstract
@@ -11,10 +13,10 @@ CSBHI suggests that a substantial set of quantities normally quoted as separate 
 The cleanest established cascade begins with the child asymptotic de Sitter curvature radius
 
 \[
-L.
+R_{\rm dS}.
 \]
 
-Under spatial flatness, standard general-relativistic Friedmann evolution, separately conserved matter and radiation, a true cosmological constant, and no additional homogeneous components, \(L\) fixes the complete vacuum sector. Introducing one dimensionless matter ratio
+Under spatial flatness, standard general-relativistic Friedmann evolution, separately conserved matter and radiation, a true cosmological constant, and no additional homogeneous components, \(R_{\rm dS}\) fixes the complete vacuum sector. Introducing one dimensionless matter ratio
 
 \[
 \eta_m
@@ -32,15 +34,15 @@ This is initially a change of parameter basis, not a reduction in physical freed
 
 \[
 \boxed{
-(L,\eta_m,\eta_r)
+(R_{\rm dS},\eta_m,\eta_r)
 \longleftrightarrow
 (H_0,\Omega_m,\Omega_r)
 }
 \]
 
-is invertible once flatness fixes \(\Omega_\Lambda\). A genuine CSBHI parameter reduction occurs only if the parent formation geometry independently determines \(L\), \(\eta_m\), or \(\eta_r\).
+is invertible once flatness fixes \(\Omega_\Lambda\). A genuine CSBHI parameter reduction occurs only if the parent formation geometry independently determines \(R_{\rm dS}\), \(\eta_m\), or \(\eta_r\).
 
-The present theory does **not** identify the child curvature radius \(L\) with the physical Schwarzschild radius of a stellar parent. Current CSBHI formation work instead requires a nontrivial conformal scale transfer. Consequently, parent mass does not yet close the cascade.
+The present theory does **not** identify the child curvature radius \(R_{\rm dS}\) with the physical Schwarzschild radius of a stellar parent. Current CSBHI formation work instead requires a nontrivial conformal scale transfer. Consequently, parent mass does not yet close the cascade.
 
 The galaxy-scale acceleration law introduces another unresolved dimensionless coefficient,
 
@@ -54,7 +56,7 @@ The emerging input structure is therefore
 
 \[
 \boxed{
-L,\quad
+R_{\rm dS},\quad
 \eta_m,\quad
 \eta_r,\quad
 \kappa_g,\quad
@@ -94,7 +96,7 @@ This is the standard flat matter–radiation–\(\Lambda\) Friedmann background 
 
 The cascade does not by itself determine baryon fraction, neutrino masses, recombination physics, \(N_{\rm eff}\), primordial perturbations, or particle-physics couplings.
 
-The constants \(G\), \(c\), \(\hbar\), and \(k_B\) are treated as external fundamental constants. Define \(L\) as the **child asymptotic de Sitter curvature radius** and \(H_\Lambda\) as the associated asymptotic Hubble rate. No equality between \(L\) and a parent physical throat or Schwarzschild radius is assumed.
+The constants \(G\), \(c\), \(\hbar\), and \(k_B\) are treated as external fundamental constants. Define \(R_{\rm dS}\) as the **child asymptotic de Sitter curvature radius** and \(H_\Lambda\) as the associated asymptotic Hubble rate. No equality between \(R_{\rm dS}\) and a parent physical throat or Schwarzschild radius is assumed.
 
 ---
 
@@ -104,7 +106,7 @@ By definition of the four-dimensional de Sitter curvature radius,
 
 \[
 \boxed{
-H_\Lambda=\frac{c}{L}
+H_\Lambda=\frac{c}{R_{\rm dS}}
 }
 \tag{2}
 \]
@@ -113,7 +115,7 @@ and
 
 \[
 \boxed{
-\Lambda=\frac{3}{L^2}.
+\Lambda=\frac{3}{R_{\rm dS}^2}.
 }
 \tag{3}
 \]
@@ -124,7 +126,7 @@ GD1 independently identifies the asymptotic child geometry as de Sitter, with
 R_\Lambda
 =\sqrt{\frac{3}{\Lambda}}
 =\frac{c}{H_\Lambda}
-=L.
+=R_{\rm dS}.
 \tag{4}
 \]
 
@@ -134,7 +136,7 @@ The de Sitter timescale is
 \boxed{
 t_\Lambda
 =\frac{1}{H_\Lambda}
-=\frac{L}{c}.
+=\frac{R_{\rm dS}}{c}.
 }
 \tag{5}
 \]
@@ -145,7 +147,7 @@ Define the characteristic de Sitter surface-gravity or curvature-acceleration sc
 \boxed{
 a_\Lambda
 =cH_\Lambda
-=\frac{c^2}{L}.
+=\frac{c^2}{R_{\rm dS}}.
 }
 \tag{6}
 \]
@@ -156,7 +158,7 @@ Thus one geometric scale fixes
 
 \[
 \boxed{
-L
+R_{\rm dS}
 \longrightarrow
 H_\Lambda,\;
 \Lambda,\;
@@ -211,13 +213,11 @@ The last relation is definitional for a cosmological constant. It becomes an obs
 
 ## 4. Horizon geometry and two notions of volume
 
-The asymptotic de Sitter horizon radius and area are
+The asymptotic de Sitter horizon has radius \(R_{\rm dS}\). Its area is
 
 \[
 \boxed{
-R_{\rm dS}=L,
-\qquad
-A_{\rm dS}=4\pi L^2.
+A_{\rm dS}=4\pi R_{\rm dS}^2.
 }
 \tag{11}
 \]
@@ -226,7 +226,7 @@ The **areal volume** is defined by
 
 \[
 \boxed{
-V_A=\frac{4\pi}{3}L^3.
+V_A=\frac{4\pi}{3}R_{\rm dS}^3.
 }
 \tag{12}
 \]
@@ -236,9 +236,9 @@ This is the volume entering the Misner–Sharp mass of a homogeneous spherical r
 \[
 V_{\rm proper}
 =4\pi
-\int_0^L
+\int_0^R_{\rm dS}
 \frac{R^2\,dR}
-{\sqrt{1-R^2/L^2}},
+{\sqrt{1-R^2/R_{\rm dS}^2}},
 \tag{13}
 \]
 
@@ -323,13 +323,13 @@ S_{\rm dS}
 \tag{19}
 \]
 
-Thus \(L\) determines the complete standard de Sitter thermodynamic sector.
+Thus \(R_{\rm dS}\) determines the complete standard de Sitter thermodynamic sector.
 
 ---
 
 ## 7. What one scale determines—and what that means
 
-Without introducing another cosmological parameter, \(L\) fixes
+Without introducing another cosmological parameter, \(R_{\rm dS}\) fixes
 
 \[
 \begin{gathered}
@@ -341,9 +341,9 @@ M_{\rm dS},\;T_{\rm dS},\;S_{\rm dS}.
 \tag{20}
 \]
 
-These are not fifteen independent predictions. Several are definitions or standard consequences of one de Sitter solution. The useful result is a dependency ledger: once \(L\) is supplied, none requires another fit.
+These are not fifteen independent predictions. Several are definitions or standard consequences of one de Sitter solution. The useful result is a dependency ledger: once \(R_{\rm dS}\) is supplied, none requires another fit.
 
-Nor is this, by itself, a reduction relative to standard cosmological parameter counting. The distinct CSBHI question is whether the parent formation geometry can determine \(L\) rather than accepting it as child-side input.
+Nor is this, by itself, a reduction relative to standard cosmological parameter counting. The distinct CSBHI question is whether the parent formation geometry can determine \(R_{\rm dS}\) rather than accepting it as child-side input.
 
 ---
 
@@ -362,7 +362,7 @@ and therefore
 
 \[
 \boxed{
-L
+R_{\rm dS}
 =\frac{c}{H_0\sqrt{\Omega_\Lambda}}.
 }
 \tag{22}
@@ -411,7 +411,7 @@ one obtains
 
 \[
 \boxed{
-L\simeq17.53\ {\rm Gly},
+R_{\rm dS}\simeq17.53\ {\rm Gly},
 \qquad
 \Lambda\simeq1.09\times10^{-52}\ {\rm m^{-2}}.
 }
@@ -606,7 +606,7 @@ t_0&\simeq13.80\ {\rm Gyr}.
 \tag{38}
 \]
 
-Thus \((L,\eta_m)\) determines the flat dust–\(\Lambda\) background. The unresolved CSBHI question is whether the formation map can produce \(\eta_m\simeq0.460\) without child-side calibration.
+Thus \((R_{\rm dS},\eta_m)\) determines the flat dust–\(\Lambda\) background. The unresolved CSBHI question is whether the formation map can produce \(\eta_m\simeq0.460\) without child-side calibration.
 
 ---
 
@@ -676,7 +676,7 @@ Matter–radiation equality and radiation–vacuum equality obey
 \tag{44}
 \]
 
-Thus, under the stated assumptions, \((L,\eta_m,\eta_r)\) determines the complete flat matter–radiation–\(\Lambda\) expansion history. It does not determine particle content, thermal history, or how \(\eta_m\) divides into baryons, dark-matter-like phenomenology, massive neutrinos, or other species.
+Thus, under the stated assumptions, \((R_{\rm dS},\eta_m,\eta_r)\) determines the complete flat matter–radiation–\(\Lambda\) expansion history. It does not determine particle content, thermal history, or how \(\eta_m\) divides into baryons, dark-matter-like phenomenology, massive neutrinos, or other species.
 
 ---
 
@@ -703,7 +703,7 @@ The GD2 event-map work explicitly avoids equating the child areal radius with th
 Therefore
 
 \[
-L=\frac{2GM_P}{c^2}
+R_{\rm dS}=\frac{2GM_{\rm parent}}{c^2}
 \tag{47}
 \]
 
@@ -712,9 +712,9 @@ is **not** part of the current CSBHI branch. It is the special isometric case \(
 In a hypothetical constant-scale approximation one could write schematically
 
 \[
-L
+R_{\rm dS}
 =\Gamma_\infty
-\frac{2GM_P}{c^2},
+\frac{2GM_{\rm parent}}{c^2},
 \tag{48}
 \]
 
@@ -724,7 +724,7 @@ The correct conclusion is
 
 \[
 \boxed{
-M_P\not\Rightarrow L
+M_{\rm parent}\not\Rightarrow R_{\rm dS}
 \quad\text{yet}.
 }
 \tag{49}
@@ -736,12 +736,12 @@ The missing absolute scale-transfer law is one of GD2's central open problems.
 
 ## 16. Thermodynamic parent–child comparison remains open
 
-Because \(L\ne R_P\) in the current architecture, parent black-hole and child de Sitter thermodynamics cannot be equated directly.
+Because \(R_{\rm dS}\ne R_P\) in the current architecture, parent black-hole and child de Sitter thermodynamics cannot be equated directly.
 
 In the special constant-scale approximation
 
 \[
-L=\Gamma_\infty R_P,
+R_{\rm dS}=\Gamma_\infty R_P,
 \tag{50}
 \]
 
@@ -916,12 +916,12 @@ The remaining work is mathematical as well as numerical: the scale-transfer, lap
 
 Under the flat-Friedmann assumptions:
 
-- **From \(L\):** the vacuum and de Sitter sector is fixed.
-- **From \((L,\eta_m)\):** the flat dust–\(\Lambda\) background is fixed, including \(H_0\), \(\Omega_m\), \(\Omega_\Lambda\), \(q_0\), \(t_0\), \(z_{m\Lambda}\), \(z_{\rm acc}\), and the complete homogeneous \(H(z)\).
-- **From \((L,\eta_m,\eta_r)\):** \(\Omega_r\), \(z_{mr}\), \(z_{r\Lambda}\), and the full matter–radiation–\(\Lambda\) background are added.
-- **From \((L,\kappa_g)\) plus a horizon-selection rule:** the galaxy acceleration scale and baryonic Tully–Fisher normalization are fixed conditionally.
+- **From \(R_{\rm dS}\):** the vacuum and de Sitter sector is fixed.
+- **From \((R_{\rm dS},\eta_m)\):** the flat dust–\(\Lambda\) background is fixed, including \(H_0\), \(\Omega_m\), \(\Omega_\Lambda\), \(q_0\), \(t_0\), \(z_{m\Lambda}\), \(z_{\rm acc}\), and the complete homogeneous \(H(z)\).
+- **From \((R_{\rm dS},\eta_m,\eta_r)\):** \(\Omega_r\), \(z_{mr}\), \(z_{r\Lambda}\), and the full matter–radiation–\(\Lambda\) background are added.
+- **From \((R_{\rm dS},\kappa_g)\) plus a horizon-selection rule:** the galaxy acceleration scale and baryonic Tully–Fisher normalization are fixed conditionally.
 
-The present theory does not derive \(L\) from parent mass.
+The present theory does not derive \(R_{\rm dS}\) from parent mass.
 
 ---
 
@@ -961,7 +961,7 @@ If additional effective geometric terms arise from the completed conformal forma
 
 | Primitive quantity or rule | Role | Present standing |
 |---|---|---|
-| \(L\) | Child asymptotic curvature scale | Child-side input |
+| \(R_{\rm dS}\) | Child asymptotic curvature scale | Child-side input |
 | \(\eta_m\) | Present matter/vacuum ratio | Child-side input |
 | \(\eta_r\) | Present radiation/vacuum ratio | Child-side input |
 | \(\kappa_g\) | Galaxy-scale normalization | Undetermined coefficient |
@@ -969,7 +969,7 @@ If additional effective geometric terms arise from the completed conformal forma
 | \(N_H\), \(K(q)\), and \(\Gamma\) | Clock and absolute parent–child scale transfer | Open GD2 geometry |
 | Formation perturbation data | Determine primordial perturbations | Structural sources identified; amplitudes open |
 
-This inventory is smaller than the list of derived observables, but the homogeneous basis \((L,\eta_m,\eta_r)\) contains the same number of degrees of freedom as the equivalent standard flat-Friedmann parameterization. The scientific reduction remains a target until one or more entries are derived from parent formation data.
+This inventory is smaller than the list of derived observables, but the homogeneous basis \((R_{\rm dS},\eta_m,\eta_r)\) contains the same number of degrees of freedom as the equivalent standard flat-Friedmann parameterization. The scientific reduction remains a target until one or more entries are derived from parent formation data.
 
 ---
 
@@ -1021,7 +1021,7 @@ R_C=\Gamma R_P
 \tag{66}
 \]
 
-must be completed dynamically. Until then, the numerical value of \(L\) remains a child-side input rather than a quantity derived from parent collapse.
+must be completed dynamically. Until then, the numerical value of \(R_{\rm dS}\) remains a child-side input rather than a quantity derived from parent collapse.
 
 ### 23.5 Primordial formation coefficients
 
@@ -1045,14 +1045,14 @@ and residual statistical anisotropy.
 The corrected cascade does not support
 
 \[
-M_P\longrightarrow L.
+M_{\rm parent}\longrightarrow R_{\rm dS}.
 \]
 
 That step would collapse the conformal hierarchy into the discarded isometric branch. What survives is the exact dependency structure
 
 \[
 \boxed{
-L
+R_{\rm dS}
 \longrightarrow
 \text{vacuum and de Sitter sector},
 }
@@ -1061,7 +1061,7 @@ L
 
 \[
 \boxed{
-(L,\eta_m)
+(R_{\rm dS},\eta_m)
 \longrightarrow
 \text{flat dust–\(\Lambda\) background},
 }
@@ -1072,7 +1072,7 @@ and
 
 \[
 \boxed{
-(L,\eta_m,\eta_r)
+(R_{\rm dS},\eta_m,\eta_r)
 \longrightarrow
 \text{flat matter–radiation–\(\Lambda\) background}.
 }
@@ -1091,7 +1091,7 @@ The highest-value question is therefore
 \eta_m,\;
 \eta_r,\;
 \kappa_g,
-\text{ and ultimately }L
+\text{ and ultimately }R_{\rm dS}
 \text{ be derived from the parent geometry?}
 }
 \tag{71}
@@ -1114,4 +1114,3 @@ That derivation—not the downstream algebra—would turn the parameter cascade 
 9. G. Salehi, [*Result IV — The Conformal Formation Map*](note.html?src=result_iv_conformal_formation_map), CSBHI working result (2026).
 10. [*Optical Transfer Through a Matter-Filled Parent Collapse*](note.html?src=optical_transfer_through_compensated_ltb_collapse), CSBHI supporting calculation (2026).
 11. [*CSBHI Formation Mini-Program — Level 5 Conditional Result and Campaign Summary*](note.html?src=level_5_rotation_and_campaign_summary), CSBHI working result (2026).
-

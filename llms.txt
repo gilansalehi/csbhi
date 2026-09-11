@@ -4,7 +4,7 @@
 
 **Architecture.** CSBHI is a branching direct-collapse cosmology. A child universe is the interior of a forming black hole: it comes into being at gravitational collapse. The reciprocal relation a=1/r maps the parent's decreasing interior radius to the child's increasing spatial scale, so the parent's r→0 endpoint coincides with that same child's a→∞ de Sitter future. Black holes that later form inside a child seed further children, so the whole structure is a tree that branches at every collapse.
 
-**Reading path.** The shared foundation is GD I → the Cosmological Glossary → RI I → Result I. The collapse branch is the GD II outline → Horizon-Map Equation and Notation Audit → the Collapse-to-Child Boundary System → the Full-History Test. The galaxy branch is the square-root-law derivation → Prediction I → its high-redshift test. The Weyl branch is WCH I → A Black Hole on the Aeon Boundary. Finish any branch with the open-questions index.
+**Reading path.** The shared foundation is GD I → the Cosmological Glossary → RI I → Result I. The collapse branch is the GD II outline → Horizon-Map Equation and Notation Audit → the Collapse-to-Child Boundary System → the Full-History Test. The galaxy branch is the square-root-law derivation → Prediction I → its high-redshift test. The Weyl branch is WCH I → A Black Hole on the Aeon Boundary. The Geometric Parameter Cascade is the current dependency ledger for child constants, inherited background ratios, and open closure data. Finish any branch with the open-questions index.
 
 ## Claim hierarchy
 
@@ -15,7 +15,7 @@
 - **Proposed correspondence:** CSBHI identifies the global acceleration entering the galaxy-scale mixing law with cH_A at the contemporaneous FLRW apparent horizon.
 - **Conditional prediction:** If that correspondence is correct and its dimensionless normalization is epoch-independent, then g†(z)/g†(0)=H_A(z)/H_0.
 - **Research hypothesis:** Smooth parent collapse supplies a low-Weyl child beginning that may reproduce itself as a fixed point across generations.
-- **Candidate collapse map:** The current GD II track maps the parent black-hole event-horizon generator to a child particle-horizon history. The child apparent horizon and future cosmological event horizon are different surfaces and are not substitutes for that causal map.
+- **Candidate collapse map:** The current GD II track maps the parent black-hole event-horizon formation history to an outgoing child birth cone. This is the future light cone of the mapped vertex, not automatically the child's global particle horizon. The child particle, apparent, and future event horizons remain distinct.
 - **Negative benchmark result:** A compensated ΛLTB collapse reproduces the required endpoint behavior, but the simplest unit-lapse shell clock fails through the intermediate history. The remaining clock must be derived rather than fitted.
 - **Open construction:** The collapse-cohort clock, complete throat geometry, parent-to-child matter/current transfer, weak-field tensorial galaxy law, perturbation transfer, and full thermal history remain unfinished.
 
@@ -31,13 +31,17 @@ F(r) = -dr/dtau                             [definition of positive inward flow]
 H_A = (1/a)(da/dtau) = F(r)/r               [exact kinematic consequence]
 bar_R(tau) = a(tau) R                       [Alice's FLRW areal radius]
 R_A(tau) = c / H_A(tau)                     [flat-FLRW apparent horizon]
-R = eta = Phi(v_H)                          [candidate child particle-horizon history]
+R = eta = Phi(v_H)                          [candidate outgoing child birth cone]
+R_dS = c / H_Lambda = sqrt(3 / Lambda)      [child de Sitter radius]
 Lambda = 3 H_Lambda^2 / c^2                 [de Sitter identity]
-g_mix = kappa sqrt(g_N A)                   [conditional mixing theorem]
+g_mix = kappa_g sqrt(g_N A)                 [conditional mixing theorem]
 g_dagger(z)/g_dagger(0) = H_A(z)/H_0        [conditional prediction]
+g_C_ab = Gamma^2 g_P_ab                     [formation conformal factor]
 ```
 
-Do not identify `r` with `R` or `bar_R`. Here `r(tau)` is Bob's horizon-normalized coordinate assigned along Alice's individual trajectory; `R` is Alice's comoving label; and `bar_R=aR` is Alice's areal radius. Keep the parent black-hole event horizon, parent cosmological horizon, child particle horizon, child apparent horizon, and child future cosmological event horizon distinct. The current GD II causal proposal maps the parent black-hole event horizon to the child particle-horizon history. The reciprocal normalization `a=1` at crossing is not the conventional present normalization; use `A=a/a_0` when importing present-normalized cosmology.
+Do not identify `r` with `R` or `bar_R`. Here `r(tau)` is Bob's horizon-normalized coordinate assigned along Alice's individual trajectory; `R` is Alice's comoving label; and `bar_R=aR` is Alice's areal radius. Keep the parent black-hole event horizon, parent cosmological horizon, child birth cone, child particle horizon, child apparent horizon, and child future cosmological event horizon distinct. The reciprocal normalization `a=1` at crossing is not the conventional present normalization; use `A=a/a_0` when importing present-normalized cosmology.
+
+Cross-project summaries use `R_dS` for the child asymptotic de Sitter curvature radius, `g_dagger` for the galaxy acceleration scale, `M_parent` for parent mass, and `Gamma` for the parent–child conformal factor. Older or calculation-local documents may use `R_Lambda`, `L`, or `ell_dS` for the de Sitter length, `a_0` for a MOND acceleration, `M_P` for parent mass, or `Gamma=D_l R` in Misner–Sharp variables. Those are compatibility aliases or declared local collisions, not additional quantities.
 
 The public site is statically hosted. Core papers contain their substantive text directly in HTML; the project overview and review packet compose some sections from static data-wrapper views. Research notes are also available as raw Markdown at the URLs below, so no JavaScript execution is required to read them. Equations use LaTeX notation.
 
@@ -78,7 +82,7 @@ When debugging your interpretation, use the guide's claim ledger and interpretat
 - [Research Atlas — Einstein–Cartan Cosmology](https://www.gilansalehi.com/csbhi/einstein-cartan.html): The exact spin–torsion extension of GR, Popławski's black-hole-universe realization, quantitative bounce results, primordial-spectrum test, and unfinished collapse geometry.
 - [Research Atlas — Loop Quantum Cosmology](https://www.gilansalehi.com/csbhi/loop-quantum-cosmology.html): The exact density bound and bounce in soluble LQC, its effective Friedmann equation, quantitative CMB postdictions, competing perturbation frameworks, and the open derivation from full loop quantum gravity.
 - [Research Atlas — Conformal Scaling of Black Hole Interiors](https://www.gilansalehi.com/csbhi/csbhi.html): The reciprocal ansatz, its exact conditional Friedmann dynamics, recursive collapse interpretation, evolving galactic acceleration-scale prediction, and the covariant horizon map still required.
-- [CSBHI project overview](https://www.gilansalehi.com/csbhi/): Publication map, progress, open problems, and further reading.
+- [CSBHI project overview](https://www.gilansalehi.com/csbhi/): Publication map, constants-and-parameters ledger, progress, open problems, and further reading.
 - [Review Packet I](https://www.gilansalehi.com/csbhi/review.html): Guided professional-review packet separating the foundational ansatz, conditional results, theorem, correspondence, prediction, and open construction problems.
 - [Review Packet II](https://www.gilansalehi.com/csbhi/penrose.html): The recursive low-Weyl hypothesis and the relation between CSBHI and Penrose's Weyl Curvature Hypothesis.
 - [Frequently Asked Questions](https://www.gilansalehi.com/csbhi/faqs.html): Short answers to recurring conceptual and mathematical objections.
@@ -94,6 +98,7 @@ The [Research Index](https://www.gilansalehi.com/csbhi/research.html) contains i
 
 - [Black-Hole Cosmology: Lineage, Mechanisms, and CSBHI](https://www.gilansalehi.com/csbhi/notes/black_hole_cosmology_lineage.md): Historical comparison with earlier black-hole cosmology proposals.
 - [Geometric Duality Research Roadmap](https://www.gilansalehi.com/csbhi/notes/gd_research_roadmap.md): Provisional sequence of future papers and unresolved calculations.
+- [CSBHI Geometric Parameter Cascade](https://www.gilansalehi.com/csbhi/notes/csbhi_geometric_parameter_cascade.md): Dependency ledger separating external constants, standard de Sitter/Friedmann descendants, benchmark inferences, fitted targets, and the parent–child quantities the theory must still derive.
 
 ## What CSBHI does not claim
 

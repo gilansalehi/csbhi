@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.gilansalehi.com/csbhi/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-10</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/research-atlas.html</loc>
@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-09-10</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/field_equations_of_the_reciprocal_interior.md</loc>
@@ -123,6 +123,10 @@
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/gd_research_roadmap.md</loc>
     <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gilansalehi.com/csbhi/notes/csbhi_geometric_parameter_cascade.md</loc>
+    <lastmod>2026-09-10</lastmod>
   </url>
   <url>
     <loc>https://www.gilansalehi.com/csbhi/notes/gd2_collapse_cohort_horizon_map_outline.md</loc>

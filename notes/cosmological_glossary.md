@@ -23,6 +23,7 @@ Use this document as the shared legend for the series. Individual papers need on
 7. **Say spatially flat when that is what is meant.** A spatially flat FLRW universe can have nonzero four-dimensional spacetime curvature.
 8. **Keep the horizon map separate from the reciprocal ansatz.** The relation \(a=1/r\) defines the proposed scale correspondence. It does not by itself construct a junction between Bob's and Alice's four-geometries.
 9. **Keep the galaxy theorem separate from the horizon correspondence.** The square-root theorem selects \(g_{\rm mix}=\kappa\sqrt{g_NA}\) after a global acceleration \(A\) is supplied. The additional identification \(A=cH_A\) is a proposed CSBHI correspondence, not a consequence of the theorem.
+10. **Declare overloaded symbols locally.** A symbol may carry different meanings in disjoint calculations, but every paper must identify the local meaning at first use. In particular, \(q\), \(a\), and \(\Gamma\) have known project collisions recorded below.
 
 ## 2. Canonical symbol reference
 
@@ -44,7 +45,8 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 |---|---|
 | \(c\) | Speed of light in vacuum. Setting \(c=1\) expresses time and length in the same units. |
 | \(G\) | Newton's gravitational constant. Setting \(G=1\) expresses mass in geometric length units. |
-| \(M\) | Parent black-hole mass parameter. GD1 chooses \(2M=1\). |
+| \(M_{\rm parent}\) | Physical mass of the parent collapsing object or black hole. This avoids collision with common Planck-mass notation. |
+| \(M\) | Local geometrized mass parameter when a calculation makes the context explicit. GD1 chooses \(2M=1\). Do not use \(M_P\) for parent mass; it is widely read as Planck mass. |
 | \(ds^2\) | Infinitesimal spacetime interval defined by the metric. |
 | \(g_{\mu\nu}\) | Spacetime metric tensor. Greek indices label spacetime components. |
 | \(R_{\mu\nu}\) | Ricci curvature tensor. |
@@ -64,7 +66,7 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(H_{A,H}\) | Alice's expansion rate at the parent black-hole crossing event, where \(a=r=1\). |
 | \(\eta\) | Alice's conformal time, defined by \(d\eta=d\tau/a\). |
 | \(k\) | FLRW spatial-curvature parameter. The primary reciprocal interior is spatially flat, \(k=0\). |
-| \(q\) | Deceleration parameter, \(q=-\ddot a/(aH_A^2)\). |
+| \(q\) | Deceleration parameter, \(q=-\ddot a/(aH_A^2)\). Formation calculations also use \(q\) as a matter-shell coordinate; those papers must declare the local use, and \(q_0\) in a cosmological ledger means present deceleration. |
 | \(d\Omega^2\) | Angular line element on a unit two-sphere. |
 | \(V_\alpha,V_H\) | Volume Alice measures for her probe cloud and its value at the parent black-hole crossing event. |
 | \(\Theta\) | Expansion scalar of Alice's probe congruence; in the FLRW interior, \(\Theta=3H_A\). |
@@ -85,13 +87,16 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(\Omega_i\) | Density of component \(i\) divided by the critical density at the stated epoch. |
 | \(H_0\) | Present measured Hubble parameter. |
 | \(H_\Lambda\) | Constant expansion rate of the asymptotic de Sitter limit. |
+| \(R_{\rm dS}\) | Canonical child asymptotic de Sitter curvature radius, \(R_{\rm dS}=c/H_\Lambda=\sqrt{3/\Lambda}\). Older notes may use \(R_\Lambda\), \(L\), or \(\ell_{\rm dS}\) for the same length. |
+| \(\eta_m,\eta_r\) | Project-specific present matter-to-vacuum and radiation-to-vacuum inheritance ratios. They are inputs until the formation map derives them. |
 | \(z\) | Cosmological redshift, with \(1+z=a_{\rm obs}/a_{\rm em}\). |
 | \(E(z)\) | Dimensionless expansion history, \(E(z)=H_A(z)/H_0\). |
 | \(g_N\) | Local Newtonian acceleration sourced by the baryonic mass distribution. |
 | \(A\) | Unspecified global acceleration supplied to the conditional square-root mixing theorem. |
 | \(g_{\rm mix}\) | Mixed local–global acceleration selected by the theorem, \(g_{\rm mix}=\kappa\sqrt{g_NA}\). |
-| \(\kappa\) | Dimensionless normalization of the square-root mixing law. Its first-principles value remains open. |
+| \(\kappa_g\) | Dimensionless normalization of the galaxy square-root mixing law. Older notes may use bare \(\kappa\); the subscript distinguishes it from unrelated gravitational and geometric uses. Its first-principles value remains open. |
 | \(g_\dagger(z)\) | Effective galactic acceleration scale at redshift \(z\). CSBHI proposes \(g_\dagger(z)\propto cH_A(z)\); the normalized prediction is \(g_\dagger(z)/g_\dagger(0)=E(z)\). |
+| \(a_0\) | Conventional MOND symbol for the acceleration constant. CSBHI uses \(g_\dagger\) in cross-project writing because \(a\) already denotes the cosmological scale factor. |
 
 ### Horizon and throat symbols
 
@@ -105,9 +110,10 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(R_e\) | Present cosmological event-horizon radius in GD1. Thus \(R_e=B_0\). |
 | \(R_p\) | Present particle-horizon radius. |
 | \(\bar R_p(\tau)\) | Time-dependent particle-horizon areal radius in the collapse-cohort notes; \(\bar R_p(\tau_0)=R_p\). |
-| \(R_\Lambda\) | De Sitter curvature radius, \(R_\Lambda=c/H_\Lambda=\sqrt{3/\Lambda}\). In exact de Sitter space it also equals the observer's apparent- and event-horizon radii. |
+| \(R_\Lambda\) | Legacy/cosmology-specific notation for the de Sitter curvature radius. Cross-project summaries use \(R_{\rm dS}\). |
 | \(R_{\Lambda,P},R_{\Lambda,C}\) | Parent- and child-universe de Sitter curvature radii in the recursive Kottler notes. For the child identified with our observed cosmology, \(R_{\Lambda,C}=R_\Lambda\). These symbols replace the visually ambiguous \(R_P\) and \(R_C\); \(R_p\) remains reserved for the particle horizon. |
-| \(L\) | The invariant asymptotic curvature scale used in the 5D throat programme. In the exact de Sitter limit, \(L=R_\Lambda\). |
+| \(L\) | Compatibility alias used in the 5D throat programme and earlier parameter-cascade drafts. When it denotes the child de Sitter length, \(L\equiv R_{\rm dS}\). |
+| \(\Gamma\) | Canonical conformal factor in formation work, \(g^C_{ab}=\Gamma^2g^P_{ab}\). Some local Misner–Sharp calculations also use \(\Gamma=D_\ell R\); such a paper must declare that collision and should prefer another symbol in cross-note summaries. |
 | \(\mathcal H\) | A generic null observer-causal horizon considered in the throat construction. It is a hypersurface, not a radius; final calculations should replace it with the specific horizon being studied. |
 | \(\Sigma\) | A candidate matching hypersurface or finite matching history. It is not automatically null and must not be called an event horizon unless its causal character has been derived. |
 | \(v_H\) | Physically normalized parameter along a parent black-hole event-horizon generator in the collapse-cohort programme. |
