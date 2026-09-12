@@ -195,14 +195,14 @@
   .formation-prose,
   .formation-wide {
     scroll-margin-top: 2rem;
+    font-size: clamp(1.03rem, 1.7vw, 1.14rem);
+    line-height: 1.72;
   }
 
   .formation-prose {
     max-width: var(--formation-prose);
     margin: 0 auto;
     padding-bottom: clamp(5rem, 11vw, 9rem);
-    font-size: clamp(1.03rem, 1.7vw, 1.14rem);
-    line-height: 1.72;
   }
 
   .formation-wide {
@@ -245,8 +245,8 @@
   .section-opening,
   .formation-wide__intro {
     max-width: 46rem;
-    font-size: clamp(1.18rem, 2.3vw, 1.4rem);
-    line-height: 1.58;
+    font-size: inherit;
+    line-height: inherit;
   }
 
   .formation-callout {
@@ -271,11 +271,59 @@
     text-transform: uppercase;
   }
 
+  .cohort-grid,
+  .weyl-balance {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 3rem;
+    border-block: 1px solid var(--formation-rule);
+  }
+
+  .cohort-grid article,
+  .weyl-balance article {
+    min-width: 0;
+    padding: clamp(1.4rem, 4vw, 2.3rem);
+  }
+
+  .cohort-grid article + article,
+  .weyl-balance article + article {
+    border-left: 1px solid var(--formation-rule);
+  }
+
+  .cohort-grid__label {
+    margin: 0;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .cohort-grid h3,
+  .weyl-balance h3 {
+    margin: 0.45rem 0 1.2rem;
+    font-size: 1.55rem;
+  }
+
+  .cohort-grid article > p:last-child,
+  .weyl-balance article > p:last-child {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
   .architecture {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 2.5rem minmax(0, 1fr) 2.5rem minmax(0, 1fr);
     margin-top: 3rem;
     align-items: stretch;
+  }
+
+  .architecture__definition {
+    max-width: 46rem;
+    margin-top: 1.2rem;
+    color: var(--muted);
   }
 
   .architecture__stage {
@@ -380,6 +428,66 @@
     line-height: 1.4;
   }
 
+  .architecture__narrative {
+    max-width: 48rem;
+    margin: 2.5rem auto 0;
+  }
+
+  .technical-detail--wide {
+    max-width: 52rem;
+    margin-inline: auto;
+  }
+
+  .throat-order {
+    display: grid;
+    grid-template-columns: 1fr 2rem 1fr 2rem 1fr;
+    max-width: 52rem;
+    margin: clamp(3rem, 7vw, 5rem) auto;
+    align-items: center;
+    border-block: 1px solid var(--formation-rule);
+  }
+
+  .throat-order > div:not(.throat-order__relation) {
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .throat-order span,
+  .throat-order strong,
+  .throat-order small {
+    display: block;
+  }
+
+  .throat-order span {
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 0.61rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  .throat-order strong {
+    margin-block: 0.5rem;
+    font-size: 1.45rem;
+    font-weight: 400;
+  }
+
+  .throat-order small {
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .throat-order__relation {
+    color: var(--muted);
+    font-family: var(--mono);
+    text-align: center;
+  }
+
+  .formation-prose--nested {
+    padding-bottom: 0;
+  }
+
   .campaign-ledger {
     margin-top: 2.5rem;
     border-top: 1px solid var(--formation-rule);
@@ -428,6 +536,16 @@
   .formation-prose blockquote {
     margin: 3rem 0;
     padding: 0 0 0 1.5rem;
+    border-left: 1px solid currentColor;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    line-height: 1.35;
+  }
+
+  .formation-thesis {
+    max-width: 48rem;
+    margin: clamp(3rem, 7vw, 5rem) auto 0;
+    padding-left: 1.5rem;
     border-left: 1px solid currentColor;
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(1.35rem, 3vw, 2rem);
@@ -577,6 +695,33 @@
     border-left: 1px solid var(--formation-rule);
   }
 
+  .weyl-balance {
+    margin-block: 2.5rem;
+  }
+
+  .weyl-balance article:first-child {
+    background: color-mix(in srgb, var(--status-geometric-result) 4%, transparent);
+  }
+
+  .weyl-balance article:last-child {
+    background: color-mix(in srgb, var(--status-candidate) 5%, transparent);
+  }
+
+  .weyl-balance .epistemic {
+    margin-bottom: 0;
+  }
+
+  .formation-campaign {
+    padding: clamp(2rem, 6vw, 4.5rem);
+    border-block: 1px solid var(--formation-rule);
+  }
+
+  .campaign-caveat {
+    max-width: 47rem;
+    margin: 2rem auto 0;
+    color: var(--muted);
+  }
+
   .radiation-signatures {
     margin-block: 2rem;
   }
@@ -708,13 +853,17 @@
 @layer responsive {
   @media (max-width: 860px) {
     .formation-status,
+    .cohort-grid,
     .scale-dictionary,
+    .weyl-balance,
     .knowledge-grid {
       grid-template-columns: 1fr;
     }
 
     .formation-status p + p,
+    .cohort-grid article + article,
     .scale-dictionary article + article,
+    .weyl-balance article + article,
     .knowledge-grid section + section {
       border-top: 1px solid var(--formation-rule);
       border-left: 0;
@@ -757,6 +906,15 @@
     .gamma-core > div + div {
       border-top: 1px solid var(--formation-rule);
       border-left: 0;
+    }
+
+    .throat-order {
+      grid-template-columns: 1fr;
+    }
+
+    .throat-order__relation {
+      min-height: 2rem;
+      transform: rotate(90deg);
     }
   }
 
@@ -802,6 +960,11 @@
     }
 
     .formation-scale {
+      padding-inline: 0;
+      border-block: 0;
+    }
+
+    .formation-campaign {
       padding-inline: 0;
       border-block: 0;
     }

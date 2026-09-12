@@ -25,11 +25,11 @@ const DOCUMENTS = {
     prerequisite: 'gd1',
     meta: {
       publications: 'guided formation-campaign synthesis',
-      technical: 'reader’s guide · revised after consistency audit',
+      technical: 'reader’s guide · current synthesis',
     },
     summaries: {
       publications: 'A reader-first account of the GD2 formation campaign: the event horizon carries causal history, the trapping geometry carries local collapse data, and the mature dual scale carries the Friedmann continuation. Established geometry, conditional identifications, and open throat construction are labeled separately.',
-      technical: 'Synthesizes the collapse ladder, trapping-horizon pair, Weyl-flat handoff diagnostic, mature Gamma dynamics, conditional radiation selection, and the remaining timelike/null throat map without restoring isometric horizon matching.',
+      technical: 'Synthesizes the birth-cone benchmark, trapping-horizon pair, low-Weyl background with a nonzero perturbative residue, mature Gamma dynamics, conditional radiation selection, and the remaining timelike/null throat map.',
     },
   },
   ri1: {
