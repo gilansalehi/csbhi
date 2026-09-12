@@ -1,0 +1,63 @@
+.glossary-page__header {
+  margin-block: clamp(3rem, 8vw, 6rem) clamp(4rem, 9vw, 7rem);
+  text-align: center;
+}
+
+.glossary-page__header h1 {
+  max-width: none;
+  margin-block: 0.55rem 1rem;
+  font-size: clamp(2.6rem, 8vw, 5rem);
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.glossary-page__header > p:last-child {
+  max-width: 43rem;
+  margin-inline: auto;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.glossary-page #constants {
+  display: block;
+  margin-bottom: clamp(5rem, 11vw, 9rem);
+}
+
+.glossary-reference {
+  margin-top: clamp(4rem, 10vw, 8rem);
+}
+
+.glossary-reference__header {
+  margin-bottom: 3rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+}
+
+.glossary-reference__header h2 {
+  margin-bottom: 0.55rem;
+}
+
+.glossary-reference__header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+#glossary-note-content {
+  counter-reset: none;
+}
+
+#glossary-note-content > hr:first-child {
+  display: none;
+}
+
+#glossary-note-content h2 {
+  margin-top: clamp(3.5rem, 8vw, 6rem);
+}
+
+#glossary-note-content h3 {
+  margin-top: 2.5rem;
+}
+
+#glossary-note-content table {
+  font-size: 0.88rem;
+}

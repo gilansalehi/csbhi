@@ -10,7 +10,7 @@ const GROUPS = [
     items: [
       note('A Note to Reviewers', 'review_packet_introduction'),
       note('AI Collaborator Onboarding and Review Protocol', 'ai_collaborator_onboarding'),
-      note('CSBHI Cosmological Glossary', 'cosmological_glossary'),
+      page('CSBHI Constants & Cosmological Glossary', 'glossary'),
       note('What Remains Mathematically Illegible', 'open_questions'),
       note('Geometric Duality Research Roadmap', 'gd_research_roadmap'),
       document('formationSynthesis'),

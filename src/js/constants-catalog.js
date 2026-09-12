@@ -34,7 +34,6 @@ const card = ({
     statusLabel,
     epistemicCode: `[${epistemic.code}]`,
     epistemicLabel: epistemic.label,
-    epistemicAria: `Epistemic status: ${epistemic.label}, ${epistemic.code}`,
     note,
     sourceLabel,
     sourceHref,
@@ -368,16 +367,16 @@ const groups = [
         note: String.raw`The mature dual scale \(\Gamma_{\rm GD}\) does not by itself fix this lapse. A local Weyl factor would determine proper-time scaling only after the throat identifies the relevant mapped timelike curve.`,
       }),
       cascade({
-        symbol: String.raw`\(K(q)\)`,
+        symbol: String.raw`\(K_{\rm form}(q)\)`,
         name: String.raw`Formation calibration`,
         value: String.raw`Relation to throat scales open`,
         relation: String.raw`Earlier shell-based form of the absolute formation calibration.`,
         status: String.raw`open`,
         statusLabel: String.raw`open GD2 closure`,
-        note: String.raw`Its relation to the mature ruler scale \(\Gamma_{\rm GD}\), the local Weyl factor \(\Omega_{\rm W}\), and the minimal hypothesis \(K(q)=K_0\) has not been derived.`,
+        note: String.raw`Earlier formation notes write this as \(K(q)\). Cross-project use adds the subscript to avoid collision with the Kretschmann scalar. Its relation to \(\Gamma_{\rm GD}\), \(\Omega_{\rm W}\), and the minimal hypothesis \(K_{\rm form}(q)=K_0\) has not been derived.`,
       }),
       cascade({
-        symbol: String.raw`\(\Gamma\)`,
+        symbol: String.raw`\(\Gamma_{\rm GD}\)`,
         name: String.raw`Mature dual scale separation`,
         value: String.raw`Dynamics closed after handoff`,
         relation: String.raw`\(\Gamma_{\rm GD}=a^2=r^{-2}\).`,
@@ -411,17 +410,16 @@ const groups = [
   },
 ];
 
-let catalogNumber = 0;
+let catalogIndex = 0;
 const indexedGroups = groups.map(group => ({
   ...group,
   cards: group.cards.map(entry => {
-    catalogNumber += 1;
+    catalogIndex += 1;
     return {
       ...entry,
-      catalogNumber: String(catalogNumber).padStart(2, '0'),
-      catalogId: `constant-${catalogNumber}`,
+      catalogId: `constant-${catalogIndex}`,
       catalogGroup: group.title,
-      openLabel: `Open details for ${entry.name}`,
+      openLabel: `Open details for ${entry.name}; epistemic status: ${entry.epistemicLabel}`,
     };
   }),
 }));

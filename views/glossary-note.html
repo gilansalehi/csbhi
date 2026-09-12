@@ -1,0 +1,80 @@
+<script type="module" data-module="@csbhi/glossary-note">
+  import { flush } from 'data-wrapper';
+
+  const escapeHtml = value => String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+
+  const protectMath = source => {
+    const mathBlocks = [];
+    const stash = match => {
+      const token = `@@GD_MATH_${mathBlocks.length}@@`;
+      mathBlocks.push(match);
+      return token;
+    };
+
+    return {
+      source: source
+        .replace(/\\\[[\s\S]*?\\\]/g, stash)
+        .replace(/\\\([\s\S]*?\\\)/g, stash),
+      mathBlocks,
+    };
+  };
+
+  const restoreMath = (html, mathBlocks) => html.replace(
+    /@@GD_MATH_(\d+)@@/g,
+    (_, index) => mathBlocks[Number(index)] || '',
+  );
+
+  const stripDocumentHeader = source => source.replace(
+    /^# CSBHI Cosmological Glossary\s+\*Project terminology reference\*\s+\*\*Author:\*\*[^\n]*\n+/,
+    '',
+  );
+
+  export default () => {
+    let content = '<p>Loading terminology reference…</p>';
+
+    const loadGlossary = async () => {
+      try {
+        const response = await fetch('notes/cosmological_glossary.md');
+        if (!response.ok) throw new Error('notes/cosmological_glossary.md not found');
+
+        const markdown = window.markdownit({
+          html: false,
+          linkify: true,
+          typographer: false,
+        });
+        const protectedDocument = protectMath(stripDocumentHeader(await response.text()));
+        content = restoreMath(
+          markdown.render(protectedDocument.source),
+          protectedDocument.mathBlocks,
+        );
+        flush();
+
+        await window.MathJax.startup.promise;
+        await window.MathJax.typesetPromise([document.querySelector('#glossary-note-content')]);
+      } catch (error) {
+        content = `
+          <p>Could not load the terminology reference.</p>
+          <pre>${escapeHtml(error.message)}</pre>
+        `;
+        flush();
+      }
+    };
+
+    queueMicrotask(loadGlossary);
+
+    return {
+      get content() { return content; },
+    };
+  };
+</script>
+
+<section class="glossary-reference" aria-labelledby="terminology-reference-title">
+  <header class="glossary-reference__header">
+    <h2 id="terminology-reference-title">Terminology Reference</h2>
+    <p>The canonical notation and plain-language vocabulary used across the project.</p>
+  </header>
+  <article id="glossary-note-content" $unsafeHTML="content"></article>
+</section>

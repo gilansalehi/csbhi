@@ -53,12 +53,9 @@
       get activeName() { return activeCard.name; },
       get activeValue() { return activeCard.value; },
       get activeRelation() { return activeCard.relation; },
-      get activeStatus() { return activeCard.status; },
       get activeStatusLabel() { return activeCard.statusLabel; },
       get activeEpistemicCode() { return activeCard.epistemicCode; },
       get activeEpistemicLabel() { return activeCard.epistemicLabel; },
-      get activeEpistemicAria() { return activeCard.epistemicAria; },
-      get activeCatalogNumber() { return activeCard.catalogNumber; },
       get activeCatalogGroup() { return activeCard.catalogGroup; },
       get activeHasNote() { return activeCard.hasNote; },
       get activeNote() { return activeCard.note; },
@@ -74,16 +71,16 @@
   <details open>
     <summary $text="summary"></summary>
 
-    <div class="constants-ledger__key" aria-label="Epistemic badge key">
-      <span data-epistemic="E"><b>[E]</b> Established</span>
-      <span data-epistemic="P"><b>[P]</b> Prior-art benchmark</span>
-      <span data-epistemic="C"><b>[C]</b> Conditional</span>
-      <span data-epistemic="O"><b>[O]</b> Open</span>
+    <div class="constants-ledger__key" aria-label="Epistemic color key">
+      <span data-epistemic="E">Established</span>
+      <span data-epistemic="P">Prior-art benchmark</span>
+      <span data-epistemic="C">Conditional</span>
+      <span data-epistemic="O">Open</span>
     </div>
 
     <p class="constants-ledger__epistemic-note">
-      Badges use the project’s epistemic notation. They classify the standing of each entry rather than assigning a
-      numerical certainty score. Select any tile to open its definition, relation, caveat, and source.
+      Hover and keyboard focus use the project’s epistemic colors. Each entry states its classification in full and
+      opens to reveal its definition, relation, caveat, and source.
     </p>
 
     <div class="constants-ledger__groups">
@@ -104,16 +101,9 @@
                   $data-constant-id="./catalogId"
                   $aria-label="./openLabel"
                   aria-haspopup="dialog">
-                <span class="constant-card__number" $text="./catalogNumber"></span>
-                <span class="constant-card__badge" $aria-label="./epistemicAria" $text="./epistemicCode"></span>
                 <span class="constant-card__name" $text="./name"></span>
                 <span class="constant-card__symbol" $text="./symbol"></span>
-                <span class="constant-card__value-label">Current value</span>
                 <span class="constant-card__value" $text="./value"></span>
-                <span class="constant-card__footer">
-                  <span class="constant-card__status" $text="./statusLabel"></span>
-                  <span aria-hidden="true">Open entry ↗</span>
-                </span>
               </button>
             </template>
           </div>
@@ -124,7 +114,6 @@
 
   <dialog class="constant-dialog"
       aria-labelledby="constant-dialog-title"
-      $data-status="activeStatus"
       $data-epistemic="activeEpistemicCode"
       @click="dismissDetails">
     <article class="constant-dialog__panel">
@@ -132,11 +121,9 @@
         ×
       </button>
       <header class="constant-dialog__header">
-        <span class="constant-dialog__number" $text="activeCatalogNumber"></span>
-        <span class="constant-dialog__badge" $aria-label="activeEpistemicAria" $text="activeEpistemicCode"></span>
-        <div class="constant-dialog__symbol" $text="activeSymbol"></div>
         <p class="constant-dialog__group" $text="activeCatalogGroup"></p>
         <h3 id="constant-dialog-title" $text="activeName"></h3>
+        <div class="constant-dialog__symbol" $text="activeSymbol"></div>
       </header>
       <dl class="constant-dialog__ledger">
         <div>

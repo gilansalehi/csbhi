@@ -45,6 +45,8 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 |---|---|
 | \(c\) | Speed of light in vacuum. Setting \(c=1\) expresses time and length in the same units. |
 | \(G\) | Newton's gravitational constant. Setting \(G=1\) expresses mass in geometric length units. |
+| \(\hbar\) | Reduced Planck constant, \(h/(2\pi)\). |
+| \(k_B\) | Boltzmann constant. The subscript distinguishes it from geometric uses of \(k\). |
 | \(M_{\rm parent}\) | Physical mass of the parent collapsing object or black hole. This avoids collision with common Planck-mass notation. |
 | \(M\) | Local geometrized mass parameter when a calculation makes the context explicit. GD1 chooses \(2M=1\). Do not use \(M_P\) for parent mass; it is widely read as Planck mass. |
 | \(ds^2\) | Infinitesimal spacetime interval defined by the metric. |
@@ -52,7 +54,8 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(R_{\mu\nu}\) | Ricci curvature tensor. |
 | \(\mathcal R\) | Ricci scalar, obtained by contracting the Ricci tensor. |
 | \(C_{\alpha\beta\gamma\delta}\) | Weyl curvature tensor, the trace-free tidal part of spacetime curvature. |
-| \(\mathcal W\equiv C_{\alpha\beta\gamma\delta}C^{\alpha\beta\gamma\delta}\) | Quadratic Weyl curvature invariant used in the curvature-ledger notes. |
+| \(\mathcal W_2\equiv C_{\alpha\beta\gamma\delta}C^{\alpha\beta\gamma\delta}\) | Quadratic Weyl curvature invariant used in curvature ledgers. Older notes may use bare \(\mathcal W\). |
+| \(\mathcal W_{\rm sph}\) | Spherical electric-Weyl amplitude, commonly normalized as \(m/R^3-4\pi\rho/3\) for a perfect fluid. Formation notes may define it locally as bare \(\mathcal W\); cross-project summaries retain the subscript because it is not the quadratic invariant \(\mathcal W_2\). |
 | \(K\) | Kretschmann scalar, \(R_{\alpha\beta\gamma\delta}R^{\alpha\beta\gamma\delta}\). |
 | \(t\) | Coordinate time. Its specific meaning depends on the chart and is stated in context. |
 | \(\tau\) | Alice's proper time; in her FLRW description it is also cosmic time. |
@@ -88,8 +91,19 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(H_0\) | Present measured Hubble parameter. |
 | \(H_\Lambda\) | Constant expansion rate of the asymptotic de Sitter limit. |
 | \(R_{\rm dS}\) | Canonical child asymptotic de Sitter curvature radius, \(R_{\rm dS}=c/H_\Lambda=\sqrt{3/\Lambda}\). Older notes may use \(R_\Lambda\), \(L\), or \(\ell_{\rm dS}\) for the same length. |
+| \(t_\Lambda\) | Asymptotic de Sitter timescale, \(t_\Lambda=H_\Lambda^{-1}=R_{\rm dS}/c\). |
+| \(a_\Lambda\) | De Sitter curvature-acceleration scale, \(a_\Lambda=cH_\Lambda=c^2/R_{\rm dS}\). The subscript is mandatory because bare \(a\) is the scale factor. |
+| \(A_{\rm dS}\) | Area of the child de Sitter horizon, \(A_{\rm dS}=4\pi R_{\rm dS}^2\). It is distinct from the generic acceleration \(A\) in the galaxy theorem. |
+| \(V_A\) | Areal volume \(4\pi R_{\rm dS}^3/3\) used in the homogeneous Misner–Sharp mass. It is not the proper volume of a static-patch slice and is unrelated to \(V_\alpha\). |
+| \(V_{\rm proper}\) | Proper volume \(\pi^2R_{\rm dS}^3\) of a constant-static-time de Sitter slice. |
+| \(M_{\rm dS}\) | Child de Sitter Misner–Sharp mass, \(c^2R_{\rm dS}/(2G)\). It is not identified with \(M_{\rm parent}\). |
+| \(T_{\rm dS}\) | Gibbons–Hawking temperature of the child de Sitter horizon. |
+| \(S_{\rm dS}\) | Bekenstein–Hawking entropy of the child de Sitter horizon. |
 | \(\eta_m,\eta_r\) | Project-specific present matter-to-vacuum and radiation-to-vacuum inheritance ratios. They are inputs until the formation map derives them. |
+| \(\mathcal J\) | Normalization-independent matter–radiation ledger invariant, \(\mathcal J=\eta_r^3/\eta_m^4\). Its observed-background value is a target, not yet a parent-side prediction. |
 | \(z\) | Cosmological redshift, with \(1+z=a_{\rm obs}/a_{\rm em}\). |
+| \(z_{m\Lambda},z_{mr},z_{r\Lambda}\) | Matter–vacuum, matter–radiation, and radiation–vacuum equality redshifts. The paired subscripts are retained because bare “equality” is ambiguous. |
+| \(z_{\rm acc}\) | Redshift of the deceleration-to-acceleration transition. |
 | \(E(z)\) | Dimensionless expansion history, \(E(z)=H_A(z)/H_0\). |
 | \(g_N\) | Local Newtonian acceleration sourced by the baryonic mass distribution. |
 | \(A\) | Unspecified global acceleration supplied to the conditional square-root mixing theorem. |
@@ -104,6 +118,9 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 |---|---|
 | \(R_S\) | Schwarzschild radius of Bob's parent black hole. For an isolated nonrotating black hole, it is the areal radius of the black-hole event horizon. |
 | \(R_{\rm BH}(v_H)\) | Areal radius of a cross-section of a dynamical parent black-hole event horizon. It reduces to \(R_S\) in the stationary Schwarzschild limit. |
+| \(R_E\) | Areal radius of the global parent event horizon during formation. It is distinct from the child cosmological-event-horizon radius \(R_e\). |
+| \(R_+,R_-\) | Outward- and inward-moving branches of a trapping-horizon pair in spherical collapse. The proposal \(r=R_-/R_b\) remains a theorem target. |
+| \(R_b\) | Areal radius at the first creation of a trapping-horizon pair, where \(R_+=R_-=R_b\). |
 | \(R_A(\tau)\) | Alice's FLRW apparent-horizon radius. In the spatially flat case, \(R_A=c/H_A\). |
 | \(R_H\) | Present Hubble radius, \(R_H=c/H_0\). In the spatially flat background, \(R_H=R_{A0}\). The project reserves \(R_H\) for the present value rather than a general time-dependent radius. |
 | \(B(\tau)\) | Areal radius of Alice's cosmological event horizon in the dynamical-throat notes. The future boundary condition, not the radial null equation alone, selects this particular null surface. |
@@ -116,10 +133,15 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(\Gamma_{\rm GD}\) | Mature dual ruler-scale separation, \(\Gamma_{\rm GD}=\ell_C/\ell_P=a^2=r^{-2}\), after the reciprocal handoff is normalized. It is not automatically a four-metric Weyl factor or a null affine-transfer factor. |
 | \(\Omega_{\rm W}\) | Local four-metric Weyl factor in formation work, \(g^C_{ab}=\Omega_{\rm W}^2g^P_{ab}\). Its relation to \(\Gamma_{\rm GD}\) must be derived by the throat geometry. |
 | \(\Gamma=D_\ell R\) | Calculation-local Misner–Sharp radial derivative. This collides with the historical project use of big Gamma, so the subscripted \(\Gamma_{\rm GD}\) or another local symbol is mandatory in cross-note summaries. |
+| \(K_{\rm form}(q)\) | Shell-dependent absolute formation calibration. Earlier notes use \(K(q)\); the subscript avoids collision with the Kretschmann scalar \(K\). |
+| \(\mathcal R_+(r)\) | Conformally dressed outer trapping-horizon curve used in the conditional matter ledger. This notation avoids collision with GD1's infall function \(F(r)\). |
+| \(N_H\) | Parent–child cohort lapse, \(N_H=d\tau_C/dt_P\), once the mapped timelike histories are specified. |
+| \(\kappa_H\) | Hayward–Kodama surface gravity of a spherical trapping or apparent horizon. It is not the galaxy normalization \(\kappa_g\). |
 | \(\mathcal H\) | A generic null observer-causal horizon considered in the throat construction. It is a hypersurface, not a radius; final calculations should replace it with the specific horizon being studied. |
 | \(\Sigma\) | A candidate matching hypersurface or finite matching history. It is not automatically null and must not be called an event horizon unless its causal character has been derived. |
 | \(v_H\) | Physically normalized parameter along a parent black-hole event-horizon generator in the collapse-cohort programme. |
 | \(\Phi(v_H)\) | Candidate clock map assigning parent horizon progress to child conformal time and comoving radius through \(\eta=R=\Phi(v_H)\). |
+| \(\mathcal T(v_H)\) | Null affine-transfer function, \(d\lambda_C/d\lambda_P\), in the event-horizon clock map. It is not automatically \(\Omega_{\rm W}^2\) or \(\Gamma_{\rm GD}^2\). |
 | \(\Omega_\Sigma(v_H)\) | Legacy shell/null-surface notation for an angular scale transfer. A completed map must state how it relates to \(\Omega_{\rm W}\) and \(\Gamma_{\rm GD}\). |
 | \(r_h\) | A local symbol for a generic fixed horizon radius in a calculation. It should not replace the canonical symbols above in a final cross-note statement. |
 

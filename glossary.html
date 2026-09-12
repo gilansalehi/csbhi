@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" id="project-root">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The CSBHI constants ledger and cosmological glossary: canonical notation, definitions, current values, and epistemic status.">
+  <meta name="dcterms.modified" content="2026-09-12">
+  <meta name="project" content="Conformal Scaling of Black Hole Interiors">
+  <meta name="programme" content="Geometric Duality">
+  <meta name="scope" content="Constants ledger and canonical project glossary">
+  <link rel="canonical" href="https://www.gilansalehi.com/csbhi/glossary.html">
+  <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
+  <link rel="alternate" type="text/markdown" href="https://www.gilansalehi.com/csbhi/notes/cosmological_glossary.md"
+    title="CSBHI Cosmological Glossary in Markdown">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Constants &amp; Glossary | CSBHI</title>
+
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "data-wrapper": "https://data-wrapper.org/dist/data-wrapper.js",
+        "project/": "./src/js/"
+      }
+    }
+  </script>
+  <script src="https://data-wrapper.org/dist/data-wrapper.js" type="module"
+    data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
+    data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
+  <link href="src/css/index.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      startup: { typeset: false }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+
+<body class="glossary-page">
+  <a class="skip-link" href="#glossary-title">Skip to glossary</a>
+  <main>
+    <data-wrapper src="layout.html"></data-wrapper>
+
+    <header class="glossary-page__header">
+      <p class="page-meta">Project reference · September 2026</p>
+      <h1 id="glossary-title">Constants &amp; Glossary</h1>
+      <p>
+        A shared reference for the quantities, symbols, and geometric terms used throughout Geometric Duality.
+        The ledger records what is measured, derived, conditional, or open; the glossary fixes the language in
+        which those distinctions are stated.
+      </p>
+    </header>
+
+    <data-wrapper id="constants"
+      src="views/home/constants-and-parameters.html"
+      data-typeset-section></data-wrapper>
+
+    <data-wrapper id="glossary-note"
+      src="views/glossary-note.html"
+      data-typeset-section></data-wrapper>
+
+    <footer>
+      <data-wrapper src="contact.html"></data-wrapper>
+    </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
+  </main>
+</body>
+
+</html>
