@@ -123,6 +123,8 @@ The fold is regular in sigma=sqrt(t-t_b).
 
 This is a concrete candidate for the parent radial history underlying r:1->0. It has not been proved to equal Alice's timelike trajectory or to be the unique invariant realization of r.
 
+Two distinct issues live here. The choice of anchor surface is gauge: r=1 sits at the event horizon in GD1's Schwarzschild units, at first trapping in the fold expansion, and at the reciprocal handoff in the mature sector, and shifting it by r->lambda*r leaves ln a = -ln r, Gamma=a^2, J, N_m, and every logarithmic rate law unchanged. What is not gauge is that GD1's r is a coordinate along Alice's timelike worldline while R_- is the areal radius of a marginal hypersurface. No constant rescaling relates those, so a transport rule connecting the marginal branch to the infalling cohort is required, and it is OPEN.
+
 **Local handoff and low Weyl curvature**
 
 For a spatially flat FLRW child,
@@ -142,6 +144,8 @@ On a parent marginal sphere, 2m=R. The exactly homogeneous benchmark W_sph=0 giv
 
 in geometrized units and reproduces the functional flat-FLRW surface-gravity relation.
 
+First trapping and the homogeneous handoff are different events. Pair creation fixes 8 pi R_b^2 rho_b = 1, hence rho_mean = 3 rho_local there. The Weyl-flat benchmark fixes 8 pi R^2 rho = 3, hence rho_mean = rho_local. Both describe a marginal sphere, and the two conditions cannot hold on the same one: a Weyl-flat marginal sphere has D_l C = 2 Gamma_MS / R, so it is transversal and never a pair-creation event. Carrying the geometry from the first condition to the second is part of the open throat construction.
+
 Do not treat parent marginality as automatically becoming child marginality. Under a genuine local Weyl map,
 
     theta_C = Omega_W^-2 [theta_P + 2 k_P(ln Omega_W)]
@@ -157,6 +161,8 @@ Exact zero Weyl is the homogeneous background benchmark, not the realistic pertu
     W_sph = O(R_E^2).
 
 Slow rotation permits additional higher-order structure and possible O(chi^2) preferred-axis memory. The physical target is a low-Weyl, nearly isotropic handoff with calculable perturbations.
+
+The two marginal conditions above sit at opposite ends of the inward branch. At pair creation the normalized amplitude is (rho_mean - rho_local)/rho_local = 2; at a regular center it falls to zero, which is the W_sph = O(R_E^2) statement. Which end supplies the child's birth data is therefore the same question as where the handoff sits, and it is open. The recursive low-Weyl branch depends on that answer.
 
 **Three transfer quantities that must remain distinct**
 
@@ -213,7 +219,7 @@ and
     dot(Gamma)^2 / (4 H_Lambda^2)
       = Gamma^2 + eta_m sqrt(Gamma) + eta_r.
 
-Radiation is linear in Gamma because its stress-energy trace vanishes. Matter gives Gamma proportional to tau_C^(4/3), and vacuum gives Gamma proportional to exp(2 H_Lambda tau_C).
+Radiation has vanishing stress-energy trace, so Gamma is linear in child proper time. Matter gives Gamma proportional to tau_C^(4/3), and vacuum gives Gamma proportional to exp(2 H_Lambda tau_C).
 
 Here eta_m and eta_r are the matter-to-vacuum and radiation-to-vacuum coefficients in the chosen scale-factor normalization. With the observational convention a_0=1, they equal the present density ratios.
 
@@ -246,6 +252,8 @@ A stationary mapped parent ruler therefore selects w_eff=1/3. Radiation also sat
     kappa_A R_A = 0,
 
 and the radiation-era flat-FLRW apparent horizon is null.
+
+The same relation fixes what happens afterward: the mapped ruler is stationary only while w_eff=1/3, and it contracts once the child becomes matter- and then vacuum-dominated, by a factor sqrt(Omega_r) between a radiation-era handoff and today. The selection therefore applies to the handoff epoch, not to a parent ruler held fixed across the whole child history.
 
 This is a promising conditional selection result. The throat has not yet established the ruler correspondence, time map, low-Weyl/isotropic handoff, or stress-energy transfer required by its premises.
 

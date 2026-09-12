@@ -30,6 +30,8 @@ The limit \(r\to0\) therefore corresponds to the already-born child's remote fut
 
 Given a homogeneous, isotropic reciprocal branch, Einstein's equations, and specified matter, radiation, and vacuum components, the child obeys the standard spatially flat Friedmann equations. GD does not replace that cosmology. It proposes a geometric origin for it.
 
+The reciprocal power is not a free choice once the exchange is assumed to be scale-free, horizon-fixing, involutive, and power-law. Writing \(a=r^{n}\) and applying the map twice gives \(r^{n^2}\), so involution requires \(n^2=1\), and \(n=1\) is the identity. The nontrivial solution is \(n=-1\). The argument is elementary; all of its content sits in the choice of class, and it fixes the form of the correspondence rather than establishing that nature realizes it.
+
 ---
 
 ## 2. The geometric sequence
@@ -350,6 +352,8 @@ a:1\rightarrow\infty.
 
 CSBHI proposes Equation (25) as the leading geometric identification to test. A complete throat solution must still show that this marginal branch supplies the timelike reciprocal history used by GD1, or derive the correct replacement.
 
+Two issues are easy to run together here, and only one of them is substantive. Where \(r=1\) sits is a gauge choice: GD1's Schwarzschild units put it at the event horizon, Equation (25) puts it at first trapping, and the mature sector anchors it at the handoff. Shifting the anchor by \(r\to\lambda r\) sends \(a\to\lambda^{-1}a\) and leaves \(\ln a=-\ln r\), \(\Gamma=a^2\), \(\mathcal J\), \(N_m\), and every logarithmic rate law exactly where they were; only \(\eta_m\) and \(\eta_r\) move, with weights three and four. What no rescaling can do is convert a coordinate on Alice's timelike worldline into the areal radius of a marginal hypersurface. That conversion needs a transport rule between the marginal branch and the infalling cohort, and supplying it is part of the open construction.
+
 ---
 
 ## 9. Local handoff data
@@ -391,6 +395,10 @@ On a parent marginal sphere, \(2m=R\). The exactly homogeneous benchmark \(\math
 \]
 
 and reproduces the functional FLRW surface-gravity relation (28). Exact zero Weyl is therefore a useful background handoff criterion.
+
+First trapping and this homogeneous handoff are different events. Equation (22) fixes \(8\pi R_b^2\rho_b=1\), so \(\bar\rho_b=3\rho_b\) at pair creation, while Equation (30) fixes \(8\pi R^2\rho=3\), so \(\bar\rho=\rho\). Both describe a marginal sphere and the two cannot hold on the same one: where \(\mathcal W_{\rm sph}=0\), the compactness satisfies \(D_\ell C=2\Gamma_{\rm MS}/R\neq0\), so that sphere is transversal rather than tangential and cannot be a pair-creation event. Carrying the geometry from Equation (22) to Equation (30) is part of the open throat construction.
+
+The two conditions also sit at opposite ends of the inward branch. The normalized amplitude \((\bar\rho-\rho)/\rho\) equals \(2\) at pair creation and falls to zero at a regular center, which is the content of Equation (31). Whether the child's birth data come from the first end or the second is therefore the same question as where the handoff sits, and the recursive low-Weyl programme depends on which answer the throat supplies.
 
 Realistic collapse is not expected to be exactly Weyl-free. Regular spherical density, pressure, shear, and dissipative corrections begin at controlled order near the birth center, with the scalar Weyl residue typically
 
@@ -498,6 +506,8 @@ If the throat supplies a parent ruler related to the child apparent horizon by \
 
 A stationary mapped ruler therefore selects \(w_{\rm eff}=1/3\). Together with \(T^\mu{}_\mu=0\), \(\ddot\Gamma=0\), \(\kappa_AR_A=0\), and the null character of the radiation-era FLRW apparent horizon, this makes radiation a distinguished handoff candidate. The ruler and time correspondences remain premises for the throat to derive.
 
+Equation (37) also settles what happens next. The mapped ruler is stationary only while \(w_{\rm eff}=1/3\); it contracts through matter and vacuum domination, by a factor \(\sqrt{\Omega_r}\) between a radiation-era handoff and the present. The selection therefore picks out the handoff epoch and does not describe a parent ruler held fixed across the child's whole history.
+
 ### Matter ledger
 
 If a completed conformal map produces a dimensionless dressed outer trapping curve \(\mathcal R_+(r)\) with
@@ -530,6 +540,29 @@ and
 
 This identifies a possible parent-side carrier of the total matter–radiation ledger. It does not yet derive its numerical value, and homogeneous geometry cannot separate particle species that share the same equation of state.
 
+### The galaxy branch
+
+One part of the programme develops independently of the formation track and reaches data first. Homogeneity, local–global exchange symmetry, and exact flat-curve scaling select the deep-regime mixing law
+
+\[
+g_{\rm mix}=\kappa_g\sqrt{g_N A},
+\tag{41}
+\]
+
+once a global acceleration \(A\) is supplied. The theorem fixes the square-root form; it does not supply \(A\), and that form has substantial MOND precedent.
+
+CSBHI identifies \(A\) with the contemporaneous child apparent-horizon acceleration \(cH_A\), with the fixed asymptotic alternative \(cH_\Lambda\) still under comparison. If the contemporaneous reading is right and \(\kappa_g\) is epoch-independent, the normalization cancels from the ratio and
+
+\[
+\boxed{
+\frac{g_\dagger(z)}{g_\dagger(0)}
+=\frac{H_A(z)}{H_0}.
+}
+\tag{42}
+\]
+
+This is the only prediction in the programme that current observation can decide, and it separates the two horizon readings without any fitted coefficient. The absolute normalization \(\kappa_g\) and the weak-field tensorial mechanism remain open.
+
 ### Singularity and the hot beginning
 
 The reciprocal limit \(r\to0\) occurs at the child's infinite future in the late de Sitter branch. CSBHI therefore does not identify the black-hole center with a cosmological beginning. Nor must the mature FLRW solution be extrapolated physically to \(a=0\): the hot child branch is proposed to begin at a finite formation handoff.
@@ -546,7 +579,9 @@ The reciprocal limit \(r\to0\) occurs at the child's infinite future in the late
 | Established collapse geometry | Dynamical event/trapping separation; generic spherical trapping-pair fold; regular near-center suppression of scalar inhomogeneity |
 | Exact analytic benchmark | Homogeneous OS collapse maps its event-horizon history to an outgoing child birth cone |
 | Leading formation proposals | \(r=R_-/R_b\); low-Weyl two-jet handoff; event-horizon birth cone as part of the child's global early causal boundary |
+| Theorem within a stated class | Scale-freedom, horizon-fixing, involution, and the power-law class select \(a=1/r\) |
 | Conditional theorem target | A stationary mapped parent ruler selects a radiation child |
+| Conditional prediction | \(g_\dagger(z)/g_\dagger(0)=H_A(z)/H_0\), if \(A=cH_A\) and \(\kappa_g\) is epoch-independent |
 | Open construction | One finite throat geometry deriving the timelike handoff, \(\Omega_{\rm W}\), \(\mathcal T\), the absolute scale, and the child stress-energy transfer |
 | Open phenomenology | Primordial spectra, residual Weyl and spin memory, thermal history, species abundances, and numerical parent-collapse coefficients |
 
@@ -576,7 +611,7 @@ The central open problem is therefore precise:
 \boxed{
 \text{Can realistic collapse generate one finite throat that supplies the required timelike, null, and scale-transfer data?}
 }
-\tag{41}
+\tag{43}
 \]
 
 If it can, the cosmological expansion history is not a second structure inserted into the black-hole interior. It is the reciprocal continuation of the formation geometry.
@@ -590,4 +625,6 @@ If it can, the cosmological expansion history is not a second structure inserted
 3. [Field Equations of the Reciprocal Interior](note.html?src=field_equations_of_the_reciprocal_interior) derives the conditional Friedmann dynamics.
 4. [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff) develops Equations (7)–(18) and the handoff two-jet.
 5. [The Conformal Dictionary and the Pre-FLRW Causal Interval](note.html?src=conformal_dictionary_and_pre_flrw_causal_interval) separates local Weyl scaling from mature ruler scaling and null affine transfer.
-6. [What Remains Mathematically Illegible](note.html?src=open_questions) records the current open construction problems.
+6. [The Reciprocal Ansatz as the Unique Scale-Free Horizon-Fixing Involution](reciprocal-involution.html) gives the class argument that fixes the reciprocal power.
+7. [The Evolving Galactic Acceleration-Scale Correspondence](note.html?src=evolving_g_dagger_derivation) and [its high-redshift test](note.html?src=evolving_acceleration_scale_high_z_test) develop the galaxy branch and the one prediction now open to observation.
+8. [What Remains Mathematically Illegible](note.html?src=open_questions) records the current open construction problems.
