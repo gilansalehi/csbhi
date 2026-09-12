@@ -99,7 +99,7 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(M_{\rm dS}\) | Child de Sitter Misner–Sharp mass, \(c^2R_{\rm dS}/(2G)\). It is not identified with \(M_{\rm parent}\). |
 | \(T_{\rm dS}\) | Gibbons–Hawking temperature of the child de Sitter horizon. |
 | \(S_{\rm dS}\) | Bekenstein–Hawking entropy of the child de Sitter horizon. |
-| \(\eta_m,\eta_r\) | Project-specific present matter-to-vacuum and radiation-to-vacuum inheritance ratios. They are inputs until the formation map derives them. |
+| \(\eta_m,\eta_r\) | Matter-to-vacuum and radiation-to-vacuum coefficients in the chosen normalization of \(a\). With the observational convention \(a_0=1\), they equal the present density ratios. They remain inputs until the formation map derives them. |
 | \(\mathcal J\) | Normalization-independent matter–radiation ledger invariant, \(\mathcal J=\eta_r^3/\eta_m^4\). Its observed-background value is a target, not yet a parent-side prediction. |
 | \(z\) | Cosmological redshift, with \(1+z=a_{\rm obs}/a_{\rm em}\). |
 | \(z_{m\Lambda},z_{mr},z_{r\Lambda}\) | Matter–vacuum, matter–radiation, and radiation–vacuum equality redshifts. The paired subscripts are retained because bare “equality” is ambiguous. |

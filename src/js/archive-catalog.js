@@ -8,6 +8,7 @@ const GROUPS = [
   {
     title: 'Project guides and context',
     items: [
+      note('CSBHI / Geometric Duality — A Compact Guide', 'csbhi_geometric_duality_compact_guide'),
       note('A Note to Reviewers', 'review_packet_introduction'),
       note('AI Collaborator Onboarding and Review Protocol', 'ai_collaborator_onboarding'),
       page('CSBHI Constants & Cosmological Glossary', 'glossary'),

@@ -42,8 +42,8 @@ R_dS = c / H_Lambda = sqrt(3 / Lambda)      [child de Sitter radius]
 Lambda = 3 H_Lambda^2 / c^2                 [de Sitter identity]
 g_mix = kappa_g sqrt(g_N A)                 [conditional mixing theorem]
 g_dagger(z)/g_dagger(0) = H_A(z)/H_0        [conditional prediction]
-Gamma_GD = a^2 = r^-2                       [mature dual ruler-scale separation]
-dotGamma_GD / Gamma_GD = 2 H                [mature scale-rate identity]
+Gamma = a^2 = r^-2                          [mature dual ruler-scale separation]
+dotGamma / Gamma = 2 H                      [mature scale-rate identity]
 g_C_ab = Omega_W^2 g_P_ab                   [local Weyl hypothesis]
 R_C = Omega_W R_P                           [local Weyl areal-radius transfer]
 dtau_C = Omega_W dtau_P                     [same locally mapped timelike curve]
@@ -55,7 +55,7 @@ J = eta_r^3 / eta_m^4                       [scale-normalization-invariant ledge
 
 Do not identify `r` with `R` or `bar_R`. Here `r(tau)` is Bob's horizon-normalized coordinate assigned along Alice's individual trajectory; `R` is Alice's comoving label; and `bar_R=aR` is Alice's areal radius. Keep the parent black-hole event horizon, parent cosmological horizon, child birth cone, child particle horizon, child apparent horizon, and child future cosmological event horizon distinct. The reciprocal normalization `a=1` at crossing is not the conventional present normalization; use `A=a/a_0` when importing present-normalized cosmology.
 
-Cross-project summaries use `R_dS` for the child asymptotic de Sitter curvature radius, `g_dagger` for the galaxy acceleration scale, `M_parent` for parent mass, `Gamma_GD` for the mature dual ruler-scale separation, and `Omega_W` for a local four-metric Weyl factor. Older or calculation-local documents may use `R_Lambda`, `L`, or `ell_dS` for the de Sitter length, `a_0` for a MOND acceleration, `M_P` for parent mass, or `Gamma=D_l R` in Misner–Sharp variables. Those are compatibility aliases or declared local collisions, not additional quantities.
+Cross-project summaries use `R_dS` for the child asymptotic de Sitter curvature radius, `g_dagger` for the galaxy acceleration scale, `M_parent` for parent mass, bare `Gamma` for the mature dual ruler-scale separation, `Omega_W` for a local four-metric Weyl factor, and `Gamma_MS=D_l R` for the traditional Misner–Sharp radial derivative. Older or calculation-local documents may use `R_Lambda`, `L`, or `ell_dS` for the de Sitter length, `a_0` for a MOND acceleration, `M_P` for parent mass, or bare `Gamma=D_l R` in Misner–Sharp variables. Those are compatibility aliases or declared local collisions, not additional quantities.
 
 The public site is statically hosted. Core papers contain their substantive text directly in HTML; the project overview and review packet compose some sections from static data-wrapper views. Research notes are also available as raw Markdown at the URLs below, so no JavaScript execution is required to read them. Equations use LaTeX notation.
 
@@ -86,6 +86,7 @@ When debugging your interpretation, use the guide's claim ledger and interpretat
 
 ## Project pages
 
+- [CSBHI / Geometric Duality — A Compact Guide](https://www.gilansalehi.com/csbhi/notes/csbhi_geometric_duality_compact_guide.md): Concise human-readable reference to the reciprocal law, layered formation architecture, mature Gamma dynamics, matter ledger, current claim hierarchy, and open throat construction.
 - [How Collapse Becomes Cosmology](https://www.gilansalehi.com/csbhi/formation.html): Reader-first synthesis of the GD2 formation campaign. It separates the event horizon, trapping-horizon pair, local Weyl factor, mature dual scale, and null affine transfer; labels established geometry, conditional identifications, and open construction work; and gives a guided path into the technical notes.
 - [Research Atlas](https://www.gilansalehi.com/csbhi/research-atlas.html): Comparative guide to the defects that motivate leading cosmological and quantum-gravity programs, the changes they propose, their explanatory gains, empirical contact, costs, and decisive tests. The theories are not numerically ranked.
 - [Research Atlas — General Relativity + Inflation + ΛCDM](https://www.gilansalehi.com/csbhi/lambda-cdm.html) — Start here: Defines the complete standard cosmological benchmark and the six open questions used to orient the alternative-theory profiles.
