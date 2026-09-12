@@ -18,6 +18,20 @@ const DOCUMENTS = {
       publications: 'The entry paper. Introduces the reciprocal map between Bob\'s infall coordinate and Alice\'s spatial scale, derives its matter–radiation–Λ consequences, and identifies its exact de Sitter endpoint.',
     },
   },
+  formationSynthesis: {
+    label: 'GD2 Synthesis',
+    title: 'How Collapse Becomes Cosmology',
+    page: 'formation',
+    prerequisite: 'gd1',
+    meta: {
+      publications: 'guided formation-campaign synthesis',
+      technical: 'reader’s guide · revised after consistency audit',
+    },
+    summaries: {
+      publications: 'A reader-first account of the GD2 formation campaign: the event horizon carries causal history, the trapping geometry carries local collapse data, and the mature dual scale carries the Friedmann continuation. Established geometry, conditional identifications, and open throat construction are labeled separately.',
+      technical: 'Synthesizes the collapse ladder, trapping-horizon pair, Weyl-flat handoff diagnostic, mature Gamma dynamics, conditional radiation selection, and the remaining timelike/null throat map without restoring isometric horizon matching.',
+    },
+  },
   ri1: {
     label: 'RI I',
     title: 'Field Equations of the Reciprocal Interior',
