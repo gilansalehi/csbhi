@@ -195,7 +195,7 @@ const DOCUMENTS = {
       technical: 'conditional local Weyl dictionary · independently audited by Codex (OpenAI)',
     },
     summaries: {
-      publications: 'Establishes the scale, proper-time, affine-parameter, expansion, and marginality rules on an actually Weyl-related local patch. Its conformal factor is now denoted \\(\\Omega_{\\rm W}\\), and its relation to the mature dual scale \\(\\Gamma_{\\rm GD}=a^2\\) remains a throat calculation.',
+      publications: 'Establishes the scale, proper-time, affine-parameter, expansion, and marginality rules on an actually Weyl-related local patch. Its conformal factor is now denoted \\(\\Omega_{\\rm W}\\), and its relation to the mature dual scale \\(\\Gamma=a^2\\) remains a throat calculation.',
       technical: 'Derives the local Weyl affine and null-expansion transformations, corrects the trapping-pair ledger to use a dressed curve, and inventories older isometric and unit-lapse notes. Its affine-transfer formula is conditional on the local four-metric Weyl map.',
     },
   },
@@ -209,8 +209,8 @@ const DOCUMENTS = {
       technical: 'Friedmann–Gamma reduction · independently audited by Codex (OpenAI)',
     },
     summaries: {
-      publications: 'Defines the mature dual scale as \\(\\Gamma_{\\rm GD}=a^2=r^{-2}\\), reduces its matter–radiation–vacuum evolution to one first integral, and isolates a conditional theorem under which a stationary mapped parent ruler selects a radiation child.',
-      technical: 'Derives the exact first and second \\(\\Gamma_{\\rm GD}\\) equations, its handoff two-jet, cosmic-era limits, and stellar-mass QCD-era benchmark while separating the mature ruler scale from the local Weyl factor and null affine transfer.',
+      publications: 'Defines the mature dual scale as \\(\\Gamma=a^2=r^{-2}\\), reduces its matter–radiation–vacuum evolution to one first integral, and isolates a conditional theorem under which a stationary mapped parent ruler selects a radiation child.',
+      technical: 'Derives the exact first and second \\(\\Gamma\\) equations, its handoff two-jet, cosmic-era limits, and stellar-mass QCD-era benchmark while separating the mature ruler scale from the local Weyl factor and null affine transfer.',
     },
   },
   level5CreaseSetup: {
@@ -416,15 +416,25 @@ export const COLLECTIONS = {
   core: {
     headingId: 'publications-title',
     title: 'Publications',
-    summary: 'The theory and core publications.',
+    summary: 'The shortest path through the theory and its principal results.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'trappingHorizonPair', 'trappingPairLedger', 'conformalDictionary', 'matureGammaDynamics', 'level5CreaseSetup', 'level5RotationSummary', 'parameterCascade', 'gd2', 'gd3'],
+    expanded: true,
+    documentIds: ['gd1', 'ri1', 'involution', 'formationSynthesis', 'matureGammaDynamics', 'parameterCascade', 'gd2', 'gd3'],
+  },
+  collapseTrack: {
+    headingId: 'collapse-calculations-title',
+    title: 'Collapse Geometry Calculations',
+    summary: 'The analytic campaign behind the GD2 synthesis, from homogeneous collapse through pressure, inhomogeneity, dissipation, trapping-horizon formation, and rotation.',
+    summaryKey: 'publications',
+    expanded: false,
+    documentIds: ['conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'trappingHorizonPair', 'trappingPairLedger', 'conformalDictionary', 'level5CreaseSetup', 'level5RotationSummary'],
   },
   predictionTrack: {
     headingId: 'predictions-title',
     title: 'Predictions',
     summary: 'Observable predictions of the theory.',
     summaryKey: 'publications',
+    expanded: true,
     documentIds: ['note3', 'evolvingGDagger', 'highZTest'],
   },
 };

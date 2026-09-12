@@ -1,7 +1,14 @@
 <script type="module" data-module="@csbhi/home/publication-list">
     import { getCollection } from 'project/project-catalog.js';
 
-    export default ({ wrapper }) => getCollection(wrapper.dataset.collection);
+    export default ({ wrapper }) => {
+        const collection = getCollection(wrapper.dataset.collection);
+        queueMicrotask(() => {
+            const disclosure = wrapper.querySelector('details');
+            if (disclosure) disclosure.open = collection.expanded !== false;
+        });
+        return collection;
+    };
 </script>
 
 <section class="publication-list" $aria-labelledby="headingId">
@@ -9,7 +16,7 @@
     <template *if="hasIntro">
         <p $unsafeHTML="introHtml"></p>
     </template>
-    <details open>
+    <details>
         <summary>
             <span $text="summary"></span>
         </summary>
