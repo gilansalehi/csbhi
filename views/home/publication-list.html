@@ -1,8 +1,11 @@
 <script type="module" data-module="@csbhi/home/publication-list">
     import { getCollection } from 'project/project-catalog.js';
+    import { getReadingPath } from 'project/archive-catalog.js';
 
     export default ({ wrapper }) => {
-        const collection = getCollection(wrapper.dataset.collection);
+        const collection = wrapper.dataset.readingPath
+            ? getReadingPath(wrapper.dataset.readingPath)
+            : getCollection(wrapper.dataset.collection);
         queueMicrotask(() => {
             const disclosure = wrapper.querySelector('details');
             if (disclosure) disclosure.open = collection.expanded !== false;
@@ -26,16 +29,20 @@
                     <div $text="./label"></div>
                     <div>
                         <h3><a $href="./href" $text="./title"></a></h3>
-                        <p $text="./summary"></p>
-                        <p>
-                            <span $text="./meta"></span>
-                            <template *if="./startHere">
-                                <span> · <span class="start-here">Start here</span></span>
-                            </template>
-                            <template *if="./prerequisite">
-                                <span> · <span class="prq-label">PRQ:</span> <a $href="./prerequisite/href" $text="./prerequisite/label"></a></span>
-                            </template>
-                        </p>
+                        <template *if="./hasSummary">
+                            <p $text="./summary"></p>
+                        </template>
+                        <template *if="./hasMetaLine">
+                            <p>
+                                <span $text="./meta"></span>
+                                <template *if="./startHere">
+                                    <span> · <span class="start-here">Start here</span></span>
+                                </template>
+                                <template *if="./prerequisite">
+                                    <span> · <span class="prq-label">PRQ:</span> <a $href="./prerequisite/href" $text="./prerequisite/label"></a></span>
+                                </template>
+                            </p>
+                        </template>
                     </div>
                 </li>
             </template>

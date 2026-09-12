@@ -142,28 +142,48 @@ data-wrapper[data-home-section] {
   color: var(--muted);
 }
 
-.research-archive__groups {
-  display: grid;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+.research-tracks {
+  margin-block: clamp(3rem, 8vw, 6rem);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border-radius: 0.65rem;
+  background: var(--surface);
 }
 
-.research-archive__group {
-  padding-top: 1.25rem;
-  border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+.research-tracks__eyebrow {
+  margin: 0 0 0.3rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 
-.research-archive__group h3 {
-  margin: 0 0 0.65rem;
-  font-size: 1rem;
+.research-tracks h2 {
+  margin-block: 0 0.75rem;
 }
 
-.research-archive__group ul {
-  margin: 0;
+.research-tracks__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.1rem;
+  margin-block: 1.25rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-.research-archive__group li + li {
-  margin-top: 0.3rem;
+.research-tracks__topics span:not(:last-child)::after {
+  margin-left: 1.1rem;
+  content: "·";
+  opacity: 0.45;
+}
+
+.research-tracks__action {
+  font-weight: 700;
 }
 
 .review-card {

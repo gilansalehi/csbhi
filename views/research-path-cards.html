@@ -1,0 +1,32 @@
+<script type="module" data-module="@csbhi/research-path-cards">
+  import { getArchive } from 'project/archive-catalog.js';
+
+  export default () => getArchive();
+</script>
+
+<!-- Preserved card-grid presentation for a future overview or programme-map page. -->
+<section class="research-paths" aria-labelledby="research-paths-title">
+  <header class="research-paths__header">
+    <p class="research-paths__eyebrow">Seven paths through the work</p>
+    <h2 id="research-paths-title">Reading paths</h2>
+    <p>Read each list from top to bottom. Some papers appear twice because they join two parts of the programme.</p>
+  </header>
+
+  <div class="research-paths__grid">
+    <template *list="readingPaths">
+      <section class="research-path" $id="./id">
+        <p class="research-path__label" $text="./label"></p>
+        <h3 $text="./title"></h3>
+        <p class="research-path__summary" $text="./summary"></p>
+        <details open>
+          <summary>Reading order</summary>
+          <ol>
+            <template *list="./items">
+              <li><a $href="./href" $text="./title"></a></li>
+            </template>
+          </ol>
+        </details>
+      </section>
+    </template>
+  </div>
+</section>

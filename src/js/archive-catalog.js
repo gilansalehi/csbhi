@@ -1,8 +1,105 @@
 import { getDocumentLink } from './project-catalog.js';
 
-const note = (title, slug) => ({ title, href: `note.html?src=${slug}` });
-const page = (title, slug) => ({ title, href: `${slug}.html` });
+const note = (title, slug) => ({ label: 'Note', title, href: `note.html?src=${slug}` });
+const page = (title, slug) => ({ label: 'Reference', title, href: `${slug}.html` });
 const document = id => ({ document: id });
+
+const READING_PATHS = [
+  {
+    id: 'main-theory',
+    label: 'Core · 8 papers',
+    title: 'The main theory',
+    summary: 'The shortest route through the project: the reciprocal map, its field equations, the formation problem, the mature scale dynamics, and the observational programme.',
+    items: [
+      document('gd1'),
+      document('ri1'),
+      document('involution'),
+      document('formationSynthesis'),
+      document('matureGammaDynamics'),
+      document('parameterCascade'),
+      document('gd2'),
+      document('gd3'),
+    ],
+  },
+  {
+    id: 'formation-throat',
+    label: 'GD2 · Formation',
+    title: 'Collapse and the formation throat',
+    summary: 'How a collapsing star acquires a finite throat, a trapping-horizon pair, and the initial data of a child cosmology—from OS dust through pressure, dissipation, and rotation.',
+    items: [
+      document('formationSynthesis'),
+      document('conformalFormationMap'),
+      document('pressureGradientTheorem'),
+      document('level3Completion'),
+      document('level4Dissipative'),
+      document('trappingHorizonPair'),
+      document('level5RotationSummary'),
+    ],
+  },
+  {
+    id: 'reciprocal-interior',
+    label: 'Foundations',
+    title: 'The reciprocal interior',
+    summary: 'Why \\(a=1/r\\), what Einstein’s equations say inside the reciprocal metric, and how \\(\\Gamma=a^2\\) carries the mature Friedmann history.',
+    items: [
+      document('gd1'),
+      document('involution'),
+      document('ri1'),
+      note('The Reciprocal Interior: An Independent Verification', 'reciprocal_interior_independent_verification'),
+      document('matureGammaDynamics'),
+    ],
+  },
+  {
+    id: 'weyl-succession',
+    label: 'Penrose path',
+    title: 'Weyl curvature and cosmological succession',
+    summary: 'How a smooth background can remain almost—but not exactly—Weyl-free, how the residue scales, and what may pass from one cosmological generation to the next.',
+    items: [
+      document('wchFixedPoint'),
+      document('weylHypothesis'),
+      document('crossover'),
+      note('The Child-Side Transfer Function: T(k)=1, and Its Three Corrections', 'child_side_transfer_function'),
+      note('The Weyl-to-ζ Transfer: Background Hierarchy versus Inherited Substructure', 'weyl_to_zeta_transfer_across_collapse'),
+    ],
+  },
+  {
+    id: 'galaxy-acceleration',
+    label: 'Galaxy path',
+    title: 'The galactic acceleration scale',
+    summary: 'How local/global self-duality selects the square-root acceleration law, why its scale may evolve with \\(H(z)\\), and how high-redshift galaxies can decide.',
+    items: [
+      document('note3'),
+      document('evolvingGDagger'),
+      document('highZTest'),
+      document('gd3'),
+    ],
+  },
+  {
+    id: 'junctions-optics',
+    label: 'Technical path',
+    title: 'Junctions, horizons, and null optics',
+    summary: 'What can be matched across the horizons, what cannot, and how null focusing and affine transfer supply the missing clock—including the synchronization that failed its full-history test.',
+    items: [
+      document('ri2'),
+      document('nullOptics'),
+      document('throatClock'),
+      note('The Remaining Horizon Clock', 'remaining_horizon_clock_map'),
+      document('fullHistoryTest'),
+    ],
+  },
+  {
+    id: 'constants-ledger',
+    label: 'Parameter path',
+    title: 'Constants and background bookkeeping',
+    summary: 'Which cosmological quantities are independent, which descend from \\(R_{\\rm dS}\\) and the inherited ledger, and exactly where the derivation stops.',
+    items: [
+      page('CSBHI Constants & Cosmological Glossary', 'glossary'),
+      document('parameterCascade'),
+      document('matureGammaDynamics'),
+      note('The Horizon Flow and Density Identity', 'horizon_flow_density_identity'),
+    ],
+  },
+];
 
 const GROUPS = [
   {
@@ -89,7 +186,7 @@ const GROUPS = [
       document('wchFixedPoint'),
       document('weylHypothesis'),
       document('crossover'),
-      document('entropy'),
+      note('Gravitational Entropy as the Thermodynamic Face of Conformal Scaling (historical isometric benchmark)', 'gravitational_entropy_and_conformal_scaling'),
       note('Alice\'s Curvature Ledger and the Weyl Curvature Hypothesis', 'alices_curvature_ledger_and_the_weyl_hypothesis'),
       note('The Child-Side Transfer Function: T(k)=1, and Its Three Corrections', 'child_side_transfer_function'),
       note('The Weyl-to-ζ Transfer: Background Hierarchy versus Inherited Substructure', 'weyl_to_zeta_transfer_across_collapse'),
@@ -116,7 +213,43 @@ const GROUPS = [
 
 const resolveItem = item => item.document ? getDocumentLink(item.document) : item;
 
+const resolveReadingPath = path => ({
+  headingId: path.id,
+  title: path.title,
+  summary: path.summary,
+  expanded: true,
+  hasIntro: false,
+  documents: path.items.map((item, index) => {
+    const resolved = resolveItem(item);
+    const summary = resolved.summary || '';
+    const meta = resolved.meta || '';
+    const prerequisite = resolved.prerequisite || null;
+    return {
+      ...resolved,
+      id: resolved.id || `${path.id}-${index + 1}`,
+      label: resolved.label || 'Note',
+      summary,
+      meta,
+      hasSummary: Boolean(summary),
+      hasMetaLine: Boolean(meta || resolved.startHere || prerequisite),
+      startHere: Boolean(resolved.startHere),
+      prerequisite,
+    };
+  }),
+});
+
+export const getReadingPath = id => {
+  const path = READING_PATHS.find(candidate => candidate.id === id);
+  if (!path) throw new Error(`Unknown reading path: ${id}`);
+  return resolveReadingPath(path);
+};
+
 export const getArchive = () => ({
+  readingPaths: READING_PATHS.map(path => ({
+    ...path,
+    href: `#${path.id}`,
+    items: path.items.map(resolveItem),
+  })),
   groups: GROUPS.map(group => ({
     ...group,
     items: group.items.map(resolveItem),

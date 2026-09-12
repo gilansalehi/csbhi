@@ -9,6 +9,7 @@
 @import "navigation.css" layer(components);
 @import "home.css" layer(components);
 @import "scoreboard.css" layer(components);
+@import "research-index.css" layer(components);
 @import "constants.css" layer(components);
 @import "glossary.css" layer(components);
 @import "responsive.css" layer(responsive);

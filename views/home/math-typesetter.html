@@ -1,8 +1,9 @@
 <script type="module" data-module="@csbhi/home/math-typesetter">
     export default ({ cleanup }) => {
-        const mounts = [...document.querySelectorAll('[data-home-section], [data-typeset-section]')];
         const main = document.querySelector('main');
         let observer;
+
+        const mounts = () => [...document.querySelectorAll('[data-home-section], [data-typeset-section]')];
 
         const typeset = () => {
             observer?.disconnect();
@@ -13,7 +14,10 @@
             }
         };
 
-        const ready = () => mounts.every(mount => mount.childElementCount > 0);
+        const ready = () => {
+            const pending = mounts();
+            return pending.length > 0 && pending.every(mount => mount.childElementCount > 0);
+        };
         const check = () => {
             if (ready()) queueMicrotask(typeset);
         };

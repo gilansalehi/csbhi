@@ -301,9 +301,9 @@ const DOCUMENTS = {
     title: 'Gravitational Entropy as the Thermodynamic Face of Conformal Scaling',
     note: 'gravitational_entropy_and_conformal_scaling',
     prerequisite: 'wchFixedPoint',
-    meta: { publications: 'proposal · conditional result' },
+    meta: { publications: 'historical proposal · isometric scale assumption' },
     summaries: {
-      publications: 'Gravitational entropy is a conformal-curvature quantity; the reciprocal map exchanges the parent black hole\'s horizon entropy with the child\'s de Sitter horizon entropy, \\(S_{\\rm BH}=S_{\\rm dS}\\) — so the arrow and CCC\'s reset need no information destruction.',
+      publications: 'Explores a horizon-entropy exchange under the former \\(R_{\\rm dS}=R_S\\) benchmark. The current conformal architecture does not identify those physical radii or entropies; the note is retained as research history pending a scale-transfer thermodynamics.',
     },
   },
   gd2: {
@@ -459,15 +459,20 @@ export const getCollection = name => {
     hasIntro: Boolean(collection.introHtml),
     documents: collection.documentIds.map(id => {
       const document = DOCUMENTS[id];
+      const summary = document.summaries[summaryKey];
+      const meta = document.meta[summaryKey];
+      const prerequisite = resolvePrerequisite(document);
       return {
         id,
         label: document.label,
         title: document.title,
         href: route(document),
-        summary: document.summaries[summaryKey],
-        meta: document.meta[summaryKey],
+        summary,
+        meta,
+        hasSummary: Boolean(summary),
+        hasMetaLine: Boolean(meta || document.startHere || prerequisite),
         startHere: Boolean(document.startHere),
-        prerequisite: resolvePrerequisite(document),
+        prerequisite,
       };
     }),
   };
@@ -476,8 +481,22 @@ export const getCollection = name => {
 export const getDocumentLink = id => {
   const document = DOCUMENTS[id];
   if (!document) throw new Error(`Unknown publication document: ${id}`);
+  const summary = document.summaries.publications
+    || document.summaries.technical
+    || document.summaries.review
+    || '';
+  const meta = document.meta.publications
+    || document.meta.technical
+    || document.meta.review
+    || '';
   return {
+    id,
+    label: document.label,
     title: document.title,
     href: route(document),
+    summary,
+    meta,
+    startHere: Boolean(document.startHere),
+    prerequisite: resolvePrerequisite(document),
   };
 };

@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The complete CSBHI research index: papers, working notes, supporting calculations, negative results, and superseded approaches.">
+  <meta name="description" content="Guided CSBHI reading paths by topic, followed by the complete archive of papers, calculations, negative results, and superseded approaches.">
   <meta name="dcterms.modified" content="2026-09-12">
   <meta name="project" content="Conformal Scaling of Black Hole Interiors">
   <meta name="programme" content="Geometric Duality">
-  <meta name="scope" content="Complete research index">
+  <meta name="scope" content="Guided reading paths and complete research archive">
   <link rel="canonical" href="https://www.gilansalehi.com/csbhi/research.html">
   <link rel="sitemap" type="application/xml" href="https://www.gilansalehi.com/csbhi/sitemap.xml">
   <link rel="describedby" href="https://www.gilansalehi.com/csbhi/llms.txt"
@@ -39,6 +39,7 @@
     data-shim-src="https://ga.jspm.io/npm:es-module-shims@2.8.1/dist/es-module-shims.js"
     data-shim-integrity="sha384-Ojz/JNsyOdkNfGWOlfhDmeq68SXcsoWSABV4yVQn8Wr/YaKJJTrZs5p2Zi39PWuL"></script>
   <link href="src/css/index.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
 
 <body>
@@ -48,29 +49,21 @@
 
     <article aria-labelledby="research-title">
       <h1 id="research-title">Research Index</h1>
-      <p>The complete record.</p>
+      <p>The research programme branches.</p>
       <p>
-        This index includes the main publication path, working drafts, supporting calculations, negative results,
-        and superseded approaches. The <a href="review.html">review packet</a> is the shortest path into the theory;
-        the archive preserves the work behind it.
+        The eight papers on the homepage carry the main line of argument. The paths below follow the questions that grew
+        out of it: how the reciprocal interior works, how a collapsing star becomes a child cosmology, what survives
+        conformal succession, and where the theory meets observation. Read any path from top to bottom. The archive
+        preserves everything else, including the calculations that failed.
       </p>
 
-      <aside class="research-guide-card" aria-labelledby="research-guide-title">
-        <p class="research-guide-card__eyebrow">New reader’s guide · GD2</p>
-        <h2 id="research-guide-title">How collapse becomes cosmology</h2>
-        <p>
-          A guided introduction to the formation campaign: how a parent collapse supplies global causal history,
-          local trapping geometry, and a candidate handoff to the mature scale \(\Gamma\).
-        </p>
-        <p><a href="formation.html">Read the guided synthesis <span aria-hidden="true">→</span></a></p>
-      </aside>
-
-      <data-wrapper src="views/research-index.html"></data-wrapper>
+      <data-wrapper src="views/research-index.html" data-typeset-section></data-wrapper>
     </article>
 
     <footer>
       <data-wrapper src="contact.html"></data-wrapper>
     </footer>
+    <data-wrapper src="views/home/math-typesetter.html"></data-wrapper>
   </main>
 </body>
 

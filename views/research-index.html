@@ -4,15 +4,43 @@
   export default () => getArchive();
 </script>
 
-<div class="research-archive__groups">
-  <template *list="groups">
-    <section class="research-archive__group">
-      <h2 $text="./title"></h2>
-      <ul>
-        <template *list="./items">
-          <li><a $href="./href" $text="./title"></a></li>
-        </template>
-      </ul>
-    </section>
-  </template>
+<nav class="research-contents" aria-labelledby="research-contents-title">
+  <h2>Table of Contents</h2>
+  <details open>
+    <summary id="research-contents-title">Reading paths</summary>
+    <ol>
+      <template *list="readingPaths">
+        <li><a $href="./href" $text="./title"></a></li>
+      </template>
+    </ol>
+  </details>
+</nav>
+
+<div class="research-publication-paths">
+  <data-wrapper src="views/home/publication-list.html" data-reading-path="main-theory" data-typeset-section></data-wrapper>
+  <data-wrapper src="views/home/publication-list.html" data-reading-path="formation-throat" data-typeset-section></data-wrapper>
+  <data-wrapper src="views/home/publication-list.html" data-reading-path="reciprocal-interior" data-typeset-section></data-wrapper>
+  <data-wrapper src="views/home/publication-list.html" data-reading-path="weyl-succession" data-typeset-section></data-wrapper>
+  <data-wrapper src="views/home/publication-list.html" data-reading-path="galaxy-acceleration" data-typeset-section></data-wrapper>
+  <data-wrapper src="views/home/publication-list.html" data-reading-path="junctions-optics" data-typeset-section></data-wrapper>
+  <data-wrapper src="views/home/publication-list.html" data-reading-path="constants-ledger" data-typeset-section></data-wrapper>
 </div>
+
+<details class="research-archive">
+  <summary>
+    Complete research archive
+    <span>Working notes, supporting calculations, negative results, and superseded paths.</span>
+  </summary>
+  <div class="research-archive__groups">
+    <template *list="groups">
+      <section class="research-archive__group">
+        <h3 $text="./title"></h3>
+        <ul>
+          <template *list="./items">
+            <li><a $href="./href" $text="./title"></a></li>
+          </template>
+        </ul>
+      </section>
+    </template>
+  </div>
+</details>
