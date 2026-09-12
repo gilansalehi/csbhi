@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
     content="A guided introduction to the CSBHI formation campaign: collapse cohorts, the birth cone, the finite throat, low-Weyl initial geometry, and mature conformal scale transfer.">
-  <meta name="dcterms.modified" content="2026-09-11">
+  <meta name="dcterms.modified" content="2026-09-12">
   <meta name="project" content="Conformal Scaling of Black Hole Interiors">
   <meta name="programme" content="Geometric Duality">
   <meta name="scope" content="Guided synthesis of the GD2 formation campaign">
@@ -51,711 +51,614 @@
 
     <article class="formation" aria-labelledby="formation-title">
       <header class="formation-hero">
-        <div class="formation-hero__meta">
-          <p>GD2 · Guided research synthesis</p>
-          <p>September 2026</p>
-        </div>
-        <h1 id="formation-title">How collapse becomes cosmology</h1>
+        <p class="formation-hero__meta">Geometric Duality II · Research synthesis · September 2026</p>
+        <h1 id="formation-title">How Collapse Becomes Cosmology</h1>
         <p class="formation-hero__subtitle">Formation and conformal scale transfer in Geometric Duality</p>
         <p class="formation-hero__lede">
-          GD1 relates inward evolution in a parent black hole to expansion in a child universe. The formation campaign
-          asks how a real gravitational collapse could establish that correspondence: its causal clock, its nearly
-          homogeneous beginning, and the scale evolution that follows.
+          GD1 asks us to view inward motion in a black hole and expansion in a child universe as two descriptions of
+          one geometry. Here we follow that idea back to the moment the black hole forms.
         </p>
-        <div class="formation-hero__equation" aria-label="The reciprocal scale relation">
-          \[
-          r:1\rightarrow0
-          \qquad\Longleftrightarrow\qquad
-          a=\frac1r:1\rightarrow\infty
-          \]
-        </div>
       </header>
 
-      <section class="formation-status" aria-label="Epistemic status key">
-        <p><span class="epistemic epistemic--geometry">Established geometry</span> Standard GR or checked algebra.</p>
-        <p><span class="epistemic epistemic--conditional">Conditional result</span> Follows if the stated GD map exists.</p>
-        <p><span class="epistemic epistemic--open">Open construction</span> The theory still has to supply it.</p>
-      </section>
-
       <nav id="table-of-contents" class="formation-contents" aria-labelledby="formation-contents-title">
-        <h2 id="formation-contents-title">The argument</h2>
+        <h2 id="formation-contents-title">Contents</h2>
         <ol>
-          <li><a href="#starting-point">Where GD1 leaves us</a></li>
-          <li><a href="#cohorts">Repeat the descent</a></li>
-          <li><a href="#birth-cone">A causal birth history</a></li>
-          <li><a href="#throat">Formation has finite width</a></li>
-          <li><a href="#handoff">A low-Weyl handoff</a></li>
-          <li><a href="#scale">The hierarchy accumulates</a></li>
-          <li><a href="#inheritance">What the child inherits</a></li>
-          <li><a href="#campaign">The realism campaign</a></li>
-          <li><a href="#boundary">Results and open tasks</a></li>
-          <li><a href="#reading">Technical reading path</a></li>
+          <li><a href="#you-are-here">You Are Here</a></li>
+          <li><a href="#repeat-the-descent">Repeat the Descent</a></li>
+          <li><a href="#birth-of-a-horizon">The Birth of a Horizon</a></li>
+          <li><a href="#formation-throat">Inside the Formation Throat</a></li>
+          <li><a href="#smooth-beginning">A Smooth Beginning</a></li>
+          <li><a href="#infall-becomes-scale">Infall Becomes Scale</a></li>
+          <li><a href="#inheritance">What Crosses the Throat</a></li>
+          <li><a href="#campaign">How Far the Result Survives</a></li>
+          <li><a href="#remaining-calculation">The Remaining Calculation</a></li>
         </ol>
       </nav>
 
-      <section id="starting-point" class="formation-prose">
-        <p class="section-kicker">01 · Starting point</p>
-        <h2>The question left by GD1</h2>
+      <section id="you-are-here" class="formation-prose">
+        <h2>You Are Here</h2>
         <p>
-          Geometric Duality begins with two descriptions of one interior history. In the parent description, a
-          normalized radial scale \(r\) decreases from \(1\) toward \(0\). In the child description, the corresponding
-          cosmological scale grows according to \(a=1/r\).
+          In GD1, Alice falls through the event horizon of a black hole while Bob describes her motion using a
+          horizon-normalized radial coordinate \(r\). At the horizon, \(r=1\). As Alice continues inward,
+          \(r\rightarrow0\).
+        </p>
+        <p>Geometric Duality assigns Alice's interior a reciprocal scale factor</p>
+        <p class="display-equation display-equation--numbered display-equation--key">
+          \[
+          a=\frac1r.
+          \]
         </p>
         <p>
-          Once a homogeneous child branch exists, the proposal becomes mathematically economical: specify its matter,
-          radiation, and vacuum content, and ordinary Friedmann equations determine the background expansion. The
-          difficult question lies one step earlier. What feature of a forming black hole selects the radial history,
-          supplies a cosmological clock, and produces initial data close enough to FLRW for that mature description to
-          begin?
+          Bob therefore describes a shrinking radial coordinate while Alice describes a growing spatial scale. Once
+          that reciprocal branch has been established, a spatially flat FLRW metric and Einstein's equations give the
+          familiar radiation, matter, and vacuum expansion histories.
         </p>
-        <aside class="formation-callout">
-          <p class="formation-callout__label">Formation hypothesis</p>
-          <p>
-            Black-hole formation supplies a finite four-dimensional transition region in which global causal history,
-            local horizon dynamics, and parent-to-child scale transfer are assembled together.
-          </p>
-        </aside>
         <p>
-          This transition region is called the <em>formation throat</em>. Here “throat” means a dynamical causal
-          bottleneck. It does not by itself denote a traversable wormhole.
+          But GD1 begins with a black hole that is already there. A child cosmology requires more than a mature
+          reciprocal law. It requires a beginning.
+        </p>
+        <p>
+          How does an ordinary collapsing star produce the causal history, the nearly homogeneous geometry, and the
+          scale evolution that Alice later experiences as a universe?
         </p>
       </section>
 
-      <section id="cohorts" class="formation-wide">
-        <p class="section-kicker">02 · The experiment</p>
-        <h2>Repeat the descent</h2>
-        <p class="formation-wide__intro">
-          Imagine a continuous family of freely falling observers—Alices—crossing while the parent black hole forms.
-          The first crosses when the event horizon is tiny; later Alices cross after it has grown through more of the
-          collapsing matter.
+      <section id="repeat-the-descent" class="formation-prose">
+        <h2>Repeat the Descent</h2>
+        <p>
+          Let Alice arrive while the parent black hole is forming. The event horizon has only just appeared near the
+          center of the collapsing star. Alice crosses it and continues inward.
         </p>
-
-        <div class="cohort-grid" aria-label="Local and global descriptions of successive infallers">
-          <article>
-            <p class="cohort-grid__label">Each Alice, locally</p>
-            <h3>The same beginning</h3>
-            \[
-            r_i=1,
-            \qquad
-            \alpha_i=\frac1{r_i}=1
-            \]
-            <p>Every observer normalizes her own crossing as the beginning of her reciprocal evolution.</p>
-          </article>
-          <article>
-            <p class="cohort-grid__label">All Alices, globally</p>
-            <h3>Different child epochs</h3>
-            \[
-            \frac{A_C(T)}{A_C(T_i)}=\frac1{r_i(\tau_i)}
-            \]
-            <p>The local normalizations must coexist inside one global child scale factor \(A_C\).</p>
-          </article>
-        </div>
-
-        <p class="architecture__narrative">
-          This changes the object being mapped. GD2 is not trying to identify one complete parent horizon surface with
-          one complete child surface. It associates a <em>history of crossing events</em> with a child causal history,
-          while each timelike Alice continues inward after crossing. The null horizon history and the timelike
-          reciprocal history are related, but they are not the same curve.
+        <p>
+          A little later, a second Alice repeats the journey. By then the event horizon has grown through more of the
+          star. A third Alice follows later still. In the limit, a continuous family of freely falling observers samples
+          the complete history of horizon formation.
+        </p>
+        <p>Each Alice normalizes her own crossing in the same way:</p>
+        <p class="display-equation">
+          \[
+          r_i=1,
+          \qquad
+          \alpha_i=\frac1{r_i}=1.
+          \]
+        </p>
+        <p>
+          This does not place every Alice at the same global child time. If \(T_i\) is the child epoch associated with
+          the \(i\)-th crossing, then her subsequent reciprocal expansion is
+        </p>
+        <p class="display-equation display-equation--numbered">
+          \[
+          \frac{A_C(T)}{A_C(T_i)}
+          =\frac1{r_i(\tau_i)}.
+          \]
+        </p>
+        <p>
+          Every crossing is locally ordinary, but the crossings are globally ordered. The object GD2 seeks is
+          therefore a map between histories of events. The event horizon supplies the null history. The freely falling
+          Alices supply the timelike histories that continue after crossing.
+        </p>
+        <p>
+          If all of these observers are to inhabit one homogeneous child universe, their parent contraction must share
+          one fractional background rate. In spherical symmetry this gives the separable form
+        </p>
+        <p class="display-equation display-equation--numbered">
+          \[
+          R_P(t,q)=S(t)F(q).
+          \]
+        </p>
+        <p>
+          Oppenheimer–Snyder collapse satisfies this relation exactly. More realistic collapse departs from it, and
+          those departures become the natural place for child perturbations to enter.
         </p>
       </section>
 
-      <section id="birth-cone" class="formation-prose">
-        <p class="section-kicker">03 · Exact benchmark</p>
-        <h2>A growing horizon becomes a birth cone</h2>
+      <section id="birth-of-a-horizon" class="formation-prose">
+        <h2>The Birth of a Horizon</h2>
         <p>
-          Oppenheimer–Snyder collapse supplies the clean analytic example. Its homogeneous stellar interior is a
-          contracting closed-FLRW geometry. With conformal time shifted so the event-horizon vertex is at the origin,
-          the interior event horizon follows
+          The homogeneous Oppenheimer–Snyder model gives us an exact place to begin. Inside the star, the geometry is a
+          contracting closed-FLRW spacetime,
         </p>
-        <div class="key-equation key-equation--quiet">
+        <p class="display-equation">
+          \[
+          ds_P^2
+          =S^2(\eta_P)
+          \left[-d\eta_P^2+dq^2+\sin^2q\,d\Omega^2\right].
+          \]
+        </p>
+        <p>
+          Shift conformal time so that the past endpoint of the event horizon is at \(\bar\eta=0\). The outgoing
+          horizon generator inside the matter is then simply
+        </p>
+        <p class="display-equation">
           \[
           \bar\eta=q.
           \]
-        </div>
-        <p>
-          The standard conformal map from the closed Einstein cylinder to a flat spherical Minkowski patch is
         </p>
-        <div class="key-equation">
+        <p>The standard conformal map from the closed Einstein cylinder to a flat spherical Minkowski patch is</p>
+        <p class="display-equation display-equation--compact">
           \[
           T_M-\rho_M=\tan\frac{\bar\eta-q}{2},
           \qquad
           T_M+\rho_M=\tan\frac{\bar\eta+q}{2}.
           \]
-        </div>
-        <p>On the event horizon this reduces exactly to</p>
-        <div class="formation-result">
-          <span class="epistemic epistemic--geometry">Exact OS conformal geometry</span>
+        </p>
+        <p>On the event horizon, it becomes</p>
+        <p class="display-equation display-equation--numbered display-equation--key">
           \[
           T_M=\rho_M=\frac12\tan q.
           \]
-        </div>
-        <p>
-          The point where the spherical event horizon begins maps to the origin; its subsequent null history maps to
-          an outgoing light cone. GD2 proposes that light cone as the child's <em>birth cone</em>. Calling it the global
-          particle horizon requires the completed child boundary and is therefore a stronger claim.
         </p>
         <p>
-          This result establishes the causal shape, not a unique physical child cosmology. A vertex-preserving
-          conformal family can reparameterize the same cone, so neither its absolute scale nor a formation-era equation
-          of state is fixed by the null geometry alone.
+          The point where the parent event horizon begins maps to the origin. As the horizon grows outward through the
+          star, its complete history maps to an outgoing light cone.
         </p>
-        <details class="technical-detail">
-          <summary>What the homogeneous benchmark also requires</summary>
-          <div>
-            <p>
-              If every already-crossed cohort is required to share one synchronous child background, the parent
-              collapse must be homologous at background order,
-            </p>
-            \[
-            R_P(t,q)=S(t)F(q).
-            \]
-            <p>
-              OS satisfies this with \(F(q)=\sin q\). For the standard OS interval to contain the horizon vertex after
-              the initial maximum-expansion slice, its surface coordinate must satisfy \(q_0&lt;\pi/3\). More generally,
-              a shear-free parent congruence with spatially
-              homogeneous fractional contraction supplies the covariant background condition. Departures from it are
-              not discarded; they enter the child perturbation sector.
-            </p>
-          </div>
-        </details>
+        <aside class="formation-aside">
+          The conformal map establishes this outgoing null history as the child's birth cone in the OS benchmark.
+          CSBHI proposes that the completed child boundary extends it into the child's global particle horizon.
+        </aside>
+        <p>
+          The map fixes the light cone, while the formation geometry must fix its physical calibration. A
+          vertex-preserving conformal family can change how events are parameterized along the cone. The null geometry
+          therefore supplies the causal ordering; the throat supplies the absolute child scale and formation-era
+          equation of state.
+        </p>
+        <p class="footnote">
+          In the conventional OS interval beginning at maximum expansion, the horizon vertex lies inside the modeled
+          collapse when the stellar surface coordinate satisfies \(q_0&lt;\pi/3\).
+        </p>
       </section>
 
-      <section id="throat" class="formation-wide">
-        <p class="section-kicker">04 · Local formation geometry</p>
-        <h2>Formation has finite width</h2>
-        <p class="formation-wide__intro">
-          A dynamical black hole carries both a global event horizon and local trapping horizons. They answer different
-          questions, and during formation they generally do not coincide.
-        </p>
-        <p class="architecture__definition">
-          The event horizon asks which signals can ever escape to the distant parent exterior. A trapping horizon marks
-          where the outgoing family of spherical light rays has zero area expansion. Their separation is a physical
-          region in which focusing, matter flux, pressure, and curvature evolve.
-        </p>
-
-        <div class="architecture" aria-label="Three structures in the formation geometry">
-          <article class="architecture__stage">
-            <p class="architecture__number">I</p>
-            <p class="architecture__tag">Global causal history</p>
-            <h3>Event horizon</h3>
-            <p>Its null generators order the formation events and carry the parent optical clock.</p>
-            <p class="architecture__status"><span class="epistemic epistemic--geometry">GR geometry</span></p>
-          </article>
-
-          <div class="architecture__connector" aria-hidden="true">→</div>
-
-          <article class="architecture__stage architecture__stage--focus">
-            <p class="architecture__number">II</p>
-            <p class="architecture__tag">Dynamical transition</p>
-            <h3>Finite throat</h3>
-            <p>Null focusing and the local stress tensor supply information unavailable on a zero-width surface.</p>
-            <p class="architecture__status"><span class="epistemic epistemic--open">Map incomplete</span></p>
-          </article>
-
-          <div class="architecture__connector" aria-hidden="true">→</div>
-
-          <article class="architecture__stage">
-            <p class="architecture__number">III</p>
-            <p class="architecture__tag">Local marginal structure</p>
-            <h3>Trapping pair</h3>
-            <p>An outward and an inward marginal branch can be born together and then separate.</p>
-            <p class="architecture__status"><span class="epistemic epistemic--geometry">Regular fold</span></p>
-          </article>
-        </div>
-
-        <details class="technical-detail technical-detail--wide">
-          <summary>Why a forming horizon has width</summary>
-          <div>
-            <p>In the ingoing Vaidya benchmark, the event horizon obeys</p>
-            \[
-            \frac{dR_E}{dv}
-            =\frac12\left(1-\frac{R_T}{R_E}\right).
-            \]
-            <p>
-              Setting \(R_E=R_T\) makes the right-hand side vanish: coincidence is the stationary limit. During
-              accretion, the global and local horizons separate. Vaidya captures the clock supplied by null flux, while
-              a timelike fluid is needed to supply both \(\rho+p\) and \(\rho-p\), and therefore the complete local
-              density-and-pressure ledger.
-            </p>
-          </div>
-        </details>
-
-        <div class="throat-order" aria-label="Representative ordering of the parent horizons">
-          <div>
-            <span>Global clock</span>
-            <strong>\(R_E\)</strong>
-            <small>Event horizon</small>
-          </div>
-          <div aria-hidden="true" class="throat-order__relation">&gt;</div>
-          <div>
-            <span>Outer boundary</span>
-            <strong>\(R_+\)</strong>
-            <small>Outward trapping branch</small>
-          </div>
-          <div aria-hidden="true" class="throat-order__relation">&gt;</div>
-          <div>
-            <span>Candidate history</span>
-            <strong>\(R_-\)</strong>
-            <small>Inward trapping branch</small>
-          </div>
-        </div>
-
-        <div class="formation-prose formation-prose--nested">
-          <h3>First trapping opens the local throat</h3>
-          <p>
-            In spherical collapse define the compactness \(C=2m/R\), where \(m\) is the Misner–Sharp mass and units
-            \(G=c=1\) are used in this local calculation. At a generic first marginal sphere, the maximum of the
-            compactness profile touches unity:
-          </p>
-          <div class="key-equation key-equation--quiet">
-            \[
-            C_b=1,
-            \qquad
-            D_\ell C_b=0,
-            \qquad
-            D_\ell C=\frac{\Gamma_R}{R}\left(8\pi R^2\rho-C\right).
-            \]
-          </div>
-          <p>Hence \(8\pi R_b^2\rho_b=1\). Near this first contact, the two marginal branches open as</p>
-          <div class="key-equation">
-            \[
-            \Delta\ell_\pm
-            =\pm\sqrt{\frac{2A}{B}}\sqrt{t-t_b}+O(t-t_b).
-            \]
-          </div>
-          <p>
-            This is an ordinary fold bifurcation; the geometry is smooth when parameterized by
-            \(\sigma=\sqrt{t-t_b}\). The inward branch begins at \(R_b\) and moves toward smaller radius, giving the
-            candidate correspondence
-          </p>
-          <div class="formation-result">
-            <span class="epistemic epistemic--conditional">Theorem target</span>
-            \[
-            r\stackrel{?}{=}\frac{R_-}{R_b}.
-            \]
-          </div>
-          <p>
-            Its direction and normalization match GD1. A complete proof must still show that this branch reaches the
-            required reciprocal endpoint under the child-time map, including infinite child proper time as
-            \(r\rightarrow0\).
-          </p>
-        </div>
-      </section>
-
-      <section id="handoff" class="formation-prose">
-        <p class="section-kicker">05 · Initial geometry</p>
-        <h2>An FLRW background with a primordial residue</h2>
+      <section id="formation-throat" class="formation-prose">
+        <h2>Inside the Formation Throat</h2>
         <p>
-          FLRW is conformally flat: its background Weyl tensor vanishes. The physical universe is not exactly FLRW,
-          however. Its small primordial perturbations carry nonzero tidal curvature. The CSBHI target is therefore a
-          homogeneous background together with a small inherited residue—not a perfectly featureless child.
+          A forming black hole contains more than one kind of horizon. The event horizon is global: it separates events
+          that can still communicate with the distant parent exterior from those that cannot. A trapping horizon is
+          local: it marks a surface on which the outgoing family of spherical light rays has zero area expansion.
         </p>
-        <div class="weyl-balance" aria-label="Background and perturbative Weyl curvature at the handoff">
-          <article>
-            <span class="epistemic epistemic--geometry">Background limit</span>
-            <h3>FLRW geometry</h3>
-            \[
-            \overline{\mathcal W}=0
-            \]
-            <p>The zeroth-order child geometry is homogeneous, isotropic, and shear-free.</p>
-          </article>
-          <article>
-            <span class="epistemic epistemic--conditional">Physical prediction</span>
-            <h3>Inherited structure</h3>
-            \[
-            \delta\mathcal W\neq0,
-            \qquad
-            R_*^2\lVert\delta\mathcal W\rVert\ll1
-            \]
-            <p>Small tidal and shear data survive as candidates for primordial structure.</p>
-          </article>
-        </div>
-        <p>In regular spherical collapse, the convenient Weyl amplitude</p>
-        <div class="key-equation key-equation--quiet">
+        <p>
+          These horizons coincide when a spherical black hole becomes stationary. During formation they are separated.
+          In the ingoing Vaidya benchmark, for example,
+        </p>
+        <p class="display-equation">
           \[
-          \mathcal W=\frac{m}{R^3}-\frac{4\pi}{3}\rho
+          \frac{dR_E}{dv}
+          =\frac12\left(1-\frac{R_T}{R_E}\right).
           \]
-        </div>
-        <p>
-          behaves as \(\mathcal W=O(R_E^2)\) near the central birth region. Density gradients, pressure gradients,
-          dissipation, and anisotropic stress change its coefficient without removing this quadratic protection in the
-          regular spherical case. Slow rotation is different: it can permit a finite \(O(\chi^2)\) quadrupolar residue,
-          whose observable amplitude remains to be calculated.
         </p>
-
-        <details class="technical-detail">
-          <summary>The exact homogeneous benchmark</summary>
-          <div>
-            <p>On a spherical marginal surface, \(2m=R\). If its background is exactly Weyl-flat, then</p>
-            \[
-            \mathcal W=0
-            \quad\Longleftrightarrow\quad
-            \rho_{\rm local}=\bar\rho.
-            \]
-            <p>The surface-gravity expression then agrees with the flat-FLRW apparent-horizon form,</p>
-            \[
-            \frac{\kappa_A R_A}{c^2}=\frac{3w_{\rm eff}-1}{4}.
-            \]
-            <p>
-              For a nearly homogeneous sphere, these relations acquire controlled corrections proportional to the
-              dimensionless Weyl residue. The exact equality is the background benchmark, not a demand that physical
-              perturbations vanish.
-            </p>
-          </div>
-        </details>
-
         <p>
-          First trapping and homogeneous handoff are distinct conditions. Pair creation gives
-          \(8\pi R_b^2\rho_b=1\), whereas the exactly Weyl-flat marginal benchmark gives
-          \(8\pi R_*^2\rho_*=3\). The throat must describe the evolution between them. A completed handoff must also
-          impose marginality in the <em>child</em> metric. Wherever a local Weyl relation
-          \(g_C=\Omega_{\rm W}^2g_P\) exists, the relevant condition is
+          If \(R_E=R_T\), the event horizon stops growing. A finite separation is therefore part of the ordinary
+          geometry of accretion, not an extra layer placed into the spacetime.
         </p>
-        <div class="key-equation key-equation--warning">
+        <p>Generic smooth spherical collapse can also create marginal surfaces in pairs. Let</p>
+        <p class="display-equation">
+          \[
+          C=\frac{2m}{R}
+          \]
+        </p>
+        <p>
+          be the compactness, with \(m\) the Misner–Sharp mass and \(G=c=1\) for this calculation. At first trapping,
+          the maximum of the compactness profile touches unity:
+        </p>
+        <p class="display-equation display-equation--numbered display-equation--compact">
+          \[
+          C_b=1,
+          \qquad
+          D_\ell C_b=0,
+          \qquad
+          D_\ell C
+          =\frac{\Gamma_R}{R}\left(8\pi R^2\rho-C\right).
+          \]
+        </p>
+        <p>It follows that \(8\pi R_b^2\rho_b=1\). Near this first contact the two marginal branches open as</p>
+        <p class="display-equation display-equation--numbered display-equation--key">
+          \[
+          \Delta\ell_\pm
+          =\pm\sqrt{\frac{2A}{B}}\sqrt{t-t_b}+O(t-t_b).
+          \]
+        </p>
+        <p>
+          The square root gives the branches a formally infinite velocity if \(t\) is used as the parameter. With
+          \(\sigma=\sqrt{t-t_b}\), both branches are smooth. The geometry is an ordinary fold.
+        </p>
+        <p>After the pair forms, a representative ordering is</p>
+        <p class="display-equation formation-sequence">
+          \[
+          \underbrace{R_E}_{\text{global null history}}
+          \;>\;
+          \underbrace{R_+}_{\text{outer marginal branch}}
+          \;>\;
+          \underbrace{R_-}_{\text{inward branch}}.
+          \]
+        </p>
+        <p>
+          The inward branch begins at \(R_b\) and moves toward smaller areal radius. This gives it the direction and
+          normalization required of the GD1 variable:
+        </p>
+        <p class="display-equation display-equation--numbered">
+          \[
+          r\stackrel{?}{=}\frac{R_-}{R_b}.
+          \]
+        </p>
+        <p>
+          GD2 proposes this inward branch as the parent history underlying \(r\). The complete timelike map must show
+          that it reaches \(r\rightarrow0\) only at infinite child proper time.
+        </p>
+        <p>
+          The finite region surrounding these horizons also carries the matter information that a pure null-flux model
+          leaves out. For a perfect fluid and normalized radial null directions,
+        </p>
+        <p class="display-equation display-equation--compact">
+          \[
+          T_{\ell\ell}=\frac{\rho+p}{2},
+          \qquad
+          T_{\ell n}=\frac{\rho-p}{2}.
+          \]
+        </p>
+        <p>
+          Along-null focusing measures \(\rho+p\), while cross-focusing measures \(\rho-p\). Together they recover
+          both density and pressure. The throat is therefore where the causal clock and the local equation-of-state
+          data can first meet.
+        </p>
+      </section>
+
+      <section id="smooth-beginning" class="formation-prose">
+        <h2>A Smooth Beginning</h2>
+        <p>
+          Weyl curvature measures the tidal part of the gravitational field: the part associated with clumping,
+          distortion, and freely propagating gravitational influence. An exact FLRW background has no Weyl curvature.
+          A physical universe cannot be exactly FLRW, because the perturbations from which structure grows carry a
+          small tidal field.
+        </p>
+        <p>The CSBHI target is therefore a Weyl-free background, not a Weyl-free universe:</p>
+        <p class="display-equation display-equation--numbered display-equation--key">
+          \[
+          \overline{\mathcal W}=0,
+          \qquad
+          \delta\mathcal W\neq0,
+          \qquad
+          R_*^2\lVert\delta\mathcal W\rVert\ll1.
+          \]
+        </p>
+        <p>In a regular spherical perfect fluid, a useful Weyl amplitude is</p>
+        <p class="display-equation">
+          \[
+          \mathcal W
+          =\frac{m}{R^3}-\frac{4\pi}{3}\rho.
+          \]
+        </p>
+        <p>
+          Smooth spherical density and pressure profiles contain only even powers of radius near the center. It follows
+          that
+        </p>
+        <p class="display-equation">
+          \[
+          \mathcal W=O(R_E^2).
+          \]
+        </p>
+        <p>
+          Pressure gradients, heat flux, and anisotropic stress alter the coefficient of this term without removing
+          its quadratic suppression in the regular spherical case. Rotation adds a new possibility: a finite
+          quadrupolar residue can appear at \(O(\chi^2)\). The child may therefore begin extremely smooth without being
+          exactly featureless.
+        </p>
+        <p>The exact homogeneous limit still gives an important result. On a marginal sphere, \(2m=R\), and</p>
+        <p class="display-equation display-equation--compact">
+          \[
+          \mathcal W=0
+          \quad\Longleftrightarrow\quad
+          \rho_{\rm local}=\bar\rho.
+          \]
+        </p>
+        <p>
+          At that limit the parent surface-gravity expression takes the same dimensionless form as the flat-FLRW
+          apparent horizon:
+        </p>
+        <p class="display-equation display-equation--numbered display-equation--key">
+          \[
+          \frac{\kappa_A R_A}{c^2}
+          =\frac{3w_{\rm eff}-1}{4}.
+          \]
+        </p>
+        <p>
+          Under the proposed handoff, the mapped radius fixes the Hubble scale, while
+          \(\kappa_AR_A/c^2\) fixes the background equation-of-state character. Together they form the local horizon
+          two-jet required to begin a Friedmann history.
+        </p>
+        <p>
+          First trapping and homogeneous handoff are not the same event. Pair creation gives
+          \(8\pi R_b^2\rho_b=1\); the exactly Weyl-flat marginal benchmark gives
+          \(8\pi R_*^2\rho_*=3\). The formation geometry must carry the system from one condition to the other while
+          preserving the small nonzero perturbative residue.
+        </p>
+        <p>
+          Marginality must also be tested in the child metric. If a local relation
+          \(g_C=\Omega_{\rm W}^2g_P\) holds through the relevant region, a child marginal surface obeys
+        </p>
+        <p class="display-equation display-equation--numbered">
           \[
           \theta_P+2k_P(\ln\Omega_{\rm W})=0.
           \]
-        </div>
-        <p>
-          The mapped radius and Hayward–Kodama surface gravity then form a horizon two-jet: the first fixes the local
-          Hubble scale, while the dimensionless product \(\kappa_AR_A/c^2\) fixes the background equation-of-state
-          character.
         </p>
+        <p>The derivative of the local Weyl factor matters. Parent marginality by itself is not enough.</p>
       </section>
 
-      <section id="scale" class="formation-wide formation-scale">
-        <p class="section-kicker">06 · Mature evolution</p>
-        <h2>The hierarchy accumulates</h2>
-        <p class="formation-wide__intro">
-          The mature cosmology uses three related but presently distinct maps: a physical ruler ratio, a local metric
-          rescaling, and a null affine transfer. Keeping them separate prevents an assumed identification from doing the
-          work of the missing throat geometry.
-        </p>
-
-        <div class="scale-dictionary">
-          <article>
-            <p class="scale-dictionary__symbol">\(\Gamma_{\rm GD}\)</p>
-            <h3>Mature dual scale</h3>
-            <p>The physical ruler ratio after the reciprocal homogeneous branch exists.</p>
-            <p class="scale-dictionary__relation">\(\Gamma_{\rm GD}=a^2=r^{-2}\)</p>
-          </article>
-          <article>
-            <p class="scale-dictionary__symbol">\(\Omega_{\rm W}\)</p>
-            <h3>Local Weyl factor</h3>
-            <p>A tensor relation on a region where the two metrics are actually conformally related.</p>
-            <p class="scale-dictionary__relation">\(g_C=\Omega_{\rm W}^2g_P\)</p>
-          </article>
-          <article>
-            <p class="scale-dictionary__symbol">\(\mathcal T\)</p>
-            <h3>Null affine transfer</h3>
-            <p>The relative affine parametrization of corresponding null histories.</p>
-            <p class="scale-dictionary__relation">\(\mathcal T=d\lambda_C/d\lambda_P\)</p>
-          </article>
-        </div>
-
-        <p class="formation-scale__guardrail">
-          A completed formation solution must derive how \(\Gamma_{\rm GD}\), \(\Omega_{\rm W}\), and \(\mathcal T\)
-          arise as projections of one geometry. They are not set equal by notation.
-        </p>
-
-        <div class="gamma-core">
-          <div>
-            <p class="gamma-core__label">Reciprocal ruler identity</p>
-            \[
-            \boxed{\Gamma_{\rm GD}=\frac ar=a^2=r^{-2}}
-            \]
-          </div>
-          <div>
-            <p class="gamma-core__label">Child-time dynamics</p>
-            \[
-            \boxed{\frac{\dot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}=2H}
-            \]
-            \[
-            \boxed{
-            \frac{\ddot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}
-            =\frac{8\pi G}{3}\left(\rho-\frac{3p}{c^2}\right)}
-            \]
-          </div>
-        </div>
-
+      <section id="infall-becomes-scale" class="formation-prose">
+        <h2>Infall Becomes Scale</h2>
         <p>
-          Here dots denote child cosmic proper time and \(\rho\) is mass-equivalent density. These are exact mature
-          consequences of \(\Gamma_{\rm GD}=a^2\) and flat Friedmann evolution. They do not derive the matter content
-          or prove a global Weyl equivalence between a black-hole spacetime and FLRW.
+          Once the homogeneous reciprocal branch has formed, compare one parent ruler and its child dual. Normalize
+          them to the same reference length \(\ell_*\) at the handoff:
         </p>
-
-        <div class="era-strip" aria-label="Cosmic eras as mature Gamma dynamics">
-          <div>
-            <span>Radiation</span>
-            <strong>\(\Gamma_{\rm GD}\propto\tau_C\)</strong>
-            <small>Trace-free · linear</small>
-          </div>
-          <div>
-            <span>Matter</span>
-            <strong>\(\Gamma_{\rm GD}\propto\tau_C^{4/3}\)</strong>
-            <small>Positive trace · power-law bending</small>
-          </div>
-          <div>
-            <span>Vacuum</span>
-            <strong>\(\Gamma_{\rm GD}\propto e^{2H_\Lambda\tau_C}\)</strong>
-            <small>Constant curvature · exponential</small>
-          </div>
-        </div>
-
-        <blockquote class="formation-thesis">
-          The throat need not begin at cosmological size. It must launch the scale-transfer evolution; the hierarchy is
-          then accumulated by the reciprocal cosmology itself.
-        </blockquote>
-        <p>
-          Equivalently, \(\ln\Gamma_{\rm GD}=2\ln a\): every e-fold of child expansion contributes two e-folds of
-          relative parent-to-child ruler separation.
-        </p>
-      </section>
-
-      <section id="inheritance" class="formation-prose">
-        <p class="section-kicker">07 · Child inheritance</p>
-        <h2>What the mature branch can carry</h2>
-        <p>
-          In a chosen reciprocal normalization, the flat vacuum–matter–radiation background can be written as a radial
-          ledger,
-        </p>
-        <div class="key-equation">
+        <p class="display-equation">
           \[
-          P(r)\equiv\frac{H^2}{H_\Lambda^2}
-          =1+\eta_mr^3+\eta_rr^4.
+          \ell_P=\ell_*r,
+          \qquad
+          \ell_C=\ell_*a.
           \]
-        </div>
-        <p>
-          A power \(r^n\) corresponds to a constant equation-of-state sector through \(n=3(1+w)\): vacuum contributes
-          \(n=0\), dust \(n=3\), and radiation \(n=4\). Geometry can therefore organize total equation-of-state
-          sectors. It cannot by itself distinguish particle species with the same \(w\), such as baryons and cold dark
-          matter.
         </p>
-        <div class="key-equation key-equation--quiet">
+        <p>Their relative scale is</p>
+        <p class="display-equation display-equation--numbered display-equation--key">
           \[
-          \frac{\dot\Gamma_{\rm GD}^2}{4H_\Lambda^2}
-          =\Gamma_{\rm GD}^2+\eta_m\sqrt{\Gamma_{\rm GD}}+\eta_r.
+          \Gamma_{\rm GD}
+          \equiv\frac{\ell_C}{\ell_P}
+          =\frac ar
+          =a^2
+          =r^{-2}.
           \]
-        </div>
-        <p>
-          The coefficients depend on scale-factor normalization, while
-          \(\mathcal J=\eta_r^3/\eta_m^4\) is normalization-independent. A completed dressed trapping-horizon map may
-          determine this total ledger from the parent collapse; species abundances, asymmetries, and thermalization
-          remain microphysical questions.
         </p>
-
-        <h3>Radiation is a distinguished candidate handoff</h3>
         <p>
-          Suppose the throat identifies a parent ruler through \(R_A^C=\Gamma_{\rm GD}R_P\) and supplies the required
-          child-time map. Flat Friedmann evolution then gives
+          Big Gamma is the mature parent-to-child ruler separation. It is not, by definition, a Weyl factor relating
+          an entire Schwarzschild or Kerr spacetime to FLRW. Where a common homogeneous conformal sector exists, it may
+          coincide with such a factor; the throat must establish that relation.
         </p>
-        <div class="key-equation key-equation--quiet">
+        <p>Because \(\Gamma_{\rm GD}=a^2\), its velocity is twice the Hubble rate:</p>
+        <p class="display-equation display-equation--numbered">
           \[
-          \frac{\dot R_P}{R_P}=\frac{3w_{\rm eff}-1}{2}H.
+          \frac{\dot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}=2H.
           \]
-        </div>
-        <div class="formation-result">
-          <span class="epistemic epistemic--conditional">Conditional theorem</span>
+        </p>
+        <p>Differentiating once more and using the flat Friedmann equations gives</p>
+        <p class="display-equation display-equation--numbered display-equation--key">
+          \[
+          \frac{\ddot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}
+          =\frac{8\pi G}{3}
+          \left(\rho-\frac{3p}{c^2}\right).
+          \]
+        </p>
+        <p>
+          The acceleration of the dual scale therefore reads the trace of the stress-energy tensor. Radiation is
+          trace-free, so \(\Gamma_{\rm GD}\propto\tau_C\) and \(a\propto\tau_C^{1/2}\). Matter gives
+          \(\Gamma_{\rm GD}\propto\tau_C^{4/3}\) and \(a\propto\tau_C^{2/3}\). Vacuum gives
+          \(\Gamma_{\rm GD}\propto e^{2H_\Lambda\tau_C}\) and \(a\propto e^{H_\Lambda\tau_C}\).
+        </p>
+        <p>
+          The throat does not need to contain a universe that is already cosmological in size. It needs to launch the
+          scale evolution. Since
+        </p>
+        <p class="display-equation">
+          \[
+          \ln\Gamma_{\rm GD}=2\ln a,
+          \]
+        </p>
+        <p>
+          every e-fold of child expansion contributes two e-folds of relative ruler separation. The hierarchy is
+          accumulated by the reciprocal cosmology itself.
+        </p>
+        <h3>Why radiation is special</h3>
+        <p>
+          Suppose the throat supplies a parent ruler related to the child apparent-horizon radius by
+          \(R_A^C=\Gamma_{\rm GD}R_P\), together with the required child-time map. Flat Friedmann evolution then gives
+        </p>
+        <p class="display-equation">
+          \[
+          \frac{\dot R_P}{R_P}
+          =\frac{3w_{\rm eff}-1}{2}H.
+          \]
+        </p>
+        <p>A stationary mapped ruler therefore selects</p>
+        <p class="display-equation display-equation--numbered">
           \[
           \dot R_P=0
           \quad\Longrightarrow\quad
           w_{\rm eff}=\frac13.
           \]
-        </div>
-        <p>
-          Radiation is also trace-free, makes \(\ddot\Gamma_{\rm GD}=0\), gives
-          \(\kappa_AR_A/c^2=0\), and makes the flat-FLRW apparent horizon null. This convergence makes radiation a
-          compelling handoff candidate, but the formation geometry must still select the mapped ruler and its clock.
         </p>
+        <p>
+          Radiation is also the state for which the stress-energy trace vanishes,
+          \(\ddot\Gamma_{\rm GD}=0\), \(\kappa_AR_A=0\), and the flat-FLRW apparent horizon is null. These relations
+          select radiation as the natural first mature child regime. CSBHI proposes this radiation handoff; the ruler
+          correspondence and time map supplied by the throat determine whether it occurs.
+        </p>
+      </section>
 
-        <h3>A shared causal ancestry</h3>
+      <section id="inheritance" class="formation-prose">
+        <h2>What Crosses the Throat</h2>
+        <p>The event horizon, the trapping geometry, and the reciprocal branch carry different information.</p>
         <p>
-          Positive conformal scaling preserves light cones. It cannot create causal contact. CSBHI instead proposes
-          that regions widely separated in the mature child can inherit conditions from one connected formation domain
-          before the ordinary FLRW clock begins.
+          The event horizon carries a global null history. Let \(v_H\) parameterize one of its generators, with
+          non-affinity \(\kappa_P\), and let \(\eta=\Phi(v_H)\) be the corresponding child conformal time. Their affine
+          parameters obey
         </p>
-        <div class="key-equation">
+        <p class="display-equation display-equation--numbered display-equation--compact">
+          \[
+          a^2[\Phi(v_H)]\Phi'(v_H)
+          =C\,\mathcal T(v_H)
+          \exp\!\left(\int^{v_H}\kappa_P(s)\,ds\right).
+          \]
+        </p>
+        <p>
+          Here \(\mathcal T=d\lambda_C/d\lambda_P\) is the null affine transfer. Wherever the two formation regions are
+          genuinely related by \(g_C=\Omega_{\rm W}^2g_P\), conformal geometry gives
+          \(\mathcal T=C_\lambda\Omega_{{\rm W},H}^2\). The physical \(\Omega_{\rm W}\) and its connection to the mature
+          ruler scale \(\Gamma_{\rm GD}\) must come from the same throat solution.
+        </p>
+        <p>
+          The trapping geometry carries local density and pressure through focusing, marginality, and surface gravity.
+          Its small Weyl and shear residue carries the candidate seeds of structure. Once the mature branch exists, the
+          total homogeneous equation-of-state ledger can be written
+        </p>
+        <p class="display-equation display-equation--numbered display-equation--key">
+          \[
+          P(r)\equiv\frac{H^2}{H_\Lambda^2}
+          =1+\eta_mr^3+\eta_rr^4.
+          \]
+        </p>
+        <p>
+          The powers have a direct meaning: \(r^n\) corresponds to \(n=3(1+w)\). Vacuum contributes \(n=0\), dust
+          \(n=3\), and radiation \(n=4\). The same history becomes a single first integral for the mature scale:
+        </p>
+        <p class="display-equation display-equation--numbered display-equation--compact">
+          \[
+          \frac{\dot\Gamma_{\rm GD}^2}{4H_\Lambda^2}
+          =\Gamma_{\rm GD}^2
+          +\eta_m\sqrt{\Gamma_{\rm GD}}
+          +\eta_r.
+          \]
+        </p>
+        <p>
+          The separate coefficients depend on the normalization of \(r\). Their combination
+          \(\mathcal J=\eta_r^3/\eta_m^4\) does not. A completed dressed-horizon map may therefore determine the total
+          matter-and-radiation ledger from the parent collapse. It will not, by geometry alone, distinguish species
+          with the same equation of state. Baryon abundance, dark-sector identity, and particle asymmetries remain
+          questions of microphysics and transport.
+        </p>
+        <h3>A common causal history</h3>
+        <p>
+          A positive conformal scaling preserves light cones. It does not create causal contact between events that
+          were never connected. The possible resolution of the cosmological horizon problem comes instead from a
+          shared history before the mature FLRW clock begins.
+        </p>
+        <p class="display-equation display-equation--numbered">
           \[
           \chi_{\rm causal}
           =\Delta\eta_{\rm formation}
           +\int_{\rm mature}\frac{c\,d\tau_C}{a(\tau_C)}.
           \]
+        </p>
+        <p>
+          Regions that later lie outside one another's FLRW-only particle horizons may still descend from one connected
+          formation domain. This becomes a solution of the horizon problem only if the independently derived optical
+          map makes \(\Delta\eta_{\rm formation}\) large enough.
+        </p>
+      </section>
+
+      <section id="campaign" class="formation-prose">
+        <h2>How Far the Result Survives</h2>
+        <p>
+          Oppenheimer–Snyder collapse is homogeneous, pressureless, spherical, and nonrotating. The formation campaign
+          added the missing physics one layer at a time and asked the same question at every step: does a regular
+          contribution force an order-unity breakdown at birth, or does it enter as background evolution and
+          perturbation data?
+        </p>
+        <div class="campaign-table-wrap" role="region" aria-label="Formation campaign scoreboard" tabindex="0">
+          <table class="campaign-table">
+            <thead>
+              <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Collapse model</th>
+                <th scope="col">What it tests</th>
+                <th scope="col">Present result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <th scope="row">OS dust</th>
+                <td>Homogeneous birth-cone map</td>
+                <td>Exact benchmark passed</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <th scope="row">Homogeneous perfect fluid</th>
+                <td>Pressure without gradients</td>
+                <td>Structural pass</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <th scope="row">Perturbed LTB dust</th>
+                <td>Density, velocity, and Weyl modes</td>
+                <td>Partial pass; calibration open</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <th scope="row">Spherical perfect fluid</th>
+                <td>Pressure gradients and Alice–fluid tilt</td>
+                <td>Structural pass near the vertex</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <th scope="row">Dissipative spherical fluid</th>
+                <td>Heat flux and anisotropic stress</td>
+                <td>Structural pass if regular</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <th scope="row">Slow rotation and creases</th>
+                <td>Broken spherical symmetry</td>
+                <td>Local pass; retains spin memory</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <p>
-          This addresses the cosmological horizon problem only if an independently derived affine map makes
-          \(\Delta\eta_{\rm formation}\) large enough. Large scale separation alone is not causal contact.
+          The pattern is consistent. Pressure, density gradients, dissipation, and rotation do not disappear. They
+          survive as changes to the background or as perturbation data. In the regular spherical models, scalar
+          departures are suppressed near the center. Farther through the star they can become nonlinear, and rotation
+          can retain a dimensionless preferred-axis memory.
         </p>
-        <details class="technical-detail">
-          <summary>The null clock equation</summary>
-          <div>
-            <p>
-              Let \(v_H\) parameterize the parent event-horizon generator with non-affinity \(\kappa_P\), and let
-              \(\eta=\Phi(v_H)\) be the proposed child event map. Their affine parameters give
-            </p>
-            \[
-            a^2[\Phi(v_H)]\Phi'(v_H)
-            =C\,\mathcal T(v_H)
-            \exp\!\left(\int^{v_H}\kappa_P(s)\,ds\right).
-            \]
-            <p>
-              Wherever the formation regions are genuinely related by
-              \(g_C=\Omega_{\rm W}^2g_P\), conformal geometry gives
-              \(\mathcal T=C_\lambda\Omega_{{\rm W},H}^2\). The remaining task is to derive the physical
-              \(\Omega_{\rm W}\) through the throat and connect its null projection to the mature ruler scale
-              \(\Gamma_{\rm GD}\).
-            </p>
-          </div>
-        </details>
-      </section>
-
-      <section id="campaign" class="formation-wide formation-campaign">
-        <p class="section-kicker">08 · Evidence ladder</p>
-        <h2>Does the structure survive realistic collapse?</h2>
-        <p class="formation-wide__intro">
-          The campaign added physical ingredients one rung at a time. Each level asked whether a regular contribution
-          creates an unavoidable order-unity obstruction at birth, or enters as controlled background evolution and
-          perturbation data.
-        </p>
-
-        <div class="campaign-ledger" role="list" aria-label="Formation campaign levels">
-          <article role="listitem">
-            <p class="campaign-ledger__level">Level 0</p>
-            <h3>Oppenheimer–Snyder dust</h3>
-            <p>Exact analytic existence benchmark for the homogeneous birth-cone map.</p>
-            <span class="epistemic epistemic--geometry">Passed</span>
-          </article>
-          <article role="listitem">
-            <p class="campaign-ledger__level">Level 1</p>
-            <h3>Homogeneous perfect fluid</h3>
-            <p>Pressure changes the collapse history, not the conformal causal architecture.</p>
-            <span class="epistemic epistemic--geometry">Structural pass</span>
-          </article>
-          <article role="listitem">
-            <p class="campaign-ledger__level">Level 2</p>
-            <h3>Perturbed LTB dust</h3>
-            <p>Density and velocity modes perturb the light cone; absolute shell calibration remains open.</p>
-            <span class="epistemic epistemic--conditional">Partial pass</span>
-          </article>
-          <article role="listitem">
-            <p class="campaign-ledger__level">Level 3</p>
-            <h3>General spherical perfect fluid</h3>
-            <p>Pressure gradients force perturbations; regular scalar departures begin at \(O(R_E^2)\).</p>
-            <span class="epistemic epistemic--geometry">Structural pass</span>
-          </article>
-          <article role="listitem">
-            <p class="campaign-ledger__level">Level 4</p>
-            <h3>Dissipative spherical collapse</h3>
-            <p>Heat flux and anisotropic stress change coefficients without defeating central protection.</p>
-            <span class="epistemic epistemic--geometry">Pass if regular</span>
-          </article>
-          <article role="listitem">
-            <p class="campaign-ledger__level">Level 5</p>
-            <h3>Slow rotation and horizon creases</h3>
-            <p>No first-order scalar obstruction; finite \(O(\chi^2)\) preferred-axis memory may remain.</p>
-            <span class="epistemic epistemic--conditional">Local pass</span>
-          </article>
-        </div>
-
-        <blockquote class="formation-thesis">
-          Across the ladder, regular parent complexity survives as child data. No tested contribution yet forces an
-          order-unity scalar breakdown of the near-FLRW birth limit.
-        </blockquote>
-        <p class="campaign-caveat">
-          These are structural, principally local results. They do not determine perturbation amplitudes through the
-          full star, complete the nonspherical conformal image, or replace a realistic collapse simulation.
-        </p>
-      </section>
-
-      <section id="boundary" class="formation-wide formation-boundary">
-        <p class="section-kicker">09 · Present boundary</p>
-        <h2>What is known—and what must connect</h2>
-
-        <div class="knowledge-grid">
-          <section>
-            <span class="epistemic epistemic--geometry">Established geometry</span>
-            <h3>Parent and benchmark results</h3>
-            <ul>
-              <li>The OS event-horizon history maps conformally to an outgoing light cone.</li>
-              <li>Dynamical event and trapping horizons are distinct.</li>
-              <li>First interior trapping can create a smooth horizon pair.</li>
-              <li>Regular spherical scalar defects are quadratically suppressed near the center.</li>
-              <li>The mature \(\Gamma_{\rm GD}\) equations exactly repackage flat Friedmann evolution.</li>
-            </ul>
-          </section>
-          <section>
-            <span class="epistemic epistemic--conditional">GD correspondences</span>
-            <h3>The proposed bridge</h3>
-            <ul>
-              <li>The mapped event-horizon history is the child's birth cone.</li>
-              <li>\(R_-/R_b\) supplies the reciprocal radial variable.</li>
-              <li>A low-Weyl marginal region approaches the FLRW background two-jet.</li>
-              <li>A stationary mapped ruler selects a radiation-like handoff.</li>
-              <li>Dressed trapping geometry carries the total matter–radiation ledger.</li>
-            </ul>
-          </section>
-          <section>
-            <span class="epistemic epistemic--open">Open construction</span>
-            <h3>The missing throat map</h3>
-            <ul>
-              <li>Derive the timelike child clock and prove the inward-branch identification.</li>
-              <li>Derive the physical \(\Omega_{\rm W}\) and child marginality across the finite throat.</li>
-              <li>Relate \(\Omega_{\rm W}\) to \(\Gamma_{\rm GD}\) at the handoff.</li>
-              <li>Obtain \(\mathcal T=C_\lambda\Omega_{{\rm W},H}^2\) from that same mapped null region.</li>
-              <li>Calculate primordial amplitudes and residual rotational memory.</li>
-            </ul>
-          </section>
-        </div>
-
-        <div class="formation-question">
-          <p>The decisive question</p>
-          <p>
-            Can one realistic collapse solution generate the radial history, low-Weyl two-jet, timelike scale transfer,
-            and null affine clock required by the mature reciprocal branch?
-          </p>
-        </div>
-      </section>
-
-      <section id="reading" class="formation-prose formation-reading">
-        <p class="section-kicker">10 · Follow the calculation</p>
-        <h2>The technical reading path</h2>
         <p>
-          This page is the conceptual entrance. The derivations, audits, assumptions, and failure conditions remain in
-          the research record.
+          These structural results establish that the formation idea survives the analytic models in the campaign.
+          Numerical collapse must determine the amplitudes produced by a realistic star, while the nonspherical
+          conformal map remains a mathematical task.
         </p>
-        <ol>
-          <li>
-            <span>Begin with the reciprocal premise</span>
-            <p><a href="gd1.html">Geometric Duality I</a></p>
-          </li>
-          <li>
-            <span>See the exact homogeneous birth-cone benchmark</span>
-            <p><a href="note.html?src=result_iv_conformal_formation_map">The Conformal Formation Map</a></p>
-          </li>
-          <li>
-            <span>Enter the finite local horizon geometry</span>
-            <p><a href="note.html?src=trapping_horizon_pair_and_inward_reciprocal_branch">The Trapping-Horizon Pair</a></p>
-          </li>
-          <li>
-            <span>Follow the realism ladder</span>
-            <p>
-              <a href="note.html?src=level_3_general_spherical_perfect_fluid_completion">Perfect-fluid completion</a>,
-              <a href="note.html?src=level_4_dissipative_spherical_collapse">dissipative collapse</a>, and
-              <a href="note.html?src=level_5_rotation_and_campaign_summary">rotation and campaign summary</a>
-            </p>
-          </li>
-          <li>
-            <span>Keep the formation maps distinct</span>
-            <p><a href="note.html?src=conformal_dictionary_and_pre_flrw_causal_interval">The Conformal Dictionary</a></p>
-          </li>
-          <li>
-            <span>Close the mature background</span>
-            <p><a href="note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff">Mature Gamma Dynamics</a></p>
-          </li>
-        </ol>
-        <p class="formation-reading__next">
-          For the live dependency graph, continue to
-          <a href="note.html?src=open_questions">What Remains Mathematically Illegible</a>.
+      </section>
+
+      <section id="remaining-calculation" class="formation-prose">
+        <h2>The Remaining Calculation</h2>
+        <p>
+          General relativity supplies the growing event horizon, the trapping-horizon pair, the focusing equations, and
+          the regularity conditions that protect the central geometry. The OS solution supplies an exact conformal
+          birth-cone benchmark. GD1 supplies the reciprocal law once the mature interior has formed.
         </p>
+        <p>
+          GD2 proposes that these structures are successive parts of one construction: the event horizon carries the
+          global causal history, the finite throat supplies the local curvature and stress-energy data, and the inward
+          trapping branch becomes the radial history that the child experiences reciprocally.
+        </p>
+        <p>One calculation must now connect them. Starting from a realistic collapse solution, it must derive</p>
+        <p class="display-equation display-equation--key">
+          \[
+          \text{collapse geometry}
+          \longrightarrow
+          \left(r,\tau_C,\Omega_{\rm W},\mathcal T\right)
+          \longrightarrow
+          \text{mature reciprocal cosmology}.
+          \]
+        </p>
+        <p>
+          In particular, it must prove the identification \(r=R_-/R_b\), evolve the geometry from first trapping to a
+          low-Weyl handoff, derive the child clock and local Weyl factor, and show that the null affine transfer is the
+          corresponding projection of the same spacetime.
+        </p>
+        <p>
+          If one collapse geometry supplies all four pieces without importing a child cosmology as calibration, the
+          formation problem closes. The expansion that follows is no longer a second structure attached to the black
+          hole. It is the reciprocal continuation of the collapse itself.
+        </p>
+
+        <aside class="reading-path">
+          <h3>Continue into the calculation</h3>
+          <ol>
+            <li><a href="gd1.html">Geometric Duality I</a></li>
+            <li><a href="note.html?src=result_iv_conformal_formation_map">The Conformal Formation Map</a></li>
+            <li><a href="note.html?src=trapping_horizon_pair_and_inward_reciprocal_branch">The Trapping-Horizon Pair</a></li>
+            <li><a href="note.html?src=level_3_general_spherical_perfect_fluid_completion">Perfect-Fluid Completion</a></li>
+            <li><a href="note.html?src=level_4_dissipative_spherical_collapse">Dissipative Spherical Collapse</a></li>
+            <li><a href="note.html?src=level_5_rotation_and_campaign_summary">Rotation and Campaign Summary</a></li>
+            <li><a href="note.html?src=conformal_dictionary_and_pre_flrw_causal_interval">The Conformal Dictionary</a></li>
+            <li><a href="note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff">Mature Gamma Dynamics</a></li>
+            <li><a href="note.html?src=open_questions">What Remains Mathematically Illegible</a></li>
+          </ol>
+        </aside>
       </section>
 
       <footer class="formation-footer">
