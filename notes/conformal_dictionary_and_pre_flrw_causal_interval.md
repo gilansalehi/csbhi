@@ -4,7 +4,7 @@
 
 **Working correction and synthesis — September 2026. Source: upstream project derivation. Independent audit and revisions: Codex (OpenAI).**
 
-> **Notation and scope correction — September 2026.** Earlier drafts used \(\Gamma\) for the local four-metric Weyl factor. Current notation writes that object as \(\Omega_{\rm W}\) and reserves \(\Gamma_{\rm GD}=a^2=r^{-2}\) for the mature dual ruler-scale separation. The throat has not yet proved \(\Omega_{\rm W}=\Gamma_{\rm GD}\). In particular, the null affine transfer is \(C_\lambda\Omega_{{\rm W},H}^2\), not automatically \(C_\lambda\Gamma_{\rm GD}^2\). See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+> **Notation and scope correction — September 2026.** Earlier drafts used \(\Gamma\) for the local four-metric Weyl factor. Current notation writes that object as \(\Omega_{\rm W}\) and reserves \(\Gamma=a^2=r^{-2}\) for the mature dual ruler-scale separation. The throat has not yet proved \(\Omega_{\rm W}=\Gamma\). In particular, the null affine transfer is \(C_\lambda\Omega_{{\rm W},H}^2\), not automatically \(C_\lambda\Gamma^2\). See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
 
 ---
 
@@ -51,7 +51,7 @@ A finite transition region with curvature mismatch can develop nonzero derivativ
 
 ### Open global claim
 
-The local Weyl relation established for the homogeneous formation patch has not been extended through the full mature GD1 branch. The mature ruler scale \(\Gamma_{\rm GD}=a^2\) is known conditionally from GD1, but identifying it with \(\Omega_{\rm W}\) remains a stronger GD2 hypothesis.
+The local Weyl relation established for the homogeneous formation patch has not been extended through the full mature GD1 branch. The mature ruler scale \(\Gamma=a^2\) is known conditionally from GD1, but identifying it with \(\Omega_{\rm W}\) remains a stronger GD2 hypothesis.
 
 ---
 
@@ -401,7 +401,7 @@ and the lower flatness conditions hold, then
 \tag{27}
 \]
 
-Here \(\mathscr S_A\) is deliberately generic scale-transfer data. It may be related to \(\Omega_{\rm W}\), \(\Gamma_{\rm GD}\), or both, but the throat must derive that relation. The ledger may therefore be carried jointly by parent trapping-horizon evolution and scale-transfer evolution. This is the corrected content of [The Conditional Trapping-Pair Ledger and Weyl-Flat Handoff](note.html?src=conditional_trapping_pair_ledger_and_weyl_flat_handoff).
+Here \(\mathscr S_A\) is deliberately generic scale-transfer data. It may be related to \(\Omega_{\rm W}\), \(\Gamma\), or both, but the throat must derive that relation. The ledger may therefore be carried jointly by parent trapping-horizon evolution and scale-transfer evolution. This is the corrected content of [The Conditional Trapping-Pair Ledger and Weyl-Flat Handoff](note.html?src=conditional_trapping_pair_ledger_and_weyl_flat_handoff).
 
 ---
 
@@ -447,7 +447,7 @@ For \(R_{\rm dS}=17.53\,\mathrm{Gly}\), \(M_{\rm equiv}\simeq5.6\times10^{22}M_\
 
 while a \(30M_\odot\) parent gives \(\ln\Omega_{{\rm W},X}\simeq49.0\).
 
-These numbers are scale-ratio targets at the declared comparison \(X\), not derived formation results and not inflationary e-folds. They are not values of a mature \(\Gamma_{{\rm GD},\infty}\): in an asymptotically de Sitter child, \(\Gamma_{\rm GD}=a^2\) diverges. If \(\Omega_{\rm W}\) varies, its gradients also enter the quasi-local mass and Equations (29)–(30) are insufficient.
+These numbers are scale-ratio targets at the declared comparison \(X\), not derived formation results and not inflationary e-folds. They are not values of a mature \(\Gamma_\infty\): in an asymptotically de Sitter child, \(\Gamma=a^2\) diverges. If \(\Omega_{\rm W}\) varies, its gradients also enter the quasi-local mass and Equations (29)–(30) are insufficient.
 
 No present CSBHI result canonically identifies the parent event-horizon radius with today's child particle-horizon radius. Such a comparison is more speculative than the de Sitter benchmark and should not be described as canonical.
 
@@ -542,10 +542,10 @@ The following older notes retain useful calculations but require explicit scope 
 | *Dynamic Throat Kinematics and the Cosmological Clock* | The child-side identity \(\dot B=HB-c\) for an ingoing FLRW null boundary | Identifying that future event-horizon history with the parent formation map or transferring its radius is not current GD2 |
 | *The Collapse-to-Child Boundary System* | The separate parent and child null embeddings | The unit-lapse selection and any inference that one clock removes the conformal transfer |
 | *Optical Transfer Through a Matter-Filled Parent Collapse* | The parent-side LTB optical integrating factor | Its \(N_H=1\) cross-frame normalization; a local Weyl map would instead give \(C_\lambda\Omega_{{\rm W},H}^2\), but the throat must still establish that map |
-| *The Remaining Horizon Clock* | The identification of \(\Phi'\) as missing in the pre-conformal formulation | A local Weyl map would carry the null affine factor through \(\Omega_{{\rm W},H}\); the relation to \(\Gamma_{\rm GD}\) remains open |
+| *The Remaining Horizon Clock* | The identification of \(\Phi'\) as missing in the pre-conformal formulation | A local Weyl map would carry the null affine factor through \(\Omega_{{\rm W},H}\); the relation to \(\Gamma\) remains open |
 | *Horizon-Map Equation and Notation Audit* | The horizon-name guardrails and angular conformal relation | Its Schwarzschild-rate/child-density boundary identity is an isometric benchmark, and \(\Omega_\Sigma\) is now the local precursor of canonical \(\Omega_{\rm W}\) |
 | *Asymptotic Consistency of the Collapse-Cohort Map* | Its endpoint expansions within the old cohort model | Its unit-lapse, raw mass-tail, and child-reconstruction claims must be redone with \(\Omega_{\rm W}\) explicit |
-| *Next Steps for the Collapse-Cohort Horizon Map* | Its decomposition of the remaining construction | Its clock function must be derived jointly with \(\Omega_{\rm W}\), \(\Gamma_{\rm GD}\), and the throat map |
+| *Next Steps for the Collapse-Cohort Horizon Map* | Its decomposition of the remaining construction | Its clock function must be derived jointly with \(\Omega_{\rm W}\), \(\Gamma\), and the throat map |
 
 The sharp-junction and dynamic-future-horizon notes remain useful as archived surrogate calculations. They must not be combined with Result IV as though they described the same physical map.
 
@@ -587,7 +587,7 @@ The conformal correction removes several false identifications while preserving 
 }
 \]
 
-Under an independently established local conformal map, the affine-transfer function becomes \(C_\lambda\Omega_{{\rm W},H}^2\). The finite throat may generate the initial derivative data of this local Weyl factor, and the dressed trapping pair can still carry the matter/radiation ledger. Neither statement identifies \(\Omega_{\rm W}\) with the mature ruler scale \(\Gamma_{\rm GD}\).
+Under an independently established local conformal map, the affine-transfer function becomes \(C_\lambda\Omega_{{\rm W},H}^2\). The finite throat may generate the initial derivative data of this local Weyl factor, and the dressed trapping pair can still carry the matter/radiation ledger. Neither statement identifies \(\Omega_{\rm W}\) with the mature ruler scale \(\Gamma\).
 
 The CMB horizon problem acquires a legitimate candidate route: include a common pre-FLRW formation domain in the causal past and then map it to a much larger physical child geometry. That route remains a calculation to be passed, not a result to be announced.
 

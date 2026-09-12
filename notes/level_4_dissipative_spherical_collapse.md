@@ -101,18 +101,18 @@ D_\ell=s^a\nabla_a,
 \[
 U\equiv D_tR,
 \qquad
-\mathcal G\equiv D_\ell R,
+\Gamma_{\rm MS}\equiv D_\ell R,
 \tag{3}
 \]
 
 with
 
 \[
-\mathcal G^2=1+U^2-\frac{2m}{R}.
+\Gamma_{\rm MS}^2=1+U^2-\frac{2m}{R}.
 \tag{4}
 \]
 
-The symbol \(\mathcal G\) is retained for the radial Misner–Sharp derivative so that \(\Gamma\) remains available for the GD conformal factor.
+The symbol \(\Gamma_{\rm MS}\) denotes the radial Misner–Sharp derivative, leaving bare \(\Gamma\) for mature GD scale separation.
 
 ---
 
@@ -224,7 +224,7 @@ It does not dynamically demand an (O(1)) radial flux at the vertex.
 Define the radial and transverse fluid rates
 
 \[
-H_r\equiv\frac{D_\ell U}{\mathcal G},
+H_r\equiv\frac{D_\ell U}{\Gamma_{\rm MS}},
 \qquad
 H_\perp\equiv\frac{U}{R},
 \tag{14}
@@ -252,7 +252,7 @@ D_t\rho
 +(\rho+p_r)H_r
 +2(\rho+p_t)H_\perp
 +D_\ell q
-+\frac{2\mathcal G}{R}q
++\frac{2\Gamma_{\rm MS}}{R}q
 +2\mathcal A q
 =0.
 }
@@ -264,7 +264,7 @@ Near the center,
 \[
 D_\ell q=q_1+O(R^2),
 \qquad
-\frac{2\mathcal Gq}{R}=2q_1+O(R^2).
+\frac{2\Gamma_{\rm MS}q}{R}=2q_1+O(R^2).
 \]
 
 Equation (17) therefore has the central limit
@@ -291,7 +291,7 @@ For Equation (1), the two mass-flow equations are
 \boxed{
 D_tm
 =-4\pi R^2
-(p_rU+q\mathcal G),
+(p_rU+q\Gamma_{\rm MS}),
 }
 \tag{19}
 \]
@@ -302,17 +302,17 @@ and
 \boxed{
 D_\ell m
 =4\pi R^2
-(\rho\mathcal G+qU).
+(\rho\Gamma_{\rm MS}+qU).
 }
 \tag{20}
 \]
 
-The (q\mathcal G) term in Equation (19) is the energy crossing a comoving sphere; the (qU) term in Equation (20) changes the comparison between neighboring moving shells.
+The (q\Gamma_{\rm MS}) term in Equation (19) is the energy crossing a comoving sphere; the (qU) term in Equation (20) changes the comparison between neighboring moving shells.
 
 Define differentiation with respect to areal radius on a spatial slice,
 
 \[
-D_R\equiv\frac1{\mathcal G}D_\ell,
+D_R\equiv\frac1{\Gamma_{\rm MS}}D_\ell,
 \qquad
 D_RR=1.
 \tag{21}
@@ -325,7 +325,7 @@ Equation (20) becomes
 D_Rm
 =4\pi R^2
 \left(
-\rho+\frac{qU}{\mathcal G}
+\rho+\frac{qU}{\Gamma_{\rm MS}}
 \right).
 }
 \tag{22}
@@ -338,14 +338,14 @@ U=H_0R+O(R^3),
 \qquad
 q=q_1R+O(R^3),
 \qquad
-\mathcal G=1+O(R^2).
+\Gamma_{\rm MS}=1+O(R^2).
 \tag{23}
 \]
 
 Hence
 
 \[
-\frac{qU}{\mathcal G}
+\frac{qU}{\Gamma_{\rm MS}}
 =H_0q_1R^2+O(R^4).
 \tag{24}
 \]
@@ -439,7 +439,7 @@ Differentiate Equation (26) along (D_+), insert both mass equations (19)–(20),
 \begin{aligned}
 D_+\mathcal W
 ={}&
--\frac{3(U+\mathcal G)}{R}\mathcal W
+-\frac{3(U+\Gamma_{\rm MS})}{R}\mathcal W
 -\frac{4\pi}{3}D_\ell\rho
 +\frac{4\pi}{3}(\rho+p_r)\Sigma
 \\[3pt]
@@ -451,8 +451,8 @@ D_+\mathcal W
 &+
 \frac{4\pi}{3R}
 \left[
-(3U-\mathcal G)q
-+(U+3\mathcal G)\Delta
+(3U-\Gamma_{\rm MS})q
++(U+3\Gamma_{\rm MS})\Delta
 \right].
 \end{aligned}
 }
@@ -479,22 +479,22 @@ q=O(R),
 The only apparent (O(1)) flux source is the pair
 
 \[
-D_\ell q-\frac{\mathcal Gq}{R}.
+D_\ell q-\frac{\Gamma_{\rm MS}q}{R}.
 \]
 
-Using Equation (8) and \(\mathcal G=1+O(R^2)\),
+Using Equation (8) and \(\Gamma_{\rm MS}=1+O(R^2)\),
 
 \[
 D_\ell q=q_1+O(R^2),
 \qquad
-\frac{\mathcal Gq}{R}=q_1+O(R^2),
+\frac{\Gamma_{\rm MS}q}{R}=q_1+O(R^2),
 \]
 
 so the constant terms cancel:
 
 \[
 \boxed{
-D_\ell q-\frac{\mathcal Gq}{R}=O(R^2).
+D_\ell q-\frac{\Gamma_{\rm MS}q}{R}=O(R^2).
 }
 \tag{33}
 \]

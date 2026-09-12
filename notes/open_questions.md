@@ -31,7 +31,7 @@ The present project supplies:
 - the reciprocal power as the unique nontrivial horizon-fixing involution within the stated scale-free power-law class;
 - a collapse-cohort description separating the causal map, shell map, and post-crossing evolution;
 - exact parent and child null embeddings, together with the conditional affine law for an independently established local Weyl factor \(\Omega_{\rm W}\);
-- the mature reciprocal ruler scale \(\Gamma_{\rm GD}=a^2=r^{-2}\) and its closed Friedmann evolution after handoff;
+- the mature reciprocal ruler scale \(\Gamma=a^2=r^{-2}\) and its closed Friedmann evolution after handoff;
 - a compensated (\Lambda\)LTB benchmark whose endpoint limits work but whose simplest unit-lapse clock fails through the intermediate collapse; and
 - a coefficient-independent galaxy prediction, conditional on identifying the galactic scale with the contemporaneous horizon.
 
@@ -69,9 +69,9 @@ If a local four-metric Weyl factor \(\Omega_{\rm W}\) exists on the relevant for
 \frac{d\lambda_C}{d\lambda_P}=C_\lambda\Omega_{{\rm W},H}^2.
 \]
 
-Child marginality requires \(\theta_P+2k_P(\ln\Omega_{\rm W})=0\), not parent marginality alone. Separately, the mature reciprocal ruler scale is now fixed conditionally as \(\Gamma_{\rm GD}=a^2=r^{-2}\), and its Friedmann evolution is closed once \(H_\Lambda,\eta_m,\eta_r\) are supplied.
+Child marginality requires \(\theta_P+2k_P(\ln\Omega_{\rm W})=0\), not parent marginality alone. Separately, the mature reciprocal ruler scale is now fixed conditionally as \(\Gamma=a^2=r^{-2}\), and its Friedmann evolution is closed once \(H_\Lambda,\eta_m,\eta_r\) are supplied.
 
-**Missing:** The throat derivation relating \(\Omega_{\rm W}\), \(\Gamma_{\rm GD}\), the cohort clock, and the null affine transfer, together with proof that the birth cone is part of the child's actual lower causal boundary. No child apparent- or future-event-horizon relation may be substituted for the birth-cone map merely because its differential equation or endpoint behavior looks similar.
+**Missing:** The throat derivation relating \(\Omega_{\rm W}\), \(\Gamma\), the cohort clock, and the null affine transfer, together with proof that the birth cone is part of the child's actual lower causal boundary. No child apparent- or future-event-horizon relation may be substituted for the birth-cone map merely because its differential equation or endpoint behavior looks similar.
 
 **Closure test:** Integrate the event horizon and both trapping branches through one realistic collapse; derive the child clock from event-horizon optics without fitting the child expansion; and test whether the inward-branch reciprocal rate produces an admissible child \(H_C\) and \(\dot H_C\) after the conformal scale transfer is fixed.
 
@@ -97,7 +97,7 @@ Child marginality requires \(\theta_P+2k_P(\ln\Omega_{\rm W})=0\), not parent ma
 
 ### Q5. What fixes the absolute reciprocal normalization?
 
-**Known:** Standard cosmology measures scale-factor ratios. CSBHI makes \(r=a=1\) at the proposed handoff a physical candidate anchor. This normalization gives \(\Gamma_{\rm GD}=a^2=r^{-2}\) in the mature branch. Its subsequent functional evolution is fixed by the Friedmann ledger, but its relation to parent rulers at formation is not.
+**Known:** Standard cosmology measures scale-factor ratios. CSBHI makes \(r=a=1\) at the proposed handoff a physical candidate anchor. This normalization gives \(\Gamma=a^2=r^{-2}\) in the mature branch. Its subsequent functional evolution is fixed by the Friedmann ledger, but its relation to parent rulers at formation is not.
 
 **Missing:** A derivation that the throat establishes this normalization and launches \(\dot\Gamma_*=2H_*\), together with the relation between the selected parent ruler, the hot FLRW handoff, and the separate null map.
 

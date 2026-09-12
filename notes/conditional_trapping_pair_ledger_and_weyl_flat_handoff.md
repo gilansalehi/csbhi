@@ -4,7 +4,7 @@
 
 **Working calculation — September 2026. Source: upstream project derivation. Independent audit and revisions: Codex (OpenAI).**
 
-> **Notation update — September 2026.** The factors \(\mathscr S_+\) and \(\mathscr S_f\) below are generic scale-transfer dressings of selected parent spheres. They must not be silently identified either with the mature ruler scale \(\Gamma_{\rm GD}=a^2=r^{-2}\) or with the local four-metric Weyl factor \(\Omega_{\rm W}\). Deriving those relations is part of the throat problem.
+> **Notation update — September 2026.** The factors \(\mathscr S_+\) and \(\mathscr S_f\) below are generic scale-transfer dressings of selected parent spheres. They must not be silently identified either with the mature ruler scale \(\Gamma=a^2=r^{-2}\) or with the local four-metric Weyl factor \(\Omega_{\rm W}\). Deriving those relations is part of the throat problem.
 
 ---
 
@@ -624,7 +624,7 @@ For a perfect-fluid black-hole trapping horizon, its radial velocity relative to
 \[
 v_H
 =
--\frac{U}{\mathcal G}
+-\frac{U}{\Gamma_{\rm MS}}
 \frac{1+8\pi R^2p}
 {1-8\pi R^2\rho},
 \tag{39}
@@ -635,13 +635,13 @@ where
 \[
 U=D_tR,
 \qquad
-\mathcal G=D_\ell R.
+\Gamma_{\rm MS}=D_\ell R.
 \]
 
 On a collapsing marginal branch,
 
 \[
-U=-\mathcal G.
+U=-\Gamma_{\rm MS}.
 \tag{40}
 \]
 
@@ -910,7 +910,7 @@ For either trapping branch define
 Let \(N_H\) be the fluid lapse evaluated on the horizon and retain
 
 \[
-\mathcal G_H=D_\ell R
+\Gamma_{{\rm MS},H}=D_\ell R
 \]
 
 for the Misner–Sharp radial derivative. The exact branch evolution in a common comoving time coordinate is
@@ -919,7 +919,7 @@ for the Misner–Sharp radial derivative. The exact branch evolution in a common
 \boxed{
 \frac{dR_H}{dt}
 =
-N_H\mathcal G_H
+N_H\Gamma_{{\rm MS},H}
 \frac{\mathcal E_H+\mathcal P_H}
 {1-\mathcal E_H}.
 }
@@ -933,7 +933,7 @@ Consequently,
 \frac{d\ln R_+}{d\ln R_-}
 =
 \frac{R_-}{R_+}
-\frac{N_+\mathcal G_+}{N_-\mathcal G_-}
+\frac{N_+\Gamma_{{\rm MS},+}}{N_-\Gamma_{{\rm MS},-}}
 \frac{\mathcal E_++\mathcal P_+}
 {\mathcal E_-+\mathcal P_-}
 \frac{1-\mathcal E_-}
@@ -951,7 +951,7 @@ p(t,q),
 \qquad
 N(t,q),
 \qquad
-\mathcal G(t,q),
+\Gamma_{\rm MS}(t,q),
 \]
 
 which in turn depend on the parent equation of state and collapse initial data. Standard collapse simulations find corresponding changes in the evolution and causal character of the two trapping horizons.

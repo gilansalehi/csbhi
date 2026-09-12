@@ -6,7 +6,7 @@
 
 **Date:** 2026-08-05.
 
-> **Scale-transfer correction — September 2026.** The parent-side LTB integrating factor \(\beta\) and its frequency transport remain valid; the later selection \(N_H=1\) does not. If a local four-metric Weyl map with factor \(\Omega_{\rm W}\) is independently established, then \(d\lambda_C/d\lambda_P=C_\lambda\Omega_{{\rm W},H}^2\). The mature dual scale \(\Gamma_{\rm GD}=a^2\) has not yet been proved equal to that null factor, so \(\mathcal T\) remains an open throat projection. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+> **Scale-transfer correction — September 2026.** The parent-side LTB integrating factor \(\beta\) and its frequency transport remain valid; the later selection \(N_H=1\) does not. If a local four-metric Weyl map with factor \(\Omega_{\rm W}\) is independently established, then \(d\lambda_C/d\lambda_P=C_\lambda\Omega_{{\rm W},H}^2\). The mature dual scale \(\Gamma=a^2\) has not yet been proved equal to that null factor, so \(\mathcal T\) remains an open throat projection. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
 
 **Prerequisites:** [Horizon-Map Equation and Notation Audit](note.html?src=horizon_map_equation_and_notation_audit); [The Collapse-to-Child Boundary System](note.html?src=collapse_to_child_boundary_system); [The Shell Clock in a Compensated ΛLTB Collapse](note.html?src=shell_clock_benchmark_compensated_ltb).
 

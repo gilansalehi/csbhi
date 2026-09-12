@@ -6,7 +6,7 @@
 
 **Reviewed and extended by:** Codex (OpenAI).
 
-> **Scale-transfer correction — September 2026.** The parent PG infall calculation remains valid. Its parent-time reciprocal rate is not automatically the physical child Hubble rate, and the parent compactness density is not presently established as the child Friedmann density. The mature dual scale is \(\Gamma_{\rm GD}=a^2=r^{-2}\); its child-time dynamics are derived separately, while the throat time map remains open. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+> **Scale-transfer correction — September 2026.** The parent PG infall calculation remains valid. Its parent-time reciprocal rate is not automatically the physical child Hubble rate, and the parent compactness density is not presently established as the child Friedmann density. The mature dual scale is \(\Gamma=a^2=r^{-2}\); its child-time dynamics are derived separately, while the throat time map remains open. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
 
 ## Abstract
 

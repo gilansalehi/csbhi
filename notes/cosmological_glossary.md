@@ -23,7 +23,7 @@ Use this document as the shared legend for the series. Individual papers need on
 7. **Say spatially flat when that is what is meant.** A spatially flat FLRW universe can have nonzero four-dimensional spacetime curvature.
 8. **Keep the horizon map separate from the reciprocal ansatz.** The relation \(a=1/r\) defines the proposed scale correspondence. It does not by itself construct a junction between Bob's and Alice's four-geometries.
 9. **Keep the galaxy theorem separate from the horizon correspondence.** The square-root theorem selects \(g_{\rm mix}=\kappa\sqrt{g_NA}\) after a global acceleration \(A\) is supplied. The additional identification \(A=cH_A\) is a proposed CSBHI correspondence, not a consequence of the theorem.
-10. **Declare overloaded symbols locally.** A symbol may carry different meanings in disjoint calculations, but every paper must identify the local meaning at first use. In particular, \(q\), \(a\), and \(\Gamma\) have known project collisions recorded below. Cross-project summaries use \(\Gamma_{\rm GD}\) for mature dual scale separation and \(\Omega_{\rm W}\) for a local four-metric Weyl factor.
+10. **Declare overloaded symbols locally.** A symbol may carry different meanings in disjoint calculations, but every paper must identify the local meaning at first use. In particular, \(q\), \(a\), and \(\Gamma\) have known project collisions recorded below. Cross-project summaries reserve bare \(\Gamma\) for mature dual scale separation, use \(\Omega_{\rm W}\) for a local four-metric Weyl factor, and write the Misner–Sharp radial derivative as \(\Gamma_{\rm MS}\).
 
 ## 2. Canonical symbol reference
 
@@ -130,9 +130,9 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(R_\Lambda\) | Legacy/cosmology-specific notation for the de Sitter curvature radius. Cross-project summaries use \(R_{\rm dS}\). |
 | \(R_{\Lambda,P},R_{\Lambda,C}\) | Parent- and child-universe de Sitter curvature radii in the recursive Kottler notes. For the child identified with our observed cosmology, \(R_{\Lambda,C}=R_\Lambda\). These symbols replace the visually ambiguous \(R_P\) and \(R_C\); \(R_p\) remains reserved for the particle horizon. |
 | \(L\) | Compatibility alias used in the 5D throat programme and earlier parameter-cascade drafts. When it denotes the child de Sitter length, \(L\equiv R_{\rm dS}\). |
-| \(\Gamma_{\rm GD}\) | Mature dual ruler-scale separation, \(\Gamma_{\rm GD}=\ell_C/\ell_P=a^2=r^{-2}\), after the reciprocal handoff is normalized. It is not automatically a four-metric Weyl factor or a null affine-transfer factor. |
-| \(\Omega_{\rm W}\) | Local four-metric Weyl factor in formation work, \(g^C_{ab}=\Omega_{\rm W}^2g^P_{ab}\). Its relation to \(\Gamma_{\rm GD}\) must be derived by the throat geometry. |
-| \(\Gamma=D_\ell R\) | Calculation-local Misner–Sharp radial derivative. This collides with the historical project use of big Gamma, so the subscripted \(\Gamma_{\rm GD}\) or another local symbol is mandatory in cross-note summaries. |
+| \(\Gamma\) | Mature dual ruler-scale separation, \(\Gamma=\ell_C/\ell_P=a^2=r^{-2}\), after the reciprocal handoff is normalized. It is not automatically a four-metric Weyl factor or a null affine-transfer factor. |
+| \(\Omega_{\rm W}\) | Local four-metric Weyl factor in formation work, \(g^C_{ab}=\Omega_{\rm W}^2g^P_{ab}\). Its relation to \(\Gamma\) must be derived by the throat geometry. |
+| \(\Gamma_{\rm MS}=D_\ell R\) | Misner–Sharp radial derivative. The \({\rm MS}\) subscript preserves the traditional symbol while reserving bare \(\Gamma\) for the project’s principal dual scale. Some earlier notes use the temporary alias \(\mathcal G\). |
 | \(K_{\rm form}(q)\) | Shell-dependent absolute formation calibration. Earlier notes use \(K(q)\); the subscript avoids collision with the Kretschmann scalar \(K\). |
 | \(\mathcal R_+(r)\) | Conformally dressed outer trapping-horizon curve used in the conditional matter ledger. This notation avoids collision with GD1's infall function \(F(r)\). |
 | \(N_H\) | Parent–child cohort lapse, \(N_H=d\tau_C/dt_P\), once the mapped timelike histories are specified. |
@@ -141,8 +141,8 @@ so lengths and times are measured in units of the parent Schwarzschild radius an
 | \(\Sigma\) | A candidate matching hypersurface or finite matching history. It is not automatically null and must not be called an event horizon unless its causal character has been derived. |
 | \(v_H\) | Physically normalized parameter along a parent black-hole event-horizon generator in the collapse-cohort programme. |
 | \(\Phi(v_H)\) | Candidate clock map assigning parent horizon progress to child conformal time and comoving radius through \(\eta=R=\Phi(v_H)\). |
-| \(\mathcal T(v_H)\) | Null affine-transfer function, \(d\lambda_C/d\lambda_P\), in the event-horizon clock map. It is not automatically \(\Omega_{\rm W}^2\) or \(\Gamma_{\rm GD}^2\). |
-| \(\Omega_\Sigma(v_H)\) | Legacy shell/null-surface notation for an angular scale transfer. A completed map must state how it relates to \(\Omega_{\rm W}\) and \(\Gamma_{\rm GD}\). |
+| \(\mathcal T(v_H)\) | Null affine-transfer function, \(d\lambda_C/d\lambda_P\), in the event-horizon clock map. It is not automatically \(\Omega_{\rm W}^2\) or \(\Gamma^2\). |
+| \(\Omega_\Sigma(v_H)\) | Legacy shell/null-surface notation for an angular scale transfer. A completed map must state how it relates to \(\Omega_{\rm W}\) and \(\Gamma\). |
 | \(r_h\) | A local symbol for a generic fixed horizon radius in a calculation. It should not replace the canonical symbols above in a final cross-note statement. |
 
 ### GD1 auxiliary symbols

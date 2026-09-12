@@ -4,7 +4,7 @@
 
 **Working note — September 10, 2026. Source: upstream project analysis. Independent review and revisions: Codex (OpenAI).**
 
-> **Notation update — September 2026.** Any \(\Gamma\) below denotes a local four-metric Weyl factor, now written \(\Omega_{\rm W}\) in cross-project summaries. It is not automatically the mature dual ruler scale \(\Gamma_{\rm GD}=a^2\).
+> **Notation update — September 2026.** Any \(\Gamma\) below denotes a local four-metric Weyl factor, now written \(\Omega_{\rm W}\) in cross-project summaries. It is not automatically the mature dual ruler scale \(\Gamma=a^2\).
 
 ---
 

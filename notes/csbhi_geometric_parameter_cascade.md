@@ -718,7 +718,7 @@ R_{\rm dS}
 \tag{48}
 \]
 
-but this is not presently a derived closure relation. For dynamical \(\Omega_{\rm W}\), even Equation (48) is insufficient because conformal-gradient terms enter the mass transformation. This finite comparison factor is not \(\Gamma_{{\rm GD},\infty}\): the mature scale \(\Gamma_{\rm GD}=a^2\) diverges in the de Sitter future.
+but this is not presently a derived closure relation. For dynamical \(\Omega_{\rm W}\), even Equation (48) is insufficient because conformal-gradient terms enter the mass transformation. This finite comparison factor is not \(\Gamma_\infty\): the mature scale \(\Gamma=a^2\) diverges in the de Sitter future.
 
 The correct conclusion is
 
@@ -906,10 +906,10 @@ d\lambda_C=C_\lambda\Omega_{{\rm W},H}^2d\lambda_P.
 Separately, the mature reciprocal ruler scale is
 
 \[
-\Gamma_{\rm GD}=a^2=r^{-2}.
+\Gamma=a^2=r^{-2}.
 \]
 
-Its homogeneous Friedmann evolution is fixed once \(H_\Lambda,\eta_m,\eta_r\) are supplied. The surviving formation freedom lies in deriving how \(\Omega_{\rm W}\), \(\Gamma_{\rm GD}\), the cohort lapse, the null affine transfer, and the earlier shell calibration \(K(q)\) emerge as projections of one throat geometry. See [*Mature Gamma Dynamics and the Conditional Radiation Handoff*](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+Its homogeneous Friedmann evolution is fixed once \(H_\Lambda,\eta_m,\eta_r\) are supplied. The surviving formation freedom lies in deriving how \(\Omega_{\rm W}\), \(\Gamma\), the cohort lapse, the null affine transfer, and the earlier shell calibration \(K(q)\) emerge as projections of one throat geometry. See [*Mature Gamma Dynamics and the Conditional Radiation Handoff*](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
 
 The appropriate status is
 
@@ -991,7 +991,7 @@ If additional effective geometric terms arise from the completed conformal forma
 | \(\eta_r\) | Present radiation/vacuum ratio | Child-side input |
 | \(\kappa_g\) | Galaxy-scale normalization | Undetermined coefficient |
 | Horizon-selection rule | Chooses \(H_\Lambda\) or \(H(z)\) for galaxy dynamics | Open correspondence |
-| \(\Gamma_{\rm GD}=a^2\) | Mature dual ruler-scale evolution | Functional form closed conditionally |
+| \(\Gamma=a^2\) | Mature dual ruler-scale evolution | Functional form closed conditionally |
 | \(\Omega_{\rm W}\), \(\mathcal T\), \(N_H\), and \(K(q)\) | Local Weyl, null, clock, and formation projections | Open GD2 throat geometry |
 | Formation perturbation data | Determine primordial perturbations | Structural sources identified; amplitudes open |
 

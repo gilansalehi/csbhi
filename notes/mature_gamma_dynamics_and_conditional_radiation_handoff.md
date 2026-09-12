@@ -18,7 +18,7 @@ If a corresponding parent ruler contracts as \(\ell_P=\ell_*r\) while its child 
 
 \[
 \boxed{
-\Gamma_{\rm GD}
+\Gamma
 \equiv
 \frac{\ell_C}{\ell_P}.
 }
@@ -28,7 +28,7 @@ Then
 
 \[
 \boxed{
-\Gamma_{\rm GD}
+\Gamma
 =
 \frac ar
 =
@@ -38,16 +38,16 @@ r^{-2}.
 }
 \]
 
-This is an exact consequence of the reciprocal ruler assignment, not a proof that the complete parent black-hole metric and child FLRW metric are globally Weyl-equivalent. A local four-metric Weyl factor is denoted separately by \(\Omega_{\rm W}\). Only where both descriptions admit one common conformal reference metric and \(\Omega_{\rm W}=\Gamma_{\rm GD}\) has been established may one also write \(g_C=\Gamma_{\rm GD}^2g_P\).
+This is an exact consequence of the reciprocal ruler assignment, not a proof that the complete parent black-hole metric and child FLRW metric are globally Weyl-equivalent. A local four-metric Weyl factor is denoted separately by \(\Omega_{\rm W}\). Only where both descriptions admit one common conformal reference metric and \(\Omega_{\rm W}=\Gamma\) has been established may one also write \(g_C=\Gamma^2g_P\).
 
-In the mature flat-FLRW sector, \(\Gamma_{\rm GD}\) obeys
+In the mature flat-FLRW sector, \(\Gamma\) obeys
 
 \[
 \boxed{
-\frac{\dot\Gamma_{\rm GD}^2}{4H_\Lambda^2}
+\frac{\dot\Gamma^2}{4H_\Lambda^2}
 =
-\Gamma_{\rm GD}^2
-+\eta_m\sqrt{\Gamma_{\rm GD}}
+\Gamma^2
++\eta_m\sqrt{\Gamma}
 +\eta_r,
 }
 \]
@@ -56,14 +56,14 @@ and
 
 \[
 \boxed{
-\frac{\ddot\Gamma_{\rm GD}}{H_\Lambda^2}
+\frac{\ddot\Gamma}{H_\Lambda^2}
 =
-4\Gamma_{\rm GD}
-+\frac{\eta_m}{\sqrt{\Gamma_{\rm GD}}}.
+4\Gamma
++\frac{\eta_m}{\sqrt{\Gamma}}.
 }
 \]
 
-Radiation appears in the first integral but disappears from the acceleration because its stress-energy trace vanishes. The usual radiation, matter, and vacuum scale-factor laws become elementary trajectories of \(\Gamma_{\rm GD}\).
+Radiation appears in the first integral but disappears from the acceleration because its stress-energy trace vanishes. The usual radiation, matter, and vacuum scale-factor laws become elementary trajectories of \(\Gamma\).
 
 At a normalized handoff, the child apparent-horizon two-jet supplies
 
@@ -75,13 +75,13 @@ At a normalized handoff, the child apparent-horizon two-jet supplies
 \ddot\Gamma_*=-4\left(\frac{\kappa_*R_*}{c^2}\right)H_*^2.
 \]
 
-If a stationary parent ruler maps through \(R_A^C=\Gamma_{\rm GD}R_P\), the child equation of state is forced to \(w=1/3\). This is a promising conditional radiation-selection theorem. It still requires the throat to establish the ruler correspondence, time map, Weyl-flat/isotropic handoff, and the relation between the mature scale mode \(\Gamma_{\rm GD}\) and the null affine transfer \(\mathcal T\).
+If a stationary parent ruler maps through \(R_A^C=\Gamma R_P\), the child equation of state is forced to \(w=1/3\). This is a promising conditional radiation-selection theorem. It still requires the throat to establish the ruler correspondence, time map, Weyl-flat/isotropic handoff, and the relation between the mature scale mode \(\Gamma\) and the null affine transfer \(\mathcal T\).
 
 The principal result is therefore:
 
 \[
 \boxed{
-\textbf{mature }\Gamma_{\rm GD}\textbf{ dynamics closed conditionally;}
+\textbf{mature }\Gamma\textbf{ dynamics closed conditionally;}
 \quad
 \textbf{throat launch and null projection open.}
 }
@@ -97,7 +97,7 @@ The project previously used the same symbol \(\Gamma\) for two related but not y
 
 \[
 \boxed{
-\Gamma_{\rm GD}
+\Gamma
 \equiv
 \frac{\ell_C}{\ell_P}
 =a^2=r^{-2}.
@@ -136,13 +136,13 @@ so that
 =
 \frac ar
 =
-\Gamma_{\rm GD}.
+\Gamma.
 \tag{4}
 \]
 
 But Equation (4) is a property to establish at the handoff, not a global identity to assume.
 
-Cross-project prose may continue to call \(\Gamma_{\rm GD}\) “big Gamma” or simply \(\Gamma\) once the context is explicitly the mature dual scale. Formation calculations must write \(\Omega_{\rm W}\) for an independently established four-metric Weyl factor.
+Cross-project prose calls \(\Gamma\) “big Gamma” when useful. Formation calculations write \(\Omega_{\rm W}\) for an independently established four-metric Weyl factor and \(\Gamma_{\rm MS}\) for the Misner–Sharp radial derivative.
 
 ---
 
@@ -152,7 +152,7 @@ Here and below, a dot denotes differentiation with respect to child cosmic prope
 
 \[
 \boxed{
-\frac{\dot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}
+\frac{\dot\Gamma}{\Gamma}
 =
 2H.
 }
@@ -162,7 +162,7 @@ Here and below, a dot denotes differentiation with respect to child cosmic prope
 Differentiating gives
 
 \[
-\frac{\ddot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}
+\frac{\ddot\Gamma}{\Gamma}
 =
 2\dot H+4H^2.
 \tag{6}
@@ -189,7 +189,7 @@ where \(\rho\) is mass-equivalent density. Substitution yields
 
 \[
 \boxed{
-\frac{\ddot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}
+\frac{\ddot\Gamma}{\Gamma}
 =
 \frac{8\pi G}{3}
 \left(
@@ -206,7 +206,7 @@ For radiation,
 \[
 p_r=\frac13\rho_rc^2
 \quad\Longrightarrow\quad
-\boxed{\ddot\Gamma_{\rm GD}=0}
+\boxed{\ddot\Gamma=0}
 \tag{10}
 \]
 
@@ -216,7 +216,7 @@ For dust,
 
 \[
 \boxed{
-\frac{\ddot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}
+\frac{\ddot\Gamma}{\Gamma}
 =
 \frac{8\pi G}{3}\rho_m.
 }
@@ -233,7 +233,7 @@ and therefore
 
 \[
 \boxed{
-\frac{\ddot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}
+\frac{\ddot\Gamma}{\Gamma}
 =
 \frac{32\pi G}{3}\rho_\Lambda
 =4H_\Lambda^2.
@@ -261,18 +261,18 @@ P(r)
 Since
 
 \[
-r=\Gamma_{\rm GD}^{-1/2},
+r=\Gamma^{-1/2},
 \tag{14}
 \]
 
 we obtain
 
 \[
-P(\Gamma_{\rm GD})
+P(\Gamma)
 =
 1
-+\eta_m\Gamma_{\rm GD}^{-3/2}
-+\eta_r\Gamma_{\rm GD}^{-2}.
++\eta_m\Gamma^{-3/2}
++\eta_r\Gamma^{-2}.
 \tag{15}
 \]
 
@@ -280,13 +280,13 @@ Combining Equations (5) and (15) gives
 
 \[
 \boxed{
-\dot\Gamma_{\rm GD}
+\dot\Gamma
 =
-2H_\Lambda\Gamma_{\rm GD}
+2H_\Lambda\Gamma
 \sqrt{
 1
-+\eta_m\Gamma_{\rm GD}^{-3/2}
-+\eta_r\Gamma_{\rm GD}^{-2}
++\eta_m\Gamma^{-3/2}
++\eta_r\Gamma^{-2}
 }.
 }
 \tag{16}
@@ -296,23 +296,23 @@ Squaring,
 
 \[
 \boxed{
-\frac{\dot\Gamma_{\rm GD}^2}{4H_\Lambda^2}
+\frac{\dot\Gamma^2}{4H_\Lambda^2}
 =
-\Gamma_{\rm GD}^2
-+\eta_m\sqrt{\Gamma_{\rm GD}}
+\Gamma^2
++\eta_m\sqrt{\Gamma}
 +\eta_r.
 }
 \tag{17}
 \]
 
-Differentiating Equation (17) on an expanding branch with \(\dot\Gamma_{\rm GD}\neq0\) gives
+Differentiating Equation (17) on an expanding branch with \(\dot\Gamma\neq0\) gives
 
 \[
 \boxed{
-\frac{\ddot\Gamma_{\rm GD}}{H_\Lambda^2}
+\frac{\ddot\Gamma}{H_\Lambda^2}
 =
-4\Gamma_{\rm GD}
-+\frac{\eta_m}{\sqrt{\Gamma_{\rm GD}}}.
+4\Gamma
++\frac{\eta_m}{\sqrt{\Gamma}}.
 }
 \tag{18}
 \]
@@ -339,8 +339,8 @@ and Equation (18) may be written
 
 \[
 \boxed{
-\frac{\ddot\Gamma_{\rm GD}}
-{\Gamma_{\rm GD}H_\Lambda^2}
+\frac{\ddot\Gamma}
+{\Gamma H_\Lambda^2}
 =
 (4-\mathcal D)P.
 }
@@ -358,20 +358,20 @@ The definition (19) is essential; without it, Equation (21) is only notation.
 When the constant term \(\eta_r\) dominates Equation (17),
 
 \[
-\dot\Gamma_{\rm GD}^2\simeq4H_\Lambda^2\eta_r,
+\dot\Gamma^2\simeq4H_\Lambda^2\eta_r,
 \]
 
 so
 
 \[
-\boxed{\Gamma_{\rm GD}\propto\tau_C}
+\boxed{\Gamma\propto\tau_C}
 \tag{22}
 \]
 
 after choosing the radiation singular origin. Hence
 
 \[
-a=\sqrt{\Gamma_{\rm GD}}\propto\tau_C^{1/2}.
+a=\sqrt{\Gamma}\propto\tau_C^{1/2}.
 \tag{23}
 \]
 
@@ -380,15 +380,15 @@ a=\sqrt{\Gamma_{\rm GD}}\propto\tau_C^{1/2}.
 When the matter term dominates,
 
 \[
-\dot\Gamma_{\rm GD}^2
+\dot\Gamma^2
 \propto
-\sqrt{\Gamma_{\rm GD}},
+\sqrt{\Gamma},
 \]
 
 and therefore
 
 \[
-\boxed{\Gamma_{\rm GD}\propto\tau_C^{4/3},}
+\boxed{\Gamma\propto\tau_C^{4/3},}
 \tag{24}
 \]
 
@@ -399,19 +399,19 @@ a\propto\tau_C^{2/3}.
 
 ### Vacuum domination
 
-When the \(\Gamma_{\rm GD}^2\) term dominates,
+When the \(\Gamma^2\) term dominates,
 
 \[
-\dot\Gamma_{\rm GD}
+\dot\Gamma
 =
-2H_\Lambda\Gamma_{\rm GD},
+2H_\Lambda\Gamma,
 \]
 
 so
 
 \[
 \boxed{
-\Gamma_{\rm GD}
+\Gamma
 \propto
 e^{2H_\Lambda\tau_C},
 }
@@ -423,7 +423,7 @@ a\propto e^{H_\Lambda\tau_C}.
 \tag{27}
 \]
 
-At background order, \(\Gamma_{\rm GD}\) therefore contains the complete flat matter–radiation–\(\Lambda\) expansion history once \(H_\Lambda\), \(\eta_m\), and \(\eta_r\) are supplied.
+At background order, \(\Gamma\) therefore contains the complete flat matter–radiation–\(\Lambda\) expansion history once \(H_\Lambda\), \(\eta_m\), and \(\eta_r\) are supplied.
 
 ---
 
@@ -450,7 +450,7 @@ Using the standard Hayward–Kodama sign convention adopted in the trapping-pair
 Equations (5) and (9) give
 
 \[
-\frac{\ddot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}
+\frac{\ddot\Gamma}{\Gamma}
 =
 (1-3w_{\rm eff})H^2,
 \tag{30}
@@ -460,7 +460,7 @@ so
 
 \[
 \boxed{
-\frac{\ddot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}
+\frac{\ddot\Gamma}{\Gamma}
 =
 -4
 \left(
@@ -523,7 +523,7 @@ Suppose a distinguished parent ruler maps to the child apparent-horizon radius t
 \boxed{
 R_A^C
 =
-\Gamma_{\rm GD}R_P.
+\Gamma R_P.
 }
 \tag{36}
 \]
@@ -531,7 +531,7 @@ R_A^C
 Here \(R_P\) is evaluated as a function of child cosmic time through the completed handoff map. Therefore
 
 \[
-R_P=\frac{R_A}{\Gamma_{\rm GD}}.
+R_P=\frac{R_A}{\Gamma}.
 \tag{37}
 \]
 
@@ -541,7 +541,7 @@ Taking a child-time derivative,
 \frac{\dot R_P}{R_P}
 =
 \frac{\dot R_A}{R_A}
--\frac{\dot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}.
+-\frac{\dot\Gamma}{\Gamma}.
 \tag{38}
 \]
 
@@ -592,7 +592,7 @@ Therefore, under the stated assumptions,
 
 This is the precise conditional theorem:
 
-> If the mature reciprocal relation gives \(\Gamma_{\rm GD}=a^2\), a selected parent ruler maps to the child apparent horizon by Equation (36), the derivative is taken through the completed child-time map, and that mapped ruler is stationary, then the child handoff is radiation-like.
+> If the mature reciprocal relation gives \(\Gamma=a^2\), a selected parent ruler maps to the child apparent horizon by Equation (36), the derivative is taken through the completed child-time map, and that mapped ruler is stationary, then the child handoff is radiation-like.
 
 Generic stationarity of a late Schwarzschild event horizon does not by itself satisfy these premises. The selected ruler might be a trapping-horizon cross-section, the conformal relation may not yet hold at the handoff, or the parent-to-child time conversion may alter the meaning of “stationary.” These are the remaining proof obligations.
 
@@ -601,7 +601,7 @@ Radiation is nevertheless singled out simultaneously by
 \[
 T^\mu{}_\mu=0,
 \qquad
-\ddot\Gamma_{\rm GD}=0,
+\ddot\Gamma=0,
 \qquad
 \kappa_AR_A=0,
 \qquad
@@ -710,16 +710,16 @@ The estimate places the conditional stellar-mass handoff in the broad QCD-era ne
 Suppose the pre-handoff region has no developed dual scale rate,
 
 \[
-\Gamma_{\rm GD}\simeq1,
+\Gamma\simeq1,
 \qquad
-\dot\Gamma_{\rm GD}\simeq0,
+\dot\Gamma\simeq0,
 \tag{52}
 \]
 
 while the mature branch begins with
 
 \[
-\frac{\dot\Gamma_{\rm GD}}{\Gamma_{\rm GD}}
+\frac{\dot\Gamma}{\Gamma}
 =
 2H_*
 \sim
@@ -741,7 +741,7 @@ H_*^{-1},
 then the required rate change is of order
 
 \[
-\frac{\Delta(\dot\Gamma_{\rm GD}/\Gamma_{\rm GD})}
+\frac{\Delta(\dot\Gamma/\Gamma)}
 {\Delta\tau_{\rm throat}}
 =
 O(H_*^2).
@@ -792,7 +792,7 @@ Radiation is the distinguished zero-acceleration possibility,
 Once the reciprocal homogeneous branch and inheritance ledger are supplied,
 
 \[
-\Gamma_{\rm GD}=a^2=r^{-2}
+\Gamma=a^2=r^{-2}
 \tag{58}
 \]
 
@@ -827,7 +827,7 @@ C_\lambda\Omega_{{\rm W},H}^2.
 But the mature dual ruler scale is
 
 \[
-\Gamma_{\rm GD}=a^2.
+\Gamma=a^2.
 \tag{61}
 \]
 
@@ -835,7 +835,7 @@ Therefore
 
 \[
 \boxed{
-\mathcal T=C_\lambda\Gamma_{\rm GD}^2
+\mathcal T=C_\lambda\Gamma^2
 }
 \tag{62}
 \]
@@ -843,7 +843,7 @@ Therefore
 does **not** follow until the throat geometry proves
 
 \[
-\Omega_{{\rm W},H}=\Gamma_{\rm GD}
+\Omega_{{\rm W},H}=\Gamma
 \tag{63}
 \]
 
@@ -857,16 +857,16 @@ This corrects the premature identification in the preceding conformal-dictionary
 
 ### Algebraically verified
 
-- \(\Gamma_{\rm GD}=a^2=r^{-2}\) follows from the stated dual-ruler definition.
+- \(\Gamma=a^2=r^{-2}\) follows from the stated dual-ruler definition.
 - Equations (5), (9), (17), and (18) follow exactly from flat Friedmann evolution.
-- Radiation disappears from \(\ddot\Gamma_{\rm GD}\) because its stress-energy trace vanishes.
+- Radiation disappears from \(\ddot\Gamma\) because its stress-energy trace vanishes.
 - The radiation, matter, and vacuum power laws are recovered.
 - The child-side two-jet and surface-gravity relations are correct with the stated sign and units.
 - The stellar-mass radii, Hubble rates, times, and broad thermal range are numerically consistent.
 
 ### Conditional physical results
 
-- The formation two-jet becomes initial data for \(\Gamma_{\rm GD}\) only after the parent–child handoff is derived.
+- The formation two-jet becomes initial data for \(\Gamma\) only after the parent–child handoff is derived.
 - Stationary mapped parent radius implies \(w=1/3\) only under Equations (36)–(41).
 - The \(O(H_*^2)\) throat-launch estimate is dimensional plausibility, not dynamics.
 
@@ -875,7 +875,7 @@ This corrects the premature identification in the preceding conformal-dictionary
 - whether realistic collapse reaches the necessary Weyl-flat/isotropic handoff;
 - which parent ruler maps to the child apparent horizon;
 - how parent and child time parameters are related through the finite throat;
-- whether \(\Omega_{\rm W}\) equals \(\Gamma_{\rm GD}\) on the relevant formation patch;
+- whether \(\Omega_{\rm W}\) equals \(\Gamma\) on the relevant formation patch;
 - how the null optical transfer \(\mathcal T\) is projected from the same geometry; and
 - whether the resulting handoff supplies the correct matter, radiation, perturbation, and thermal data.
 
@@ -887,7 +887,7 @@ The mature Gamma problem is substantially reduced.
 
 \[
 \boxed{
-\Gamma_{\rm GD}=a^2=r^{-2}
+\Gamma=a^2=r^{-2}
 }
 \]
 
@@ -907,4 +907,4 @@ The throat problem is not thereby solved. It has become more precise:
 
 The strongest new candidate is the conditional radiation-selection theorem. A stationary parent ruler, if it is the one mapped to the child apparent horizon through the mature reciprocal scale law, forces \(w=1/3\). Proving that the real trapping/event-horizon geometry supplies precisely that ruler and handoff is the next calculation.
 
-The null affine map remains separate until the local Weyl factor \(\Omega_{\rm W}\) is derived and related to \(\Gamma_{\rm GD}\). Keeping those two objects distinct prevents the new closure from becoming another hidden global-conformal assumption.
+The null affine map remains separate until the local Weyl factor \(\Omega_{\rm W}\) is derived and related to \(\Gamma\). Keeping those two objects distinct prevents the new closure from becoming another hidden global-conformal assumption.

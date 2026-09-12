@@ -4,7 +4,7 @@
 
 **Working calculation — September 2026. Source: upstream project derivation. Review and revisions: Codex (OpenAI).**
 
-> **Notation update — September 2026.** The local Weyl factor in the time-conversion paragraph is now \(\Omega_{\rm W}\). It is distinct from the mature ruler scale \(\Gamma_{\rm GD}=a^2\).
+> **Notation update — September 2026.** The local Weyl factor in the time-conversion paragraph is now \(\Omega_{\rm W}\). It is distinct from the mature ruler scale \(\Gamma=a^2\).
 
 ## Abstract
 
@@ -24,7 +24,7 @@ The GD1 reciprocal rate measured in Alice's parent proper time is
 =
 -v^a\nabla_a\ln R
 =
--\gamma\frac{U+V\mathcal G}{R}.
+-\gamma\frac{U+V\Gamma_{\rm MS}}{R}.
 }
 \]
 
@@ -106,7 +106,7 @@ and
 \[
 U=D_tR,
 \qquad
-\mathcal G=D_qR.
+\Gamma_{\rm MS}=D_qR.
 \tag{4}
 \]
 
@@ -114,7 +114,7 @@ The Misner–Sharp relations are
 
 \[
 \boxed{
-\mathcal G^2
+\Gamma_{\rm MS}^2
 =
 1+U^2-\frac{2m}{R},
 }
@@ -125,7 +125,7 @@ The Misner–Sharp relations are
 \boxed{
 D_tU
 =
--\frac{\mathcal G}{\rho+p}D_qp
+-\frac{\Gamma_{\rm MS}}{\rho+p}D_qp
 -\frac{m}{R^2}
 -4\pi pR,
 }
@@ -136,7 +136,7 @@ and
 
 \[
 \boxed{
-D_qm=4\pi R^2\rho\,\mathcal G,
+D_qm=4\pi R^2\rho\,\Gamma_{\rm MS},
 \qquad
 D_tm=-4\pi pR^2U.
 }
@@ -211,7 +211,7 @@ Because
 \[
 u(R)=U,
 \qquad
-n(R)=\mathcal G,
+n(R)=\Gamma_{\rm MS},
 \]
 
 Equation (8) gives
@@ -220,7 +220,7 @@ Equation (8) gives
 \boxed{
 \mathscr H_{\rm GD}
 =
--\gamma\frac{U+V\mathcal G}{R}.
+-\gamma\frac{U+V\Gamma_{\rm MS}}{R}.
 }
 \tag{13}
 \]

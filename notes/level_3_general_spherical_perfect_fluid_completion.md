@@ -43,7 +43,7 @@ The unresolved Level-2 datum remains the absolute conformal calibration (K(q)). 
 
 Numerical collapse simulations are deferred until the theoretical ladder is complete. Their later role is to supply realistic coefficients and amplitudes, not to establish the local structural correspondence.
 
-Throughout Sections 2–7, (G=c=1). The symbols \(\rho\) and \(p\) are therefore energy density and pressure in the same geometrized units. The radial Misner–Sharp derivative is written \(\mathcal G\), reserving \(\Gamma\) for the parent-to-child conformal factor used elsewhere in the GD2 sequence.
+Throughout Sections 2–7, (G=c=1). The symbols \(\rho\) and \(p\) are therefore energy density and pressure in the same geometrized units. The radial Misner–Sharp derivative is written \(\Gamma_{\rm MS}\), reserving bare \(\Gamma\) for mature parent-to-child scale separation elsewhere in the GD2 sequence.
 
 ---
 
@@ -72,7 +72,7 @@ Define
 \[
 U\equiv D_tR,
 \qquad
-\mathcal G\equiv D_\ell R.
+\Gamma_{\rm MS}\equiv D_\ell R.
 \tag{3}
 \]
 
@@ -80,7 +80,7 @@ The Misner–Sharp constraint is
 
 \[
 \boxed{
-\mathcal G^2=1+U^2-\frac{2m}{R}.
+\Gamma_{\rm MS}^2=1+U^2-\frac{2m}{R}.
 }
 \tag{4}
 \]
@@ -104,7 +104,7 @@ and
 
 \[
 \boxed{
-D_\ell m=4\pi R^2\mathcal G\rho.
+D_\ell m=4\pi R^2\Gamma_{\rm MS}\rho.
 }
 \tag{6}
 \]
@@ -144,7 +144,7 @@ For areal radius,
 
 \[
 \boxed{
-\frac1A\frac{dR_E}{dt}=U_E+\mathcal G_E.
+\frac1A\frac{dR_E}{dt}=U_E+\Gamma_{{\rm MS},E}.
 }
 \tag{10}
 \]
@@ -156,7 +156,7 @@ Combining Equations (5), (6), and (9) gives
 \frac1A\frac{dm_E}{dt}
 =4\pi R_E^2
 \left(
-\rho_E\mathcal G_E-p_EU_E
+\rho_E\Gamma_{{\rm MS},E}-p_EU_E
 \right).
 }
 \tag{11}
@@ -286,7 +286,7 @@ Exact homogeneous collapse has \(\rho_2=0\) and vanishing Weyl curvature. Generi
 Define the radial and transverse fluid rates
 
 \[
-H_r\equiv\frac{D_\ell U}{\mathcal G},
+H_r\equiv\frac{D_\ell U}{\Gamma_{\rm MS}},
 \qquad
 H_\perp\equiv\frac{U}{R},
 \tag{23}
@@ -311,7 +311,7 @@ Differentiating Equation (18), then using Equations (5), (6), and (25), yields t
 \[
 \boxed{
 D_+\mathcal W
-=-\frac{3(U+\mathcal G)}{R}\mathcal W
+=-\frac{3(U+\Gamma_{\rm MS})}{R}\mathcal W
 -\frac{4\pi}{3}D_\ell\rho
 +\frac{4\pi}{3}(\rho+p)\Sigma.
 }
@@ -518,14 +518,14 @@ The general spherical perfect-fluid rung closes analytically at the birth vertex
 The globally selected event horizon obeys
 
 \[
-\frac1A\frac{dR_E}{dt}=U_E+\mathcal G_E,
+\frac1A\frac{dR_E}{dt}=U_E+\Gamma_{{\rm MS},E},
 \]
 
 and samples the parent Weyl amplitude according to
 
 \[
 D_+\mathcal W
-=-\frac{3(U+\mathcal G)}{R}\mathcal W
+=-\frac{3(U+\Gamma_{\rm MS})}{R}\mathcal W
 -\frac{4\pi}{3}D_\ell\rho
 +\frac{4\pi}{3}(\rho+p)\Sigma.
 \]

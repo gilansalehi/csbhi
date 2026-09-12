@@ -4,7 +4,7 @@
 
 **Author:** Codex (OpenAI).
 
-> **Legacy-branch warning — September 2026.** The child-side identity \(\dot B=H_A B-c\) remains exact for an ingoing FLRW null boundary. The identification of that future-event-horizon history with the parent formation map, and any direct transfer of its physical radius, are not current GD2. The current causal map uses the outgoing child birth cone; the mature ruler scale is \(\Gamma_{\rm GD}=a^2\), while its formation and null projections remain open. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+> **Legacy-branch warning — September 2026.** The child-side identity \(\dot B=H_A B-c\) remains exact for an ingoing FLRW null boundary. The identification of that future-event-horizon history with the parent formation map, and any direct transfer of its physical radius, are not current GD2. The current causal map uses the outgoing child birth cone; the mature ruler scale is \(\Gamma=a^2\), while its formation and null projections remain open. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
 
 ## Abstract
 

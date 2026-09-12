@@ -4,7 +4,7 @@
 
 **Working note — September 10, 2026. Source: upstream project analysis. Independent review and revisions: Codex (OpenAI).**
 
-> **Notation update — September 2026.** This note's \(\Gamma\) is the proposed local four-metric Weyl factor, now denoted \(\Omega_{\rm W}\) in cross-project summaries. The mature dual scale \(\Gamma_{\rm GD}=a^2\) is a separate object until the throat relates them.
+> **Notation update — September 2026.** This note's \(\Gamma\) is the proposed local four-metric Weyl factor, now denoted \(\Omega_{\rm W}\) in cross-project summaries. The mature dual scale \(\Gamma=a^2\) is a separate object until the throat relates them.
 
 ---
 

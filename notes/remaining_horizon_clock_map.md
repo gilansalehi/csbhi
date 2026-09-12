@@ -6,7 +6,7 @@
 
 **Date:** 2026-08-05.
 
-> **Scale-transfer update — September 2026.** This note correctly exposed \(\Phi'\) as missing. The mature dual ruler scale is now fixed conditionally by \(\Gamma_{\rm GD}=a^2\), but that does not determine the null affine transfer. Only an independently established local Weyl factor obeys \(\mathcal T=C_\lambda\Omega_{{\rm W},H}^2\); the throat must relate \(\Omega_{\rm W}\), \(\Gamma_{\rm GD}\), and \(\Phi'\). See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+> **Scale-transfer update — September 2026.** This note correctly exposed \(\Phi'\) as missing. The mature dual ruler scale is now fixed conditionally by \(\Gamma=a^2\), but that does not determine the null affine transfer. Only an independently established local Weyl factor obeys \(\mathcal T=C_\lambda\Omega_{{\rm W},H}^2\); the throat must relate \(\Omega_{\rm W}\), \(\Gamma\), and \(\Phi'\). See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
 
 **Prerequisites:** [GD I](gd1.html); [Collapse Day and Present Day](note.html?src=collapse_day_present_day_cohort_worldsheet); [From Collapse Shells to a Child FLRW Patch](note.html?src=homogeneous_collapse_shell_map).
 

@@ -44,11 +44,11 @@ The time derivative of compactness determines the pressure dependence,
 \boxed{
 D_tC\big|_b
 =
-\frac{\mathcal G_b}{R_b}(1+w_b),
+\frac{\Gamma_{{\rm MS},b}}{R_b}(1+w_b),
 }
 \]
 
-for a collapsing branch with \(U_b=-\mathcal G_b\). Expanding around the first contact yields the universal fold law
+for a collapsing branch with \(U_b=-\Gamma_{{\rm MS},b}\). Expanding around the first contact yields the universal fold law
 
 \[
 \Delta\ell_\pm
@@ -94,7 +94,7 @@ The fold calculation also has a precise domain. It assumes that the first trappe
 \[
 D_\ell^2C_b<0,
 \qquad
-\mathcal G_b\neq0.
+\Gamma_{{\rm MS},b}\neq0.
 \]
 
 First trapping at a material boundary, thin shell, shock, shell crossing, or other nonsmooth structure requires a separate analysis.
@@ -282,11 +282,11 @@ Use the Misner–Sharp variables
 \[
 U=D_tR,
 \qquad
-\mathcal G=D_\ell R,
+\Gamma_{\rm MS}=D_\ell R,
 \tag{13}
 \]
 
-where \(\mathcal G\) is used deliberately: the symbol \(\Gamma\) is reserved across the project for the parent–child conformal factor.
+where the \({\rm MS}\) subscript is used deliberately: bare \(\Gamma\) is reserved across the project for mature parent–child scale separation.
 
 Define compactness
 
@@ -298,14 +298,14 @@ Define compactness
 The spherical constraint is
 
 \[
-\mathcal G^2=1+U^2-C.
+\Gamma_{\rm MS}^2=1+U^2-C.
 \tag{15}
 \]
 
 For a perfect fluid,
 
 \[
-D_\ell m=4\pi R^2\mathcal G\rho,
+D_\ell m=4\pi R^2\Gamma_{\rm MS}\rho,
 \qquad
 D_tm=-4\pi R^2Up.
 \tag{16}
@@ -325,12 +325,12 @@ Differentiating (14) gives the exact radial identity
 \[
 D_\ell C
 =
-\frac{\mathcal G}{R}
+\frac{\Gamma_{\rm MS}}{R}
 \left(8\pi R^2\rho-C\right).
 \tag{18}
 \]
 
-At the nondegenerate first contact, \(C_b=1\) and \(\mathcal G_b\neq0\), so
+At the nondegenerate first contact, \(C_b=1\) and \(\Gamma_{{\rm MS},b}\neq0\), so
 
 \[
 \boxed{8\pi R_b^2\rho_b=1.}
@@ -409,13 +409,13 @@ D_tC
 At first trapping, \(C_b=1\). Equation (15) gives
 
 \[
-\mathcal G_b^2=U_b^2.
+\Gamma_{{\rm MS},b}^2=U_b^2.
 \]
 
 For collapse with outward orientation,
 
 \[
-U_b=-\mathcal G_b.
+U_b=-\Gamma_{{\rm MS},b}.
 \tag{26}
 \]
 
@@ -431,7 +431,7 @@ we obtain
 \boxed{
 D_tC\big|_b
 =
-\frac{\mathcal G_b}{R_b}(1+w_b).
+\frac{\Gamma_{{\rm MS},b}}{R_b}(1+w_b).
 }
 \tag{27}
 \]
@@ -519,7 +519,7 @@ is smooth. The divergent matter-frame velocity is a parameterization feature of 
 Because
 
 \[
-D_\ell R=\mathcal G,
+D_\ell R=\Gamma_{\rm MS},
 \]
 
 the inward member has
@@ -528,7 +528,7 @@ the inward member has
 R_-(t)
 =
 R_b
--\mathcal G_b
+-\Gamma_{{\rm MS},b}
 \sqrt{\frac{2A}{B}}
 \sqrt{t-t_b}
 +O(t-t_b).
@@ -562,7 +562,7 @@ with
 \[
 \beta
 =
-\frac{\mathcal G_b}{R_b}
+\frac{\Gamma_{{\rm MS},b}}{R_b}
 \sqrt{\frac{2A}{B}}
 >0.
 \tag{36}
@@ -646,7 +646,7 @@ Nor does it justify the corresponding special coefficient
 \[
 \tau_1
 =
-\mathcal G_b\sqrt{\frac{2A}{B}}.
+\Gamma_{{\rm MS},b}\sqrt{\frac{2A}{B}}.
 \tag{41}
 \]
 

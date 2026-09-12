@@ -4,7 +4,7 @@
 
 **Working calculation — September 2026. Source: upstream project derivation. Review and revisions: Codex (OpenAI).**
 
-> **Notation update — September 2026.** The \(\Gamma_H\) appearing in this note is Result IV's local formation-patch Weyl factor, now denoted \(\Omega_{{\rm W},H}\) in the cross-project dictionary. It is not automatically the mature ruler scale \(\Gamma_{\rm GD}=a^2\).
+> **Notation update — September 2026.** The \(\Gamma_H\) appearing in this note is Result IV's local formation-patch Weyl factor, now denoted \(\Omega_{{\rm W},H}\) in the cross-project dictionary. It is not automatically the mature ruler scale \(\Gamma=a^2\).
 
 ## Abstract
 
@@ -289,14 +289,14 @@ For a general spherical perfect fluid, let
 \[
 U=D_tR,
 \qquad
-\mathcal G=e^{-\lambda}R'.
+\Gamma_{\rm MS}=e^{-\lambda}R'.
 \]
 
 The Misner–Sharp relations in geometrized units are
 
 \[
 \boxed{
-1-\frac{2m}{R}=\mathcal G^2-U^2,
+1-\frac{2m}{R}=\Gamma_{\rm MS}^2-U^2,
 }
 \tag{21}
 \]
