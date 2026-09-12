@@ -6,6 +6,8 @@
 
 **Date:** 2026-08-05.
 
+> **Scale-transfer correction — September 2026.** The separate parent and child null embeddings remain useful, but the unit-lapse choice \(N_H=1\) failed the full-history benchmark. The mature dual scale \(\Gamma_{\rm GD}=a^2\) does not by itself fix the null affine transfer \(\mathcal T\). A completed throat must derive the timelike and null projections together rather than impose either one. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+
 **Prerequisites:** [Horizon-Map Equation and Notation Audit](note.html?src=horizon_map_equation_and_notation_audit); [Selecting the Parent Collapse Benchmark](note.html?src=collapse_benchmark_selection); [Next Steps for the Collapse-Cohort Horizon Map](note.html?src=next_steps_for_the_collapse_cohort_horizon_map).
 
 **Status:** Boundary-system derivation. The parent and child null identities are exact within their respective metrics. Their identification, the cohort synchronization, and the shell correspondence are CSBHI hypotheses exposed here as explicit tests. Tiered **[E]** established geometry, **[C]** candidate correspondence, **[O]** open numerical test.

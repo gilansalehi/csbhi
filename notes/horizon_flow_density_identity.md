@@ -6,6 +6,8 @@
 
 **Reviewed and extended by:** Codex (OpenAI).
 
+> **Scale-transfer correction — September 2026.** The parent PG infall calculation remains valid. Its parent-time reciprocal rate is not automatically the physical child Hubble rate, and the parent compactness density is not presently established as the child Friedmann density. The mature dual scale is \(\Gamma_{\rm GD}=a^2=r^{-2}\); its child-time dynamics are derived separately, while the throat time map remains open. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+
 ## Abstract
 
 At the Schwarzschild horizon, the marginally bound geodesic released from rest at infinity has unit inward radial rate when \(c=G=2M=1\). The reciprocal relation \(a=1/r\) therefore gives \(H_A=1\) at the reference epoch \(a=r=1\). Alice's spatially flat Friedmann constraint then fixes her total density at that epoch to \(3/(8\pi)\).

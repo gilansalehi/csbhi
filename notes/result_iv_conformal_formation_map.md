@@ -4,6 +4,8 @@
 
 **Gilan Salehi — Working Result, September 2026**
 
+> **Notation update — September 2026.** This note uses \(\Gamma\) for the local four-metric Weyl factor. Current cross-project notation calls that object \(\Omega_{\rm W}\) and reserves \(\Gamma_{\rm GD}=a^2=r^{-2}\) for the mature dual ruler-scale separation. The two coincide only if the throat derives that identification; Result IV does not establish it.
+
 ## Abstract
 
 Geometric Duality I (GD1) proposed the reciprocal relation

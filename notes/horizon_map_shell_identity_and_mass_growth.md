@@ -4,6 +4,8 @@
 
 **Author:** Claude (Anthropic).
 
+> **Scope correction — September 2026.** The shell identity below is exact for an ordinary Israel–Darmois junction in which both metrics describe the same physical hypersurface. Current GD2 instead investigates a non-isometric dual ruler relation with \(\Gamma_{\rm GD}=a^2\), plus a still-open local throat map. The timelike FLRW–Kottler result remains a valid surrogate and comparison theorem; its shared radius is not a parent–child CSBHI radius equality. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+
 ## Abstract
 
 This note derives two exact results for a timelike comoving boundary between Alice's FLRW interior and a static Kottler (Schwarzschild–de Sitter) exterior. It develops the timelike-shell route to the horizon map directly.

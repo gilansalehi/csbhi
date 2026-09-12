@@ -157,6 +157,48 @@ const DOCUMENTS = {
       technical: 'Derives the compactness tangency, mean/local density ratio, pressure-dependent opening rate, and nondegenerate fold law. It explicitly rejects parent–child areal-radius equality and reduces the child clock to an independent optical coefficient test.',
     },
   },
+  trappingPairLedger: {
+    label: 'GD2 Conditional Result',
+    title: 'The Conditional Trapping-Pair Ledger and Weyl-Flat Handoff',
+    note: 'conditional_trapping_pair_ledger_and_weyl_flat_handoff',
+    prerequisite: 'trappingHorizonPair',
+    meta: {
+      publications: 'horizon-jet ledger · conformal closure open',
+      technical: 'conditional trapping-pair ledger · independently audited by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Identifies a conformally dressed trapping-pair curve whose third and fourth future derivatives encode the child matter and radiation coefficients. A Weyl-flat marginal sphere reproduces the FLRW density, surface-gravity, and causal-signature forms, but the conformal marginality and stress-energy transfer remain open.',
+      technical: 'Audits the proposed matter-ledger closure, replaces the discarded raw radius equality with a scale-dressed outer-horizon curve, derives its horizon-jet invariant, and states a local/global consistency test at a Weyl-flat marginal handoff.',
+    },
+  },
+  conformalDictionary: {
+    label: 'GD2 Local Geometry',
+    title: 'The Conformal Dictionary and the Pre-FLRW Causal Interval',
+    note: 'conformal_dictionary_and_pre_flrw_causal_interval',
+    prerequisite: 'trappingPairLedger',
+    meta: {
+      publications: 'local Weyl-transfer synthesis · horizon-problem route open',
+      technical: 'conditional local Weyl dictionary · independently audited by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Establishes the scale, proper-time, affine-parameter, expansion, and marginality rules on an actually Weyl-related local patch. Its conformal factor is now denoted \\(\\Omega_{\\rm W}\\), and its relation to the mature dual scale \\(\\Gamma_{\\rm GD}=a^2\\) remains a throat calculation.',
+      technical: 'Derives the local Weyl affine and null-expansion transformations, corrects the trapping-pair ledger to use a dressed curve, and inventories older isometric and unit-lapse notes. Its affine-transfer formula is conditional on the local four-metric Weyl map.',
+    },
+  },
+  matureGammaDynamics: {
+    label: 'GD2 Conditional Result',
+    title: 'Mature Gamma Dynamics and the Conditional Radiation Handoff',
+    note: 'mature_gamma_dynamics_and_conditional_radiation_handoff',
+    prerequisite: 'conformalDictionary',
+    meta: {
+      publications: 'mature dual-scale dynamics · radiation handoff conditional',
+      technical: 'Friedmann–Gamma reduction · independently audited by Codex (OpenAI)',
+    },
+    summaries: {
+      publications: 'Defines the mature dual scale as \\(\\Gamma_{\\rm GD}=a^2=r^{-2}\\), reduces its matter–radiation–vacuum evolution to one first integral, and isolates a conditional theorem under which a stationary mapped parent ruler selects a radiation child.',
+      technical: 'Derives the exact first and second \\(\\Gamma_{\\rm GD}\\) equations, its handoff two-jet, cosmic-era limits, and stellar-mass QCD-era benchmark while separating the mature ruler scale from the local Weyl factor and null affine transfer.',
+    },
+  },
   level5CreaseSetup: {
     label: 'GD2 Program',
     title: 'CSBHI Mini-Program — Level 5 Setup',
@@ -362,7 +404,7 @@ export const COLLECTIONS = {
     title: 'Publications',
     summary: 'The theory and core publications.',
     summaryKey: 'publications',
-    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'trappingHorizonPair', 'level5CreaseSetup', 'level5RotationSummary', 'parameterCascade', 'gd2', 'gd3'],
+    documentIds: ['gd1', 'ri1', 'involution', 'conformalFormationMap', 'pressureRobustness', 'perturbedFormationMap', 'pressureGradientTheorem', 'tolmanVIIAmplitude', 'level3Completion', 'level4Dissipative', 'trappingHorizonPair', 'trappingPairLedger', 'conformalDictionary', 'matureGammaDynamics', 'level5CreaseSetup', 'level5RotationSummary', 'parameterCascade', 'gd2', 'gd3'],
   },
   predictionTrack: {
     headingId: 'predictions-title',

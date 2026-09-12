@@ -4,6 +4,8 @@
 
 **Working calculation — September 2026. Source: upstream project derivation. Review and revisions: Codex (OpenAI).**
 
+> **Notation update — September 2026.** This note retains Result IV's \(\Gamma\) for the local formation-patch Weyl factor. Current cross-project notation calls it \(\Omega_{\rm W}\), distinct from the mature ruler scale \(\Gamma_{\rm GD}=a^2\).
+
 ## Abstract
 
 [Result IV](note.html?src=result_iv_conformal_formation_map) maps the event-horizon formation history of homogeneous Oppenheimer–Snyder (OS) collapse exactly onto an outgoing null cone. This note perturbs that benchmark within Lemaître–Tolman–Bondi (LTB) dust.

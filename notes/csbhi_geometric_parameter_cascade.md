@@ -682,10 +682,10 @@ Thus, under the stated assumptions, \((R_{\rm dS},\eta_m,\eta_r)\) determines th
 
 ## 15. Parent–child scale transfer remains open
 
-Current CSBHI does not identify the child physical curvature radius directly with a parent black-hole radius. For a conformal map
+Current CSBHI does not identify the child physical curvature radius directly with a parent black-hole radius. For an actual local Weyl map
 
 \[
-g^C_{ab}=\Gamma^2g^P_{ab},
+g^C_{ab}=\Omega_{\rm W}^2g^P_{ab},
 \tag{45}
 \]
 
@@ -693,12 +693,12 @@ the physical areal radii are related schematically by
 
 \[
 \boxed{
-R_C=\Gamma R_P.
+R_C=\Omega_{\rm W}R_P.
 }
 \tag{46}
 \]
 
-The GD2 event-map work explicitly avoids equating the child areal radius with the parent black-hole radius. Moreover, under a varying conformal factor, derivatives of \(\Gamma\) contribute to the transformation of quasi-local mass.
+The GD2 event-map work explicitly avoids equating the child areal radius with the parent black-hole radius. Moreover, under a varying local Weyl factor, derivatives of \(\Omega_{\rm W}\) contribute to the transformation of quasi-local mass.
 
 Therefore
 
@@ -707,18 +707,18 @@ R_{\rm dS}=\frac{2GM_{\rm parent}}{c^2}
 \tag{47}
 \]
 
-is **not** part of the current CSBHI branch. It is the special isometric case \(\Gamma=1\), which removes the scale hierarchy the conformal formation map is intended to explain.
+is **not** part of the current CSBHI branch. It is the special isometric case \(\Omega_{\rm W}=1\), which removes the scale hierarchy the conformal formation map is intended to explain.
 
-In a hypothetical constant-scale approximation one could write schematically
+At a specified comparison cross-section \(X\), a hypothetical constant-scale approximation could write schematically
 
 \[
 R_{\rm dS}
-=\Gamma_\infty
+=\Omega_{{\rm W},X}
 \frac{2GM_{\rm parent}}{c^2},
 \tag{48}
 \]
 
-but this is not presently a derived closure relation. For dynamical \(\Gamma\), even Equation (48) is insufficient because conformal-gradient terms enter the mass transformation.
+but this is not presently a derived closure relation. For dynamical \(\Omega_{\rm W}\), even Equation (48) is insufficient because conformal-gradient terms enter the mass transformation. This finite comparison factor is not \(\Gamma_{{\rm GD},\infty}\): the mature scale \(\Gamma_{\rm GD}=a^2\) diverges in the de Sitter future.
 
 The correct conclusion is
 
@@ -738,10 +738,10 @@ The missing absolute scale-transfer law is one of GD2's central open problems.
 
 Because \(R_{\rm dS}\ne R_P\) in the current architecture, parent black-hole and child de Sitter thermodynamics cannot be equated directly.
 
-In the special constant-scale approximation
+At the same declared constant-scale comparison \(X\),
 
 \[
-R_{\rm dS}=\Gamma_\infty R_P,
+R_{\rm dS}=\Omega_{{\rm W},X}R_P,
 \tag{50}
 \]
 
@@ -750,7 +750,7 @@ the standard Schwarzschild and de Sitter temperatures would obey
 \[
 \boxed{
 \frac{T_{\rm dS}}{T_{\rm BH}}
-=\frac{2}{\Gamma_\infty},
+=\frac{2}{\Omega_{{\rm W},X}},
 }
 \tag{51}
 \]
@@ -760,12 +760,12 @@ while their area entropies would obey
 \[
 \boxed{
 \frac{S_{\rm dS}}{S_{\rm BH}}
-=\Gamma_\infty^2.
+=\Omega_{{\rm W},X}^2.
 }
 \tag{52}
 \]
 
-The relations \(T_{\rm dS}=2T_{\rm BH}\) and \(S_{\rm dS}=S_{\rm BH}\) are therefore only the discarded special case \(\Gamma_\infty=1\). No positive parent–child thermodynamic identification presently follows.
+The relations \(T_{\rm dS}=2T_{\rm BH}\) and \(S_{\rm dS}=S_{\rm BH}\) are therefore only the discarded special case \(\Omega_{{\rm W},X}=1\). No positive parent–child thermodynamic identification presently follows.
 
 ---
 
@@ -888,14 +888,28 @@ The parent optical integrating factor \(\beta_H\) is fixed, once the parent geom
 \tag{60}
 \]
 
-It is not an additional arbitrary horizon-map function. The surviving freedom lies instead in the nontrivial cohort lapse
+It is not an additional arbitrary horizon-map function. If an actual local Weyl relation
 
 \[
-N_H=\frac{d\tau_C}{dt_P},
+g_C=\Omega_{\rm W}^2g_P,
 \tag{61}
 \]
 
-the absolute conformal calibration \(K(q)\) or equivalently the physical normalization of \(\Gamma\), and the extension of the null event map to a complete child metric and neighboring timelike cohorts. The minimal condition \(K(q)=K_0\) remains a test hypothesis, not a derivation.
+holds on the mapped formation patch, the cross-frame proper-time and affine transfers are
+
+\[
+d\tau_C=\Omega_{\rm W}d\tau_P,
+\qquad
+d\lambda_C=C_\lambda\Omega_{{\rm W},H}^2d\lambda_P.
+\]
+
+Separately, the mature reciprocal ruler scale is
+
+\[
+\Gamma_{\rm GD}=a^2=r^{-2}.
+\]
+
+Its homogeneous Friedmann evolution is fixed once \(H_\Lambda,\eta_m,\eta_r\) are supplied. The surviving formation freedom lies in deriving how \(\Omega_{\rm W}\), \(\Gamma_{\rm GD}\), the cohort lapse, the null affine transfer, and the earlier shell calibration \(K(q)\) emerge as projections of one throat geometry. See [*Mature Gamma Dynamics and the Conditional Radiation Handoff*](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
 
 The appropriate status is
 
@@ -908,7 +922,18 @@ The appropriate status is
 \tag{62}
 \]
 
-The remaining work is mathematical as well as numerical: the scale-transfer, lapse, and global completion must be derived before realistic simulations can determine amplitudes.
+The remaining work is mathematical as well as numerical: the throat projection, handoff data, and global completion must be derived before realistic simulations can determine amplitudes.
+
+The [*Conditional Trapping-Pair Ledger and Weyl-Flat Handoff*](note.html?src=conditional_trapping_pair_ledger_and_weyl_flat_handoff) identifies a more specific possible carrier for \(\eta_m\) and \(\eta_r\). If the conformally dressed outer trapping branch maps to the child apparent horizon while the inward branch supplies \(r\), then
+
+\[
+\mathcal R_+(r)
+=
+\frac{\Gamma_+(r)R_+(r)}
+{\Gamma_fR_f}
+\]
+
+determines \(P(r)=H_C^2/H_\Lambda^2\), and its third and fourth future derivatives determine the two inheritance coefficients. This does not make the raw parent curve \(R_+(R_-)\) sufficient: the conformal function, marginal-surface transfer, and transformed stress-energy remain required. The ledger now has a candidate geometric carrier, not yet a predicted numerical value.
 
 ---
 
@@ -966,7 +991,8 @@ If additional effective geometric terms arise from the completed conformal forma
 | \(\eta_r\) | Present radiation/vacuum ratio | Child-side input |
 | \(\kappa_g\) | Galaxy-scale normalization | Undetermined coefficient |
 | Horizon-selection rule | Chooses \(H_\Lambda\) or \(H(z)\) for galaxy dynamics | Open correspondence |
-| \(N_H\), \(K(q)\), and \(\Gamma\) | Clock and absolute parent–child scale transfer | Open GD2 geometry |
+| \(\Gamma_{\rm GD}=a^2\) | Mature dual ruler-scale evolution | Functional form closed conditionally |
+| \(\Omega_{\rm W}\), \(\mathcal T\), \(N_H\), and \(K(q)\) | Local Weyl, null, clock, and formation projections | Open GD2 throat geometry |
 | Formation perturbation data | Determine primordial perturbations | Structural sources identified; amplitudes open |
 
 This inventory is smaller than the list of derived observables, but the homogeneous basis \((R_{\rm dS},\eta_m,\eta_r)\) contains the same number of degrees of freedom as the equivalent standard flat-Friedmann parameterization. The scientific reduction remains a target until one or more entries are derived from parent formation data.

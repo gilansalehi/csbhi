@@ -4,6 +4,8 @@
 
 **Working calculation — September 2026. Source: upstream project derivation. Review and revisions: Codex (OpenAI).**
 
+> **Notation update — September 2026.** The \(\Gamma_H\) appearing in this note is Result IV's local formation-patch Weyl factor, now denoted \(\Omega_{{\rm W},H}\) in the cross-project dictionary. It is not automatically the mature ruler scale \(\Gamma_{\rm GD}=a^2\).
+
 ## Abstract
 
 [Result IV](note.html?src=result_iv_conformal_formation_map) derives the conformal formation map using homogeneous Oppenheimer–Snyder dust. This note replaces dust by a homogeneous spherical perfect fluid and asks which parts of the construction survive pressure.

@@ -4,6 +4,8 @@
 
 **Working note — September 10, 2026. Source: upstream project analysis. Independent review and revisions: Codex (OpenAI).**
 
+> **Notation update — September 2026.** This note's \(\Gamma\) is the proposed local four-metric Weyl factor, now denoted \(\Omega_{\rm W}\) in cross-project summaries. The mature dual scale \(\Gamma_{\rm GD}=a^2\) is a separate object until the throat relates them.
+
 ---
 
 ## Abstract
@@ -55,7 +57,7 @@ F^*g^C_{ab}=\Gamma^2g^P_{ab},
 \tag{2}
 \]
 
-where \(F\) is the proposed event map and \(\Gamma\) is the conformal factor. The notation \(\Gamma\) is retained from Result IV; \(R\) is reserved for areal radius and \(r\) for the GD1 horizon-normalized cohort variable.
+where \(F\) is the proposed event map and \(\Gamma\) is Result IV's local Weyl-factor notation. Cross-project summaries now write this object as \(\Omega_{\rm W}\); \(R\) remains reserved for areal radius and \(r\) for the GD1 horizon-normalized cohort variable.
 
 For a chosen parent timelike congruence, define
 

@@ -4,7 +4,7 @@
 
 **Author:** Codex (OpenAI).
 
-> **Scope warning — this is not the GD I horizon geometry.** This note tests a deliberately simplified surrogate: an exact vacuum Schwarzschild metric and an independently specified de Sitter metric pasted across a zero-width null surface. It uses \(a=1/r\) only to check the expansion rate at one horizon-crossing event. It does not construct GD I's central geometric proposal, in which Bob's decreasing \(r\) and Alice's isotropically increasing scale describe one continuous, matter-filled history measured by Alice's probe cloud. The transverse-derivative mismatch below is therefore a negative result for this sharp piecewise model, not an obstruction to CSBHI and not evidence for a physical membrane or locally detectable horizon crossing.
+> **Scope warning — this is not the current GD horizon geometry.** This note tests a deliberately simplified isometric surrogate: an exact vacuum Schwarzschild metric and an independently specified de Sitter metric pasted across a zero-width null surface. Its equal-radius result follows from that surrogate's ordinary junction condition and must not be imported into GD2. Current notation distinguishes the mature dual scale \(\Gamma_{\rm GD}=a^2\) from any local four-metric Weyl factor \(\Omega_{\rm W}\); neither is constructed by this sharp junction. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
 
 ## Abstract
 

@@ -6,6 +6,8 @@
 
 **Date:** 2026-08-05.
 
+> **Scale-transfer correction — September 2026.** The endpoint series derived within the old cohort model remain useful diagnostics. Its unit-lapse, raw mass-tail, and direct child-reconstruction conclusions must be recomputed using the mature scale \(\Gamma_{\rm GD}=a^2\) together with an independently derived throat time and null map. The present note is not a closure of current GD2. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+
 **Prerequisites:** [The Collapse-to-Child Boundary System](note.html?src=collapse_to_child_boundary_system); [The Shell Clock in a Compensated ΛLTB Collapse](note.html?src=shell_clock_benchmark_compensated_ltb); [Optical Transfer Through a Matter-Filled Parent Collapse](note.html?src=optical_transfer_through_compensated_ltb_collapse).
 
 **Status:** Exact endpoint analysis conditional on the collapse-cohort correspondence. Formation regularity and the child reconstruction from a general parent mass-tail exponent are analytic. The late stationary limit fixes that exponent conditionally; the subsequent full-history test is linked below. Tiered **[E]** established asymptotics, **[N]** marginal-shell quadrature, **[C]** CSBHI correspondence.

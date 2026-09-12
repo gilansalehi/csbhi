@@ -6,6 +6,8 @@
 
 **Date:** 2026-08-05.
 
+> **Superseding scale audit — September 2026.** The horizon-name guardrails and angular scale relation below remain current. The boundary density identity in Section 6 is only an isometric/parent-time benchmark. Canonical notation now distinguishes the mature dual scale \(\Gamma_{\rm GD}=a^2\) from a local Weyl factor \(\Omega_{\rm W}\); this note's \(\Omega_\Sigma\) is boundary scale data whose relation to either object must be derived. See [Mature Gamma Dynamics and the Conditional Radiation Handoff](note.html?src=mature_gamma_dynamics_and_conditional_radiation_handoff).
+
 **Prerequisites:** [GD I](gd1.html); [CSBHI Cosmological Glossary](note.html?src=cosmological_glossary); [Next Steps for the Collapse-Cohort Horizon Map](note.html?src=next_steps_for_the_collapse_cohort_horizon_map).
 
 **Status:** Equation inventory and notation normalization. No collapse benchmark or new dynamical law is assumed here. Tiered **[E]** established identity, **[C]** candidate CSBHI correspondence, **[O]** open.

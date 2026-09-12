@@ -4,6 +4,8 @@
 
 **Working calculation — September 2026. Source: upstream project derivation. Review and revisions: Codex (OpenAI).**
 
+> **Notation update — September 2026.** The local Weyl factor in the time-conversion paragraph is now \(\Omega_{\rm W}\). It is distinct from the mature ruler scale \(\Gamma_{\rm GD}=a^2\).
+
 ## Abstract
 
 [*Pressure Robustness of the Conformal Formation Map*](note.html?src=pressure_robustness_of_the_conformal_formation_map) establishes that homogeneous pressure does not break the GD2 background construction. A realistic pressure-supported star, however, requires radial pressure gradients. Those gradients accelerate the fluid relative to the freely falling Alice congruence used by Geometric Duality.
@@ -225,13 +227,13 @@ Equation (8) gives
 
 Pressure does not modify the reciprocal law. It changes \(R(\tau_A)\) by changing the geometry and Alice's motion through it.
 
-Equation (12) uses parent proper time. If the formation patch is interpreted as a literal Weyl transformation \(g_C=\Gamma^2g_P\) along corresponding curves, then
+Equation (12) uses parent proper time. If the formation patch is interpreted as a literal Weyl transformation \(g_C=\Omega_{\rm W}^2g_P\) along corresponding curves, then
 
 \[
-d\tau_C=\Gamma\,d\tau_P.
+d\tau_C=\Omega_{\rm W}\,d\tau_P.
 \]
 
-The numerical child Hubble rate would then carry the corresponding \(1/\Gamma\) conversion. Parent and child proper times remain distinct until the physical interpretation of \(\Gamma\) and the event map is fixed.
+The numerical child Hubble rate would then carry the corresponding \(1/\Omega_{\rm W}\) conversion. Parent and child proper times remain distinct until the local Weyl map and event map are fixed.
 
 ---
 

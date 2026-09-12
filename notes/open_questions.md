@@ -30,7 +30,8 @@ The present project supplies:
 - finite-curvature de Sitter asymptotics and infinite proper time as (r\to0);
 - the reciprocal power as the unique nontrivial horizon-fixing involution within the stated scale-free power-law class;
 - a collapse-cohort description separating the causal map, shell map, and post-crossing evolution;
-- an exact boundary system reducing the cohort synchronization to one lapse;
+- exact parent and child null embeddings, together with the conditional affine law for an independently established local Weyl factor \(\Omega_{\rm W}\);
+- the mature reciprocal ruler scale \(\Gamma_{\rm GD}=a^2=r^{-2}\) and its closed Friedmann evolution after handoff;
 - a compensated (\Lambda\)LTB benchmark whose endpoint limits work but whose simplest unit-lapse clock fails through the intermediate collapse; and
 - a coefficient-independent galaxy prediction, conditional on identifying the galactic scale with the contemporaneous horizon.
 
@@ -58,9 +59,19 @@ These results do not yet constitute a complete parent–child spacetime.
 
 The exact boundary reduction leaves one synchronization lapse between parent collapse time and child proper time. A compensated (\Lambda\)LTB benchmark reproduces the formation and de Sitter endpoint powers but rejects the simplest unit-lapse clock in the intermediate era. The causal proposal remains the map from the parent black-hole event-horizon generator to an outgoing child birth cone; its stronger particle-horizon interpretation remains to be established.
 
-A smooth nondegenerate interior first trapping now supplies a second, local structure: outward and inward marginal branches open as \(\sqrt{t-t_b}\). The inward branch begins at \(R_-/R_b=1\) and decreases, making it a concrete candidate for the radial evolution underlying GD1. This does not transfer parent marginality to a child apparent horizon or identify the marginal branch with Alice's timelike worldline.
+A smooth nondegenerate interior first trapping now supplies a second, local structure: outward and inward marginal branches open as \(\sqrt{t-t_b}\). The inward branch begins at \(R_-/R_b=1\) and decreases, making it a concrete candidate for the radial evolution underlying GD1. If a scale-dressed outer branch maps to the child apparent horizon, the future derivatives of its normalized physical-radius curve encode the total dust and radiation coefficients. A Weyl-flat marginal sphere also reproduces the FLRW density, surface-gravity, and causal-signature forms. These results do not transfer raw parent marginality to the child or identify the marginal branch with Alice's timelike worldline.
 
-**Missing:** The nontrivial lapse selected by the matter-filled collapse, together with the conformal normalization of the mapped angular geometry and the proof that the birth cone is part of the child's actual lower causal boundary. No child apparent- or future-event-horizon relation may be substituted for the birth-cone map merely because its differential equation or endpoint behavior looks similar.
+If a local four-metric Weyl factor \(\Omega_{\rm W}\) exists on the relevant formation patch, then
+
+\[
+\quad d\tau_C=\Omega_{\rm W}d\tau_P,
+\qquad
+\frac{d\lambda_C}{d\lambda_P}=C_\lambda\Omega_{{\rm W},H}^2.
+\]
+
+Child marginality requires \(\theta_P+2k_P(\ln\Omega_{\rm W})=0\), not parent marginality alone. Separately, the mature reciprocal ruler scale is now fixed conditionally as \(\Gamma_{\rm GD}=a^2=r^{-2}\), and its Friedmann evolution is closed once \(H_\Lambda,\eta_m,\eta_r\) are supplied.
+
+**Missing:** The throat derivation relating \(\Omega_{\rm W}\), \(\Gamma_{\rm GD}\), the cohort clock, and the null affine transfer, together with proof that the birth cone is part of the child's actual lower causal boundary. No child apparent- or future-event-horizon relation may be substituted for the birth-cone map merely because its differential equation or endpoint behavior looks similar.
 
 **Closure test:** Integrate the event horizon and both trapping branches through one realistic collapse; derive the child clock from event-horizon optics without fitting the child expansion; and test whether the inward-branch reciprocal rate produces an admissible child \(H_C\) and \(\dot H_C\) after the conformal scale transfer is fixed.
 
@@ -86,19 +97,19 @@ A smooth nondegenerate interior first trapping now supplies a second, local stru
 
 ### Q5. What fixes the absolute reciprocal normalization?
 
-**Known:** Standard cosmology measures scale-factor ratios. CSBHI makes (r=a=1) at horizon crossing a physical candidate anchor.
+**Known:** Standard cosmology measures scale-factor ratios. CSBHI makes \(r=a=1\) at the proposed handoff a physical candidate anchor. This normalization gives \(\Gamma_{\rm GD}=a^2=r^{-2}\) in the mature branch. Its subsequent functional evolution is fixed by the Friedmann ledger, but its relation to parent rulers at formation is not.
 
-**Missing:** The relation between that crossing, the hot beginning, and today's normalization.
+**Missing:** A derivation that the throat establishes this normalization and launches \(\dot\Gamma_*=2H_*\), together with the relation between the selected parent ruler, the hot FLRW handoff, and the separate null map.
 
-**Closure test:** Obtain (a_0), the corresponding parent data, and the parent-mass/child-(\Lambda) relation from the collapse map without choosing a thermal or horizon landmark afterward.
+**Closure test:** Obtain the handoff normalization, the corresponding parent data, and the parent-mass/child-\(\Lambda\) relation from the collapse map without choosing a thermal or horizon landmark afterward.
 
 ### Q6. Where do the child fluids and thermal history come from?
 
-**Known:** Once matter, radiation, and vacuum components are specified, their equations of state and dilution laws follow from conservation.
+**Known:** Once matter, radiation, and vacuum components are specified, their equations of state and dilution laws follow from conservation. Conditional on a completed trapping-pair/conformal transfer, the third and fourth future derivatives of the dressed outer-horizon curve determine \(\eta_m\), \(\eta_r\), and the invariant \(\mathcal J=\eta_r^3/\eta_m^4\). This identifies where the total equation-of-state ledger could live geometrically.
 
-**Missing:** Their production, initial abundances, entropy, baryon asymmetry, and near-thermal radiation state.
+**Missing:** The conformal function and marginal-surface transfer needed to calculate that dressed curve, plus species production, initial abundances, entropy, baryon asymmetry, and the near-thermal radiation state. Raw GR trapping-horizon evolution is parent-EOS- and initial-data-dependent, so a universal ledger would require an additional selection principle.
 
-**Closure test:** Recover inflation or an alternative causal mechanism, reheating, nucleosynthesis, neutrino decoupling, recombination, and the acoustic scale with one consistent parameter set.
+**Closure test:** Recover inflation or an alternative causal mechanism, reheating, nucleosynthesis, neutrino decoupling, recombination, and the acoustic scale with one consistent parameter set. For the proposed alternative, compute the pre-FLRW conformal-time contribution and show directly that widely separated last-scattering regions share a causal formation domain; a large ruler-scale ratio alone is insufficient.
 
 ### Q7. Does geometry determine the observed vacuum scale?
 
@@ -184,4 +195,7 @@ The galaxy prediction in Q9 can be tested in parallel. A failed prediction would
 4. [GD II outline: *Collapse Cohorts and the Horizon Map*](https://www.gilansalehi.com/csbhi/notes/gd2_collapse_cohort_horizon_map_outline.md)
 5. [*Horizon-Map Equation and Notation Audit*](https://www.gilansalehi.com/csbhi/notes/horizon_map_equation_and_notation_audit.md)
 6. [*The Trapping-Horizon Pair and the Inward Reciprocal Branch*](https://www.gilansalehi.com/csbhi/notes/trapping_horizon_pair_and_inward_reciprocal_branch.md)
-7. [Prediction I: *The Evolving Galactic Acceleration-Scale Correspondence*](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md)
+7. [*The Conditional Trapping-Pair Ledger and Weyl-Flat Handoff*](https://www.gilansalehi.com/csbhi/notes/conditional_trapping_pair_ledger_and_weyl_flat_handoff.md)
+8. [*The Conformal Dictionary and the Pre-FLRW Causal Interval*](https://www.gilansalehi.com/csbhi/notes/conformal_dictionary_and_pre_flrw_causal_interval.md)
+9. [*Mature Gamma Dynamics and the Conditional Radiation Handoff*](https://www.gilansalehi.com/csbhi/notes/mature_gamma_dynamics_and_conditional_radiation_handoff.md)
+10. [Prediction I: *The Evolving Galactic Acceleration-Scale Correspondence*](https://www.gilansalehi.com/csbhi/notes/evolving_g_dagger_derivation.md)

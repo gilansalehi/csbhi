@@ -14,7 +14,8 @@
   --constant-color: var(--status-prediction);
 }
 
-#constants [data-status="target"] {
+#constants [data-status="target"],
+#constants [data-status="conditional"] {
   --constant-color: var(--status-candidate);
 }
 

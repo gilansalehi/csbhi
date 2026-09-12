@@ -4,7 +4,7 @@
 
 **Architecture.** CSBHI is a branching direct-collapse cosmology. A child universe is the interior of a forming black hole: it comes into being at gravitational collapse. The reciprocal relation a=1/r maps the parent's decreasing interior radius to the child's increasing spatial scale, so the parent's r→0 endpoint coincides with that same child's a→∞ de Sitter future. Black holes that later form inside a child seed further children, so the whole structure is a tree that branches at every collapse.
 
-**Reading path.** The shared foundation is GD I → the Cosmological Glossary → RI I → Result I. The collapse branch is the GD II outline → Horizon-Map Equation and Notation Audit → the Collapse-to-Child Boundary System → the Full-History Test. The galaxy branch is the square-root-law derivation → Prediction I → its high-redshift test. The Weyl branch is WCH I → A Black Hole on the Aeon Boundary. The Geometric Parameter Cascade is the current dependency ledger for child constants, inherited background ratios, and open closure data. Finish any branch with the open-questions index.
+**Reading path.** The shared foundation is GD I → the Cosmological Glossary → RI I → Result I. The current collapse branch is Result IV → the trapping-pair note → the conditional ledger → the Conformal Dictionary → Mature Gamma Dynamics; older boundary, unit-lapse, and sharp-junction notes are retained as restricted benchmarks. The galaxy branch is the square-root-law derivation → Prediction I → its high-redshift test. The Weyl branch is WCH I → A Black Hole on the Aeon Boundary. The Geometric Parameter Cascade is the current dependency ledger for child constants, inherited background ratios, and open closure data. Finish any branch with the open-questions index.
 
 ## Claim hierarchy
 
@@ -17,6 +17,11 @@
 - **Research hypothesis:** Smooth parent collapse supplies a low-Weyl child beginning that may reproduce itself as a fixed point across generations.
 - **Candidate collapse map:** The current GD II track maps the parent black-hole event-horizon formation history to an outgoing child birth cone. This is the future light cone of the mapped vertex, not automatically the child's global particle horizon. The child particle, apparent, and future event horizons remain distinct.
 - **Parent-side trapping result:** For smooth nondegenerate interior first trapping, the compactness profile creates outward and inward marginal branches with square-root opening. The inward branch is a candidate for GD1's radial evolution, not yet Alice's worldline or a child apparent horizon; no parent–child radius equality follows.
+- **Conditional ledger representation:** If a dressed outer trapping branch maps to the child apparent horizon, the future jet of its dimensionless physical-radius ratio encodes the total dust and radiation coefficients. The raw curve \(R_+(R_-)\) is insufficient until the scale transfer, marginality condition, and transformed stress-energy are derived.
+- **Canonical local Weyl dictionary:** Under a genuine local Weyl map, \(R_C=\Omega_{\rm W}R_P\), \(d\tau_C=\Omega_{\rm W}d\tau_P\), and \(d\lambda_C=C_\lambda\Omega_{{\rm W},H}^2d\lambda_P\). Null paths are preserved without preserving affine parametrization, and child marginality requires \(\theta_P+2k_P(\ln\Omega_{\rm W})=0\).
+- **Mature dual-scale result:** After a reciprocal handoff normalized by \(a=r=1\), the parent–child ruler ratio is \(\Gamma_{\rm GD}=a/r=a^2=r^{-2}\). Its mature Friedmann evolution is closed once \(H_\Lambda,\eta_m,\eta_r\) are supplied. This ruler scale is not automatically the local Weyl factor \(\Omega_{\rm W}\) or the null affine-transfer factor.
+- **Conditional radiation-handoff theorem:** If a selected stationary parent ruler maps as \(R_A^C=\Gamma_{\rm GD}R_P\), with derivatives taken in child proper time, then the mature reciprocal and Friedmann relations force \(w=1/3\). The throat has not yet established those handoff premises.
+- **Conditional pre-FLRW causal route:** A common parent/throat causal domain could contribute conformal time before the hot FLRW handoff and later be represented on a much larger child scale. Conformal scaling itself does not create causal contact, and the CMB horizon problem is not solved until the global geometry and last-scattering past cones are calculated.
 - **Negative benchmark result:** A compensated ΛLTB collapse reproduces the required endpoint behavior, but the simplest unit-lapse shell clock fails through the intermediate history. The remaining clock must be derived rather than fitted.
 - **Open construction:** The collapse-cohort clock, complete throat geometry, parent-to-child matter/current transfer, weak-field tensorial galaxy law, perturbation transfer, and full thermal history remain unfinished.
 
@@ -37,12 +42,20 @@ R_dS = c / H_Lambda = sqrt(3 / Lambda)      [child de Sitter radius]
 Lambda = 3 H_Lambda^2 / c^2                 [de Sitter identity]
 g_mix = kappa_g sqrt(g_N A)                 [conditional mixing theorem]
 g_dagger(z)/g_dagger(0) = H_A(z)/H_0        [conditional prediction]
-g_C_ab = Gamma^2 g_P_ab                     [formation conformal factor]
+Gamma_GD = a^2 = r^-2                       [mature dual ruler-scale separation]
+dotGamma_GD / Gamma_GD = 2 H                [mature scale-rate identity]
+g_C_ab = Omega_W^2 g_P_ab                   [local Weyl hypothesis]
+R_C = Omega_W R_P                           [local Weyl areal-radius transfer]
+dtau_C = Omega_W dtau_P                     [same locally mapped timelike curve]
+dlambda_C = C_lambda Omega_W,H^2 dlambda_P  [local mapped affine null parameters]
+theta_C ~ Omega_W^-2(theta_P + 2 k_P lnOmega_W) [affine null expansion]
+Rplus_dressed = scale_+ R_+ / (scale_f R_f) [conditional trapping-pair ledger curve]
+J = eta_r^3 / eta_m^4                       [scale-normalization-invariant ledger target]
 ```
 
 Do not identify `r` with `R` or `bar_R`. Here `r(tau)` is Bob's horizon-normalized coordinate assigned along Alice's individual trajectory; `R` is Alice's comoving label; and `bar_R=aR` is Alice's areal radius. Keep the parent black-hole event horizon, parent cosmological horizon, child birth cone, child particle horizon, child apparent horizon, and child future cosmological event horizon distinct. The reciprocal normalization `a=1` at crossing is not the conventional present normalization; use `A=a/a_0` when importing present-normalized cosmology.
 
-Cross-project summaries use `R_dS` for the child asymptotic de Sitter curvature radius, `g_dagger` for the galaxy acceleration scale, `M_parent` for parent mass, and `Gamma` for the parent–child conformal factor. Older or calculation-local documents may use `R_Lambda`, `L`, or `ell_dS` for the de Sitter length, `a_0` for a MOND acceleration, `M_P` for parent mass, or `Gamma=D_l R` in Misner–Sharp variables. Those are compatibility aliases or declared local collisions, not additional quantities.
+Cross-project summaries use `R_dS` for the child asymptotic de Sitter curvature radius, `g_dagger` for the galaxy acceleration scale, `M_parent` for parent mass, `Gamma_GD` for the mature dual ruler-scale separation, and `Omega_W` for a local four-metric Weyl factor. Older or calculation-local documents may use `R_Lambda`, `L`, or `ell_dS` for the de Sitter length, `a_0` for a MOND acceleration, `M_P` for parent mass, or `Gamma=D_l R` in Misner–Sharp variables. Those are compatibility aliases or declared local collisions, not additional quantities.
 
 The public site is statically hosted. Core papers contain their substantive text directly in HTML; the project overview and review packet compose some sections from static data-wrapper views. Research notes are also available as raw Markdown at the URLs below, so no JavaScript execution is required to read them. Equations use LaTeX notation.
 
@@ -101,6 +114,9 @@ The [Research Index](https://www.gilansalehi.com/csbhi/research.html) contains i
 - [Geometric Duality Research Roadmap](https://www.gilansalehi.com/csbhi/notes/gd_research_roadmap.md): Provisional sequence of future papers and unresolved calculations.
 - [CSBHI Geometric Parameter Cascade](https://www.gilansalehi.com/csbhi/notes/csbhi_geometric_parameter_cascade.md): Dependency ledger separating external constants, standard de Sitter/Friedmann descendants, benchmark inferences, fitted targets, and the parent–child quantities the theory must still derive.
 - [The Trapping-Horizon Pair and the Inward Reciprocal Branch](https://www.gilansalehi.com/csbhi/notes/trapping_horizon_pair_and_inward_reciprocal_branch.md): Derives the parent-side compactness tangency and square-root birth of an outward/inward trapping-horizon pair. The inward branch is a candidate—not yet an identification—for GD1’s reciprocal radial structure; parent–child areal-radius equality is explicitly rejected.
+- [The Conditional Trapping-Pair Ledger and Weyl-Flat Handoff](https://www.gilansalehi.com/csbhi/notes/conditional_trapping_pair_ledger_and_weyl_flat_handoff.md): Shows how a conformally dressed trapping-pair curve could encode \(\eta_m\), \(\eta_r\), and their invariant ratio, and derives a Weyl-flat marginal handoff criterion. The result identifies a geometric carrier but leaves conformal closure and the numerical ledger open.
+- [The Conformal Dictionary and the Pre-FLRW Causal Interval](https://www.gilansalehi.com/csbhi/notes/conformal_dictionary_and_pre_flrw_causal_interval.md): Fixes the local Weyl rules for radius, proper time, affine parameters, expansion, and marginality using \(\Omega_{\rm W}\); flags legacy isometric notes; and states the pre-FLRW causal interval as a proposed horizon-problem test rather than a result.
+- [Mature Gamma Dynamics and the Conditional Radiation Handoff](https://www.gilansalehi.com/csbhi/notes/mature_gamma_dynamics_and_conditional_radiation_handoff.md): Derives \(\Gamma_{\rm GD}=a^2=r^{-2}\), rewrites the full flat matter–radiation–\(\Lambda\) background as its one-dimensional dynamics, identifies the handoff two-jet, and states the stationary-parent/radiation relation with its required premises. It keeps \(\Gamma_{\rm GD}\), \(\Omega_{\rm W}\), and the null affine transfer distinct.
 
 ## What CSBHI does not claim
 
